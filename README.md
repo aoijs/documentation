@@ -1,0 +1,2 @@
+# documentation
+Aoi.JS - Documentation
