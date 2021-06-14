@@ -1,5 +1,5 @@
 ---
-description: Welcome to Aoi.JS!
+description: Welcome to Aoi.JS Documentarian Page <3
 ---
 
 # Introduction
@@ -117,11 +117,11 @@ More Information in our [Documentation](https://dbd.leref.ga/guide/music)
 
 ### Links
 
-Aoi.JS was made by [Aoi.JS Team](https://discord.gg/HMUfMXDQsV)
+Aoi.JS was made by [Aoi.JS Team](https://aoi.js.org)
 
-* [Website](https://dbd.js.org/)
-* [Discord Server](https://dbd.js.org/invite)
-* [Documentation](https://dbd.leref.ga/)
+* [Website](https://aoi.js.org)
+* [Discord Server](https://aoi.js.org/invite)
+* [Documentation](https://aoi.leref.ga)
 
 ## 
 
