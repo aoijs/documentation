@@ -1,5 +1,5 @@
 ---
-description: Welcome to Aoi.JS Documentarian Page <3
+description: Welcome to Aoi.JS Documentarian Page - Functions / Callbacks
 ---
 
 # Introduction
