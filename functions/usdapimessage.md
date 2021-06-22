@@ -32,10 +32,10 @@
 >
 > example: {author:hi} won't work but {author:hi::} will
 >
-> available ones are same as in [interactionReply](./usdinteractionreply.md)
+> available ones are same as in [interactionReply](./usdinteractionreply.md#embed)
 
 ### Components
-> Same as in [interactionReply](./usdinteractionreply.md)
+> Same as in [interactionReply](./usdinteractionreply.md#components)
 
 ### Reference 
 > ```js
