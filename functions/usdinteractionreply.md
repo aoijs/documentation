@@ -39,8 +39,17 @@ This uses embed-errors.
 This uses components parser.
 > **Usage**:
 > ```js
-> "{actionRow:label,type,style,customID,disabled(true/false):...}"
+> "{actionRow:label,type,style,customID,emojiName|emojiID|animated(true/false)(optional),disabled(true/false)(optional):...}"
 > ```
+> available styles are:
+
+|Style|Color|Type|
+|-----|-----|----|
+|1|blurple|primary|
+|2|grey|secondary|
+|3|green|success|
+|4|red|danger|
+|5||link (note for this style customID is replaced with url with escaped `:`) (**example:** `{actionRow:click me,2,5,https\\://discord.com}`|
 > You can Use **5 buttons** per **actionRow**
 > 
 > You can Use **5 actionRow** per **message/interaction**
@@ -73,7 +82,7 @@ UpdateMessage*	|7	|for components, edit the message the component was attached t
 
 [src: Discord api docs](https://discord.com/developers/docs/interactions/slash-commands#interaction-response-object-interaction-callback-type "check here for more info")
 >**Note**: * means its for component only (aka buttons only) 
-
+--------------
 ## Example
 ```js
 bot.interactionCommand({
