@@ -79,6 +79,6 @@ UpdateMessage*	|7	|for components, edit the message the component was attached t
 bot.interactionCommand({
 name:"ping",
 code:`
-$interactionReply[pong!;;;64]
+$interactionReply[pong!;;;64;4]
 `
 })
