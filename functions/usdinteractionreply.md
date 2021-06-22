@@ -8,7 +8,7 @@
 ---------------
 ## Usage
 ```js
-$interactionReply[content;embed(optional);components (optional);flag (optional);type (optional)]
+"$interactionReply[content;embed(optional);components (optional);flag (optional);type (optional)]"
 ```
 > **Note**: you can either use content or embeds but one of them is **required**
 ---------------
