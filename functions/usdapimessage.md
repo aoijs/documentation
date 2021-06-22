@@ -33,7 +33,8 @@
 > example: {author:hi} won't work but {author:hi::} will
 >
 > available ones are same as in [interactionReply](./usdinteractionreply.md#embed)
-
+>
+> Color only supports hex code and int for now.
 ### Components
 > Same as in [interactionReply](./usdinteractionreply.md#components)
 
@@ -54,7 +55,7 @@
 bot.command({
 name:"hi",
 code:`
-$apiMessage[hi;;;;no]
+$apiMessage[hi;{author:hi::}{title:hello}{field:ok:lol:no}{color:#8700ff}{footer:hmmm:$authorAvatar};;$messageID:true;no]
 `
 })
 ```
