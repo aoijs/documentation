@@ -39,7 +39,7 @@ This uses embed-errors.
 This uses components parser.
 > **Usage**:
 > ```js
-> "{actionRow:label,type,style,customID,emojiName|emojiID|animated(true/false)(optional),disabled(true/false)(optional):...}"
+> "{actionRow:label,type (2 for button),style,customID,emojiName|emojiID|animated(true/false)(optional),disabled(true/false)(optional):...}"
 > ```
 > available styles are:
 
