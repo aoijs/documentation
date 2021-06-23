@@ -12,6 +12,7 @@ Here is the usage:
 $readFile[(file location)]
 //This will send the contents of provided file in the channel.
 ```
+
 Now lets get contents of a file.
 
 ```javascript
@@ -35,3 +36,4 @@ $readFile[config/text/data.json]
 `
 })
 ```
+

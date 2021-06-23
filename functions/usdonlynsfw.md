@@ -18,5 +18,5 @@ $onlyNSFW[Command only executable in NSFW channels!]`
 })
 ```
 
-![](../.gitbook/assets/image%20%2842%29.png)
+![](../.gitbook/assets/image%20%2838%29%20%281%29.png)
 

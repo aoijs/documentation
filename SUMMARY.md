@@ -4,9 +4,7 @@
 
 ## AOI.JS Version 4.0.0
 
----
-
-* [Changelog](changelog.md)
+* [Changelog](aoi.js-version-4.0.0/changelog.md)
 
 ## Guide
 
@@ -404,6 +402,7 @@
 * [$rateLimit](functions/usdratelimit.md)
 * [$reactionCount](functions/usdreactioncount.md)
 * [$reactionCollector](functions/usdreactioncollector.md)
+* [$readFile](functions/usdreadfile.md)
 * [$reboot](functions/usdreboot.md)
 * [$referenceChannelID](functions/usdreferencechannelid.md)
 * [$referenceGuildID](functions/usdreferenceguildid.md)
@@ -529,6 +528,7 @@
 * [$vanityUses](functions/usdvanityuses.md)
 * [$userTag](functions/usdusertag.md)
 * [$variablesCount](functions/usdvariablescount.md)
+* [$vcSize](functions/usdvcsize.md)
 * [$voiceID](functions/usdvoiceid.md)
 * [$volume](functions/usdvolume.md)
 * [$wait](functions/usdwait.md)

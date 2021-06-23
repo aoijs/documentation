@@ -14,5 +14,5 @@ code: `Users who are typing: $usersTyping[$channelID;username;/]
 })
 ```
 
-![This is what this function would grab](../.gitbook/assets/image%20%286%29.png)
+![This is what this function would grab](../.gitbook/assets/image%20%2816%29.png)
 
