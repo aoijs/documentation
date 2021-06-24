@@ -27,5 +27,5 @@ Prototype: $allMembersCount
 * $membersCount\[$guildID;online\] - returns the amount of online people in the guild.
 * $membersCount\[$guildID;Idle\] - returns the amount of idle people in the guild.
 * $membersCount\[$guildID;dnd\] - returns the amount of  people in the guild.
-* $membersCount\[$guildID;invisible\] - returns the amount of offline people in the guild.
+* $membersCount\[$guildID;offline\] - returns the amount of offline people in the guild.
 
