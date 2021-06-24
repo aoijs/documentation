@@ -16,13 +16,12 @@ code: `Code here`
 #
 
 ## Example Command:
-```javascript
+```js
 bot.interactionCommand({
 name: "hi",
 prototype: "button",
-code: `
-Whats up $username
-`
+code: `Whats up $username`
+})
 ```
 
 # Slash commands
@@ -38,10 +37,9 @@ code: `Code here`
 #
 
 ## Example Command:
-```javascript
+```js
 bot.interactionCommand({
 name: "hi",
-code: `
-Whats up $username
-`
+code: `Whats up $username`
+})
 ```
