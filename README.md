@@ -99,7 +99,7 @@ bot.interactionCommand({
 bot.onInteractionCreate()
 ```
 
-More Information in our [Documentation](https://dbd.leref.ga/guide/slash-commands)
+More Information in our [Documentation](https://aoi.leref.ga/guide/slash-commands)
 
 **Music**
 
@@ -115,7 +115,7 @@ code: `$playSong[song;leave vc time;defean (yes or no);leave when vc empty (yes/
 })
 ```
 
-More Information in our [Documentation](https://dbd.leref.ga/guide/music)
+More Information in our [Documentation](https://aoi.leref.ga/guide/music)
 
 ### Links
 
