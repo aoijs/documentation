@@ -43,3 +43,22 @@ name: "hi",
 code: `Whats up $username`
 })
 ```
+
+## Componets
+
+``$interactionReply[Plain message;embeds (leave blank if none);componets (optional);flags (optional);type (optional)]`` - Use this to send a message when the interaction gets triggered
+
+``$interactionEdit[Plain message;embeds (leave blank if none);componets (leave bank if none)]`` - Edits the Interaction Message from $interactionReply
+
+ ### Example
+
+```js
+bot.interactionCommand({
+name: "example",
+prototype: "button",
+code: `
+$interactionEdit[Hi!;{title:Edited}{description:This message was edited}]
+$wait[3s]
+$interactionReply[Hello!;{title:Hello $username}{description:nom}]
+`
+```
