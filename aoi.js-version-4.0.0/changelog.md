@@ -4,6 +4,26 @@ description: 'Aoi.JS - This Package, allows you to make Discord Bot with ease!'
 
 # Changelog
 
+## Aoi.JS - 4.0.1
+
+### Added
+
+* Added functions support in interactionCommand which uses client in src code
+you can now use $ban with buttons,
+* Added aliases (yes/no) for {field} in apiMessage
+
+### Fixed / Improved
+
+* Fixed ComponentParser 
+* Fixed actionRow duping on using more than 1 actionRow
+* Fixed ErrorParser but now  whole field has to be used 
+for example {author:hi} won't work but {author:hi::} will
+(note this is only for apiMessage , buttonCollector and awaitButtons 
+(because they operate on Discord API)
+* Fixed Interaction type in interactionCommand handler which earlier made buttonCollector and awaitButtons not usable in V4 
+* Fixed $creationDate (again)
+* Changed parse-ms version (2.0.0)
+
 ## Aoi.JS - 4.0.0
 
 ### Added
