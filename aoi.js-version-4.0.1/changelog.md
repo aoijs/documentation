@@ -9,20 +9,26 @@ description: 'Aoi.JS - This Package, allows you to make Discord Bot with ease!'
 ### Added
 
 * Added functions support in interactionCommand which uses client in src code
-you can now use $ban with buttons,
-* Added aliases (yes/no) for {field} in apiMessage
+
+  you can now use $ban with buttons,
+
+* Added aliases \(yes/no\) for {field} in apiMessage
 
 ### Fixed / Improved
 
 * Fixed ComponentParser 
 * Fixed actionRow duping on using more than 1 actionRow
 * Fixed ErrorParser but now  whole field has to be used 
-for example {author:hi} won't work but {author:hi::} will
-(note this is only for apiMessage , buttonCollector and awaitButtons 
-(because they operate on Discord API)
+
+  for example {author:hi} won't work but {author:hi::} will
+
+  \(note this is only for apiMessage , buttonCollector and awaitButtons 
+
+  \(because they operate on Discord API\)
+
 * Fixed Interaction type in interactionCommand handler which earlier made buttonCollector and awaitButtons not usable in V4 
-* Fixed $creationDate (again)
-* Changed parse-ms version (2.0.0)
+* Fixed $creationDate \(again\)
+* Changed parse-ms version \(2.0.0\)
 
 ## Aoi.JS - 4.0.0
 
@@ -30,11 +36,11 @@ for example {author:hi} won't work but {author:hi::} will
 
 * $apiMessage: "sends a message using Discord api - $apiMessage\[content,embed \(optional\), components \(optional\), reference \_message\_id:mention the replied user\(default false\); Return id \(optional default no\)\]", 
 * $awaitButtons: "awaits buttons for given amount of uses - $awaitButtons\[msgid;userfilter; customID, customID,...; awaitcommand, awaitedcommand,...; error content,Error embed,erorr flags \(optional\);uses \(optional : default 1\)\]",
-*  $buttonCollector: "creates a collector for given customIDs;$buttonCollector\[messageID;everyone/userID;time;customID,customID,...;awaitedcommand,awaitedcommand,...;error msg content,error msg embed,error msg flags \(64 for ephemeral\) \(optional\); awaitedcommand \(executes when collector ends\)\(optional\)\]", 
+* $buttonCollector: "creates a collector for given customIDs;$buttonCollector\[messageID;everyone/userID;time;customID,customID,...;awaitedcommand,awaitedcommand,...;error msg content,error msg embed,error msg flags \(64 for ephemeral\) \(optional\); awaitedcommand \(executes when collector ends\)\(optional\)\]", 
 * $interactionEdit:"edits the original interaction Response - $interactionEdit\[content;embeds; components\]", 
 * $interactionDelete:"deletes the original interaction Response \(doesn't support ephemeral messages\)" $interactionReply\[content;embeds; components \(optional\);flags \(optional\);type \(optional\)\] been improved
 
-### Fixed / Improved 
+### Fixed / Improved
 
 * Fixed reactionAddCommand 
 * Fixed $vcSize 
@@ -55,17 +61,17 @@ bot.onVariableUpdate\(\) bot.variableUpdateCommand\(\)
 
 bot.onVariableDelete\(\) bot.variableDeleteCommand\(\)
 
-$oldVariable\[variable options\] $newVariable\[variable options\] 
+$oldVariable\[variable options\] $newVariable\[variable options\]
 
 Added Application Command Callbacks
 
- bot.onApplicationCmdCreate\(\) bot.applicationCmdCreateCommand\(\)
+bot.onApplicationCmdCreate\(\) bot.applicationCmdCreateCommand\(\)
 
 bot.onApplicationCmdUpdate\(\) bot.applicationCmdUpdateCommand\(\)
 
 bot.applicationCmdDeleteCommand\(\)
 
-$oldApplicationCmd\[application options\] 
+$oldApplicationCmd\[application options\]
 
 $newApplicationCmd\[application options\]
 
@@ -76,7 +82,7 @@ $newApplicationCmd\[application options\]
 * Fixed: $getAttachments\[\] fixed the src code error 
 * Fixed : $messageSlice : was giving errors if args was blank
 
-v3.0.0 Misc 
+v3.0.0 Misc
 
 * Added : client.aoi.options \( will get all the options that were provided in "new aoi.Bot\({...}\)"\)
 * Added : applicationCache options in Client Class which can be turned on by doing "applicationCache : true" in "new aoi.Bot\({...}\)"
@@ -92,7 +98,7 @@ v3.0.0 Misc
 
   _when a slash cmd is deleted the data of the cache of that slash cmd is also delete from the "client.applications.slash"_
 
-* Added ephemeral embed support in slash 
+* Added ephemeral embed support in slash
 * Changed discord api version to V9 in client.\_api //Note: d.\_api still uses V8 so that people can also use V8 if they want
 
 Misc Functions
@@ -165,7 +171,7 @@ Misc Functions
 
 ### Added
 
-*  Added $resolveColor\[Red; Green; Blue;toHex \(optional\) \(yes/no\)\], convert's rgb color into hex or color number. 
+* Added $resolveColor\[Red; Green; Blue;toHex \(optional\) \(yes/no\)\], convert's rgb color into hex or color number. 
 * Added new code for $userExists to use cache if user exist in cache, else it will use fetch. 
 * Added $complexCooldown\[type;time;errorMessage\] 
 * Added $isValidImageLink\[url\] 
@@ -178,7 +184,7 @@ Misc Functions
 
 ### Fixed
 
-*  Fixed $findUser and $findMember keeps returning "undefined" when the given data is a whitespace / empty. 
+* Fixed $findUser and $findMember keeps returning "undefined" when the given data is a whitespace / empty. 
 * Fixed $resetGlobalUserVar 
 * Cleaned $voiceID code. 
 * Cleaned $userAvatar code. 
@@ -190,7 +196,7 @@ Misc Functions
 
 ### Fixed
 
-*  Fixed $username cant detect brackets if its empty 
+* Fixed $username cant detect brackets if its empty 
 * Fixed $reset variables functions 
 * Fixed $getLeaderboardInfo \(almost forgot\) 
 * Fixed $ordinal \(why no one reported this smh\) 
@@ -210,24 +216,24 @@ Misc Functions
 
 * Fixed $guildRoles 
 * Fixed voiceStateUpdate callback returning error db is not defined
-*  Fixed $userPerms
-*  Fixed $activity not detecting brackets 
+* Fixed $userPerms
+* Fixed $activity not detecting brackets 
 * Fixed $userTag 
 * Fixed $randomText
-*  Fixed $removeTextSplitElement 
+* Fixed $removeTextSplitElement 
 * Fixed $toLocaleUppercase 
 * Fixed $newTicket
-*  Fixed $isEmoji 
+* Fixed $isEmoji 
 * Fixed $setTimeout 
 * Fixed $isValidHex 
 * Fixed $findTextSplitIndex
-*  Fixed $getCooldownTime - user now must provide the cooldown time in the first field of $getCooldownTime
+* Fixed $getCooldownTime - user now must provide the cooldown time in the first field of $getCooldownTime
 
 ## 3.0.1
 
 ### Fixed
 
-*  Fixed $botOwnerID 
+* Fixed $botOwnerID 
 * Fixed $customEmoji 
 * Fixed $divide 
 * Fixed $deleteIn 
@@ -310,12 +316,12 @@ Bot.onMemberUpdate()
 Bot.memberUpdateCommand()
 
 $newMember[memberOption] 
-$oldMember[memberOption] 
+$oldMember[memberOption]
 ```
 
 ### Changes
 
-*  Fixed small issue with Bot.deletedCommand 
+* Fixed small issue with Bot.deletedCommand 
 * Fixed same issue in Bot.updateCommand 
 * Fixed $dateStamp 
 * Error messages handler has been modified a bit to make $channelSendMessage and other functions sending a message to a different channel work as expected with every {} function 
@@ -328,9 +334,9 @@ $oldMember[memberOption]
 * Changed $let and $get from using global client.variables scope to using local interpeter scope 
 * $jsonRequest now use axios 
 
-#### **Interpeter Changes** 
+#### **Interpeter Changes**
 
-*  Allows data to change object variable 
+* Allows data to change object variable 
 * Changed let object; to let object = data.object \|\| {};
 
 **Custom Event Changes**
@@ -343,7 +349,7 @@ $oldMember[memberOption]
 
 #### **Important Changes**
 
- `$description[[Text\\](Link)] must be $description[[Text](Link)]` _It works like how it should have been intended from before_
+`$description[[Text\\](Link)] must be $description[[Text](Link)]` _It works like how it should have been intended from before_
 
 ## 2.2.6
 
@@ -355,7 +361,7 @@ $oldMember[memberOption]
 
 ### Added
 
-*  Added $formatDate\[datestamp / milliseconds / stringed date \(Example: $creationDate\)/ ISO String; Format\] Almost a full coverage of `moment` format, syntax of formats can be found in [https://momentjs.com/docs/\#/parsing/string-format/](https://momentjs.com/docs/#/parsing/string-format/) 
+* Added $formatDate\[datestamp / milliseconds / stringed date \(Example: $creationDate\)/ ISO String; Format\] Almost a full coverage of `moment` format, syntax of formats can be found in [https://momentjs.com/docs/\#/parsing/string-format/](https://momentjs.com/docs/#/parsing/string-format/) 
 * Added $humanizeMS\[MS;Show Limit;Separator\] - Converts Milliseconds into a Readable duration. 
 * Added `Connected to API` will reconnect to API if disconnected. 
 * Added $let - Assigns data to a temporary variable that can be changed and retrieved later in the command. Similar to variables. 
@@ -364,7 +370,7 @@ $oldMember[memberOption]
 
 ### Changes
 
-*  Fixed $log returning error. 
+* Fixed $log returning error. 
 * Improved $reboot \(Closes DB Properly\)
 * Rewritten $playSpotify System 
 * Removed show success field in $playSpotify 
@@ -394,7 +400,7 @@ $oldMember[memberOption]
 
 #### bot.loadCommands\(\)
 
- bot.loadCommands\(path, debug?\) are now more advanced Allowing subfolder inside subfolder:
+bot.loadCommands\(path, debug?\) are now more advanced Allowing subfolder inside subfolder:
 
 ```text
 ..economy
@@ -409,7 +415,7 @@ $oldMember[memberOption]
 ......mute.js
 ```
 
- Allowing other command type \(default to normal\): 
+Allowing other command type \(default to normal\):
 
 **Example**
 
@@ -421,7 +427,7 @@ module.exports = {
 }
 ```
 
- Allowing multiple commands: 
+Allowing multiple commands:
 
 **Example**
 
@@ -469,7 +475,7 @@ module.exports = [{
 
 ### Added
 
-*  Added {deletecommand} or {deletecommand:time} to embed errors 
+* Added {deletecommand} or {deletecommand:time} to embed errors 
 * Added $getCooldownTime\[server/user/globalUser;command name;ID;return ms \(yes/no\) \(optional\)\] 
 * Added nonprefixed commands to support aliases 
 * Added hyperlink url field to $author
@@ -505,7 +511,7 @@ module.exports = [{
 Bot.loopCommand()
 ```
 
- properties are `channe`l, `code`, `executeOnStartup` and `every` channel / executeOnStartup are not required
+properties are `channe`l, `code`, `executeOnStartup` and `every` channel / executeOnStartup are not required
 
 ```javascript
 Bot.onTypingStart()
@@ -534,7 +540,7 @@ bot.timeoutCommand({
 })
 ```
 
- **setTimeout won't reset upon Bot restart :\) and these can go above 21 days** 
+**setTimeout won't reset upon Bot restart :\) and these can go above 21 days**
 
 New command:
 
@@ -542,11 +548,11 @@ New command:
 bot.timeoutCommand()
 ```
 
- uses `code` and `channel` property \(channel is optional\) New Function: $timeoutData\[property\]
+uses `code` and `channel` property \(channel is optional\) New Function: $timeoutData\[property\]
 
 ### Changes
 
-*  - Fixed $messagePublish throwing invalid channel id all the time 
+* * Fixed $messagePublish throwing invalid channel id all the time 
 * Fixed Music functions with incorrect usage/error message 
 * Fixed $queue again 
 * Fixed $newTicket sending supposed ticket message in the wrong channel 
@@ -577,7 +583,7 @@ bot.timeoutCommand()
 * Added $math\[value\], Example: $math\[\(2+7\)\*9\] 
 * Added $channelCooldown\[time;error message\] 
 * Added $timezone = Get current timezone / $timezone\[timezone\] = Set timezone
-*  Added a field for $day $day\[return day of the week \(optional\) \(yes/no\)\] 
+* Added a field for $day $day\[return day of the week \(optional\) \(yes/no\)\] 
 * Added $moveUser\[userID;channelID \(optional\);reason \(optional\)\] Used to move user from a voice channel 
 * Added $deafenUser\[userID;deafen \(yes/no\);reason \(optional\)\] Used to deaf user in voice channel 
 * Added $muteUser\[userID;mute \(yes/no\);reason \(optional\)\] Used to mute user in voice channel
@@ -629,7 +635,7 @@ bot.timeoutCommand()
 * Added ability to disable functions when instantiating a dbdjs bot
 
 ```text
-new dbd.Bot({ disabledFunctions: ["$botLeave", ...] 
+new dbd.Bot({ disabledFunctions: ["$botLeave", ...]
 ```
 
 * Added $createFile\[Leref Mean;filename.extension\] 
@@ -638,7 +644,7 @@ new dbd.Bot({ disabledFunctions: ["$botLeave", ...]
 
 #### Invite Tracker System
 
- To activate:
+To activate:
 
 ```javascript
 new dbd.Bot({
@@ -646,7 +652,7 @@ new dbd.Bot({
 })
 ```
 
- and activate callbacks:
+and activate callbacks:
 
 ```text
 - onJoined
@@ -658,7 +664,7 @@ new dbd.Bot({
 - onGuildLeave
 ```
 
-*  Added $userInfo\[option;userID \(optional\)\] - To get user invites info 
+* Added $userInfo\[option;userID \(optional\)\] - To get user invites info 
 * Added $resetInvites or $resetInvites\[guildID;userID \(optional\)\] - To reset guild or user invites
 
 ### Callbacks
@@ -730,7 +736,7 @@ Also to get the data from event, you can use $eventData[property]
 
 ### Added
 
-*  Changed All Music Functions time default to `1s`
+* Changed All Music Functions time default to `1s`
 * `respondToBots` ignores webhooks too if it set to false \(normal commands\) 
 * $alwaysExecute now ignores both bots and webhooks if `respondToBots` is set to false. 
 * $messageFlags 
@@ -771,7 +777,7 @@ Also to get the data from event, you can use $eventData[property]
 
 ### Added
 
-*  $serverNames 
+* $serverNames 
 * 2nd field in $djsEval 
 * Added asynchronous: false/true \(default is true\) property to Bot.command setting to false will make the command not wait for other commands with same name to execute. 
 * $executionTime 
@@ -815,8 +821,6 @@ new dbd.Bot({ mobile: true })
 * $error - the error that the interpreter threw
 
 ### Callbacks
-
-
 
 ```text
 Bot.onPresenceUpdate()
@@ -901,7 +905,7 @@ $newChannel[channelOption]
 
 ### Music
 
-*  Added $playSoundCloud\[url; soundcloud client\_id \(optional\);leave vc time;defean \(yes or no\);error message\] 
+* Added $playSoundCloud\[url; soundcloud client\_id \(optional\);leave vc time;defean \(yes or no\);error message\] 
 * Fixed unknown error with discordjs/opus. It will now force to install \(require\) 
 * Removed clutter with Music, that cause Music to die in other guilds \(apparently it bugs if too much connections\) 
 * Changed $playSong, $playSpotiy to Handler. 
@@ -929,7 +933,7 @@ code: "code to execute"
 * $modifySlashCommand\[guildID;commandID;name;description;options \(optional\)\] 
 * $deleteSlashCommand\[guildID;name/id\] 
 * $interactionReply\[message\]
-*  $getSlashCommandID\[name\] or $getSlashCommandID\[name;guildID\]
+* $getSlashCommandID\[name\] or $getSlashCommandID\[name;guildID\]
 
 ### DBH Support
 
@@ -945,7 +949,7 @@ dbhToken: "Token"
 
 ### Added
 
-*  $setChannelTopic\[channelID;topic\] \($setChannelTopic\[channelID\] removes channel topic\) 
+* $setChannelTopic\[channelID;topic\] \($setChannelTopic\[channelID\] removes channel topic\) 
 * $modifyWebhook\[webhookID;webhookToken;name;avatar \(optional\)\] 
 * $deleteWebhook\[webhookID;webhookToken\] - Added multiple embeds support to $sendWebhook 
 * $sendWebhook\[webhookID;webhookToken;message;options...\]
@@ -955,7 +959,7 @@ dbhToken: "Token"
 * $channelCategoryID or $channelCategoryID\[channelID\] 
 * $addMessageReactions\[channelID;messageID;reaction1;reaction2;...\] 
 * $isUserDMEnabled or $isUserDMEnabled\[userID\]
-*  $unban now supports user name 
+* $unban now supports user name 
 * $commandInfo\[command name;property\] 
 * $advancedTextSplit\[text;split;index;split;index;...\] 
 * $packageVersion 
@@ -1022,7 +1026,7 @@ dbhToken: "Token"
 * $referenceGuildID
 * $referenceChannelID
 * $referenceMessageID
-*  $serverBoostCount
+* $serverBoostCount
 * Added missing permissions to the permission list 
 * $newTicket\[ticket name;ticket message \(optional\);categoryID \(optional\);return ticket id \(yes/no\);error message \(optional\)\] 
 * $closeTicket\[error message \(optional\)\]
