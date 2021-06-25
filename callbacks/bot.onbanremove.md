@@ -9,6 +9,14 @@ description: >-
 
 This callback allows the bot to log every time a user gets unbanned form a server.
 
+You can use amongst other functions these functions inside your banAddCommand to return data of the user that got banned and the server that banned the user:
+
+* [$username](../functions/usdusername.md)
+* [$authorID](../functions/usdauthorid.md)
+* [$userTag](../functions/usdusertag.md)
+* [$serverName](../functions/usdservername.md)
+* [$guildID](../functions/usdguildid.md)
+
 #### Usage:
 
 ```javascript
@@ -40,11 +48,25 @@ $username was unbanned in $serverName
 })
 ```
 
-You can use amongst other functions these functions inside your banAddCommand to return data of the user that got banned and the server that banned the user:
+#### Command Handler Usage:
+For people who use `bot.loadCommands()` handler.
+```javascript
+module.exports = ({
+channel: "ID",
+code: `
+code here
+`,
+type: 'banRemoveCommand'
+})
+```
+#### Example command:
 
-* [$username](../functions/usdusername.md)
-* [$authorID](../functions/usdauthorid.md)
-* [$userTag](../functions/usdusertag.md)
-* [$serverName](../functions/usdservername.md)
-* [$guildID](../functions/usdguildid.md)
-
+```javascript
+module.exports = ({
+channel: "705681477169315863",
+code: `
+$username was unbanned in $serverName
+`,
+type: 'banRemoveCommand'
+})
+```
