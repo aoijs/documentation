@@ -1,17 +1,17 @@
 ---
 description: >-
-  An event that gets executed, if the bot sees a role creation in guilds. To let
-  the bot listen to the event, add one bot.onRoleCreate() callback inside your
-  mainfile.
+  An event that gets executed, if the bot sees a role deletion in one of it'S
+  servers. To let the bot listen to the event, add one bot.onRoleDelete()
+  callback inside your mainfile.
 ---
 
-# bot.onRoleCreate
+# bot.onRoleDelete
 
-This callback triggers every time a role gets created in a server.
+This callback triggers everytime a role gets deleted in a server.
 
 #### Options:
 
-You can use these functions [$newRole\[\]](../functions/usdnewrole.md) with the options below to return new role data:
+You can use these functions [$oldRole\[\]](../functions/usdoldrole.md) with the options below to return old  role data:
 
 * `id` =&gt; The ID of the role
 * `name` "The name of the role
@@ -30,7 +30,7 @@ You can use these functions [$newRole\[\]](../functions/usdnewrole.md) with the 
 #### Usage:
 
 ```javascript
-bot.roleCreateCommand({ //Command
+bot.roleDeleteCommand({ //Command
 channel: "channel ID", //Channel where its being logged
 code: `your code` //Code sent to <channel>
 })
@@ -39,11 +39,11 @@ code: `your code` //Code sent to <channel>
 #### Example Command:
 
 ```javascript
-bot.roleCreateCommand({ 
+bot.roleDeleteCommand({ 
 channel: "772414449839636490", 
 code: `
-Role Created:
-$newRole[name]
+Role Deleted:
+Old Name: $oldRole[name]
 `
 })
 ```
@@ -56,7 +56,7 @@ channel: "ID",
 code: `
 code here
 `,
-type: 'roleCreateCommand'
+type: 'roleDeleteCommand'
 })
 ```
 #### Example command:
@@ -65,9 +65,9 @@ type: 'roleCreateCommand'
 module.exports = ({
 channel: "705681477169315863",
 code: `
-Role Created:
-$newRole[name]
+Role Deleted:
+Old Name: $oldRole[name]
 `,
-type: 'roleCreateCommand'
+type: 'roleDeleteCommand'
 })
 ```
