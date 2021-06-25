@@ -36,7 +36,26 @@ bot.reactionAddCommand({
         code: `$username has reacted with $emojiToString`
 })
 ```
-#### Command Handler:
+#### Command Handler Usage:
+For people who use `bot.loadCommands()` handler.
+```javascript
+module.exports = ({
+channel: "ID",
+code: `
+code here
+`,
+type: 'reactionAddCommand'
+})
+```
+#### Example command:
+
+```javascript
+module.exports = ({
+channel: "705681477169315863",
+code: `$username has reacted with $emojiToString`,
+type: 'reactionAddCommand'
+})
+```
 
 You can use functions like [$onlyForChannels](../functions/usdonlyforchannels.md) or the functions from above in an[ $onlyIf\[\]](../functions/usdonlyif.md) limiter at the bottom of the code to limit your code to specific reactions etc.
 
