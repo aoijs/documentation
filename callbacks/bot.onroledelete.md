@@ -1,38 +1,17 @@
 ---
 description: >-
-  An event that gets executed, if the bot sees a role deletion in one of it'S
-  servers. To let the bot listen to the event, add one bot.onRoleDelete()
-  callback inside your mainfile.
+  An event that gets executed, if the bot sees a role creation in guilds. To let
+  the bot listen to the event, add one bot.onRoleCreate() callback inside your
+  mainfile.
 ---
 
-# bot.onRoleDelete
+# bot.onRoleCreate
 
-This callback triggers everytime a role gets deleted in a server.
-
-#### Usage:
-
-```javascript
-bot.roleDeleteCommand({ //Command
-channel: "channel ID", //Channel where its being logged
-code: `your code` //Code sent to <channel>
-})
-```
-
-#### Example Command:
-
-```javascript
-bot.roleDeleteCommand({ 
-channel: "772414449839636490", 
-code: `
-Role Deleted:
-Old Name: $oldRole[name]
-`
-})
-```
+This callback triggers every time a role gets created in a server.
 
 #### Options:
 
-You can use these functions [$oldRole\[\]](../functions/usdoldrole.md) with the options below to return old  role data:
+You can use these functions [$newRole\[\]](../functions/usdnewrole.md) with the options below to return new role data:
 
 * `id` =&gt; The ID of the role
 * `name` "The name of the role
@@ -48,3 +27,47 @@ You can use these functions [$oldRole\[\]](../functions/usdoldrole.md) with the 
 * `deleted:` =&gt; Whether the role was deleted or not
 * `permissions` =&gt; The permissions for this role
 
+#### Usage:
+
+```javascript
+bot.roleCreateCommand({ //Command
+channel: "channel ID", //Channel where its being logged
+code: `your code` //Code sent to <channel>
+})
+```
+
+#### Example Command:
+
+```javascript
+bot.roleCreateCommand({ 
+channel: "772414449839636490", 
+code: `
+Role Created:
+$newRole[name]
+`
+})
+```
+
+#### Command Handler Usage:
+For people who use `bot.loadCommands()` handler.
+```javascript
+module.exports = ({
+channel: "ID",
+code: `
+code here
+`,
+type: 'roleCreateCommand'
+})
+```
+#### Example command:
+
+```javascript
+module.exports = ({
+channel: "705681477169315863",
+code: `
+Role Created:
+$newRole[name]
+`,
+type: 'roleCreateCommand'
+})
+```
