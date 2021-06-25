@@ -26,7 +26,7 @@ const bot = new Aoijs.Bot({
   //dbhToken: "API KEY", Remove // if using, get an API Key from their Server
   token: "TOKEN", //Discord Bot Token
   prefix: ["PREFIX"], //Change PREFIX to your Prefix
-  autoUpdate: false, // set to true if version should be updated automatically after a package update
+  autoUpdate: false // set to true if version should be updated automatically after a package update
 })
  
 bot.onMessage() // Allows Commands to Executed
@@ -46,7 +46,7 @@ The file where your project can "get" aoi.js
     "name": "-asdf",
     "version": "1.0.0",
     "description": "",
-    "main": "server.js",
+    "main": "server.js", //Your main bot file like for many it's server.js and it can also be index.js
     "scripts": {
       "start": "node server.js"
     },
@@ -56,7 +56,7 @@ The file where your project can "get" aoi.js
     "author": "",
     "license": "ISC",
     "dependencies": {
-      "aoi.js": "^3.0.0"
+      "aoi.js": "^4.0.1"
     }
   }
 ```
