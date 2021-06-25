@@ -28,6 +28,29 @@ I have left $serverName!
 })
 ```
 
+#### Command Handler Usage:
+For people who use `bot.loadCommands()` handler.
+```javascript
+module.exports = ({
+channel: "ID",
+code: `
+code here
+`,
+type: 'botLeaveCommand'
+})
+```
+#### Example command:
+
+```javascript
+module.exports = ({
+channel: "705681477169315863",
+code: `
+I have left $serverName!
+`,
+type: 'botLeaveCommand'
+})
+```
+
 {% hint style="info" %}
 You can use all guild based functions like [$serverName](../functions/usdservername.md) or [$guildID](../functions/usdguildid.md) in these commands but functions like [$getServerInvite](../functions/usdgetserverinvite.md) won't work here.
 {% endhint %}
