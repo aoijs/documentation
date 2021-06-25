@@ -5,6 +5,11 @@ description: >-
   mainfile.
 ---
 
+#### Code Breakdown
+`$serverName` - The name of the server the user left
+
+`$username` - The user who left the server
+
 # bot.onLeave
 
 This callback that allows the bot to log every user who leaves the server.
@@ -24,11 +29,29 @@ Make sure the &lt;channel&gt; is in the server. So recommended to use server var
 bot.leaveCommand({ 
         channel: "782446718704812032", 
         code: `Goodbye, $username, hope you had a good stay at $serverName`
-        /*
-                Code Breakdown
-        $serverName - The name of the server the user left
-        $username - The user who left the server
-        */
+})
+```
+
+#### Command Handler Usage:
+For people who use `bot.loadCommands()` handler.
+```javascript
+module.exports = ({
+channel: "ID",
+code: `
+code here
+`,
+type: 'leaveCommand'
+})
+```
+#### Example command:
+
+```javascript
+module.exports = ({
+channel: "705681477169315863",
+code: `
+Goodbye, $username, hope you had a good stay at $serverName
+`,
+type: 'leaveCommand'
 })
 ```
 
