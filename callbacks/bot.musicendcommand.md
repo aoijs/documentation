@@ -24,3 +24,25 @@ code: `The music queue ended!`
 })
 ```
 
+#### Command Handler Usage:
+For people who use `bot.loadCommands()` handler.
+```javascript
+module.exports = ({
+channel: "ID",
+code: `
+code here
+`,
+type: 'musicEndCommand'
+})
+```
+#### Example command:
+
+```javascript
+module.exports = ({
+channel: "705681477169315863",
+code: `
+The music queue ended!
+`,
+type: 'musicEndCommand'
+})
+```
