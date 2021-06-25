@@ -9,6 +9,21 @@ description: >-
 
 This callback triggers every time a user updates their profile.
 
+#### Options:
+
+You can use the functions [$oldUser\[\]](../functions/usdolduser.md) with the options below to return old user data.
+
+* `id` - The ID of the user 
+* `partial` - Whether the User structure is partial or not 
+* `avatar` - The old avatar of the user 
+* `system` - Whether the user is part of the official discord team 
+* `discriminator` - The outdated discriminator for this user 
+* `tag` - The tag for this user 
+* `bot` - Whether the user is a bot or not 
+* `username` - The old username of this user 
+* `status` - The status of this user 
+* `activities` - The activities for this user
+
 #### Usage:
 
 ```javascript
@@ -29,18 +44,26 @@ $oldUser[avatar]
 })
 ```
 
-#### Options:
+#### Command Handler Usage:
+For people who use `bot.loadCommands()` handler.
+```javascript
+module.exports = ({
+channel: "ID",
+code: `
+code here
+`,
+type: 'userUpdateCommand'
+})
+```
+#### Example command:
 
-You can use the functions [$oldUser\[\]](../functions/usdolduser.md) with the options below to return old user data.
-
-* `id` - The ID of the user 
-* `partial` - Whether the User structure is partial or not 
-* `avatar` - The old avatar of the user 
-* `system` - Whether the user is part of the official discord team 
-* `discriminator` - The outdated discriminator for this user 
-* `tag` - The tag for this user 
-* `bot` - Whether the user is a bot or not 
-* `username` - The old username of this user 
-* `status` - The status of this user 
-* `activities` - The activities for this user
-
+```javascript
+module.exports = ({
+channel: "705681477169315863",
+code: `
+$username has updated their avatar. Old avatar:
+$oldUser[avatar]
+`,
+type: 'userUpdateCommand'
+})
+```
