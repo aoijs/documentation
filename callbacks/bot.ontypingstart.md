@@ -30,3 +30,25 @@ code: `Hey! I see, you're typing? 👀
 });
 ```
 
+#### Command Handler Usage:
+For people who use `bot.loadCommands()` handler.
+```javascript
+module.exports = ({
+channel: "ID",
+code: `
+code here
+`,
+type: 'typingStartCommand'
+})
+```
+#### Example command:
+
+```javascript
+module.exports = ({
+channel: "705681477169315863",
+code: `
+Hey! I see, you're typing? 👀
+`,
+type: 'typingStartCommand'
+})
+```
