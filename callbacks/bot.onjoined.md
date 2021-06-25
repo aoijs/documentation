@@ -9,6 +9,11 @@ description: >-
 
 Callback that triggers every time a user joins a server.
 
+#### Code Breakdown
+`$serverName` - The name of the server the user joined
+
+`$username` - The user who joined the server
+
 #### Usage:
 
 ```javascript
@@ -30,12 +35,30 @@ channel: "782446718704812032",
 code: `
 Welcome to $serverName, $username!
 `
-/*
-Code Breakdown
-$serverName - The name of the server the user joined
-$username - The user who joined the server
-*/
 }) 
+```
+
+#### Command Handler Usage:
+For people who use `bot.loadCommands()` handler.
+```javascript
+module.exports = ({
+channel: "ID",
+code: `
+code here
+`,
+type: 'joinCommand'
+})
+```
+#### Example command:
+
+```javascript
+module.exports = ({
+channel: "705681477169315863",
+code: `
+Welcome to $serverName, $username!
+`,
+type: 'joinCommand'
+})
 ```
 
 {% hint style="warning" %}
