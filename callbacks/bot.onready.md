@@ -26,3 +26,25 @@ bot.readyCommand({
 })
 ```
 
+#### Command Handler Usage:
+For people who use `bot.loadCommands()` handler.
+```javascript
+module.exports = ({
+channel: "ID",
+code: `
+code here
+`,
+type: 'readyCommand'
+})
+```
+#### Example command:
+
+```javascript
+module.exports = ({
+channel: "854291989704343572",
+code: `
+$log[Ready on client $userTag[$clientID]]
+`,
+type: 'readyCommand'
+})
+```
