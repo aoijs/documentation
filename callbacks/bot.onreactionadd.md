@@ -7,6 +7,18 @@ description: >-
 
 # bot.onReactionAdd
 
+#### Functions:
+
+* [$emojiToString](../functions/usdemojitostring.md) =&gt; the exactly emoji itself, either default emoji e.g. `🎉` or `<:emojiname:emojiID>` style. 
+* [$emojiName ](../functions/usdemojiname.md)=&gt; the name of the emoji the user reacted with
+* [$emojiID](../functions/usdemojiid.md) =&gt; the ID of the emoji the user react with \(for custom Emojis\)
+* [$messageID](../functions/usdusermessageid.md) =&gt; to get the messageID the user reacted 
+* $authorMessage =&gt; to get the authorID of the message the user reacted to 
+* [$channelID ](../functions/usdchannelid.md)=&gt; to get the channelID of the message
+* [$channelID ](../functions/usdchannelid.md)=&gt; to get the channelID of the message
+* [$authorID](../functions/usdauthorid.md) =&gt; the ID of the user that reacted
+* [$username](../functions/usdusername.md) =&gt; the username of the user that reacted
+
 #### Usage:
 
 ```javascript
@@ -24,20 +36,7 @@ bot.reactionAddCommand({
         code: `$username has reacted with $emojiToString`
 })
 ```
+#### Command Handler:
 
-#### Functions:
-
-* [$emojiToString](../functions/usdemojitostring.md) =&gt; the exactly emoji itself, either default emoji e.g. `🎉` or `<:emojiname:emojiID>` style. 
-* [$emojiName ](../functions/usdemojiname.md)=&gt; the name of the emoji the user reacted with
-* [$emojiID](../functions/usdemojiid.md) =&gt; the ID of the emoji the user react with \(for custom Emojis\)
-* [$messageID](../functions/usdusermessageid.md) =&gt; to get the messageID the user reacted 
-* $authorMessage =&gt; to get the authorID of the message the user reacted to 
-* [$channelID ](../functions/usdchannelid.md)=&gt; to get the channelID of the message
-* [$channelID ](../functions/usdchannelid.md)=&gt; to get the channelID of the message
-* [$authorID](../functions/usdauthorid.md) =&gt; the ID of the user that reacted
-* [$username](../functions/usdusername.md) =&gt; the username of the user that reacted
-
-{% hint style="info" %}
 You can use functions like [$onlyForChannels](../functions/usdonlyforchannels.md) or the functions from above in an[ $onlyIf\[\]](../functions/usdonlyif.md) limiter at the bottom of the code to limit your code to specific reactions etc.
-{% endhint %}
 
