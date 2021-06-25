@@ -25,5 +25,26 @@ code: `Now Playing: $songInfo[title] of $songInfo[publisher]`
 
 ```
 
+#### Command Handler Usage:
+For people who use `bot.loadCommands()` handler.
+```javascript
+module.exports = ({
+channel: "ID",
+code: `
+code here
+`,
+type: 'musicStartCommand'
+})
+```
+#### Example command:
 
+```javascript
+module.exports = ({
+channel: "705681477169315863",
+code: `
+Now Playing: $songInfo[title] of $songInfo[publisher]
+`,
+type: 'musicStartCommand'
+})
+```
 
