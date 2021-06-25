@@ -9,26 +9,6 @@ description: >-
 
 This callback triggers every time a member gets updated, e.g. role given/removed or nickname changed.
 
-#### Usage:
-
-```javascript
-bot.memberUpdateCommand({ //command
-channel: "channel id", //the channel where the bot will log
-code: `your code` //Message that will be sent to <channel>
-})
-```
-
-#### Example Command:
-
-```javascript
-bot.memberUpdateCommand({ 
-channel: "772414449839636490", 
-code: `$newMember[name]'s permissions has been updated from 
-$oldMember[permissions] to $newMember[permissions]
-`
-})
-```
-
 #### Options:
 
 You can use these functions $newMember\[\] and $oldMember with the options below to return new and old member data:
@@ -52,3 +32,46 @@ You can use these functions $newMember\[\] and $oldMember with the options below
 * `status` - The status for this user 
 * `activities` - The activities for this user
 
+#### Usage:
+
+```javascript
+bot.memberUpdateCommand({ //command
+channel: "channel id", //the channel where the bot will log
+code: `your code` //Message that will be sent to <channel>
+})
+```
+
+#### Example Command:
+
+```javascript
+bot.memberUpdateCommand({ 
+channel: "772414449839636490", 
+code: `$newMember[name]'s permissions has been updated from 
+$oldMember[permissions] to $newMember[permissions]
+`
+})
+```
+
+#### Command Handler Usage:
+For people who use `bot.loadCommands()` handler.
+```javascript
+module.exports = ({
+channel: "ID",
+code: `
+code here
+`,
+type: 'memberUpdateCommand'
+})
+```
+#### Example command:
+
+```javascript
+module.exports = ({
+channel: "705681477169315863",
+code: `
+$newMember[name]'s permissions has been updated from 
+\`$oldMember[permissions]\` to \`$newMember[permissions]\`
+`,
+type: 'memberUpdateCommand'
+})
+```
