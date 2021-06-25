@@ -7,13 +7,13 @@ description: A command that gets executed in an interval as a loop.
 This command loops a code to run every x **milliseconds.**
 
 #### Properties:
-`channel: The channel ID where the code will be executed (Optional)`
+`channel` - The channel ID where the code will be executed (Optional)
 
-`every: Every how much time the code to be executed. [MUST be in MS (milliseconds)]`
+`every` - Every how much time the code to be executed. [MUST be in MS (milliseconds)]
 
-`executeOnStartup: Whether the code should start running as soon as bot gets started or not (True/False)`
+`executeOnStartup` - Whether the code should start running as soon as bot gets started or not (True/False)
 
-`code: The code that is to be looped here`U
+`code` - The code that is to be looped here
 
 #### Usage:
 
