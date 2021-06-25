@@ -9,6 +9,16 @@ description: >-
 
 This callback allows the bot to log every time an invite is deleted
 
+Here are the functions you can use in this callback:
+
+* [$inviteUses ](../functions/usdinviteuses.md)
+* [$inviteURL ](../functions/usdinviteurl.md)
+* [$inviteCode](../functions/usdinvitecode.md) 
+* [$inviteGuildID](../functions/usdinviteguildid.md)
+* [$inviteChannelID ](../functions/usdinvitechannelid.md)
+* [$inviteUserID ](../functions/usdinviteuserid.md)
+* [$inviteMaxUses](../functions/usdinvitemaxuses.md)
+
 #### Usage:
 
 ```javascript
@@ -32,13 +42,28 @@ Channel ID: $inviteChannelID
 }) 
 ```
 
-Here are the functions you can use in this callback:
+#### Command Handler Usage:
+For people who use `bot.loadCommands()` handler.
+```javascript
+module.exports = ({
+channel: "ID",
+code: `
+code here
+`,
+type: 'inviteDeleteCommand'
+})
+```
+#### Example command:
 
-* [$inviteUses ](../functions/usdinviteuses.md)
-* [$inviteURL ](../functions/usdinviteurl.md)
-* [$inviteCode](../functions/usdinvitecode.md) 
-* [$inviteGuildID](../functions/usdinviteguildid.md)
-* [$inviteChannelID ](../functions/usdinvitechannelid.md)
-* [$inviteUserID ](../functions/usdinviteuserid.md)
-* [$inviteMaxUses](../functions/usdinvitemaxuses.md)
-
+```javascript
+module.exports = ({
+channel: "705681477169315863",
+code: `
+Invite was created:
+Creator: $inviteUserID
+URL: $inviteURL
+Channel ID: $inviteChannelID
+`,
+type: 'inviteDeleteCommand'
+})
+```
