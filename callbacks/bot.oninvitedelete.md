@@ -59,7 +59,7 @@ type: 'inviteDeleteCommand'
 module.exports = ({
 channel: "705681477169315863",
 code: `
-Invite was created:
+Invite was deleted:
 Creator: $inviteUserID
 URL: $inviteURL
 Channel ID: $inviteChannelID
