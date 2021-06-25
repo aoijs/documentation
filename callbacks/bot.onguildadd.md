@@ -40,6 +40,29 @@ Hi i am Awesome Bot and I can do many things.
 })
 ```
 
+#### Command Handler Usage:
+For people who use `bot.loadCommands()` handler.
+```javascript
+module.exports = ({
+channel: "ID",
+code: `
+code here
+`,
+type: 'botJoinCommand'
+})
+```
+#### Example command:
+
+```javascript
+module.exports = ({
+channel: "705681477169315863",
+code: `
+Ive joined $serverName!
+`,
+type: 'botJoinCommand'
+})
+```
+
 {% hint style="warning" %}
 Keep in mind: Not all servers have a system channel!
 {% endhint %}
