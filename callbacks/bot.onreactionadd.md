@@ -57,5 +57,6 @@ type: 'reactionAddCommand'
 })
 ```
 
+{% hint style="info" %}
 You can use functions like [$onlyForChannels](../functions/usdonlyforchannels.md) or the functions from above in an[ $onlyIf\[\]](../functions/usdonlyif.md) limiter at the bottom of the code to limit your code to specific reactions etc.
-
+{% hint style="info" %}
