@@ -9,6 +9,24 @@ description: >-
 
 This callback triggers every time a role gets created in a server.
 
+#### Options:
+
+You can use these functions [$newRole\[\]](../functions/usdnewrole.md) with the options below to return new role data:
+
+* `id` =&gt; The ID of the role
+* `name` "The name of the role
+* `position` =&gt; The position of this role
+* `rawPosition` =&gt; The position of this role given by the API
+* `hexColor` =&gt; The hex color for this role
+* `color` =&gt; The color of this role
+* `hoist` =&gt; Whether the role is hoisted or not
+* `mentionable` =&gt; Whether the role is mentionable or not
+* `guildID` =&gt; The ID of the guild the role belongs to
+* `editable` =&gt; Whether the role is editable by the client or not
+* `managed:` =&gt; Whether this role is managed by discord or not \(bot- & booster-roles\)
+* `deleted:` =&gt; Whether the role was deleted or not
+* `permissions` =&gt; The permissions for this role
+
 #### Usage:
 
 ```javascript
@@ -30,21 +48,26 @@ $newRole[name]
 })
 ```
 
-#### Options:
+#### Command Handler Usage:
+For people who use `bot.loadCommands()` handler.
+```javascript
+module.exports = ({
+channel: "ID",
+code: `
+code here
+`,
+type: 'roleCreateCommand'
+})
+```
+#### Example command:
 
-You can use these functions [$newRole\[\]](../functions/usdnewrole.md) with the options below to return new role data:
-
-* `id` =&gt; The ID of the role
-* `name` "The name of the role
-* `position` =&gt; The position of this role
-* `rawPosition` =&gt; The position of this role given by the API
-* `hexColor` =&gt; The hex color for this role
-* `color` =&gt; The color of this role
-* `hoist` =&gt; Whether the role is hoisted or not
-* `mentionable` =&gt; Whether the role is mentionable or not
-* `guildID` =&gt; The ID of the guild the role belongs to
-* `editable` =&gt; Whether the role is editable by the client or not
-* `managed:` =&gt; Whether this role is managed by discord or not \(bot- & booster-roles\)
-* `deleted:` =&gt; Whether the role was deleted or not
-* `permissions` =&gt; The permissions for this role
-
+```javascript
+module.exports = ({
+channel: "705681477169315863",
+code: `
+Role Created:
+$newRole[name]
+`,
+type: 'roleCreateCommand'
+})
+```
