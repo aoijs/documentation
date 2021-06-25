@@ -6,9 +6,14 @@ description: A command that gets executed in an interval as a loop.
 
 This command loops a code to run every x **milliseconds.**
 
-Properties are `code`, `every`, `executeOnStartup` and `channel` .
+#### Properties:
+`channel: The channel ID where the code will be executed (Optional)`
 
-The properties `channel` and `executeOnStartup` are optional. 
+`every: Every how much time the code to be executed. [MUST be in MS (milliseconds)]`
+
+`executeOnStartup: Whether the code should start running as soon as bot gets started or not (True/False)`
+
+`code: The code that is to be looped here`U
 
 #### Usage:
 
@@ -41,7 +46,29 @@ ExecuteOnStartup means when the bot starts/comes online, the loop will start
 */
 ```
 
-{% hint style="warning" %}
-Keep in mind that `every` property is in ms! Watch out not to rate limit your bot!
-{% endhint %}
+#### Command Handler Usage:
+For people who use `bot.loadCommands()` handler.
+```javascript
+module.exports = ({
+channel: "ID",
+code: `
+code here
+`,
+executeOnStartup: true/false,
+every: (time in ms),
+type: 'loopCommand'
+})
+```
+#### Example command:
 
+```javascript
+module.exports = ({
+channel: "804505461076131840",
+code: `
+hi
+`,
+executeOnStartup: true,
+every: 50000,
+type: 'loopCommand'
+})
+```
