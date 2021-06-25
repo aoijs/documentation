@@ -38,7 +38,7 @@ Creator: $inviteUserID
 URL: $inviteURL
 Uses: $inviteUses
 Channel ID: $inviteChannelID
-    ` 
+` 
 }) 
 ```
 
