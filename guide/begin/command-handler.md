@@ -109,6 +109,12 @@ module.exports = [{
 "stageIntanceCreate"
 "stageIntanceUpdate"
 "stageIntanceDelete"
+"threadCreate"
+"threadDelete"
+"threadListSync"
+"threadMemberUpdate"
+"threadMembersUpdate"
+"threadUpdate"
 //GUILD_MEMBERS INTENT 
 "join"
 "leave"
