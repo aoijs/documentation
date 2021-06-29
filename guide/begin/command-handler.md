@@ -17,7 +17,7 @@ const bot = new Aoijs.Bot({
   prefix: ["PREFIX"], //Change PREFIX to your Prefix
   autoUpdate: false, // set to true if version should be updated automatically after a package update
 })
-const loader = new aoi.LoadCommands(bot,true)
+const loader = new Aoijs.LoadCommands(bot,true)
 loader.load(bot.cmd,"./commands/",true)
 bot.onMessage() // Allows Commands to Executed
 
