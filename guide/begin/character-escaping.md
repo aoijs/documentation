@@ -8,26 +8,27 @@ description: >-
 
 #### Escaping characters:
 
-`[` =&gt; `#RIGHT#` 
-
-`]` =&gt; `#LEFT#` 
-
-`;` =&gt; `#SEMI#` 
-
-`$` =&gt; `#CHAR#`
-
-`:` =&gt; `#RIGHT_CLICK#` 
-
-`<` =&gt; `#LEFT_CLICK#` 
-
-`=` =&gt; `#EQUAL#` 
-
-`}` =&gt; `#LEFT_BRACKET#` 
-
-`{` =&gt; `#RIGHT_BRACKET#` 
-
-`:` =&gt; `#COLON#` 
-
+> `[` =&gt; `#RIGHT#` 
+>
+> `]` =&gt; `#LEFT#` 
+>
+> `;` =&gt; `#SEMI#` 
+>
+> `$` =&gt; `#CHAR#`
+>
+> `:` =&gt; `#RIGHT_CLICK#` 
+>
+> `<` =&gt; `#LEFT_CLICK#` 
+>
+> `=` =&gt; `#EQUAL#` 
+>
+> `}` =&gt; `#LEFT_BRACKET#` 
+>
+> `{` =&gt; `#RIGHT_BRACKET#` 
+>
+> `:` =&gt; `#COLON#` 
+>
+> `,` => `#COMMA#`
 #### more:
 
 Backspace =&gt; `\b`   
