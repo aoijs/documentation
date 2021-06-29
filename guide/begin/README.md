@@ -71,7 +71,7 @@ The file where your project can "get" aoi.js
     "author": "",
     "license": "ISC",
     "dependencies": {
-      "aoi.js": "^3.0.0"
+      "aoi.js": "^5.0.0"
     }
   }
 ```
@@ -93,7 +93,8 @@ bot.command({
 bot.status({
       text: "aoi.js",
       type: "PLAYING",
-      time: 12
+      time: 12,
+      shardID: 0 // optional
 })
 ```
 
