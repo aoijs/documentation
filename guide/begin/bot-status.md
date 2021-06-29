@@ -12,6 +12,22 @@ It's very simple!
 You need to enter the following, in your main index.
 {% endhint %}
 
+ #### Available Options:
+>text
+>
+>type
+>
+>time
+>
+>url
+>
+>status
+>
+>shardID
+>
+>
+>**Note: url Status and shardID are optionals**
+
 ```javascript
 bot.status({
   text: "Text",
@@ -90,7 +106,7 @@ url: "Enter URL"
 const bot = new Aoijs.Bot({
 token: "TOKEN", 
 prefix: "!",
-mobile: true
+mobilePlatform: true
 })
 ```
 
