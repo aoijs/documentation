@@ -34,7 +34,7 @@ Open Source for the Community ❤️
 
 #### Setup
 
-```ja
+```js
 const Aoijs = require("aoi.js")
 
 const bot = new Aoijs.Bot({
@@ -61,7 +61,7 @@ What are variables?
 
 Variables are Key-Value based data which is stored in the database, useful for Economy and Leveling system as it is allows you to save data.
 
-```text
+```js
 bot.variables({
   VariableName1: "Value", //Returns "Value"
   VariableName2: "Value2" //Returns "Value2"
@@ -74,7 +74,7 @@ What are callbacks?
 
 It's simple and easy process, it essentially allows you to trigger events, such as user joining a Guild. This will trigger an event, causing commands with supported type for each callbacks to be executed such as.
 
-```text
+```js
 bot.joinCommand({
         channel: "Channel ID", //Enter a Channel ID
         code: `<@$authorID> just joined, welcome!` //This can be changed
@@ -88,7 +88,7 @@ bot.onJoined()
 
 With easy and simple functions, you can make Slash Commands with your Bots quick!
 
-```text
+```js
 bot.command({
     name: "slash",
     code: `$createSlashCommand[$guildID;version;Returns Aoi.js Version]`
@@ -108,7 +108,7 @@ With our powerful Package, we incorporated Music with several functions. We allo
 
 **Music Setup Example**
 
-```text
+```js
 bot.command({
 name: "play", //Trigger name (command name)
 code: `$playSong[song;leave vc time;defean (yes or no);leave when vc empty (yes/no);error]`
