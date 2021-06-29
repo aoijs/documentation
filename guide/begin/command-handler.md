@@ -12,17 +12,15 @@ Main file will allow the bot to be ran, and commands to be kept This can be name
 const Aoijs = require("aoi.js")
  
 const bot = new Aoijs.Bot({
-  sharding: false, //true or false 
-  shardAmount: 2, //Shard amount 
-  mobile: false, //true or false - Discord Mobile Status
-  //dbhToken: "API KEY", Remove // if using, get an API Key from their Server
+  intents:["GUILD","GUILD_MESSAGES"],
   token: "TOKEN", //Discord Bot Token
   prefix: ["PREFIX"], //Change PREFIX to your Prefix
   autoUpdate: false, // set to true if version should be updated automatically after a package update
 })
- 
+const loader = new aoi.LoadCommands(bot,true)
+loader.load(bot.cmd,"./commands/",true)
 bot.onMessage() // Allows Commands to Executed
-bot.loadCommands(`./commands/`) //Allows Commands executed by `commands` folder
+
 bot.command({
 name: "ping", 
 code: `Pong! \`$ping\`` 
@@ -60,13 +58,13 @@ module.exports = {
 
 ### Using different command types \(e.g. commands from callback events\) in the command handler:
 
-For other commands, like the bot.joinCommand, you just have to find the part behind `bot.`- take it and insert this part at the type option as in the example below. `bot.joinCommand` becomes `type: 'joinCommand',` and   
-`bot.userUpdateCommand` becomes `type: 'userUpdateCommand'` etc. like in the code below.  
-The type line isn't needed for normal `bot.command` commands. Just write your code like in the code block above.
+For other commands, like the bot.joinCommand,`type` will be more close to the callback or part after removing `bot.` and `Command` as in the example below. `bot.joinCommand` becomes `type: 'join',` and   
+`bot.userUpdateCommand` becomes `type: 'userUpdate'` etc. like in the code below.  
+The type line isn't needed for normal `bot.command` but u can use "default" for them in commands. Just write your code like in the code block above.
 
 ```javascript
 module.exports = {
-      type: 'joinCommand',
+      type: 'join',
       channel: "$systemChannelID",
       code: `your code/message`
 }
@@ -78,7 +76,7 @@ If you want to use multiple commands inside one command handler file, do it like
 
 ```javascript
 module.exports = [{
-  type: 'joinCommand'
+  type: 'join'
   channel: '773364744240496640',
   code: `Welcome $userTag !!`,
 }, {
@@ -87,9 +85,75 @@ module.exports = [{
 }]
 ```
 
-#### YouTube Tutorial: How to use different command types in command handler \|\| Aoi.JS
-
-{% hint style="info" %}
-Check out the YouTube tutorial [How to use Callbacks in Handler](https://www.youtube.com/watch?v=_g2M8UdsctA) on Aoi.JS
-{% endhint %}
+#### Types
+**ALL AVAILABLE TYPES ARE:**
+```js
+//GUILD_MESSAGES INTENTS 
+"default" 
+"awaited"
+"messageDelete" 
+"messageUpdate" 
+"messageDeleteBulk" 
+//GUILDS INTENTS
+"guildJoin"
+"guildUpdate"
+"guildLeave"
+"guildUnavailable"
+"roleCreate"
+"roleUpdate"
+"roleDelete"
+"channelCreate"
+"channelUpdate"
+"channelDelete"
+"channelPinsUpdate"
+"stageIntanceCreate"
+"stageIntanceUpdate"
+"stageIntanceDelete"
+//GUILD_MEMBERS INTENT 
+"join"
+"leave"
+"memberUpdate"
+"memberAvailable"
+"memberChunk"
+//GUILD_EMOJIS INTENT 
+"emojiCreate"
+"emojiUpdate"
+"emojiDelete"
+//GUILD_BANS INTENT 
+"banAdd"
+"banRemove"
+//GUILD_WEBHOOKS INTENT 
+"webhookUpdate"
+//GUILD_INVITES INTENT
+"inviteCreate"
+"inviteDelete"
+//GUILD_VOICE_STATES INTENT
+"voiceStateUpdate"
+//GUILD_PRESENCES INTENT
+"presenceUpdate"
+//GUILD_MESSAGE_REACTIONS INTENT
+"reactionAdd"
+"reactionRemove"
+"reactionRemoveEmoji"
+"reactionRemoveAll"
+//GUILD_TYPING_START INTENT 
+"typingStart"
+//no intent required 
+"loop"
+"timeout"
+"pulse"
+"ready"
+"variableCreate"
+"variableDelete"
+"variableUpdate"
+"functionError"
+"interaction"
+"applicationCmdCreate"
+"applicationCmdUpdate"
+"applicationCmdDelete"
+"userUpdate"
+"rateLimit"
+"musicStart"
+"musicEnd"  
+```
 
