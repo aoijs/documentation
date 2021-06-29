@@ -34,10 +34,11 @@ Open Source for the Community ❤️
 
 #### Setup
 
-```text
+```ja
 const Aoijs = require("aoi.js")
 
 const bot = new Aoijs.Bot({
+intents:["GUILDS","GUILD_MESSAGES"],
 token: "TOKEN", //Discord Bot Token
 prefix: "!" //Customizable
 })
