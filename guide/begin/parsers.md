@@ -1,6 +1,6 @@
 ---
 description: >-
-  Function internal functions aka Embed Errors are special functions that can be
+  Function internal functions aka parsers are special functions that can be
   used inside message fields of functions to build the message as an embed
   message or to execute awaited commands with it.
 ---
@@ -50,7 +50,7 @@ description: >-
 
 #### Where to use
 
-You can use the embed error functions inside all functions they have message or error message field in it. Among users the following functions:
+You can use the embed-errors functions inside all functions they have message or error message field in it. Among users the following functions:
 
 * [$sendMessage](../../functions/usdsendmessage.md)
 * [$channelSendMessage](../../functions/usdchannelsendmessage.md)
