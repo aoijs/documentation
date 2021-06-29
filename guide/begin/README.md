@@ -22,7 +22,7 @@ const Aoijs = require("aoi.js")
 const bot = new Aoijs.Bot({
   mobilePlatform: false, //true or false - Discord Mobile Status
   //dbhToken: "API KEY", Remove // if using, get an API Key from their Server
-  intents:["GUILD","GUILD_MESSAGES"],//intents required for your Bot. "all" For enabling all intents. (This is required)
+  intents:["GUILDS","GUILD_MESSAGES"],//intents required for your Bot. "all" For enabling all intents. (This is required)
   token: "TOKEN", //Discord Bot Token
   prefix: ["PREFIX"], //Change PREFIX to your Prefix
   autoUpdate: false, // set to true if version should be updated automatically after a package update
