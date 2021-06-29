@@ -7,14 +7,16 @@ Sharding is only necessary for bots in 2,000+ Guilds
 #### How to shard
 
 ```javascript
-const bot = new Aoijs.bot({
-    sharding: true,
-    shardAmount: 2,
-    token: "token",
-    prefix: "prefix"
-})
+const shard = new Aoijs.ClientShard("your mainFile"/* example: ./index.js */,options /*(optional)*/,bot)
 ```
-
+#### Shard Events 
+```js
+"onDisconnect()"
+"onError()"
+"onReady()"
+"onReconnecting()"
+"onResume()"
+```
 #### Finding current guild's shard ID
 
 ```javascript
