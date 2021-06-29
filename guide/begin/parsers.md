@@ -46,7 +46,7 @@ description: >-
 
 # Component-Parser 
 * `{actionRow:type:buttons}` => adds a actionRows for buttons. max 5 per interaction/message 
-* `{button:label:type:style:disabled (true/false):<:emoji:here>(for default emojis format is `✅,0,false`)}
+* `{button:label:type:style:disabled (true/false):<:emoji:here>(for default emojis format is "✅,0,false")}` => adds a button 
 
 #### Where to use
 
