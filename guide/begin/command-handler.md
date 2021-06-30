@@ -18,7 +18,7 @@ const bot = new Aoijs.Bot({
   //dbhToken: "API KEY", Remove // if using, get an API Key from their Server
   token: "TOKEN", //Discord Bot Token
   prefix: ["PREFIX"], //Change PREFIX to your Prefix
-  autoUpdate: false, // set to true if version should be updated automatically after a package update
+  autoUpdate: false // set to true if version should be updated automatically after a package update
 })
  
 bot.onMessage() // Allows Commands to Executed
