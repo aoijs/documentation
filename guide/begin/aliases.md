@@ -22,12 +22,12 @@ Re-update your server.js to this:
 
 ```javascript
 const Aoijs = require("aoi.js")
- 
+
 const bot = new Aoijs.Bot({
 token: "TOKEN", 
 prefix: "!" 
 });
- 
+
 bot.onMessage();
 
 bot.loadCommands(`./commands/`);

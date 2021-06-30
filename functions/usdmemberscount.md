@@ -22,7 +22,7 @@ This only works in Guilds, otherwise will return an error.
 Prototype: $allMembersCount
 {% endhint %}
 
-### Member Count of a certain status
+## Member Count of a certain status
 
 * $membersCount\[$guildID;online\] - returns the amount of online people in the guild.
 * $membersCount\[$guildID;Idle\] - returns the amount of idle people in the guild.
