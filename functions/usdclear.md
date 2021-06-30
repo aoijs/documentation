@@ -1,12 +1,14 @@
 ---
-description: Clears up to 100 messages newer than 2 weeks. Clears more than 100 only if user filter is used.
+description: >-
+  Clears up to 100 messages newer than 2 weeks. Clears more than 100 only if
+  user filter is used.
 ---
 
 # $clear
 
 This function clears the specified amount of messages from the given channel
 
-#### Fields
+## Fields
 
 This function has 1 required field and three optional fields:
 
@@ -17,14 +19,14 @@ This function has 1 required field and three optional fields:
 
 Raw Usage: `$clear[amount;userFilter (optional);channelID (optional);return amount (optional)]`
 
-#### Options
+## Options
 
 * Amount - The amount of messages the bot will delete
-* User Filter - The user the bot is deleting messages from (User ID/everyone)
+* User Filter - The user the bot is deleting messages from \(User ID/everyone\)
 * Channel ID - The channel the bot is deleting messages from
-* Return amount - Returns the amount of deleted messages (yes/no)
+* Return amount - Returns the amount of deleted messages \(yes/no\)
 
-#### Usage
+## Usage
 
 Without Optional Fields
 

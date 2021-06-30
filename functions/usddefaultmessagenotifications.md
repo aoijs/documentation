@@ -10,7 +10,7 @@ Returns either `Mentions` or `All`.
 
 Raw usage: `$defaultMessageNotifications[guildID (optional)]`
 
-#### Usage:
+## Usage:
 
 Returning the default message notifications type of the current guild:
 
