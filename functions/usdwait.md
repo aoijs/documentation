@@ -29,7 +29,7 @@ name: "wait",
 code: `
 $sendMessage[Bye;no]
 $wait[5s]
-$sendMessage[Bye;no]
+$sendMessage[Hi;no]
 `
 })
 /*
