@@ -4,6 +4,16 @@ description: 'Aoi.JS - This Package, allows you to make Discord Bot with ease!'
 
 # Changelog
 
+## Aoi.JS - 4.0.2
+
+### Fixed / Improved
+
+* Improved logging to Console 
+* Updated `ytdl-core` dependency *music works*
+* Updated README.md
+* Updated package description
+* Updated `index.js` prefix string.
+
 ## Aoi.JS - 4.0.1
 
 ### Added
