@@ -31,7 +31,7 @@ $addTimestamp
 }) //Check below for the bots response
 ```
 
-![](../.gitbook/assets/image%20%2839%29%20%282%29%20%282%29%20%281%29.png)
+![](../.gitbook/assets/image%20%2839%29%20%282%29%20%282%29%20%282%29%20%283%29%20%281%29.png)
 
 You can also add some text at the footer!
 

@@ -9,7 +9,7 @@ description: 'Aoi.JS - This Package, allows you to make Discord Bot with ease!'
 ### Fixed / Improved
 
 * Improved logging to Console 
-* Updated `ytdl-core` dependency *music works*
+* Updated `ytdl-core` dependency _music works_
 * Updated README.md
 * Updated package description
 * Updated `index.js` prefix string.
@@ -28,15 +28,15 @@ description: 'Aoi.JS - This Package, allows you to make Discord Bot with ease!'
 
 * Fixed ComponentParser 
 * Fixed actionRow duping on using more than 1 actionRow
-* Fixed ErrorParser but now  whole field has to be used 
+* Fixed ErrorParser but now whole field has to be used
 
   for example {author:hi} won't work but {author:hi::} will
 
-  \(note this is only for apiMessage , buttonCollector and awaitButtons 
+  \(note this is only for apiMessage , buttonCollector and awaitButtons
 
   \(because they operate on Discord API\)
 
-* Fixed Interaction type in interactionCommand handler which earlier made buttonCollector and awaitButtons not usable in V4 
+* Fixed Interaction type in interactionCommand handler which earlier made buttonCollector and awaitButtons not usable in V4
 * Fixed $creationDate \(again\)
 * Changed parse-ms version \(2.0.0\)
 

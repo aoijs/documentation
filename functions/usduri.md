@@ -4,11 +4,11 @@ description: Decodes or Encodes an URL.
 
 # $uri
 
-This function decodes or encodes an URL. 
+This function decodes or encodes an URL.
 
 Raw usage: `$uri[encode/decode;text]`
 
-#### Example usage to encode:
+## Example usage to encode:
 
 The following example returns `Hello%20ElTuna%230001!%20(this%20is%20a%20test)`
 
@@ -20,7 +20,7 @@ $uri[encode;Hello ElTuna#0001! (this is a test)]
 `})
 ```
 
-#### Example usage to decode:
+## Example usage to decode:
 
 The following example returns `Hello ElTuna#0001! (this is a test)`
 
