@@ -1,18 +1,18 @@
 ---
-description: Returns the amount of emojis in the current guild
+description: Returns the amount of emojis in a guild where the bot is in.
 ---
 
 # $emojiCount
 
-This function returns the amount of emojis in the current guild
+This function returns the amount of emojis in a guild
 
 Raw usage: `$emojiCount[type (optional);guildID (optional)]`
 
 #### Types:
 
 * `all` or empty field =&gt; returns total amount of custom emojis the bot has access to \(animated and normal\)
-* `animated` =&gt; returns amount of non-animated custom emojis emojis
-* `normal` =&gt; returns amount of non-animated custom emojis emojis
+* `animated` =&gt; returns amount of animated custom emojis
+* `normal` =&gt; returns amount of non-animated custom emojis
 
 #### Total emoji count:
 
