@@ -78,9 +78,9 @@ If you want to use multiple commands inside one command handler file, do it like
 
 ```javascript
 module.exports = [{
-  type: 'joinCommand'
+  type: 'joinCommand',
   channel: '773364744240496640',
-  code: `Welcome $userTag !!`,
+  code: `Welcome $userTag !!`
 }, {
   name: 'ping',
   code: `Pong! $pingms`
