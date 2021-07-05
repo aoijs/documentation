@@ -12,7 +12,7 @@ Hyperlinks only work inside $description and embed fields.
 bot.command({
 name: "hyperlink", 
 code: `
-$description[[Package](https://www.npmjs.com/package/aoi.js)]` 
+$description[[Package](https://www.npmjs.com/package/aoi.js 'click')]` 
 })
 ```
 
