@@ -13,7 +13,7 @@ This function has 1 required field
 1. Variable \(Required\)
 2. Message ID \(Optional\)
 
-Raw Usage: `$getMemberVar[variable;messageID (optional)]`
+Raw Usage: `$getMessageVar[variable;messageID (optional)]`
 
 #### Options
 
