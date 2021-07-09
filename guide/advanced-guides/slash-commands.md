@@ -203,7 +203,7 @@ Let's make a simple slash command that will reply with the current package versi
 
 ```javascript
 bot.command({
-name: "slash"
+name: "slash",
 code: `
 $createSlashCommand[$guildID;version;Return's Aoi.js's current version]`
 //This will make our slash command
