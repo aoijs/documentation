@@ -14,9 +14,11 @@ description: >-
 
 `;` =&gt; `#SEMI#` 
 
+`:` =&gt; `#COLON#` 
+
 `$` =&gt; `#CHAR#`
 
-`:` =&gt; `#RIGHT_CLICK#` 
+`>` =&gt; `#RIGHT_CLICK#`
 
 `<` =&gt; `#LEFT_CLICK#` 
 
@@ -25,8 +27,6 @@ description: >-
 `}` =&gt; `#LEFT_BRACKET#` 
 
 `{` =&gt; `#RIGHT_BRACKET#` 
-
-`:` =&gt; `#COLON#` 
 
 #### more:
 
