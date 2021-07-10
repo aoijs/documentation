@@ -1,5 +1,5 @@
 ---
-description: Welcome to Aoi.JS Documentarian Page - Functions / Callbacks
+description: Welcome to the Aoi.JS Documentation Page - Functions / Callbacks
 ---
 
 # Introduction
@@ -14,10 +14,10 @@ description: Welcome to Aoi.JS Documentarian Page - Functions / Callbacks
 
 Aoi.JS is a package with simplified and ready-to-use functions for Discord Bot Developers to develop their own Discord Bots.
 
-Aiming to be the easiest package to learn   
- It's swift and flexible using functions.
+- We are aiming to be the easiest package to learn.
+- It's powerful with easy-to-use functions.
 
-Open Source for the Community ❤️ 
+- Open source to the community. 
 
 ### Installation
 
@@ -44,31 +44,26 @@ code: `Pong! $pingms` //Code
 })
 
 bot.readyCommand({
-    channel: "", //You can use this or not
+    channel: "",
     code: `$log[Ready on $userTag[$clientID]]` //Example Ready on Client
 })
 ```
 
-#### Optional packages
+### Features
+
+Aoi.JS has lots of features to fit your bot's needs.
+
+* [Music](https://aoi.leref.ga/guide/music)
+* [Slash Commands](https://aoi.leref.ga/guide/advanced-guides/slash-commands) *\(and other interactions\)*
+* [Custom Events](https://aoi.leref.ga/guide/extras/custom-events)
+* [Sharding](https://aoi.leref.ga/guide/extras/sharding)
+* [...And More](https://aoi.leref.ga/)
+
+### Optional packages
 
 * [@discordjs/opus](https://www.npmjs.com/package/@discordjs/opus) for encoding, primarily used for Music \(`npm install @discordjs/opus`\)
 * [ffmpeg-static](https://github.com/discord/ffmpeg-static) for allowing Music Filters to run smoothly \(`npm install ffmpeg-static`\)
 * [danbot-hosting](https://www.npmjs.com/package/danbot-hosting) for posting stats to their API \(`npm install danbot-hosting`\)
-
-**Music Integration**
-
-With our powerful Package, we incorporated Music with several functions. We allowed customization and control over what you want.
-
-**Music Example**
-
-```javascript
-bot.command({
-name: "play",
-code: `$playSong[Music Name;Something went wrong!]`
-})
-```
-
-More Information in our [Documentation](https://aoi.leref.ga/guide/music)
 
 ### Links
 
@@ -79,5 +74,4 @@ More Information in our [Documentation](https://aoi.leref.ga/guide/music)
 
 ### Contributing
 
-Please read [Contributing](https://github.com/aoijs/aoi.js/blob/master/.github/CONTRIBUTING.md)
-
+If you could like to contribute, please read [Contributing](https://github.com/aoijs/aoi.js/blob/master/.github/CONTRIBUTING.md).
