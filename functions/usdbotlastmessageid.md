@@ -13,8 +13,8 @@ Message ID is: $loop[1;cmd]
 })
 
 bot.awaitedCommand({
-nme: "cmd",
+name: "cmd",
 code: `$botLastMessageID`
-)}
+})
 ```
 
