@@ -12,9 +12,9 @@ npm i aoi.js
 
 ![:warning:](https://canary.discord.com/assets/289673858e06dfa2e0e3a7ee610c3a30.svg) Installing Aoi.JS can be different depending on your host. Please check \#video-tutorials for exact guides.
 
-## **Your main file**
+## **Main File**
 
-Main file will allow the bot to be ran, and commands to be kept. This can be named server.js, index.js or whatever you want.
+Main file will allow the bot to run, and commands to be kept. This can be named `server.js`, `index.js`, or whatever you want.
 
 ```javascript
 const Aoijs = require("aoi.js")
@@ -37,9 +37,9 @@ code: `Pong! \`$ping\``
 })
 ```
 
-## P**ackage.json**
+## package.json
 
-The file where your project can "get" aoi.js
+The file where your project can "get" aoi.js.
 
 ```javascript
 {
@@ -61,9 +61,11 @@ The file where your project can "get" aoi.js
   }
 ```
 
-![:warning:](https://canary.discord.com/assets/289673858e06dfa2e0e3a7ee610c3a30.svg) To update Aoi.JS, change the version number to latest via [\#changelog ](https://discord.gg/TbvJSCsM7X)
+![:warning:](https://canary.discord.com/assets/289673858e06dfa2e0e3a7ee610c3a30.svg) To update Aoi.JS, change the version number to latest via [\#changelog ](https://discord.gg/TbvJSCsM7X).
 
-### **Basic Command Format**
+![:warning:](https://canary.discord.com/assets/289673858e06dfa2e0e3a7ee610c3a30.svg) **If you are using glitch or repl.it, do not use `npm i aoi.js`. If you add package.json, it will install the package automatically!**
+
+### Basic Command Format
 
 ```javascript
 bot.command({
@@ -72,7 +74,7 @@ bot.command({
 })
 ```
 
-### **Simple Status**
+### Simple Status
 
 ```javascript
 bot.status({
@@ -81,6 +83,3 @@ bot.status({
       time: 12
 })
 ```
-
-![:warning:](https://canary.discord.com/assets/289673858e06dfa2e0e3a7ee610c3a30.svg) **If you are using glitch or repl.it. Do not use `npm i aoi.js` If you add package.json, It will install the package automatically!**
-
