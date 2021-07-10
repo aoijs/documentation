@@ -1,5 +1,5 @@
 ---
-description: Aliases
+description: Aliases allow users to run the same command using different triggers.
 ---
 
 # Aliases
@@ -9,31 +9,14 @@ description: Aliases
 ```javascript
 bot.command({
 name: "name",
-aliases: ['name2','name3'], // If you want to do only one aliase you can do ['name2'] or just 'name2'
+aliases: ['name2','name3'],
 code: `code`
 })
 ```
 
+*Aliases are listed in a [array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array).*
+
 ## Aliases for Command Handler
-
-{% hint style="danger" %}
-Re-update your server.js to this:
-{% endhint %}
-
-```javascript
-const Aoijs = require("aoi.js")
-
-const bot = new Aoijs.Bot({
-token: "TOKEN", 
-prefix: "!" 
-});
-
-bot.onMessage();
-
-bot.loadCommands(`./commands/`);
-```
-
-### Aliases in your file.js in commands folder
 
 ```javascript
 module.exports = ({
@@ -42,4 +25,3 @@ aliases: ['name2','name3'],
 code: `code`
 })
 ```
-
