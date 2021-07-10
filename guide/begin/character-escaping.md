@@ -1,46 +1,35 @@
 ---
 description: >-
-  With this character usages you can let the bot return the given caracters
-  without accepting this as a separator or as the end of a function.
+Character escaping is useful for using special characters inside functions.
 ---
 
 # Character Escaping
 
-#### Escaping characters:
+### List
 
-`[` =&gt; `#RIGHT#` 
+* `[` - `#RIGHT#` 
+* `]` - `#LEFT#` 
+* `;` - `#SEMI#` 
+* `$` - `#CHAR#`
+* `:` - `#RIGHT_CLICK#` 
+* `<` - `#LEFT_CLICK#` 
+* `=` - `#EQUAL#` 
+* `}` - `#LEFT_BRACKET#` 
+* `{` - `#RIGHT_BRACKET#` 
+* `:` - `#COLON#` 
 
-`]` =&gt; `#LEFT#` 
+### Extended
 
-`;` =&gt; `#SEMI#` 
-
-`$` =&gt; `#CHAR#`
-
-`:` =&gt; `#RIGHT_CLICK#` 
-
-`<` =&gt; `#LEFT_CLICK#` 
-
-`=` =&gt; `#EQUAL#` 
-
-`}` =&gt; `#LEFT_BRACKET#` 
-
-`{` =&gt; `#RIGHT_BRACKET#` 
-
-`:` =&gt; `#COLON#` 
-
-#### more:
-
-Backspace =&gt; `\b`   
-Form Feed =&gt; `\f`   
-New Line =&gt; `\n`  
-Carriage Return =&gt; `\r`  
-Horizontal Tabulator =&gt; `\t`  
-Vertical Tabulator =&gt; `\v`  
-Single quote =&gt; `\'`  
-Double quote =&gt; `\"`  
-Backslash =&gt; `\`
+* Backspace - `\b`   
+* Form Feed - `\f`   
+* New Line - `\n`  
+* Carriage Return - `\r`  
+* Horizontal Tabulator - `\t`  
+* Vertical Tabulator - `\v`  
+* Single Quote - `\'`  
+* Double Quote - `\"`  
+* Backslash - `\`
 
 {% hint style="info" %}
-These character escapes are useful for using special characters inside functions, e.g. in the text field of [$sendMessage](../../functions/usdsendmessage.md).
+You can escape most characters using `\character`.
 {% endhint %}
-
