@@ -1,5 +1,5 @@
 ---
-description: All available permissions can be found here
+description: All available permissions can be found here.
 ---
 
 # Permissions
