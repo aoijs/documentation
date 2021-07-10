@@ -1,49 +1,42 @@
 ---
 description: >-
-  Function internal functions aka Embed Errors are special functions that can be
-  used inside message fields of functions to build the message as an embed
-  message or to execute awaited commands with it.
+Subset-functions (aka Embed Errors) are functions that can be used inside message fields of functions, to build the message as an embed message or execute awaited commands.
 ---
 
 # Embed Errors
 
-* `{title:text}` =&gt; embed's 
-* `{url:link}` =&gt; embed's title hyperlink url
-* `{footer:text:url}` =&gt; embed's footer text and optional embed's icon image url, embed needs title
-* `{description:text}` =&gt; embed's description
-* `{color:hex}` =&gt; embed's hex color code
-* `{author:text:url}` =&gt; the embed's author and optional author image uld
-* `{thumbnail:url}` =&gt; the embed's thumbail image url
-* `{field:name:value:inline}` =&gt; embed field with optional inline field \(yes/no\)
-* `{timestamp:ms}` =&gt; embed timestamp with optional ms field
-* `{execute:awaited command name}` =&gt; execute awaited command when the function gets executed
-* `{image:url}` =&gt; the embed's image url
-* `{reactions:emoji,emoji2,...}` =&gt; emojis that will be added as reaction to the bot's message
-* `{suppress:yes/no}` =&gt; to suppress the error message
-* `{delete:time}` =&gt; delete the message after given time 
-* `{attachment:name.extension:url}` =&gt; send an attachment with the message
-* `{edit:duration:{new message}:{new message}:{...}}` =&gt; edit the message after given time
+* `{attachment:name.extension:url}` - Sends an attachment with the bot's message.
+* `{author:text:imageURL}` - The embed author text, optionally the author icon.
+* `{color:colorHex}` - The embed border color.
+* `{delete:duration}` - Deletes the bot's response after 'duration'.
+* `{description:text}` - The embed description.
+* `{edit:duration:{new message}:{new message}:{...}}` - Edits the bot's message after 'duration'.
+* `{execute:awaitedCommandName}` - Executes a awaited command.
+* `{field:name:value:inline}` - Adds a field to the embed. Optionally, you can inline the field \(yes/no\).
+* `{footer:text:imageURL}` - The embed footer text, optionally footer icon. Requires a title set.
+* `{image:url}` - The embed's image.
+* `{reactions:emoji,emoji2,...}` - Reacts to the bot's message with the emojis.
+* `{suppress:yes/no}` - Whether to suppress the error message or not.
+* `{thumbnail:url}` - The embed thumbail image.
+* `{timestamp:milliseconds}` - Sets the embed timestamp. Optionally, you can add in the 'milliseconds' field.
+* `{title:text}` - The embed title.
+* `{url:link}` - Hyperlink for the embed title (requires a title).
 
-#### Where to use
+#### Supported Functions
+This is a list of functions the subset-functions are supported in.
 
-You can use the embed error functions inside all functions they have message or error message field in it. Among users the following functions:
-
-* [$sendMessage](../../functions/usdsendmessage.md)
-* [$channelSendMessage](../../functions/usdchannelsendmessage.md)
-* [$sendDM](../../functions/usdsenddm.md)
-* [$sendCrosspostingMessgae](../../functions/usdsendcrosspostingmessage.md)
-* [$sendWebhook](../../functions/usdsendwebhook.md)
-* [$onlyIf](../../functions/usdonlyif.md)
-* [$onlyPerms](../../functions/usdonlyperms.md)
-* [$onlyBotPerms](../../functions/usdonlybotperms.md)
-* [$onlyIfMessageContains](../../functions/usdonlyifmessagecontains.md)
-* [$suppressErrors](../../functions/usdsuppresserrors.md)
 * [$argsCheck](../../functions/usdargscheck.md)
-* [$onlyForIDs](../../functions/usdonlyforids.md) and other ID limiters
-* [$cooldown](../../functions/usdcooldown.md) and other cooldown functions
-* [$blackListServerIDs ](../../functions/usdblacklistserverids.md)and other blacklist functions
-
-{% hint style="info" %}
-All of the embed functions are optional. Only url field needs a title field too.
-{% endhint %}
-
+* [$blackListServerIDs ](../../functions/usdblacklistserverids.md) *(and other blacklist functions)*
+* [$channelSendMessage](../../functions/usdchannelsendmessage.md)
+* [$cooldown](../../functions/usdcooldown.md) *(and other cooldown functions)*
+* [$onlyBotPerms](../../functions/usdonlybotperms.md)
+* [$onlyForIDs](../../functions/usdonlyforids.md) *(and other ID limiters)*
+* [$onlyIf](../../functions/usdonlyif.md)
+* [$onlyIfMessageContains](../../functions/usdonlyifmessagecontains.md)
+* [$onlyPerms](../../functions/usdonlyperms.md) *(and other permission limiters)*
+* [$reply](../../functions/usdreply.md)
+* [$sendCrosspostingMessgae](../../functions/usdsendcrosspostingmessage.md)
+* [$sendDM](../../functions/usdsenddm.md)
+* [$sendMessage](../../functions/usdsendmessage.md)
+* [$sendWebhook](../../functions/usdsendwebhook.md)
+* [$suppressErrors](../../functions/usdsuppresserrors.md)
