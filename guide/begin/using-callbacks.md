@@ -8,9 +8,9 @@ description: Here you can learn the usage of callbacks.
 
 Aoi.JS has several event listeners, called "callbacks" to cover most events of the Discord API.
 
-Each of them has it's own usage and own command type to run their own tasks \(e.g for logging\).
+Each of them have their own usage and command type, to run their own tasks \(e.g logging\).
 
-The callbacks are optional except the [bot.onMessage\(\)](../../callbacks/bot.onmessage.md) one but if you want to use them, they need to be in you main file to let the bot listen to their events and these are needed to use their different command types.
+All callbacks are optional except the [bot.onMessage\(\)](../../callbacks/bot.onmessage.md) one. If you want to use certain callbacks, they need to be in your main file to let the bot listen to their events and use their different command types.
 
 ### Types of callbacks:
 
