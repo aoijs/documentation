@@ -9,7 +9,7 @@ description: Adds a emoji to the guild.
 $addEmoji[URL;name;(optional) returnEmoji (yes/no);(optional) roleIDs]
 ```
 
-#### Options:
+#### Breakdown
 
 * `URL` - The URL of the image/gif that's being converted to an emoji.
 * `name` - The name of the new emoji.
@@ -24,8 +24,6 @@ bot.command({
     code: `$addEmoji[https://cdn.discordapp.com/emojis/786763619438166036.png;shy_bear;yes]`
 });
 ```
-
-#### Example result:
 
 ![](../.gitbook/assets/mtt45fdb8q.png)
 
