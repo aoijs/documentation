@@ -1,32 +1,29 @@
+---
+description: Adds a abbreviation to large numbers.
+---
+
 # $abbreviate
 
-This function abbreviates large numbers
+### Usage
+```
+$abbreviate[number]
+```
 
-#### Usage
+#### Breakdown
+`number` - The number to abbreviate.
 
-This function has 1 field
-
-1. Number \(Required\)
-
-Raw Usage: `$abbreviate[number]`
-
-#### Options
-
-* Number - The number the function would abbreviate
-
-#### Abbreviations
+### Abbreviations
 
 * k - thousands
 * m - millions
 * b - billions
 * t - trillions
 
+### Example
 ```javascript
 bot.command({
 name: "abbr",
-code: `
-$abbreviate[5000]
-`
+code: `$abbreviate[5000]`
 //Returns: 5k
 })
 
@@ -34,9 +31,6 @@ $abbreviate[5000]
 
 bot.command({
 name: "abbr",
-code: `
-$abbreviate[$message]
-`
+code: `$abbreviate[$message]`
 })
 ```
-
