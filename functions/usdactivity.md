@@ -4,21 +4,18 @@ description: Return's the given user's activities.
 
 # $activity
 
-This function shows the current activity of the indicated user \(Only if it detects any activity.\), If the indicated user does not have an activity such as a 'custom status' it will show 'none'.
+This function shows the current activity of the provided user \(only if it detects the activity.\), If the provided user does not have an activity, such as a 'custom status', it will show 'none'.
 
-#### Fields
+### Usage
+```
+$activity[(optional) userID]`
+```
 
-This function has 1 field
+#### Breakdown
 
-1. userID \(optional\)
+* `userID` - The user the activity belongs to.
 
-Raw Usage: `$activity[userID (optional)]`
-
-#### Options
-
-* userID - The user the activity is based on
-
-#### Activities
+### Activities
 
 * Custom Status
 * Spotify _\(Listening to\)_
@@ -27,7 +24,7 @@ Raw Usage: `$activity[userID (optional)]`
 
 #### Usage
 
-Without a user ID
+Without a user ID:
 
 ```javascript
 bot.command({
@@ -36,7 +33,7 @@ bot.command({
 });
 ```
 
-With a user ID
+With a user ID:
 
 ```javascript
 bot.command({
@@ -44,10 +41,3 @@ bot.command({
     code: `$activity[535566311942651924]`
 });
 ```
-
-
-
-
-
-
-
