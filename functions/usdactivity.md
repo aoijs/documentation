@@ -4,11 +4,11 @@ description: Return's the given user's activities.
 
 # $activity
 
-This function shows the current activity of the provided user \(only if it detects the activity.\), If the provided user does not have an activity, such as a 'custom status', it will show 'none'.
+This function shows the current activity of the provided user \(only if it detects the activity\), if the provided user does not have an activity, such as a 'custom status', it will show 'none'.
 
 ### Usage
 ```
-$activity[(optional) userID]`
+$activity[(optional) userID]
 ```
 
 #### Breakdown
@@ -22,7 +22,7 @@ $activity[(optional) userID]`
 * &lt;Game Name&gt; _\(Playing\)_
 * Streaming
 
-#### Usage
+### Example
 
 Without a user ID:
 
@@ -30,7 +30,7 @@ Without a user ID:
 bot.command({
     name: "activiy",
     code: `$activity`
-});
+})
 ```
 
 With a user ID:
@@ -39,5 +39,5 @@ With a user ID:
 bot.command({
     name: "activity",
     code: `$activity[535566311942651924]`
-});
+})
 ```
