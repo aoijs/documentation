@@ -1,37 +1,22 @@
 ---
-description: Add a Emoji to the Guild.
+description: Adds a emoji to the guild.
 ---
 
 # $addEmoji
 
-This function takes care of automatically adding an emoji to the server using the provided URL.
-
-{% hint style="warning" %}
-The URL of the original image must be under 256kb in size.
-{% endhint %}
-
-#### Fields:
-
-This function has 2 properties who are required and another 1 optional.  
-The order it's the next:
-
-1. URL \(Required\)
-2. Name \(Required\)
-3. returnEmoji \(Optional\)
-4. roleIDs \(optional\)
-
-Raw Usage: `$addEmoji[url;name;returnEmoji (yes/no)(optional);roleID1;roleID2;...]`
+### Usage
+```
+$addEmoji[URL;name;(optional) returnEmoji (yes/no);(optional) roleIDs]
+```
 
 #### Options:
 
-* `URL` - The url of the image/gif that's being converted to an emoji
-* `Name` =&gt; The name of the emoji
-* `returnEmoji (yes/no)` =&gt; Returns the emoji that was newly created 
-* `roleIDs` =&gt; array of roles' IDs they should have access to that emeji. Only members with these role would have access to see and use that emoji. Leave it empty to set to everyone.
+* `URL` - The URL of the image/gif that's being converted to an emoji.
+* `name` - The name of the new emoji.
+* `returnEmoji (yes/no)` - Whether to return the the emoji that was newly created.
+* `roleIDs` - List of roleIDs that should have access to this emoji. Only members with the roles will have access to see and use that emoji. Leave it empty to set to everyone. Separate IDs using `;`.
 
-An example of the use should be the next:
-
-#### Usage
+### Example
 
 ```javascript
 bot.command({
@@ -45,6 +30,9 @@ bot.command({
 ![](../.gitbook/assets/mtt45fdb8q.png)
 
 {% hint style="warning" %}
-URL NEEDS to end in `.gif`, `.png` or `.jpg`
+The URL needs to end with `.gif`, `.png` or `.jpg`.
 {% endhint %}
 
+{% hint style="warning" %}
+The URL of the original image must be under 256kb in size.
+{% endhint %}
