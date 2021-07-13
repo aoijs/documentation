@@ -44,7 +44,7 @@ code: `Pong! $pingms` //Code
 })
 
 bot.readyCommand({
-    channel: "", //You can use this or not
+    channel: "", //optional 
     code: `$log[Ready on $userTag[$clientID]]` //Example Ready on Client
 })
 ```
@@ -52,6 +52,7 @@ bot.readyCommand({
 #### Optional packages
 
 * [@discordjs/opus](https://www.npmjs.com/package/@discordjs/opus) for encoding, primarily used for Music \(`npm install @discordjs/opus`\)
+* [tweetnacl](https://npmjs.com/package/tweetnacl) for data encryption, primarily used for Music \(`npm install tweetnacl`\)
 * [ffmpeg-static](https://github.com/discord/ffmpeg-static) for allowing Music Filters to run smoothly \(`npm install ffmpeg-static`\)
 * [danbot-hosting](https://www.npmjs.com/package/danbot-hosting) for posting stats to their API \(`npm install danbot-hosting`\)
 
@@ -74,6 +75,7 @@ More Information in our [Documentation](https://aoi.leref.ga/guide/music)
 
 * [Website](https://aoi.js.org)
 * [Github](https://github.com/aoijs/aoi.js)
+* [Documentation GitHub](https://GitHub.com/aoijs/documentation)
 * [Discord Server](https://aoi.js.org/invite)
 * [Documentation](https://aoi.leref.ga)
 
