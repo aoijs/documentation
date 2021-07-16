@@ -8,11 +8,11 @@ This function returns the client latency in Milliseconds.
 
 Example response: 64 \(for 64 ms\)
 
-```text
+```javascript
 bot.command({
 name: "botping", 
 code: `
-Memory usage: $botPing`
+Latency: $botPing ms`
 })
 ```
 
