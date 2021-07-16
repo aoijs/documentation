@@ -20,10 +20,8 @@ Main file will allow the bot to be ran, and commands to be kept. This can be nam
 const Aoijs = require("aoi.js")
 
 const bot = new Aoijs.Bot({
-  sharding: false, //true or false 
-  shardAmount: 2, //Shard amount 
-  mobile: false, //true or false - Discord Mobile Status
-  //dbhToken: "API KEY", Remove // if using, get an API Key from their Server
+  mobilePlatform: false, //true or false - Discord Mobile Status
+  dbhToken: "API KEY",  // if using, get an API Key from their Server
   token: "TOKEN", //Discord Bot Token
   prefix: ["PREFIX"], //Change PREFIX to your Prefix
   autoUpdate: false // set to true if version should be updated automatically after a package update
@@ -37,7 +35,7 @@ code: `Pong! \`$ping\``
 })
 ```
 
-## P**ackage.json**
+## **Package.json**
 
 The file where your project can "get" aoi.js
 
@@ -56,7 +54,7 @@ The file where your project can "get" aoi.js
     "author": "",
     "license": "ISC",
     "dependencies": {
-      "aoi.js": "^4.0.2"
+      "aoi.js": "^5.0.0"
     }
   }
 ```
