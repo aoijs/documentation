@@ -1,4 +1,19 @@
 # IntentOptions 
 * **Available Options Are:**
 ```js
+'guilds'
+'guildMembers'
+'guildBans'
+'guildEmojis'
+'guildIntegrations'
+'guildWebhooks'
+'guildInvites'
+'guildVoiceStates'
+'guildPresences'
+'guildMessages'
+'guildMessageReactions'
+'guildMessageTyping'
+'directMessages'
+'directMessageReactions'
+'directMessageTyping'
 ```
