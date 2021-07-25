@@ -1,12 +1,10 @@
 ---
-description: A list of functions to play music with your bot using Aoi.JS.
+description: Available functions for Music using Aoi.JS
 ---
 
-# Music
+# Music Functions
 
-Grab Music from YouTube or Spotify or SoundCloud and play it on Discord with your bot coded in Aoi.JS!
-
-Here are all the music functions you can use in your bot:
+### A list of available Music Functions:
 
 * [$playSong](../../functions/usdplaysong.md)
 * [$playSpotify](../../functions/usdplayspotify.md)
