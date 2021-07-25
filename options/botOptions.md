@@ -33,7 +33,7 @@
 > Discord Intents That The Bot Needs 
 > ```
 #### Type
- **"all"** or **[IntentOptions](options/intentOptions.md)** or **[DiscordIntents](https://discord.com/developers/docs/topics/gateway#list-of-intents)**
+ **"all"** or **Array\<[IntentOptions](options/intentOptions.md)\>** or **Array\<[DiscordIntents](https://discord.com/developers/docs/topics/gateway#list-of-intents)\>**
 #### Usage
 >```js
 >intents:"all" //or ["guilds","guildMessages"] or ["GUILDS","GUILD_MESSAGES"]
@@ -103,7 +103,7 @@
 > Error Message To Be Sent When "suppressAllErrors" Gets Triggered
 > ```
 #### Type
- **Array<string,Embed,Components,File>**
+ **Array\<string,Embed,Components,File\>**
 #### Usage
 >```js
 >errorMessage:["An Error Occurred"]
