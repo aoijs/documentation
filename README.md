@@ -6,11 +6,9 @@ description: Aoi.JS Official Documentation - Functions / Callbacks / Examples
 
 ![](https://aoi.js.org/assets/images/aoijs-new.png)
 
-## Aoi.JS
+## ⚙ About Aoi.JS
 
 [![Discord Server](https://img.shields.io/discord/773352845738115102?color=5865F2&logo=discord&logoColor=white)](https://aoi.js.org/invite) [![NPM Version](https://img.shields.io/npm/v/aoi.js.svg?maxAge=3600)](https://www.npmjs.com/package/aoi.js) [![NPM Downloads](https://img.shields.io/npm/dt/aoi.js.svg?maxAge=3600)](https://www.npmjs.com/package/aoi.js)
-
-### About
 
 Aoi.JS is a package with simplified and ready-to-use functions for Discord Bot Developers to develop their own Discord Bots.
 
@@ -19,79 +17,16 @@ It's swift and flexible using functions.
 
 Open Source for the Community ❤️
 
-### Installation
-
-{% hint style="warning" %}
-**Node.JS 12.0.0 or newer is required.**
-{% endhint %}
-
-{% tabs %}
-{% tab title="Terminal" %}
-```javascript
-npm install aoi.js
-```
-{% endtab %}
-{% endtabs %}
-
-#### Example
-
-{% tabs %}
-{% tab title="index.js" %}
-```javascript
-const aoijs = require("aoi.js")
-
-const bot = new aoijs.Bot({
-token: "TOKEN", //Discord Bot Token
-prefix: "PREFIX" //Discord Bot Prefix
-})
-bot.onMessage() //Allows to execute Commands
-
-bot.command({
-name: "ping", //Trigger name (command name)
-code: `Pong! $pingms` //Code
-})
-
-bot.readyCommand({
-    channel: "", //You can use this or not
-    code: `$log[Ready on $userTag[$clientID]]` //Example Ready on Client
-})
-```
-{% endtab %}
-{% endtabs %}
-
-#### Optional packages
-
-* [@discordjs/opus](https://www.npmjs.com/package/@discordjs/opus) for encoding, primarily used for Music \(`npm install @discordjs/opus`\)
-* [ffmpeg-static](https://www.npmjs.com/package/ffmpeg-static) for allowing Music Filters to run smoothly \(`npm install ffmpeg-static`\)
-* [danbot-hosting](https://www.npmjs.com/package/danbot-hosting) for posting stats to their API \(`npm install danbot-hosting`\)
-
-**Music Integration**
-
-With our powerful Package, we incorporated Music with several functions. We allowed customization and control over what you want.
-
-**Music Example**
-
-{% tabs %}
-{% tab title="index.js" %}
-```javascript
-bot.command({
-name: "play",
-code: `$playSong[Music Name;Something went wrong!]`
-})
-```
-{% endtab %}
-{% endtabs %}
-
-More Information in our [Documentation](https://aoi.leref.ga/guide/music)
-
-### Links
+## 🔗 Links
 
 * [Website](https://aoi.js.org)
 * [Github](https://github.com/aoijs/aoi.js)
 * [Discord Server](https://aoi.js.org/invite)
 * [Documentation](https://aoi.leref.ga)
 
-### Contributing
+## ⚒ Contributing
 
 Please read [Contributing](https://github.com/aoijs/aoi.js/blob/master/.github/CONTRIBUTING.md)
+
+{% page-ref page="guide/begin/" %}
 
