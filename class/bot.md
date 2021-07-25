@@ -1,6 +1,6 @@
 # Bot 
 > ```js
-> Bot Class Is The Class For Connecting The Bot User To Discord And Make It "Online". In Simple Words, It The First Step To Make The Bot Functional.
+> Bot Class Connects The Bot User To Discord And Makes It "Online".
 > ```
 
 ## Usage
