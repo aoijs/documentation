@@ -6,7 +6,7 @@
 
 * [Changelog](aoi.js-version-4.2.1/changelog.md)
 
-## Guide
+## Guides <a id="guide"></a>
 
 * [Begin](guide/begin/README.md)
   * [Bot Status](guide/begin/bot-status.md)
@@ -31,7 +31,7 @@
 * [Extras](guide/extras/README.md)
   * [Custom Events](guide/extras/custom-events.md)
   * [Sharding](guide/extras/sharding.md)
-  * [‎Dashboard](guide/extras/dashboard.md)
+  * [dbd.express](guide/extras/dashboard.md)
 
 ## Callbacks
 

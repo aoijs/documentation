@@ -1,3 +1,7 @@
+---
+description: Using Aoi.JS Custom Events System to add your own Events.
+---
+
 # Custom Events
 
 Custom events are constructors that will run dbdjs commands everytime an event was executed. All it need is an Event Emitter. As example:
