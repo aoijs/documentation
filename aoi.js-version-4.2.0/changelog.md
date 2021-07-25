@@ -4,6 +4,25 @@ description: 'Aoi.JS - This Package, allows you to make Discord Bot with ease!'
 
 # Changelog
 
+## Aoi.JS - 4.2.1
+
+### Fixed / Improved
+
+* Forced ms to be installed as dependency.
+* Minor changes.
+
+## Aoi.JS - 4.2.0
+
+### Added / Fixed
+
+* New Error system, \(:x: no longer exist\) 
+* Remove not needed if statements in functions, 
+* Interaction commands have been change to using client API. 
+* Fixed {edit} 
+* Fixed typo in functions. 
+* Fixed several functions, 
+* Added `SuppressAll / errorMessage` Client Option
+
 ## Aoi.JS - 4.0.2
 
 ### Fixed / Improved
