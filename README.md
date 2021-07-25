@@ -1,5 +1,5 @@
 ---
-description: Welcome to Aoi.JS Documentation Page - Functions / Callbacks
+description: Aoi.JS Official Documentation - Functions / Callbacks / Examples
 ---
 
 # Introduction
@@ -21,7 +21,7 @@ Open Source for the Community ❤️
 
 ### Installation
 
-**Node.JS 12.0.0 or newer is required.**
+**Node.JS 14.0.0 or newer is required.**
 
 ```text
 npm install aoi.js
