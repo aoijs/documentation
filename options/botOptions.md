@@ -13,5 +13,8 @@
 | suppressAllErrors|**boolean**|Suppresses All Errors| true|`suppressAllErrors:false`|
 |errorMessage | **Array\<string,Embed,Components,File\>**| Error Message To Be Sent When "suppressAllErrors" Gets Triggered|true|`errorMessage:["An Error Occurred"]`|
 |fetchInvites |**object**|Initialises InviteSystem Class|true|`fetchInvites:{enabled:true,cacheInviters:false}`|
-|events |**object**|Initialises Timeout And FuncTionError Event |true|`events:{timeout:true,functionError:true}`
+|events |**object**|Initialises Timeout And FuncTionError Event |true|`events:{timeout:true,functionError:true}`|
+|autoUpdate|**boolean**|Auto-updates The Package When New Version Is Available|true|`autoUpdate:true`|
+|dbhToken|**string**|Connects The Bot The DBH Hosting|true|`dbhToken:"DBH Token"`|
+|disableFunctions|**Array\<string\>**|Disables The Functions Provided|true|`disableFunctions:["$botLeave","$clientToken"]`|
 ---
