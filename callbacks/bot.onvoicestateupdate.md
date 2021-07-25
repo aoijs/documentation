@@ -7,9 +7,9 @@ description: >-
 
 # bot.onVoiceStateUpdate
 
-This callback triggers whenever someone joins a voice channel, leaves a voice channel or updates their vc options. 
+This callback triggers whenever someone joins a voice channel, leaves a voice channel or updates their vc options.
 
-#### Usage:
+## Usage:
 
 ```javascript
 bot.voiceStateUpdateCommand({ //Command
@@ -18,7 +18,7 @@ code: `code` //Your code
 })
 ```
 
-#### Example Command:
+## Example Command:
 
 ```javascript
 bot.voiceStateUpdateCommand({ 
@@ -31,7 +31,7 @@ $onlyIf[$oldState[channelID]==;]
 })
 ```
 
-#### Options:
+## Options:
 
 You can use the functions $newState\[\] and $oldState\[\] with the options below to return old and new voice state data.
 

@@ -6,9 +6,9 @@ description: >-
 
 # $createChannel
 
-This function allows the bot to create a channel
+This function allows the Client to create a channel within the Guild.
 
-#### Fields
+## Fields
 
 This function has 2 required fields
 
@@ -19,20 +19,20 @@ This function has 2 required fields
 
 Raw Usage: `$createChannel[name;type;return ID (yes/no);category ID (optional)]`
 
-#### Options
+## Options
 
 * Name - The name of the channel
 * Type - The type of the channel you want to make
 * Return ID - Whether or not the function will return newly created channel ID
 * Category ID - The category of which the channel will be placed under
 
-#### Types
+## Types
 
 * text - Text Channel
 * voice - Voice Channel
 * category - Category
 
-#### Usage
+## Usage
 
 ```javascript
 bot.command({
@@ -40,3 +40,4 @@ name: "create",
 code: `Channel ID: $createChannel[new;text;yes]` //Makes a text channel named "new"
 })
 ```
+
