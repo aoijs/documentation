@@ -71,7 +71,7 @@
 ### respondOnEdit (optional)
 #### Description
 > ```js
-> Your Bot Token 
+> Enables Bot To Execute Cmds When A Message Was Edited To one Of Bot's Command Name
 > ```
 #### Type
  **[RespondOnEditOptions](options/respondOnEditOptions.md)**
