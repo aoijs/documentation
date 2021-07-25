@@ -33,7 +33,7 @@
 > Discord Intents That The Bot Needs 
 > ```
 #### Type
- **"all"** or **Array\<[IntentOptions](options/intentOptions.md)\>** or **Array\<[DiscordIntents](https://discord.com/developers/docs/topics/gateway#list-of-intents)\>**
+ **"all"** or **Array\<[IntentOptions](intentOptions.md)\>** or **Array\<[DiscordIntents](https://discord.com/developers/docs/topics/gateway#list-of-intents)\>**
 #### Usage
 >```js
 >intents:"all" //or ["guilds","guildMessages"] or ["GUILDS","GUILD_MESSAGES"]
@@ -45,7 +45,7 @@
 > Setup For Custom or Default Database 
 > ```
 #### Type
- **[DatabaseOptions](options/databaseOptions.md)**
+ **[DatabaseOptions](databaseOptions.md)**
 #### Usage
 >```js
 >database:{
@@ -74,7 +74,7 @@
 > Enables Bot To Execute Cmds When A Message Was Edited To one Of Bot's Command Name
 > ```
 #### Type
- **[RespondOnEditOptions](options/respondOnEditOptions.md)**
+ **[RespondOnEditOptions](respondOnEditOptions.md)**
 #### Usage
 >```js
 >RespondOnEdit:{
