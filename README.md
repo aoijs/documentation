@@ -1,5 +1,5 @@
 ---
-description: Welcome to Aoi.JS Documentation Page - Functions / Callbacks
+description: Aoi.JS Official Documentation - Functions / Callbacks / Examples
 ---
 
 # Introduction
@@ -21,14 +21,22 @@ Open Source for the Community ❤️
 
 ### Installation
 
+{% hint style="warning" %}
 **Node.JS 12.0.0 or newer is required.**
+{% endhint %}
 
-```text
+{% tabs %}
+{% tab title="Terminal" %}
+```javascript
 npm install aoi.js
 ```
+{% endtab %}
+{% endtabs %}
 
 #### Example
 
+{% tabs %}
+{% tab title="index.js" %}
 ```javascript
 const aoijs = require("aoi.js")
 
@@ -48,11 +56,13 @@ bot.readyCommand({
     code: `$log[Ready on $userTag[$clientID]]` //Example Ready on Client
 })
 ```
+{% endtab %}
+{% endtabs %}
 
 #### Optional packages
 
 * [@discordjs/opus](https://www.npmjs.com/package/@discordjs/opus) for encoding, primarily used for Music \(`npm install @discordjs/opus`\)
-* [ffmpeg-static](https://github.com/discord/ffmpeg-static) for allowing Music Filters to run smoothly \(`npm install ffmpeg-static`\)
+* [ffmpeg-static](https://www.npmjs.com/package/ffmpeg-static) for allowing Music Filters to run smoothly \(`npm install ffmpeg-static`\)
 * [danbot-hosting](https://www.npmjs.com/package/danbot-hosting) for posting stats to their API \(`npm install danbot-hosting`\)
 
 **Music Integration**
@@ -61,12 +71,16 @@ With our powerful Package, we incorporated Music with several functions. We allo
 
 **Music Example**
 
+{% tabs %}
+{% tab title="index.js" %}
 ```javascript
 bot.command({
 name: "play",
 code: `$playSong[Music Name;Something went wrong!]`
 })
 ```
+{% endtab %}
+{% endtabs %}
 
 More Information in our [Documentation](https://aoi.leref.ga/guide/music)
 
