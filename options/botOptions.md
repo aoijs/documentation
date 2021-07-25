@@ -1,5 +1,5 @@
-# BotOptions 
-> **Options Required In [Bot](class/bot.md) Class**
+..# BotOptions 
+> **Options Required In [Bot](../class/bot.md) Class**
 ## AvailableOptions 
 ---
 ### token
