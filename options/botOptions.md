@@ -21,7 +21,7 @@
 > Your Bot Prefix(s) 
 > ```
 #### Type
- **string** or **Array<string>**
+ **string** or **Array\<string\>**
 #### Usage
 >```js
 >prefix:["."] // or "."
