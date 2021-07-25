@@ -14,10 +14,10 @@ description: Welcome to Aoi.JS Documentation Page - Functions / Callbacks
 
 Aoi.JS is a package with simplified and ready-to-use functions for Discord Bot Developers to develop their own Discord Bots.
 
-Aiming to be the easiest package to learn   
- It's swift and flexible using functions.
+Aiming to be the easiest package to learn  
+It's swift and flexible using functions.
 
-Open Source for the Community ❤️ 
+Open Source for the Community ❤️
 
 ### Installation
 

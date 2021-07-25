@@ -2,7 +2,7 @@
 
 This function will return the ID of the last message send by the bot.
 
-#### Usage
+## Usage
 
 ```javascript
 bot.command({
