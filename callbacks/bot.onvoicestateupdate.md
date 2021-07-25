@@ -13,7 +13,7 @@ This callback triggers whenever someone joins a voice channel, leaves a voice ch
 
 ```javascript
 bot.voiceStateUpdateCommand({ //Command
-channel: "id" // Log Channel
+channel: "id", // Log Channel
 code: `code` //Your code
 })
 ```
@@ -22,7 +22,7 @@ code: `code` //Your code
 
 ```javascript
 bot.voiceStateUpdateCommand({ 
-channel: "772414449839636490" 
+channel: "772414449839636490",
 code: `
 $userTag[$newState[id]] has joined the vc $newState[channelName]
 $onlyIf[$newState[channelID]!=;]
