@@ -8,7 +8,7 @@
 
 ## Guides <a id="guide"></a>
 
-* [Begin](guide/begin/README.md)
+* [Getting Started](guide/begin/README.md)
   * [Bot Status](guide/begin/bot-status.md)
   * [Aliases](guide/begin/aliases.md)
   * [Gateway Intents](guide/begin/gateway-intents.md)
