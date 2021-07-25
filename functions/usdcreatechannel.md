@@ -32,6 +32,8 @@ Raw Usage: `$createChannel[name;type;return ID (yes/no);category ID (optional)]`
 * voice - Voice Channel
 * category - Category
 
+#### Usage
+
 ```javascript
 bot.command({
 name: "create",
