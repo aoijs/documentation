@@ -410,6 +410,7 @@
 * [$removeContains](functions/usdremovecontains.md)
 * [$removeTextSplitElement](functions/usdremovetextsplitelement.md)
 * [$removeSplitTextElement](functions/usdremovesplittextelement.md)
+* [$renameFile](functions/usdrenamefile.md)
 * [$repeatMessage](functions/usdrepeatmessage.md)
 * [$replaceText](functions/usdreplacetext.md)
 * [$replaceTextWithRegex](functions/usdreplacetextwithregex.md)

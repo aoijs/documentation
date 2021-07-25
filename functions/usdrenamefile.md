@@ -1,10 +1,8 @@
 ---
-description: Returns the contents of the provided file
+description: This function simply renames the file that you provided.
 ---
 
 # $renameFile
-
-This function simply renames the file that you provided.
 
 Here is the usage:
 
@@ -36,7 +34,8 @@ $renameFile[config/data/data.json;config/data/data.txt]
 })
 ```
 
-You can also move the renamed file to somewhere else. 
+You can also move the renamed file to somewhere else.
+
 ```javascript
 bot.command({
 name: "rename",
@@ -46,3 +45,4 @@ $renameFile[config/data/data.json;config/beta/data.txt]
 `
 })
 ```
+
