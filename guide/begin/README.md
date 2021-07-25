@@ -68,7 +68,7 @@ If you need a example, there's a quick example to use.
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
-    "scriptsu": {
+    "scripts": {
       "start": "node index.js"
     },
     "engines": {
