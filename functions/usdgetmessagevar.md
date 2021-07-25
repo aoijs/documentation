@@ -6,7 +6,7 @@ description: Gets message variable value
 
 This function returns the value of the specified message ID for the specified variable
 
-#### Fields
+## Fields
 
 This function has 1 required field
 
@@ -15,12 +15,12 @@ This function has 1 required field
 
 Raw Usage: `$getMessageVar[variable;messageID (optional)]`
 
-#### Options
+## Options
 
 * Variable - The variable value we're getting for the &lt;message&gt;
 * Message ID - The message's variable value we're getting
 
-#### Usage
+## Usage
 
 Current Message's Variable Value
 

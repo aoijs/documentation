@@ -6,32 +6,32 @@ description: >-
 
 # Character Escaping
 
-#### Escaping characters:
+## Escaping characters:
 
-`[` =&gt; `#RIGHT#` 
+`[` =&gt; `#RIGHT#`
 
-`]` =&gt; `#LEFT#` 
+`]` =&gt; `#LEFT#`
 
-`;` =&gt; `#SEMI#` 
+`;` =&gt; `#SEMI#`
 
-`:` =&gt; `#COLON#` 
+`:` =&gt; `#COLON#`
 
 `$` =&gt; `#CHAR#`
 
 `>` =&gt; `#RIGHT_CLICK#`
 
-`<` =&gt; `#LEFT_CLICK#` 
+`<` =&gt; `#LEFT_CLICK#`
 
-`=` =&gt; `#EQUAL#` 
+`=` =&gt; `#EQUAL#`
 
-`}` =&gt; `#LEFT_BRACKET#` 
+`}` =&gt; `#LEFT_BRACKET#`
 
-`{` =&gt; `#RIGHT_BRACKET#` 
+`{` =&gt; `#RIGHT_BRACKET#`
 
-#### more:
+## more:
 
-Backspace =&gt; `\b`   
-Form Feed =&gt; `\f`   
+Backspace =&gt; `\b`  
+Form Feed =&gt; `\f`  
 New Line =&gt; `\n`  
 Carriage Return =&gt; `\r`  
 Horizontal Tabulator =&gt; `\t`  

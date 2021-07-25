@@ -8,13 +8,13 @@ This function returns the amount of emojis in a guild
 
 Raw usage: `$emojiCount[type (optional);guildID (optional)]`
 
-#### Types:
+## Types:
 
 * `all` or empty field =&gt; returns total amount of custom emojis the bot has access to \(animated and normal\)
 * `animated` =&gt; returns amount of animated custom emojis
 * `normal` =&gt; returns amount of non-animated custom emojis
 
-#### Total emoji count:
+## Total emoji count:
 
 ```javascript
 bot.command({
@@ -23,7 +23,7 @@ code: `$emojiCount emojis`
 })
 ```
 
-#### Animated Emojis:
+## Animated Emojis:
 
 ```javascript
 bot.command({
@@ -32,7 +32,7 @@ code: `$emojiCount[animated] emojis`
 })
 ```
 
-#### normal Emojis:
+## normal Emojis:
 
 ```javascript
 bot.command({
@@ -41,7 +41,7 @@ code: `$emojiCount[normal] emojis`
 })
 ```
 
-#### Emoji count of another server:
+## Emoji count of another server:
 
 ```javascript
 bot.command({
