@@ -5,13 +5,13 @@
 
 ## Usage
 > 
-> **new Bot([BotOptions](options/botOptions.md))**
+> **new Bot([BotOptions](../options/botOptions.md))**
 > 
 ## Callbacks 
- * [onMessage](callbacks/onMessage.md)
- * [onMessageUpdate](callbacks/onMessageUpdate.md)
- * [onMessageDelete](callbacks/onMessageDelete.md)
- * [onMessageDeleteBulk](callbacks/onMessageDeleteBulk.md)
+ * [onMessage](../callbacks/onMessage.md)
+ * [onMessageUpdate](../callbacks/onMessageUpdate.md)
+ * [onMessageDelete](../callbacks/onMessageDelete.md)
+ * [onMessageDeleteBulk](../callbacks/onMessageDeleteBulk.md)
 ## Basic Example
 ```js
 const Aoijs = require('aoi.js')
