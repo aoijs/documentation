@@ -88,6 +88,7 @@
 * [$authorAvatar](functions/usdauthoravatar.md)
 * [$authorID](functions/usdauthorid.md)
 * [$authorMessage](functions/usdauthormessage.md)
+* [$awaitButtons](functions/usdawaitbuttons.md)
 * [$awaitCmdReaction](functions/usdawaitcmdreaction.md)
 * [$awaitMessages](functions/usdawaitmessages.md)
 * [$awaitReaction](functions/usdawaitreaction.md)

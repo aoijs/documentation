@@ -19,8 +19,6 @@ $stringStartsWith[Hey, how are you?;Hey] // returns true
 });
 ```
 
-
-
 ```text
 bot.command({
     name: "startswith",
