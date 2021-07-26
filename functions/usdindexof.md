@@ -10,11 +10,11 @@ This function returns the first matching position of the given character in the 
 
 Raw usage: `$indexOf[text;character]` 
 
-#### Example Command: 
+### Example Command: 
 
 The example below returns `3` because the first `l` in `Hello` is at position 3.
 
-```text
+```javascript
 bot.command({
 name: "index",
 code: `
