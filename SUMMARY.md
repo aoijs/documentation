@@ -60,6 +60,7 @@
 * [bot.onTypingStart](callbacks/bot.ontypingstart.md)
 * [bot.onUserUpdate](callbacks/bot.onuserupdate.md)
 * [bot.onVoiceStateUpdate](callbacks/bot.onvoicestateupdate.md)
+* [bot.onInteractionCreate](callbacks/bot.oninteractioncreate.md)
 * [bot.musicEndCommand](callbacks/bot.musicendcommand.md)
 * [bot.musicStartCommand](callbacks/bot.musicstartcommand.md)
 * [bot.loopCommand](callbacks/bot.loopcommand.md)
