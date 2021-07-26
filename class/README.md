@@ -1,5 +1,5 @@
 # Class
-> **List Of Class in `aoi.js`**
+> **List Of Class In `aoi.js`**
 ## Public
 ### Description
 > ```js
