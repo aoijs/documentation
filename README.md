@@ -24,6 +24,7 @@
 # Basic Examples 
 >```js
 > const Aoijs = require('aoi.js')
+>
 > const bot = new Aoijs.Bot({
 > token:"Your Bot Token",
 > prefix:"Bot Prefix",
