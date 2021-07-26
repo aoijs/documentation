@@ -41,3 +41,7 @@ $awaitButtons[$get[id];$authorID;click;awaitclick; Stop,{description:Only $userT
 $let[id;$apiMessage[Click Me;;{actionRow:Click Me,2,1,click};;yes]]
 ```
 
+{% hint style="info" %}
+This will be easier to do in future updates.
+{% endhint %}
+
