@@ -1,6 +1,11 @@
 # Class
-> **List Of Classes That User Can Initialise In `aoi.js`**
-### Public Classes 
+> **List Of Class in `aoi.js`**
+## Public
+### Description
+> ```js
+> Classes That User Can Initialise 
+>```
+### List 
 > * **[AoiError](aoiError.md)**
 > * **[Bot](bot.md)**
 > * **[CustomEvent](customEvent.md)**
@@ -9,5 +14,10 @@
 > * **[LoadCommands](loadCommands.md)**
 > * **[Voice](voice.md)**
 
-### Private Classes
+## Private
+### Description
+> ```js
+> Classes That User Can Not Initialise Directly But Are Able To Use
+>```
+### List 
 > * **[InviteSystem](inviteSystem.md)**
