@@ -45,6 +45,7 @@
 > * **[Callbacks](callbacks/README.md)**
 > * **[Functions](functions/README.md)**
 > * **[Guides](guide/README.md)**
+> * **[Options](options/README.md)**
 ## GitHub
 > * **[Aoijs](https://github.com/aoijs/aoi.js)**
 > * **[Documentation](https://github.com/aoijs/documentation)**
