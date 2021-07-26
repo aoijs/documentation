@@ -48,5 +48,5 @@
 > * **[Contribution GuideLines](https://github.com/aoijs/aoi.js/blob/master/.github/CONTRIBUTING.md)**
 ## Misc
 > * **[Discord Server Invite Link 1](https://discord.gg/akarui)**
-> * **[Discord Server Invite Link 2](https://discord.gg/NrkTfNs6)**
+> * **[Discord Server Invite Link 2](https://discord.gg/3PyVg9U6Xh)**
 > * **[Website](https://aoi.js.org)**
