@@ -23,20 +23,20 @@
 >```
 # Basic Examples 
 >```js
-> const Aoijs = require('aoi.js')
+> const Aoijs = require('aoi.js');
 >
 > const bot = new Aoijs.Bot({
-> token:"Your Bot Token",
-> prefix:"Bot Prefix",
-> intents:"all"
-> })
+>   token: "Your Bot Token",
+>   prefix: "Bot Prefix",
+>   intents: "all"
+> });
 >
 >bot.onMessage() //enables bot to see messages (required for executing Commands)
 >
 >bot.command({
->name:"ping", //command name
->code:`My Ping Is \`$ping ms\` ` //code to be executed when this command is called 
->})
+>  name: "ping", //command name
+>  code: `My Ping Is \`$ping ms\` ` //code to be executed when this command is called 
+> });
 >
 >```
 # Quick Links
