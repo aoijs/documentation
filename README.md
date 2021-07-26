@@ -41,10 +41,10 @@
 >```
 # Quick Links
 ## Documentation  
-> * **[Classes](class/readme.md)**
-> * **[Callbacks](callbacks/readme.md)**
-> * **[Functions](functions/readme.md)**
-> * **[Guides](guide/readme.md)**
+> * **[Classes](class/README.md)**
+> * **[Callbacks](callbacks/README.md)**
+> * **[Functions](functions/README.md)**
+> * **[Guides](guide/README.md)**
 ## GitHub
 > * **[Aoijs](https://github.com/aoijs/aoi.js)**
 > * **[Documentation](https://github.com/aoijs/documentation)**
