@@ -75,7 +75,7 @@ code: `$createSlashCommand[$guildID;AOIjs;A cool slash command for AOIjs;message
 })
 ```
 
-![Example](../../.gitbook/assets/image%20%2834%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29.png)
+![Example](../../.gitbook/assets/image%20%2834%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29.png)
 
 ### $getSlashCommandID
 

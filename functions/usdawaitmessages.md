@@ -47,7 +47,7 @@ bot.awaitedCommand({
 }) //This will respond when the user says 'Hello'
 ```
 
-![Here&apos;s what the responses would look like](../.gitbook/assets/image%20%2821%29%20%281%29%20%281%29%20%281%29%20%282%29%20%283%29%20%283%29%20%283%29%20%283%29%20%283%29%20%282%29%20%281%29.png)
+![Here&apos;s what the responses would look like](../.gitbook/assets/image%20%2821%29%20%281%29%20%281%29%20%281%29%20%282%29%20%283%29%20%283%29%20%283%29%20%283%29%20%283%29%20%282%29%20%281%29%20%281%29.png)
 
 {% hint style="warning" %}
 The error message will respond if the timer has ran out \(If user doesn't do anything\)

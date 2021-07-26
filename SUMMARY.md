@@ -82,6 +82,7 @@
 * [$allEmojiCount](functions/usdallemojicount.md)
 * [$allMembersCount](functions/usdallmemberscount.md)
 * [$alwaysExecute](functions/usdalwaysexecute.md)
+* [$apiMessage](functions/usdapimessage.md)
 * [$argsCheck](functions/usdargscheck.md)
 * [$argsCount](functions/usdargscount.md)
 * [$attachment](functions/usdattachment.md)
