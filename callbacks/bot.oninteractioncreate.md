@@ -11,7 +11,7 @@ description: >-
 
 #### Usage
 
-```text
+```javascript
 bot.interactionCommand({
 name: "Interaction name",
 prototype: "button",
@@ -33,7 +33,7 @@ code: `Whats up $username`
 
 #### Usage
 
-```text
+```javascript
 bot.interactionCommand({
 name: "Interaction name",
 code: `Code here`
