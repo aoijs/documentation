@@ -1,8 +1,12 @@
+---
+description: Using Aoi.JS you're able to create Slash Commands for your Client.
+---
+
 # Slash Commands
 
 ## Introduction
 
- Slash Commands are the new, exciting way to build and interact with apps on Discord. With Slash Commands, all you have to do is type `/` and you're ready to use your favorite bot. Users can learn everything your bot does and easily find new features as you add them. Validation, error states, and helpful UI walks them through your commands, meaning they can get it right the first time, especially on mobile. You now have one more ally in the fight against your phone's autocorrect. Slash Commands set your users up for success instead of confusion and frustration. They separate how users think and how your code works, meaning no matter how complex your codebase and commands may get, people who love your bot will find it approachable and easy to use.
+Slash Commands are the new, exciting way to build and interact with apps on Discord. With Slash Commands, all you have to do is type `/` and you're ready to use your favorite bot. Users can learn everything your bot does and easily find new features as you add them. Validation, error states, and helpful UI walks them through your commands, meaning they can get it right the first time, especially on mobile. You now have one more ally in the fight against your phone's autocorrect. Slash Commands set your users up for success instead of confusion and frustration. They separate how users think and how your code works, meaning no matter how complex your codebase and commands may get, people who love your bot will find it approachable and easy to use.
 
 ![Here is an example of what they&apos;d look like](../../.gitbook/assets/image%20%2850%29.png)
 
@@ -71,7 +75,7 @@ code: `$createSlashCommand[$guildID;AOIjs;A cool slash command for AOIjs;message
 })
 ```
 
-![Example](../../.gitbook/assets/image%20%2834%29%20%281%29.png)
+![Example](../../.gitbook/assets/image%20%2834%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29.png)
 
 ### $getSlashCommandID
 
@@ -203,7 +207,7 @@ Let's make a simple slash command that will reply with the current package versi
 
 ```javascript
 bot.command({
-name: "slash"
+name: "slash",
 code: `
 $createSlashCommand[$guildID;version;Return's Aoi.js's current version]`
 //This will make our slash command

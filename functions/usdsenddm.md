@@ -7,7 +7,7 @@ description: Sends a dm to the given user ID with the given message
 This function sends a dm to the specified user with &lt;message&gt;
 
 ```text
-$sendMessage[user ID;message]
+$sendDM[user ID;message]
 ```
 
 ```javascript

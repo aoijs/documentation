@@ -13,5 +13,5 @@ code: `Reply Message ID: $referenceMessageID`
 })
 ```
 
-![Heres an example](../.gitbook/assets/image%20%2814%29%20%284%29%20%284%29.png)
+![Heres an example](../.gitbook/assets/image%20%2814%29%20%284%29%20%284%29%20%283%29.png)
 

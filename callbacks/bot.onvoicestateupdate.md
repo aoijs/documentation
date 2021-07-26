@@ -7,7 +7,8 @@ description: >-
 
 # bot.onVoiceStateUpdate
 
-This callback triggers whenever someone joins a voice channel, leaves a voice channel or updates their vc options. 
+This callback triggers whenever someone joins a voice channel, leaves a voice channel or updates their vc options.
+
 
 #### Options:
 
@@ -29,20 +30,21 @@ You can use the functions $newState\[\] and $oldState\[\] with the options below
 * `mute` =&gt; Whether the user is either self-muted or server-muted
 * `speaking` =&gt; Whether the user is speaking
 
-#### Usage:
+
+## Usage:
 
 ```javascript
 bot.voiceStateUpdateCommand({ //Command
-channel: "id" // Log Channel
+channel: "id", // Log Channel
 code: `code` //Your code
 })
 ```
 
-#### Example Command:
+### Example Command:
 
 ```javascript
 bot.voiceStateUpdateCommand({ 
-channel: "772414449839636490" 
+channel: "772414449839636490",
 code: `
 $userTag[$newState[id]] has joined the vc $newState[channelName]
 $onlyIf[$newState[channelID]!=;]
@@ -51,24 +53,14 @@ $onlyIf[$oldState[channelID]==;]
 })
 ```
 
-#### Command Handler Usage:
+
+### Command Handler Usage:
 For people who use `bot.loadCommands()` handler.
 ```javascript
 module.exports = ({
 channel: "ID",
 code: `
 code here
-`,
-type: 'voiceStateUpdateCommand'
-})
-```
-#### Example command:
-
-```javascript
-module.exports = ({
-channel: "705681477169315863",
-code: `
-$userTag[$newState[id]] has joined the vc $newState[channelName]
 `,
 type: 'voiceStateUpdateCommand'
 })

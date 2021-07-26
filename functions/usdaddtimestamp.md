@@ -6,7 +6,7 @@ description: Adds a timestamp to an embed message. (After the footer)
 
 This function will add a time stamp in footer. Timestamp is when the message was sent or the ms!\
 
-#### Fields
+## Fields
 
 This function has 1 field
 
@@ -14,11 +14,11 @@ This function has 1 field
 
 Raw Usage: `$addTimestamp[ms (optional)]`
 
-#### Options
+## Options
 
 * ms - The timestamp in ms
 
-#### Usage
+## Usage
 
 ```javascript
 bot.command({
@@ -31,7 +31,7 @@ $addTimestamp
 }) //Check below for the bots response
 ```
 
-![](../.gitbook/assets/image%20%2839%29%20%282%29%20%281%29.png)
+![](../.gitbook/assets/image%20%2839%29%20%282%29%20%282%29%20%282%29%20%283%29%20%281%29.png)
 
 You can also add some text at the footer!
 
@@ -50,8 +50,6 @@ $addTimestamp
 ![](../.gitbook/assets/image%20%2864%29.png)
 
 Hey! Did you know, if a message with `$addTimestamp` was sent at a previous date, it will return:
-
-
 
 ![The date of when it was sent!](../.gitbook/assets/image%20%2857%29.png)
 

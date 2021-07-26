@@ -1,29 +1,33 @@
-# Invite System
+---
+description: Using Aoi.JS Invite System to allow an "Invite Tracker" for your Client.
+---
+
+# FetchInvites
 
 ## Introduction
 
-A feature everyone has been asking for. An invite tracker system to track invites by users.
+By allowing this method inside the Client Option, you're able add a `Invite Tracker` in your Client.
 
 ## How to enable
 
-To enable the system, simply write in
+To enable simply write in
 
 ```javascript
 const Aoijs = require('aoi.js')
 const bot = new Aoijs.Bot({
 token: "token",
 prefix: "!",
-fetchInvites: true
+fetchInvites: true //By enable this as true it can fetch for invites.
 })
 ```
 
-Make sure you enable `SERVER MEMBERS` intents
+Make sure you enable `SERVER MEMBERS` intents.
 
 ![](../../.gitbook/assets/image%20%2844%29.png)
 
-## Functions
+## Functions Availability
 
-With the invite tracker system, of course there's the functions!
+With the invite tracker system, of course there's the functions and customization.
 
 ### $userInfo
 

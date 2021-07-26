@@ -2,7 +2,7 @@
 
 This function will return the ID of the last message send by the bot.
 
-#### Usage
+## Usage
 
 ```javascript
 bot.command({
@@ -13,8 +13,8 @@ Message ID is: $loop[1;cmd]
 })
 
 bot.awaitedCommand({
-nme: "cmd",
+name: "cmd",
 code: `$botLastMessageID`
-)}
+})
 ```
 

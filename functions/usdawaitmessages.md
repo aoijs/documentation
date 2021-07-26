@@ -6,7 +6,7 @@ description: Awaits a message from given user ID or everyone in this channel.
 
 This function will respond to a user if the user says the given word\(s\) in the `reply` slot
 
-#### Fields
+## Fields
 
 This function has 6 required fields
 
@@ -22,7 +22,7 @@ This function has 6 required fields
 
 Raw Usage: `$awaitMessages[Filter;time;reply,reply2,...;awaitedCommand1,awaitedCommand2,...;error message;User ID (Optional)]`
 
-#### Options
+## Options
 
 * Filter - User who is able to execute the awaited command by saying the &lt;reply&gt; \(`everyone` can be used as well as a user ID\)
 * Time - Time left until error message appears
@@ -31,23 +31,23 @@ Raw Usage: `$awaitMessages[Filter;time;reply,reply2,...;awaitedCommand1,awaitedC
 * Error Message - The message when the time hits x
 * User ID - This will determine if the bot should/shouldn't await a message in a user's DM
 
-#### Usage
+## Usage
 
 ```javascript
 bot.command({
-	name: "test",
-	code: `$awaitMessages[$authorID;5s;Hello;Hi;Command Timed out] 
-	Say Hello
+    name: "test",
+    code: `$awaitMessages[$authorID;5s;Hello;Hi;Command Timed out] 
+    Say Hello
 `
 }) //When the user says 'Hello' it will execute the given awaited command name
 bot.awaitedCommand({
-	name: "Hi",
-	code: `Hello $username
+    name: "Hi",
+    code: `Hello $username
 `
 }) //This will respond when the user says 'Hello'
 ```
 
-![Here&apos;s what the responses would look like](../.gitbook/assets/image%20%2821%29%20%281%29.png)
+![Here&apos;s what the responses would look like](../.gitbook/assets/image%20%2821%29%20%281%29%20%281%29%20%281%29%20%282%29%20%283%29%20%283%29%20%283%29%20%283%29%20%283%29%20%282%29%20%281%29.png)
 
 {% hint style="warning" %}
 The error message will respond if the timer has ran out \(If user doesn't do anything\)

@@ -19,13 +19,11 @@ $stringStartsWith[Hey, how are you?;Hey] // returns true
 });
 ```
 
-
-
 ```text
 bot.command({
     name: "startswith",
     code: `Does \`Hey, how are you?\` start with Hello?
-$stringStartsWith[Hey, how are you?;Hey] // returns false
+$stringStartsWith[Hey, how are you?;Hello] // returns false
     `
 });
 ```

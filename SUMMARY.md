@@ -2,13 +2,13 @@
 
 * [Introduction](README.md)
 
-## AOI.JS Version 4.0.1
+## AOI.JS Version 4.2.1
 
-* [Changelog](aoi.js-version-4.0.1/changelog.md)
+* [Changelog](aoi.js-version-4.2.1/changelog.md)
 
-## Guide
+## Guides <a id="guide"></a>
 
-* [Begin](guide/begin/README.md)
+* [Getting Started](guide/begin/README.md)
   * [Bot Status](guide/begin/bot-status.md)
   * [Aliases](guide/begin/aliases.md)
   * [Gateway Intents](guide/begin/gateway-intents.md)
@@ -25,13 +25,13 @@
   * [Character Escaping](guide/begin/character-escaping.md)
   * [Embed Errors](guide/begin/embed-errors.md)
 * [Advanced Guides](guide/advanced-guides/README.md)
-  * [Music](guide/advanced-guides/music.md)
+  * [Music Functions](guide/advanced-guides/music.md)
   * [Slash Commands](guide/advanced-guides/slash-commands.md)
-  * [Invite System](guide/advanced-guides/invite-system.md)
+  * [FetchInvites](guide/advanced-guides/invite-system.md)
 * [Extras](guide/extras/README.md)
   * [Custom Events](guide/extras/custom-events.md)
   * [Sharding](guide/extras/sharding.md)
-  * [‎Dashboard](guide/extras/dashboard.md)
+  * [dbd.express](guide/extras/dashboard.md)
 
 ## Callbacks
 
@@ -60,6 +60,7 @@
 * [bot.onTypingStart](callbacks/bot.ontypingstart.md)
 * [bot.onUserUpdate](callbacks/bot.onuserupdate.md)
 * [bot.onVoiceStateUpdate](callbacks/bot.onvoicestateupdate.md)
+* [bot.onInteractionCreate](callbacks/bot.oninteractioncreate.md)
 * [bot.musicEndCommand](callbacks/bot.musicendcommand.md)
 * [bot.musicStartCommand](callbacks/bot.musicstartcommand.md)
 * [bot.loopCommand](callbacks/bot.loopcommand.md)
@@ -88,6 +89,7 @@
 * [$authorAvatar](functions/usdauthoravatar.md)
 * [$authorID](functions/usdauthorid.md)
 * [$authorMessage](functions/usdauthormessage.md)
+* [$awaitButtons](functions/usdawaitbuttons.md)
 * [$awaitCmdReaction](functions/usdawaitcmdreaction.md)
 * [$awaitMessages](functions/usdawaitmessages.md)
 * [$awaitReaction](functions/usdawaitreaction.md)
@@ -410,6 +412,7 @@
 * [$removeContains](functions/usdremovecontains.md)
 * [$removeTextSplitElement](functions/usdremovetextsplitelement.md)
 * [$removeSplitTextElement](functions/usdremovesplittextelement.md)
+* [$renameFile](functions/usdrenamefile.md)
 * [$repeatMessage](functions/usdrepeatmessage.md)
 * [$replaceText](functions/usdreplacetext.md)
 * [$replaceTextWithRegex](functions/usdreplacetextwithregex.md)

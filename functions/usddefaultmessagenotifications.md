@@ -10,7 +10,7 @@ Returns either `Mentions` or `All`.
 
 Raw usage: `$defaultMessageNotifications[guildID (optional)]`
 
-#### Usage:
+## Usage:
 
 Returning the default message notifications type of the current guild:
 
@@ -35,5 +35,5 @@ $defaultMessageNotifications[773352845738115102]
 })
 ```
 
-![Example from the Official Aoi.JS Server =&amp;gt; $defaultMessageNotifications would return &quot;Mentions&quot; on this guild](../.gitbook/assets/image%20%2829%29%20%281%29.png)
+![Example from the Official Aoi.JS Server =&amp;gt; $defaultMessageNotifications would return &quot;Mentions&quot; on this guild](../.gitbook/assets/image%20%2829%29%20%281%29%20%281%29%20%281%29%20%282%29%20%283%29%20%282%29.png)
 

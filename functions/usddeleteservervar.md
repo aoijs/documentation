@@ -2,7 +2,7 @@
 
 This function deletes the specified variable from the database
 
-#### Fields
+## Fields
 
 This function has 1 required field
 
@@ -11,19 +11,19 @@ This function has 1 required field
 
 Raw Usage: `$deleteServerVar[variable;serverID (optional)]`
 
-#### Options
+## Options
 
 * Variable - The variable we're deleting
 * Server ID - The server we're deleting for
 
-#### Usage
+## Usage
 
 Without optional fields
 
 ```javascript
 bot.command({
 name: "deleteVar",
-code: `$deleteMessageVar[total_money]`
+code: `$deleteServerVar[total_money]`
 })
 ```
 
@@ -32,7 +32,7 @@ With optional fields
 ```javascript
 bot.command({
 name: "deleteVar",
-code: `$deleteMessageVar[total_money;773352845738115102]`
+code: `$deleteServerVar[total_money;773352845738115102]`
 })
 ```
 

@@ -4,7 +4,7 @@ description: Stops the code execution for given time
 
 # $wait
 
-This function delays the bots response. 
+This function delays the bots response.
 
 ```text
 $wait[time]
@@ -29,7 +29,7 @@ name: "wait",
 code: `
 $sendMessage[Bye;no]
 $wait[5s]
-$sendMessage[Bye;no]
+$sendMessage[Hi;no]
 `
 })
 /*
@@ -48,6 +48,4 @@ In $wait we have &lt;time&gt; You can go up to 20-24 days. Here are the suffixes
 * w - Weeks
 
 Example: `$wait[5m]` \(Delays &lt;message&gt; for 5 minutes\)
-
-
 
