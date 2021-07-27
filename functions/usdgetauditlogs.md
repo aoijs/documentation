@@ -81,7 +81,7 @@ bot.command({
 name: "audit-logs",
 code: `
 Last audit log entries:
-$getAuditLogs[5;everyone;$guildID;MEMBER_BAN_ADD;<@!{target.id}>]
+$getAuditLogs[5;everyone;MEMBER_BAN_ADD;$guildID;<@!{target.id}>]
 `
 })
 ```
