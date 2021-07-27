@@ -41,11 +41,11 @@
 >```
 # Quick Links
 ## Documentation  
-> * **[Classes](class/README.md)**
-> * **[Callbacks](callbacks/README.md)**
-> * **[Functions](functions/README.md)**
-> * **[Guides](guide/README.md)**
-> * **[Options](options/README.md)**
+> * **[Classes](class/ClassSummary.md)**
+> * **[Callbacks](callbacks/CallbackSummary.md)**
+> * **[Functions](functions/FunctionSummary.md)**
+> * **[Guides](guide/GuideSummary.md)**
+> * **[Options](options/OptionsSummary.md)**
 ## GitHub
 > * **[Aoijs](https://github.com/aoijs/aoi.js)**
 > * **[Documentation](https://github.com/aoijs/documentation)**
