@@ -1,36 +1,37 @@
 # $lavalinkExecute
 
-This function allows you to play songs using lavalink. Make sure you use[ $createLavlink ]()first
+A Lavalink API Wrapper that allows you to use Lavalink with your Bot.
 
 #### Fields
 
 This function has 2 fields
 
-1. Method \(Required\)
-2. Data \(Required\)
+1. Method \( Required \)
+2. Data \( Optional \)
 
 Raw Usage: `$lavalinkExecute[method;data]`
 
 #### Options
 
-* Method - The method your gonna use to interact with the lavalink server
-* Data - The data for the method
+* Method - The method that you will use to interact with Lavalink connection
+* Data - Informations for method interaction
 
 #### Methods
 
 * play - Play a song
   * YouTube Usage: `$lavalinkExecute[play;ytsearch:url/name/id]`
-  * SoundCloud Usage: `$lavalinkExecute[play;scsearch:url]`
+  * SoundCloud Usage: `$lavalinkExecute[play;scsearch:url/name]`
 * songinfo - The current song's info
   * Usage: `$lavalinkExecute[songinfo;property]`
   * Properties: [$songInfo](usdsonginfo.md#properties)
 * volume - The volume of the queue
-  * Usage: `$lavalinkExecute[volume;number]`
+  * Usage \( Lavalink LTS \): `$lavalinkExecute[volume;number]`
+  * usage \( Lavalink Dev \): `$lavalinkExecute[addFilters;volume=1]`
 * stop - Stop the queue
   * Usage: `$lavalinkExecute[stop]`
-* filters - The filter for the song
-  * Usage: `$lavalinkExecute[filter;json]`
-  * JSON: [https://pastebin.com/iMqZ8nE6](https://pastebin.com/iMqZ8nE6)
+* addFilters - The filter for the song
+  * Usage: `$lavalinkExecute[addFilters;filter=value;filter=value;filter={key:value, key:value}]`
+  * Link: [Lavalink Developer Branch Using Filters](https://github.com/freyacodes/Lavalink/blob/dev/IMPLEMENTATION.md#using-filters)
 * resume - Resume the queue
   * Usage: `$lavalinkExecute[resume]`
 * pause - Pause the queue
@@ -41,30 +42,32 @@ Raw Usage: `$lavalinkExecute[method;data]`
   * Usage: `$lavalinkExecute[loopqueue]`
 * looptrack - Loops the track
   * Usage: `$lavalinkExecute[looptrack]`
-* state - The queue's state
+* state - The player's state
   * Usage: `$lavalinkExecute[state]`
+  * Player States: `player_idle`, `player_playing`, `player_pause`, `player_tr_change`, `player_died`, `player_forced_stop`
 * queue - The queue
-  * Usage: `$lavalinkExecute[queue;...]`
-* isPlaying - Whether or not a song is playing
+  * Usage: `$lavalinkExecute[queue;format]`
+  * Example: `$lavalinkExecute[queue;{title}, requested by {userID}]`
+* isPlaying - Whether or not the player is playing
   * Usage: `$lavalinkExecute[isPlaying]`
-* join - Joins the VC
-  * Usage: `$lavalinkExecute[join]`
-* leave - Leaves the VC
-  * Usage: `$lavalinkExecute[leave]`
-* connect - Connects to the VC
+* isPaused - Whether or not the player is paused
+  * Usage: `$lavalinkExecute[isPaused]`
+* isIdling - Whether or not the player is idling
+  * Usage: `$lavalinkExecute[isIdling]`
+* connect - Connects to Author voice channel
   * Usage: `$lavalinkExecute[connect]`
-* disconnect - Disconnects to the VC
+* disconnect - Disconnects from connected voice channel
   * Usage: `$lavalinkExecute[disconnect]`
-* prune - Prunes the music
-  * Usage: `$lavalinkExecute[prune]`
 
 #### Attention!
 
-You must first link your bot's project to your lavalink server
+You must first link your bot's project to an existing lavalink server
+
+Recommended for Lavalink Server to use [Lavalink Developer Branch](https://github.com/freyacodes/Lavalink/tree/dev)
 
 ```javascript
-bot.createLavalink(server_url:port, pass123, false) 
-//createLavalink(server:port, password, debug (boolean))
+bot.createLavalinkConnection(server_url:port, pass123, false, false);
+//bot.createLavalinkConnection(url: string, password: string, debug?: boolean, useHTTPs?: boolean)
 ```
 
 #### Usage
@@ -72,7 +75,8 @@ bot.createLavalink(server_url:port, pass123, false)
 ```javascript
 bot.command({
 name: "play",
-code: `$lavalinkExecute[play;ytsearch:Sleep on the Floor]`
-})
+code: `$lavalinkExecute[connect]
+$lavalinkExecute[play;ytsearch:Sleep on the Floor]`
+});
 ```
 
