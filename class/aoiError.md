@@ -9,11 +9,11 @@
 ### Type 
 |option|type|
 |------|----|
-|client|**[Bot Class](./class/bot.md)**|
+|client|**[Bot Class](../class/bot.md)**|
 |channelId|**number**|
-|message|**Object<[MessageOptions](./options/messageOptions.md)>**|
+|message|**Object<[MessageOptions](../options/messageOptions.md)>**|
 ### Usage 
->**AoiError.makeMessageError(client,channelId,[MessageOptions](./options/messageOptions.md))**
+>**AoiError.makeMessageError(client,channelId,[MessageOptions](../options/messageOptions.md))**
 ### Example 
 >```js
 > const Aoijs = require('aoi.js')
