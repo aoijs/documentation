@@ -16,7 +16,7 @@ bot.loadCommands(`./commands/`)
 
 ## **Main file example**
 
-Main file will allow the bot to be ran, and commands to be kept This can be named server.js, index.js whatever you want
+This is a example of how to use `bot.loadCommands(./commands/)` in your main index.
 
 {% tabs %}
 {% tab title="index.js" %}
@@ -47,7 +47,7 @@ bot.loadCommands(`./commands/`) //Allows Commands executed by `commands` folder
 ## Command Handler File Setup
 
 {% hint style="warning" %}
-Create a folder named "commands"
+Create a folder named `commands`
 {% endhint %}
 
 ![](../../.gitbook/assets/screenshot-2020-11-23-at-9.54.22-pm.png)
