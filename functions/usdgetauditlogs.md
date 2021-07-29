@@ -6,9 +6,9 @@ description: Returns audit log information.
 
 With this function you can check Audit Log entries. Every field is optional. Action field defaults to everything, user field to everyone.
 
-Raw usage: `$getAuditLogs[limit;userID;action;guildID;format]` 
+Raw usage: `$getAuditLogs[limit;userID;action;guildID;format]`
 
-#### Format option:
+## Format option:
 
 Format is an optional field where you can customize the response of the bot. Here you can use the following options to replace each with it's audit log response:
 
@@ -19,7 +19,7 @@ Format is an optional field where you can customize the response of the bot. Her
 * `{target.id}` =&gt; the id of the target \(can be a channel/message/user id or the guild id\) 
 * `{action}` =&gt; see list below.
 
-#### Action Filter:
+## Action Filter:
 
 You can use the options at the bootom of the page to filter the audit logs:
 
@@ -60,7 +60,7 @@ You can use the options at the bootom of the page to filter the audit logs:
 * INTEGRATION\_UPDATE
 * INTEGRATION\_DELETE
 
-#### Example Command:
+## Example Command:
 
 Simple usage without optional fields:
 

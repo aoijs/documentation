@@ -9,8 +9,9 @@
 ## Guides <a id="guide"></a>
 
 * [Getting Started](guide/begin/README.md)
-  * [Bot Status](guide/begin/bot-status.md)
+  * [Command Handler](guide/begin/command-handler.md)
   * [Aliases](guide/begin/aliases.md)
+  * [Bot Status](guide/begin/bot-status.md)
   * [Gateway Intents](guide/begin/gateway-intents.md)
   * [Permissions](guide/begin/permissions.md)
   * [Hyperlink](guide/begin/hyperlink.md)
@@ -21,7 +22,6 @@
     * [Server Variables](guide/begin/variables/server-variables.md)
     * [Local User Variables](guide/begin/variables/user-variables.md)
     * [Global Variables](guide/begin/variables/global-variables.md)
-  * [Command Handler](guide/begin/command-handler.md)
   * [Character Escaping](guide/begin/character-escaping.md)
   * [Embed Errors](guide/begin/embed-errors.md)
 * [Advanced Guides](guide/advanced-guides/README.md)

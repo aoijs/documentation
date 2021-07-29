@@ -2,7 +2,7 @@
 
 A Lavalink API Wrapper that allows you to use Lavalink with your Bot.
 
-#### Fields
+## Fields
 
 This function has 2 fields
 
@@ -11,12 +11,12 @@ This function has 2 fields
 
 Raw Usage: `$lavalinkExecute[method;data]`
 
-#### Options
+## Options
 
 * Method - The method that you will use to interact with Lavalink connection
 * Data - Informations for method interaction
 
-#### Methods
+## Methods
 
 * play - Play a song
   * YouTube Usage: `$lavalinkExecute[play;ytsearch:url/name/id]`
@@ -59,7 +59,7 @@ Raw Usage: `$lavalinkExecute[method;data]`
 * disconnect - Disconnects from connected voice channel
   * Usage: `$lavalinkExecute[disconnect]`
 
-#### Attention!
+## Attention!
 
 You must first link your bot's project to an existing lavalink server
 
@@ -70,7 +70,7 @@ bot.createLavalinkConnection(server_url:port, pass123, false, false);
 //bot.createLavalinkConnection(url: string, password: string, debug?: boolean, useHTTPs?: boolean)
 ```
 
-#### Usage
+## Usage
 
 ```javascript
 bot.command({
