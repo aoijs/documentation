@@ -1,35 +1,50 @@
 ---
-description: Command Handlers can be used for organizing your commands
+description: Setting up a Command Handler with Aoi.JS.
 ---
 
 # Command Handler
 
-## **Your main file**
+## Adding Command Handler
+
+```javascript
+bot.loadCommands(`./commands/`)
+```
+
+{% hint style="info" %}
+`commands` can be renamed to any directory folder.
+{% endhint %}
+
+## **Main file example**
 
 Main file will allow the bot to be ran, and commands to be kept This can be named server.js, index.js whatever you want
 
+{% tabs %}
+{% tab title="index.js" %}
 ```javascript
-const Aoijs = require("aoi.js")
+const aoijs = require("aoi.js")
 
-const bot = new Aoijs.Bot({
-  sharding: false, //true or false 
-  shardAmount: 2, //Shard amount 
-  mobile: false, //true or false - Discord Mobile Status
-  //dbhToken: "API KEY", Remove // if using, get an API Key from their Server
-  token: "TOKEN", //Discord Bot Token
-  prefix: ["PREFIX"], //Change PREFIX to your Prefix
-  autoUpdate: false // set to true if version should be updated automatically after a package update
+const bot = new aoijs.Bot({
+token: "TOKEN", //Discord Bot Token
+prefix: "PREFIX" //Discord Bot Prefix
 })
+bot.onMessage() //Allows to execute Commands
 
-bot.onMessage() // Allows Commands to Executed
-bot.loadCommands(`./commands/`) //Allows Commands executed by `commands` folder
 bot.command({
-name: "ping", 
-code: `Pong! \`$ping\`` 
+name: "ping", //Trigger name (command name)
+code: `Pong! $pingms` //Code
 })
-```
 
-## Command Handler File Setups
+bot.readyCommand({
+    channel: "", //You can use this or not
+    code: `$log[Ready on $userTag[$clientID]]` //Example Ready on Client
+})
+
+bot.loadCommands(`./commands/`) //Allows Commands executed by `commands` folder
+```
+{% endtab %}
+{% endtabs %}
+
+## Command Handler File Setup
 
 {% hint style="warning" %}
 Create a folder named "commands"
@@ -49,7 +64,7 @@ Finally, make your file
 
 ![Name of file: commandName.js](../../.gitbook/assets/screenshot-2020-11-23-at-10.00.16-pm.png)
 
-### Now to insert your normal code:
+### Now to insert your normal code
 
 ```javascript
 module.exports = {
@@ -58,7 +73,7 @@ module.exports = {
 }
 ```
 
-## Using different command types \(e.g. commands from callback events\) in the command handler:
+## Using different command types \(e.g. commands from callback events\) in the command handler
 
 For other commands, like the bot.joinCommand, you just have to find the part behind `bot.`- take it and insert this part at the type option as in the example below. `bot.joinCommand` becomes `type: 'joinCommand',` and  
 `bot.userUpdateCommand` becomes `type: 'userUpdateCommand'` etc. like in the code below.  
@@ -72,7 +87,7 @@ module.exports = {
 }
 ```
 
-## Multiple commands in one file:
+## Multiple commands in one file
 
 If you want to use multiple commands inside one command handler file, do it like this:
 
@@ -86,10 +101,4 @@ module.exports = [{
   code: `Pong! $pingms`
 }]
 ```
-
-### YouTube Tutorial: How to use different command types in command handler \|\| Aoi.JS
-
-{% hint style="info" %}
-Check out the YouTube tutorial [How to use Callbacks in Handler](https://www.youtube.com/watch?v=_g2M8UdsctA) on Aoi.JS
-{% endhint %}
 
