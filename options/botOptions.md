@@ -7,6 +7,7 @@
 |token|**string**|Your Bot Token|false|`token:"Token"`|
 |prefix|**string** or **Array\<string\>**| Your Bot Prefix(s)|false| `prefix:["."]` or `prefix:"."`|
 |intents|**"all"** or **Array\<[IntentOptions](intentOptions.md)\>** or **Array\<[DiscordIntents](https://discord.com/developers/docs/topics/gateway#list-of-intents)\>**|Discord Intents Required By Bot|false|intents:"all" or `intents: ["guilds","guildMessages"]` or `intents: ["GUILDS","GUILD_MESSAGES"]`|
+|cache|**Object<[CacheOptions](cacheOptions.md),limit>**|Limit The Caches Made By the Bot (note: Don't Use If You Don't Know Hot Manage Caches)|false|`cache :{ guilds: 10, channels: 50, users: 10, messages: 200 }`|
 |database|**[DatabaseOptions](databaseOptions.md)**| Setup For Custom or Default Database |true|`database:{db:"default",tables:["main"],path:"./database/",promisify:false}`|
 |mobilePlatform|**boolean**| Enable/Disable Mobile Presence |true|`mobilePlatform:true`|
 |respondOnEdit| **[RespondOnEditOptions](respondOnEditOptions.md)**| Enables Bot To Execute Cmds When A Message Was Edited To one Of Bot's Command Name|true|`respondOnEdit:{command:true,alwaysExecute:false,nonPrefixed:false,timeLimit:60000}`|
