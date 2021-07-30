@@ -11,7 +11,8 @@ Function that can be used with it is `$handleError`.
 Callback to use is `bot.onFunctionError()`.
 
 ### Usage:
-```
+
+```javascript
 bot.functionErrorCommand({
 channel: "channel id",
 code: `.....`
@@ -24,7 +25,7 @@ bot.onFunctionError()
 
 Non-Command Handler:
 
-```
+```javascript
 bot.functionErrorCommand({
 channel: "773357157394939924",
 code: `$title[Error Occurred in $serverName]
@@ -39,7 +40,7 @@ bot.onFunctionError()
 
 Command Handler:
 
-```
+```javascript
 //In your commands folder
 module.exports =({
 type: "functionErrorCommand",
