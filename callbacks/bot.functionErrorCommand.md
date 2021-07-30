@@ -6,7 +6,7 @@ description: It makes the bot send the error to a specific channel or if u used 
 
 Property that can be used is `channel`.
 
-Function that can be used with it is `$handleError`.
+Function that can be used with it is [$handleError](../functions/usdhandleError.md).
 
 Callback to use is `bot.onFunctionError()`.
 
