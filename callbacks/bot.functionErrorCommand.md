@@ -55,3 +55,5 @@ $color[RED]`
 //In your index.js file
 bot.onFunctionError()
 ```
+
+You can also use `$channelUsed` , `$guildID` and `$authorID` with this.
