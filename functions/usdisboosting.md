@@ -1,19 +1,21 @@
 ---
-description: Check if the user is boosting.
+description: Check if the given user ID is boosting. (Returns true or false)
 ---
 
 # $isBoosting
 
-This function checks if the given user is boosting or not. Returns boolean
+#### Usage
 
 ```text
 $isBoosting[User ID]
 ```
 
+#### Example
+
 ```javascript
 bot.command({
 name: "isboost", 
-code: `$isBoosting[$authorID]`
+code: `$isBoosting[$authorID]` //Returns true or false depending on author
 })
 ```
 

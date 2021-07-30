@@ -1,14 +1,16 @@
 ---
-description: Checks if given user ID is defeaned. Returns true/false
+description: Checks if given user ID is defeaned. (Returns true or false)
 ---
 
 # $isDefeaned
 
-This function checks if the given user ID is defeaned. Returns boolean
+#### Usage
 
 ```text
 $isDefeaned[user ID]
 ```
+
+#### Example
 
 ```javascript
 bot.command({

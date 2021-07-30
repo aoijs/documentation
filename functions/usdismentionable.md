@@ -1,12 +1,16 @@
+---
+description: Checks if the role is mentionable. (Returns true or false)
+---
+
 # $isMentionable
 
-This function checks if a role is mentionable or not. Returns boolean
+#### Usage
 
 ```text
 $isMentionable[role ID]
 ```
 
-Using this function
+#### Example
 
 ```javascript
 bot.command({

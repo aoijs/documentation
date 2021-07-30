@@ -286,6 +286,7 @@
 * [$isDefeaned](functions/usdisdefeaned.md)
 * [$isEveryoneMentioned](functions/usdiseveryonementioned.md)
 * [$isHoisted](functions/usdishoisted.md)
+* [$isManaged](functions/usdismanaged.md)
 * [$isMentionable](functions/usdismentionable.md)
 * [$isMentioned](functions/usdismentioned.md)
 * [$isMuted](functions/usdismuted.md)

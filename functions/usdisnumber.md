@@ -1,14 +1,16 @@
 ---
-description: Checks if the value is a number or not.
+description: Checks if the value is a number or not. (Returns true or false)
 ---
 
 # $isNumber
 
-This function checks if the &lt;message&gt; is a number or not. Returns boolean
+#### Usage
 
 ```javascript
-$isNumber[text]
+$isNumber[number]
 ```
+
+#### Example
 
 ```javascript
 bot.command({

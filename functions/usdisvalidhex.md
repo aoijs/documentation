@@ -1,22 +1,26 @@
+---
+description: Checks if given hex or initial decimal is valid. (Returns true or false)
+---
+
 # $isValidHex
 
-Checks if given hex or decimal is valid
+#### Usage
 
 ```text
 $isValidHex[hex/int]
 ```
 
-Now lets use it
+#### Example
 
 ```javascript
 bot.command({
     name: "hex",
-    code: `$isValidHex[00ff00]` //returns true
+    code: `$isValidHex[00ff00]` //Returns true
 })
 
 bot.command({
     name: "hex",
-    code: `$isValidHex[0]` //returns false
+    code: `$isValidHex[0]` //Returns false
 })
 ```
 

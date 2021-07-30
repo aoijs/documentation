@@ -1,15 +1,21 @@
+---
+description: Checks if given URL/Link is valid. (Returns true or false)
+---
+
 # $isValidLink
 
-This function checks if the given link is valid or not
+#### Usage
 
 ```text
 $isValidLink[link]
 ```
 
+#### Example
+
 ```javascript
 bot.command({
 name: "isLink", 
-code: `Is Link: $isValidLink[https://aoi.js.org]` 
+code: `Is Link: $isValidLink[https://aoi.js.org]` //Returns true
 })
 ```
 

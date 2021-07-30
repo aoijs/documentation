@@ -1,12 +1,18 @@
+---
+description: >-
+  Checks if the role is hoisted above all the other roles. (Returns true or
+  false)
+---
+
 # $isHoisted
 
-This function checks if the role is hoisted or not. Returns boolean
+#### Usage
 
 ```text
 $isHoisted[role id]
 ```
 
-Using the function
+#### Example
 
 ```javascript
 bot.command({

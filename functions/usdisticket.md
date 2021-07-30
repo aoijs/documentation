@@ -1,14 +1,16 @@
 ---
-description: Displays true or false depending if the channel is a ticket or not.
+description: Checks if given channel is a ticket or not. (Returns true or false)
 ---
 
 # $isTicket
 
-This function will return true or false depending if the channel is a tiket or not.
+#### Usage
 
-Raw usage: `$isTicket` or `$isTicket[Channel ID]`
+```javascript
+$isTicket[channelID]
+```
 
-Example:
+#### Example
 
 ```javascript
 bot.command({

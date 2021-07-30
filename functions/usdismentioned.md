@@ -1,15 +1,21 @@
 ---
-description: Checks if role/channel/user/@everyone was mentioned (Boolean)
+description: Checks if role/channel/user/@everyone was mentioned. (Returns true or false)
 ---
 
 # $isMentioned
 
-$isMentioned\[userID/roleID/channelID/everyone\]
+#### Usage
 
-```text
+```javascript
+$isMentioned[userID/roleID/channelID/everyone]
+```
+
+#### Example
+
+```javascript
 bot.command({
-name: "was-mentioned",
-code: `$isMentioned[535566311942651924]`
+name: "is-mentioned",
+code: `$isMentioned[608358453580136499]`
 })
 ```
 

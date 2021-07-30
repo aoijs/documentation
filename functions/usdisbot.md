@@ -1,14 +1,16 @@
 ---
-description: Check if the user is a bot or not using ID
+description: Check if the user is a bot or not using ID. (Returns true or false)
 ---
 
 # $isBot
 
-This function checks if the given user ID is a bot. Returns boolean
+#### Usage
 
-```text
+```javascript
 $isBot[User ID]
 ```
+
+#### Example
 
 ```javascript
 bot.command({

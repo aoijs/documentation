@@ -1,19 +1,21 @@
 ---
-description: Checks if given user ID is muted. Returns true/false
+description: Checks if given user ID is muted in a Voice Channel. (Returns true or false)
 ---
 
 # $isMuted
 
-This function checks if the given user ID is muted. Returns boolean
+#### Usage
 
 ```javascript
 $isMuted[userID]
 ```
 
+#### Example
+
 ```javascript
 bot.command({
 name: "isMuted",
-code: `Is Muted: $isMuted[535566311942651924]`
+code: `Is Muted: $isMuted[608358453580136499]`
 })
 ```
 
