@@ -108,6 +108,7 @@
 * [$blackListServerIDs](functions/usdblacklistserverids.md)
 * [$botLeave](functions/usdbotleave.md)
 * [$botTyping](functions/usdbottyping.md)
+* [$buttonCollector](functions/usdbuttoncollector.md)
 * [$cacheMembers](functions/usdcachemembers.md)
 * [$changeNickname](functions/usdchangenickname.md)
 * [$channel](functions/usdchannel.md)
