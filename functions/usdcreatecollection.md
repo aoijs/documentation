@@ -23,6 +23,7 @@ bot.command({
 });
 /*
     This collection has been used in the next examples:
+    https://aoi.leref.ga/functions/usdgetcollectionkey
     https://aoi.leref.ga/functions/usdsetcollectionkey
     https://aoi.leref.ga/functions/usddeletecollectionkey
     https://aoi.leref.ga/functions/usdfindcollectionkey
