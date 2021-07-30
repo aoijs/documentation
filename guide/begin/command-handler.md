@@ -6,9 +6,13 @@ description: Setting up a Command Handler with Aoi.JS.
 
 ## Adding Command Handler
 
+{% tabs %}
+{% tab title="index.js" %}
 ```javascript
 bot.loadCommands(`./commands/`)
 ```
+{% endtab %}
+{% endtabs %}
 
 {% hint style="info" %}
 `commands` can be renamed to any directory folder.
@@ -44,7 +48,7 @@ bot.loadCommands(`./commands/`) //Allows Commands executed by `commands` folder
 {% endtab %}
 {% endtabs %}
 
-## Command Handler File Setup
+## Command Handler Folder Setup
 
 {% hint style="warning" %}
 Create a folder named `commands`
@@ -66,19 +70,28 @@ Finally, make your file
 
 ### Now to insert your normal code
 
+{% tabs %}
+{% tab title="example.js" %}
 ```javascript
 module.exports = {
       name: "name",
       code: `your code/message`
 }
 ```
+{% endtab %}
+{% endtabs %}
 
 ## Using different command types \(e.g. commands from callback events\) in the command handler
 
-For other commands, like the bot.joinCommand, you just have to find the part behind `bot.`- take it and insert this part at the type option as in the example below. `bot.joinCommand` becomes `type: 'joinCommand',` and  
-`bot.userUpdateCommand` becomes `type: 'userUpdateCommand'` etc. like in the code below.  
+For other commands, like the bot.joinCommand, you just have to find the part behind `bot.`- take it and insert this part at the type option as in the example below. 
+
+`bot.joinCommand` becomes `type: 'joinCommand',`   
+`bot.userUpdateCommand` becomes `type: 'userUpdateCommand'` etc. 
+
 The type line isn't needed for normal `bot.command` commands. Just write your code like in the code block above.
 
+{% tabs %}
+{% tab title="example.js" %}
 ```javascript
 module.exports = {
       type: 'joinCommand',
@@ -86,11 +99,15 @@ module.exports = {
       code: `your code/message`
 }
 ```
+{% endtab %}
+{% endtabs %}
 
 ## Multiple commands in one file
 
 If you want to use multiple commands inside one command handler file, do it like this:
 
+{% tabs %}
+{% tab title="example.js" %}
 ```javascript
 module.exports = [{
   type: 'joinCommand',
@@ -101,4 +118,6 @@ module.exports = [{
   code: `Pong! $pingms`
 }]
 ```
+{% endtab %}
+{% endtabs %}
 

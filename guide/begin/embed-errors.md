@@ -44,6 +44,6 @@ You can use the embed error functions inside all functions they have message or 
 * [$blackListServerIDs ](../../functions/usdblacklistserverids.md)and other blacklist functions
 
 {% hint style="info" %}
-All of the embed functions are optional. Only url field needs a title field too.
+All of the embed functions are optional. Only `url` field needs a `title` field.
 {% endhint %}
 

@@ -20,7 +20,7 @@ The callbacks are optional except the [bot.onMessage\(\)](../../callbacks/bot.on
 * [bot.onJoined\(\) ](../../callbacks/bot.onjoined.md)=&gt; for logging members they join servers
 * [bot.onBanAdd\(\) ](../../callbacks/bot.onbanadd.md)=&gt; for logging members they get banned in servers
 * [bot.onBanRemove\(\)](../../callbacks/bot.onbanremove.md) =&gt; for logging members they get unbanned inservers
-* [bot.onInviteCreate\(\) ](../../callbacks/bot.oninvitecreate.md)=&gt; for logging invites they get created \(e.g. for [Invite-Tracking](../advanced-guides/invite-system.md)\)
+* [bot.onInviteCreate\(\) ](../../callbacks/bot.oninvitecreate.md)=&gt; for logging invites they get created \(e.g. for [Invite-Tracking](invite-system.md)\)
 * [bot.onInviteDelete\(\)](../../callbacks/bot.oninvitedelete.md) =&gt; for logging invites they get deleted
 * [bot.onChannelCreate\(\) ](../../callbacks/bot.onchannelcreate.md)=&gt; for logging channels they get created
 * [bot.onChannelDelete\(\)](../../callbacks/bot.onchanneldelete.md) =&gt; for logging channels they get deleted
@@ -40,7 +40,7 @@ The callbacks are optional except the [bot.onMessage\(\)](../../callbacks/bot.on
 * [bot.onMessage\(\)](../../callbacks/bot.onmessage.md) =&gt; for logging & responding to messages
 * [bot.onMessageDelete\(\)](../../callbacks/bot.onmessagedelete.md) =&gt; for logging messages they get deleted
 * [bot.onMessageUpdate\(\)](../../callbacks/bot.onmessageupdate.md) =&gt; for logging messages they get updated
-* [bot.onInteractionCreate\(\)](../advanced-guides/slash-commands.md) =&gt; for using slash commands
+* [bot.onInteractionCreate\(\)](slash-commands.md) =&gt; for using slash commands
 * [bot.onReactionAdd\(\)](../../callbacks/bot.onreactionadd.md) =&gt; for logging reactions on messages
 * [bot.onReactionRemove\(\)](../../callbacks/bot.onreactionremove.md) =&gt; for logging removed reactions on messages
 
