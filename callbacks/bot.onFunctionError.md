@@ -10,4 +10,4 @@ Commands that can be used with it:
 Function That can be used with it:
 * [$handleError](../functions/usdhandleError.md)
 
-For usage check [Funtion Error Documentation](../callbacks/bot.functionErrorCommand.md)
+For usage check [Function Error Documentation](../callbacks/bot.functionErrorCommand.md)
