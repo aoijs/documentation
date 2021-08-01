@@ -4,7 +4,7 @@ description: Setting up a Command Handler with Aoi.JS.
 
 # Command Handler
 
-## Adding Command Handler
+### Adding Command Handler
 
 {% tabs %}
 {% tab title="index.js" %}
@@ -18,7 +18,19 @@ bot.loadCommands(`./commands/`)
 `commands` can be renamed to any directory folder.
 {% endhint %}
 
-## **Main file example**
+{% tabs %}
+{% tab title="index.js" %}
+```javascript
+$updatecommands //It will update the commands in the inital path.
+```
+{% endtab %}
+{% endtabs %}
+
+{% hint style="info" %}
+`$updatecommands` can be used in `bot.loadCommands`
+{% endhint %}
+
+### Main File example
 
 This is a example of how to use `bot.loadCommands(./commands/)` in your main index.
 
@@ -48,7 +60,7 @@ bot.loadCommands(`./commands/`) //Allows Commands executed by `commands` folder
 {% endtab %}
 {% endtabs %}
 
-## Command Handler Folder Setup
+### Command Handler Folder Setup
 
 {% hint style="warning" %}
 Create a folder named `commands`
@@ -68,7 +80,7 @@ Finally, make your file
 
 ![Name of file: commandName.js](../../.gitbook/assets/screenshot-2020-11-23-at-10.00.16-pm.png)
 
-### Now to insert your normal code
+### Setting up a command with command handler.
 
 {% tabs %}
 {% tab title="example.js" %}
