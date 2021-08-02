@@ -30,7 +30,7 @@
 >```
 ---
 #### Step-2 Creating The First File 
->* After Setting Up athe Handler In Your MainFile. Create A Folder with name **"commands"**
+>* After Setting Up the Handler In Your MainFile. Create A Folder with name **"commands"**
 >![](../../.gitbook/assets/screenshot-2020-11-23-at-9.54.22-pm.png)
 
 >* After Creating The Commands Folder , **create a Folder** (for example : moderation)
@@ -55,5 +55,4 @@
 >![Console Logging](../../.gitbook/assets/commadLogging.png)
 ---
 ## Is This The End?
-> * No,[LoadCommands](../../class/loadCommands.md) Class Has Lots Of Features.
-> * You Can Also Refer Too [Extra-Features](extraFeature.md) For More Features.
+> * No,[LoadCommands](../../class/loadCommands.md) Class Has Lots Of Features For Which You Can Refer Too [Extra-Features](extraFeature.md) For More Features.
