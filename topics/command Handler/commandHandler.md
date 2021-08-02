@@ -31,13 +31,13 @@
 ---
 #### Step-2 Creating The First File 
 >* After Setting Up athe Handler In Your MainFile. Create A Folder with name **"commands"**
->![](../.gitbook/assets/screenshot-2020-11-23-at-9.54.22-pm.png)
+>![](../../.gitbook/assets/screenshot-2020-11-23-at-9.54.22-pm.png)
 
 >* After Creating The Commands Folder , **create a Folder** (for example : moderation)
->![Subfolder could be used as a category like a discord category](../.gitbook/assets/screenshot-2020-11-23-at-9.57.28-pm.png)
+>![Subfolder could be used as a category like a discord category](../../.gitbook/assets/screenshot-2020-11-23-at-9.57.28-pm.png)
 
 >* After That,**Create A JavaScript File** (for example selfKick.js)
->![Name of file: commandName.js](../.gitbook/assets/selfKick.js.png)
+>![Name of file: commandName.js](../../.gitbook/assets/selfKick.js.png)
 ---
 #### Step-3 : Adding The Code In The File
 >* Add The Code In Your Newly Created File (here is example of selfkick command)
@@ -52,8 +52,8 @@
 >```
 #### Step-4: Complete
 >* Now Run Your Project And See The Console Logging All The Commands 
->![Console Logging](../.gitbook/assets/commadLogging.png)
+>![Console Logging](../../.gitbook/assets/commadLogging.png)
 ---
 ## Is This The End?
-> * No,[LoadCommands](../class/loadCommands.md) Class Has Lots Of Features.
-> * You Can Also Refer Too [Extra 
+> * No,[LoadCommands](../../class/loadCommands.md) Class Has Lots Of Features.
+> * You Can Also Refer Too [Extra-Features](extraFeature.md) For More Features.
