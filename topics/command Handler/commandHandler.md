@@ -15,18 +15,18 @@
 ### Method 
 #### Step-1: Setting Up The Handler 
 >```js
->const bot = new aoijs.Bot({
->token: "TOKEN", //Discord Bot Token
->prefix: "PREFIX", //Discord Bot Prefix
->intents: "all" //Discord Intents 
->})
->bot.onMessage() //Allows to execute Commands
->const loader = new Aoijs.LoadCommands(bot)
->loader.load(bot.cmd,"./commands/")
->/*
->bot.cmd is object of Collections where the command data will be stored
->"./commands/" is the path of folder where all the commands' code will be present
->*/
+> const bot = new aoijs.Bot({
+>   token: "TOKEN", //Discord Bot Token
+>   prefix: "PREFIX", //Discord Bot Prefix
+>   intents: "all" //Discord Intents 
+> })
+> bot.onMessage() //Allows to execute Commands
+> const loader = new Aoijs.LoadCommands(bot)
+> loader.load(bot.cmd,"./commands/")
+> /*
+> bot.cmd is object of Collections where the command data will be stored
+> "./commands/" is the path of folder where all the commands' code will be present
+> */
 >```
 ---
 #### Step-2 Creating The First File 
