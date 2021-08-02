@@ -55,4 +55,4 @@
 >![Console Logging](../../.gitbook/assets/commadLogging.png)
 ---
 ## Is This The End?
-> * No,[LoadCommands](../../class/loadCommands.md) Class Has Lots Of Features For Which You Can Refer Too [Extra-Features](extraFeature.md) For More Features.
+> * No,[LoadCommands](../../class/loadCommands.md) Class Has Lots Of Features For Which You Can Refer Too [Extra-Features](extraFeature.md).
