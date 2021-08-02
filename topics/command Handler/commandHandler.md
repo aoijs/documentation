@@ -1,5 +1,5 @@
 # Command Handler
-> **In This Topic We Will Learn About Command Handling And Some Tricks**
+> **In This Topic We Will Learn About Basic Command Handling**
 
 ## Normal Method Vs Command Handling 
 >
