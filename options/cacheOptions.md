@@ -27,3 +27,6 @@
 >  'guildMemberRoles',
 >  'guildStickers'
 >```
+### Note
+> * **limiting guild cache will stop all events in the servers that are not present in the cache**
+> * **limiting channels cache will stop events in the channels that are not present in channels cache**
