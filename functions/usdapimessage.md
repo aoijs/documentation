@@ -19,10 +19,14 @@ description: Sends a Message using raw Discord API.
 ### Usage
 
 ```javascript
-"$apiMessage[content;embed;component;referenceMessageID:mentionTheUser(true/yes/false/no);return Id(yes/no)]"
+"$apiMessage[channelID;content;embed;component;referenceMessageID:mentionTheUser(true/yes/false/no);return Id(yes/no)]"
 ```
 
 ### Fields
+#### ChannelId
+>```js
+> "Where to Send The Message"
+>```
 
 #### Content
 
@@ -70,7 +74,7 @@ description: Sends a Message using raw Discord API.
 bot.command({
 name:"hi",
 code:`
-$apiMessage[hi;{author:hi::}{title:hello}{field:ok:lol:no}{color:#8700ff}{footer:hmmm:$authorAvatar};;$messageID:true;no]
+$apiMessage[$channelId;hi;{author:hi::}{title:hello}{field:ok:lol:no}{color:#8700ff}{footer:hmmm:$authorAvatar};{actionRow:click me,2,1,click};$messageID:true;no]
 `
 })
 ```
