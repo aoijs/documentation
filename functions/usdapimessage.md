@@ -4,37 +4,39 @@ description: Sends a Message using raw Discord API.
 
 # $apiMessage
 
-### Description
+## Description
 
 ```javascript
 "sends a Message using raw discord api"
 ```
 
-### Status
+## Status
 
 ```javascript
 "BETA"
 ```
 
-### Usage
+## Usage
 
 ```javascript
 "$apiMessage[channelID;content;embed;component;referenceMessageID:mentionTheUser(true/yes/false/no);return Id(yes/no)]"
 ```
 
-### Fields
-#### ChannelId
->```js
-> "Where to Send The Message"
->```
+## Fields
 
-#### Content
+### ChannelId
+
+> ```javascript
+> "Where to Send The Message"
+> ```
+
+### Content
 
 > ```javascript
 > "Sends the normal message"
 > ```
 
-#### Embed
+### Embed
 
 > ```javascript
 > "Sends the embedded message"
@@ -46,15 +48,15 @@ description: Sends a Message using raw Discord API.
 >
 > example: {author:hi} won't work but {author:hi::} will
 >
-> available ones are same as in [interactionReply](./usdinteractionreply.md#embed)
+> available ones are same as in [interactionReply](usdinteractionreply.md#embed)
 >
 > Color only supports hex code and int for now.
 >
-> #### Components
+> ### Components
 >
-> Same as in [interactionReply](./usdinteractionreply.md#components)
+> Same as in [interactionReply](usdinteractionreply.md#components)
 
-#### Reference
+### Reference
 
 > ```javascript
 > "This is for replying to the user"
@@ -62,13 +64,13 @@ description: Sends a Message using raw Discord API.
 >
 > **Format:** messageID:mentionTheUser\(true/false\)
 
-#### ReturnID
+### ReturnID
 
 > ```javascript
 > "Returns the id of the message sent"
 > ```
 
-### Example
+## Example
 
 ```javascript
 bot.command({

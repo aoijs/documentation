@@ -77,7 +77,7 @@ If you need a example, there's a quick example to use.
     "author": "",
     "license": "ISC",
     "dependencies": {
-      "aoi.js": "^4.2.1"
+      "aoi.js": "^4.4.4"
     }
   }
 ```
@@ -85,6 +85,6 @@ If you need a example, there's a quick example to use.
 {% endtabs %}
 
 {% hint style="info" %}
-`4.2.1` can be changed to any version number as you want.
+`4.4.4` can be changed to any version number as you want.
 {% endhint %}
 
