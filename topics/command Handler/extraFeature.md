@@ -23,7 +23,7 @@
 >* now run the project.Check! the command has been logged as messageDelete , which means that your command will be executed , when someone deletes the message
 
 #### Types 
->* You can check all the available types in [here](../options/commandTypes.md)
+>* You can check all the available types in [here](../../options/commandTypes.md)
 
 ### Update commands 
 >*Using LoadCommands class also enables a special function: **"$updateCommands"**.
@@ -56,7 +56,7 @@
 >```
 #### logged 
 >* now run the project.Check! both commands are logged now.
-> ![](../.gitbook/assets/Screenshot_2021-08-06-16-09-09-49.png)
+> ![](../../.gitbook/assets/Screenshot_2021-08-06-16-09-09-49.png)
 
 -----
 
