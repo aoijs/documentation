@@ -19,7 +19,7 @@
 
 > **Note:** 
 >```js
-> NodeJs Version 14 And Above Is Required.
+> NodeJs Version 16 And Above Is Required.
 >```
 # Basic Examples 
 >```js
