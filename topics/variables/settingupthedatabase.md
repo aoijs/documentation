@@ -3,7 +3,7 @@
 >* **In this topic we will see how to set up a database for our bot.**
 
 ### Step-1 : Choosing A Database 
->* **In This topic , we ae going to use 3 dbs:**
+>* **In This topic , we are going to use 3 dbs as Examples which are:**
 
 >* **promised db**: [dbdjs.db (default)](https://npmjs.com/dbdjs.db) , [dbdts.db](https://npmjs.com/dbdts.db)
 
