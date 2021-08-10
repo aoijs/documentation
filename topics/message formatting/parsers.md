@@ -15,7 +15,7 @@
  |**url**|url|Adds Hyperlink To Title|`{url:https://google.com}`|
  |**description**|text|Adds Description To Embed|`{description:This Is An Description}`|
  |**field**|name,value,inline?|Adds A Field To Embed|`{field: field: value:no}`|
- |**fields**|...field|Adds Multiple Fields To Embed|`{fields:name,value,no:name,value,yes:name,value}`|
+ |**fields**|Array\<field\>|Adds Multiple Fields To Embed|`{fields:name,value,no:name,value,yes:name,value}`|
  |**thumbnail**|url|Adds A Thumbnail To Embed|`{thumbnail:$userAvatar[$clientId]}`|
  |**image**|url?|Adds An Image To Embed|`{image:$serverIcon}`|
  |**color**|hex,int or RANOM|Adds Color To Embed|`{color:RANDOM}`|
