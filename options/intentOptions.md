@@ -1,6 +1,7 @@
 # IntentOptions 
 * **Available Options Are:**
 ```js
+'all'
 'guilds'
 'guildMembers'
 'guildBans'
