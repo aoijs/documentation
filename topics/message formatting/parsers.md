@@ -51,4 +51,13 @@
 >
  |property|fields|description|format|
  |--------|------|-----------|------|
- |**subGroup**|name,description,Array\<subCommand\>|
+ |**subGroup**|name,description,Array\<subCommand\>|Adds Subgroup Options|`{subGroup:name: description here:{subCommand:}}`|
+ |**subCommand**|name, description,Array\<string\|integer\|user\|boolean\|channel\|role\|mentionable\|number\>|Adds A subCommand Option|`{subCommand:name: description here:{string:}{integer:}}`|
+ |**string**|name,description,required?, Array\<choices?\>|Adds A String Option|`{string:name: description here:false:{choice:}{choice:}}`|
+ |**integer**|name,description,required?, Array\<choices?\>|Adds A String Option|`{string:name: description here:false:{choice:}{choice:}}`|
+|**string**|name,description,required?, Array\<choices?\>|Adds A String Option|`{string:name: description here:false:{choice:}{choice:}}`|
+|**string**|name,description,required?, Array\<choices?\>|Adds A String Option|`{string:name: description here:false:{choice:}{choice:}}`|
+|**string**|name,description,required?, Array\<choices?\>|Adds A String Option|`{string:name: description here:false:{choice:}{choice:}}`|
+|**string**|name,description,required?, Array\<choices?\>|Adds A String Option|`{string:name: description here:false:{choice:}{choice:}}`|
+|**string**|name,description,required?, Array\<choices?\>|Adds A String Option|`{string:name: description here:false:{choice:}{choice:}}`|
+|**string**|name,description,required?, Array\<choices?\>|Adds A String Option|`{string:name: description here:false:{choice:}{choice:}}`|
