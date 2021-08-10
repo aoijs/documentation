@@ -54,10 +54,11 @@
  |**subGroup**|name,description,Array\<subCommand\>|Adds Subgroup Options|`{subGroup:name: description here:{subCommand:}}`|
  |**subCommand**|name, description,Array\<string\|integer\|user\|boolean\|channel\|role\|mentionable\|number\>|Adds A subCommand Option|`{subCommand:name: description here:{string:}{integer:}}`|
  |**string**|name,description,required?, Array\<choices?\>|Adds A String Option|`{string:name: description here:false:{choice:}{choice:}}`|
- |**integer**|name,description,required?, Array\<choices?\>|Adds A String Option|`{string:name: description here:false:{choice:}{choice:}}`|
-|**string**|name,description,required?, Array\<choices?\>|Adds A String Option|`{string:name: description here:false:{choice:}{choice:}}`|
-|**string**|name,description,required?, Array\<choices?\>|Adds A String Option|`{string:name: description here:false:{choice:}{choice:}}`|
-|**string**|name,description,required?, Array\<choices?\>|Adds A String Option|`{string:name: description here:false:{choice:}{choice:}}`|
-|**string**|name,description,required?, Array\<choices?\>|Adds A String Option|`{string:name: description here:false:{choice:}{choice:}}`|
-|**string**|name,description,required?, Array\<choices?\>|Adds A String Option|`{string:name: description here:false:{choice:}{choice:}}`|
-|**string**|name,description,required?, Array\<choices?\>|Adds A String Option|`{string:name: description here:false:{choice:}{choice:}}`|
+ |**integer**|name,description,required?, Array\<choices?\>|Adds A Integer Option|`{integer:name: description here:false:{choice:}{choice:}}`|
+ |**boolean**|name,description,required?|Adds A Boolean Option|`{boolean:name: description here:false}`|
+ |**user**|name,description,required?|Adds A User Option|`{user:name: description here:false}`|
+ |**channel**|name,description,required?|Adds A Channel Option|`{channel:name: description here:false}`|
+ |**role**|name,description,required?|Adds A Role Option|`{role:name: description here:false}`|
+ |**mentionable**|name,description,required?|Adds A Mentionable Option|`{mentionable:name: description here:false}`|
+ |**number**|name,description,required?, Array\<choices?\>|Adds A Number Option|`{number:name: description here:false:{choice:}{choice:}}`|
+ |**choice**|name,value|adds Choices For String , Integer And Number Option|`{choice:name:value}`|
