@@ -1,42 +1,30 @@
 # $abbreviate
-
-This function abbreviates large numbers
-
-#### Usage
-
-This function has 1 field
-
-1. Number \(Required\)
-
-Raw Usage: `$abbreviate[number]`
-
-#### Options
-
-* Number - The number the function would abbreviate
-
-#### Abbreviations
-
-* k - thousands
-* m - millions
-* b - billions
-* t - trillions
-
-```javascript
-bot.command({
-name: "abbr",
-code: `
-$abbreviate[5000]
-`
-//Returns: 5k
-})
-
-//or specified number
-
-bot.command({
-name: "abbr",
-code: `
-$abbreviate[$message]
-`
-})
-```
+> **This function abbreviates large numbers**
+## Fields
+|field|type|optional|default value|
+|-----|----|--------|-------------|
+|**number**|**number**|false|-|
+|**decimal**|**number**|true|0|
+## Usage
+> ```
+> $abbreviate[number;decimal?]
+>```
+## Abbreviations
+>* All available abbreviations can be found [here](../options/abbreviationTypes.md)
+## Example
+>```javascript
+>//default example
+>
+>bot.command({
+>   name: "abbr",
+>   code: "$abbreviate[5000]"//returns 5k
+>})
+>
+>//decimal example
+>
+>bot.command({
+>   name: "abbr",
+>   code: "$abbreviate[4900;1]"//returns 4.9k
+>})
+>```
 
