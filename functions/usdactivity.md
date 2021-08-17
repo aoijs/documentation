@@ -11,6 +11,10 @@
 >* **&lt;Game Name&gt**; _\(Playing\)_
 >* **Streaming**
 ## Usage
+>```
+> $activity | $activity[userId?]
+>```
+## Example
 >```js
 >//Without a user ID
 >
