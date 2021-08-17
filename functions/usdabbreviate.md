@@ -4,7 +4,7 @@
 |field|type|description|optional|default value|
 |-----|----|-----------|--------|-------------|
 |**number**|**number**|Number to be abbreviated|false|-|
-|**decimal**|**number**|Till how many decimal position, it should be abbreviated|true|0|
+|**decimal?**|**number**|Till how many decimal position, it should be abbreviated|true|0|
 ## Usage
 > ```
 > $abbreviate[number;decimal?]
