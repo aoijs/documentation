@@ -1,50 +1,36 @@
----
-description: addField allows you to add more fields in your embed.
----
-
 # $addField
-
-This function is in charge of adding a new field to the embed, these containing a limit of 1000 characters each and allowing to use 10 fields per embed.
-
-#### Fields
-
-This function has 2 required fields
-
-1. Name \(Required\)
-2. Content \(Required\)
-3. Inline \(Optional\)
-
-Raw Usage: `$addField[title;description;inline (optional)]`
-
-#### Options
-
-* Name - The title of the new field
-* Content - The description/value of the new field
-* Inline \(yes/no\) - Sets the field into an inline field
-
+> **This function is in charge of adding a new field to the embed, these containing a limit of 1000 characters each and allowing to use 25 fields per embed.**
+## Fields
+|field|type|description|optional|default value|
+|-|-|-|-|-|
+|**index**|**number**|Adds A field to embed with that index|false|-|
+|**name**|**string**|Adds A field name|false|-|
+|**value**|**string**|Adds A field value|false|-|
+|**inline**|**yes**\|**no**|Makes the field inline|true|no|
+## Usage
+>```
+> $addField[index;title;description;inline?]
+>```
 #### Usage
-
-Without inline
-
-```javascript
-bot.command({
-    name: "embed",
-    code: `$addField[This is an example field;And this is the content!]`
-});
-```
-
-With inline
-
-```javascript
-bot.command({
-    name: "embed",
-    code: `
-    $addField[Inline #;3;yes]
-    $addField[Inline #;2;yes]
-    $addField[Inline #;1;yes]
-    `
-});
-```
+>```js
+>//Without inline
+>
+>bot.command({
+>    name: "embed",
+>    code: `$addField[1;This is an example field;And this is the content!]`
+>});
+>
+>//With inline
+>
+>bot.command({
+>    name: "embed",
+>    code: `
+>    $addField[1;Inline #;3;yes]
+>    $addField[1;Inline #;2;yes]
+>    $addField[1;Inline #;1;yes]
+>    `
+>});
+>```
 
 
 
