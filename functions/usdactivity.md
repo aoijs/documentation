@@ -4,7 +4,7 @@
 ## Fields
 |field|type|description|optional|default value|
 |-----|----|-----------|--------|-------------|
-|**userId**|**Snowflake**|id of the user whose activity is to be shown|true|author's id|
+|**userId?**|**Snowflake**|id of the user whose activity is to be shown|true|author's id|
 ## Activities
 >* **Custom Status**
 >* **Spotify** _\(Listening to\)_
