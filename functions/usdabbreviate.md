@@ -1,10 +1,10 @@
 # $abbreviate
 > **This function abbreviates large numbers**
 ## Fields
-|field|type|optional|default value|
-|-----|----|--------|-------------|
-|**number**|**number**|false|-|
-|**decimal**|**number**|true|0|
+|field|type|description|optional|default value|
+|-----|----|-----------|--------|-------------|
+|**number**|**number**|Number to be abbreviated|false|-|
+|**decimal**|**number**|Till how many decimal position, it should be abbreviated|true|0|
 ## Usage
 > ```
 > $abbreviate[number;decimal?]
