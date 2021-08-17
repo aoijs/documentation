@@ -5,7 +5,11 @@
 |field|type|description|optional|default value|
 |-----|----|-----------|--------|-------------|
 |**Emoji**|**Array<EmojiId\|Emoji>**|Array of Emojis to react With|false|-|
-#### Usage
+## Usage
+>```
+> $addCmdReactions[Emoji] | $addCmdReactions[Emoji;Emoji;Emoji;...]
+>```
+## Example
 >```javascript
 >//Single Reaction 
 >
