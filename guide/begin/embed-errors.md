@@ -7,7 +7,7 @@ description: >-
 
 # Embed Errors
 
-* `{title:text}` =&gt; embed's 
+* `{title:text}` =&gt; embed's title
 * `{url:link}` =&gt; embed's title hyperlink url
 * `{footer:text:url}` =&gt; embed's footer text and optional embed's icon image url, embed needs title
 * `{description:text}` =&gt; embed's description
