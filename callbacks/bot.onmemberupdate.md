@@ -45,10 +45,13 @@ You can use these functions $newMember\[\] and $oldMember with the options below
 * `displayHex` - Returns the hex color of this user's highest role 
 * `highestRoleID` - The ID of the highest role of this user in the guild 
 * `permissions` - The permissions for this member 
+* `newPermissions` - The new permissions for this member.
+* `removedPermissions` - The removed permissions for this member.
 * `bannable` - Whether if the user is bannable by the client or not 
 * `kickable` - Whether if the user is kickable by the client or not 
 * `manageable` - Whether if the user can be managed by the client or not 
 * `displayColor` - Displays the color of the highest role in this user 
 * `status` - The status for this user 
 * `activities` - The activities for this user
-
+* `removedRoles` - The removed roles for this user (mapped by names)
+* `addedRoles` - The new roles (mapped by names) for this user.
