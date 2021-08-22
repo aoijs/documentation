@@ -61,16 +61,35 @@ the description will say "A cool slash command for AOIjs"
 */
 })
 ```
+**Options form:**
+```
+name:description:Required (true/false):type value
+```
+
+> Here are the available types:
+
+| Name | Type |
+| :--- | :--- |
+| SUB_COMMAND | 1 |
+| SUB_COMMAND_GROUP | 2 |
+| STRING | 3 |
+| INTEGER | 4 |
+| BOOLEAN | 5 |
+| USER | 6 |
+| CHANNEL | 7 |
+| ROLE | 8 |
+| MENTIONABLE | 9 |
+| NUMBER | 10 |
 
 Using function will `options` filled out
 
 ```javascript
 bot.command({
 name: "create",
-code: `$createSlashCommand[$guildID;AOIjs;A cool slash command for AOIjs;message]`
+code: `$createSlashCommand[$guildID;say;send a message;message:your message:true:3]`
 /*
     Code Breakdown:
-    Same thing as above but adds a required field. Example in imagine below
+    Same thing as above but adds a required field. Example in image below
 */
 })
 ```
@@ -184,9 +203,10 @@ bot.onInteractionCreate()
 ### $interactionReply
 
 This function sends a message to the channel when the slash command in executed
+> [More info at this function's documentation](https://aoi.leref.ga/functions/usdinteractionreply)
 
 ```javascript
-$interactionReply[message]
+$interactionReply[content;embeds;components (optional);flags (optional);type (optional)]
 ```
 
 ```javascript
