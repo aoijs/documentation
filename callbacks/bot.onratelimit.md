@@ -25,7 +25,7 @@ code: `your code` //Code
 bot.rateLimitCommand({ 
 channel: "772414449839636490" 
 code: `I've been rate limited!
-Timeout: $rateLimt[timeout]
+Timeout: $rateLimit[timeout]
 Limit: $rateLimit[limit]
 Method: $rateLimit[method]
 Path: $rateLimit[path]
