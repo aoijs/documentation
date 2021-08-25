@@ -22,6 +22,6 @@ bot.command({
   name: "help",
   code: `
 $reactionCollector[$splitText[1];$authorID;1h;😋;awaitReaction1;yes]
-$textSplit[$sendMessage[Reaction with 😋 to get a cool message;yes]; ]`})```
+$textSplit[$sendMessage[Reaction with 😋 to get a cool message;yes]; ]`})
 ```
 
