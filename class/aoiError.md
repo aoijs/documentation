@@ -6,14 +6,12 @@
 >**AoiError**
 # Methods 
 ## makeMessageError()
-### Type 
-|option|type|
-|------|----|
-|client|**[Bot Class](../class/bot.md)**|
-|channelId|**number**|
-|message|**Object<[MessageOptions](../options/messageOptions.md)>**|
 ### Usage 
->**AoiError.makeMessageError(client,channelId,[MessageOptions](../options/messageOptions.md))**
+>```ts
+>AoiError.makeMessageError(client:Bot,channelId:Snowflake,message:MessageOptions)
+>```
+
+>**[MessageOptions](../options/messageOptions.md)**
 ### Example 
 >```js
 > const Aoijs = require('aoi.js')
@@ -33,13 +31,9 @@
 >```
 ---
 ## consoleError()
-### Type 
-|option|type|
-|------|----|
-|ErrorName|**string**|
-|ErrorMessage|**any**|
 ### Usage 
->**AoiError.consoleError(ErrorName,ErrorMessage)**
+>```ts
+>AoiError.consoleError(ErrorName:string,ErrorMessage:any)
 ### Example 
 >```js
 > const Aoijs = require('aoi.js')
