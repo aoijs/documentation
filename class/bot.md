@@ -4,9 +4,11 @@
 > ```
 
 ## Usage
-> 
-> **new Bot([BotOptions](../options/botOptions.md))**
-> 
+>```ts
+> new Bot(bot:BotOptions)
+>```
+
+>**[BotOptions](../options/botOptions.md)**
 ## Basic Example
 >```js
 >const Aoijs = require('aoi.js')
