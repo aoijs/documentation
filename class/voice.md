@@ -3,7 +3,10 @@
 > Initialise The Voice Class To Enable Aoijs Music System 
 >```
 ## Usage 
-> **new Voice([VoiceOptions](../options/voiceOptions.md))**
+>```ts
+>new Voice(options:VoiceOptions)
+
+>**[VoiceOptions](../options/voiceOptions.md)**
 ## Methods 
 ### joinVc 
 >**Joins The Voice Channel** 
