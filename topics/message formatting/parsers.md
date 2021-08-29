@@ -18,7 +18,7 @@
  |**fields**|Array\<field\>|Adds Multiple Fields To Embed|`{fields:name,value,no:name,value,yes:name,value}`|
  |**thumbnail**|url|Adds A Thumbnail To Embed|`{thumbnail:$userAvatar[$clientId]}`|
  |**image**|url?|Adds An Image To Embed|`{image:$serverIcon}`|
- |**color**|hex,int or RANOM|Adds Color To Embed|`{color:RANDOM}`|
+ |**color**|hex,int or RANDOM|Adds Color To Embed|`{color:RANDOM}`|
  |**footer**|text,iconUrl?|Adds Footer To Embed|`{footer: text}`|
  |**timestamp**|timestamp?|Adds Timestamp To Embed|`{timestamp}`|
 ---
