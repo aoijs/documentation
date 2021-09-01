@@ -173,7 +173,7 @@
 >
 >//full object mode
 >
->+$onlyIf[1==2;{"content":"hi","embeds":[{"title":"hi"}],"components":[{"type":1,"components":[{"label":"Error","type":2,"customId":"error"}]}]}]
+>+$onlyIf[1==2;{"content":"hi","embeds":[{"title":"hi"}],"components":[{"type":1,"components":[{"label":"Error","type":2,"style":4,"customId":"error"}]}]}]
 >
 ### Utility Functions 
 >```diff
