@@ -33,7 +33,7 @@
 >-boosterToken 
 >-disableFunctionsStarting
 
-> [You Can Check Those Properties In Details Here](../options/botOptions.ms)
+> [You Can Check Those Properties In Details Here](../options/botOptions.md)
 
 >**@commands**
 
