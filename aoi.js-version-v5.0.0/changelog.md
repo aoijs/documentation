@@ -160,14 +160,14 @@
 -----
 ## Functions 
 ### Error Objects 
->**Error Messages Now Work For Both Normal , Partial Objects and Full Object Mode**
+>**Error Messages Now Work For Both Normal , Parser Objects and Full Object Mode**
 
 >```diff
 >//normal mode 
 >
 >+$onlyIf[1==2;error occured{newEmbed:{title:hi}}]
 >
->//partial object mode 
+>//parser object mode 
 >
 >+$onlyIf[1==2;{"content":"error","embeds":"{newEmbed:{title:hi}}","components":"{actionRow:{button:Error:danger;error}}"]
 >
