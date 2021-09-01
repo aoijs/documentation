@@ -97,7 +97,7 @@
 >```diff
 >+onMusicStart/End/Error
 
-##Lavalink
+## Lavalink
 >**Lavalink has been Seperated into. a new class**
 
 >**@usage**
@@ -105,3 +105,90 @@
 >```ts 
 >const lava = new Aoijs.lavalink(bot:Bot) ;
 >lava.createLavalinkConnection(url: string,password:string,debug:boolean) 
+
+>**@events**
+
+>```diff
+>+onMusicStart/End/Error
+
+## LoadCommands
+>**class to load Commands and Files**
+
+>**@usage** 
+
+>```ts
+>const loader = new Aoijs.LoadCommands(bot:Bot)
+>loader.load(bot.cmd:Record<string:Group>,path:string) 
+
+>**@methods**
+
+>```ts
+>+ load(cmds:Record<name,Group>,path: string,debug?:boolean)
+>+ setColor(options:Record<string,Array<string>>)
+>+ update(debug?: boolean)
+
+>**[Check Here For More Info](../class/loadCommands.md)**
+
+## ClientShard 
+>**Shard System**
+
+>**@usage**
+
+>```ts
+>const shard = new Aoijs.ClientShard(bot:Bot,mainfile:string,options?: ShardOptions)
+
+>**@events**
+
+>```diff
+>+shard.onShardReady 
+>+shard.onShardResume
+>+shard.onShardDisconnect
+>+shard.onShardError
+>+shard.onShardReconnecting 
+
+>**@cmds**
+
+>```diff
+>+shardReadyCommand
+>+shardResumeCommand
+>+shardDisconnectCommand
+>+shardErrorCommand 
+>+shardReconnectingCommand 
+
+
+
+-----
+## Functions 
+### Error Objects 
+>**Error Messages Now Work For Both Normal , Partial Objects and Full Object Mode**
+
+>```diff
+>//normal mode 
+>
+>+$onlyIf[1==2;error occured{newEmbed:{title:hi}}]
+>
+>//partial object mode 
+>
+>+$onlyIf[1==2;{"content":"error","embeds":"{newEmbed:{title:hi}}","components":"{actionRow:{button:Error:danger;error}}"]
+>
+>//full object mode
+>
+>+$onlyIf[1==2;{"content":"hi","embeds":[{"title":"hi"}],"components":[{"type":1,"components":[{"label":"Error","type":2,"customId":"error"}]}]}]
+>
+### Utility Functions 
+>```diff
+>-$abbreviate[number]
+>+$abbreviate[number;decimal?]
+### Components Functions
+>```diff
+>//addButtons 
+>+$addButton[index;label;style;customId/url;disabled?;emoji?]
+>//addSelectMenu 
+>+$addSelectMenu[index;customId;placeHolder;minValue?;maxValue?;options;options;...]
+>//awaitComponents
+>-$awaitButtons[messageId;userfilter;customId,customId,...;awaitedCommand,awaitedCommand,...;errorMsgContent?,errorMsgEmbed?,errorMsgFlag?;uses?]
+>+$awaitComponents[messageId;userfilter;customId,customId,...;awaitedCommand,awaitedCommand,...; Embed-errors?or ErrorObject?;uses?;data?]
+### Message Functions 
+>```diff
+>-$addField[name;value;inline?]
+>+$addField[index;name;value;inline?]
