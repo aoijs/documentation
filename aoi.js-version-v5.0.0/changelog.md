@@ -179,7 +179,13 @@
 >```diff
 >-$abbreviate[number]
 >+$abbreviate[number;decimal?]
-### Components Functions
+### Calling Functions 
+#### Emoji Functions 
+>```diff 
+>-$addEmoji[name;url;returnEmoji?;RoleId;RoleId;...]
+>+$addEmoji[guildId;Name;url;returnEmoji?;reason?;roleId;roleId;...]
+>
+#### Components Functions
 >```diff
 >//addButtons 
 >+$addButton[index;label;style;customId/url;disabled?;emoji?]
@@ -188,7 +194,40 @@
 >//awaitComponents
 >-$awaitButtons[messageId;userfilter;customId,customId,...;awaitedCommand,awaitedCommand,...;errorMsgContent?,errorMsgEmbed?,errorMsgFlag?;uses?]
 >+$awaitComponents[messageId;userfilter;customId,customId,...;awaitedCommand,awaitedCommand,...; Embed-errors?or ErrorObject?;uses?;data?]
-### Message Functions 
+#### Message Functions 
+>```diff
+>-$sendMessage[message;returnId?]
+>+$sendMessage[content;embeds?;components?;files?;sticker?;allowedMentions?;messageReference:mentionTheUser?;returnId?]
+>
+>-
+##### Embed Functions 
 >```diff
 >-$addField[name;value;inline?]
 >+$addField[index;name;value;inline?]
+>
+>+$addFields[index;name:value:inline?;name:value:inline?;...]
+>
+>-$addTimestamp[timestamp?] | $addTimestamp 
+>+$addTimestamp[index;timestamp?] | $addTimestamp[index] 
+>
+>-$author[name;iconUrl?;url?]
+>+$author[Index;Name;iconUrl?;url?]
+>
+>-$color[hex|int|RANDOM]
+>+$color[index;hex|int|RANDOM]
+>
+>-$description[Text]
+>+$description[Index;Text]
+>
+>-$footer[Text;iconUrl?]
+>+$footer[Index;Text;iconUrl?]
+>
+>-$image[url]
+>+$image[Index;url]
+>
+>-$thumbnail[url]
+>+$thumbnail[Index;url]
+>
+>-$title[Text;url?]
+>+$title[Index; Text;url?]
+
