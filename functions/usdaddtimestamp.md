@@ -5,11 +5,11 @@
 |field|type|description|optional|default value|
 |-----|----|-----------|--------|-------------|
 |**index**|**number**|index of the embed|false|-|
-|**ms?**|**number**|Embed sent date|true|-|
+|**timestamp?**|**number**|Embed sent date (in miliseconds)|true|-|
 
 ## Usage
 > ```
-> $addTimestamp[index;ms?]
+> $addTimestamp[index;timestamp?]
 > ```
 
 ## Example
