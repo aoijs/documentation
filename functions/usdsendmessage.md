@@ -1,14 +1,12 @@
----
-description: Sends a message to the current channel
----
-
 # $sendMessage
+> This function sends the &lt;message&gt; to the current channel
 
-This function sends the &lt;message&gt; to the current channel
+## Fields
 
-```text
-$sendMessage[message;return message ID (yes/no)(required)]
-```
+## Usage
+> ```
+> $sendMessage[message;return message ID (yes/no)(required)]
+> ```
 
 ```javascript
 bot.command({
