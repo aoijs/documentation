@@ -9,13 +9,14 @@
 |**components?**|**string**|Components fpr the message|true|-|
 |**files**|**string**|Files of the message|false|-|
 |**sticker**|**string**|Sticker for the message|false|-|
-|**allowedMentions?**|**"yes" \| "no"**|Allow mentions|true|-|
-|**messageReference:mentionTheUser?**|**number:"yes" \| "no"**|when you want the message as a reply and mention|true|-|
-|**returnID?**|**"yes" \| "no"**|Return the bot sent message ID|true|-|
+|**allowedMentions?**|**"yes" \| "no"**|Allow mentions|true|yes|
+|**messageReference:mentionTheUser?**|**Snowflake:"yes" \| "no"**|when you want the message as a reply and mention|true|-|
+|**messageOptions?**|**MessageOptions**|Allow mentions|true|-|
+|**returnID?**|**"yes" \| "no"**|Return the bot sent message ID|true|no|
 
 ## Usage
 > ```
-> $sendMessage[message;embeds?;components?;files?;sticker?;allowedMentions;messageReference:mentionTheUser;returnID]
+> $sendMessage[message;embeds?;components?;files?;sticker?;allowedMentions;messageReference:mentionTheUser;MessageOptions;returnID]
 > ```
 
 ## Example
