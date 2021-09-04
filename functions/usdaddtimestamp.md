@@ -9,7 +9,7 @@
 
 ## Usage
 > ```
-> $addTimestamp[ms?]
+> $addTimestamp[index;ms?]
 > ```
 
 ## Example
