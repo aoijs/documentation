@@ -5,10 +5,10 @@
 |field|type|description|optional|default value|
 |-----|----|-----------|--------|-------------|
 |**message**|**string**|Content of the message|false|-|
-|**components?**|**string**|Components fpr the message|true|-|
-|**allowMentions**|**boolean**|Allow mentions|true|-|
-|**messageID:mentionUser**|**string:boolean**|when you want the message as a reply and mention|true|-|
-|**returnID**|**boolean**|Return the bot sent message ID|true|-|
+|**components?**|**string**|Components fpr the message|false|-|
+|**allowMentions**|**boolean**|Allow mentions|false|-|
+|**messageID:mentionUser**|**string:boolean**|when you want the message as a reply and mention|false|-|
+|**returnID**|**boolean**|Return the bot sent message ID|false|-|
 
 ## Usage
 > ```
