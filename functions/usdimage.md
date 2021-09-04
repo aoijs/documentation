@@ -1,19 +1,23 @@
----
-description: Adds images to embed.
----
-
 # $image
+> This function adds an image to the embed
 
-This function adds an image to the embed
+## Fields
+|field|type|description|optional|default value|
+|-----|----|-----------|--------|-------------|
+|**index**|**number**|index of the embed|false|-|
+|**url**|**string**|Embed image url|false|-|
+|**name?**|**string**|A name to mask the url|true|-|
 
-```text
-$image[url;Name (Optional)]
-```
+## Usage
+> ```
+> $image[index;url;name?]
+> ```
 
-```javascript
-bot.command({
-name: "image", 
-code: `$image[https://cdn.discordapp.com/emojis/773437619207012422.png?v=1]`
-})
-```
+## Examples
+> ```javascript
+> bot.command({
+> name: "image", 
+> code: `$image[1;https://cdn.discordapp.com/emojis/773437619207012422.png?v=1]
+> `})
+> ```
 
