@@ -1,30 +1,25 @@
----
-description: 'Add a embed description, to your message.'
----
-
 # $description
 
-This function adds an embed to your message
+> **This function adds an embed to your message**
 
-#### Fields
+## Fields
+|field|type|description|optional|default value|
+|-----|----|-----------|--------|-------------|
+|**index**|**number**|Index for the embed|false|-|
+|**message**|**string**|The message that goes into the embed description|false|-|
 
-This function has 1 field
+## Usage:
+> ```
+> $description[index;message]
+> ```
 
-1. Message \(Required\)
+## Example
 
-Raw Usage: `$description[message]`
-
-#### Options
-
-* Message - The message that goes into the embed description
-
-#### Usage
-
-```javascript
-bot.command({
-name: "description", 
-code: `
-$description[Hello world!]` 
-})
-```
+> ```javascript
+> bot.command({
+> name: "description", 
+> code: `
+> $description[1;Hello world!]` 
+> })
+> ```
 
