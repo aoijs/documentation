@@ -45,8 +45,7 @@
 > ```javascript
 > bot.command({
 > name: "timestamp",
-> code: `$title[1;hello]
-> $description[1;nice text]
+> code: `$title[1;hi]
 > $addTimestamp[1;453465654]
 > `}) //This one has ms added to it!
 > ```
