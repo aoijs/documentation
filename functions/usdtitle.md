@@ -5,10 +5,10 @@
 |-----|----|-----------|--------|-------------|
 |**index**|**number**|index of the embed|false|-|
 |**title**|**string**|Embed title|false|-|
-|**url**|**string**|URL for hyperlink|true|-|
+|**url?**|**string**|URL for hyperlink|true|-|
 ## Usage
 >```text
-> $title[index;text;url (optional)]
+> $title[index;text;url?]
 > ```
 
 {% hint style="danger" %}
