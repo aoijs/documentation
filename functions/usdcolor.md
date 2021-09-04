@@ -1,67 +1,51 @@
----
-description: 'Add color, to your sidebar embed description.'
----
-
 # $color
+> This function adds color to the sidebar embed
 
-This function adds color to the embed
+## Fields
+|field|type|description|optional|default value|
+|-----|----|-----------|--------|-------------|
+|**index**|**number**|index of the embed|false|-|
+|**color**|**string**|Embed sidebar color|false|-|
 
-#### Fields
+## Usage
+> ```
+> $color[index;color]
+> ```
 
-This function has 1 field
-
-1. Color \(Required\)
-
-Raw Usage: `$color[color]`
-
-#### Options
-
-* Color - The color your setting to the embed
-
-#### Color Types
+## Color Types
 
 * Hex - Use hex color codes - Example: \#ff00ff
 * Names - Use the name of the color - Example: RED
 * RANDOM - Chooses a random color
 
-#### Usage
-
-With Hex
-
-```javascript
-bot.command({
-name: "color", 
-code: `
-$title[Title]
-$description[Hello world!]
-$color[#FF00FF]
-`
-})
-```
-
-With Names
-
-```javascript
-bot.command({
-name: "color", 
-code: `
-$title[Title]
-$description[Hello world!]
-$color[RED]
-`
-})
-```
-
-With RANDOM
-
-```javascript
-bot.command({
-name: "color", 
-code: `
-$title[Title]
-$description[Hello world!]
-$color[RANDOM]
-`
-})
-```
+## Example
+> With Hex
+> 
+> ```javascript
+> bot.command({
+> name: "color", 
+> code: `$description[1;Tuna is cool!]
+> $color[1;#EEBB00]
+> `})
+> ```
+> 
+> With Names
+> 
+> ```javascript
+> bot.command({
+> name: "color", 
+> code: `$description[1;A random description of course!]
+> $color[1;RED]
+> `})
+> ```
+> 
+> With RANDOM
+> 
+> ```javascript
+> bot.command({
+> name: "color", 
+> code: `$description[1;Leref is Leref]
+> $color[1;RANDOM]
+> `})
+> ```
 
