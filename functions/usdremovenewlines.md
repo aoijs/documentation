@@ -9,9 +9,9 @@ $removeNewLines[text]
 ```
 This function has one field.
 
-| Field  | Description | Type | Required
+| Field | Description | Type | Required
 | ------------- | ------------- | ------------- | ------------- |
-| text  | The text to remove new lines from.  | string | no
+| text | The text to remove new lines from. | string | yes
 
 ## Example
 ```javascript
