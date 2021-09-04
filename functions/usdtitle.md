@@ -4,7 +4,7 @@
 |field|type|description|optional|default value|
 |-----|----|-----------|--------|-------------|
 |**index**|**number**|index of the embed|false|-|
-|**title?**|**string**|Embed title|false|-|
+|**title**|**string**|Embed title|false|-|
 |**url**|**string**|URL for hyperlink|true|-|
 ## Usage
 >```text
