@@ -2,14 +2,14 @@
 > This function sends the &lt;message&gt; to the current channel
 
 ## Fields
-|field|type|description|optional|default value|
-|-----|----|-----------|--------|-------------|
+|field|type|description|default value|
+|-----|----|-----------|-------------|
 |**message**|**string**|Content of the message|false|-|
 |**embeds?**|**EmbedParser**|Content of the message|true|-|
 |**components?**|**ComponentParser**|Components fpr the message|true|-|
 |**files?**|**FileParser**|Files of the message|false|-|
 |**sticker?**|**Snowflake**| string **|Sticker for the message|false|-|
-|**allowedMentions?**|**Array<everyone | user | roles>**|Allow mentions|true|yes|
+|**allowedMentions?**|**Array<everyone \| user \| roles\>**|Allow mentions|true|yes|
 |**messageReference:mentionTheUser?**|**Snowflake:yes \| no**|when you want the message as a reply and mention|true|-|
 |**messageOptions?**|**MessageOptions**|Allow various options like edit deleteCommand reactions etc |true|-|
 |**returnID?**|**yes \| no**|Return the bot sent message ID|true|no|
