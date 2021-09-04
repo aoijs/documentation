@@ -5,11 +5,13 @@
 |field|type|description|optional|default value|
 |-----|----|-----------|--------|-------------|
 |**message**|**string**|Content of the message|false|-|
-|**embeds?**|**string**|Content of the message|false|-|
-|**components?**|**string**|Components fpr the message|false|-|
-|**allowedMentions?**|**"yes" \| "no"**|Allow mentions|false|-|
-|**messageReference:mentionTheUser?**|**number:"yes" \| "no"**|when you want the message as a reply and mention|false|-|
-|**returnID?**|**"yes" \| "no"**|Return the bot sent message ID|false|-|
+|**embeds?**|**string**|Content of the message|true|-|
+|**components?**|**string**|Components fpr the message|true|-|
+|**files**|**string**|Files of the message|false|-|
+|**sticker**|**string**|Sticker for the message|false|-|
+|**allowedMentions?**|**"yes" \| "no"**|Allow mentions|true|-|
+|**messageReference:mentionTheUser?**|**number:"yes" \| "no"**|when you want the message as a reply and mention|true|-|
+|**returnID?**|**"yes" \| "no"**|Return the bot sent message ID|true|-|
 
 ## Usage
 > ```
