@@ -8,7 +8,7 @@
 |**index**|**number**|Index for the embed|false|-|
 |**message**|**string**|The message that goes into the embed description|false|-|
 
-## Usage:
+## Usage
 > ```
 > $description[index;message]
 > ```
