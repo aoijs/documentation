@@ -21,7 +21,7 @@ Open Source for the Community ❤️
 
 ### Installation
 
-**Node.JS 16.0.0 or newer is required.**
+**Node.JS 16.6.1 or newer is required.**
 
 ```text
 npm install aoi.js
