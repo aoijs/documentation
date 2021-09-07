@@ -21,7 +21,7 @@ Open Source for the Community ❤️
 
 ### Installation
 
-**Node.JS 14.0.0 or newer is required.**
+**Node.JS 16.0.0 or newer is required.**
 
 ```text
 npm install aoi.js
@@ -29,23 +29,30 @@ npm install aoi.js
 
 #### Example
 
+**In your main file:**
+
 ```javascript
 const aoijs = require("aoi.js")
 
 const bot = new aoijs.Bot({
 token: "TOKEN", //Discord Bot Token
-prefix: "PREFIX" //Discord Bot Prefix
+prefix: "PREFIX", //Discord Bot Prefix
+intents: "all" //Enables use of Intents
 })
+
+const loader = new aoijs.LoadCommands(bot)
+loader.load(bot.cmd,"./commands") //Loads commands from specified folder
+
 bot.onMessage() //Allows to execute Commands
+```
 
-bot.command({
-name: "ping", //Trigger name (command name)
-code: `Pong! $pingms` //Code
-})
+**Create a ping.js file in your specified folder for loading commands. 
+Now to insert your normal code:**
 
-bot.readyCommand({
-    channel: "", //You can use this or not
-    code: `$log[Ready on $userTag[$clientID]]` //Example Ready on Client
+```javascript
+module.exports = ({
+  name: ping", //Trigger name (command name)
+  code: Pong! $pingms` //Code
 })
 ```
 
@@ -62,9 +69,9 @@ With our powerful Package, we incorporated Music with several functions. We allo
 **Music Example**
 
 ```javascript
-bot.command({
-name: "play",
-code: `$playSong[Music Name;Something went wrong!]`
+module.exports = ({
+name: "play", //Trigger name (command name)
+code: `$playSong[Music Name;Something went wrong!]` //Code
 })
 ```
 
@@ -74,7 +81,7 @@ More Information in our [Documentation](https://aoi.leref.ga/guide/music)
 
 * [Website](https://aoi.js.org)
 * [Github](https://github.com/aoijs/aoi.js)
-* [Discord Server](https://aoi.js.org/invite)
+* [Discord Server](https://discord.gg/C6M5S5crWV)
 * [Documentation](https://aoi.leref.ga)
 
 ### Contributing
