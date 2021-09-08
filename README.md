@@ -1,83 +1,57 @@
----
-description: Aoi.JS Official Documentation - Functions / Callbacks / Examples
----
-
+# Aoijs
+> **Welcome To The Home Page Of Aoi.js Documentation**
 # Introduction
-
+## Logo
 ![](https://aoi.js.org/assets/images/aoijs-new.png)
-
-## Aoi.JS
-
+## Stats 
 [![Discord Server](https://img.shields.io/discord/773352845738115102?color=5865F2&logo=discord&logoColor=white)](https://aoi.js.org/invite) [![NPM Version](https://img.shields.io/npm/v/aoi.js.svg?maxAge=3600)](https://www.npmjs.com/package/aoi.js) [![NPM Downloads](https://img.shields.io/npm/dt/aoi.js.svg?maxAge=3600)](https://www.npmjs.com/package/aoi.js)
+## Quick About 
+> ___Aoi.JS is a package with simplified and ready-to-use functions for Discord Bot Developers to develop their own Discord Bots.___
+>
+> ___Aiming to be the easiest package to learn___
+> ___It's swift and flexible using functions.___
+>
+> ___Open Source for the Community ❦___
+# Installation 
+> ```js
+> "npm i aoi.js"
+>```
 
-### About
-
-Aoi.JS is a package with simplified and ready-to-use functions for Discord Bot Developers to develop their own Discord Bots.
-
-Aiming to be the easiest package to learn  
-It's swift and flexible using functions.
-
-Open Source for the Community ❤️
-
-### Installation
-
-**Node.JS 14.0.0 or newer is required.**
-
-```text
-npm install aoi.js
-```
-
-#### Example
-
-```javascript
-const aoijs = require("aoi.js")
-
-const bot = new aoijs.Bot({
-token: "TOKEN", //Discord Bot Token
-prefix: "PREFIX" //Discord Bot Prefix
-})
-bot.onMessage() //Allows to execute Commands
-
-bot.command({
-name: "ping", //Trigger name (command name)
-code: `Pong! $pingms` //Code
-})
-
-bot.readyCommand({
-    channel: "", //You can use this or not
-    code: `$log[Ready on $userTag[$clientID]]` //Example Ready on Client
-})
-```
-
-#### Optional packages
-
-* [@discordjs/opus](https://www.npmjs.com/package/@discordjs/opus) for encoding, primarily used for Music \(`npm install @discordjs/opus`\)
-* [ffmpeg-static](https://github.com/discord/ffmpeg-static) for allowing Music Filters to run smoothly \(`npm install ffmpeg-static`\)
-* [danbot-hosting](https://www.npmjs.com/package/danbot-hosting) for posting stats to their API \(`npm install danbot-hosting`\)
-
-**Music Integration**
-
-With our powerful Package, we incorporated Music with several functions. We allowed customization and control over what you want.
-
-**Music Example**
-
-```javascript
-bot.command({
-name: "play",
-code: `$playSong[Music Name;Something went wrong!]`
-})
-```
-
-More Information in our [Documentation](https://aoi.leref.ga/guide/music)
-
-### Links
-
-* [Website](https://aoi.js.org)
-* [Github](https://github.com/aoijs/aoi.js)
-* [Discord Server](https://aoi.js.org/invite)
-* [Documentation](https://aoi.leref.ga)
-
-### Contributing
-
-Please read [Contributing](https://github.com/aoijs/aoi.js/blob/master/.github/CONTRIBUTING.md)
-
+> **Note:** 
+>```js
+> NodeJs Version 16 And Above Is Required.
+>```
+# Basic Examples 
+>```js
+> const Aoijs = require('aoi.js');
+>
+> const bot = new Aoijs.Bot({
+>   token: "Your Bot Token",
+>   prefix: "Bot Prefix",
+>   intents: "all"
+> });
+>
+>bot.onMessage() //enables bot to see messages (required for executing Commands)
+>
+>bot.command({
+>  name: "ping", //command name
+>  code: `My Ping Is \`$ping ms\` ` //code to be executed when this command is called 
+> });
+>
+>```
+# Quick Links
+## Documentation  
+> * **[Classes](class/ClassSummary.md)**
+> * **[Callbacks](callbacks/CallbackSummary.md)**
+> * **[Functions](functions/FunctionSummary.md)**
+> * **[Guides](guide/GuideSummary.md)**
+> * **[Options](options/OptionsSummary.md)**
+## GitHub
+> * **[Aoijs](https://github.com/aoijs/aoi.js)**
+> * **[Documentation](https://github.com/aoijs/documentation)**
+## Contribution 
+> * **[Contribution GuideLines](https://github.com/aoijs/aoi.js/blob/master/.github/CONTRIBUTING.md)**
+## Misc
+> * **[Discord Server Invite Link 1](https://discord.gg/akarui)**
+> * **[Discord Server Invite Link 2](https://aoi.js.org/invite)**
+> * **[Website](https://aoi.js.org)**
