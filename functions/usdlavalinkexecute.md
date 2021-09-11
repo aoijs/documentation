@@ -66,8 +66,8 @@ You must first link your bot's project to an existing lavalink server
 Recommended for Lavalink Server to use [Lavalink Developer Branch](https://github.com/freyacodes/Lavalink/tree/dev)
 
 ```javascript
-bot.createLavalinkConnection(server_url:port, pass123, false, false);
-//bot.createLavalinkConnection(url: string, password: string, debug?: boolean, useHTTPs?: boolean)
+bot.createLavalink("server_url:port", "pass123", false, false);
+//bot.createLavalink(url: string, password: string, debug?: boolean, useHTTPs?: boolean)
 ```
 
 ## Usage
