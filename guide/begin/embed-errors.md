@@ -12,7 +12,7 @@ description: >-
 * `{footer:text:url}` =&gt; embed's footer text and optional embed's icon image url, embed needs title
 * `{description:text}` =&gt; embed's description
 * `{color:hex}` =&gt; embed's hex color code
-* `{author:text:url}` =&gt; the embed's author and optional author image uld
+* `{author:text:url}` =&gt; the embed's author and optional author image url
 * `{thumbnail:url}` =&gt; the embed's thumbail image url
 * `{field:name:value:inline}` =&gt; embed field with optional inline field \(yes/no\)
 * `{timestamp:ms}` =&gt; embed timestamp with optional ms field
