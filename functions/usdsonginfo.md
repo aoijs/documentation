@@ -40,7 +40,7 @@ Next Playing: $songInfo[title;1]
 * duration\_left - Duration left for the song to end.
 * current\_duration - The current duration of the song.
 * url - URL to the youtube video of the current song.
-* userID - ID of the sser that added the song.
+* userID - ID of the user that added the song.
 * thumbnail - The thumbnail of the song.
 * publisher - Channel that uploaded the song.
 * publisher\_url - Link of the channel that uploaded the song.
