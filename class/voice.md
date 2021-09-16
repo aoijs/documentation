@@ -4,17 +4,27 @@
 >```
 ## Usage 
 >```ts
->new Voice(options:VoiceOptions)
+>new Voice(client:Bot,ytdlOptions:YTDL,scOptions:SCDL,cacheOptions:CacheOptions)
 
 >**[VoiceOptions](../options/voiceOptions.md)**
 ## Methods 
-### joinVc 
+### joinVc() 
 >**Joins The Voice Channel** 
-### Usage 
+#### Usage 
 >```typescript
 > Voice.joinVc(voiceChannel:VoiceChannel,textChannel:TextChannel); 
 >```
-### Example
+
+Returns: **[ServerManager](serverManager.md)**
+#### Example
 >```js
 > Voice.joinVc(member.voice.channel,channel) 
 >``` 
+### readonly serversSize 
+>**Gives Count Of All Voice Connections** 
+#### Usage 
+>```typescript
+> Voice.serversSize 
+>```
+
+Returns: **number**
