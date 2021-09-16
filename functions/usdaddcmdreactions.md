@@ -1,41 +1,29 @@
----
-description: Adds a reaction to the message who triggered the command.
----
-
 # $addCmdReactions
+> This function will be in charge of adding the 'emojis' previously chosen in the message of the person who has activated the command.
 
-This function will be in charge of adding the 'emojis' previously chosen in the message of the person who has activated the command.
+## Fields
+|field|type|description|optional|default value|
+|-----|----|-----------|--------|-------------|
+|**emoji**|**emoji**|emoji that you want it to add|false|-|
 
-#### Fields
+## Usage
+> ```
+> $addCmdReactions[emoji1;emoji2;emoji3;...]
+> ```
 
-This function has 1 required field
+## Examples
 
-1. Emoji \(Required\)
-2. Emoji 2 \(Optional\)
-3. Emoji 3 \(Optional\)
-4. Etc
-
-Raw Usage: `$addCmdReactions[emoji1;emoji2;emoji3;...]`
-
-#### Options
-
-* Emoji\(s\) - The emoji that is being reacted
-
-#### Usage
-
-```javascript
-bot.command({
-    name: "react",
-    code: `$addCmdReactions[✔]`
-});
-```
-
-Multiple Reactions
-
-```javascript
-bot.command({
-    name: "react",
-    code: `$addCmdReactions[🎉;✔]`
-});
-```
+> ```javascript
+> bot.command({
+>     name: "react",
+>     code: `$addCmdReactions[✔]`
+> });
+> 
+> //Multiple Reactions
+> 
+> bot.command({
+>     name: "react",
+>     code: `$addCmdReactions[🎉;✔]`
+> });
+> ```
 
