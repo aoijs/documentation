@@ -1,4 +1,4 @@
-# $abbbutton
+# $addbutton
 > **This function Adds A Button Component To Bot Message**
 ## Fields
 |field|type|description|optional|default value|
@@ -11,7 +11,7 @@
 |**emoji?**|**emoji*|Adds Emoji To Button|true|-|
 ## Usage
 > ```
-> $abbbutton[index;label;style;customId;disabled?;emoji?]
+> $addbutton[index;label;style;customId;disabled?;emoji?]
 >```
 ## Example
 >```javascript
