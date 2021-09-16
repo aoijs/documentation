@@ -17,7 +17,7 @@
 >```javascript
 >bot.command({
 >   name: "hi",
->   code: "$abbbutton[1;hewwo;2;button1]"
+>   code: "$addbutton[1;hewwo;2;button1]"
 >})
 >```
 
