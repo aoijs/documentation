@@ -36,6 +36,7 @@ $serverName - The name of the server the user joined
 $username - The user who joined the server
 */
 }) 
+bot.onJoined()
 ```
 
 {% hint style="warning" %}
