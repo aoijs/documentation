@@ -60,7 +60,7 @@
 > }
 > ``` 
 #### Options Property 
->**Like Normal Mode Has "{edit}","{reactions:}" options .For Parser And Object Mode A Additional _options_ Property Has Been Added**
+>**Like Normal Mode Has "{edit}","{reactions:}" options, Parser And Object Mode An Additional _options_ Property**
 ##### Example 
 >**Parser Mode**
 >```js
