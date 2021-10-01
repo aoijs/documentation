@@ -33,7 +33,7 @@ bot.onMessage() //Allows to execute Commands
 
 bot.command({
 name: "ping", //Trigger name (command name)
-code: `Pong! $pingms` //Code
+code: `Pong! \`$ping\`ms` //Code
 })
 
 bot.readyCommand({
@@ -77,7 +77,7 @@ If you need a example, there's a quick example to use.
     "author": "",
     "license": "ISC",
     "dependencies": {
-      "aoi.js": "^4.4.4"
+      "aoi.js": "^4.5.0"
     }
   }
 ```
