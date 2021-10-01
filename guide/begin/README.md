@@ -85,6 +85,6 @@ If you need a example, there's a quick example to use.
 {% endtabs %}
 
 {% hint style="info" %}
-`4.4.4` can be changed to any version number as you want.
+`4.5.0` can be changed to any version number as you want.
 {% endhint %}
 
