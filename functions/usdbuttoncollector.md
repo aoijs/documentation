@@ -6,13 +6,13 @@ description: >-
 
 # $buttonCollector
 
-### RawUsage
+## RawUsage
 
 ```javascript
 $buttonCollector[messageID;userID/everyone;time;customID,customID,...;awaitedcommand,awaitedCommand,...;ErrorContent,ErrorEmbed,ErrorFlag (optional); awaitedcommand for when collector ends (optional)]
 ```
 
-### Fields
+## Fields
 
 * messageID : ID of the message to create collector for.
 * UserFilter : ID of the user for whom the collector should work. "everyone" for every user.
@@ -22,7 +22,7 @@ $buttonCollector[messageID;userID/everyone;time;customID,customID,...;awaitedcom
 * ErrorMessage : divided into 3 parts \(ErrorContent , ErrorEmbed & ErrorFlag\) the collector will send this error when a user who is not present in UserFilter clicks on the button
 * awaitedCommand :an awaitcommand to execute when the Collector ends
 
-### **Example Usage**
+## **Example Usage**
 
 ```javascript
 bot.command({

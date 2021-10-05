@@ -9,7 +9,7 @@ description: >-
 
 This callback triggers every time a member gets updated, e.g. role given/removed or nickname changed.
 
-#### Usage:
+## Usage:
 
 ```javascript
 bot.memberUpdateCommand({ //command
@@ -18,7 +18,7 @@ code: `your code` //Message that will be sent to <channel>
 })
 ```
 
-#### Example Command:
+## Example Command:
 
 ```javascript
 bot.memberUpdateCommand({ 
@@ -29,11 +29,11 @@ $oldMember[permissions] to $newMember[permissions]
 })
 ```
 
-#### Options:
+## Options:
 
 You can use these functions $newMember\[\] and $oldMember with the options below to return new and old member data:
 
-*  `id` - The ID of the user 
+* `id` - The ID of the user 
 * `name` - The name of this user 
 * `guildID` - The ID of the guild this member was updated on 
 * `nick` - The nickname of this user before it was updated, if any 
@@ -53,5 +53,6 @@ You can use these functions $newMember\[\] and $oldMember with the options below
 * `displayColor` - Displays the color of the highest role in this user 
 * `status` - The status for this user 
 * `activities` - The activities for this user
-* `removedRoles` - The removed roles for this user (mapped by names)
-* `addedRoles` - The new roles (mapped by names) for this user.
+* `removedRoles` - The removed roles for this user \(mapped by names\)
+* `addedRoles` - The new roles \(mapped by names\) for this user.
+

@@ -24,7 +24,7 @@ description: >-
 * `{attachment:name.extension:url}` =&gt; send an attachment with the message
 * `{edit:duration:{new message}:{new message}:{...}}` =&gt; edit the message after given time
 
-#### Where to use
+## Where to use
 
 You can use the embed error functions inside all functions they have message or error message field in it. Among users the following functions:
 

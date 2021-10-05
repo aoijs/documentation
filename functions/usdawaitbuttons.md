@@ -6,7 +6,7 @@ description: >-
 
 # $awaitButtons
 
-#### **Fields**
+## **Fields**
 
 This function has 6 required fields
 
@@ -21,7 +21,7 @@ This function has 6 required fields
 
 Raw Usage: `$awaitButtons[msgid;userfilter; customID, customID,...; awaitcommand, awaitedcommand,...; error content,Error embed,erorr flags (optional);uses (optional : default 1)]`
 
-#### **Options**
+## **Options**
 
 * msgid - the id of the discord message on which it expects an action
 * userFilter - Use everyone or a userID to filter who can react
@@ -34,7 +34,7 @@ Raw Usage: `$awaitButtons[msgid;userfilter; customID, customID,...; awaitcommand
 
   \*\*\*\*
 
-#### **Usage**
+## **Usage**
 
 ```javascript
 $awaitButtons[$get[id];$authorID;click;awaitclick; Stop,{description:Only $userTag Can Use This Button}{color:#ff0000},64;1]

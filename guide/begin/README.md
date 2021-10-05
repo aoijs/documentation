@@ -45,7 +45,7 @@ bot.readyCommand({
 {% endtabs %}
 
 > You must enter a prefix via `PREFIX`
-
+>
 > You must enter a valid Discord Bot Token via `TOKEN`
 
 {% hint style="success" %}

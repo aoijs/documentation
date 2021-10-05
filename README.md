@@ -1,5 +1,5 @@
 ---
-description: Aoi.JS Official Documentation - Functions / Callbacks / Examples
+description: The available functions and guides for your needs.
 ---
 
 # Introduction

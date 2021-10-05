@@ -8,9 +8,9 @@ This command loops a code to run every x **milliseconds.**
 
 Properties are `code`, `every`, `executeOnStartup` and `channel` .
 
-The properties `channel` and `executeOnStartup` are optional. 
+The properties `channel` and `executeOnStartup` are optional.
 
-#### Usage:
+## Usage:
 
 ```javascript
 bot.loopCommand({
@@ -23,7 +23,7 @@ every: ms
 })
 ```
 
-#### Example command:
+## Example command:
 
 ```javascript
 bot.loopCommand({

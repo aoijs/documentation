@@ -61,8 +61,10 @@ the description will say "A cool slash command for AOIjs"
 */
 })
 ```
+
 **Options form:**
-```
+
+```text
 name:description:Required (true/false):type value
 ```
 
@@ -70,8 +72,8 @@ name:description:Required (true/false):type value
 
 | Name | Type |
 | :--- | :--- |
-| SUB_COMMAND | 1 |
-| SUB_COMMAND_GROUP | 2 |
+| SUB\_COMMAND | 1 |
+| SUB\_COMMAND\_GROUP | 2 |
 | STRING | 3 |
 | INTEGER | 4 |
 | BOOLEAN | 5 |
@@ -94,7 +96,7 @@ code: `$createSlashCommand[$guildID;say;send a message;message:your message:true
 })
 ```
 
-![Example](../../.gitbook/assets/image%20%2834%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29.png)
+![Example](../../.gitbook/assets/image%20%2834%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%283%29.png)
 
 ### $getSlashCommandID
 
@@ -203,6 +205,7 @@ bot.onInteractionCreate()
 ### $interactionReply
 
 This function sends a message to the channel when the slash command in executed
+
 > [More info at this function's documentation](https://aoi.leref.ga/functions/usdinteractionreply)
 
 ```javascript

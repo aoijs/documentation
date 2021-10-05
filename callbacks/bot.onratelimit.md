@@ -9,17 +9,16 @@ description: >-
 
 This callback triggers every time your bot gets rate limited by the Discord API.
 
-#### Example Template
+## Example Template
 
 ```javascript
 bot.rateLimitCommand({ //command
 channel: "ID" //The channel we're the log is
 code: `your code` //Code
 })
-
 ```
 
-#### Example Usage
+## Example Usage
 
 ```javascript
 bot.rateLimitCommand({ 
@@ -32,10 +31,9 @@ Path: $rateLimit[path]
 Route: $rateLimit[route]
 `
 })
-
 ```
 
-#### Options for $rateLimit
+## Options for $rateLimit
 
 * `timeout` - Time before this session rate limit is restarted 
 * `limit` - Amount of times you can request this endpoint before failing 
