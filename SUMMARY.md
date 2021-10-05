@@ -2,9 +2,9 @@
 
 * [Introduction](README.md)
 
-## AOI.JS Version 4.2.1
+## aoi.js version 4.5.0
 
-* [Changelog](aoi.js-version-4.2.1/changelog.md)
+* [Changelog](aoi.js-version-4.5.0/changelog.md)
 
 ## Guides <a id="guide"></a>
 
