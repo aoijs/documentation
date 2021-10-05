@@ -2,7 +2,7 @@
 description: Using Aoi.JS you're able to create Slash Commands for your Client.
 ---
 
-# Slash Commands
+# Using Slash Commands
 
 ## Introduction
 

@@ -2,7 +2,7 @@
 description: Available functions for Music using Aoi.JS
 ---
 
-# Music Functions
+# Using Music
 
 ### A list of available Music Functions:
 

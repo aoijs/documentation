@@ -2,7 +2,7 @@
 description: How to setup a Bot Status
 ---
 
-# Bot Status
+# Client Status
 
 ### How do I set a Bot Status?
 
