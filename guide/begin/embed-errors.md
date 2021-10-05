@@ -39,6 +39,7 @@ You can use the embed error functions inside all functions they have message or 
 * [$onlyIfMessageContains](../../functions/usdonlyifmessagecontains.md)
 * [$suppressErrors](../../functions/usdsuppresserrors.md)
 * [$argsCheck](../../functions/usdargscheck.md)
+* [$editMessage](../../functions/usdeditmessage)
 * [$onlyForIDs](../../functions/usdonlyforids.md) and other ID limiters
 * [$cooldown](../../functions/usdcooldown.md) and other cooldown functions
 * [$blackListServerIDs ](../../functions/usdblacklistserverids.md)and other blacklist functions
