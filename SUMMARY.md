@@ -4,7 +4,7 @@
 
 ## aoi.js version 4.5.0
 
-* [Changelog](aoi.js-version-4.5.0/changelog.md)
+* [Changelog](changelog.md)
 
 ## Guides <a id="guide"></a>
 
