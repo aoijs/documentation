@@ -1,7 +1,3 @@
----
-description: Returns the amount of roles in this guild
----
-
 # $roleCount
 
 This function returns the amount of roles in the current guild

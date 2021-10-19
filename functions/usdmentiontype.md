@@ -1,7 +1,3 @@
----
-description: Uses an argument to determine the type of the mention.
----
-
 # $mentionType
 
 This function returns what type of mention the given argument is.
@@ -17,7 +13,7 @@ Raw usage: `$mentionType[mention argument]`
 
 #### Example command:
 
-```text
+```js
 bot.command({
 name: "mention",
 code: `

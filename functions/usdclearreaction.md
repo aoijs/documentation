@@ -1,7 +1,3 @@
----
-description: Clears the given emoji of the given message
----
-
 # $clearReaction
 
 This function will remove the given emoji for the given message ID of the given user in the given channel.

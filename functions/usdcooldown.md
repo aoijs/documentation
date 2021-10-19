@@ -1,7 +1,3 @@
----
-description: Set a cooldown for a command
----
-
 # $cooldown
 
 This function sets a cooldown to the current command

@@ -1,7 +1,3 @@
----
-description: Return the guild default message notification level.
----
-
 # $defaultMessageNotifications
 
 This function returns the level of a server'S default message notifications.
@@ -14,7 +10,7 @@ Raw usage: `$defaultMessageNotifications[guildID (optional)]`
 
 Returning the default message notifications type of the current guild:
 
-```text
+```js
 bot.command({
 name: "notifications",
 code: `
@@ -25,7 +21,7 @@ Notifications type of this server: $defaultMessageNotifications
 
 Returning the default message notifications type of another guild:
 
-```text
+```js
 bot.command({
 name: "notifications",
 code: `

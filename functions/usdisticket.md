@@ -1,7 +1,3 @@
----
-description: Checks if given channel is a ticket or not. (Returns true or false)
----
-
 # $isTicket
 
 #### Usage

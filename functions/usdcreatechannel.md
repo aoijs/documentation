@@ -1,9 +1,3 @@
----
-description: >-
-  Creates a channel with given type (text/voice) and name. If third field is set
-  to 'yes', the function will return the newly created channel ID.
----
-
 # $createChannel
 
 This function allows the Client to create a channel within the Guild.

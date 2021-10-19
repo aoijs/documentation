@@ -1,7 +1,3 @@
----
-description: Replaces "sample" to "new" from "text"
----
-
 # $replaceText
 
 This function allows you to replace text from the given text
@@ -34,3 +30,5 @@ code: `$replaceText[Hi Bye;Bye;Goodbye]`
 // Returns: Hi Goodbye
 ```
 
+> ❗ Using blank as the sample field may not return the same thing as u want<br/>
+> ex. $replaceText[$message;;Bye], and $message is "Hi Bye", it will return "HByeIBye ByeBByeYByeE"

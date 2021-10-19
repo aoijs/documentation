@@ -1,7 +1,3 @@
----
-description: Sends a message to given Channel ID
----
-
 # $channelSendMessage
 
 This function allows you to send a message in the channel you selected previously.

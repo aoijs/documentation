@@ -1,7 +1,3 @@
----
-description: Returns the bots invite
----
-
 # $getBotInvite
 
 This function returns your bots invite
@@ -18,7 +14,7 @@ Raw Usage: `$getBotInvite[permission1 (optional);permission2 (optional);etc]`
 
 * Permissions - The permissions that are given to the bot when joining a server
 
-Find all available permissions [here](../guide/begin/permissions.md)
+Find all available permissions [here](guide/begin/permissions.md)
 
 #### Usage
 

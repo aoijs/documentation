@@ -1,7 +1,3 @@
----
-description: Check if the given user ID is boosting. (Returns true or false)
----
-
 # $isBoosting
 
 #### Usage

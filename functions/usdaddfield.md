@@ -1,7 +1,3 @@
----
-description: addField allows you to add more fields in your embed.
----
-
 # $addField
 
 This function is in charge of adding a new field to the embed, these containing a limit of 1000 characters each and allowing to use 10 fields per embed.

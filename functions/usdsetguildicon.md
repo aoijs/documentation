@@ -1,7 +1,3 @@
----
-description: Sets the guild icon to the specified url
----
-
 # $setGuildIcon
 
 This function set's the current guilds icon

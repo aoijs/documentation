@@ -1,7 +1,3 @@
----
-description: Checks if a webhook exists
----
-
 # $webhookExists
 
 $webhookExists\[webhookID;webhookToken\]

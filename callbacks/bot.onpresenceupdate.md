@@ -24,7 +24,7 @@ Old Presence: $oldPresence[status]
 
 #### Options:
 
-You can use these functions [$oldPresence\[\]](../functions/usdoldpresence.md) with the options below to return old user data.
+You can use these functions [$oldPresence](functions/usdoldpresence.md) with the options below to return old user data.
 
 * `id` - The ID of the user that updated the presence 
 * `status` - The status of the user 

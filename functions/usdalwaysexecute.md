@@ -1,16 +1,8 @@
----
-description: >-
-  A command property that you can paste in the command's name field to trigger
-  the command with every message.
----
-
 # $alwaysExecute
 
 This function will allow the command to be triggered by **every** message a user sends.
 
-{% hint style="danger" %}
-Use this function wisely
-{% endhint %}
+> ❗ Use this function wisely
 
 #### Usage
 
@@ -33,7 +25,4 @@ code: `$setVar[messages;$sum[$getVar[messages];1]]` //Adds 1 to the value for ev
 })
 ```
 
-{% hint style="danger" %}
-Having alot of $alwaysExecute can lead to high ping and delayed responses
-{% endhint %}
-
+> ❗ Having alot of $alwaysExecute can lead to high ping and delayed responses

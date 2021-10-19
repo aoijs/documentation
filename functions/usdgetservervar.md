@@ -1,7 +1,3 @@
----
-description: Gets server variable value
----
-
 # $getServerVar
 
 This function gets the given variables value for the current or specified server

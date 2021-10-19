@@ -1,7 +1,3 @@
----
-description: Loops for every cached guild member executing awaited commands
----
-
 # $forEachMember
 
 This function creates a loop for every user thats' in the current guild

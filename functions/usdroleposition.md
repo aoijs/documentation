@@ -1,7 +1,3 @@
----
-description: Returns the specified roles position
----
-
 # $rolePosition
 
 This function returns the position of the specified role

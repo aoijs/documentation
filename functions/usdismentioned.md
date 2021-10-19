@@ -1,7 +1,3 @@
----
-description: Checks if role/channel/user/@everyone was mentioned. (Returns true or false)
----
-
 # $isMentioned
 
 #### Usage

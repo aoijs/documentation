@@ -1,7 +1,3 @@
----
-description: Returns the emoji ID of the emoji the user reacted to
----
-
 # $emojiID
 
 Returns the ID of the emoji the user reacted to

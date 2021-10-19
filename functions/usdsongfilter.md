@@ -8,131 +8,235 @@ $songFilter[type:value;type:value;...]
 
 ### Available Types
 
-{% tabs %}
-{% tab title="Pitch" %}
-Changes the pitch of the audio
+<details>
+<summary>Pitch</summary>
+<table>
+  <tr><th align="left">
+    Pitch
+  </th></tr>
+  <tr><td>
 
-Raw usage: `pitch:number`
+  Changes the pitch of the audio
 
-Usage: `pitch:1.5`
+  Raw usage: `pitch:number`
 
-Min: `0.1` Max: `1.9`
-{% endtab %}
+  Usage: `pitch:1.5`
 
-{% tab title="Bass Boost" %}
-Changes the bass for the audio
+  Min: `0.1` Max: `1.9`
+  </tr></td>
+</table>
+</details>
 
-Raw Usage: `bass:number`
+<details>
+<summary>Bass Boost</summary>
+<table>
+  <tr><th align="left">
+    Bass Boost
+  </th></tr>
+  <tr><td>
 
-Usage: `bass:5`
+  Changes the bass for the audio
 
-Min: `-20` Max: `20`
-{% endtab %}
+  Raw Usage: `bass:number`
 
-{% tab title="Echo" %}
-Sets an echo for the audio
+  Usage: `bass:5`
 
-Raw Usage: `echo:number`
+  Min: `-20` Max: `20`
+  </td></tr>
+</table>
+</details>
 
-Usage: `echo:100`
+<details>
+<summary>Echo</summary>
+<table>
+  <tr><th align="left">
+    Echo
+  </th></tr>
+  <tr><td>
 
-Min: `0.9` Max: `90000`
-{% endtab %}
+  Sets an echo for the audio
 
-{% tab title="Speed" %}
-Sets a speed for the audio
+  Raw Usage: `echo:number`
 
-Raw Usage: `speed:number`
+  Usage: `echo:100`
 
- Usage: `speed:1.5`
+  Min: `0.9` Max: `90000`
+  </td></tr>
+</table>
+</details>
 
- Min: `0.1` Max: `1.9`
-{% endtab %}
+<details>
+<summary>Speed</summary>
+<table>
+  <tr><th align="left">
+    Speed
+  </th></tr>
+  <tr><td>
 
-{% tab title="Vibrato" %}
-Sets a vibrato for the audio
+  Sets a speed for the audio
 
-Raw Usage: `vibrato:number`
+  Raw Usage: `speed:number`
 
- Usage: `vibrato:0.5`
+  Usage: `speed:1.5`
 
-Min: `0.1` Max: `0.9`
-{% endtab %}
+  Min: `0.1` Max: `1.9`
+  </td></tr>
+</table>
+</details>
 
-{% tab title="Pulsator" %}
-Set a pulsator to the audio
+<details>
+<summary>Vibrato</summary>
+<table>
+  <tr><th align="left">
+    Vibrato
+  </th></tr>
+  <tr><td>
 
-Raw Usage: `pulsator:number`
+  Sets a vibrato for the audio
 
- Usage: `pulsator:5`
+  Raw Usage: `vibrato:number`
 
-Min: `0.1` Max: `99.9`
-{% endtab %}
+  Usage: `vibrato:0.5`
 
-{% tab title="Contrast" %}
-Sets a contrast for the audio
+  Min: `0.1` Max: `0.9`
+  </td></tr>
+</table>
+</details>
 
-Raw Usage: `contrast:number`
+<details>
+<summary>Pulsator</summary>
+<table>
+  <tr><th align="left">
+    Pulsator
+  </th></tr>
+  <tr><td>
 
-Usage: `contrast:1`
+  Set a pulsator to the audio
 
- Min: `0.1` Max: `99.9`
-{% endtab %}
+  Raw Usage: `pulsator:number`
 
-{% tab title="Gate" %}
-Reduces the noise of the audio
+  Usage: `pulsator:5`
 
-Raw Usage: `gate:on/off`
+  Min: `0.1` Max: `99.9`
+  </td></tr>
+</table>
+</details>
 
-On: `1` Off: `0`
+<details>
+<summary>Contrast</summary>
+<table>
+  <tr><th align="left">
+    Contrast
+  </th></tr>
+  <tr><td>
 
- Usage: `gate:1`
-{% endtab %}
+  Sets a contrast for the audio
 
-{% tab title="Flanger" %}
-Applies a flanging effect for the audio
+  Raw Usage: `contrast:number`
 
-Raw Usage: `flanger:on/off`
+  Usage: `contrast:1`
 
-On: `1` Off: `0`
+  Min: `0.1` Max: `99.9`
+  </td></tr>
+</table>
+</details>
 
-Usage: `flanger:1`
-{% endtab %}
+<details>
+<summary>Gate</summary>
+<table>
+  <tr><th align="left">
+    Gate
+  </th></tr>
+  <tr><td>
 
-{% tab title="Phaser" %}
-Add a phasing effect for the audio
+  Reduces the noise of the audio
 
-Raw Usage: `phaser:on/off`
+  Raw Usage: `gate:on/off`
 
-On: `1` Off: `0`
+  On: `1` Off: `0`
 
-Usage: `phaser:1`
-{% endtab %}
+  Usage: `gate:1`
+  </td></tr>
+</table>
+</details>
 
-{% tab title="Surround" %}
-Applies surround sound filter for the audio
+<details>
+<summary>Flanger</summary>
+<table>
+  <tr><th align="left">
+    Flanger
+  </th></tr>
+  <tr><td>
 
-Raw Usage: `surround:on/off`
+  Applies a flanging effect for the audio
 
-On: `1` Off: `0`
+  Raw Usage: `flanger:on/off`
 
- Usage: `surround:1`
-{% endtab %}
+  On: `1` Off: `0`
 
-{% tab title="Ear Wax" %}
-Makes the audio easier to listen on headphones
+  Usage: `flanger:1`
+  </td></tr>
+</table>
+</details>
 
-Raw Usage: `earwax:on/off`
+<details>
+<summary>Phaser</summary>
+<table>
+  <tr><th align="left">
+    Phaser
+  </th></tr>
+  <tr><td>
 
-On: `1` Off: `0`
+  Add a phasing effect for the audio
 
- Usage: `earwax:1`
-{% endtab %}
-{% endtabs %}
+  Raw Usage: `phaser:on/off`
 
-{% hint style="info" %}
-If you want to reset the filter, put the value `0`
-{% endhint %}
+  On: `1` Off: `0`
+
+  Usage: `phaser:1`
+  </td></tr>
+</table>
+</details>
+
+<details>
+<summary>Surround</summary>
+<table>
+  <tr><th align="left">
+    Surround
+  </th></tr>
+  <tr><td>
+
+  Applies surround sound filter for the audio
+
+  Raw Usage: `surround:on/off`
+
+  On: `1` Off: `0`
+
+  Usage: `surround:1`
+  </td></tr>
+</table>
+</details>
+
+<details>
+<summary>Ear Wax</summary>
+<table>
+  <tr><th align="left">
+    Ear Wax
+  </th></tr>
+  <tr><td>
+
+  Makes the audio easier to listen on headphones
+
+  Raw Usage: `earwax:on/off`
+
+  On: `1` Off: `0`
+
+  Usage: `earwax:1`
+  </td></tr>
+</table>
+</details>
+
+> ℹ️ If you want to reset the filter, put the value `0`
 
 ```javascript
 bot.command({

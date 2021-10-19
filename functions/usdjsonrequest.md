@@ -1,7 +1,3 @@
----
-description: Retrieve a JSON format (api)
----
-
 # $jsonRequest
 
 This function returns a property from a JSON formatted api

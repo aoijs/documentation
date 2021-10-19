@@ -1,7 +1,3 @@
----
-description: Gets information on an embed
----
-
 # $getEmbed
 
 This function gets the &lt;property&gt; of the embed

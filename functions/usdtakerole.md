@@ -1,6 +1,6 @@
 # $takeRole
 
-This function removes a role from a user. This is generally faster then[ $takeRoles](usdtakeroles.md)
+This function removes a role from a user. This is generally faster then[ $takeRoles](functions/usdtakeroles.md)
 
 ```text
 $takeRole[userID;roleID]

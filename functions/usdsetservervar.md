@@ -1,7 +1,3 @@
----
-description: Sets a server variable value
----
-
 # $setServerVar
 
 This function sets a value to a variable for the current/specified guild

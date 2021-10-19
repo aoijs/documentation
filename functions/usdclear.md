@@ -1,9 +1,3 @@
----
-description: >-
-  Clears up to 100 messages newer than 2 weeks. Clears more than 100 only if
-  user filter is used.
----
-
 # $clear
 
 This function clears the specified amount of messages from the given channel

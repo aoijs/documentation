@@ -1,7 +1,3 @@
----
-description: Decodes or Encodes an URL.
----
-
 # $uri
 
 This function decodes or encodes an URL.
@@ -32,7 +28,5 @@ $uri[decode;Hello%20ElTuna%230001!%20(this%20is%20a%20test)]
 `})
 ```
 
-{% hint style="info" %}
-You find a full list of encode characters [here](https://www.w3schools.com/tags/ref_urlencode.ASP).
-{% endhint %}
+> ℹ️ You find a full list of encode characters [here](https://www.w3schools.com/tags/ref_urlencode.ASP).
 

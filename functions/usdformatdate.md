@@ -20,14 +20,14 @@ Raw Usage: `$formatDate[time;format (Optional)]`
 
 * datestamp - Example: 1615571386000
 * milliseconds - Example: 31556926000ms
-* stringed date - Example: 1/17/2019, 9:09:19 PM
-* ISO String - Example: 2021-3-12T14:48:00.000Z
+* stringed date - Example: 1/17/2019, 9&colon;09:19 PM
+* ISO String - Example: 2021-3-12T14&colon;48:00.000Z
 
 #### Format Options
 
 * Blank \(No format provided\) - Example: Friday, 12 March 2021
 * LT - Time - Example: 4:01 AM
-* LTS - Time w/ seconds - Example: 3:58:5 AM
+* LTS - Time w/ seconds - Example: 3&colon;58:5 AM
 * L - Date - Example: 3/12/2021
 * LLL - Specified Date - Example: March 12 2021 4:02 AM
 * LLLL - - Specified Date w/ Day - Example: Friday, March 12 2021 4:02 AM

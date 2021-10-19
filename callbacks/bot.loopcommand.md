@@ -1,7 +1,3 @@
----
-description: A command that gets executed in an interval as a loop.
----
-
 # bot.loopCommand
 
 This command loops a code to run every x **milliseconds.**
@@ -41,7 +37,4 @@ ExecuteOnStartup means when the bot starts/comes online, the loop will start
 */
 ```
 
-{% hint style="warning" %}
-Keep in mind that `every` property is in ms! Watch out not to rate limit your bot!
-{% endhint %}
-
+> ⚠ Keep in mind that `every` property is in ms! Watch out not to rate limit your bot!

@@ -1,7 +1,3 @@
----
-description: Gets message variable value
----
-
 # $getMessageVar
 
 This function returns the value of the specified message ID for the specified variable

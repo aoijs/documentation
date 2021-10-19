@@ -1,7 +1,3 @@
----
-description: Executable only by the specified role IDs
----
-
 # $onlyForRoles
 
 This function makes the command only execute if the user has any of the roles specified

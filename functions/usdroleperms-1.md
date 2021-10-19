@@ -1,7 +1,3 @@
----
-description: Returns Moderation Role Permissions if the given Role ID has the permissions
----
-
 # $rolePerms
 
 This function returns the permissions of the specified role
@@ -17,9 +13,7 @@ code:`$rolePerms[739933888784367637;, ]` // Manage Messages, Manage Webhook, ...
 })
 ```
 
-{% hint style="info" %}
-This will only return Moderation Permissions, If the role has Manage Messages, the bot will return Manage Messages, If it has Send Messages, the bot will not return Send Messages.
-{% endhint %}
+> ℹ️ This will only return Moderation Permissions, If the role has Manage Messages, the bot will return Manage Messages, If it has Send Messages, the bot will not return Send Messages.
 
 ### List of Moderation Permissions:
 

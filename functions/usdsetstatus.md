@@ -1,7 +1,3 @@
----
-description: Set's the bots status
----
-
 # $setStatus
 
 This function sets the bot's status
@@ -10,13 +6,9 @@ This function sets the bot's status
 $setStatus[text;type;status]
 ```
 
-{% hint style="warning" %}
-Types: "PLAYING", "LISTENING", "WATCHING", "STREAMING", "COMPETING"
-{% endhint %}
+> ⚠ Types: "PLAYING", "LISTENING", "WATCHING", "STREAMING", "COMPETING"
 
-{% hint style="warning" %}
-STATUS: "dnd", "idle", "online", "invisible"
-{% endhint %}
+> ⚠ STATUS: "dnd", "idle", "online", "invisible"
 
 ```javascript
 bot.command({

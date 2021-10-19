@@ -1,7 +1,3 @@
----
-description: 'Find any users, with their username, this is Global.'
----
-
 # $findUser
 
 This function returns the user ID of the given user. Yes/No will determine if function returns current author id \(yes\) or undefined \(no\) if no match was found. Default is yes

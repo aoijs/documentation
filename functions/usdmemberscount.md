@@ -1,7 +1,3 @@
----
-description: 'Returns the amount of members, in the current Guild.'
----
-
 # $membersCount
 
 This function returns the amount of members in the current guild
@@ -17,10 +13,8 @@ code: `Members: $membersCount`
 })
 ```
 
-{% hint style="danger" %}
-This only works in Guilds, otherwise will return an error.  
-Prototype: $allMembersCount
-{% endhint %}
+> ❗ This only works in Guilds, otherwise will return an error.  
+> Prototype: $allMembersCount
 
 ## Member Count of a certain status
 

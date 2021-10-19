@@ -1,7 +1,3 @@
----
-description: Check if @everyone was mentioned in the command. (Returns true or false)
----
-
 # $isEveryoneMentioned
 
 #### Usage

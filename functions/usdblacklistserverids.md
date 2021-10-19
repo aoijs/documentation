@@ -1,7 +1,3 @@
----
-description: Blocks the specified server IDs from running the command
----
-
 # $blackListServerIDs
 
 This function will allow that the commands cannot be executed in certain servers, you must indicate every server you want in the blacklist with the server ID.

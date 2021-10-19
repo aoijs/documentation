@@ -1,9 +1,3 @@
----
-description: >-
-  Gives the Channel ID of the Channel Name. Will return current in if no channel
-  name given
----
-
 # $channelID
 
 This channel returns the current channel or the specified channel's ID

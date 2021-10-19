@@ -1,7 +1,3 @@
----
-description: Creates an object that can be used later
----
-
 # $createObject
 
 This function creates an object. Simplified terms, its a in-code variable that is only accessible in the current code

@@ -1,7 +1,3 @@
----
-description: Returns channel ID for specified channel
----
-
 # $findServerChannel
 
 This function finds and returns the id of the specified channel in the current guild. Yes/No will determine if function returns current channel id \(yes\) or undefined \(no\) if no match was found. Default is yes

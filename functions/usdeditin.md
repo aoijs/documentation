@@ -1,7 +1,3 @@
----
-description: 'Edit the Bot Message, in amount of intervals.'
----
-
 # $editIn
 
 This function edits the message that the bot just sent

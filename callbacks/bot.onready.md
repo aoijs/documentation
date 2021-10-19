@@ -1,9 +1,3 @@
----
-description: >-
-  A command that gets executed by the bot, if the bot is back online (after bot
-  was restarted) and connected to Discord again.
----
-
 # bot.readyCommand
 
 This command will have the bot send a given message to the given channel when it turns online.

@@ -1,10 +1,3 @@
----
-description: >-
-  An event that gets executed, if the bot sees a channel creation on a server.
-  To let the bot listen to the event, add one bot.onChannelCreate() callback
-  inside your mainfile.
----
-
 # bot.onChannelCreate
 
 This command triggers every time a channel gets created on a server.
@@ -32,7 +25,7 @@ $newChannel[name]
 
 #### Options:
 
-You can use the function [$newChannel\[\] ](../functions/usdnewchannel.md)with the options below to return new channel data:
+You can use the function [$newChannel](functions/usdnewchannel.md) with the options below to return new channel data:
 
 * `id` - The ID of the channel 
 * `name` - The name of the channel 

@@ -1,9 +1,3 @@
----
-description: >-
-  Prunes members from the guild based on how long they have been inactive, by
-  kicking them.
----
-
 # $pruneMembers
 
 This function kicks all inactive members without roles and with optional given roles from the given guild, if they were inactive for at least the given amount of days.
@@ -30,7 +24,7 @@ Raw usage: `$pruneMembers[amount of days(optional);guildID(optional);reason (opt
 
 This example kicks all inactive members without roles they have been inactive on Discord for at least 30 days and all inactive members with my two given roles with the reason "Too many members".
 
-```text
+```js
 bot.command({
 name: "prunestatus",
 code: `

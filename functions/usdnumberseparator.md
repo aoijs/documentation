@@ -1,7 +1,3 @@
----
-description: Seperates number in thousands
----
-
 # $numberSeparator
 
 This functions separates the digits by thousands

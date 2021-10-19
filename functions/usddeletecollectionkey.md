@@ -1,7 +1,3 @@
----
-description: Deletes a key from given collection name.
----
-
 # $deleteCollectionKey
 
 This function will allow you to delete an key \(Property\) from a previous created collection.
@@ -30,10 +26,10 @@ bot.command({
 
 /*
     Using a collection created at: 
-    https://aoi.leref.ga/functions/usdcreatecollection
+    https://aoi.js.org/docs/functions/usdcreatecollection
     
     And a key created at:
-    https://aoi.leref.ga/functions/usdsetcollectionkey
+    https://aoi.js.org/docs/functions/usdsetcollectionkey
 */
 ```
 

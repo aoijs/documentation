@@ -1,14 +1,8 @@
----
-description: Eval command using discord.js
----
-
 # $djsEval
 
 This function evals the given discord.js code
 
-{% hint style="danger" %}
-You should restrict the use of this function to yourself
-{% endhint %}
+> ❗ You should restrict the use of this function to yourself
 
 #### Fields
 

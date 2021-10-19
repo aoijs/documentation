@@ -1,6 +1,6 @@
 # $replaceTextWithRegex
 
-This function replaces text with [regex flags](https://www.w3schools.com/jsref/jsref_obj_regexp.asp)
+This function replaces text with [Regexp flags](https://www.w3schools.com/jsref/jsref_obj_regexp.asp)
 
 ```text
 $replaceTextWithRegex[text;regex;flags;new text]

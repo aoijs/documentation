@@ -1,12 +1,6 @@
----
-description: A variable value that will be saved to a channel
----
-
 # Channel Variables
 
-{% hint style="danger" %}
-Make sure you've already created the variable
-{% endhint %}
+> ❗ Make sure you've already created the variable
 
 ### Setting the channel variable
 

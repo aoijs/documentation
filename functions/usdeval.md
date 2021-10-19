@@ -1,14 +1,8 @@
----
-description: 'Eval your Code, useful for debugging.'
----
-
 # $eval
 
 This function evals the given Aoi.js code so you can use functions manually inside a command without creating a new command for it.
 
-{% hint style="danger" %}
-You should restrict the use of this function to yourself
-{% endhint %}
+> ❗ You should restrict the use of this function to yourself
 
 #### Fields
 

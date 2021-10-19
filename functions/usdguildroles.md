@@ -1,7 +1,3 @@
----
-description: Returns Guild Roles.
----
-
 # $guildRoles
 
 This function returns all the roles the current guild has

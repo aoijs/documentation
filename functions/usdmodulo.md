@@ -1,7 +1,3 @@
----
-description: Returns the remainder of the division
----
-
 # $modulo
 
 This function will divide the values, then return the remainder.

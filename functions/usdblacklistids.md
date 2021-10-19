@@ -1,7 +1,3 @@
----
-description: Blocks the specified IDs from running the command.
----
-
 # $blackListIDs
 
 This function will allow that the commands cannot be executed by certain users, you must indicate them by their user ID.

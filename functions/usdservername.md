@@ -1,7 +1,3 @@
----
-description: Returns the server name
----
-
 # $serverName
 
 This function returns the current/specified guild's name

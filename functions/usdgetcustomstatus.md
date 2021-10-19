@@ -1,7 +1,3 @@
----
-description: Gets the user's custom status state. (if any)
----
-
 # $getCustomStatus
 
 This function returns the custom status of the given user, if they have one
@@ -10,9 +6,7 @@ This function returns the custom status of the given user, if they have one
 $getCustomStatus[userID (optional);state/emoji]
 ```
 
-{% hint style="info" %}
-state - The message, emoji - the emoji
-{% endhint %}
+> ℹ️ state - The message, emoji - the emoji
 
 ```javascript
 bot.command({

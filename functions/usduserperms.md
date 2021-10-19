@@ -1,7 +1,3 @@
----
-description: Returns all permissions the user has
----
-
 # $userPerms
 
 This function returns the permissions this user has

@@ -1,7 +1,3 @@
----
-description: Creates a new role
----
-
 # $createRole
 
 This function allows the bot to create a new role in the current guild

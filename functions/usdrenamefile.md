@@ -1,7 +1,3 @@
----
-description: This function simply renames the file that you provided.
----
-
 # $renameFile
 
 Here is the usage:

@@ -1,7 +1,3 @@
----
-description: Checks if a condition is true
----
-
 # $onlyIf
 
 This function checks if the condition is true or not

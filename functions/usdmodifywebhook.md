@@ -1,7 +1,3 @@
----
-description: Modifies the specified webhooks with the given inputs
----
-
 # $modifyWebhook
 
 This function allows the bot to modify an existing webhook

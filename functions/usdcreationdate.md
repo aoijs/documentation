@@ -1,9 +1,3 @@
----
-description: >-
-  Gets the creation date of the specified server, user, channel, message or role
-  ID
----
-
 # $creationDate
 
 This function will get the creation date of the specified ID.

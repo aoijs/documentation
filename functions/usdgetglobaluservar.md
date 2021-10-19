@@ -1,7 +1,3 @@
----
-description: Get The Global User Var
----
-
 # $getGlobalUserVar
 
 This function returns the value of the given value for the given user.

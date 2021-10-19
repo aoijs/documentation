@@ -1,7 +1,3 @@
----
-description: Creates a loop over all the indexes of $textSplit
----
-
 # $textSplitMap
 
 This function creates a loop over all the values in $textSplit

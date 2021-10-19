@@ -1,10 +1,11 @@
----
-description: Returns the current loop status.
----
-
 # $loopStatus
 
 This function will tell you the current loop status, if it's in song, the entire queue or none.
+
+Statuses:
+* none
+* queue
+* song
 
 Example:
 

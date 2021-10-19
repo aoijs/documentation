@@ -1,7 +1,3 @@
----
-description: Returns the current guild's region
----
-
 # $serverRegion
 
 This function returns the current guild's voice region

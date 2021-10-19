@@ -1,7 +1,3 @@
----
-description: Returns an amount of members that can be pruned.
----
-
 # $pruneStatus
 
 This function shows you how many inactive members without roles and with optional given roles can be pruned currently from the given guild without actually kicking them..
@@ -22,7 +18,7 @@ Raw usage: `$pruneMembers[amount of days(optional);guildID(optional);roleid1:rol
 
 #### Example Command:
 
-```text
+```js
 bot.command({
 name: "prunestatus",
 code: `

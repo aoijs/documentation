@@ -1,7 +1,3 @@
----
-description: Kick using user ID
----
-
 # $kick
 
 This function kicks the specified user's ID

@@ -1,7 +1,3 @@
----
-description: Adds an attachment to the message.
----
-
 # $attachment
 
 This function allows you to add 'attachments' to a message, like images or videos.

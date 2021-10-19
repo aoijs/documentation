@@ -1,7 +1,3 @@
----
-description: Sets the bot's avatar
----
-
 # $setBotAvatar
 
 This function set's the bot's avatar
@@ -18,7 +14,5 @@ $setBotAvatar[https://cdn.discordapp.com/avatars/746401637329010779/a3dc97600375
 })
 ```
 
-{% hint style="danger" %}
-THIS SHOULD BE RESTRICTED TO BOT DEV ONLY
-{% endhint %}
+> ❗ THIS SHOULD BE RESTRICTED TO BOT DEV ONLY
 

@@ -1,7 +1,3 @@
----
-description: Returns channel type
----
-
 # $channelType
 
 This function will show you the type of the specified channel.

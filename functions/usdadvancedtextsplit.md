@@ -1,8 +1,6 @@
 # $advancedTextSplit
 
-{% hint style="warning" %}
-WARNING: This function is only recommended to use as advanced Aoi.js user because it's hard to understand.
-{% endhint %}
+> ⚠ WARNING: This function is only recommended to use as advanced Aoi.js user because it's hard to understand.
 
 This function basically allows you to have multiple splits in 1 message
 

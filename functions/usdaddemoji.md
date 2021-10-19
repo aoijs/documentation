@@ -1,14 +1,8 @@
----
-description: Add a Emoji to the Guild.
----
-
 # $addEmoji
 
 This function takes care of automatically adding an emoji to the server using the provided URL.
 
-{% hint style="warning" %}
-The URL of the original image must be under 256kb in size.
-{% endhint %}
+> ⚠ The URL of the original image must be under 256kb in size.
 
 #### Fields:
 
@@ -44,7 +38,4 @@ bot.command({
 
 ![](../.gitbook/assets/mtt45fdb8q.png)
 
-{% hint style="warning" %}
-URL NEEDS to end in `.gif`, `.png` or `.jpg`
-{% endhint %}
-
+> ⚠ URL NEEDS to end in `.gif`, `.png` or `.jpg`

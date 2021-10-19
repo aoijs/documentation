@@ -1,7 +1,3 @@
----
-description: Returns all the server emojis
----
-
 # $serverEmojis
 
 This function returns every emoji the current server has

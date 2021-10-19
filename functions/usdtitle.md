@@ -1,7 +1,3 @@
----
-description: Adds a title to the embed
----
-
 # $title
 
 This function adds a title to the embed. URL for hyperlink
@@ -10,9 +6,7 @@ This function adds a title to the embed. URL for hyperlink
 $title[text;url (optional)]
 ```
 
-{% hint style="danger" %}
-Only use 1 per command.
-{% endhint %}
+> ❗ Only use 1 per command.
 
 ```javascript
 bot.command({

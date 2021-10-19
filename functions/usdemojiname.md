@@ -1,7 +1,3 @@
----
-description: Returns the emoji name the user reacted with
----
-
 # $emojiName
 
 This function returns the emoji name the user reacted with

@@ -1,12 +1,8 @@
----
-description: Returns the current shard ID
----
-
 # $shardID
 
 This function returns the current shard ID for the current server
 
-You can find sharding guide [here](https://dbd.leref.ga/guide/sharding)
+You can find sharding guide [here](guide/extras/sharding)
 
 ```javascript
 bot.command({

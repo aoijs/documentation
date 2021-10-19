@@ -1,7 +1,3 @@
----
-description: Allows you to in-voice mute a user.
----
-
 # $muteUser
 
 This function will make the bot server-mute a user inside voice channels using their User ID.

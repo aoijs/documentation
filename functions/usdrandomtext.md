@@ -1,7 +1,3 @@
----
-description: Generates random response from given text
----
-
 # $randomText
 
 This function randomly returns 1 piece of text specified

@@ -1,10 +1,3 @@
----
-description: >-
-  An event that gets executed, if the bot sees a user updating their voice
-  status. To let the bot listen to the event, add one bot.onVoiceStateUpdate()
-  callback inside your mainfile.
----
-
 # bot.onVoiceStateUpdate
 
 This callback triggers whenever someone joins a voice channel, leaves a voice channel or updates their vc options.
@@ -33,7 +26,7 @@ $onlyIf[$oldState[channelID]==;]
 
 ## Options:
 
-You can use the functions $newState\[\] and $oldState\[\] with the options below to return old and new voice state data.
+You can use the functions $oldState and [$newState](functions/usdnewstate.md) with the options below to return old and new voice state data.
 
 * `guildID` =&gt; The ID of the guild the voice state update happened in 
 * `guildName` =&gt; The name of the guild this voice state update happened

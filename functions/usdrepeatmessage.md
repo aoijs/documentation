@@ -1,7 +1,3 @@
----
-description: Repeats the message for X amount of times
----
-
 # $repeatMessage
 
 This function repeats the &lt;message&gt; X amount of times

@@ -1,16 +1,10 @@
----
-description: Returns all the server IDs the bot is in
----
-
 # $serverIDs
 
 ```text
 $serverIDs[separator (optional)]
 ```
 
-{% hint style="info" %}
-Separator is the symbol that separates each server ID
-{% endhint %}
+> ℹ️ Separator is the symbol that separates each server ID
 
 ```javascript
 bot.command({

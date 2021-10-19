@@ -1,7 +1,3 @@
----
-description: Delete a channel or channels by using their IDs.
----
-
 # $deleteChannels
 
 This function deletes the specified channel\(s\)

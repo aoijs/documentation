@@ -1,7 +1,3 @@
----
-description: 'Returns the ID of mentioned channels, such as $mentioned function.'
----
-
 # $mentionedChannels
 
 This function returns the ID of the mentioned channel

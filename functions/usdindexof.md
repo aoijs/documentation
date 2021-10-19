@@ -1,9 +1,3 @@
----
-description: >-
-  Returns the position of <char> in <text>. Returns 0 if there's no char in
-  text.
----
-
 # $indexOf
 
 This function returns the first matching position of the given character in the given text.

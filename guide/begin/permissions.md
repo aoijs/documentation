@@ -1,7 +1,3 @@
----
-description: All available permissions can be found here.
----
-
 # Permissions
 
 * admin

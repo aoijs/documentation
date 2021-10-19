@@ -1,6 +1,6 @@
 # $get
 
-This function gets a value of the specified key from [$let](usdlet.md)
+This function gets a value of the specified key from [$let](functions/usdlet.md)
 
 #### Fields
 

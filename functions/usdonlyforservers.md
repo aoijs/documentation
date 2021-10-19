@@ -1,7 +1,3 @@
----
-description: The command will only execute in the specified guild ids
----
-
 # $onlyForServers
 
 This function will only execute if the current guild id matches with the specified guild ID

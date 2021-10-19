@@ -1,7 +1,3 @@
----
-description: Checks if given user ID is defeaned. (Returns true or false)
----
-
 # $isDefeaned
 
 #### Usage

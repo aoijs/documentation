@@ -1,7 +1,3 @@
----
-description: Plays a song in VC
----
-
 # $playSong
 
 This function play's a song from youtube.

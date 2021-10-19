@@ -1,7 +1,3 @@
----
-description: Loop over every channel this bot can see executing awaited commands.
----
-
 # $forEachChannel
 
 This function creates a loop over ALL channels the bot has access to

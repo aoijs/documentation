@@ -1,9 +1,3 @@
----
-description: >-
-  Returns the amount of all the channels of all the guilds your bot is inYou can
-  optionally pass types of channels to count.
----
-
 # $allChannelsCount
 
 This function returns the amount of channels the bot has access to globally

@@ -1,7 +1,3 @@
----
-description: Checks if the role is mentionable. (Returns true or false)
----
-
 # $isMentionable
 
 #### Usage

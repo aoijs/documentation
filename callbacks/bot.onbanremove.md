@@ -1,10 +1,3 @@
----
-description: >-
-  An event that gets executed, if a user was unbanned from a server. To let the
-  bot listen to the event, add one bot.onBanRemove() callback inside your
-  mainfile.
----
-
 # bot.onBanRemove
 
 This callback allows the bot to log every time a user gets unbanned form a server.
@@ -42,9 +35,9 @@ $username was unbanned in $serverName
 
 You can use amongst other functions these functions inside your banAddCommand to return data of the user that got banned and the server that banned the user:
 
-* [$username](../functions/usdusername.md)
-* [$authorID](../functions/usdauthorid.md)
-* [$userTag](../functions/usdusertag.md)
-* [$serverName](../functions/usdservername.md)
-* [$guildID](../functions/usdguildid.md)
+* [$username](functions/usdusername.md)
+* [$authorID](functions/usdauthorid.md)
+* [$userTag](functions/usdusertag.md)
+* [$serverName](functions/usdservername.md)
+* [$guildID](functions/usdguildid.md)
 

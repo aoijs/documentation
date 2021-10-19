@@ -1,7 +1,3 @@
----
-description: Removes a value from $textSplit by using the given indexes
----
-
 # $removeSplitTextElement
 
 This function removes the value of the given indexes

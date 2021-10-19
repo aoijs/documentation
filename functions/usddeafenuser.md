@@ -1,7 +1,3 @@
----
-description: Used to deaf a user.
----
-
 # $deafenUser
 
 With this function you will be able to deaf the selected user with the bot.

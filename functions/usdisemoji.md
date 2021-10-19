@@ -1,7 +1,3 @@
----
-description: Checks if given content is a valid Emoji. (Returns true or false)
----
-
 # $isEmoji
 
 #### Usage

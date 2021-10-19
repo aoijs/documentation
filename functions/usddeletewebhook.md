@@ -1,7 +1,3 @@
----
-description: Deletes a webhook
----
-
 # $deleteWebhook
 
 This function allows the bot to delete a webhook

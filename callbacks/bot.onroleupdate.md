@@ -1,10 +1,3 @@
----
-description: >-
-  An event that gets executed, if the bot sees a role updated in one of it's
-  servers. To let the bot listen to the event, add one bot.onRoleUpdate()
-  callback inside your mainfile.
----
-
 # bot.onRoleUpdate
 
 This callback triggers every time a role gets updated
@@ -33,7 +26,7 @@ New Name: $newRole[name]
 
 #### Options:
 
-You can use these functions [$oldRole\[\]](../functions/usdoldrole.md) and [$newRole\[\]](../functions/usdnewrole.md) with the options below to return old and new role data:
+You can use these functions [$oldRole](functions/usdoldrole.md) and [$newRole](functions/usdnewrole.md) with the options below to return old and new role data:
 
 * `id` =&gt; The ID of the role
 * `name` "The name of the role

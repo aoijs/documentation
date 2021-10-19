@@ -1,7 +1,3 @@
----
-description: Blocks the specified role IDs from running the command
----
-
 # $blackListRoleIDs
 
 This function will allow that the commands cannot be executed by certain users with certain roles, you must indicate the roles who are excluded of using the command by their ID.

@@ -1,7 +1,3 @@
----
-description: Gets a property value from given key
----
-
 # $getObjectProperty
 
 This function gets the property value from specified key

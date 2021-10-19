@@ -1,7 +1,3 @@
----
-description: Returns the content filter of the guild
----
-
 # $serverContentFilter
 
 This function returns the content filter of the current guild

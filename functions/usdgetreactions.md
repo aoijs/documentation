@@ -1,7 +1,3 @@
----
-description: Gets the users who reacted to the given emoji form the given message
----
-
 # $getReactions
 
 This function returns the users who reacted to the &lt;message&gt; with the &lt;emoji&gt;

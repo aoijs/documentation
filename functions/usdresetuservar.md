@@ -1,7 +1,3 @@
----
-description: Resets everyones variable value for the server
----
-
 # $resetUserVar
 
 This function resets everyone's user variable values to default value in the current guild

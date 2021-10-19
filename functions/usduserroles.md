@@ -1,7 +1,3 @@
----
-description: Returns all of the user's roles
----
-
 # $userRoles
 
 This function returns the roles that the user has

@@ -1,9 +1,3 @@
----
-description: >-
-  Returns specified user ID's username, if no argument given, returns author's
-  username
----
-
 # $username
 
 This function returns the authors/give user id's username

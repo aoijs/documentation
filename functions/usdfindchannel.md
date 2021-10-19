@@ -1,7 +1,3 @@
----
-description: 'Retrieve the Channel ID, when writing the name of the Channel. (Global)'
----
-
 # $findChannel
 
 This function returns the channel ID of the specified channel. Yes/No will determine if function returns current channel id \(yes\) or undefined \(no\) if no match was found. Default is yes

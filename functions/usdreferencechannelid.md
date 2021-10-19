@@ -1,7 +1,3 @@
----
-description: The ID of the channel where this user replied in
----
-
 # $referenceChannelID
 
 This function returns the channel ID the user replied in

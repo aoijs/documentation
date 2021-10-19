@@ -1,7 +1,3 @@
----
-description: Returns the amount of emojis in a guild where the bot is in.
----
-
 # $emojiCount
 
 This function returns the amount of emojis in a guild

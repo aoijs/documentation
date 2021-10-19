@@ -23,10 +23,10 @@ Raw usage: `$getCooldownTime[time;typeOfCooldown;command name;ID;return ms (yes/
 
 #### Types of Cooldown
 
-* user - [$cooldown](usdcooldown.md)
-* globalUser - [$globalCooldown](usdglobalcooldown.md)
-* server -[ $serverCooldown](usdservercooldown.md)
-* channel - [$channelCooldown](usdchannelcooldown.md)
+* user - [$cooldown](functions/usdcooldown.md)
+* globalUser - [$globalCooldown](functions/usdglobalcooldown.md)
+* server -[ $serverCooldown](functions/usdservercooldown.md)
+* channel - [$channelCooldown](functions/usdchannelcooldown.md)
 
 #### Usage
 

@@ -1,7 +1,3 @@
----
-description: Returns the server Icon
----
-
 # $serverIcon
 
 This function returns the current guild's icon

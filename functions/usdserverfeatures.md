@@ -1,7 +1,3 @@
----
-description: Returns the guilds features
----
-
 # $serverFeatures
 
 This function returns all the guild features, if they have any
@@ -17,11 +13,6 @@ code: `Server Features: $serverFeatures`
 })
 ```
 
-{% hint style="info" %}
-Example of what bot would return:
-
-News, Community, Welcome Screen Enabled
-{% endhint %}
-
-
+> ℹ️ Example of what bot would return:<br/>
+> News, Community, Welcome Screen Enabled
 

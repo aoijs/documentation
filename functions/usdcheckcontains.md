@@ -1,9 +1,3 @@
----
-description: >-
-  Checks if one of the specified values are in the specified text. Outputs
-  true/false
----
-
 # $checkContains
 
 This function will show true or false if the specified text contains **at least** one of the provided words.

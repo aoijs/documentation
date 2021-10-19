@@ -1,7 +1,3 @@
----
-description: Gets specified user ID's username and discriminator easier
----
-
 # $userTag
 
 This function returns the users username AND tag 

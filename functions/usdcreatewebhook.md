@@ -1,7 +1,3 @@
----
-description: Creates a webhook to the given channel ID
----
-
 # $createWebhook
 
 This function creates a webhook that can be used later

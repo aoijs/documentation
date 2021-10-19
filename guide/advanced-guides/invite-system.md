@@ -1,7 +1,3 @@
----
-description: Using Aoi.JS Invite System to allow an "Invite Tracker" for your Client.
----
-
 # FetchInvites
 
 ## Introduction
@@ -23,7 +19,7 @@ fetchInvites: true //By enable this as true it can fetch for invites.
 
 Make sure you enable `SERVER MEMBERS` intents.
 
-![](../../.gitbook/assets/image%20%2844%29.png)
+![Server Members intent](../../.gitbook/assets/image%20%2844%29.png)
 
 ## Functions Availability
 

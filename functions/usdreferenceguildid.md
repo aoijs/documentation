@@ -1,7 +1,3 @@
----
-description: Returns the ID of the channel where the user replied in
----
-
 # $referenceGuildID
 
 This function gets the current guild ID the user replied in

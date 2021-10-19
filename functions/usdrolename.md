@@ -1,7 +1,3 @@
----
-description: Returns a Role name using their ID
----
-
 # $roleName
 
 This function returns the name of the specified role

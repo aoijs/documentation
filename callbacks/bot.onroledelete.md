@@ -1,10 +1,3 @@
----
-description: >-
-  An event that gets executed, if the bot sees a role deletion in one of it'S
-  servers. To let the bot listen to the event, add one bot.onRoleDelete()
-  callback inside your mainfile.
----
-
 # bot.onRoleDelete
 
 This callback triggers everytime a role gets deleted in a server.
@@ -32,7 +25,7 @@ Old Name: $oldRole[name]
 
 #### Options:
 
-You can use these functions [$oldRole\[\]](../functions/usdoldrole.md) with the options below to return old  role data:
+You can use these functions [$oldRole](functions/usdoldrole.md) with the options below to return old  role data:
 
 * `id` =&gt; The ID of the role
 * `name` "The name of the role

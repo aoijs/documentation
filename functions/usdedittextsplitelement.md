@@ -1,7 +1,3 @@
----
-description: Edits the value from the given index
----
-
 # $editTextSplitElement
 
 This function edits a value in $textSplit and replaces it with a new value

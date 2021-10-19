@@ -1,10 +1,3 @@
----
-description: >-
-  An event that gets executed, if the bot sees a role creation in guilds. To let
-  the bot listen to the event, add one bot.onRoleCreate() callback inside your
-  mainfile.
----
-
 # bot.onRoleCreate
 
 This callback triggers every time a role gets created in a server.
@@ -32,7 +25,7 @@ $newRole[name]
 
 #### Options:
 
-You can use these functions [$newRole\[\]](../functions/usdnewrole.md) with the options below to return new role data:
+You can use these functions [$newRole](functions/usdnewrole.md) with the options below to return new role data:
 
 * `id` =&gt; The ID of the role
 * `name` "The name of the role

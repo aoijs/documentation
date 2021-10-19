@@ -1,7 +1,3 @@
----
-description: Rounds a number to the given unit
----
-
 # $roundTenth
 
 ```text

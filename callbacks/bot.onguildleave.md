@@ -1,9 +1,3 @@
----
-description: >-
-  An event that gets executed, if the bot leaves a server. To let the bot listen
-  to the event, add one bot.onGuildLeave() callback inside your mainfile.
----
-
 # bot.onGuildLeave
 
 This callback will allow the bot to log a message whenever it leaves a server.
@@ -28,7 +22,4 @@ I have left $serverName!
 })
 ```
 
-{% hint style="info" %}
-You can use all guild based functions like [$serverName](../functions/usdservername.md) or [$guildID](../functions/usdguildid.md) in these commands but functions like [$getServerInvite](../functions/usdgetserverinvite.md) won't work here.
-{% endhint %}
-
+> ℹ️ You can use all guild based functions like [$serverName](functions/usdservername.md) or [$guildID](functions/usdguildid.md) in these commands but functions like [$getServerInvite](functions/usdgetserverinvite.md) won't work here.

@@ -1,7 +1,3 @@
----
-description: Checks if given invite is valid. (Returns true or false)
----
-
 # $isValidInvite
 
 #### Usage

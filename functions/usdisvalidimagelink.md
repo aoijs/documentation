@@ -1,7 +1,3 @@
----
-description: Checks if given image URL/Link is valid. (Returns true or false)
----
-
 # $isValidImageLink
 
 This function will return true or false depending if the link is an image or not.

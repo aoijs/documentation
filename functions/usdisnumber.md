@@ -1,7 +1,3 @@
----
-description: Checks if the value is a number or not. (Returns true or false)
----
-
 # $isNumber
 
 #### Usage

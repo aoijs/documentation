@@ -1,7 +1,3 @@
----
-description: Displays true or false depending if the server exists or not.
----
-
 # $serverExists
 
 This function will tell you if the server provided exists or not. Returns true or false.

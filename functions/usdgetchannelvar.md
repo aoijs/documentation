@@ -1,7 +1,3 @@
----
-description: Get the Channel Value.
----
-
 # $getChannelVar
 
 This function gets the given variable value for the current or specified channel

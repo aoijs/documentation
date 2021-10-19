@@ -1,7 +1,3 @@
----
-description: Subtracts all values
----
-
 # $sub
 
 This function subtracts all the values given

@@ -1,7 +1,3 @@
----
-description: Checks if given message has an embed. Returns true/false
----
-
 # $hasEmbeds
 
 This function checks if the given messageID has an embed or not. Returns boolean

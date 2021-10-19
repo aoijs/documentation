@@ -1,7 +1,3 @@
----
-description: Sets a global user var value
----
-
 # $setGlobalUserVar
 
 This function sets a value to a user. The value will remain the same throughout all guilds but will remain assigned to 1 user

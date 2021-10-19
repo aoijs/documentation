@@ -1,7 +1,3 @@
----
-description: 'Give Roles, to the User ID.'
----
-
 # $giveRoles
 
 As example, below is setting, the User ID, to retrieve the Role.

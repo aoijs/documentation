@@ -1,7 +1,3 @@
----
-description: Returns the channel's topic
----
-
 # $channelTopic
 
 With this function you will be able to collect channel data, specifically the topic of the channel.

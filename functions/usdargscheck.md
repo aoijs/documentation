@@ -1,7 +1,3 @@
----
-description: Creates a condition depending in the amount of args required.
----
-
 # $argsCheck
 
 This function will check if the condition is met between the desired number of arguments and the number of arguments that are actually in the user's message.

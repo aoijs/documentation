@@ -1,7 +1,3 @@
----
-description: Gets the info of the specified invite code
----
-
 # $getInviteInfo
 
 This function allows the bot to get info from any invite code/url

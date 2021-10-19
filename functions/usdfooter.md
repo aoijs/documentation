@@ -1,7 +1,3 @@
----
-description: 'Set a footer, to the embed.'
----
-
 # $footer
 
 This function adds a footer to the embed

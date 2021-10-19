@@ -1,7 +1,3 @@
----
-description: Modifies a channel's permissions to the given perms
----
-
 # $modifyChannelPerms
 
 This function edit's the specified channels perms

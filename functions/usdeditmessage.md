@@ -1,7 +1,3 @@
----
-description: 'You change a previous sent, message from the Bot.'
----
-
 # $editMessage
 
 This function edits the bot's message that has already been sent

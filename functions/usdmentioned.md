@@ -1,7 +1,3 @@
----
-description: Retrieve the mentioned User ID.
----
-
 # $mentioned
 
 This function returns the mentioned user ID

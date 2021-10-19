@@ -1,7 +1,3 @@
----
-description: 'Returns the ID of mentioned roles, such as $mentioned function.'
----
-
 # $mentionedRoles
 
 This function returns the id of the mentioned role

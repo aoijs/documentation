@@ -6,7 +6,7 @@
 
 * [Changelog](aoi.js-version-4.5.0/changelog.md)
 
-## Guides <a id="guide"></a>
+## Guides
 
 * [Getting Started](guide/begin/README.md)
   * [Command Handler](guide/begin/command-handler.md)

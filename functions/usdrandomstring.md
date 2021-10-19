@@ -1,7 +1,3 @@
----
-description: Generates a random string
----
-
 # $randomString
 
 This function generates and returns a random string

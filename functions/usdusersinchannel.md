@@ -1,9 +1,3 @@
----
-description: >-
-  Returns the users that are connected to the current voice channel that the bot
-  is in
----
-
 # $usersInChannel
 
 This function returns the users that are in the given voice channel

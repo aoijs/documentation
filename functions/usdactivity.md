@@ -1,7 +1,3 @@
----
-description: Return's the given user's activities.
----
-
 # $activity
 
 This function shows the current activity of the indicated user \(Only if it detects any activity.\), If the indicated user does not have an activity such as a 'custom status' it will show 'none'.

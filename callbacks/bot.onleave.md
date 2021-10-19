@@ -1,10 +1,3 @@
----
-description: >-
-  An event that gets executed, if the bot sees a user leaving a server. To let
-  the bot listen to the event, add one bot.onLeave() callback inside your
-  mainfile.
----
-
 # bot.onLeave
 
 This callback that allows the bot to log every user who leaves the server.
@@ -16,9 +9,7 @@ bot.leaveCommand({ //command
 })
 ```
 
-{% hint style="danger" %}
-Make sure the &lt;channel&gt; is in the server. So recommended to use server variables \(if your bot isn't for 1 server\)
-{% endhint %}
+> ❗ Make sure the &lt;channel&gt; is in the server. So recommended to use server variables \(if your bot isn't for 1 server\)
 
 ```javascript
 bot.leaveCommand({ 
@@ -32,11 +23,6 @@ bot.leaveCommand({
 })
 ```
 
-{% hint style="warning" %}
-`GUILD_MEMBERS` intent needed! Information in the [Gateway Intents](../guide/begin/gateway-intents.md) guide.
-{% endhint %}
+> ⚠ `GUILD_MEMBERS` intent needed! Information in the [Gateway Intents](guide/begin/gateway-intents.md) guide.
 
-{% hint style="info" %}
-You can use all guild and member based functions like [$serverName](../functions/usdservername.md) or [$guildID](../functions/usdguildid.md) or [$username](../functions/usdusername.md) or [$authorID](../functions/usdauthorid.md) in these commands.
-{% endhint %}
-
+> ℹ️ You can use all guild and member based functions like [$serverName](functions/usdservername.md) or [$guildID](functions/usdguildid.md) or [$username](functions/usdusername.md) or [$authorID](functions/usdauthorid.md) in these commands.

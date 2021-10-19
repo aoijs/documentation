@@ -1,6 +1,6 @@
 # $oldChannel
 
-This function is only usable in [onChannelUpdate](../callbacks/bot.onchannelupdate.md) and [onChannelDelete](../callbacks/bot.onchanneldelete.md). Examples can be found in the callback page.
+This function is only usable in [onChannelUpdate](callbacks/bot.onchannelupdate.md) and [onChannelDelete](callbacks/bot.onchanneldelete.md). Examples can be found in the callback page.
 
 ```text
 $oldChannel[option]

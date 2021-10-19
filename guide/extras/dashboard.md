@@ -1,12 +1,6 @@
----
-description: How to setup dbd.express quick and easy.
----
-
 # dbd.express
 
-{% hint style="danger" %}
-**THIS DOES NOT WORK in Aoi.JS v3.0.0 and above.**
-{% endhint %}
+> ❗ **THIS DOES NOT WORK in Aoi.JS v3.0.0 and above.**
 
 ## Introduction
 
@@ -45,7 +39,7 @@ bot.onMessage()
 
 ### Adding an Account
 
-You should use an [eval](../../functions/usdeval.md) command to djs eval the following code
+You should use an [eval](functions/usdeval.md) command to djs eval the following code
 
 ```javascript
 $djsEval[client.Express.addAccounts({
@@ -144,7 +138,7 @@ Once you're there, you should click 'New Variable'
 
 Once you've clicked the button, you should fill out your desired variable information
 
-![](../../.gitbook/assets/image%20%2870%29.png)
+![](.gitbook/assets/image%20%2870%29.png)
 
 Now just hit 'Save Variable' 
 

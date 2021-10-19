@@ -1,7 +1,3 @@
----
-description: Displays the server banner (If the guild has one)
----
-
 # $serverBanner
 
 This function displays the server's banner

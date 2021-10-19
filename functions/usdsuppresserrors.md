@@ -1,7 +1,3 @@
----
-description: Supresses all errors to send a custom one
----
-
 # $suppressErrors
 
 This function suppresses all errors and sends a custom one.

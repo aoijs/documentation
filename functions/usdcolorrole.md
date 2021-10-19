@@ -1,7 +1,3 @@
----
-description: Changes the color of the specified role's ID
----
-
 # $colorRole
 
 This function changes the color of a role

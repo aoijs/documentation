@@ -1,7 +1,3 @@
----
-description: only the specified user IDs will be able to execute the command
----
-
 # $onlyForIDs
 
 This function only runs the command if the author's id matches to the specified ids

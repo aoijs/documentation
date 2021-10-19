@@ -1,7 +1,3 @@
----
-description: Sends a webhook message to the specified webhook
----
-
 # $sendWebhook
 
 This function sends a message through a webhook

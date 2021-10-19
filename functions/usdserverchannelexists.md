@@ -1,7 +1,3 @@
----
-description: Checks if channels exists in the current server. Returns boolean
----
-
 # $serverChannelExists
 
 This function checks if a channel exists in the current server. Returns Boolean

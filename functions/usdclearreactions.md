@@ -1,7 +1,3 @@
----
-description: Clears the given emojis from the given message
----
-
 # $clearReactions
 
 This function will remove the given emoji or all the emojis from the given message

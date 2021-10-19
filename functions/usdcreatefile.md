@@ -18,7 +18,7 @@ Raw Usage: `$createFile[text;filename.extension]`
 
 #### Extensions
 
-You can find what a file extension[ here](https://en.wikipedia.org/wiki/Filename_extension). A brief explanation: The file extension is the acronym after the dot in the file. For example, in `index.js` the file extension would be `js`
+You can find what a file extension [here](https://en.wikipedia.org/wiki/Filename_extension). A brief explanation: The file extension is the acronym after the dot in the file. For example, in `index.js` the file extension would be `js`
 
 #### Usage
 

@@ -1,7 +1,3 @@
----
-description: Add reactions to the message the bot has send in the command.
----
-
 # $addReactions
 
 This function will be in charge of adding the 'emojis' previously chosen in the message sent by the bot once triggered the command.

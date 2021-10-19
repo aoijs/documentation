@@ -1,9 +1,3 @@
----
-description: >-
-  With this character usages you can let the bot return the given caracters
-  without accepting this as a separator or as the end of a function.
----
-
 # Character Escaping
 
 ## Escaping characters:
@@ -28,7 +22,7 @@ description: >-
 
 `{` =&gt; `#RIGHT_BRACKET#`
 
-## more:
+## More
 
 Backspace =&gt; `\b`  
 Form Feed =&gt; `\f`  
@@ -38,9 +32,6 @@ Horizontal Tabulator =&gt; `\t`
 Vertical Tabulator =&gt; `\v`  
 Single quote =&gt; `\'`  
 Double quote =&gt; `\"`  
-Backslash =&gt; `\`
+Backslash =&gt; `\\`
 
-{% hint style="info" %}
-These character escapes are useful for using special characters inside functions, e.g. in the text field of [$sendMessage](../../functions/usdsendmessage.md).
-{% endhint %}
-
+> ℹ️ These character escapes are useful for using special characters inside functions, e.g. in the text field of [$sendMessage](functions/usdsendmessage.md).

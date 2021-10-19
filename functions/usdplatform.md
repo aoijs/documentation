@@ -1,7 +1,3 @@
----
-description: Returns the platform of the user using ID
----
-
 # $platform
 
 This function returns the platform the user is using discord with

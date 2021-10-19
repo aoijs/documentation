@@ -1,7 +1,3 @@
----
-description: Returns the bots ID
----
-
 # $clientID
 
 This function will the bot's ID.

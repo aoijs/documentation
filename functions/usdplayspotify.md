@@ -1,7 +1,3 @@
----
-description: Plays the given playlist from spotify
----
-
 # $playSpotify
 
 This function plays the given playlist/song link from spotify

@@ -1,12 +1,6 @@
----
-description: >-
-  This event is needed to let your bot see messages so It's needed to respond to
-  commands.
----
-
 # bot.onMessage
 
-This callback is the base to running commands. It will track every message sent. You can NOT use it as an xp system. Instead, use [$alwaysExecute](../functions/usdalwaysexecute.md).
+This callback is the base to running commands. It will track every message sent. You can NOT use it as an xp system. Instead, use [$alwaysExecute](functions/usdalwaysexecute.md).
 
 ```javascript
 const Aoi = require("aoi.js") //allows the use of Aoi.js
@@ -36,9 +30,4 @@ bot.onMessage({
 })
 ```
 
-{% hint style="danger" %}
-bot.onMessage\(\) is necessary to make your bot work
-{% endhint %}
-
-
-
+> ❗ bot.onMessage\(\) is necessary to make your bot work.

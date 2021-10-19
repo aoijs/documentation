@@ -1,7 +1,3 @@
----
-description: Returns the type of this message.
----
-
 # $messageType
 
 The type of the current message, e.g. DEFAULT. Here are the available message types:
@@ -24,7 +20,7 @@ The type of the current message, e.g. DEFAULT. Here are the available message ty
 
 #### Usage:
 
-```text
+```js
 bot.command({
 name: "$alwaysExecute",
 code: `

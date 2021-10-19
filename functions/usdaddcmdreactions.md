@@ -1,7 +1,3 @@
----
-description: Adds a reaction to the message who triggered the command.
----
-
 # $addCmdReactions
 
 This function will be in charge of adding the 'emojis' previously chosen in the message of the person who has activated the command.

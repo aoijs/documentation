@@ -1,7 +1,3 @@
----
-description: Using Aoi.JS you're able to create Slash Commands for your Client.
----
-
 # Using Slash Commands
 
 ## Introduction
@@ -18,11 +14,9 @@ When getting started with slash commands, it's important to know what you should
 
 Your bot invitation link must have this checked.
 
-![](../../.gitbook/assets/image%20%284%29.png)
+![Application commands scope](../../.gitbook/assets/image%20%284%29.png)
 
-{% hint style="warning" %}
-**Re-invite** your bot or else it will not work
-{% endhint %}
+> ⚠ **Re-invite** your bot or else it will not work
 
 ### Knowing the limits
 
@@ -175,11 +169,9 @@ This will delete our created slashcommand that we made.
 })
 ```
 
-{% hint style="danger" %}
-Function/Callback below are **needed** for slash commands to work
-{% endhint %}
+> ❗ Function/Callback below are **needed** for slash commands to work
 
-### bot.onInteractionCreate\(\)
+### bot.onInteractionCreate()
 
 This will execute if a slash command is used
 
@@ -206,7 +198,7 @@ bot.onInteractionCreate()
 
 This function sends a message to the channel when the slash command in executed
 
-> [More info at this function's documentation](https://aoi.leref.ga/functions/usdinteractionreply)
+> ℹ️ [More info at this function's documentation](functions/usdinteractionreply)
 
 ```javascript
 $interactionReply[content;embeds;components (optional);flags (optional);type (optional)]

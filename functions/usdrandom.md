@@ -1,13 +1,9 @@
----
-description: returns a random number from min to max
----
-
 # $random
 
 This function returns a random number from the specified values
 
 ```text
-$random[min;max;allowDecimals (yes/no)
+$random[min;max;allowDecimals (yes/no);random (yes/no)]
 ```
 
 ```javascript

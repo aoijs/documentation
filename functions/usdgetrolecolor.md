@@ -1,7 +1,3 @@
----
-description: Gets the color of the specified role ID
----
-
 # $getRoleColor
 
 This function returns the hex color of the specified role ID

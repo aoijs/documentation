@@ -1,7 +1,3 @@
----
-description: Clones the current channel
----
-
 # $cloneChannel
 
 This function allows the bot to clone the name, topic and channel position of the current or given channel
@@ -31,7 +27,7 @@ $cloneChannel[$mentionedChannels[1]]`
 
 ```
 
-With optional field to clone current channel, save the new channel's ID inside [$let\[\] ](usdlet.md)and return the ID of the new channel as a channel mention with [$get\[\]](usdget.md):
+With optional field to clone current channel, save the new channel's ID inside [$let\[\]](functions/usdlet.md) and return the ID of the new channel as a channel mention with [$get\[\]](functions/usdget.md):
 
 ```javascript
 bot.command({

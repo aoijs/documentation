@@ -1,9 +1,3 @@
----
-description: >-
-  Checks if the role is hoisted above all the other roles. (Returns true or
-  false)
----
-
 # $isHoisted
 
 #### Usage

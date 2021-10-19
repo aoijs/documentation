@@ -1,7 +1,3 @@
----
-description: Removes specified value from specified text
----
-
 # $filterMessage
 
 This function filters and removes the given value from the given text

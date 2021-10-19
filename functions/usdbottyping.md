@@ -1,7 +1,3 @@
----
-description: Displays the bot as typing
----
-
 # $botTyping
 
 This function just displays the bot as 'Typing'

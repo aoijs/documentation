@@ -1,7 +1,3 @@
----
-description: Deletes bots message in the specified time
----
-
 # $deleteIn
 
 This function deletes the bot's message in the specified time

@@ -1,7 +1,3 @@
----
-description: Parse given in ms to date or time
----
-
 # $parseDate
 
 This function returns the date/time for the given ms

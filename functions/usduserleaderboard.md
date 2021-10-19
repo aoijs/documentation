@@ -1,7 +1,3 @@
----
-description: Generates a user leader board for the given variable value
----
-
 # $userLeaderboard
 
 This function generates a leaderboard for a variable with a numerical value
@@ -10,17 +6,15 @@ This function generates a leaderboard for a variable with a numerical value
 $userLeaderboard[variable;asc/desc (optional);{top} - {username}: {value};list (optional)]
 ```
 
-{% hint style="info" %}
-asc - The values will be from greatest to least \(top to bottom\)
+> ℹ️ asc - The values will be from greatest to least \(top to bottom\)
 
-desc - The values will be from least to greatest \(bottom to top\)
+> ℹ️ desc - The values will be from least to greatest \(bottom to top\)
 
-{top} - Their leaderboard position \(1./2./3./etc\)
+> ℹ️ {top} - Their leaderboard position \(1./2./3./etc\)
 
-{username} - The users username
+> ℹ️ {username} - The users username
 
-{value} - The users value of the given var
-{% endhint %}
+> ℹ️ {value} - The users value of the given var
 
 ```javascript
 bot.command({

@@ -1,7 +1,3 @@
----
-description: Checks if the role is managed. (Returns true or false)
----
-
 # $isManaged
 
 #### Usage

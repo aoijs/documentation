@@ -1,7 +1,3 @@
----
-description: 'Returns a Custom Emoji, from all Guilds.'
----
-
 # $customEmoji
 
 This  function returns a custom emoji from any guild as long as the bot is in the guild

@@ -1,7 +1,3 @@
----
-description: Checks if the user has at least one of the required perms
----
-
 # $hasAnyPerm
 
 This functionw ill check if the user has at least one of the specified perms inside of the function.

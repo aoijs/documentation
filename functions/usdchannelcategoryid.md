@@ -1,7 +1,3 @@
----
-description: Returns the channel category ID
----
-
 # $channelCategoryID
 
 This function will display the category ID the current/specified channel is in

@@ -1,10 +1,3 @@
----
-description: >-
-  Function internal functions aka Embed Errors are special functions that can be
-  used inside message fields of functions to build the message as an embed
-  message or to execute awaited commands with it.
----
-
 # Embed Errors
 
 * `{title:text}` =&gt; embed's title
@@ -44,7 +37,4 @@ You can use the embed error functions inside all functions they have message or 
 * [$cooldown](../../functions/usdcooldown.md) and other cooldown functions
 * [$blackListServerIDs ](../../functions/usdblacklistserverids.md)and other blacklist functions
 
-{% hint style="info" %}
-All of the embed functions are optional. Only `url` field needs a `title` field.
-{% endhint %}
-
+> ℹ️ All of the embed functions are optional. Only `url` field needs a `title` field.

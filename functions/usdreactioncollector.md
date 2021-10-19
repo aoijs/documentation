@@ -1,7 +1,3 @@
----
-description: Creates a reaction collector for given message ID
----
-
 # $reactionCollector
 
 This function creates a reaction collector for the given message ID

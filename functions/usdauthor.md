@@ -1,7 +1,3 @@
----
-description: Sets the author in an embed message and authorIcon if it's specified.
----
-
 # $author
 
 This function allows you to add an 'author' to the embed message and an icon to the author if a URL is specified.
@@ -22,9 +18,7 @@ Raw Usage: `$author[text;icon url;url (optional)]`
 * icon URL - The url of the image next to the text
 * HyperLink URL - The URL of the redirect link
 
-{% hint style="warning" %}
-The image URL needs to end with `.gif`, `.png` or `.jpg`
-{% endhint %}
+> ⚠ The image URL needs to end with `.gif`, `.png` or `.jpg`
 
 #### Usage
 

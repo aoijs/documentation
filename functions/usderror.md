@@ -1,7 +1,3 @@
----
-description: This function returns the error that the interpreter threw.
----
-
 # $error
 
 With this function you can execute a command if a command execution failed becasue of an interpreter error. The bot will execute the error property of the command if the intepreter throws an error. $error returns that error that was sent in the bot's console.

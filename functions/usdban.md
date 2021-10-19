@@ -1,7 +1,3 @@
----
-description: Bans an user from the guild using their ID.
----
-
 # $ban
 
 This function allows you to ban someone from the server using their user ID.
@@ -35,11 +31,9 @@ bot.command({
 });
 ```
 
-{% hint style="danger" %}
-We recommend adding an `$onlyPerms[ban;Error when no permissions.]` at the bottom of the command!
+> ❗ We recommend adding an `$onlyPerms[ban;Error when no permissions.]` at the bottom of the command!
 
-This way only people who have permission to ban will be able to ban other members.
-{% endhint %}
+> ❗ This way only people who have permission to ban will be able to ban other members.
 
 Example of the code with `$onlyPerms[]` to avoid bans without permissions:
 

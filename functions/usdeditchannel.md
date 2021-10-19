@@ -1,7 +1,3 @@
----
-description: Edits channel properties.
----
-
 # $editChannel
 
 This function will allow you to modify a channel using the channel ID.

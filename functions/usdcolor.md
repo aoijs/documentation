@@ -1,7 +1,3 @@
----
-description: 'Add color, to your sidebar embed description.'
----
-
 # $color
 
 This function adds color to the embed

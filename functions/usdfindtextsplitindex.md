@@ -1,7 +1,3 @@
----
-description: Finds the index of the splitted value
----
-
 # $findTextSplitIndex
 
 This function finds the index/position of the value from $textSplit

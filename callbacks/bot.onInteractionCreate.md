@@ -1,22 +1,20 @@
 # bot.onInteractionCreate
-### An event that gets executed, if the bot sees a user clicks a button on a server. To let the bot listen to the event, add one bot.onInteractionCreate() callback inside your mainfile.
 
+### Buttons
 
-# Buttons
+#### Usage
 
-## Usage
-```text
+```javascript
 bot.interactionCommand({
 name: "Interaction name",
 prototype: "button",
 code: `Code here`
 })
 ```
-#
-#
 
-## Example Command:
-```js
+#### Example Command:
+
+```javascript
 bot.interactionCommand({
 name: "hi",
 prototype: "button",
@@ -24,35 +22,39 @@ code: `Whats up $username`
 })
 ```
 
-# Slash commands
+### Slash commands
 
-## Usage
-```text
+#### Usage
+
+```javascript
 bot.interactionCommand({
 name: "Interaction name",
 code: `Code here`
 })
 ```
-#
-#
 
-## Example Command:
-```js
+### Example Command:
+
+```javascript
 bot.interactionCommand({
 name: "hi",
 code: `Whats up $username`
 })
 ```
 
-## Componets
+### Components
 
-``$interactionReply[Plain message;embeds (leave blank if none);componets (optional);flags (optional);type (optional)]`` - Use this to send a message when the interaction gets triggered
+`$interactionReply[Plain message;embeds (leave blank if none);componets (optional);flags (optional);type (optional)]` 
 
-``$interactionEdit[Plain message;embeds (leave blank if none);componets (leave bank if none)]`` - Edits the Interaction Message from $interactionReply
+ Use this to send a message when the interaction gets triggered
 
- ### Example
+`$interactionEdit[Plain message;embeds (leave blank if none);componets (leave bank if none)]` 
 
-```js
+ Edits the Interaction Message from $interactionReply
+
+#### Example
+
+```javascript
 bot.interactionCommand({
 name: "example",
 prototype: "button",
@@ -62,3 +64,4 @@ $wait[3s]
 $interactionReply[Hello!;{title:Hello $username}{description:nom}]
 `
 ```
+

@@ -1,7 +1,3 @@
----
-description: Loops for every guild the bot is in executing an awaitedCommand
----
-
 # $forEachGuild
 
 This function creates a loop over every server the bot is in

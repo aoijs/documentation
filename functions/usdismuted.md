@@ -1,7 +1,3 @@
----
-description: Checks if given user ID is muted in a Voice Channel. (Returns true or false)
----
-
 # $isMuted
 
 #### Usage

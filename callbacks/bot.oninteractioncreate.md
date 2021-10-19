@@ -1,10 +1,3 @@
----
-description: >-
-  An event that gets executed, if the bot sees a user clicks a button on a
-  server. To let the bot listen to the event, add one bot.onInteractionCreate()
-  callback inside your mainfile.
----
-
 # bot.onInteractionCreate
 
 ### Buttons
@@ -49,7 +42,7 @@ code: `Whats up $username`
 })
 ```
 
-### Componets
+### Components
 
 `$interactionReply[Plain message;embeds (leave blank if none);componets (optional);flags (optional);type (optional)]` 
 

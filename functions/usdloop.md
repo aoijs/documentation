@@ -1,7 +1,3 @@
----
-description: Repeat events / commands
----
-
 # $loop
 
 This function creates a loop and executes an awaited command X amount of times
@@ -10,9 +6,7 @@ This function creates a loop and executes an awaited command X amount of times
 $loop[how many;awaited command]
 ```
 
-{% hint style="danger" %}
-bot.awaitedCommand is needed.
-{% endhint %}
+> ❗ bot.awaitedCommand is needed.
 
 ```javascript
 bot.command({

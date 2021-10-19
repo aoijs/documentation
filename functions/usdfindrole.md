@@ -1,7 +1,3 @@
----
-description: 'Returns role ID from specified role name, mention or id'
----
-
 # $findRole
 
 This function returns the role ID from the given role info

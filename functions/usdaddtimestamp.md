@@ -1,7 +1,3 @@
----
-description: Adds a timestamp to an embed message. (After the footer)
----
-
 # $addTimestamp
 
 This function will add a time stamp in footer. Timestamp is when the message was sent or the ms!\

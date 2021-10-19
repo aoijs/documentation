@@ -13,7 +13,7 @@ Raw Usage: `$let[key;value]`
 
 #### Options
 
-* Key - The key that will be called with [$get](usdget.md)
+* Key - The key that will be called with [$get](functions/usdget.md)
 * Value - The value assigned to the &lt;key&gt;
 
 #### Usage

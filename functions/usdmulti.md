@@ -1,7 +1,3 @@
----
-description: $multi will multiply in the given args.
----
-
 # $multi
 
 This function will multiply all values

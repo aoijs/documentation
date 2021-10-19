@@ -1,7 +1,3 @@
----
-description: Sets a slowmode to the given channel
----
-
 # $slowmode
 
 This function sets a cooldown to the given channel ID. `0` will set the cooldown to none
@@ -10,9 +6,7 @@ This function sets a cooldown to the given channel ID. `0` will set the cooldown
 $slowmode[channelID;time/0]
 ```
 
-{% hint style="danger" %}
-Discord does not allow you to go over 6 hours
-{% endhint %}
+> ❗ Discord does not allow you to go over 6 hours
 
 ```javascript
 bot.command({

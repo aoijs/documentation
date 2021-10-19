@@ -1,7 +1,3 @@
----
-description: Returns audit log information.
----
-
 # $getAuditLogs
 
 With this function you can check Audit Log entries. Every field is optional. Action field defaults to everything, user field to everyone.
@@ -64,7 +60,7 @@ You can use the options at the bootom of the page to filter the audit logs:
 
 Simple usage without optional fields:
 
-```text
+```js
 bot.command({
 name: "audit-logs",
 code: `
@@ -76,7 +72,7 @@ $getAuditLogs
 
 Example command to filter last 5 bans and list their mentions:
 
-```text
+```js
 bot.command({
 name: "audit-logs",
 code: `

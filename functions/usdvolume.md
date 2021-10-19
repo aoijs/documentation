@@ -1,7 +1,3 @@
----
-description: Changes volume for current playing song
----
-
 # $volume
 
 This function can change the volume of the current playing song. The minimum number is 0 and the highest number is what ever you want \(Just be careful as it can cause earrape\)
@@ -24,7 +20,7 @@ $volume[50]
  // Sets the volume to 50%
 ```
 
-You can also set the volume by user inputs by using [$message](usdmessage.md)
+You can also set the volume by user inputs by using [$message](functions/usdmessage.md)
 
 ```javascript
 bot.command({

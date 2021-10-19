@@ -1,7 +1,3 @@
----
-description: Returns Node.js version.
----
-
 # $nodeVersion
 
 This function returns the current Node.js verion the server is using.
@@ -10,7 +6,7 @@ This function returns the current Node.js verion the server is using.
 
 The function would return v12.22.1 as example.
 
-```text
+```js
 bot.command({
 name: "node",
 code: `

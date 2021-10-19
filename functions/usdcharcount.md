@@ -1,7 +1,3 @@
----
-description: Displays the character count for the specified text
----
-
 # $charCount
 
 This function will count the amount of characters in the provided text.

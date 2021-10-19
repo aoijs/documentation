@@ -1,9 +1,3 @@
----
-description: >-
-  Used for Music Functions, whether or not the Client Message is being prune.
-  (Returns true or false)
----
-
 # $isPrune
 
 #### Usage

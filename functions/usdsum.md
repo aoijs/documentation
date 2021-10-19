@@ -1,7 +1,3 @@
----
-description: Sums up all the given number value
----
-
 # $sum
 
 This function adds up all the values

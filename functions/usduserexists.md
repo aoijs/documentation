@@ -1,7 +1,3 @@
----
-description: Checks if the given user ID exists
----
-
 # $userExists
 
 This function checks if the given user ID exists in discord

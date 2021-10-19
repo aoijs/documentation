@@ -1,7 +1,3 @@
----
-description: Deletes the specified role/roles
----
-
 # $deleteRoles
 
 This function deletes the specified role\(s\)

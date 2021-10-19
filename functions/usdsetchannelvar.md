@@ -1,7 +1,3 @@
----
-description: Sets a variable value to the current or given channel
----
-
 # $setChannelVar
 
 This function sets a value to the current/specified channel

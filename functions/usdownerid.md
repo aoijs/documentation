@@ -1,7 +1,3 @@
----
-description: Returns guild owner's id
----
-
 # $ownerID
 
 This function returns the server owner's id of the current guild

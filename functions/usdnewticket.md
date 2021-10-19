@@ -1,7 +1,3 @@
----
-description: Creates a ticket channel.
----
-
 # $newTicket
 
 This function creates a new ticket channel for the author.

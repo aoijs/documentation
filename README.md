@@ -1,7 +1,3 @@
----
-description: The available functions and guides for your needs.
----
-
 # Introduction
 
 ![](https://aoi.js.org/assets/images/aoijs-new.png)
@@ -23,11 +19,11 @@ The successor of [dbd.js](https://www.npmjs.com/package/dbd.js)
 * [Website](https://aoi.js.org)
 * [Github](https://github.com/aoijs/aoi.js)
 * [Discord Server](https://aoi.js.org/invite)
-* [Documentation](https://aoi.leref.ga)
+* [Documentation](https://aoi.js.org/docs)
 
 ## ⚒ Contributing
 
 Please read [Contributing](https://github.com/aoijs/aoi.js/blob/master/.github/CONTRIBUTING.md)
 
-{% page-ref page="guide/begin/" %}
-
+| [Getting Started](guide/begin/README.md) |
+| -------------------------------------------- |

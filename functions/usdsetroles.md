@@ -1,7 +1,3 @@
----
-description: Set some roles into guild member
----
-
 # $setRoles
 
 Sets some roles into a user using the User ID

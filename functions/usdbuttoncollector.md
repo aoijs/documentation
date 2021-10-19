@@ -1,9 +1,3 @@
----
-description: >-
-  Creates a collector of buttons for given message for the provided user in a
-  given time
----
-
 # $buttonCollector
 
 ## RawUsage

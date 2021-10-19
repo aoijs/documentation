@@ -1,7 +1,3 @@
----
-description: Allows the command to be only executable in the given channel
----
-
 # $onlyForChannels
 
 This function only allows the command to be ran in the specified channels

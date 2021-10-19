@@ -1,7 +1,3 @@
----
-description: Loop over every guild channel in the guild executing an awaited command
----
-
 # $forEachGuildChannel
 
 This function creates a loop for every channel in the current guild

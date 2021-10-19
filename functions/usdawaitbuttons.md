@@ -1,9 +1,3 @@
----
-description: >-
-  This function will make the bot reply when a user reacts with the given button
-  to the command.
----
-
 # $awaitButtons
 
 ## **Fields**
@@ -32,8 +26,6 @@ Raw Usage: `$awaitButtons[msgid;userfilter; customID, customID,...; awaitcommand
 * error - The message when the time runs out
 * uses - number of uses
 
-  \*\*\*\*
-
 ## **Usage**
 
 ```javascript
@@ -41,7 +33,4 @@ $awaitButtons[$get[id];$authorID;click;awaitclick; Stop,{description:Only $userT
 $let[id;$apiMessage[$channelId;Click Me;;{actionRow:Click Me,2,1,click};;yes]]
 ```
 
-{% hint style="info" %}
-This will be easier to do in future updates.
-{% endhint %}
-
+> ℹ️ This will be easier to do in future updates.

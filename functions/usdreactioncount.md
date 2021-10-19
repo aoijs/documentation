@@ -1,7 +1,3 @@
----
-description: Returns amount of people that have given a reaction to a certain message
----
-
 # $reactionCount
 
 This function will return the amount of people who reacted with given emoji to given message in the given channel.

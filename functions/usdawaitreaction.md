@@ -1,7 +1,3 @@
----
-description: Awaits a user reaction to the message
----
-
 # $awaitReaction
 
 This function will make the bot reply when a user reacts with the specified emoji
@@ -47,9 +43,7 @@ code: `Hi, You reacted to 1️⃣ and now i responded!`
 
 ![Here&apos;s an example of the bots response](../.gitbook/assets/image%20%282%29.png)
 
-{% hint style="warning" %}
-The error message will respond if the time has ran out \(If user doesn't do anything\)
-{% endhint %}
+> ⚠ The error message will respond if the time has ran out \(If user doesn't do anything\)
 
 Remember the time suffixes:
 
@@ -59,7 +53,5 @@ Remember the time suffixes:
 * d - Days
 * w - Weeks
 
-{% hint style="info" %}
-When having multiple &lt;reaction&gt; slots, make sure you have an equal amount of awaitedCommands
-{% endhint %}
+> ℹ️ When having multiple &lt;reaction&gt; slots, make sure you have an equal amount of awaitedCommands
 

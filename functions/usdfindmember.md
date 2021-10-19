@@ -1,7 +1,3 @@
----
-description: 'Retrieve the Member ID, with their Username, in the Current Guild.'
----
-
 # $findMember
 
 This function returns the user ID of the specified user. Yes/No will determine if function returns current author id \(yes\) or undefined \(no\) if no match was found. Default is yes

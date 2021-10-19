@@ -1,7 +1,3 @@
----
-description: Sets a variable value to the given message ID
----
-
 # $setMessageVar
 
 This function sets a value to the given message ID

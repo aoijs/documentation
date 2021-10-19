@@ -1,7 +1,3 @@
----
-description: Unbans a user from the server
----
-
 # $unban
 
 This function unbans the user from the guild
@@ -10,9 +6,7 @@ This function unbans the user from the guild
 $unban[user ID;reason (optional)]
 ```
 
-{% hint style="info" %}
-Reason will show up in audit logs
-{% endhint %}
+> ℹ️ Reason will show up in audit logs
 
 ```javascript
 bot.command({

@@ -1,7 +1,3 @@
----
-description: Returns an user ID with given user name
----
-
 # $userID
 
 This function returns the user ID of the given username

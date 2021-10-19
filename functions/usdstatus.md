@@ -1,16 +1,10 @@
----
-description: Returns the user's discord status
----
-
 # $status
 
 ```javascript
 $status[userID (optional)]
 ```
 
-{% hint style="danger" %}
-Must enable discord presence intents
-{% endhint %}
+> ❗ Must enable discord presence intents
 
 ```javascript
 bot.command({
@@ -19,7 +13,5 @@ code: `Your Status: $status`
 })
 ```
 
-{% hint style="warning" %}
-Bot Returns Either: dnd, online, invisible, idle
-{% endhint %}
+> ℹ️ Bot Returns Either: dnd, online, invisible, idle
 

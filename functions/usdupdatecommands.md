@@ -1,7 +1,3 @@
----
-description: This function updates all your commands in your command handler
----
-
 # $updateCommands
 
 #### Usage

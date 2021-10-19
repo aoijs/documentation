@@ -1,7 +1,3 @@
----
-description: Returns the ID of the message the user replied to
----
-
 # $referenceMessageID
 
 This function gets the message ID the user replied to

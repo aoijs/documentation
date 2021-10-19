@@ -1,7 +1,3 @@
----
-description: Gets information of given message ID
----
-
 # $getMessage
 
 This function returns the message &lt;property&gt; from the given message ID

@@ -1,7 +1,3 @@
----
-description: DM a user ID.
----
-
 # $dm
 
 This function DMs the given user via ID

@@ -1,7 +1,3 @@
----
-description: Sets a channel's topic
----
-
 # $setChannelTopic
 
 This function allows the bot to set a &lt;channel&gt; topic

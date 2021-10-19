@@ -1,7 +1,3 @@
----
-description: Returns when the User Joined the Guild.
----
-
 # $memberJoinedDate
 
 This function returns when the user joined the current guild

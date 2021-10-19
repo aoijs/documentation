@@ -23,7 +23,7 @@ bot.command({
 
 /*
     Using a collection created at: 
-    https://aoi.leref.ga/functions/usdcreatecollection
+    https://aoi.js.org/docs/functions/usdcreatecollection
 */
 ```
 

@@ -1,7 +1,3 @@
----
-description: Splits a text by separator
----
-
 # $textSplit
 
 This function separates text from the given separator

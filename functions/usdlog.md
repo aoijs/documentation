@@ -1,7 +1,3 @@
----
-description: Logs given text into console
----
-
 # $log
 
 This function logs the given &lt;text&gt; in the console

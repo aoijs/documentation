@@ -1,7 +1,3 @@
----
-description: 'Divide the number, in the args.'
----
-
 # $divide
 
 This function divides the given args

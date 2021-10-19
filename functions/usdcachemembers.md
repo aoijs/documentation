@@ -1,7 +1,3 @@
----
-description: Updates the cache for the current guild members
----
-
 # $cacheMembers
 
 This function is responsible for saving each new user that has not been registered before in your bot's database.

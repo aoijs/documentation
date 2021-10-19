@@ -1,7 +1,3 @@
----
-description: Returns the command name
----
-
 # $commandName
 
 This function returns the name of the current code

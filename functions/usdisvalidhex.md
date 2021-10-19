@@ -1,7 +1,3 @@
----
-description: Checks if given hex or initial decimal is valid. (Returns true or false)
----
-
 # $isValidHex
 
 #### Usage

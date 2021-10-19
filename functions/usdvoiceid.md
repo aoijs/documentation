@@ -1,7 +1,3 @@
----
-description: Returns the current voice channel ID the user is in
----
-
 # $voiceID
 
 This function simply returns the voice channel ID that the user is in

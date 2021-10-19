@@ -1,7 +1,3 @@
----
-description: Retrieve the discriminator of the User.
----
-
 # $discriminator
 
 This function returns the users discriminator

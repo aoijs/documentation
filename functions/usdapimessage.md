@@ -1,7 +1,3 @@
----
-description: Sends a Message using raw Discord API.
----
-
 # $apiMessage
 
 ## Description
@@ -46,15 +42,15 @@ description: Sends a Message using raw Discord API.
 >
 > This uses embed-errors in their full form.
 >
-> example: {author:hi} won't work but {author:hi::} will
+> example: {author:hi} won't work but {author&colon;hi::} will
 >
-> available ones are same as in [interactionReply](usdinteractionreply.md#embed)
+> available ones are same as in [interactionReply](functions/usdinteractionreply.md#embed)
 >
 > Color only supports hex code and int for now.
 >
 > ### Components
 >
-> Same as in [interactionReply](usdinteractionreply.md#components)
+> Same as in [interactionReply](functions/usdinteractionreply.md#components)
 
 ### Reference
 

@@ -1,7 +1,3 @@
----
-description: Returns the CPU Usage
----
-
 # $cpu
 
 This function returns the cpu in percentage

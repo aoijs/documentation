@@ -1,14 +1,8 @@
----
-description: Information that will be saved to all Guilds.
----
-
 # Global Variables
 
 2 Different types of global variables. Normal global variables, then theres global user variables
 
-{% hint style="danger" %}
-Make sure, you have the variables added already.
-{% endhint %}
+> ❗ Make sure, you have the variables added already.
 
 ## Global Variables
 

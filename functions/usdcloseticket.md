@@ -1,10 +1,6 @@
----
-description: Closes a ticket
----
-
 # $closeTicket
 
-This function closes a ticket/channel made by [$newTicket](usdnewticket.md)
+This function closes a ticket/channel made by [$newTicket](functions/usdnewticket.md)
 
 #### Fields
 

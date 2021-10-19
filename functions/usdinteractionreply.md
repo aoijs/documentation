@@ -1,7 +1,3 @@
----
-description: Create an interaction response for an interaction.
----
-
 # $interactionReply
 
 ### Description

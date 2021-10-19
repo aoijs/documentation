@@ -1,7 +1,3 @@
----
-description: Returns the contents of the provided file
----
-
 # $readFile
 
 This function simply returns the contents of the provided file.

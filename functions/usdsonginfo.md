@@ -1,13 +1,9 @@
----
-description: Returns information about the song that is being played.
----
-
 # $songInfo
 
 #### Usage
 
 ```javascript
-$songInfo[property;position]
+$songInfo[property;position (optional)]
 ```
 
 #### Example usage for current playing song
@@ -45,7 +41,5 @@ Next Playing: $songInfo[title;1]
 * publisher - Channel that uploaded the song.
 * publisher\_url - Link of the channel that uploaded the song.
 
-{% hint style="info" %}
-The current song's position is `0`- so next one's is `1` and so on.
-{% endhint %}
+> ℹ️ The current song's position is `0`- so next one's is `1` and so on.
 

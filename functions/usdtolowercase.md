@@ -1,7 +1,3 @@
----
-description: Lowercases all characters in the given test
----
-
 # $toLowercase
 
 This function lowercases all characters in &lt;text&gt;

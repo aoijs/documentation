@@ -1,7 +1,3 @@
----
-description: Returns the current command's code
----
-
 # $commandCode
 
 This function returns the current commands code

@@ -1,7 +1,3 @@
----
-description: Resets global variable value
----
-
 # $resetVar
 
 This function resets a global variable

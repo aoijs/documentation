@@ -1,7 +1,3 @@
----
-description: Changes the current nickname of the user
----
-
 # $changeNickname
 
 This function will make the bot change the nickname of the user indicated within the server.
@@ -40,7 +36,5 @@ bot.command({
 });
 ```
 
-{% hint style="warning" %}
-The bot won't be able to change the nickname of the guild's owner.
-{% endhint %}
+> ⚠ The bot won't be able to change the nickname of the guild's owner.
 

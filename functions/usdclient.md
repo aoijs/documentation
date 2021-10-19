@@ -1,7 +1,3 @@
----
-description: A compact funcion with 17 different functionalities.
----
-
 # $client
 
 With this command you can get information about the bot user itself.
@@ -24,13 +20,13 @@ Raw usage: `$client[option]`
 * `mfaenabled` =&gt; return true if the bot's owner has 2FA enabled on their account
 * `readyat` =&gt; returns the time the bot came online
 * `readytimestamp` =&gt; returns the timestamp the bot came online
-* `token` =&gt; returns the bot's token. More information: see [$clientToken](usdclienttoken.md)
+* `token` =&gt; returns the bot's token. More information: see [$clientToken](functions/usdclienttoken.md)
 * `ownerid` =&gt; returns the ID of the bot's owner or the ID of the owner of the application's team the bot belongs to
 * `teamid` =&gt; returns the ID of the team the bot's application belongs to or the ownerID if bot has no team
 
 #### Example Usage:
 
-```text
+```js
 bot.command({
 name: "client",
 code: `

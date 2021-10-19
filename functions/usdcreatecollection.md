@@ -23,9 +23,9 @@ bot.command({
 });
 /*
     This collection has been used in the next examples:
-    https://aoi.leref.ga/functions/usdsetcollectionkey
-    https://aoi.leref.ga/functions/usddeletecollectionkey
-    https://aoi.leref.ga/functions/usdfindcollectionkey
+    https://aoi.js.org/docs/functions/usdsetcollectionkey
+    https://aoi.js.org/docs/functions/usddeletecollectionkey
+    https://aoi.js.org/docs/functions/usdfindcollectionkey
 */
 ```
 

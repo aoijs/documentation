@@ -1,7 +1,3 @@
----
-description: Loop over every cached user executing an awaited command
----
-
 # $forEachUser
 
 This function creates a loop for every user 

@@ -1,7 +1,3 @@
----
-description: 'Returns, True or False, if the assigned Author ID, has it.'
----
-
 # $hasPerms
 
 This function checks if the given user has the given permission. Returns boolean

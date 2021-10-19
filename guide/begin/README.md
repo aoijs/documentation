@@ -1,69 +1,78 @@
----
-description: The page to guide you with Aoi.JS.
----
-
 # Getting Started
 
 ## Installation
+> **⚠ Node.JS 12.0.0 or newer is required.**
 
-{% hint style="warning" %}
-**Node.JS 12.0.0 or newer is required.**
-{% endhint %}
+<table>
+  <tr>
+  <th align="left">Terminal</th>
+  </tr>
+  <tr>
+  <td>
 
-{% tabs %}
-{% tab title="Terminal" %}
-```bash
-npm install aoi.js
-```
-{% endtab %}
-{% endtabs %}
+  ```bash
+  npm install aoi.js
+  ```
+
+  </td>
+  </tr>
+</table>
 
 Once this has installed you can begin the following file `index.js` to setup Aoi.JS.
 
-{% tabs %}
-{% tab title="index.js" %}
-```javascript
-const aoijs = require("aoi.js")
+<table>
+  <tr>
+  <th align="left">index.js</th>
+  </tr>
+  <tr>
+  <td>
 
-const bot = new aoijs.Bot({
-token: "TOKEN", //Discord Bot Token
-prefix: "PREFIX" //Discord Bot Prefix
-})
-bot.onMessage() //Allows to execute Commands
+  ```javascript
+  const aoijs = require("aoi.js")
 
-bot.command({
-name: "ping", //Trigger name (command name)
-code: `Pong! \`$ping\`ms` //Code
-})
+  const bot = new aoijs.Bot({
+    token: "TOKEN", //Discord Bot Token
+    prefix: "PREFIX" //Discord Bot Prefix
+  })
 
-bot.readyCommand({
+  bot.onMessage() //Allows to execute Commands
+
+  bot.command({
+    name: "ping", //Trigger name (command name)
+    code: `Pong! \`$ping\`ms` //Code
+  })
+
+  bot.readyCommand({
     channel: "", //You can use this or not
     code: `$log[Ready on $userTag[$clientID]]` //Example Ready on Client
-})
-```
-{% endtab %}
-{% endtabs %}
+  })
+  ```
+
+  </td>
+  </tr>
+</table>
 
 > You must enter a prefix via `PREFIX`
 >
 > You must enter a valid Discord Bot Token via `TOKEN`
 
-{% hint style="success" %}
-Just simple as that you can begin using Aoi.JS
-{% endhint %}
+> ✅ Just simple as that you can begin using Aoi.JS
 
 ## package.json
 
-{% hint style="warning" %}
-In most Hosting Services you will need a `package.json` file
-{% endhint %}
+> ⚠ In most Hosting Services you will need a `package.json` file
 
 If you need a example, there's a quick example to use.
 
-{% tabs %}
-{% tab title="package.json" %}
-```javascript
-{
+<table>
+  <tr>
+  <th align="left">package.json</th>
+  </tr>
+  <tr>
+  <td>
+
+  ```json
+  {
     "name": "-asdf",
     "version": "1.0.0",
     "description": "",
@@ -80,11 +89,9 @@ If you need a example, there's a quick example to use.
       "aoi.js": "^4.5.0"
     }
   }
-```
-{% endtab %}
-{% endtabs %}
+  ```
+  </td>
+  </tr>
+</table>
 
-{% hint style="info" %}
-`4.5.0` can be changed to any version number as you want.
-{% endhint %}
-
+> ℹ️ `4.5.0` can be changed to any version number as you want.

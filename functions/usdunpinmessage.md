@@ -1,7 +1,3 @@
----
-description: Unpins a message
----
-
 # $unPinMessage
 
 This function allows the bot to unpin the given messageID \(if pinned\)

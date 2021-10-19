@@ -1,10 +1,4 @@
----
-description: 'Discord API Intents, This is needed to Access Discord API'
----
-
 # Gateway Intents
-
-## Gateway Intents
 
 Gateways are Discord's form of real-time communication over secure WebSockets. Clients will receive events and data over the gateway they are connected to and send data over the REST API.  
   

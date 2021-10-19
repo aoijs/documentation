@@ -1,7 +1,3 @@
----
-description: Forces the bot to leave the specified server.
----
-
 # $botLeave
 
 This function makes the bot leave the current / specified server
@@ -18,9 +14,7 @@ Raw Usage: `$botLeave[serverID (optional)]`
 
 * Server ID - The server of which the bot is going to leave from
 
-{% hint style="danger" %}
-Using this function will make your bot leave the specified server, we recommend using $onlyForIDs\[Your ID;Only for my owner\]
-{% endhint %}
+> ❗  Using this function will make your bot leave the specified server, we recommend using $onlyForIDs\[Your ID;Only for my owner\]
 
 #### Usage
 

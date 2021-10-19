@@ -1,7 +1,3 @@
----
-description: Resets global user variable values
----
-
 # $resetGlobalUserVar
 
 This function resets everyones global user variable values to defaut value

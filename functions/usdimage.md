@@ -1,7 +1,3 @@
----
-description: Adds images to embed.
----
-
 # $image
 
 This function adds an image to the embed

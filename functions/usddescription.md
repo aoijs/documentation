@@ -1,7 +1,3 @@
----
-description: 'Add a embed description, to your message.'
----
-
 # $description
 
 This function adds an embed to your message

@@ -1,9 +1,3 @@
----
-description: >-
-  Removes the numbers after the decimal point (Truncates the number to 0
-  decimals)
----
-
 # $truncate
 
 This function removes all values after the decimal point, if there is one

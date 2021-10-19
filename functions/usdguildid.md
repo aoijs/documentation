@@ -1,7 +1,3 @@
----
-description: Returns Guild ID.
----
-
 # $guildID
 
 This function return's the current guild's id

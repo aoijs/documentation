@@ -1,7 +1,3 @@
----
-description: Checks if given message exists in the given channel. Returns true/false
----
-
 # $messageExists
 
 This function will check if the indicated message exists on the indicated channel, as result will return true/false depending if it exists or not.

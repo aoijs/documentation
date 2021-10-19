@@ -1,7 +1,3 @@
----
-description: Returns a list of users with given role (members are given from the cache.)
----
-
 # $usersWithRole
 
 This function will return the users that have the specified role

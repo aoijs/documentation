@@ -23,7 +23,7 @@ Raw Usage: `$lavalinkExecute[method;data]`
   * SoundCloud Usage: `$lavalinkExecute[play;scsearch:url/name]`
 * songinfo - The current song's info
   * Usage: `$lavalinkExecute[songinfo;property]`
-  * Properties: [$songInfo](usdsonginfo.md#properties)
+  * Properties: [$songInfo](functions/usdsonginfo.md#properties)
 * volume - The volume of the queue
   * Usage \( Lavalink LTS \): `$lavalinkExecute[volume;number]`
   * usage \( Lavalink Dev \): `$lavalinkExecute[addFilters;volume=1]`

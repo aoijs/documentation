@@ -1,18 +1,15 @@
----
-description: More advanced Systems to code with Aoi.JS
----
-
 # Advanced Guides
 
 ## Here you can find some advanced guides of Aoi.JS features:
 
-{% page-ref page="music.md" %}
+| [**Using Callbacks**](guide/advanced-guides/using-callbacks.md) |
+| --------------------------------------------------------------------- |
 
-{% page-ref page="invite-system.md" %}
+| [**Using Music**](guide/advanced-guides/music.md) |
+| ------------------------------------------------------- |
 
-{% page-ref page="slash-commands.md" %}
+| [**Using Slash Commands**](guide/advanced-guides/slash-commands.md) |
+| ------------------------------------------------------------------------- |
 
-
-
-
-
+| [**Fetch Invites**](guide/advanced-guides/invite-system.md) |
+| ----------------------------------------------------------------- |

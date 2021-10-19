@@ -1,7 +1,3 @@
----
-description: Checks if the given user ID DM's are enabled. (Returns true or false)
----
-
 # $isUserDMEnabled
 
 #### Usage

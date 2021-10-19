@@ -1,7 +1,3 @@
----
-description: Grabs split Text value from $textSplit by given index
----
-
 # $splitText
 
 This function grabs  the value from the given index
@@ -10,9 +6,7 @@ This function grabs  the value from the given index
 $splitText[index]
 ```
 
-{% hint style="info" %}
-Index = the position of the text
-{% endhint %}
+> ℹ️ Index = the position of the text
 
 ```javascript
 bot.command({

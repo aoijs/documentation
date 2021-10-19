@@ -1,7 +1,3 @@
----
-description: Returns the size of the provided type in Provided guild or global
----
-
 # $vcSize
 
 This function simply returns the size of the provided type in Provided guild or global

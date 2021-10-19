@@ -1,10 +1,3 @@
----
-description: >-
-  An event that gets executed, if the bot sees a user editing a message. To let
-  the bot listen to the event, add one bot.onMessageUpdate() callback inside
-  your mainfile.
----
-
 # bot.onMessageUpdate
 
 This callback allows the bot to log any edited messages to the given channel

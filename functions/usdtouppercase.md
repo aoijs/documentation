@@ -1,7 +1,3 @@
----
-description: Uppercases all characters in the given text
----
-
 # $toUppercase
 
 This function uppercases all characters in &lt;text&gt;

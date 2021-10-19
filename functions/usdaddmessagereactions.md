@@ -1,7 +1,3 @@
----
-description: Adds a reaction to the given message ID
----
-
 # $addMessageReactions
 
 This function will add a reaction to the specified message ID

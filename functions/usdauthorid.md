@@ -1,7 +1,3 @@
----
-description: Returns the ID of the user who ran the command.
----
-
 # $authorID
 
 This function returns the author's ID \(The one who ran the command\)

@@ -1,7 +1,3 @@
----
-description: Checks if the given condition is true or false
----
-
 # $checkCondition
 
 This function will check if given condition is true or false.

@@ -1,7 +1,3 @@
----
-description: Returns true or false if the Role does exist in the current Guild
----
-
 # $roleExists
 
 This function checks if a role exists in the current guild

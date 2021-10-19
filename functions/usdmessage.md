@@ -1,7 +1,3 @@
----
-description: 'Returns the message, from the Author.'
----
-
 # $message
 
 This function returns/repeats the author's message \(the content of the command's message\).

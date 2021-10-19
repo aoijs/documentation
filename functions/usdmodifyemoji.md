@@ -1,7 +1,3 @@
----
-description: Modifies a custom emoji from this guild by using its ID.
----
-
 # $modifyEmoji
 
 This function modifies the given emoji
@@ -42,7 +38,5 @@ code: `$modifyEmoji[775189112474173470;bruhDog;773353340674900029]`
 })
 ```
 
-{% hint style="warning" %}
-Emoji must be a custom emoji of one of the bot's servers.
-{% endhint %}
+> ⚠ Emoji must be a custom emoji of one of the bot's servers.
 

@@ -18,13 +18,13 @@ Raw Usage: `$fetchInvites[awaitedCommand1;awaitedCommand2;...]`
 
 #### Usable Functions
 
-* [$inviteUses ](usdinviteuses.md)
-* [$inviteURL ](usdinviteurl.md)
-* [$inviteCode ](usdinvitecode.md)
-* [$inviteGuildID ](usdinviteguildid.md)
-* [$inviteChannelID ](usdinvitechannelid.md)
-* [$inviteUserID ](usdinviteuserid.md)
-* [$inviteMaxUses](usdinvitemaxuses.md)
+* [$inviteUses ](functions/usdinviteuses.md)
+* [$inviteURL ](functions/usdinviteurl.md)
+* [$inviteCode ](functions/usdinvitecode.md)
+* [$inviteGuildID ](functions/usdinviteguildid.md)
+* [$inviteChannelID ](functions/usdinvitechannelid.md)
+* [$inviteUserID ](functions/usdinviteuserid.md)
+* [$inviteMaxUses](functions/usdinvitemaxuses.md)
 
 #### Usage
 

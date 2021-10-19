@@ -1,7 +1,3 @@
----
-description: Returns URL for the user's avatar
----
-
 # $userAvatar
 
 This function returns the URL for the given user's avatar

@@ -1,7 +1,3 @@
----
-description: Displays the channel count in the server.
----
-
 # $channelCount
 
 This function will display the total channel count on the server, including categories.

@@ -1,10 +1,3 @@
----
-description: >-
-  An event that gets executed, if the bot sees a user updating it's profile. To
-  let the bot listen to the event, add one bot.onUserUpdate() callback inside
-  your mainfile.
----
-
 # bot.onUserUpdate
 
 This callback triggers every time a user updates their profile.
@@ -31,7 +24,7 @@ $oldUser[avatar]
 
 #### Options:
 
-You can use the functions [$oldUser\[\]](../functions/usdolduser.md) with the options below to return old user data.
+You can use the functions [$oldUser](functions/usdolduser.md) with the options below to return old user data.
 
 * `id` - The ID of the user 
 * `partial` - Whether the User structure is partial or not 

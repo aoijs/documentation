@@ -1,7 +1,3 @@
----
-description: Returns the emoji the user reacted with
----
-
 # $emojiToString
 
 The function returns the emoji the user reacted with

@@ -1,7 +1,3 @@
----
-description: Deletes the specified emoji from the guild
----
-
 # $deleteEmojis
 
 This function deletes an emoji from the current guild

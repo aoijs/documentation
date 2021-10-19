@@ -1,7 +1,3 @@
----
-description: Send a tts message.
----
-
 # $sendTTS
 
 This function lets the bot send a text-to-speech message with the given text in the current or given channel.
@@ -10,7 +6,7 @@ Raw usage: `$sendTTS[message; channelid ( optional)]`
 
 #### Example Command:
 
-```text
+```js
 bot.command({
 name: "tts",
 code: `

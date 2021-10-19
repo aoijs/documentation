@@ -1,10 +1,3 @@
----
-description: >-
-  An event that gets executed, if the bot sees a channel deletion. To let the
-  bot listen to the event, add one bot.onChannelDelete() callback inside your
-  mainfile.
----
-
 # bot.onChannelDelete
 
 This command gets triggered everytime a channel was deleted on a server.
@@ -32,7 +25,7 @@ $oldChannel[name]
 
 #### Options:
 
-You can use the function [$oldChannel\[\]](../functions/usdoldchannel.md) with the options below to return old channel data:
+You can use the function [$oldChannel](functions/usdoldchannel.md) with the options below to return old channel data:
 
 * `id` - The ID of the channel 
 * `name` - The name of the channel 

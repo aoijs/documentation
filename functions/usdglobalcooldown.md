@@ -1,16 +1,10 @@
----
-description: 'Set a Global cooldown, with all Guilds'
----
-
 # $globalCooldown
 
 $globalCooldown\[time;error when cooldown activated\]
 
-{% hint style="info" %}
-%time% returns the remaining cooldown time
-{% endhint %}
+> ℹ️ %time% returns the remaining cooldown time
 
-```text
+```js
 bot.command({
 name: "hello", 
 code: `

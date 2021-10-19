@@ -22,9 +22,7 @@ bot.timeoutCommand({
 });
 ```
 
-{% hint style="warning" %}
-These can go above 21 days
-{% endhint %}
+> ⚠ These can go above 21 days
 
 This function also comes with a sub function called: `$timeoutData[property]` the property value will depend on what you add inside the second field of $setTimeout.
 

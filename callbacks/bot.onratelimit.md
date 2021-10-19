@@ -1,10 +1,3 @@
----
-description: >-
-  An event that gets executed, if the bot gets rate limited by the Discord API.
-  To let the bot listen to the event, add one bot.onRateLimit() callback inside
-  your mainfile.
----
-
 # bot.onRateLimit
 
 This callback triggers every time your bot gets rate limited by the Discord API.

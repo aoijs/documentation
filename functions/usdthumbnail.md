@@ -1,7 +1,3 @@
----
-description: Adds a thumbnail to the embed
----
-
 # $thumbnail
 
 This function adds a thumbnail to the embed

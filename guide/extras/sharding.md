@@ -1,12 +1,6 @@
----
-description: Using Aoi.JS Sharding System to allow Sharding for your Client.
----
-
 # Sharding
 
-{% hint style="danger" %}
-Sharding is only necessary for bots in 2,000+ Guilds
-{% endhint %}
+> ❗ Sharding is only necessary for bots in 2,000+ Guilds
 
 ### How to enable Sharding.
 
@@ -30,9 +24,4 @@ bot.command({
 })
 ```
 
-{% hint style="danger" %}
-Sharding can lead to high ping/response time and depending your host, can use a lot of memory and disk space.
-{% endhint %}
-
-
-
+> ❗ Sharding can lead to high ping/response time and depending your host, can use a lot of memory and disk space.

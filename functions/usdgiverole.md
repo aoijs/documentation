@@ -1,6 +1,6 @@
 # $giveRole
 
-This function gives a role to the specified user. This is generally fast then [$giveRoles](usdgiveroles.md)
+This function gives a role to the specified user. This is generally fast then [$giveRoles](functions/usdgiveroles.md)
 
 ```text
 $giveRole[userID;roleID]

@@ -1,7 +1,3 @@
----
-description: Get the Bot Ping.
----
-
 # $ping
 
 This function returns websocket ping

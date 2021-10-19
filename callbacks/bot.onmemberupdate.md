@@ -1,10 +1,3 @@
----
-description: >-
-  An event that gets executed, if the bot sees a guild member updated in one of
-  it's servers. To let the bot listen to the event, add one bot.onMemberUpdate()
-  callback inside your mainfile.
----
-
 # bot.onMemberUpdate
 
 This callback triggers every time a member gets updated, e.g. role given/removed or nickname changed.
@@ -31,7 +24,7 @@ $oldMember[permissions] to $newMember[permissions]
 
 ## Options:
 
-You can use these functions $newMember\[\] and $oldMember with the options below to return new and old member data:
+You can use these functions [$newMember](functions/usdnewmember.md) and $oldMember with the options below to return new and old member data:
 
 * `id` - The ID of the user 
 * `name` - The name of this user 

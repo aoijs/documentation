@@ -1,7 +1,3 @@
----
-description: 'Disables, @ mentioned, and replaces with the Username.'
----
-
 # $disableMentions
 
 This function removes any mention and replaces with name instead

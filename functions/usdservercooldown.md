@@ -1,7 +1,3 @@
----
-description: Sets a server cooldown
----
-
 # $serverCooldown
 
 This function creates a cooldown for the command in the current guild
@@ -10,9 +6,7 @@ This function creates a cooldown for the command in the current guild
 $serverCooldown[time;error when cooldown activated]
 ```
 
-{% hint style="info" %}
-%time% returns the remaining cooldown time
-{% endhint %}
+> ℹ️ %time% returns the remaining cooldown time
 
 ```javascript
 bot.command({

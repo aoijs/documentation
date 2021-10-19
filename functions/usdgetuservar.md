@@ -1,7 +1,3 @@
----
-description: Gets a user's variable value
----
-
 # $getUserVar
 
 This function returns the value of the given variable for the user.

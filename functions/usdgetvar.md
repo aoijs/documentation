@@ -1,7 +1,3 @@
----
-description: Gets a global variable value
----
-
 # $getVar
 
 This function returns the value of the given variable everyone shares
@@ -12,7 +8,7 @@ This function has 1 required field
 
 1. Variable \(Required\)
 
-Raw Usage: `$getServerVar[variable]`
+Raw Usage: `$getVar[variable]`
 
 #### Options
 

@@ -1,10 +1,3 @@
----
-description: >-
-  An event that gets executed, if the bot sees a channel update on a server. To
-  let the bot listen to the event, add one bot.onChannelUpdate() callback inside
-  your mainfile.
----
-
 # bot.onChannelUpdate
 
 This command gets triggered everytime a channel was updated on a server.
@@ -33,7 +26,7 @@ New Name: $newChannel[name]
 
 #### Options:
 
-You can use these functions [$newChannel\[\] ](../functions/usdnewchannel.md)and [$oldChannel\[\]](../functions/usdoldchannel.md) with the options below to return new and old channel data:
+You can use these functions [$newChannel](functions/usdnewchannel.md) and [$oldChannel](functions/usdoldchannel.md) with the options below to return new and old channel data:
 
 * `id` - The ID of the channel 
 * `name` - The name of the channel 

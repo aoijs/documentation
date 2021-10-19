@@ -1,7 +1,3 @@
----
-description: Checks if given user ID is in the server.
----
-
 # $memberExists
 
 This function checks if the given user is in the current guild

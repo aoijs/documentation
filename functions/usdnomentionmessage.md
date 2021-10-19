@@ -1,7 +1,3 @@
----
-description: Returns user message without any mentions
----
-
 # $noMentionMessage
 
 This function returns the author's message while removing any mentions

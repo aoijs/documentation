@@ -1,7 +1,3 @@
----
-description: Checks if value is in text
----
-
 # $onlyIfMessageContains
 
 This function only allows a command to be ran if the all the values are in the &lt;text&gt;

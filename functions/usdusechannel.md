@@ -1,7 +1,3 @@
----
-description: Sends message to specified channel
----
-
 # $useChannel
 
 This function sends a message to the given channel

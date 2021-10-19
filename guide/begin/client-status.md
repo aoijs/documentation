@@ -1,16 +1,10 @@
----
-description: How to setup a Bot Status
----
-
 # Client Status
 
 ### How do I set a Bot Status?
 
 It's very simple!
 
-{% hint style="danger" %}
-You need to enter the following, in your main index.
-{% endhint %}
+> ❗ You need to enter the following, in your main index.
 
 ```javascript
 bot.status({
@@ -20,9 +14,7 @@ bot.status({
 })
 ```
 
-{% hint style="info" %}
-For Multiple Statuses, use the following:
-{% endhint %}
+> ℹ️ For Multiple Statuses, use the following:
 
 ```javascript
 bot.status({
@@ -48,9 +40,7 @@ bot.status({
 
 ### Bots Discord Status:
 
-{% hint style="info" %}
-If you want to change the bot's discord status use the following
-{% endhint %}
+> ℹ️ If you want to change the bot's discord status use the following
 
 ```javascript
 bot.status({
@@ -70,11 +60,9 @@ bot.status({
 
 ### Streaming URL:
 
-{% hint style="info" %}
-Streaming-Status supports YouTube-Video-URL or Twitch-Channel-URLs.
+> ℹ️ Streaming-Status supports YouTube-Video-URL or Twitch-Channel-URLs.
 
-If you want to enter an URL, Enter the following
-{% endhint %}
+> ℹ️ If you want to enter an URL, Enter the following
 
 ```javascript
 bot.status({
@@ -95,4 +83,3 @@ mobile: true
 ```
 
 ![Example](../../.gitbook/assets/image%20%2862%29.png)
-
