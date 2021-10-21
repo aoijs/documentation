@@ -3,6 +3,7 @@ description: Returns how many shards this client has.
 ---
 
 # $shardCount
+
 ## Usage
 ```php
 $shardCount
