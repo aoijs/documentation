@@ -5,7 +5,7 @@ description: Here you can see how to setup variables.
 # Variables
 
 {% hint style="warning" %}
-It must be inside of your main file, in most of the cases this is `server.js`
+It must be inside of your main file, in most of the cases this is `index.js`
 {% endhint %}
 
 ### Setup Variables:
@@ -33,20 +33,20 @@ Name2: "Value2"
 ```javascript
 bot.variables({
 prefix: "!",
-myName: "Chiwi"
+myName: "Leref"
 })
 ```
 
 {% hint style="info" %}
-If your using a command handler, this remains the same!
+If you're using a command handler, this remains the same!
 {% endhint %}
 
-If you want to make a new variable, for example "apples" you just have to add a `,` after the last variable value and type the name and vale of the new variable, as example with apples:
+If you want to make a new variable, for example `"apples"` you just have to add a `,` after the last variable value and type the name and vale of the new variable, as example with apples:
 
 ```javascript
 bot.variables({
     prefix: "!",
-    myName: "Chiwi",
+    myName: "Leref",
     apples: 0
 })
 ```
