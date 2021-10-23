@@ -38,7 +38,7 @@ myName: "Chiwi"
 ```
 
 {% hint style="info" %}
-If your using a command handler, this remains the same!
+If you're using a command handler, this remains the same!
 {% endhint %}
 
 If you want to make a new variable, for example "apples" you just have to add a `,` after the last variable value and type the name and vale of the new variable, as example with apples:
