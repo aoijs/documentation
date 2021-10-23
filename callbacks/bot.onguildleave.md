@@ -13,7 +13,7 @@ This callback will allow the bot to log a message whenever it leaves a server.
 ```javascript
 bot.botLeaveCommand({//command
 channel: "channel id",//the channel where <code> will be sent to
-code: `Your code`//message sent to <channel>
+code: `your code`//message sent to <channel>
 })
 ```
 

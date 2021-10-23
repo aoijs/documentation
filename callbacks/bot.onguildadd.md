@@ -13,7 +13,7 @@ This callback will allow the bot to log a message whenever it joins a server.
 ```javascript
 bot.botJoinCommand({//command
 channel: "channel id",//the channel where <code> will be sent to
-code: `Your code`//message sent to <channel>
+code: `your code`//message sent to <channel>
 })
 ```
 

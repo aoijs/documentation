@@ -40,6 +40,7 @@
 * [bot.onChannelCreate](callbacks/bot.onchannelcreate.md)
 * [bot.onChannelDelete](callbacks/bot.onchanneldelete.md)
 * [bot.onChannelUpdate](callbacks/bot.onchannelupdate.md)
+* [bot.onFunctionError](callbacks/bot.onfunctionerror.md)
 * [bot.onGuildJoin](callbacks/bot.onguildadd.md)
 * [bot.onGuildLeave](callbacks/bot.onguildleave.md)
 * [bot.onInviteCreate](callbacks/bot.oninvitecreate.md)
