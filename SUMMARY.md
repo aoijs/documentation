@@ -255,6 +255,7 @@
 * [$guild](functions/usdguild.md)
 * [$guildID](functions/usdguildid.md)
 * [$guildRoles](functions/usdguildroles.md)
+* [$handleError](functions/usdhandleerror.md)
 * [$hasAnyPerm](functions/usdhasanyperm.md)
 * [$hasAnyRole](functions/usdhasanyrole.md)
 * [$hasEmbeds](functions/usdhasembeds.md)
