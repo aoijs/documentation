@@ -4,7 +4,7 @@ description: Setting up a Command Handler with Aoi.JS.
 
 # Command Handler
 
-### Adding Command Handler
+### Example
 
 {% tabs %}
 {% tab title="index.js" %}
@@ -43,19 +43,24 @@ const bot = new aoijs.Bot({
 token: "TOKEN", //Discord Bot Token
 prefix: "PREFIX" //Discord Bot Prefix
 })
-bot.onMessage() //Allows to execute Commands
 
+//Events
+bot.onMessage()
+
+//Command Handler / Loads files
+bot.loadCommands(`./commands/`)
+
+//Command Example
 bot.command({
-name: "ping", //Trigger name (command name)
-code: `Pong! $pingms` //Code
+name: "ping",
+code: `Pong! \`$ping\`ms`
 })
 
+//Ready Event
 bot.readyCommand({
-    channel: "", //You can use this or not
-    code: `$log[Ready on $userTag[$clientID]]` //Example Ready on Client
+    channel: "",
+    code: `$log[Ready on $userTag[$clientID]]`
 })
-
-bot.loadCommands(`./commands/`) //Allows Commands executed by `commands` folder
 ```
 {% endtab %}
 {% endtabs %}
