@@ -29,16 +29,20 @@ const bot = new aoijs.Bot({
 token: "TOKEN", //Discord Bot Token
 prefix: "PREFIX" //Discord Bot Prefix
 })
-bot.onMessage() //Allows to execute Commands
 
+//Events
+bot.onMessage()
+
+//Command Example
 bot.command({
-name: "ping", //Trigger name (command name)
-code: `Pong! \`$ping\`ms` //Code
+name: "ping",
+code: `Pong! \`$ping\`ms`
 })
 
+//Ready Event
 bot.readyCommand({
-    channel: "", //You can use this or not
-    code: `$log[Ready on $userTag[$clientID]]` //Example Ready on Client
+    channel: "",
+    code: `$log[Ready on $userTag[$clientID]]`
 })
 ```
 {% endtab %}
