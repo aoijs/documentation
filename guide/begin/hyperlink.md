@@ -4,17 +4,23 @@ description: Setting a Hyperlink in an embed's description.
 
 # Hyperlink
 
-### How it works
-
+### Usage:
 ```javascript
-[A text field(https://validlink.com 'hover text field')
+[Text Field](link'Hover Field')
+```
+
+> `link` refers to an actual website link
+
+### Example:
+```javascript
+[aoi.js website](https://aoi.js.org 'aoi.js link')
 ```
 
 {% hint style="danger" %}
 Hyperlinks only work inside $description and embed fields.
 {% endhint %}
 
-### Usage
+### Example
 
 {% tabs %}
 {% tab title="index.js" %}
