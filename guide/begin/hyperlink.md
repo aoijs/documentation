@@ -6,10 +6,12 @@ description: Setting a Hyperlink in an embed's description.
 
 ### Usage:
 ```javascript
-[Text Field](link'Hover Field')
+[Text Field](link 'Hover Field')
 ```
 
 > `link` refers to an actual website link
+
+> `Hover Field` can be anything you want
 
 ### Example:
 ```javascript
