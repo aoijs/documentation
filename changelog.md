@@ -4,6 +4,10 @@ description: aoi.js - changelog from previous versions and latest.
 
 # Changelog
 
+## aoi.js - 5.0.0
+
+* Coming soon.
+
 ## aoi.js - 4.5.0
 
 ### Added
