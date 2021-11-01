@@ -6,7 +6,24 @@ description: aoi.js - changelog from previous versions and latest.
 
 ## aoi.js - 5.0.0
 
-* Coming soon.
+* ETA SOON.
+
+## aoi.js - 4.6.0
+
+### Changes
+
+* $playSong improved
+* Lavalink Fixes (musicStart, musicEnd support, queue fixed, etc)
+* Fixed $apiMessage target id
+* Fixed $numberSeparator decimal
+* musicEnd callback works immediately $playSong is triggered
+* $songInfo: `duration`, `current_duration`, `duration_left` will no longer (time) seconds only `MS`
+* Fixed {target.id} returning logs id instead of the target users id 
+* Removed useless clutter in src
+*$skipTo should now work 
+* Removed $skipTo deleting songTitle's
+* Fixed $complexCooldown globalUser
+
 
 ## aoi.js - 4.5.0
 

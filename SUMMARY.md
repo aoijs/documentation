@@ -2,7 +2,7 @@
 
 * [Introduction](README.md)
 
-## aoi.js version 4.5.0
+## aoi.js version 4.6.0
 
 * [Changelog](changelog.md)
 
