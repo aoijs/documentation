@@ -1,5 +1,5 @@
 ---
-description: Adds a property (Key) to an existing object.
+description: Adds a property name to an existing object.
 ---
 
 # $addObjectProperty
@@ -10,14 +10,14 @@ With this function you can add properties \(Keys\) to an object previously creat
 
 This function has 2 fields
 
-1. Key \(Required\)
+1. Name \(Required\)
 2. Value \(Required\)
 
-Raw Usage: `$addObjectProperty[key;value]`
+Raw Usage: `$addObjectProperty[name;value]`
 
 #### Options
 
-* Key - The "name" of the object value
+* Name - Name of property
 * Value - The value that's assigned to the &lt;key&gt;
 
 #### Usage

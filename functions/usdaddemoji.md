@@ -12,22 +12,24 @@ The URL of the original image must be under 256kb in size.
 
 #### Fields:
 
-This function has 2 properties who are required and another 1 optional.  
+This function has 3 properties who are required and another 2 optional.  
 The order it's the next:
 
-1. URL \(Required\)
-2. Name \(Required\)
-3. returnEmoji \(Optional\)
-4. roleIDs \(optional\)
+1. guildId \(Required\) 
+2. URL \(Required\)
+3. Name \(Required\)
+4. reason \(Optional\)
+5. roleIDs \(optional\)
 
-Raw Usage: `$addEmoji[url;name;returnEmoji (yes/no)(optional);roleID1;roleID2;...]`
+Raw Usage: `$addEmoji[guildId;url;name;reason;roleId1;roleId2;...]`
 
 #### Options:
 
+* `guildId` - The guild ID for the emoji will be added
 * `URL` - The url of the image/gif that's being converted to an emoji
 * `Name` =&gt; The name of the emoji
-* `returnEmoji (yes/no)` =&gt; Returns the emoji that was newly created 
-* `roleIDs` =&gt; array of roles' IDs they should have access to that emeji. Only members with these role would have access to see and use that emoji. Leave it empty to set to everyone.
+* `reason` =&gt; The reason why emoji added
+* `roleIDs` =&gt; Array of roles' IDs they should have access to that emoji. Only members with these role would have access to see and use that emoji. Leave it empty to set to everyone.
 
 An example of the use should be the next:
 
@@ -36,13 +38,9 @@ An example of the use should be the next:
 ```javascript
 bot.command({
     name: "add-emoji",
-    code: `$addEmoji[https://cdn.discordapp.com/emojis/786763619438166036.png;shy_bear;yes]`
+    code: `$addEmoji[$guildID;https://cdn.discordapp.com/emojis/786763619438166036.png;shy_bear;Because why not;849217373214474253]`
 });
 ```
-
-#### Example result:
-
-![](../.gitbook/assets/mtt45fdb8q.png)
 
 {% hint style="warning" %}
 URL NEEDS to end in `.gif`, `.png` or `.jpg`

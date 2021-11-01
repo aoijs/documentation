@@ -4,7 +4,7 @@
 
 ## AOI.JS Version 5.0.0
 
-* [Changelog](aoi.js-version-5.0.0/changelog.md)
+* [Changelog](changelog.md)
 
 ## Guide
 
