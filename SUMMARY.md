@@ -2,7 +2,7 @@
 
 * [Introduction](README.md)
 
-## AOI.JS Version 5.0.0
+## aoi.js version 5.0.0
 
 * [Changelog](changelog.md)
 
@@ -535,4 +535,3 @@
 * [$webhook](functions/usdwebhook.md)
 * [$webhookExists](functions/usdwebhookexists.md)
 * [$year](functions/usdyear.md)
-
