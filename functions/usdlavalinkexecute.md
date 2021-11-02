@@ -78,9 +78,10 @@ You must first link your bot's project to an existing lavalink server
 
 ```javascript
 bot.lavalink.addNode({
- url: "http://localhost:2333",
+ url: "localhost:2333",
  password: "youshallnotpass",
- name: "MyBot"
+ name: "MyBot",
+ secure: false
  })
 //bot.client.lavalink.addNode([nodeOptions](https://xzfirzal.github.io/lavacoffee/interfaces/Utils.NodeOptions.html))
 ```
