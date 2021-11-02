@@ -77,7 +77,7 @@ Raw Usage: `$lavalinkExecute[method;data]`
 You must first link your bot's project to an existing lavalink server
 
 ```javascript
-bot.client.lavalink.addNode({
+bot.lavalink.addNode({
  url: "http://localhost:2333",
  password: "youshallnotpass",
  name: "MyBot"
@@ -94,7 +94,7 @@ code: `$lavalinkExecute[connect]
 $textSplit[$lavalinkExecute[getsearch;$lavalinkExecute[search;Never gonna give you up]];,]
 $djsEval[this.array = this.array.map(v => encodedURIComponent(v))]
 $lavalinkExecute[addtrack;$djsEval[this.array.findIndex(title => title.startsWith("Never gonna give you up"));yes]]
-$lavalinnkExecute[play]
+$lavalinkExecute[play]
 `
 });
 ```
