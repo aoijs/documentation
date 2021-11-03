@@ -30,7 +30,7 @@ Raw Usage: `$lavalinkExecute[method;data]`
   * Usage: `$lavalinkExecute[getsearch; SearchKey]`
   * Return: Seperated Tracktitles
 * addtrack - Add tracks to queue
-  * Usage: `$lavalinkExecute[addtrack; number; to (optional)]
+  * Usage: `$lavalinkExecute[addtrack; KeySearch; start; to (optional)]
 * songinfo - The current track's info
   * Usage: `$lavalinkExecute[songinfo; key; trackentry (optional)]`
   * Properties: [$songInfo](usdsonginfo.md#properties)
