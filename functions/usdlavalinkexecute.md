@@ -24,20 +24,28 @@ Raw Usage: `$lavalinkExecute[method;data]`
   * Note: *Searches will be erased in an interval*
   * Providers: `yt` as Youtube, `sc` as Soundcloud, `ytm` as Youtube Music
   * Usage: `$lavalinkExecute[search; query; provider (default is yt)]`
-  * Return: Base64String
-* getsearch - Get searches by base64
-  * Note: *Returns 10 uri-encoded titles separated by `,`*
-  * Usage: `$lavalinkExecute[getsearch; base64string]`
-  * Return: URIEncoded TrackTitles
+  * Return: SearchKey
+* getsearch - Get searches by SearchKey
+  * Note: *Returns 10 track titles separated by `,`*
+  * Usage: `$lavalinkExecute[getsearch; SearchKey]`
+  * Return: Seperated Tracktitles
 * addtrack - Add tracks to queue
   * Usage: `$lavalinkExecute[addtrack; number; to (optional)]
 * songinfo - The current track's info
-  * Usage: `$lavalinkExecute[songinfo; key; trackline (optional)]`
+  * Usage: `$lavalinkExecute[songinfo; key; trackentry (optional)]`
   * Properties: [$songInfo](usdsonginfo.md#properties)
 * getthumbnail - Gets track thumbnail from id and size
   * Sizes: `default`, `hqdefault`, `mqdefault`, `sddefault`, `maxresdefault`
   * Usage: `$lavalinkExecute[getthumbnail; trackId; size]`
   * Note: *Songinfo already has the default thumbnail of track*
+  * Return: ThumbnailURL
+* findentry - Finds the entry of track with possible match of query
+  * Usage: `$lavalinkExecute[findentry; SearchKey; query]`
+  * Note: *Query comparisons with track title, doesn't have to be the exact*
+  * Return: TrackEntry \( number \)
+* tracksplit - Splits track titles into array
+  * Note: *Allows text split functions to get track titles, and this will overwrite any existing splits*
+  * Usage: `$lavalinkExecute[tracksplit; SearchKey]`
 * volume - The volume of the track
   * Note: *Method is identical to volume=number/100*
   * Usage: `$lavalinkExecute[volume;number]`
