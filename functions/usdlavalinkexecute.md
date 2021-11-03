@@ -34,6 +34,10 @@ Raw Usage: `$lavalinkExecute[method;data]`
 * songinfo - The current track's info
   * Usage: `$lavalinkExecute[songinfo; key; trackline (optional)]`
   * Properties: [$songInfo](usdsonginfo.md#properties)
+* getthumbnail - Gets track thumbnail from id and size
+  * Sizes: `default`, `hqdefault`, `mqdefault`, `sddefault`, `maxresdefault`
+  * Usage: `$lavalinkExecute[getthumbnail; trackId; size]`
+  * Note: *Songinfo already has the default thumbnail of track*
 * volume - The volume of the track
   * Note: *Method is identical to volume=number/100*
   * Usage: `$lavalinkExecute[volume;number]`
