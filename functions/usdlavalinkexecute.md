@@ -1,5 +1,5 @@
 # $lavalinkExecute
-A Lavalink API Wrapper that allows you to use Lavalink with your Bot.
+A Lavalink API Wrapper that allows you to use Lavalink within your codes.
 ## Fields
 
 This function has 2 fields
@@ -82,33 +82,5 @@ Raw Usage: `$lavalinkExecute[method;data]`
 * disconnect - Disconnects from connected voice channel
   * Usage: `$lavalinkExecute[disconnect]`
 
-## Attention!
-
-You must first link your bot's project to an existing lavalink server
-
-```javascript
-bot.lavalink.addNode({
- url: "localhost:2333",
- password: "youshallnotpass",
- name: "MyBot",
- secure: false
- })
-//bot.client.lavalink.addNode(nodeOptions)
-```
-- [Node Options](https://xzfirzal.github.io/lavacoffee/interfaces/Utils.NodeOptions.html)
-## Examples
-##### Play
-```javascript
-bot.command({
-name: "play",
-code: `
-Added $lavalinkExecute[songinfo;title] to queue
-$let[a;$lavalinkExecute[play]]
-$let[a;$lavalinkExecute[addtrack;$get[key];1]]
-$let[key;$lavalinkExecute[search;$message]]
-$lavalinkExecute[volume;100]
-$lavalinkExecute[connect]
-`
-});
-```
-
+## Examples and Guides
+You can view the examples in [Lavalink page](../guides/advanced-guides/lavalink.md)
