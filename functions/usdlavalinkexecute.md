@@ -83,9 +83,9 @@ bot.lavalink.addNode({
  name: "MyBot",
  secure: false
  })
-//bot.client.lavalink.addNode([nodeOptions](https://xzfirzal.github.io/lavacoffee/interfaces/Utils.NodeOptions.html))
+//bot.client.lavalink.addNode(nodeOptions))
 ```
-
+- [Node Options](https://xzfirzal.github.io/lavacoffee/interfaces/Utils.NodeOptions.html)
 ## Usage
 
 ```javascript
