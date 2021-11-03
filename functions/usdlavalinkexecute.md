@@ -91,11 +91,13 @@ bot.lavalink.addNode({
 ```javascript
 bot.command({
 name: "play",
-code: `$lavalinkExecute[connect]
-$textSplit[$lavalinkExecute[getsearch;$lavalinkExecute[search;Never gonna give you up]];,]
-$djsEval[this.array = this.array.map(v => encodedURIComponent(v))]
-$lavalinkExecute[addtrack;$djsEval[this.array.findIndex(title => title.startsWith("Never gonna give you up"));yes]]
-$lavalinkExecute[play]
+code: `
+Added $lavalinkExecute[songinfo;title] to queue
+$let[a;$lavalinkExecute[play]]
+$let[a;$lavalinkExecute[addtrack;$get[key];1]]
+$let[key;$lavalinkExecute[search;$message]]
+$lavalinkExecute[volume;100]
+$lavalinkExecute[connect]
 `
 });
 ```
