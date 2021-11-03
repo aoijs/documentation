@@ -1,78 +1,114 @@
 # $lavalinkExecute
-
-This function allows you to play songs using lavalink. Make sure you use[ $createLavlink ]()first
-
-#### Fields
+A Lavalink API Wrapper that allows you to use Lavalink with your Bot.
+## Fields
 
 This function has 2 fields
 
-1. Method \(Required\)
-2. Data \(Required\)
+1. Method \( Required \)
+2. Data \( Optional \)
 
 Raw Usage: `$lavalinkExecute[method;data]`
 
-#### Options
+## Options
 
-* Method - The method your gonna use to interact with the lavalink server
-* Data - The data for the method
+* Method - The method that you will use to interact with Lavalink connection
+* Data - Informations for method interaction
 
-#### Methods
+## Methods
 
-* play - Play a song
-  * YouTube Usage: `$lavalinkExecute[play;ytsearch:url/name/id]`
-  * SoundCloud Usage: `$lavalinkExecute[play;scsearch:url]`
-* songinfo - The current song's info
-  * Usage: `$lavalinkExecute[songinfo;property]`
+* play - Play a track
+  * Usage: `$lavalinkExecute[play]`
+* search - Search tracks from provider
+  * Note: *Searches will be erased in an interval*
+  * Providers: `yt` as Youtube, `sc` as Soundcloud, `ytm` as Youtube Music
+  * Usage: `$lavalinkExecute[search; query; provider (default is yt)]`
+  * Return: SearchKey
+* getsearch - Get searches by SearchKey
+  * Note: *Returns 10 track titles separated by `,`*
+  * Usage: `$lavalinkExecute[getsearch; SearchKey]`
+  * Return: Seperated Tracktitles
+* addtrack - Add tracks to queue
+  * Usage: `$lavalinkExecute[addtrack; KeySearch; start; to (optional)]
+* songinfo - The current track's info
+  * Usage: `$lavalinkExecute[songinfo; key; trackentry (optional)]`
   * Properties: [$songInfo](usdsonginfo.md#properties)
-* volume - The volume of the queue
+* getthumbnail - Gets track thumbnail from id and size
+  * Sizes: `default`, `hqdefault`, `mqdefault`, `sddefault`, `maxresdefault`
+  * Usage: `$lavalinkExecute[getthumbnail; trackId; size]`
+  * Note: *Songinfo already has the default thumbnail of track*
+  * Return: ThumbnailURL
+* findentry - Finds the entry of track with possible match of query
+  * Usage: `$lavalinkExecute[findentry; SearchKey; query]`
+  * Note: *Query comparisons with track title, doesn't have to be the exact*
+  * Return: TrackEntry \( number \)
+* tracksplit - Splits track titles into array
+  * Note: *Allows text split functions to get track titles, and this will overwrite any existing splits*
+  * Usage: `$lavalinkExecute[tracksplit; SearchKey]`
+* volume - The volume of the track
+  * Note: *Method is identical to volume=number/100*
   * Usage: `$lavalinkExecute[volume;number]`
 * stop - Stop the queue
   * Usage: `$lavalinkExecute[stop]`
-* filters - The filter for the song
-  * Usage: `$lavalinkExecute[filter;json]`
-  * JSON: [https://pastebin.com/iMqZ8nE6](https://pastebin.com/iMqZ8nE6)
-* resume - Resume the queue
+* addFilters - The filter for the song
+  * Usage: `$lavalinkExecute[addFilters;filter=value;filter=value;filter={key:value, key:value}]`
+  * Link: [Lavalink Using Filters](https://github.com/freyacodes/Lavalink/blob/master/IMPLEMENTATION.md#using-filters)
+* resume - Resume the track
   * Usage: `$lavalinkExecute[resume]`
-* pause - Pause the queue
+* pause - Pause the track
   * Usage: `$lavalinkExecute[pause]`
 * skip - Skip a song \(or multiple\)
   * Usage: `$lavalinkExecute[skip;number (optional)]`
-* loopqueue - Loops the queue
+* loopqueue - Loops the queue *DEPRECATED*
   * Usage: `$lavalinkExecute[loopqueue]`
-* looptrack - Loops the track
+* looptrack - Loops the track *DEPRECATED*
   * Usage: `$lavalinkExecute[looptrack]`
-* state - The queue's state
+* loopmode - Changes the player's loop mode
+  * Modes: `none`, `queue`, `track`,
+  * Usage: `$lavalinkExecute[loopmode;mode]`
+* state - The player's state
   * Usage: `$lavalinkExecute[state]`
-* queue - The queue
-  * Usage: `$lavalinkExecute[queue;...]`
-* isPlaying - Whether or not a song is playing
+  * Player States:`playerplaying`, `playerpause`, `playerdestroyed`
+* queue - The player's queue
+  * Usage: `$lavalinkExecute[queue;format]`
+  * Example: `$lavalinkExecute[queue;{entrynumber}. {title} by {userID}]`
+* isPlaying - Whether or not the player is playing
   * Usage: `$lavalinkExecute[isPlaying]`
-* join - Joins the VC
-  * Usage: `$lavalinkExecute[join]`
-* leave - Leaves the VC
-  * Usage: `$lavalinkExecute[leave]`
-* connect - Connects to the VC
+* isPaused - Whether or not the player is paused
+  * Usage: `$lavalinkExecute[isPaused]`
+* isIdling - Whether or not the player is idling
+  * Usage: `$lavalinkExecute[isIdling]`
+* connect - Connects to Author voice channel
   * Usage: `$lavalinkExecute[connect]`
-* disconnect - Disconnects to the VC
+* disconnect - Disconnects from connected voice channel
   * Usage: `$lavalinkExecute[disconnect]`
-* prune - Prunes the music
-  * Usage: `$lavalinkExecute[prune]`
 
-#### Attention!
+## Attention!
 
-You must first link your bot's project to your lavalink server
+You must first link your bot's project to an existing lavalink server
 
 ```javascript
-bot.createLavalink(server_url:port, pass123, false) 
-//createLavalink(server:port, password, debug (boolean))
+bot.lavalink.addNode({
+ url: "localhost:2333",
+ password: "youshallnotpass",
+ name: "MyBot",
+ secure: false
+ })
+//bot.client.lavalink.addNode(nodeOptions)
 ```
-
-#### Usage
-
+- [Node Options](https://xzfirzal.github.io/lavacoffee/interfaces/Utils.NodeOptions.html)
+## Examples
+##### Play
 ```javascript
 bot.command({
 name: "play",
-code: `$lavalinkExecute[play;ytsearch:Sleep on the Floor]`
-})
+code: `
+Added $lavalinkExecute[songinfo;title] to queue
+$let[a;$lavalinkExecute[play]]
+$let[a;$lavalinkExecute[addtrack;$get[key];1]]
+$let[key;$lavalinkExecute[search;$message]]
+$lavalinkExecute[volume;100]
+$lavalinkExecute[connect]
+`
+});
 ```
 
