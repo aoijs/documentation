@@ -72,7 +72,7 @@ Raw Usage: `$lavalinkExecute[method;data]`
   * Player States:`playerplaying`, `playerpause`, `playerdestroyed`
 * queue - The player's queue
   * Usage: `$lavalinkExecute[queue;format]`
-  * Example: `$lavalinkExecute[queue;{title}, requested by {userID}]`
+  * Example: `$lavalinkExecute[queue;{entrynumber}. {title} by {userID}]`
 * isPlaying - Whether or not the player is playing
   * Usage: `$lavalinkExecute[isPlaying]`
 * isPaused - Whether or not the player is paused
@@ -98,8 +98,8 @@ bot.lavalink.addNode({
 //bot.client.lavalink.addNode(nodeOptions)
 ```
 - [Node Options](https://xzfirzal.github.io/lavacoffee/interfaces/Utils.NodeOptions.html)
-## Usage
-
+## Examples
+##### Play
 ```javascript
 bot.command({
 name: "play",
