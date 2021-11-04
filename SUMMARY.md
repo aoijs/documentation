@@ -25,7 +25,7 @@
   * [Character Escaping](guide/begin/character-escaping.md)
   * [Embed Errors](guide/begin/embed-errors.md)
 * [Advanced Guides](guide/advanced-guides/README.md)
-  * [Music](guide/advanced-guides/music.md)
+  * [Lavalink System](guide/advanced-guides/lavalink.md)
   * [Slash Commands](guide/advanced-guides/slash-commands.md)
   * [Invite System](guide/advanced-guides/invite-system.md)
 * [Extras](guide/extras/README.md)
