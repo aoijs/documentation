@@ -1,12 +1,12 @@
 ---
-description: More advanced Systems to code with Aoi.JS
+description: More advanced features with aoi.js
 ---
 
 # Advanced Guides
 
 ## Here you can find some advanced guides of Aoi.JS features:
 
-{% page-ref page="music.md" %}
+{% page-ref page="lavalink.md" %}
 
 {% page-ref page="invite-system.md" %}
 

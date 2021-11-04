@@ -2,42 +2,52 @@
 description: This page will help begin your New Bot!
 ---
 
-# Begin
+## Installation
 
-## **Installing Aoi.js**
+{% hint style="warning" %}
+**node.js 16.6.0 or newer is required.**
+{% endhint %}
 
-```text
-npm i aoi.js
+{% tabs %}
+{% tab title="Terminal" %}
+```bash
+npm install aoi.js
 ```
+{% endtab %}
+{% endtabs %}
 
-![:warning:](https://canary.discord.com/assets/289673858e06dfa2e0e3a7ee610c3a30.svg) Installing Aoi.JS can be different depending on your host. Please check \#video-tutorials for exact guides.
+Once this has installed you can begin the following file `index.js` to setup aoi.js
 
-## **Your main file**
-
-Main file will allow the bot to be ran, and commands to be kept. This can be named server.js, index.js or whatever you want.
-
+{% tabs %}
+{% tab title="index.js" %}
 ```javascript
-const Aoijs = require("aoi.js")
+const aoijs = require("aoi.js")
 
-const bot = new Aoijs.Bot({
-  sharding: false, //true or false 
-  shardAmount: 2, //Shard amount 
-  mobile: false, //true or false - Discord Mobile Status
-  //dbhToken: "API KEY", Remove // if using, get an API Key from their Server
-  token: "TOKEN", //Discord Bot Token
-  prefix: ["PREFIX"], //Change PREFIX to your Prefix
-  autoUpdate: false // set to true if version should be updated automatically after a package update
+const bot = new aoijs.Bot({
+token: "TOKEN", //Discord Bot Token
+prefix: "PREFIX", //Discord Bot Prefix
+intents: "all" //Discord Intents
 })
 
-bot.onMessage() // Allows Commands to Executed
+//Events
+bot.onMessage()
 
+//Command Example
 bot.command({
-name: "ping", 
-code: `Pong! \`$ping\`` 
+name: "ping",
+code: `Pong! \`$ping\`ms`
+})
+
+//Ready Event
+bot.readyCommand({
+    channel: "",
+    code: `$log[Ready on $userTag[$clientID]]`
 })
 ```
+{% endtab %}
+{% endtabs %}
 
-## P**ackage.json**
+## package.json
 
 The file where your project can "get" aoi.js
 
@@ -51,36 +61,16 @@ The file where your project can "get" aoi.js
       "start": "node index.js"
     },
     "engines": {
-      "node": "12.x"
+      "node": "16.6"
     },
     "author": "",
     "license": "ISC",
     "dependencies": {
-      "aoi.js": "^4.0.2"
+      "aoi.js": "^5.0.0"
     }
   }
 ```
 
-![:warning:](https://canary.discord.com/assets/289673858e06dfa2e0e3a7ee610c3a30.svg) To update Aoi.JS, change the version number to latest via [\#changelog ](https://discord.gg/TbvJSCsM7X)
-
-### **Basic Command Format**
-
-```javascript
-bot.command({
-      name: "name",
-      code: `your code/message`
-})
-```
-
-### **Simple Status**
-
-```javascript
-bot.status({
-      text: "aoi.js",
-      type: "PLAYING",
-      time: 12
-})
-```
-
-![:warning:](https://canary.discord.com/assets/289673858e06dfa2e0e3a7ee610c3a30.svg) **If you are using glitch or repl.it. Do not use `npm i aoi.js` If you add package.json, It will install the package automatically!**
-
+{% hint style="info" %}
+`5.0.0` can be changed to any version number as you want.
+{% endhint %}
