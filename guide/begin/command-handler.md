@@ -3,93 +3,60 @@ description: Command Handlers can be used for organizing your commands
 ---
 
 # Command Handler
+> **In This Topic We Will Learn About Basic Command Handling**
 
-## **Your main file**
+## Normal Method Vs Command Handling 
+>
+>**'Normal Methods Are Good'** but if there are too many commands, then the mainFile can get messy and it gets hard to find and update certain commands. Hence to overcome this issue ,**'Command Handlers'** are introduced.
+>
+>**Command Handlers** not only solve this issue it also makes the mainFile neat and the project more organized.
+## How To Make A Command Handler 
+>```js
+>'There are 2 methods to make a command Handler:'
+>'* fs module'//(which won't be discussed here)
+>'* LoadCommands Class'
+>```
+### Method 
+#### Step-1: Setting Up The Handler 
+>```js
+> const bot = new aoijs.Bot({
+>   token: "TOKEN", //Discord Bot Token
+>   prefix: "PREFIX", //Discord Bot Prefix
+>   intents: "all" //Discord Intents 
+> })
+> bot.onMessage() //Allows to execute Commands
+> const loader = new Aoijs.LoadCommands(bot)
+> loader.load(bot.cmd,"./commands/")
+> /*
+> bot.cmd is object of Collections where the command data will be stored
+> "./commands/" is the path of folder where all the commands' code will be present
+> */
+>```
+---
+#### Step-2 Creating The First File 
+>* After Setting Up the Handler In Your MainFile. Create A Folder with name **"commands"**
+>![](../../.gitbook/assets/screenshot-2020-11-23-at-9.54.22-pm.png)
 
-Main file will allow the bot to be ran, and commands to be kept This can be named server.js, index.js whatever you want
+>* After Creating The Commands Folder , **create a Folder** (for example : moderation)
+>![Subfolder could be used as a category like a discord category](../../.gitbook/assets/screenshot-2020-11-23-at-9.57.28-pm.png)
 
-```javascript
-const Aoijs = require("aoi.js")
-
-const bot = new Aoijs.Bot({
-  sharding: false, //true or false 
-  shardAmount: 2, //Shard amount 
-  mobile: false, //true or false - Discord Mobile Status
-  //dbhToken: "API KEY", Remove // if using, get an API Key from their Server
-  token: "TOKEN", //Discord Bot Token
-  prefix: ["PREFIX"], //Change PREFIX to your Prefix
-  autoUpdate: false // set to true if version should be updated automatically after a package update
-})
-
-bot.onMessage() // Allows Commands to Executed
-bot.loadCommands(`./commands/`) //Allows Commands executed by `commands` folder
-bot.command({
-name: "ping", 
-code: `Pong! \`$ping\`` 
-})
-```
-
-## Command Handler File Setups
-
-{% hint style="warning" %}
-Create a folder named "commands"
-{% endhint %}
-
-![](../../.gitbook/assets/screenshot-2020-11-23-at-9.54.22-pm.png)
-
-{% hint style="warning" %}
-Make a subfolder
-{% endhint %}
-
-![Subfolder could be used as a category like a discord category](../../.gitbook/assets/screenshot-2020-11-23-at-9.57.28-pm.png)
-
-{% hint style="warning" %}
-Finally, make your file
-{% endhint %}
-
-![Name of file: commandName.js](../../.gitbook/assets/screenshot-2020-11-23-at-10.00.16-pm.png)
-
-### Now to insert your normal code:
-
-```javascript
-module.exports = {
-      name: "name",
-      code: `your code/message`
-}
-```
-
-## Using different command types \(e.g. commands from callback events\) in the command handler:
-
-For other commands, like the bot.joinCommand, you just have to find the part behind `bot.`- take it and insert this part at the type option as in the example below. `bot.joinCommand` becomes `type: 'joinCommand',` and  
-`bot.userUpdateCommand` becomes `type: 'userUpdateCommand'` etc. like in the code below.  
-The type line isn't needed for normal `bot.command` commands. Just write your code like in the code block above.
-
-```javascript
-module.exports = {
-      type: 'joinCommand',
-      channel: "$systemChannelID",
-      code: `your code/message`
-}
-```
-
-## Multiple commands in one file:
-
-If you want to use multiple commands inside one command handler file, do it like this:
-
-```javascript
-module.exports = [{
-  type: 'joinCommand',
-  channel: '773364744240496640',
-  code: `Welcome $userTag !!`
-}, {
-  name: 'ping',
-  code: `Pong! $pingms`
-}]
-```
-
-### YouTube Tutorial: How to use different command types in command handler \|\| Aoi.JS
-
-{% hint style="info" %}
-Check out the YouTube tutorial [How to use Callbacks in Handler](https://www.youtube.com/watch?v=_g2M8UdsctA) on Aoi.JS
-{% endhint %}
-
+>* After That,**Create A JavaScript File** (for example selfKick.js)
+>![Name of file: commandName.js](../../.gitbook/assets/selfKick.js.png)
+---
+#### Step-3 : Adding The Code In The File
+>* Add The Code In Your Newly Created File (here is example of selfkick command)
+>```js
+>module.exports ={
+>  name:"selfkick",
+>  aliases:["sk","bye","exit"],
+>  code:`
+>  $kick[$authorId]
+>`
+>}
+>```
+#### Step-4: Complete
+>* Now Run Your Project And See The Console Logging All The Commands 
+>![Console Logging](../../.gitbook/assets/commadLogging.png)
+---
+## Is This The End?
+> * No,[LoadCommands](../../class/loadCommands.md) Class Has Lots Of Features For Which You Can Refer Too [Extra-Features](extraFeature.md).
