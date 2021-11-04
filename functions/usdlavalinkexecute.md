@@ -2,7 +2,7 @@
 A Lavalink API Wrapper that allows you to use Lavalink within your codes.
 ## Fields
 
-This function has 2 fields
+This function use 1 main field and optionals
 
 1. Method \( Required \)
 2. Data \( Optional \)
@@ -11,8 +11,11 @@ Raw Usage: `$lavalinkExecute[method;data]`
 
 ## Options
 
-* Method - The method that you will use to interact with Lavalink connection
-* Data - Informations for method interaction
+* Method - The method which acts as a function
+* Data - Arguments for method interaction
+
+## Examples and Guides
+You can view the examples in [Lavalink page](../guides/advanced-guides/lavalink.md)
 
 ## Methods
 
@@ -81,6 +84,3 @@ Raw Usage: `$lavalinkExecute[method;data]`
   * Usage: `$lavalinkExecute[connect]`
 * disconnect - Disconnects from connected voice channel
   * Usage: `$lavalinkExecute[disconnect]`
-
-## Examples and Guides
-You can view the examples in [Lavalink page](../guides/advanced-guides/lavalink.md)
