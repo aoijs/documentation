@@ -16,13 +16,13 @@ Raw Usage: `$lavalinkExecute[method;data]`
 
 ## Methods
 
-* play - Play a track
+* play - Play the next track from previous of queue
   * Usage: `$lavalinkExecute[play]`
 * search - Search tracks from provider
   * Note: *Searches will be erased in an interval*
   * Providers: `yt` as Youtube, `sc` as Soundcloud, `ytm` as Youtube Music
   * Usage: `$lavalinkExecute[search; query; provider (default is yt)]`
-  * Return: SearchKey
+  * Return: SearchKey *A key to get search results*
 * getsearch - Get searches by SearchKey
   * Note: *Returns 10 track titles separated by `,`*
   * Usage: `$lavalinkExecute[getsearch; SearchKey]`
@@ -39,7 +39,7 @@ Raw Usage: `$lavalinkExecute[method;data]`
   * Return: ThumbnailURL
 * findentry - Finds the entry of track with possible match of query
   * Usage: `$lavalinkExecute[findentry; SearchKey; query]`
-  * Note: *Query comparisons with track title, doesn't have to be the exact*
+  * Note: *Query comparisons with track's title, doesn't have to be the exact*
   * Return: TrackEntry \( number \)
 * tracksplit - Splits track titles into array
   * Note: *Allows text split functions to get track titles, and this will overwrite any existing splits*
@@ -50,7 +50,7 @@ Raw Usage: `$lavalinkExecute[method;data]`
 * stop - Stop the queue
   * Usage: `$lavalinkExecute[stop]`
 * addFilters - The filter for the song
-  * Usage: `$lavalinkExecute[addFilters;filter=value;filter=value;filter={key:value, key:value}]`
+  * Usage: `$lavalinkExecute[addFilters;filter=value;filter=value;filter={"option": value, "option": value}]`
   * Link: [Lavalink Using Filters](https://github.com/freyacodes/Lavalink/blob/master/IMPLEMENTATION.md#using-filters)
 * resume - Resume the track
   * Usage: `$lavalinkExecute[resume]`
@@ -58,10 +58,6 @@ Raw Usage: `$lavalinkExecute[method;data]`
   * Usage: `$lavalinkExecute[pause]`
 * skip - Skip a song \(or multiple\)
   * Usage: `$lavalinkExecute[skip;number (optional)]`
-* loopqueue - Loops the queue *DEPRECATED*
-  * Usage: `$lavalinkExecute[loopqueue]`
-* looptrack - Loops the track *DEPRECATED*
-  * Usage: `$lavalinkExecute[looptrack]`
 * loopmode - Changes the player's loop mode
   * Modes: `none`, `queue`, `track`,
   * Usage: `$lavalinkExecute[loopmode;mode]`
@@ -69,8 +65,12 @@ Raw Usage: `$lavalinkExecute[method;data]`
   * Usage: `$lavalinkExecute[state]`
   * Player States:`playerplaying`, `playerpause`, `playerdestroyed`
 * queue - The player's queue
-  * Usage: `$lavalinkExecute[queue;format]`
+  * defaultFormat: `{entrynumber}. [{title}]({url}) by {userTag}`
+  * Usage: `$lavalinkExecute[queue;format (default is defaultFormat)]`
   * Example: `$lavalinkExecute[queue;{entrynumber}. {title} by {userID}]`
+* queueLength - A size type of queue
+  * Types: `total` is Total Tracks, `duration` is Total duration of entire queue
+  * Usage: `$lavalinkExecute[queueLength;type (default is total)]`
 * isPlaying - Whether or not the player is playing
   * Usage: `$lavalinkExecute[isPlaying]`
 * isPaused - Whether or not the player is paused
