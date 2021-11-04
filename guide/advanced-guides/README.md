@@ -4,7 +4,7 @@ description: More advanced features with aoi.js
 
 # Advanced Guides
 
-## Here you can find some advanced guides of Aoi.JS features:
+## Here you can find some advanced guides of aoi.js features:
 
 {% page-ref page="lavalink.md" %}
 
