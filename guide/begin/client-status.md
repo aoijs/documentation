@@ -2,37 +2,35 @@
 description: How to setup a Bot Status
 ---
 
-# Bot Status
+# Client Status
 
-### How do I set a Bot Status?
-
-It's very simple!
+### Setting a Client Status:
 
 {% hint style="danger" %}
 You need to enter the following, in your main index.
 {% endhint %}
 
+### Usage:
+
 ```javascript
 bot.status({
-  text: "Text",
+  text: "TEXT",
   type: "PLAYING",
   time: 12
 })
 ```
 
-{% hint style="info" %}
-For Multiple Statuses, use the following:
-{% endhint %}
+### Adding multiple Client Status:
 
 ```javascript
 bot.status({
-  text: "text1",
+  text: "TEXT1",
   type: "PLAYING",
   time: 12
 })
 
 bot.status({
-  text: "text2",
+  text: "TEXT2",
   type: "WATCHING",
   time: 12
 })
@@ -46,7 +44,7 @@ bot.status({
 * STREAMING
 * COMPETING
 
-### Bots Discord Status:
+### Client Status Method:
 
 {% hint style="info" %}
 If you want to change the bot's discord status use the following
@@ -54,21 +52,21 @@ If you want to change the bot's discord status use the following
 
 ```javascript
 bot.status({
-  text: "Text",
+  text: "TEXT",
   type: "PLAYING",
   status: "idle",
   time: 12
 })
 ```
 
-### Different Statuses:
+### Different Status:
 
 * idle
 * dnd
 * online
 * invisible
 
-### Streaming URL:
+### Streaming URL Method:
 
 {% hint style="info" %}
 Streaming-Status supports YouTube-Video-URL or Twitch-Channel-URLs.
@@ -78,21 +76,22 @@ If you want to enter an URL, Enter the following
 
 ```javascript
 bot.status({
-text: "Text", 
+text: "TEXT", 
 type: "STREAMING", 
-url: "Enter URL"
+url: "URL"
 })
 ```
 
 ### Mobile Status
 
 ```javascript
-const bot = new Aoijs.Bot({
-token: "TOKEN", 
-prefix: "!",
-mobile: true
+const aoijs = require("aoi.js")
+
+const bot = new aoijs.Bot({
+token: "TOKEN", //Discord Bot Token
+prefix: "PREFIX", //Discord Bot Prefix
+mobile: true //True or false
 })
 ```
 
 ![Example](../../.gitbook/assets/image%20%2862%29.png)
-
