@@ -5,9 +5,187 @@ description: aoi.js - changelog from previous versions and latest.
 # Changelog
 
 ## aoi.js - 5.0.0
+### Environment Changes 
+>```diff
+>- Nodejs version 12.x
+>+ Nodejs version >=16.6.1 
+### Package Changes 
+#### Class Changes 
+## Bot 
+**@options**
 
-* ETA SOON.
+* ***ADDITION***
+>```diff
+>+cache
+>+database
+>+events
+>+intents 
+>+respondOnEdit
+>+suppressAllErrors
+* ***CHANGES***
+>```diff
+>- errorMessage : "message"
+>+ errorMessage : ["content","embed","components","files"]
+>
+>- fetchInvites : true 
+>+ fetchInvites : { 
+>+      enabled : true/false,
+>+      cacheInviters : true/false 
+>+      }
+* ***DELETION***
+>```diff
+>- boosterToken
+>- databasePath 
+>- db 
+>- disableFunctionStarting 
+> **[List Of All Properties And Their Description](../options/botOptions.md)**
+**@events**
 
+* ***ADDITION*** 
+>```diff
+>+bot.onStickerCreate
+>+bot.onStickerUpdate
+>+bot.onStickerDelete 
+>+bot.onThreadCreate
+>+bot.onThreadUpdate
+>+bot.onThreadDelete
+>+bot.onThreadListSync
+>+bot.onThreadMemberUpdate
+>+bot.onThreadMembersUpdate 
+>+bot.onMemberAvailable
+>+bot.onMembersChunk 
+>+bot.onReactionRemoveAll
+>+bot.onReactionRemoveEmoji 
+>+bot.onStageInstanceCreate
+>+bot.onStageInstanceCUpdate
+>+bot.onStageInstanceDelete 
+>+bot.onGuildUnavailable 
+* ***CHANGES***
+>```diff
+>-bot.onJoined 
+>+bot.onJoin 
+* ***DELETION*** 
+>```diff
+>-bot.onFunctionError 
+**@commands**
+
+* ***ADDITION*** 
+>```diff
+>+bot.stickerCreateCommand
+>+bot.stickerUpdateCommand 
+>+bot.stickerDeleteCommand 
+>+bot.stageInstanceCreateCommand
+>+bot.stageInstanceUpdateCommand
+>+bot.stageInstanceDeleteCommand 
+>+bot.threadCreateCommand
+>+bot.threadUpdateCommand
+>+bot.threadDeleteCommand
+>+bot.threadListSyncCommand
+>+bot.threadMemberUpdateCommand
+>+bot.threadMembersUpdateCommand
+>+bot.guildUnavailableCommand
+>+bot.memberAvailableCommand
+>+bot.membersChunkCommand
+>+bot.reactionRemoveAllCommand
+>+bot.reactionRemoveEmojiCommand
+* ***DELETION***
+>```diff
+>-bot.loadCommands
+>-bot.musicStartCommand
+>-bot.musicEndCommand 
+>-bot.createLavalinkConnection
+## Voice 
+**@options**
+
+* ***ADDITION***
+>```diff
+>+client
+>```
+
+**methods**
+>```diff
+>+ Voice.joinVc(voicechannel,textchannel)
+>```
+## LoadCommands
+ **@method**
+>```diff
+>+ LoadCommands.load(cmd manager,path,debug)
+>+ LoadCommands.update(debug)
+>+ LoadCommands.setColor(theme)
+>```
+## Lavalink
+  **@methods**
+>```diff
+>Lavalink.createLavalinkConnection(url,pass,debug,secureProtocol)
+>```
+----------
+## FunctionChanges
+* ***ADDITION***
+>```diff
+>+$awaitComponentsUntil[channelId; messageId; userFilter; time; customIds; awaitCommands; errorMsg?; data? ]
+>+$awaitMessageReactions[channelId;messageId;filter;time;reactions;commands;errorMsg?;data?]
+>+$addButton[index;label;style;customId;disabled?;emoji?]
+>+$addFields[index;name:value:incline?;...]
+>+$addSelectMenu[index;customId;placeHolder;minValue;maxValue;disabled;options;options;...] //options => label:description:value:default?:emoji?
+>+$addThreadMember[channelId;threadId;userId;reason?]
+>+$authorAccentColor[def?]
+>+$authorBanner[size?;dynamic?;format?]
+>+$bottyping
+>+$broadCastEval[function]
+>+$blacklist[type;id;id;id;..] //for user type first id is guildId
+>+$blacklistError[type;errorObject]
+>+$blacklistOnlyCommands[cmd name;cmd name;....]
+>+$createStageInstance[ channelId;topic;privacy?]
+>+$createSticker[guildid;url;name;returnSticker?;tags?; description?;reason?]
+>+$createThread[ channelId;name;archive?;type?;startMessage?;returnId?]
+>+$createCache[type;name]
+>+$deleteChannel[channelId]
+>+$deleteEmoji[emoji]
+>+$deleteSTicker[guildId;stickerId]
+>+$deleteThread[channelId;threadId]
+>+$disableMentionType[type]
+>+$eventData[property]
+>+$eventEmit[eventname;data;data;...]
+>+$fetchActiveThreads[ channelId;option;...]
+>+$fetchArchivedThreads[ channelId;option;...]
+>+$fetchClientValues[property]
+>+$findInCache[ type;name;prop;value;findType?;returnValue?]
+>+$fetch[ method ;query ]
+>+$getUserAccentColor[user;def?]
+>+$getUserBanner[userId;size?;dynamic?;format?]
+>+$getCacheData[type;name;option?]
+>+$interactionDefer
+>+$interactionDeferUpdate
+>+$interactionFollowUp[content;embeds?; components?;files?;ephemeral?]
+>+$interactionUpdate[content;embeds?; components?;files?]
+>+$invite[option]
+>+$isButtonInteraction
+>+$isCommandInteraction
+>+$isComponentInteraction
+>+$isContextMenuInteraction
+>+$isSelectMenuInteraction
+>$isCustomEmoji[emoji]
+>+$isInteger[number]
+>+$isUnicodeEmoji[emoji]
+>+$joinThread[channelId;threadId]
+>+$killShard[shardId]
+>+$leaveThread[channelId;threadId]
+>+$newApplicationCmd[option]
+>+$nonEscape[message]
+>+$oldApplicationCmd[option]
+>+$reactionData[option]
+>+$removeThreadMember[channelId;threadId;userId;reason?]
+>+$respawnAllShards
+>+$spawnShard[shardId]
+>+$shardGuilds[shardId;sep?]
+>+$shardPing[shardId]
+>+$setCacheData[type;name;value]
+>+$tempCooldown[ time;id;errorObject? ]
+>```
+
+* ***CHANGES***
+>```diff
+>
 ## aoi.js - 4.6.0
 
 ### Changes
