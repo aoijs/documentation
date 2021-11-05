@@ -26,14 +26,10 @@ description: aoi.js - changelog from previous versions and latest.
 >```diff
 >- errorMessage : "message"
 >+ errorMessage : ["content","embed","components","files"]
->
->- fetchInvites : true 
->+ fetchInvites : { 
->+      enabled : true/false,
->+      cacheInviters : true/false 
->+      }
+>```
 * ***DELETION***
 >```diff
+>-fetchInvites
 >- boosterToken
 >- databasePath 
 >- db 
@@ -151,6 +147,7 @@ description: aoi.js - changelog from previous versions and latest.
 >+$fetchClientValues[property]
 >+$findInCache[ type;name;prop;value;findType?;returnValue?]
 >+$fetch[ method ;query ]
+>+$forEachRole[ guildId,time,awaitData,...cmds ]
 >+$getUserAccentColor[user;def?]
 >+$getUserBanner[userId;size?;dynamic?;format?]
 >+$getCacheData[type;name;option?]
@@ -164,7 +161,7 @@ description: aoi.js - changelog from previous versions and latest.
 >+$isComponentInteraction
 >+$isContextMenuInteraction
 >+$isSelectMenuInteraction
->$isCustomEmoji[emoji]
+>+$isCustomEmoji[emoji]
 >+$isInteger[number]
 >+$isUnicodeEmoji[emoji]
 >+$joinThread[channelId;threadId]
@@ -181,11 +178,106 @@ description: aoi.js - changelog from previous versions and latest.
 >+$shardPing[shardId]
 >+$setCacheData[type;name;value]
 >+$tempCooldown[ time;id;errorObject? ]
+>+$guildChannels[guildId?,option?,sep?]
 >```
 
 * ***CHANGES***
 >```diff
+>-$awaitCmdReactions[filter,time,reactions,commands,errorMsg?]
+>+$awaitCmdReactions[filter,time,reactions,commands,errorMsg?,data?]
 >
+>-$awaitButtons[messageID,userFilter,customIDs,cmds,errorMsg?,uses?]
+>+$awaitComponents[messageID,userFilter,customIDs,cmds,errorMsg?,uses?,data?]
+>
+>-$awaitMessages[channelId,userFilter,time,replies,cmds,errorMsg?,dm?]
+>+$awaitMessages[channelId,userFilter,time,replies,cmds,errorMsg?,data?,dm?]
+>
+>-$addTimestamp[timestamp?]
+>+$addTimestamp[index;timestamp?]
+>
+>-$apiMessage[channelId,content,embeds?,components?,reply?,returnId?]
+>+$apiMessage[channelId,content,embeds?,components?,files?,stickers?,allowedMentions?,reply?,returnId?]
+>
+>-$author[name;iconUrl?;url?]
+>+$author[index;name;iconUrl?;url?]
+>
+>-$activity[id?]
+>+$activity[id?;guildId?]
+>
+>-$authorAvatar
+>+$authorAvatar[size?;dynamic?;format?]
+>
+>-$complexCooldown[type;time;error?]
+>+$advanceCooldown[time;id;error?]
+>
+>-$ban[userID, reason?, days?]
+>+$ban[userId, guildId?, days?, reason?]
+>
+>-$botTyping[timeout]
+>+$botTyping
+>
+>-$changeNickname[ userId,nick ]
+>+$changeNickname[ userId,nick,reason ]
+>
+>-$channelSendMessage[channelId;message;returnId?]
+>+$channelSendMessage[channelId;errorObject;returnId?]
+>
+>-$color[color]
+>+$color[index;color]
+>
+>-$createSlashCommand[ guildId,name,description,...opts? ]
+>+$createApplicationCommand[ guildId,name,description,defaultPermission?,type?,...opts?]
+>
+>-$createChannel[name, type?, returnID?, parentID?]
+>+$createChannel[guildID, name, type?, returnId?, parentId?]
+>
+>-$createRole[name, color?, mentionable?, hoisted?, position?, ...perms?]
+>+$createRole[ guildId,name,color?,hoist?,position?,mentionable?,... permissions?]
+>
+>-$getServerInvite[guildid?]
+>+$createServerInvite[ channelId?, ...options?]
+>
+>-$createWebhook[ channel,name,avatar?,returnW?, seperator?]
+>+$createWebhook[ channel,name,avatar?, seperator? ]
+>
+>-$cpu
+>+$cpu[type?]
+>
+>-$eval[code;returnCode?]
+>+$eval[code;returnCode?;sendMessage?;returnData?;returnId?]
+>
+>-$footer[text;iconUrl?]
+>+$footer[index;text;iconUrl?]
+>
+>-$forEachChannel[...cmds ]
+>+$forEachChannel[ time,awaitData,...cmds ]
+>
+>-$forEachGuild[...cmds ]
+>+$forEachGuild[ time,awaitData,...cmds ]
+>
+>-$forEachGuildChannel[...cmds ]
+>+$forEachGuildChannel[time,awaitData,...cmds ]
+>
+>-$forEachMember[...cmds ]
+>+$forEachMember[ time,awaitData,...cmds ]
+>
+>-$forEachUser[...cmds ]
+>+$forEachUser[ time,awaitData,...cmds ]
+>
+>-$getSlashCommandId[ name , type? ]
+>+$getApplicationCommandId[ name , type? ]
+>
+>-$getSlashCommandOptions[name, guildID?]
+>+$getApplicationCommandOptions[name, guildID?]
+>
+>-$getChannelVar[var;Id?]
+>+$getChannelVar[var;Id?;table?]
+>
+>-$getGlobalUserVar[var;Id?]
+>+$getGlobalUSerVar[var;Id?;table?]
+>
+>-$getMessageVar[var;Id?]
+>+$getMessageVar[var;Id?;table?]
 ## aoi.js - 4.6.0
 
 ### Changes
