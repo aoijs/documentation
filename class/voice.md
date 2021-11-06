@@ -1,4 +1,5 @@
 # Voice 
+
 > ```js
 > Initialise The Voice Class To Enable Aoijs Music System 
 >```

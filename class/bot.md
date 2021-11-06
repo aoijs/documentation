@@ -1,4 +1,5 @@
 # Bot 
+
 > ```js
 > Bot Class Connects The Bot User To Discord And Makes It "Online".
 > ```

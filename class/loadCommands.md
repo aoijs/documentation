@@ -1,10 +1,11 @@
-# LoadCommands 
+# loadCommands 
+
 > ```js
 > A Custom Handler To Load/Update Commands
 > ```
 ## Usage
 >```ts
-> const loader = new LoadCommands(client:Bot,AddThisToClass? : boolean)
+> const loader = new loadCommands(client:Bot,AddThisToClass? : boolean)
 >```
 ## Methods 
 ### load()
@@ -28,6 +29,6 @@
 >     intents:"all" //Intents Your Bot Requires 
 >     })
 >
->const loader = new Aoijs.LoadCommands(bot)
+>const loader = new Aoijs.loadCommands(bot)
 >loader.load(bot.cmd,'./commands/')
 >```

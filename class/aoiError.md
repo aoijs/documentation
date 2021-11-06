@@ -1,4 +1,5 @@
 # AoiError 
+
 >```js
 > A Custom Error Class Utilised By "aoi.js".
 >```

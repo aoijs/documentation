@@ -31,6 +31,13 @@
 * [Local User Variables](guide/begin/variables/user-variables.md)
 * [Global Variables](guide/begin/variables/global-variables.md)
 
+## Class
+
+* [aoiError](class/aoiError.md)
+* [Bot](class/Bot.md)
+* [loadCommands](class/loadCommands.md)
+* [Voice](class/Voice.md)
+
 ## Options
 
 * [botOptions](options/botOptions.md)
