@@ -13,7 +13,7 @@ This callback will allow the bot to log a message whenever it leaves a server.
 ```javascript
 bot.botLeaveCommand({//command
 channel: "channel id",//the channel where <code> will be sent to
-code: `Your code`//message sent to <channel>
+code: `your code`//message sent to <channel>
 })
 ```
 
@@ -31,4 +31,3 @@ I have left $serverName!
 {% hint style="info" %}
 You can use all guild based functions like [$serverName](../functions/usdservername.md) or [$guildID](../functions/usdguildid.md) in these commands but functions like [$getServerInvite](../functions/usdgetserverinvite.md) won't work here.
 {% endhint %}
-

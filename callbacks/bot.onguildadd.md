@@ -13,7 +13,7 @@ This callback will allow the bot to log a message whenever it joins a server.
 ```javascript
 bot.botJoinCommand({//command
 channel: "channel id",//the channel where <code> will be sent to
-code: `Your code`//message sent to <channel>
+code: `your code`//message sent to <channel>
 })
 ```
 
@@ -47,4 +47,3 @@ Keep in mind: Not all servers have a system channel!
 {% hint style="info" %}
 You can use all guild based functions like [$serverName](../functions/usdservername.md) or [$guildID](../functions/usdguildid.md) or [$getServerInvite](../functions/usdgetserverinvite.md) in these commands.
 {% endhint %}
-
