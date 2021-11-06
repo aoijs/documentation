@@ -4,7 +4,8 @@ description: Setting a Hyperlink in an embed's description.
 
 # Hyperlink
 
-### Usage:
+### Usage
+
 ```javascript
 [Text Field](link 'Hover Field')
 ```
@@ -13,7 +14,8 @@ description: Setting a Hyperlink in an embed's description.
 
 > `Hover Field` can be anything you want
 
-### Example:
+### Usage Example
+
 ```javascript
 [aoi.js website](https://aoi.js.org 'aoi.js link')
 ```
