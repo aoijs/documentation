@@ -62,4 +62,4 @@ module.exports ={
 ![Console Logging](../../.gitbook/assets/commadLogging.png)
 ---
 ## Is This The End?
- * No, [LoadCommands](../../class/loadCommands.md) Class Has Lots Of Features For Which You Can Refer Too [Extra-Features](extraFeature.md).
+ * No, [LoadCommands](../../class/loadCommands.md) Class Has Lots Of Features For Which You Can Refer Too [Extra-Features](guide/begin/command-handler-extras.md).
