@@ -264,6 +264,9 @@ description: aoi.js - changelog from previous versions and latest.
 >-$forEachUser[...cmds ]
 >+$forEachUser[ time,awaitData,...cmds ]
 >
+>-$getEmbed[channelId;messageId;option]
+>+$getEmbed[channelId;messageId;index;option]
+>
 >-$getSlashCommandId[ name , type? ]
 >+$getApplicationCommandId[ name , type? ]
 >
@@ -278,6 +281,195 @@ description: aoi.js - changelog from previous versions and latest.
 >
 >-$getMessageVar[var;Id?]
 >+$getMessageVar[var;Id?;table?]
+>
+>-$getServerVar[var;Id?]
+>+$getServerVar[var;Id?;table?]
+>
+>-$getUserVar[var;Id?;guildId?]
+>+$getUserVar[var;Id?;guildId?;table?]
+>
+>-$highestServerRole
+>+$highestGuildRole
+>
+>-$interactionReply[content;embed?;components?;flag?;type?]
+>+$interactionReply[content;embed?;components?;files?;ephemeral?]
+>
+>-$interactionEdit[content?;embeds?, components?]
+>+$interactionEdit[content?;embeds?, components?,files?, allowedMentions?]
+>
+>-$if[condition]
+>-code
+>-$endif
+>+$if[condition;true message;false message] //use {execute:} to execute an awaitedCommand
+>
+>-$kick[userId;reason?]
+>+$kick[userId;guildId?;reason?]
+>
+>-$lowestServerRole[guildiD?]
+>+$lowestGuildRole[guildId?]
+>
+>-$loop[times;cmds...]
+>+$loop[times;awaitData;cmds...]
+>
+>-$botping
+>+$messagePing
+>
+>-$modifySlashCommand[guildID, commandID, name, description, ...opts]
+>+$modifyApplicationCommand[guildID, commandID, ...data]
+>
+>-$modifyRole[roleID,name,color,hoisted,mentionable]
+>+$modifyRole[guildId, roleId, ...roleDatas]
+>
+>-$modifyWebhook[webhookID, webhookToken, name, avatar]
+>+$modifyWebhook[webhookId, name, avatar, channelId = d.channel?.id, reason]
+>
+>-$nickname[userId?]
+>+$nickname[userId?;guildId?]
+>
+>-$pruneMembers[days?, guildId?, roleIds?, reason?, count?]
+>+$pruneMembers[days = 7, guildId?, roleIds?, dry? , reason?, count?]
+>
+>-$reactionCollector[messageID,userFilter,time,reactionOrReactions,commandOrCommands,removeReactions?]
+>+$reactionCollector[channelId, messageId, userFilters, time, reactions, awaits, removeReaction?, awaitData?, endAwait?]
+>
+>-$reply[messageId;message;mentionTheUser?]
+>+$reply[messageId?, mentionUser?]
+>
+>-$ram
+>+$ram[type?]
+>
+>-$resetGlobalUserVar[varname]
+>+$resetGlobalUserVar[varname, table?]
+>
+>-$resetServerVar[varname]
+>+$resetServerVar[varname, table?]
+>
+>-$resetUserVar[varname]
+>+$resetUserVar[varname, table?]
+>
+>-$random[lowerLimit;upperLimit;decimal?]
+>+$random[lowerLimit;upperLimit;decimal?;diffExec?]
+>
+>-$replaceText[text;replacer;replacedTo]
+>+$replaceText[text;replacer;replacedTo;how much?]
+>
+>-$resolveColor[r, g, b, toHex?, type?]
+>+$resolveColor[type, returnAs?, ...datas]
+>
+>-$roleExists[roleId]
+>+$roleExists[roleId, guildId?]
+>
+>-$roleId[roleResolver]
+>+$roleId[roleResolver, guildId?]
+>
+>-$colorRole[roleID, color]
+>+$setRoleColor[roleID, color]
+>
+>-$setChannelVar[varname, value,Id?]
+>+$setChannelVar[varname, value,Id?;table?]
+>
+>-$setGlobalUserVar[varname, value,Id?]
+>+$setGlobalUserVar[varname, value,Id?;table?]
+>
+>-$setMessageVar[varname, value,Id?]
+>+$setMessageVar[varname, value,Id?;table?]
+>
+>-$setServerVar[varname, value,Id?]
+>+$setServerVar[varname, value,Id?;table?]
+>
+>-$setTimeout[ duration, timeoutData, pulse?]
+>+$setTimeout[name, duration, timeoutData, pulse?]
+>
+>-$setUserVar[varname, value,Id?]
+>+$setUserVar[varname, value,Id?;table?]
+>
+>-$setVar[varname, value]
+>+$setVar[varname, value;table?]
+>
+>-$takeRole[ userId,roleId ]
+>+$takeRole[ guildId,userId,roleId ]
+>
+>-$takeRoles[userId,roleId ]
+>+$takeRoles[ guildId,userId,roleId;;... ]
+>
+>-$thumbnail[url]
+>+$thumbnail[index;url]
+>
+>-$title[text;url]
+>+$title[index;text;url]
+>
+>-$unban[userID,reason?]
+>+$unban[userId, guildId?]
+>
+>-$uptime
+>+$uptime[ option? ]
+>
+>-$userAvatar[userId?, size?, dynamic?]
+>+$userAvatar[userId?, size?, dynamic?;format?]
+>
+>-$userPerms[userId,sep?]
+>+$userPerms[userId?, sep?, guildId?]
+>
+>-$userRoleColor[ userId]
+>+$userRoleColor[ userId?,guildId? ]
+>
+>-$userRoles[userId, option?;sep?]
+>+$userRoles[userId?, guildId?, option?,sep?]
+>
+>-$userRolesCount[userId?]
+>+$userRolesCount[userId?, guildId?]
+>
+>-$usersBanned[option?, sep?]
+>+$usersBanned[guildId?;force?, option?, sep?]
+>```
+
+* ***DELETION***
+>```diff
+>-$authorMessage
+>-$awaitReactions
+>-$awaitReactionsUntil
+>-$blacklistID
+>-$blacklistRoleID
+>-$blacklistServerID
+>-$botLastMessageChannelID
+>-$botLastMessageID
+>-$createCollection
+>-$deleteCollectionKey
+>-$disableChannelMention
+>-$disableEveryoneMention
+>-$disableRoleMention
+>-$emoijiID
+>-$emojiName
+>-$emojiToString
+>-$filtermessageWords
+>-$findCollectionKey
+>-$getCollectionKey
+>-$inviteChannelID
+>-$inviteMaxUses
+>-$inviteCode
+>-$inviteGuildId
+>-$inviteURL
+>-$inviteUserID
+>-$inviteUses
+>-$ms
+>-$packageName
+>-$randomMentions
+>-$serverRegion
+
+* ***Misc***
+>updated Parsers
+>
+>new interpreter
+>
+>executionTime can be used in embed
+>
+>new managers
+>
+>new classes
+
+* ***NOTE*** 
+> music will be added in later update along with the functions that are missing and are not in deletion section
+> 
 ## aoi.js - 4.6.0
 
 ### Changes
