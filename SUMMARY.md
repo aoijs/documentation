@@ -1,9 +1,6 @@
 # Table of contents
 
 * [Introduction](README.md)
-
-## aoi.js version 5.0.0
-
 * [Changelog](changelog.md)
 
 ## Guides
