@@ -6,22 +6,18 @@ description: addFields allows you to adds more fields to your embed.
 
 This function is in charge of adding new fields to the embed, these containing a limit of 1000 characters each and allowing to use 10 fields in one function.
 
-#### Fields
+```php
+$addFields[index;text;value;inline]
+```
 
-This function has 3 required fields
-1. Index \(Required\) 
-1. Name \(Required\)
-2. Content \(Required\)
-3. Inline \(Optional\)
+## Fields
 
-Raw Usage: `$addFields[index;name:content:inline (optional);...]`
-
-#### Options
-
-* Index - Number of embed
-* Name - The title of the new field
-* Content - The description/value of the new field
-* Inline \(yes/no\) - Sets the field into an inline field
+| Field | Description | Type | Required |
+| :--- | :--- | :--- | :--- |
+| index | The embed to add this author to. | integer | yes |
+| text | The field text. | string | yes |
+| value | The field value. | string | yes |
+| inline | The field inline. | boolean | no |
 
 #### Usage
 
