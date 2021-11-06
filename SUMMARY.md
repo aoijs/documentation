@@ -15,12 +15,6 @@
   * [Permissions](guide/begin/permissions.md)
   * [Hyperlink](guide/begin/hyperlink.md)
   * [Using Callbacks](guide/begin/using-callbacks.md)
-  * [Variables](guide/begin/variables/README.md)
-    * [Channel Variables](guide/begin/variables/channel-variables.md)
-    * [Message Variables](guide/begin/variables/message-variables.md)
-    * [Server Variables](guide/begin/variables/server-variables.md)
-    * [Local User Variables](guide/begin/variables/user-variables.md)
-    * [Global Variables](guide/begin/variables/global-variables.md)
   * [Command Handler](guide/begin/command-handler.md)
     * [Command Handler Extras](guide/begin/command-handler-extras.md)
   * [Character Escaping](guide/begin/character-escaping.md)
@@ -33,6 +27,14 @@
   * [Custom Events](guide/extras/custom-events.md)
   * [Sharding](guide/extras/sharding.md)
   * [‎Dashboard](guide/extras/dashboard.md)
+
+## Variables
+* [Setup](guide/begin/variables/README.md)
+* [Channel Variables](guide/begin/variables/channel-variables.md)
+* [Message Variables](guide/begin/variables/message-variables.md)
+* [Server Variables](guide/begin/variables/server-variables.md)
+* [Local User Variables](guide/begin/variables/user-variables.md)
+* [Global Variables](guide/begin/variables/global-variables.md)
 
 ## Options
 
