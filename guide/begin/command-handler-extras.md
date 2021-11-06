@@ -8,15 +8,14 @@
 #### Example
 * For Example,we are making a command for **"bot.onMessageDelete()"** Callback.
 * after adding **"bot.onMessageDelete()"** in your mainFile , add this code by creating a new file inside moderation folder.
- ```js
+ ```javascript
  module.exports = {
     channel:"$channelId",
     name:"deleteLog", // name property is not necessary it's just for logging the command (if this is not present channel property will be used for logging)
     type:"messageDelete",
     code:`
       A message was deleted!!
-      Message:"$message"
-`
+      Message:"$message"`
     }
 ```
 #### logged 
@@ -37,7 +36,7 @@ This function updates all the new changes to the commands without restarting!
 * Right now we have 2 files **"deletelog.js"** and **"selfkick.js"**
 
  Lets Combine Them!
-```js
+```javascript
  module.exports = [{
     channel:"$channelId",
     name:"deleteLog", // name property is not necessary it's just for logging the command (if this is not present channel property will be used for logging)

@@ -18,13 +18,14 @@ description: Command Handlers can be used for organizing your commands
 ```
 ### Method 
 #### Step-1: Setting Up The Handler 
-```js
+
+```javascript
  const bot = new aoijs.Bot({
    token: "TOKEN", //Discord Bot Token
    prefix: "PREFIX", //Discord Bot Prefix
    intents: "all" //Discord Intents 
  })
- 
+
  bot.onMessage() //Allows to execute Commands
 
  const loader = new Aoijs.LoadCommands(bot)
@@ -48,13 +49,12 @@ description: Command Handlers can be used for organizing your commands
 ---
 #### Step-3 : Adding The Code In The File
 * Add The Code In Your Newly Created File (here is example of selfkick command)
-```js
+```javascript
 module.exports ={
   name:"selfkick",
   aliases:["sk","bye","exit"],
   code:`
-  $kick[$authorId]
-`
+  $kick[$authorId]`
 }
 ```
 #### Step-4: Complete
