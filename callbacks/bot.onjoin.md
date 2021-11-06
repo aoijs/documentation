@@ -1,11 +1,11 @@
 ---
 description: >-
   An event that gets executed, if the bot sees a user joining a server. To let
-  the bot listen to the event, add one bot.onJoined() callback inside your
+  the bot listen to the event, add one bot.onJoin() callback inside your
   mainfile.
 ---
 
-# bot.onJoined
+# bot.onJoin
 
 Callback that triggers every time a user joins a server.
 

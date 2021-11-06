@@ -67,7 +67,7 @@
 * [bot.onInteractionCreate](callbacks/bot.oninteractioncreate.md)
 * [bot.onInviteCreate](callbacks/bot.oninvitecreate.md)
 * [bot.onInviteDelete](callbacks/bot.oninvitedelete.md)
-* [bot.onJoined](callbacks/bot.onjoined.md)
+* [bot.onJoin](callbacks/bot.onjoin.md)
 * [bot.onLeave](callbacks/bot.onleave.md)
 * [bot.onMemberUpdate](callbacks/bot.onmemberupdate.md)
 * [bot.onMessage](callbacks/bot.onmessage.md)
