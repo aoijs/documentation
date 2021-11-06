@@ -28,7 +28,7 @@ description: Command Handlers can be used for organizing your commands
 
  bot.onMessage() //Allows to execute Commands
 
- const loader = new Aoijs.LoadCommands(bot)
+ const loader = new aoijs.LoadCommands(bot)
  loader.load(bot.cmd,"./commands/")
 
  /*
