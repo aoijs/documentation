@@ -5,7 +5,7 @@ description: Here you can see how to setup variables.
 # Variables
 
 {% hint style="warning" %}
-It must be inside of your main file, in most of the cases this is `server.js`
+It must be inside of your main file, in most of the cases this is `index.js`
 {% endhint %}
 
 ### Setup Variables:
@@ -16,38 +16,46 @@ It must be inside of your main file, in most of the cases this is `server.js`
 2. [ ] `Value` =&gt; the default value of the variable. 
 
 {% hint style="info" %}
-It's always this default value unless you change it in a [$setVar](../../../functions/usdsetvar.md)/[$setUserVar](../../../functions/usdsetuservar.md)/[$setServerVar](../../../functions/usdsetservervar.md)/[$setGlobalUserVar](../../../functions/usdsetglobaluservar.md)/[$setMessageVar](../../../functions/usdsetmessagevar.md)/[$setChannelVar](../../../functions/usdsetchannelvar.md).
+It's always this default value unless you change it in a 
+- [$setVar](../../../functions/usdsetvar.md)
+- [$setUserVar](../../../functions/usdsetuservar.md)
+- [$setServerVar](../../../functions/usdsetservervar.md)
+- [$setGlobalUserVar](../../../functions/usdsetglobaluservar.md)
+- [$setMessageVar](../../../functions/usdsetmessagevar.md)
+- [$setChannelVar](../../../functions/usdsetchannelvar.md)
+
 {% endhint %}
 
-#### Usage:
+### Usage
 
 ```javascript
 bot.variables({
-Name: "Value",
-Name2: "Value2"
-  })
-```
-
-#### Example Creation:
-
-```javascript
-bot.variables({
-prefix: "!",
-myName: "Chiwi"
+variable: "value"
 })
 ```
 
-{% hint style="info" %}
-If your using a command handler, this remains the same!
-{% endhint %}
-
-If you want to make a new variable, for example "apples" you just have to add a `,` after the last variable value and type the name and vale of the new variable, as example with apples:
+### Usage with table
 
 ```javascript
 bot.variables({
-    prefix: "!",
-    myName: "Chiwi",
-    apples: 0
+variable: "value"
+} ,'main') 
+```
+
+### Example
+
+```javascript
+bot.variables({
+money: 0
+})
+```
+
+### Multiple Variables
+
+```javascript
+bot.variables({
+var1: "value1",
+var2: "value2"
 })
 ```
 
