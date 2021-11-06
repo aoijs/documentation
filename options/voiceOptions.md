@@ -1,4 +1,5 @@
-# VoiceOptions 
+# VoiceOptions
+
 >**Options Available For [Voice Class](../class/voice.md)**
 # Options 
 |option|type|description|

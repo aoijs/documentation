@@ -1,4 +1,5 @@
-# Parser 
+# Parsers
+
 >**Parsers Are Custom Way In `aoi.js` To Parse Provided Data**
 
 >**Parsers Can Be Of Different Types , Ranging From Sending Embeds To Define Slash Command Data**

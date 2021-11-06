@@ -1,4 +1,5 @@
-# Options 
+# Options
+
 ## Description
 >```js
 > Various Options Used By Classes , Functions Or Events 

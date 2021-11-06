@@ -1,4 +1,5 @@
-# DatabaseOptions 
+# DatabaseOptions
+
 > **Available Options Are:**
 >
 >|options|type|optional|description|usage|

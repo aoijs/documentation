@@ -1,4 +1,5 @@
-# CacheOptions 
+# CacheOptions
+
 > * **Available options Are:**
 
 >```js

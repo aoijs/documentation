@@ -1,4 +1,5 @@
-# BotOptions 
+# BotOptions
+
 > **Options Required In [Bot](../class/bot.md) Class**
 ## AvailableOptions 
 ---

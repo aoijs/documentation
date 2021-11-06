@@ -42,6 +42,11 @@
 * [respondOnEditOptions](options/respondOnEditOptions.md)
 * [voiceOptions](options/voiceOptions.md)
 
+## Topics
+
+* [errorObjects](topics/MessageFormatters/errorobjects.md)
+* [parsers](topics/MessageFormatters/parsers.md)
+
 ## Callbacks
 
 * [bot.onBanAdd](callbacks/bot.onbanadd.md)

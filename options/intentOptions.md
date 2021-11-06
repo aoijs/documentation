@@ -1,4 +1,5 @@
-# IntentOptions 
+# IntentOptions
+
 * **Available Options Are:**
 ```js
 'all'

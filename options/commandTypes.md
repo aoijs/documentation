@@ -1,4 +1,5 @@
 # Command Types
+
 > * **Available Types Are Listed Below**
 
 >```js
