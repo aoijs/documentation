@@ -34,6 +34,17 @@
   * [Sharding](guide/extras/sharding.md)
   * [‎Dashboard](guide/extras/dashboard.md)
 
+## Options
+
+* [botOptions](options/botOptions.md)
+* [cacheOptions](options/cacheOptions.md)
+* [commandTypes](options/commandTypes.md)
+* [databaseOptions](options/databaseOptions.md)
+* [intentOptions](options/intentOptions.md)
+* [messageOptions](options/messageOptions.md)
+* [respondOnEditOptions](options/respondOnEditOptions.md)
+* [voiceOptions](options/voiceOptions.md)
+
 ## Callbacks
 
 * [bot.onBanAdd](callbacks/bot.onbanadd.md)

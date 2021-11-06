@@ -1,5 +1,5 @@
 # CacheOptions 
-> * **Available options are:**
+> * **Available options Are:**
 
 >```js
 >  'guilds',
