@@ -42,10 +42,10 @@
 * [respondOnEditOptions](options/respondOnEditOptions.md)
 * [voiceOptions](options/voiceOptions.md)
 
-## Topics
+## messageFormatters
 
-* [errorObjects](topics/MessageFormatters/errorobjects.md)
-* [parsers](topics/MessageFormatters/parsers.md)
+* [errorObjects](messageFormatters/errorobjects.md)
+* [parsers](messageFormatters/parsers.md)
 
 ## Callbacks
 
