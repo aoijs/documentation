@@ -41,7 +41,7 @@
 >```
 # Quick Links
 ## Documentation  
-> * **[Classes](class/ClassSummary.md)**
+> * **[Classes](class/classSummary.md)**
 > * **[Callbacks](callbacks/CallbackSummary.md)**
 > * **[Functions](functions/FunctionSummary.md)**
 > * **[Guides](guide/GuideSummary.md)**
@@ -52,6 +52,5 @@
 ## Contribution 
 > * **[Contribution GuideLines](https://github.com/aoijs/aoi.js/blob/master/.github/CONTRIBUTING.md)**
 ## Misc
-> * **[Discord Server Invite Link 1](https://discord.gg/akarui)**
-> * **[Discord Server Invite Link 2](https://aoi.js.org/invite)**
+> * **[Discord Server Invite](https://aoi.js.org/invite)**
 > * **[Website](https://aoi.js.org)**
