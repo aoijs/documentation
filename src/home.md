@@ -2,7 +2,7 @@
 coverY: 0
 ---
 
-# Introduction
+# 👋 Introduction
 
 ## aoi.js
 
