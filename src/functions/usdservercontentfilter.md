@@ -13,5 +13,4 @@ code: `Server Filter: $serverContentFilter`
 })
 ```
 
-![Example](../.gitbook/assets/image%20%2855%29.png)
-
+![Example](<../../.gitbook/assets/image (55).png>)

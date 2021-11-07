@@ -6,7 +6,7 @@ description: Creates a loop over all the indexes of $textSplit
 
 This function creates a loop over all the values in $textSplit
 
-```text
+```
 $textSplitMap[awaitedCommand]
 ```
 
@@ -28,7 +28,4 @@ Value => $message[1]
 })
 ```
 
-![](../.gitbook/assets/image%20%2865%29.png)
-
-
-
+![](<../../.gitbook/assets/image (65).png>)

@@ -19,7 +19,7 @@ fetchInvites: true
 
 Make sure you enable `SERVER MEMBERS` intents
 
-![](../../.gitbook/assets/image%20%2844%29.png)
+![](<../../../.gitbook/assets/image (44).png>)
 
 ## Functions
 
@@ -38,7 +38,7 @@ $userInfo[option;userID (optional)]
 * inviter - The user who invited the author/specified user
 * code - The invite code the inviter used
 * real - The count of users the author/specified user invited that are still in the server
-* fake - The count of alt accounts \(Discord Age 10 Minutes and below\) the author/specified user invited \(Alt Account also must leave the server to be counted\)
+* fake - The count of alt accounts (Discord Age 10 Minutes and below) the author/specified user invited (Alt Account also must leave the server to be counted)
 
 ```javascript
 bot.command({
@@ -58,7 +58,7 @@ Invited By: $userTag[$userInfo[inviter]] (\`$userInfo[code]\`)]
 
 ### $resetInvites
 
-This function resets the invites the specified user has OR the whole guild \(if no user specified\)
+This function resets the invites the specified user has OR the whole guild (if no user specified)
 
 ```javascript
 $resetInvites[guildID;userID (optional)]
@@ -73,4 +73,3 @@ $resetInvites[$guildID;$mentioned[1]]
 `
 })
 ```
-

@@ -1,5 +1,5 @@
 ---
-description: 'Disables, @ mentioned, and replaces with the Username.'
+description: Disables, @ mentioned, and replaces with the Username.
 ---
 
 # $disableMentions
@@ -16,5 +16,4 @@ $disableMentions`
 })
 ```
 
-![Example](../.gitbook/assets/image%20%288%29.png)
-
+![Example](<../../.gitbook/assets/image (8).png>)

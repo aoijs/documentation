@@ -94,4 +94,4 @@ mobile: true //True or false
 })
 ```
 
-![Example](../../.gitbook/assets/image%20%2862%29.png)
+![Example](<../../../.gitbook/assets/image (62).png>)

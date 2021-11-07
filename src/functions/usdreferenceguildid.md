@@ -13,5 +13,4 @@ code: `Reply Guild ID: $referenceGuildID`
 })
 ```
 
-![Heres an example \(I know it says message ID but its basically the same\)](../.gitbook/assets/image%20%2814%29%20%284%29%20%284%29%20%283%29%20%281%29.png)
-
+![Heres an example (I know it says message ID but its basically the same)](<../../.gitbook/assets/image (14) (4) (4) (3) (1).png>)

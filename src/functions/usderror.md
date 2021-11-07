@@ -8,7 +8,7 @@ With this function you can execute a command if a command execution failed becas
 
 #### Usage
 
-Example usage of the `error` property with the usage of $error inside to send the console error of the eval command in the given channel \($channelSendMessage\). You can use basically all functions in there.
+Example usage of the `error` property with the usage of $error inside to send the console error of the eval command in the given channel ($channelSendMessage). You can use basically all functions in there.
 
 ```javascript
 bot.command({
@@ -20,5 +20,4 @@ $djsEval[message]
 })
 ```
 
-![Example message of the error log.](../.gitbook/assets/image%20%283%29.png)
-
+![Example message of the error log.](<../../.gitbook/assets/image (3).png>)

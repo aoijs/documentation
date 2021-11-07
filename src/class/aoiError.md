@@ -1,21 +1,31 @@
-# AoiError 
+# aoiError
+
+## AoiError
 
 ```js
  A Custom Error Class Utilised By "aoi.js".
 ```
-# Usage 
+
+## Usage
+
 **bot.aoiError = aoijs.AoiError**
-# Methods 
-## makeMessageError()
-### Usage 
+
+## Methods
+
+### makeMessageError()
+
+#### Usage
+
 ```ts
 AoiError.makeMessageError(client:Bot,channel:TextChannel | ThreadChannel | NewsChannel ,message:MessageOptions,extraOption:MessageExtraOptions)
 ```
 
-**[MessageOptions](../options/messageOptions.md)**
+[**MessageOptions**](../options/messageOptions.md)
 
-**[MessageExtraOptions](../options/messageExtraOptions.md)**
-### Example 
+[**MessageExtraOptions**](../../options/messageExtraOptions.md)
+
+#### Example
+
 ```js
  const aoijs = require('aoi.js');
  const bot = new aoijs.Bot({
@@ -34,15 +44,19 @@ AoiError.makeMessageError(client:Bot,channel:TextChannel | ThreadChannel | NewsC
 .         })]`
 });
 ```
----
-## consoleError()
-### Usage 
+
+***
+
+### consoleError()
+
+#### Usage
 
 ```ts
 AoiError.consoleError(ErrorName:string,ErrorMessage:any)
 ```
 
-### Example 
+#### Example
+
 ```js
  const aoijs = require('aoi.js')
  const bot = new aoijs.Bot({

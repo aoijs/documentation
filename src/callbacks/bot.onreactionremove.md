@@ -29,20 +29,19 @@ $username has unreacted with $emojiToString
 }) 
 ```
 
-![Here&apos;s an example](../.gitbook/assets/image%20%2840%29.png)
+![Here's an example](<../../.gitbook/assets/image (40).png>)
 
 #### Functions:
 
-* [$emojiToString](../functions/usdemojitostring.md) =&gt; the exactly emoji itself, either default emoji e.g. `🎉` or `<:emojiname:emojiID>` style. 
-* [$emojiName ](../functions/usdemojiname.md)=&gt; the name of the emoji the user reacted with
-* [$emojiID](../functions/usdemojiid.md) =&gt; the ID of the emoji the user react with \(for custom Emojis\)
-* [$messageID](../functions/usdusermessageid.md) =&gt; to get the messageID the user reacted 
-* $authorMessage =&gt; to get the authorID of the messagte the user reacted to 
-* [$channelID ](../functions/usdchannelid.md)=&gt; to get the channelID of the message
-* [$authorID](../functions/usdauthorid.md) =&gt; the ID of the user that reacted
-* [$username](../functions/usdusername.md) =&gt; the username of the user that reacted
+* [$emojiToString](../functions/usdemojitostring.md) => the exactly emoji itself, either default emoji e.g. `🎉` or `<:emojiname:emojiID>` style.
+* [$emojiName ](../functions/usdemojiname.md)=> the name of the emoji the user reacted with
+* [$emojiID](../functions/usdemojiid.md) => the ID of the emoji the user react with (for custom Emojis)
+* [$messageID](../functions/usdusermessageid.md) => to get the messageID the user reacted
+* $authorMessage => to get the authorID of the messagte the user reacted to
+* [$channelID ](../functions/usdchannelid.md)=> to get the channelID of the message
+* [$authorID](../functions/usdauthorid.md) => the ID of the user that reacted
+* [$username](../functions/usdusername.md) => the username of the user that reacted
 
 {% hint style="info" %}
-You can use functions like $onlyForChannels or the following functions inside an[ $onlyIf\[\]](../functions/usdonlyif.md) limiter at the bottom of the code to limit your code to specific reactions etc: 
+You can use functions like $onlyForChannels or the following functions inside an[ $onlyIf\[\]](../functions/usdonlyif.md) limiter at the bottom of the code to limit your code to specific reactions etc:
 {% endhint %}
-

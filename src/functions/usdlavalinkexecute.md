@@ -1,11 +1,13 @@
 # $lavalinkExecute
+
 A Lavalink API Wrapper that allows you to use Lavalink within your codes.
+
 ## Fields
 
 This function use 1 main field and optionals
 
-1. Method \( Required \)
-2. Data \( Optional \)
+1. Method ( Required )
+2. Data ( Optional )
 
 Raw Usage: `$lavalinkExecute[method;data]`
 
@@ -15,40 +17,41 @@ Raw Usage: `$lavalinkExecute[method;data]`
 * Data - Arguments for method interaction
 
 ## Examples and Guides
-You can view the examples in [Lavalink page](../guides/advanced-guides/lavalink.md)
+
+You can view the examples in [Lavalink page](../../guides/advanced-guides/lavalink.md)
 
 ## Methods
 
 * play - Play the next track from previous of queue
   * Usage: `$lavalinkExecute[play]`
 * search - Search tracks from provider
-  * Note: *Searches will be erased in an interval*
+  * Note: _Searches will be erased in an interval_
   * Providers: `yt` as Youtube, `sc` as Soundcloud, `ytm` as Youtube Music
   * Usage: `$lavalinkExecute[search; query; provider (default is yt)]`
-  * Return: SearchKey *A key to get search results*
+  * Return: SearchKey _A key to get search results_
 * getsearch - Get searches by SearchKey
-  * Note: *Returns 10 track titles separated by `,`*
+  * Note: _Returns 10 track titles separated by `,`_
   * Usage: `$lavalinkExecute[getsearch; SearchKey]`
   * Return: Seperated Tracktitles
 * addtrack - Add tracks to queue
-  * Usage: `$lavalinkExecute[addtrack; KeySearch; start; to (optional)]
+  * Usage: \`$lavalinkExecute\[addtrack; KeySearch; start; to (optional)]
 * songinfo - The current track's info
   * Usage: `$lavalinkExecute[songinfo; key; trackentry (optional)]`
   * Properties: [$songInfo](usdsonginfo.md#properties)
 * getthumbnail - Gets track thumbnail from id and size
   * Sizes: `default`, `hqdefault`, `mqdefault`, `sddefault`, `maxresdefault`
   * Usage: `$lavalinkExecute[getthumbnail; trackId; size]`
-  * Note: *Songinfo already has the default thumbnail of track*
+  * Note: _Songinfo already has the default thumbnail of track_
   * Return: ThumbnailURL
 * findentry - Finds the entry of track with possible match of query
   * Usage: `$lavalinkExecute[findentry; SearchKey; query]`
-  * Note: *Query comparisons with track's title, doesn't have to be the exact*
-  * Return: TrackEntry \( number \)
+  * Note: _Query comparisons with track's title, doesn't have to be the exact_
+  * Return: TrackEntry ( number )
 * tracksplit - Splits track titles into array
-  * Note: *Allows text split functions to get track titles, and this will overwrite any existing splits*
+  * Note: _Allows text split functions to get track titles, and this will overwrite any existing splits_
   * Usage: `$lavalinkExecute[tracksplit; SearchKey]`
 * volume - The volume of the track
-  * Note: *Method is identical to volume=number/100*
+  * Note: _Method is identical to volume=number/100_
   * Usage: `$lavalinkExecute[volume;number]`
 * stop - Stop the queue
   * Usage: `$lavalinkExecute[stop]`
@@ -59,7 +62,7 @@ You can view the examples in [Lavalink page](../guides/advanced-guides/lavalink.
   * Usage: `$lavalinkExecute[resume]`
 * pause - Pause the track
   * Usage: `$lavalinkExecute[pause]`
-* skip - Skip a song \(or multiple\)
+* skip - Skip a song (or multiple)
   * Usage: `$lavalinkExecute[skip;number (optional)]`
 * loopmode - Changes the player's loop mode
   * Modes: `none`, `queue`, `track`,

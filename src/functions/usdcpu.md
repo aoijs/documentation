@@ -15,5 +15,4 @@ code: `CPU Usage: $cpu`
 })
 ```
 
-![Returns this](../.gitbook/assets/image%20%2825%29.png)
-
+![Returns this](<../../.gitbook/assets/image (25).png>)

@@ -10,13 +10,13 @@ This function will make the bot reply when a user reacts with the specified emoj
 
 This function has 6 required fields
 
-1. userFilter \(Required\)
-2. time \(Required\)
-3. bot message \(Required\)
-4. reaction \(Required\)
-5. awaitedCommand \(Required\)
-6. error \(Required\)
-7. deleteMessageUponReact \(Optional\)
+1. userFilter (Required)
+2. time (Required)
+3. bot message (Required)
+4. reaction (Required)
+5. awaitedCommand (Required)
+6. error (Required)
+7. deleteMessageUponReact (Optional)
 
 Raw Usage: `$awaitReaction[userFilter;time;bot message;reaction1,reaction2,...;awaitedCommand1,awaitedCommand2,...;error message;deleteMessageUponReact (yes/no) (optional)]`
 
@@ -28,7 +28,7 @@ Raw Usage: `$awaitReaction[userFilter;time;bot message;reaction1,reaction2,...;a
 * reaction - The reaction that will execute the awaitedCommand when reacted
 * awaitedCommand - The awaitedCommand name that will be executed
 * error - The message when the time runs out
-* deleteMessageUponReact - When someone reacts it'll delete &lt;bot message&gt;
+* deleteMessageUponReact - When someone reacts it'll delete \<bot message>
 
 #### Usage
 
@@ -45,10 +45,10 @@ code: `Hi, You reacted to 1️⃣ and now i responded!`
 }) //This will respond when the user reacts
 ```
 
-![Here&apos;s an example of the bots response](../.gitbook/assets/image%20%282%29.png)
+![Here's an example of the bots response](<../../.gitbook/assets/image (2).png>)
 
 {% hint style="warning" %}
-The error message will respond if the time has ran out \(If user doesn't do anything\)
+The error message will respond if the time has ran out (If user doesn't do anything)
 {% endhint %}
 
 Remember the time suffixes:
@@ -60,6 +60,5 @@ Remember the time suffixes:
 * w - Weeks
 
 {% hint style="info" %}
-When having multiple &lt;reaction&gt; slots, make sure you have an equal amount of awaitedCommands
+When having multiple \<reaction> slots, make sure you have an equal amount of awaitedCommands
 {% endhint %}
-

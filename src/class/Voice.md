@@ -1,10 +1,12 @@
-# Voice 
+# Voice
 
- ```javascript
- Initialise The Voice Class To Enable Aoijs Music System 
+```javascript
+Initialise The Voice Class To Enable Aoijs Music System 
 ```
-## Usage 
-```typescript
+
+## Usage
+
+````typescript
 new Voice(client:Bot,ytdlOptions:YTDL,scOptions:SCDL,cacheOptions:CacheOptions)
 
 **[VoiceOptions](../options/voiceOptions.md)**
@@ -14,16 +16,22 @@ new Voice(client:Bot,ytdlOptions:YTDL,scOptions:SCDL,cacheOptions:CacheOptions)
 #### Usage 
 ```typescript
  Voice.joinVc(voiceChannel:VoiceChannel,textChannel:TextChannel); 
-```
+````
 
-Returns: **[ServerManager](serverManager.md)**
+Returns: [**ServerManager**](../../class/serverManager.md)
+
 #### Example
+
 ```javascript
  Voice.joinVc(member.voice.channel,channel) 
-``` 
-### readonly serversSize 
-**Gives Count Of All Voice Connections** 
-#### Usage 
+```
+
+### readonly serversSize
+
+**Gives Count Of All Voice Connections**
+
+#### Usage
+
 ```typescript
  Voice.serversSize 
 ```

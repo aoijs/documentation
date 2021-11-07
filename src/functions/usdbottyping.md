@@ -10,7 +10,7 @@ This function just displays the bot as 'Typing'
 
 This function has 1 optional field
 
-1. time \(Optional\)
+1. time (Optional)
 
 Raw Usage: `$botTyping[time (Optional)]`
 
@@ -28,7 +28,7 @@ $botTyping`
 })
 ```
 
-![Heres what it would look like. Of course it would be your bots name](../.gitbook/assets/image%20%2848%29.png)
+![Heres what it would look like. Of course it would be your bots name](<../../.gitbook/assets/image (48).png>)
 
 You can also specify the amount of time you want it to type for.
 
@@ -43,4 +43,3 @@ Haha I made you think i was typing something important
     `
 })
 ```
-

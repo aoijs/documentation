@@ -1,4 +1,4 @@
-# ‎Dashboard
+# dbd.express
 
 ## Introduction
 
@@ -60,11 +60,11 @@ resolve()
 
 Now you need to go to the dashboard home page
 
-![](../../.gitbook/assets/image%20%2866%29.png)
+![](<../../../.gitbook/assets/image (66).png>)
 
 Once you've logged in, you should appear to this page!
 
-![](../../.gitbook/assets/image%20%2819%29.png)
+![](<../../../.gitbook/assets/image (19).png>)
 
 ## Commands, Callbacks, Variables
 
@@ -74,21 +74,21 @@ Once you've logged in, you should appear to this page!
 
 Hey! Now that you have your account, lets make a commands!
 
-![Click here to get started](../../.gitbook/assets/image%20%2856%29.png)
+![Click here to get started](<../../../.gitbook/assets/image (56).png>)
 
 Now that you've clicked on it, you should appear on the command list page!
 
-![Click &apos;New Command&apos; to make a command](../../.gitbook/assets/image%20%2837%29.png)
+![Click 'New Command' to make a command](<../../../.gitbook/assets/image (37).png>)
 
 Once you've clicked 'New Command', you should fill out the command name and code!
 
-![Now hit &apos;Save Command&apos;](../../.gitbook/assets/image%20%2869%29.png)
+![Now hit 'Save Command'](<../../../.gitbook/assets/image (69).png>)
 
 #### Editing Commands
 
 If you'd like to edit a command, hit the 3 dots and hit 'Edit'
 
-![](../../.gitbook/assets/image%20%2843%29.png)
+![](<../../../.gitbook/assets/image (43).png>)
 
 After that, just save your newly edited command!
 
@@ -96,7 +96,7 @@ After that, just save your newly edited command!
 
 If you want to delete a command. Press the 3 dots and hit 'Delete'
 
-![](../../.gitbook/assets/image%20%2858%29.png)
+![](<../../../.gitbook/assets/image (58).png>)
 
 There is a confirmation just incase if you misclick!
 
@@ -106,13 +106,13 @@ There is a confirmation just incase if you misclick!
 
 Firstly, make a command like normal, but now pick which callback you want
 
-![](../../.gitbook/assets/image%20%2872%29.png)
+![](<../../../.gitbook/assets/image (72).png>)
 
 Now once you've picked one, name it whatever, for my example its just named 'joincommand'
 
 This is very important. At the bottom of the command editor, once you see 'add property', add a property named `channel` and put a channel id or a variable there
 
-![](../../.gitbook/assets/image%20%2849%29.png)
+![](<../../../.gitbook/assets/image (49).png>)
 
 #### Editing Callbacks
 
@@ -128,31 +128,30 @@ Delete your callbacks like you would normally
 
 When creating a variable, you should go over to the variable page found on the nav bar
 
-![](../../.gitbook/assets/image%20%2868%29.png)
+![](<../../../.gitbook/assets/image (68).png>)
 
 Once you're there, you should click 'New Variable'
 
-![](../../.gitbook/assets/image.png)
+![](../../../.gitbook/assets/image.png)
 
 Once you've clicked the button, you should fill out your desired variable information
 
-![](../../.gitbook/assets/image%20%2870%29.png)
+![](<../../../.gitbook/assets/image (70).png>)
 
-Now just hit 'Save Variable' 
+Now just hit 'Save Variable'
 
 #### Editing Variables
 
 Editing the variables is just slightly different then commands. Instead of clicking the 3 dots, you just click the underlined text
 
-![](../../.gitbook/assets/image%20%2851%29.png)
+![](<../../../.gitbook/assets/image (51).png>)
 
-Then just edit them like normal! _Don't forget to save your changes &lt;3_
+Then just edit them like normal! _Don't forget to save your changes <3_
 
 #### Deleting Variables
 
 Deleting the variables are basically the same as editing them but instead of changing anything, you hit 'Delete Variable'
 
-![](../../.gitbook/assets/image%20%2817%29.png)
+![](<../../../.gitbook/assets/image (17).png>)
 
 There is a confirmation just incase you misclick
-

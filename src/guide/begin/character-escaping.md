@@ -8,39 +8,38 @@ description: >-
 
 ## Escaping characters:
 
-`[` =&gt; `#RIGHT#`
+`[` => `#RIGHT#`
 
-`]` =&gt; `#LEFT#`
+`]` => `#LEFT#`
 
-`;` =&gt; `#SEMI#`
+`;` => `#SEMI#`
 
-`:` =&gt; `#COLON#`
+`:` => `#COLON#`
 
-`$` =&gt; `#CHAR#`
+`$` => `#CHAR#`
 
-`>` =&gt; `#RIGHT_CLICK#`
+`>` => `#RIGHT_CLICK#`
 
-`<` =&gt; `#LEFT_CLICK#`
+`<` => `#LEFT_CLICK#`
 
-`=` =&gt; `#EQUAL#`
+`=` => `#EQUAL#`
 
-`}` =&gt; `#LEFT_BRACKET#`
+`}` => `#LEFT_BRACKET#`
 
-`{` =&gt; `#RIGHT_BRACKET#`
+`{` => `#RIGHT_BRACKET#`
 
 ## more:
 
-Backspace =&gt; `\b`  
-Form Feed =&gt; `\f`  
-New Line =&gt; `\n`  
-Carriage Return =&gt; `\r`  
-Horizontal Tabulator =&gt; `\t`  
-Vertical Tabulator =&gt; `\v`  
-Single quote =&gt; `\'`  
-Double quote =&gt; `\"`  
-Backslash =&gt; `\`
+Backspace => `\b`\
+Form Feed => `\f`\
+New Line => \
+Carriage Return => \
+Horizontal Tabulator => \
+Vertical Tabulator => `\v`\
+Single quote => `\'`\
+Double quote => `\"`\
+Backslash => `\`
 
 {% hint style="info" %}
 These character escapes are useful for using special characters inside functions, e.g. in the text field of [$sendMessage](../../functions/usdsendmessage.md).
 {% endhint %}
-

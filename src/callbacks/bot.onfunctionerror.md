@@ -2,12 +2,13 @@
 description: It makes the Client send the error to a specific channel.
 ---
 
-# bot.functionErrorCommand
+# bot.onFunctionError
 
 Property that can be used:
-- `channel`
 
-Function that can be used [$handleError](..functions/usdhandleerror.md)
+* `channel`
+
+Function that can be used [$handleError](../../callbacks/..functions/usdhandleerror.md)
 
 Callback to use is `bot.onFunctionError()`
 
@@ -57,7 +58,8 @@ $color[RED]`
 bot.onFunctionError()
 ```
 
-You can also use 
-- `$channelUsed` 
-- `$guildID`
-- `$authorID`
+You can also use
+
+* `$channelUsed`
+* `$guildID`
+* `$authorID`
