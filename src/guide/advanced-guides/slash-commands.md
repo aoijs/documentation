@@ -38,22 +38,22 @@ Slash Command Information break down
 
 Let's first get to know the functions and how to use them
 
-### $createSlashCommand
+### $createApplicationCommand
 
 This function will create a slash command!
 
 ```
-$createSlashCommand[guildID;name;description;options (optional)]
+$createApplicationCommand[guildID/global;name;description;defaultPermission(true/false);type(slash/user/message) (optional);options (optional)]
 ```
 
 ```javascript
 bot.command({
 name: "create",
-code: `$createSlashCommand[$guildID;AOIjs;A cool slash command for AOIjs]`
+code: `$createApplicationCommand[$guildID;aoijs;a cool slash command for aoi.js;true]`
 /*
     Code Breakdown:
-This will make a slashcommand named "AOIjs" (meaning you'd do /AOIjs),
-the description will say "A cool slash command for AOIjs"
+This will make a slashcommand named "aoijs" (meaning you'd do /aoijs),
+the description will say "a cool slash command for aoijs"
 */
 })
 ```
@@ -63,47 +63,62 @@ Using function will `options` filled out
 ```javascript
 bot.command({
 name: "create",
-code: `$createSlashCommand[$guildID;AOIjs;A cool slash command for AOIjs;message]`
+code: `$createApplicationCommand[$guildID;aoijs;a cool slash command for aoijs;true;slash;message:sends a message:true:3]`
+//or
+      `$createApplicationCommand[$guildID;aoijs;a cool slash command for aoijs;true;slash;{string:message:sends a message:yes}]`
+//or
+      `$createApplicationCommand[$guildID;aoijs;a cool slash command for aoijs;true;slash;{
+               "name" : "message",
+               "description" : "sends a message",
+               "type" : 3,
+               "required" : true
+      }]`
+})
+
 /*
     Code Breakdown:
     Same thing as above but adds a required field. Example in imagine below
 */
-})
+
 ```
 
 ![Example](<../../../.gitbook/assets/image (34) (2).png>)
 
-### $getSlashCommandID
+### $getApplicationCommandID
 
-This function gets the specified slash command's id that we can use later
+This function gets the specified application command's id that we can use later
 
 ```javascript
-$getSlashCommandID[name;guildID]
+$getApplicationCommandID[name;guildID/global (optional : global as default)]
 ```
 
 ```javascript
 bot.command({
 name: "getID",
-code: `$getSlashCommandID[AOIjs]`
+code: `$getSlashCommandID[aoijs;$guildId]`
+})
+
 /*
     Code Breakdown:
 This will get the ID of the slashcommand we created
 */
-})
-```
 
-### $getSlashCommandOptions
+```
+ **NOTE**
+> if $getApplicationCommandID doesnt return ID and SLash Command Exists, Then eval `$fetch[command]` for global commands and `$fetch[guildCommand;guildid]` for guild commands to fetch all commands and then try again
+
+### $getApplicationCommandOptions
 
 This function gets the \<options> in a slash command (if provided)
 
 ```javascript
-$getSlashCommandOptions[name;guildID (optional)]
+$getApplicationCommandOptions[name;guildID/global (optional : global as default)]
 ```
 
 ```javascript
 bot.command({
 name: "getOptions",
-code: `$getSlashCommandOptions[AOIjs]`
+code: `$getApplicationCommandOptions[aoijs;$guildId]`
 /*
     Code Breakdown:
 This will get the availible options for slash commands
@@ -111,38 +126,38 @@ This will get the availible options for slash commands
 })
 ```
 
-### $modifySlashCommand
+### $modifyApplicationCommand
 
 This function will modify an existing slash command
 
 ```javascript
-$modifySlashCommand[guildID;commandID;name;description;options (optional)]
+$modifyApplicationCommand[guildID/global;commandID;name;description;type(optional);options (optional);defaultPermission(optional)]
 ```
 
 ```javascript
 bot.command({
 name: "modify",
-code: `$modifySlashCommand[$getSlashCommandID[AOIjs];AOIjs;A modified description... wow]`
+code: `$modifyApplicationCommand[$guildId;$getApplicationCommandID[aoijs];aoijs;a modified description... wow]`
 /*
     Code Breakdown:
 This will modify the slash command description. We get
-the ID from using '$getSlashCommandID'
+the ID from using '$getApplicationCommandID'
 */
 })
 ```
 
-### $deleteSlashCommand
+### $deleteApplicationCommand
 
 This function deletes the specified slash command
 
 ```
-$deleteSlashCommand[guildID;name/id]
+$deleteSlashCommand[guildID/global;id]
 ```
 
 ```javascript
 bot.command({
 name: "delete",
-code: `$deleteSlashCommand[$guildID;AOIjs]`
+code: `$deleteSlashCommand[$guildID;$getApplicationCommandId[aoijs]]`
 /*
     Code Breakdown:
 This will delete our created slashcommand that we made.
@@ -161,6 +176,7 @@ This will execute if a slash command is used
 ```javascript
 bot.interactionCommand({ //command
 name: "slash command name", //name of the slash command
+prototype : 'slash',
 code: `code` // code that will be executed if slash command triggered
 })
 bot.onInteractionCreate() //callback itself
@@ -168,10 +184,11 @@ bot.onInteractionCreate() //callback itself
 
 ```javascript
 bot.interactionCommand({
-name: "AOIjs", 
-code: `AOIjs is an awesome package!`
+name: "aoijs", 
+prototype : 'slash',
+code: `$interactionReply[AOIjs is an awesome package!]`
 /*
-The code will be execute once /AOIjs has been ran
+The code will be execute once /aoijs has been ran
 */
 })
 bot.onInteractionCreate()
@@ -182,12 +199,13 @@ bot.onInteractionCreate()
 This function sends a message to the channel when the slash command in executed
 
 ```javascript
-$interactionReply[message]
+$interactionReply[message;embeds?;components?;files?;ephemeral(yes/no)]  //? means optional
 ```
 
 ```javascript
 bot.interactionCommand({
-name: "AOIjs", 
+name: "aoijs",
+prototype : 'slash',
 code: `
 $interactionReply[AOIjs is an awesome package!]
 ` 
@@ -205,7 +223,7 @@ Let's make a simple slash command that will reply with the current package versi
 bot.command({
 name: "slash",
 code: `
-$createSlashCommand[$guildID;version;Return's Aoi.js's current version]`
+$createApplicationCommand[$guildID;version;return's aoi.js's current version;true]`
 //This will make our slash command
 })
 ```
@@ -215,6 +233,7 @@ $createSlashCommand[$guildID;version;Return's Aoi.js's current version]`
 ```javascript
 bot.interactionCommand({
  name: "version", 
+ prototype : 'slash',
  code: `$interactionReply[Package Version: $packageVersion]`
  })
  bot.onInteractionCreate()
