@@ -13,7 +13,7 @@ $sendMessage[user ID;message]
 ```javascript
 bot.command({
 name: "sendDM",
-code: `$sendDM[739591551155437654;go code L]`
+code: `$sendDM[message;userID]`
 })
 ```
 
