@@ -8,14 +8,16 @@ This function adds color to the embed
 
 #### Fields
 
-This function has 1 field
+This function has 2 fields
 
-1. Color \(Required\)
+1. Index \(Required\)
+2. Color \(Required\)
 
-Raw Usage: `$color[color]`
+Raw Usage: `$color[index;color]`
 
 #### Options
 
+* Index - index for multiple embeds (1 by default)
 * Color - The color your setting to the embed
 
 #### Color Types
@@ -32,9 +34,9 @@ With Hex
 bot.command({
 name: "color", 
 code: `
-$title[Title]
-$description[Hello world!]
-$color[#FF00FF]
+$title[1;Title]
+$description[1;Hello world!]
+$color[1;#FF00FF]
 `
 })
 ```
@@ -45,9 +47,9 @@ With Names
 bot.command({
 name: "color", 
 code: `
-$title[Title]
-$description[Hello world!]
-$color[RED]
+$title[1;Title]
+$description[1;Hello world!]
+$color[1;RED]
 `
 })
 ```
@@ -58,9 +60,9 @@ With RANDOM
 bot.command({
 name: "color", 
 code: `
-$title[Title]
-$description[Hello world!]
-$color[RANDOM]
+$title[1;Title]
+$description[1;Hello world!]
+$color[1;RANDOM]
 `
 })
 ```
