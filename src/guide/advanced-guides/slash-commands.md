@@ -95,7 +95,7 @@ $getApplicationCommandID[name;guildID/global (optional : global as default)]
 ```javascript
 bot.command({
 name: "getID",
-code: `$getSlashCommandID[aoijs;$guildId]`
+code: `$getApplicationCommandID[aoijs;$guildId]`
 })
 
 /*
