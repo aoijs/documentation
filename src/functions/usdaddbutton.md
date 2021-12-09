@@ -21,5 +21,21 @@
 >$addButton[1;Click Me;primary;click;no;<:yesman:775187533368786954>]
 >`
 >})
->```
 
+## Replying to the button
+>```javascript
+>bot.interactionCommand({
+>name: "click", //custom id of the button
+>prototype : 'button',
+>code: `
+>$interactionReply[Aoi.js is a cool package]
+>`
+>})
+>```
+### Available Data of the buttons
+
+`$interactionData[message.id]` => the message id to which the button has attached.
+
+`$interactionData[author.id]` => The person who clicked the button.
+
+`$interactionData[channel.id]` => The channel in which the button is located.
