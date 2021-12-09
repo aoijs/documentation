@@ -31,6 +31,7 @@
 >$interactionReply[Aoi.js is a cool package]
 >`
 >})
+>bot.onInteractionCreate()
 >```
 ### Available Data of the buttons
 
