@@ -7,17 +7,25 @@ description: Adds a title to the embed
 This function adds a title to the embed. URL for hyperlink
 
 ```text
-$title[text;url (optional)]
+$title[index;text;url (optional)]
 ```
-
-{% hint style="danger" %}
-Only use 1 per command.
-{% endhint %}
 
 ```javascript
 bot.command({
 name: "title",
-code: `$title[DBD.js]`
+code: `$title[1;Aoi.js]` //Here 1 is the index
 })
 ```
 
+Here is an example for multiple embeds with different titles
+
+```javascript
+bot.command({
+name: "multi-title",
+code: `
+$title[1;Title 1]
+$title[2;Title 2]
+$title[3;Title 3]
+`
+})
+```
