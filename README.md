@@ -21,13 +21,14 @@ _**Open Source for the Community ❦**_
 ## Installation
 
 ```js
-npm i aoi.js
+npm install aoi.js
+yarn add aoi.js
 ```
 
 **Note:**
 
 ```python
-nodejs version 16.6.0 and above is required.
+[Node.js] version v16.6.0 and newer is required.
 ```
 
 ## Setting up
