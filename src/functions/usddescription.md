@@ -8,14 +8,16 @@ This function adds an embed to your message
 
 #### Fields
 
-This function has 1 field
+This function has 2 fields
 
-1. Message \(Required\)
+1. Index \(Required\)
+2. Message \(Required\)
 
-Raw Usage: `$description[message]`
+Raw Usage: `$description[index;message]`
 
 #### Options
 
+* Index - The field that allows the message to a seperate embed description
 * Message - The message that goes into the embed description
 
 #### Usage
@@ -24,7 +26,19 @@ Raw Usage: `$description[message]`
 bot.command({
 name: "description", 
 code: `
-$description[Hello world!]` 
+$description[1;Hello world!]` 
 })
 ```
 
+You can use diffrent index for seperate embed description
+
+```javascript
+bot.command({
+name: "multi-description",
+code: `
+$description[1;Hi]
+$description[2;pogboi69 is pog]
+$description[3;69420]
+`
+})
+```
