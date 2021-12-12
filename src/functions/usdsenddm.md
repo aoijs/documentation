@@ -10,7 +10,7 @@ This function sends a dm to the specified user with &lt;message&gt;
 ### Usage
 
 ```text
-$sendMessage[message;userID;returnID (yes or no)]
+$sendDM[message;userID;returnID (yes or no)]
 ```
 
 ### Example
