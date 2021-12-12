@@ -8,7 +8,7 @@ This function allows you to add an 'author' to the embed message and an icon to 
 
 #### Fields
 
-Responding to your question, `$author[]` has 4 properties.
+Responding to your question, `$author` has 4 properties.
 
 1. index.
 2. text.
@@ -35,9 +35,11 @@ bot.command({
     name: "embed",
     code: `$author[1;This is an example!;$authorAvatar]`
 });
+```
 
-//with hyperlink
+#### With hyperlink
 
+```javascript
 bot.command({
     name: "embed",
     code: `$author[1;Aoi.js;$serverIcon;https://aoi.js.org]`
