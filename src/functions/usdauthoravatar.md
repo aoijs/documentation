@@ -10,8 +10,8 @@ This function returns the URL of the avatar of the person who ran the command.
 
 ```javascript
 bot.command({
-    name: "my-avatar",
-    code: `$image[$authorAvatar]`
+    name: "my avatar",
+    code: `$image[1;$authorAvatar]`
 });
 ```
 
