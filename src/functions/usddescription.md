@@ -17,7 +17,7 @@ Raw Usage: `$description[index;message]`
 
 #### Options
 
-* Index - The field that alots the message to a seperate embed description
+* Index - The field that allows the message to a seperate embed description
 * Message - The message that goes into the embed description
 
 #### Usage
