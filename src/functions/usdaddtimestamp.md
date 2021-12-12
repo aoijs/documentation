@@ -11,6 +11,7 @@ This function will add a time stamp in footer. Timestamp is when the message was
 This function has 2 fields
 
 1. index (required)
+2. ms (optional)
 
 Raw Usage: `$addTimestamp[index (required);ms (optional)]`
 
