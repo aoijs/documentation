@@ -4,9 +4,9 @@ description: Checks if the user has at least one of the required perms
 
 # $hasAnyPerm
 
-This functionw ill check if the user has at least one of the specified perms inside of the function.
+This function will check if the user has at least one of the specified perms inside of the function.
 
-Raw usage: `$hasAnyPerm[perm1;perm2;...]` or `$hasAnyPerm[User ID;perm1;perm2;...]`
+Raw usage: `$hasAnyPerm[guildId;userid;perm1;perm2;...]` or `$hasAnyPerm[User ID;perm1;perm2;...]`
 
 Example:
 
@@ -14,7 +14,7 @@ Example:
 bot.command({
     name: "hasperms",
     code: `
-$hasAnyPerm[addreactions;sendmessages;manageserver]
+$hasAnyPerm[$guildID;$authorID;addreactions;sendmessages;manageserver]
     `
 })
 ```
