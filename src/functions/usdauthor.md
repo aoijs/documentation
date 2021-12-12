@@ -8,16 +8,18 @@ This function allows you to add an 'author' to the embed message and an icon to 
 
 #### Fields
 
-Responding to your question, `$author[]` has 3 properties.
+Responding to your question, `$author` has 4 properties.
 
-1. text.
-2. icon URL.
-3. Hyper link \(Optional\)
+1. index.
+2. text.
+3. icon URL.
+4. Hyper link \(Optional\)
 
-Raw Usage: `$author[text;icon url;url (optional)]`
+Raw Usage: `$author[index;text;icon url;url (optional)]`
 
 #### Options
 
+* Index - Multiple embeds support
 * Text - The author text
 * icon URL - The url of the image next to the text
 * HyperLink URL - The URL of the redirect link
@@ -31,14 +33,16 @@ The image URL needs to end with `.gif`, `.png` or `.jpg`
 ```javascript
 bot.command({
     name: "embed",
-    code: `$author[This is an example!;$authorAvatar]`
+    code: `$author[1;This is an example!;$authorAvatar]`
 });
+```
 
-//with hyperlink
+#### With hyperlink
 
+```javascript
 bot.command({
     name: "embed",
-    code: `$author[Aoi.js;$serverIcon;https://aoi.js.org]`
+    code: `$author[1;Aoi.js;$serverIcon;https://aoi.js.org]`
 });
 ```
 
