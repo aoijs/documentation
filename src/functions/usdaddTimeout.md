@@ -6,6 +6,10 @@ description: Sets an user into timeout.
 
 This function sets an user into timout for a set time period
 
+{% hint style="danger" %}
+You need the client to have MODERATE_MEMBERS permission to execute this function
+{% endhint %}
+
 #### Fields
 
 This function has 2 required fields
