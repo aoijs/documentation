@@ -9,7 +9,7 @@ This function gives the guild avatar of a user
 
 #### Fields
 
-This function has fields
+This function has 1 required fields
 
 1.  guildID (Required)
 2.  userID 
