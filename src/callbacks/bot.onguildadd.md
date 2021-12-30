@@ -31,7 +31,7 @@ Ive joined $serverName!
 You can also have it send in the server where it joined by using [$systemChannelID](../functions/usdsystemchannelid.md) or [$randomChannelID](../functions/usdrandomchannelid.md).
 
 ```javascript
-bot.botJoinCommand({
+bot.guildJoinCommand({
 channel: "$systemChannelID",
 code: `
 Hi i am Awesome Bot and I can do many things.
