@@ -9,34 +9,31 @@ This function gives the guild avatar of a user
 
 #### Fields
 
-This function has 2 required fields
+This function has fields
 
-1. guildID \(Required\)
-2. userID \(Required\) 
+1.  guildID (Required)
+2.  userID 
+3.  size
+4.  dynamic
+5.  format
 
-Raw Usage: `$memberAvatar[guildID;userID;size (optional)]`
-
-#### Options
-
-* size - The size of the avatar
-
+Raw Usage: `$memberAvatar[guildid;userID?;size?;dynamic?;format?]`
 
 #### Usage
 
-Without a provided size
+Without a provided guild id, user, size, format etc.
 
 ```javascript
 bot.command({
     name: "memberavatar",
-    code: `$memberAvatar[773352845738115102;782492128784678932;]`
+    code: `$memberAvatar`
 });
 ```
 
-With a provided size
-
+With a provided guild,user, size, format etc.
 ```javascript
 bot.command({
     name: "memberavatar",
-    code: `$memberAvatar[$guildid;$mentioned[1;yes];4096]` //returns the avatar in the size of 4096
+    code: `$memberAvatar[$guildid;$mentioned[1;yes];4096;true;png]`//returns the avatar in png format with the size of 4096
 });
 ```
