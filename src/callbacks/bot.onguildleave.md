@@ -11,7 +11,7 @@ This callback will allow the bot to log a message whenever it leaves a server.
 #### Usage:
 
 ```javascript
-bot.botLeaveCommand({//command
+bot.guildLeaveCommand({//command
 channel: "channel id",//the channel where <code> will be sent to
 code: `your code`//message sent to <channel>
 })
@@ -20,7 +20,7 @@ code: `your code`//message sent to <channel>
 #### Example command:
 
 ```javascript
-bot.botLeaveCommand({
+bot.guildLeaveCommand({
 channel: "772414449839636490",
 code: `
 I have left $serverName!

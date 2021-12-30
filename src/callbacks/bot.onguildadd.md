@@ -11,7 +11,7 @@ This callback will allow the bot to log a message whenever it joins a server.
 #### Usage:
 
 ```javascript
-bot.botJoinCommand({//command
+bot.guildJoinCommand({//command
 channel: "channel id",//the channel where <code> will be sent to
 code: `your code`//message sent to <channel>
 })
@@ -20,7 +20,7 @@ code: `your code`//message sent to <channel>
 #### Example Command:
 
 ```javascript
-bot.botJoinCommand({
+bot.guildJoinCommand({
 channel: "772414449839636490",
 code: `
 Ive joined $serverName!
