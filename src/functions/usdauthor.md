@@ -15,7 +15,9 @@ Responding to your question, `$author` has 4 properties.
 3. icon URL.
 4. hyper link \(Optional field\)
 
-Raw Usage: `$author[index;text;icon url;hyperlink url (optional)]`
+Raw Usage: 
+> `$author[index;text;icon url;hyperlink url (optional)]
+`
 
 #### Options
 
@@ -31,7 +33,7 @@ The image URL needs to end with `.gif`, `.png`, `.jpeg` or `.jpg`
 #### Usage
 - Without Hyperlink:-
 
-```javascript
+ ```javascript
 bot.command({
     name: "embed",
     code: `$author[1;Aoi.js;$serverIcon]`
