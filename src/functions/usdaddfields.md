@@ -1,17 +1,23 @@
 ---
-description: addFields allows you to adds more fields to your embed.
+description: Allows you to adds more fields to your embed.
 ---
 
 # $addFields
 
 This function is in charge of adding new fields to the embed, these containing a limit of 1000 characters each and allowing to use 10 fields in each function.
 
+## Fields
+1. index (required)
+2. text (required)
+3. value (required)
+4. inline (optional)
+
 #### Raw Usage:
 ```php
 $addFields[index;text;value;inline]
 ```
 
-## Fields
+## Options
 
 | Field | Description | Type | Required |
 | :--- | :--- | :--- | :--- |
