@@ -6,11 +6,18 @@ description: addField allows you to add more fields in your embed.
 
 This function is in charge of adding a new field to the embed, these containing a limit of 1024 characters each and allowing to use 25 fields per embed.
 
+## Fields
+1. index (required)
+2. text (required)
+3. value (required)
+4. inline (optional)
+
+#### Raw Usage
 ```php
 $addField[index;text;value;inline]
 ```
 
-## Fields
+## Options
 
 | Field | Description | Type | Required |
 | :--- | :--- | :--- | :--- |
@@ -19,9 +26,9 @@ $addField[index;text;value;inline]
 | value | The field value. | string | yes |
 | inline | The field inline. | boolean | no |
 
-## Examples
+## Usage
 
-Without inline
+- Without inline
 
 ```javascript
 bot.command({
@@ -30,7 +37,7 @@ bot.command({
 });
 ```
 
-With inline
+- With inline
 
 ```javascript
 bot.command({
