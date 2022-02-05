@@ -44,7 +44,7 @@ $abbreviate[5000]
 bot.command({
 name: "abbr",
 code: `
-$onlyIf[$isNum[$message]==true; Message must be a number.] 
+$onlyIf[$isNumber[$message]==true; Message must be a number.] 
 $abbreviate[$message]
 `
 //$onlyIf is used here to check if the message is number or not.
