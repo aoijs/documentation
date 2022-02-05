@@ -47,7 +47,7 @@ code: `
 $onlyIf[$isNum[$message]==true; Message must be a number.] 
 $abbreviate[$message]
 `
-//$onlyIf is used to check if the message is number or not.
+//$onlyIf is used here to check if the message is number or not.
 })
 ```
 
