@@ -27,7 +27,7 @@ $addEmoji[guildId;url;name;reason;roleId1;roleId2;...]
 ```
 
 {% hint style="warning" %}
-URL NEEDS to end in `.gif`, `.png`, `.jpeg`, `webp` or `.jpg`
+URL NEEDS to end in `.gif`, `.png`, `.jpeg`, `.webp` or `.jpg`
 {% endhint %}
 
 ## Options:
