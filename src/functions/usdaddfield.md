@@ -1,5 +1,5 @@
 ---
-description: addField allows you to add more fields in your embed.
+description: Allows you to add more fields in your embed.
 ---
 
 # $addField
