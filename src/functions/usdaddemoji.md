@@ -1,5 +1,5 @@
 ---
-description: Add a Emoji to the Guild.
+description: Adds a Emoji to the Guild.
 ---
 
 # $addEmoji
@@ -21,14 +21,14 @@ The order it's the next:
 4. reason \(Optional\)
 5. roleIDs \(optional\)
 
+{% hint style="warning" %}
+URL NEEDS to end in `.gif`, `.png`, `.jpeg`, `.webp` or `.jpg`
+{% endhint %}
+
 #### Raw Usage: 
 ```php
 $addEmoji[guildId;url;name;reason;roleId1;roleId2;...]
 ```
-
-{% hint style="warning" %}
-URL NEEDS to end in `.gif`, `.png`, `.jpeg`, `.webp` or `.jpg`
-{% endhint %}
 
 ## Options:
 
