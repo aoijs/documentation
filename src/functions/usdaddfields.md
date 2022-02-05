@@ -20,7 +20,7 @@ $addFields[index;text;value;inline]
 | value | The value field. | string | yes |
 | inline | The  inline field. | boolean | no |
 
-#### Usage
+## Usage
 
 - Without inline
 
