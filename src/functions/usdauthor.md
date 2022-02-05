@@ -6,7 +6,7 @@ description: Sets the author in an embed message and authorIcon if it's specifie
 
 This function allows you to add an 'author' to the embed message and an icon or a URL if specified to the author.
 
-#### Fields
+## Fields
 
 Responding to your question, `$author` has 4 properties.
 
@@ -16,10 +16,11 @@ Responding to your question, `$author` has 4 properties.
 4. hyper link \(Optional field\)
 
 Raw Usage: 
-> `$author[index;text;icon url;hyperlink url (optional)]
-`
+ ```php
+$author[index;text;icon url;hyperlink url (optional)]
+```
 
-#### Options
+## Options
 
 * Index - Multiple embeds support.
 * Text - The author text.
@@ -30,7 +31,7 @@ Raw Usage:
 The image URL needs to end with `.gif`, `.png`, `.jpeg` or `.jpg`
 {% endhint %}
 
-#### Usage
+## Usage
 - Without Hyperlink:-
 
  ```javascript
