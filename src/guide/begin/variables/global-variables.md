@@ -16,13 +16,13 @@ The value will be the same for everyone in every guild
 
 ### Setting Variable
 
-```text
+```php
 $setVar[Variable;Value]
 ```
 
 ### Retrieving Variable
 
-```text
+```php
 $getVar[Variable]
 ```
 
@@ -32,13 +32,13 @@ The value will be assigned to a user and it will be the same for every guild
 
 ### Setting a variable
 
-```text
+```php
 $setGlobalUserVar[Variable;Value;User ID (optional)]
 ```
 
 ### Retrieving Variable
 
-```text
+```php
 $getGlobalUserVar[Variable;User ID (Optional)]
 ```
 
