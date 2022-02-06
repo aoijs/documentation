@@ -5,13 +5,13 @@ description: Returns current year.
 
 # $year
 
-This function returns the current year
+This function returns the current year.
 
 ```javascript
 bot.command({
 name: "year",
 code: `Year: $year`
-//Returns: 2021
+//Returns: 2022
 })
 ```
 
