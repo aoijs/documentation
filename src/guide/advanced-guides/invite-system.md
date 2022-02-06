@@ -1,3 +1,8 @@
+---
+description: Used to track invites by user.
+
+---
+
 # Invite System
 
 ## Introduction
