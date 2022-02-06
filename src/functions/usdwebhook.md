@@ -1,22 +1,28 @@
+---
+description: Returns webhook's specified property.
+
+---
+
 # $webhook
 
 This function returns the given webhook's specified property
 
-#### Usage
-
-This function has 2 fields
+## Fields
 
 1. URL \(Required\)
 2. Property \(Required\)
 
-Raw Usage: `$webhook[URL;property]`
+#### Raw Usage: 
+```php
+$webhook[URL;property]
+```
 
-#### Options
+## Options
 
 * URL - The webhook's url the porperties are based off of
 * Property - The property of the &lt;webhook&gt;
 
-#### Available Properties
+## Available Properties
 
 * name - Webhook's name
 * id - Webhook's id
