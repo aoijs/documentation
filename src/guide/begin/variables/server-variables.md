@@ -10,7 +10,7 @@ description: Information that will be saved to per Guild.
 Make sure, you have the variables added already.
 {% endhint %}
 
-```text
+```php
 $setServerVar[Variable;Value;Guild ID (Optional)]
 ```
 
@@ -20,7 +20,7 @@ $setServerVar[Variable;Value;Guild ID (Optional)]
 Make sure, you have the variables added already.
 {% endhint %}
 
-```text
+```php
 $getServerVar[Variable;Guild ID (Optional)]
 ```
 
