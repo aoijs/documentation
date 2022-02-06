@@ -6,7 +6,7 @@ description: Returns the amount of bots in the server.
 
 This function will show the number of bots that are registered on the server.
 
-#### Usage
+## Usage
 
 ```javascript
 bot.command({
