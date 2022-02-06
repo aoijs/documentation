@@ -1,3 +1,8 @@
+---
+description: Returns current year.
+
+---
+
 # $year
 
 This function returns the current year
