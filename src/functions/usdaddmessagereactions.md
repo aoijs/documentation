@@ -6,9 +6,7 @@ description: Adds a reaction to the given message ID
 
 This function will add a reaction to the specified message ID
 
-#### Fields
-
-This function has 3 required fields
+## Fields
 
 1. Channel ID \(Required\)
 2. Message ID \(Required\)
@@ -16,17 +14,20 @@ This function has 3 required fields
 4. Reaction 2 \(Optional\)
 5. Etc
 
-Raw usage: `$addMessageReactions[Channel ID;Message ID;Reaction 1;Reaction 2,...]`
+#### Raw usage: 
+```php
+$addMessageReactions[Channel ID;Message ID;Reaction 1;Reaction 2,...]
+```
 
-#### Options
+## Options
 
 * Channel ID - The channel of which the &lt;messageID&gt; is situated in
 * Message ID - The message of which the reactions will react to
 * Reaction - The emojis of which will be reacted to the &lt;message&gt;
 
-#### Usage
+## Usage
 
-Singular Reaction
+- Singular Reaction
 
 ```javascript
 bot.command({
@@ -38,7 +39,7 @@ bot.command({
 });
 ```
 
-Multiple Reactions
+- Multiple Reactions
 
 ```javascript
 bot.command({
