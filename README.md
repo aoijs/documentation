@@ -1,13 +1,12 @@
 # Introduction
 
-## aoi.js
+## Aoi.js
 
 **Welcome To The Home Page Of aoi.js Documentation.**
-<img src = "./.gitbook/assets/aoi_banner.jpg">
 
 ## Introduction
+<img src = "./.gitbook/assets/aoi_banner.jpg">
 
-![](https://aoi.js.org/assets/images/aoijs-new.png)
 
 [![Discord Server](https://img.shields.io/discord/773352845738115102?color=5865F2\&logo=discord\&logoColor=white)](https://aoi.js.org/invite) [![NPM Version](https://img.shields.io/npm/v/aoi.js.svg?maxAge=3600)](https://www.npmjs.com/package/aoi.js) [![NPM Downloads](https://img.shields.io/npm/dt/aoi.js.svg?maxAge=3600)](https://www.npmjs.com/package/aoi.js)
 
