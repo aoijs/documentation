@@ -10,7 +10,7 @@ Setting the value, of the users.
 Make sure, you have the variables added already.
 {% endhint %}
 
-```text
+```php
 $setUserVar[Variable;Value;User ID (Optional);Guild ID (Optional)]
 ```
 
@@ -20,7 +20,7 @@ $setUserVar[Variable;Value;User ID (Optional);Guild ID (Optional)]
 Make sure, you have the variables added already.
 {% endhint %}
 
-```text
+```php
 $getUserVar[Variable;User ID (Optional);Guild ID (Optional)]
 ```
 
