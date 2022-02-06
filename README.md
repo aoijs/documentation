@@ -2,7 +2,8 @@
 
 ## aoi.js
 
-**Welcome To The Home Page Of aoi.js Documentation**
+**Welcome To The Home Page Of aoi.js Documentation.**
+<img src = "./gitbook/assets/aoi_banner.jpg">
 
 ## Introduction
 
