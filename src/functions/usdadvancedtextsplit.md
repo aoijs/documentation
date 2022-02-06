@@ -1,31 +1,36 @@
+---
+description: Allows us to split a message for multiple times.
+---
+
 # $advancedTextSplit
 
 {% hint style="warning" %}
 WARNING: This function is only recommended to use as advanced Aoi.js user because it's hard to understand.
 {% endhint %}
 
-This function basically allows you to have multiple splits in 1 message
+This function basically allows you to have multiple splits in 1 message.
 
-#### Fields
-
-This function has 3 required fields
+## Fields
 
 1. text \(Required\)
 2. separator \(Required\)
 3. index \(Required\)
 4. separator2 \(Optional\)
 5. index2 \(Optional\)
-6. Etc
+6. Etc.
 
-Raw Usage: `$advancedTextSplit[text;separator;index;separator2;index2;...]`
+#### Raw Usage: 
+```php
+$advancedTextSplit[text;separator;index;separator2;index2;...]
+```
 
-#### Options
+## Options
 
 * text - The text we are grabbing from
 * separator - The separator of the text which is used for the index
 * index - the position of the certain text we want to pull from &lt;text&gt; depending the &lt;separator&gt;
 
-#### Usage
+## Usage
 
 ```javascript
 bot.command({
