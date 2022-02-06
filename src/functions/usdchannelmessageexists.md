@@ -6,21 +6,22 @@ description: Checks if given message exists in the given channel. Returns true/f
 
 This function will check if the indicated message exists on the indicated channel, as result will return true/false depending if it exists or not.
 
-#### Fields
-
- This function has 2 fields
+## Fields
 
 1. Channel ID 
 2. Message ID
 
-Raw Usage: `$messageExists[channelID;messageID]`
+####Raw Usage: 
+```php
+$messageExists[channelID;messageID]
+```
 
-#### Options
+## Options
 
 * Channel ID - The channel of which the &lt;messageID&gt; is located in
 * Message ID - The message ID that we're looking to see if it exists in &lt;channel ID&gt;
 
-#### Usage
+## Usage
 
 ```javascript
 bot.command({
