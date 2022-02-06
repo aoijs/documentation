@@ -1,31 +1,37 @@
+---
+description: Returns channel permission overwrites.
+
+---
+
 # $channelOverwrites
 
 This function returns the channel permission overwrites
 
-#### Fields
-
-This function has 3 optional fields
+## Fields
 
 1. Channel ID \(Optional\)
 2. Properties \(Optional\)
 3. Separator \(Optional\)
 
-Raw usage: `$channelOverwrites[channelID (optional);properties (optional);separator (optional)]`
+#### Raw usage: 
+```php
+$channelOverwrites[channelID (optional);properties (optional);separator (optional)]
+```
 
-#### Options
+## Options
 
 * Channel ID - The channel we're getting the permissions from
 * Properties - The properties that'll be displayed 
 * Separator - To separate each permission
 
-#### Properties 
+## Properties 
 
 * {type} - Channel Type
 * {mention} - Mention's the channel
 * {allowed} - The allowed perms
 * {denied} - The denied perms
 
-Example:
+## Usage
 
 ```javascript
 //Without the optional fields
