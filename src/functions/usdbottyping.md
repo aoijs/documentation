@@ -4,21 +4,22 @@ description: Displays the bot as typing
 
 # $botTyping
 
-This function just displays the bot as 'Typing'
+This function just displays the bot as 'Typing'.
 
-#### Fields
-
-This function has 1 optional field
+## Fields
 
 1. time (Optional)
 
-Raw Usage: `$botTyping[time (Optional)]`
+#### Raw Usage: 
+```php
+$botTyping[time (Optional)]
+```
 
-#### Options
+## Options
 
 * Time - Set how long the bot is typing for
 
-#### Usage
+## Usage
 
 ```javascript
 bot.command({
