@@ -4,15 +4,14 @@ description: Checks if a webhook exists
 
 # $webhookExists
 
-$webhookExists\[webhookID;webhookToken\]
+This function checks if the given credentials lead to an existing webhook.
 
-This function checks if the given credentials lead to an existing webhook
-
-```javascript
+#### Raw Usage
+```php
 $webhookExists[webhookID;webhookToken]
 ```
 
-Now lets use it
+Now lets use it:
 
 ```javascript
 bot.command({
