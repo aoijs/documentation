@@ -4,11 +4,9 @@ description: Awaits a message from given user ID or everyone in this channel.
 
 # $awaitMessages
 
-This function will respond to a user if the user says the given word(s) in the `reply` slot
+This function will respond to a user if the user says the given word(s) in the `reply` slot.
 
 ## Fields
-
-This function has 6 required fields
 
 1. Filter (Required)
 2. Time (Required)
@@ -18,9 +16,12 @@ This function has 6 required fields
 6. UserID (Optional)
 7. Reply2 (Optional)
 8. Awaited Command 2 (Optional)
-9. Etc
+9. Etc.
 
-Raw Usage: `$awaitMessages[Filter;time;reply,reply2,...;awaitedCommand1,awaitedCommand2,...;error message;User ID (Optional)]`
+#### Raw Usage: 
+```php
+$awaitMessages[Filter;time;reply,reply2,...;awaitedCommand1,awaitedCommand2,...;error message;User ID (Optional)]
+```
 
 ## Options
 
