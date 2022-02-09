@@ -9,15 +9,17 @@ This function shows the current activity of the indicated user \(Only if it dete
 ## Fields
 
 1. userID \(optional\)
+2. guildID (optional)
 
 Raw Usage: 
 ```php
-$activity[userID (optional)]
+$activity[userID (optional); guildID (optional)]
 ```
 
 ## Options
 
 * userID - The user the activity is based on
+* guildID - The guild where activity is happening.
 
 ## Activities
 
@@ -37,12 +39,12 @@ bot.command({
 });
 ```
 
-- With a user ID
+- With a user ID and guild ID
 
 ```javascript
 bot.command({
     name: "activity",
-    code: `$activity[535566311942651924]`
+    code: `$activity[$authorID;$guildID]`
 });
 ```
 
