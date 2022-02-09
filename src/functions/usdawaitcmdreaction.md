@@ -1,3 +1,6 @@
+---
+description: Makes the bot reply when the user reacts with the emoji!
+---
 # $awaitCmdReaction
 
 This function will make the bot reply when a user reacts with the given emoji to the command \(ex: !test\)
@@ -11,10 +14,11 @@ This function will make the bot reply when a user reacts with the given emoji to
 4. reaction \(Required\)
 5. awaitedCommand \(Required\)
 6. error \(Optional\)
+7. data (optional)
 
 #### Raw Usage: 
 ```php
-$awaitCmdReaction[userFilter;time;bot message;reaction1,reaction2,...;awaitedCommand1,awaitedCommand2,...;error message (optional)]
+$awaitCmdReaction[userFilter;time;bot message;reaction1,reaction2,...;awaitedCommand1,awaitedCommand2,...;error message (optional);data (optional)]
 ```
 
 ## Options
@@ -25,19 +29,22 @@ $awaitCmdReaction[userFilter;time;bot message;reaction1,reaction2,...;awaitedCom
 * reaction - The reaction that will execute the awaitedCommand when reacted
 * awaitedCommand - The awaitedCommand name that will be executed
 * error - The message when the time runs out
+* data - Used to display awaited data.
 
 ## Usage
 
 ```javascript
 bot.command({
 name: "test",
-code: `$awaitCmdReaction[$authorID;1m;React with 1️⃣ and I'll reply;1️⃣;reactionMessage;Command Timed out] !
+code: `$awaitCmdReaction[$authorID;1m;React with 1️⃣ and I'll reply;1️⃣;reactionMessage;Command Timed out;{"author":"$get[author]"}]
+$let[author;$authorID]
 `
 }) //This will execute the awaited command if the user reacts
 
 bot.awaitedCommand({
 name: "reactionMessage",
-code: `Hi, You reacted to 1️⃣ and now i responded!`
+code: `Hi, <@$awaitData[author]> reacted to 1️⃣ and now i responded!
+`
 }) //This will respond when the user reacted
 ```
 
