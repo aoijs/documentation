@@ -20,22 +20,22 @@ Once this has installed you can begin the following file `index.js` to setup aoi
 
 {% tabs %}
 {% tab title="index.js" %}
-```javascript
+```js
 const aoijs = require("aoi.js")
 
 const bot = new aoijs.Bot({
-token: "TOKEN", //Discord Bot Token
-prefix: "PREFIX", //Discord Bot Prefix
-intents: "all" //Discord Intents
+token: "DISCRD BOT TOKEN",
+prefix: "DISCRD BOT PREFIX",
+intents: ["GUILDS", "GUILD_MESSAGES"]
 })
 
 //Events
 bot.onMessage()
 
-//Command Example
+//Command Example (ping)
 bot.command({
 name: "ping",
-code: `Pong! \`$ping\`ms`
+code: `Pong! $pingms`
 })
 
 //Ready Event
