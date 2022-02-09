@@ -20,14 +20,10 @@ _**Open Source for the Community ❦**_
 
 ## Installation
 
-```js
-npm i aoi.js
-```
+**Node.JS 16.6.0 or newer is required.**  
 
-**Note:**
-
-```python
-nodejs version 16.6.0 and above is required.
+```sh-session
+npm install aoi.js
 ```
 
 ## Setting up
@@ -57,15 +53,9 @@ bot.readyCommand({
 })
 ```
 
-### GitHub
-
-* [**aoijs**](https://github.com/aoijs/aoi.js)
-
-### Contribution
-
-* [**Contribution GuideLines**](https://github.com/aoijs/aoi.js/blob/master/.github/CONTRIBUTING.md)
-
-### Misc
-
-* [**Discord Server Invite**](https://aoi.js.org/invite)
-* [**Website**](https://aoi.js.org)
+## Links
+- [Website](https://aoi.js.org)
+- [NPM](https://www.npmjs.com/package/aoi.js)
+- [Github](https://github.com/AkaruiDevelopment/aoi.js)
+- [Discord Server](https://discord.gg/HMUfMXDQsV)
+- [Documentation](https://akarui.leref.ga/v/aoi.js/)
