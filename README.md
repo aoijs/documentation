@@ -37,7 +37,7 @@ _Open Source for the Community ❤️_
 npm i aoi.js
 ```
 
-**Note:**
+- **Note:**
 
 ```python
 nodejs version 16.6.0 and above is required.
@@ -94,15 +94,46 @@ bot.joinCommand({
 bot.onJoined()
 ```
 
-### GitHub
+### Slash Commands
 
-* [**aoijs**](https://github.com/aoijs/aoi.js)
+- With easy and simple functions, you can make Slash Commands with your Bots quick!
+
+```js
+bot.command({
+    name: "slash",
+    code: `$createSlashCommand[$guildID;version;Returns Aoi.js Version]`
+})
+bot.interactionCommand({
+    name: "version", 
+    code: `$interactionReply[$packageVersion]`
+})
+bot.onInteractionCreate()
+```
+
+
+## Music
+
+With our powerful Package, we incorporated Music with several functions. We allowed customization and control over what you want.
+
+- #### Music Setup Example
+
+```js
+bot.command({
+name: "play", //Trigger name (command name)
+code: `$playSong[song;leave vc time;defean (yes or no);leave when vc empty (yes/no);error]`
+//Code
+})
+```
+
+## Links
+
+Aoi.JS was made by [Aoi.JS Team](https://aoi.js.org)
+
+* [Website](https://aoi.js.org)
+* [Discord Server](https://aoi.js.org/invite)
+* [Documentation](https://aoi.leref.ga)
+* [GitHub](https://github.com/AkaruiDevelopment/aoi.js)
 
 ### Contribution
 
 * [**Contribution GuideLines**](https://github.com/aoijs/aoi.js/blob/master/.github/CONTRIBUTING.md)
-
-### Misc
-
-* [**Discord Server Invite**](https://aoi.js.org/invite)
-* [**Website**](https://aoi.js.org)
