@@ -1,3 +1,7 @@
+---
+description: Welcome to the Official Aoi.js Documentation Home Page.
+---
+
 ## Introduction
 <img src = "./.gitbook/assets/aoi.png">
 
