@@ -4,40 +4,44 @@ description: Sets the author in an embed message and authorIcon if it's specifie
 
 # $author
 
-This function allows you to add an 'author' to the embed message and an icon to the author if a URL is specified.
+This function allows you to add an 'author' to the embed message and an icon or a URL if specified to the author.
 
-#### Fields
+## Fields
 
 Responding to your question, `$author` has 4 properties.
 
 1. index.
 2. text.
 3. icon URL.
-4. Hyper link \(Optional\)
+4. hyper link \(Optional field\)
 
-Raw Usage: `$author[index;text;icon url;url (optional)]`
+Raw Usage: 
+ ```php
+$author[index;text;icon url;hyperlink url (optional)]
+```
 
-#### Options
+## Options
 
-* Index - Multiple embeds support
-* Text - The author text
-* icon URL - The url of the image next to the text
-* HyperLink URL - The URL of the redirect link
+* Index - Multiple embeds support.
+* Text - The author text.
+* Icon URL - The url of the image next to the text.
+* HyperLink URL - The URL of the redirect link.
 
 {% hint style="warning" %}
-The image URL needs to end with `.gif`, `.png` or `.jpg`
+The image URL needs to end with `.gif`, `.png`, `.jpeg` or `.jpg`
 {% endhint %}
 
-#### Usage
+## Usage
+- Without Hyperlink:-
 
-```javascript
+ ```javascript
 bot.command({
     name: "embed",
-    code: `$author[1;This is an example!;$authorAvatar]`
+    code: `$author[1;Aoi.js;$serverIcon]`
 });
 ```
 
-#### With hyperlink
+- With Hyperlink:-
 
 ```javascript
 bot.command({

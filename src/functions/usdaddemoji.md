@@ -1,5 +1,5 @@
 ---
-description: Add a Emoji to the Guild.
+description: Adds a Emoji to the Guild.
 ---
 
 # $addEmoji
@@ -10,20 +10,27 @@ This function takes care of automatically adding an emoji to the server using th
 The URL of the original image must be under 256kb in size.
 {% endhint %}
 
-#### Fields:
+## Fields:
 
 This function has 3 properties who are required and another 2 optional.  
 The order it's the next:
 
-1. guildId \(Required\) 
+1. guildID \(Required\) 
 2. URL \(Required\)
-3. Name \(Required\)
+3. name \(Required\)
 4. reason \(Optional\)
 5. roleIDs \(optional\)
 
-Raw Usage: `$addEmoji[guildId;url;name;reason;roleId1;roleId2;...]`
+{% hint style="warning" %}
+URL NEEDS to end in `.gif`, `.png`, `.jpeg`, `.webp` or `.jpg`
+{% endhint %}
 
-#### Options:
+#### Raw Usage: 
+```php
+$addEmoji[guildId;url;name;reason;roleId1;roleId2;...]
+```
+
+## Options:
 
 * `guildId` - The guild ID for the emoji will be added
 * `URL` - The url of the image/gif that's being converted to an emoji
@@ -31,9 +38,8 @@ Raw Usage: `$addEmoji[guildId;url;name;reason;roleId1;roleId2;...]`
 * `reason` =&gt; The reason why emoji added
 * `roleIDs` =&gt; Array of roles' IDs they should have access to that emoji. Only members with these role would have access to see and use that emoji. Leave it empty to set to everyone.
 
-An example of the use should be the next:
 
-#### Usage
+## Usage
 
 ```javascript
 bot.command({
@@ -42,7 +48,4 @@ bot.command({
 });
 ```
 
-{% hint style="warning" %}
-URL NEEDS to end in `.gif`, `.png` or `.jpg`
-{% endhint %}
 

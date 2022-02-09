@@ -10,13 +10,13 @@ Make sure you've already created the variable
 
 ### Setting the channel variable
 
-```text
+```php
 $setChannelVar[variable;value;channelID (optional)]
 ```
 
 ### Retrieving the variable value
 
-```text
+```php
 $getChannelVar[variable;channelID (optional)]
 ```
 

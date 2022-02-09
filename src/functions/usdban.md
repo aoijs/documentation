@@ -6,25 +6,26 @@ description: Bans an user from the guild using their ID.
 
 This function allows you to ban someone from the server using their user ID.
 
-#### Fields
-
-This function has 4 properties, 1 required and 2 optional.
+## Fields
 
 1. User ID.
 2. Guild ID (optional).
 3. MessagesToDelete\(In days, optional\)
 4. Reason \(Optional\)
 
-Raw Usage: `$ban[userID;guildID (optional);MessagesToDelete (Optional);reason (Optional)]`
+#### Raw Usage: 
+```php
+$ban[userID;guildID (optional);MessagesToDelete (Optional);reason (Optional)]
+```
 
-#### Options
+## Options
 
 * UserID - The user the bot is banning
 * GuildID - The server ID where you are banning
 * MessagesToDelete - How many of the messages over x days to delete of the banned user
 * Reason - The reason in the audit logs
 
-#### Usage
+## Usage
 
 ```javascript
 bot.command({

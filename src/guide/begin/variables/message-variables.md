@@ -10,13 +10,13 @@ Make sure you've created the variable already
 
 ## Setting the message var
 
-```text
+```php
 $setMessageVar[variable;value;messageID]
 ```
 
 ### Retrieving the message var
 
-```text
+```php
 $getMessageVar[variable;messageID]
 ```
 

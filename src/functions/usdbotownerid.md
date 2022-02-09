@@ -1,20 +1,26 @@
+---
+description: Returns the ID of the bot's owner.
+
+---
+
 # $botOwnerID
 
-This function returns the ID\(s\) of the bot's owners
+This function returns the ID\(s\) of the bot's owners.
 
-#### Fields
-
-This function has 1 optional field
+## Fields
 
 1. Separator \(Optional\)
 
-Raw Usage: `$botOwnerID[separator (optional)`
+#### Raw Usage: 
+```php
+$botOwnerID[separator (optional)
+```
 
-#### Options
+## Options
 
 * Separator - The symbol/letter that separates the 2 or more ids \(if the bot has 2 or more owners\)
 
-#### Usage
+## Usage
 
 ```javascript
 bot.command({

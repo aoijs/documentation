@@ -8,12 +8,13 @@ This function will add a time stamp in footer. Timestamp is when the message was
 
 ## Fields
 
-This function has 2 fields
-
 1. index (required)
 2. ms (optional)
 
-Raw Usage: `$addTimestamp[index (required);ms (optional)]`
+#### Raw Usage: 
+```php
+$addTimestamp[index (required);ms (optional)]
+```
 
 ## Usage
 
@@ -30,7 +31,7 @@ $addTimestamp[1]
 
 ![](<../../.gitbook/assets/image (39) (2) (2) (2) (3) (1).png>)
 
-You can also add some text at the footer!
+- You can also add some text at the footer!
 
 ```javascript
 bot.command({

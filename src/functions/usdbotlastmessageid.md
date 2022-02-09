@@ -1,3 +1,8 @@
+---
+description: Returns the ID of the last message sent by the bot .
+
+---
+
 # $botLastMessageID
 
 This function will return the ID of the last message send by the bot.

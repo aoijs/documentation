@@ -6,19 +6,20 @@ description: Adds an attachment to the message.
 
 This function allows you to add 'attachments' to a message, like images or videos.
 
-#### Fields
-
-This function has 1 field
+## Fields
 
 1. URL \(Required\)
 
-Raw Usage: `$attachment[url]`
+#### Raw Usage: 
+```php
+$attachment[url]
+```
 
-#### Options
+## Options
 
 * URL - The url of the image/gif/video of which you want the bot to send
 
-#### Usage
+## Usage
 
 ```javascript
 bot.command({
