@@ -16,11 +16,11 @@ This function will respond to a user if the user says the given word(s) in the `
 6. UserID (Optional)
 7. Reply2 (Optional)
 8. Awaited Command 2 (Optional)
-9. Etc.
+9. Data (Optional)
 
 #### Raw Usage: 
 ```php
-$awaitMessages[Filter;time;reply,reply2,...;awaitedCommand1,awaitedCommand2,...;error message;User ID (Optional)]
+$awaitMessages[Filter;time;reply,reply2,...;awaitedCommand1,awaitedCommand2,...;error message;User ID (Optional);data (optional)]
 ```
 
 ## Options
@@ -30,20 +30,22 @@ $awaitMessages[Filter;time;reply,reply2,...;awaitedCommand1,awaitedCommand2,...;
 * Reply - The message the user must send in order to execute the awaited command
 * Awaited Command - The awaited command name
 * Error Message - The message when the time hits x
-* User ID - This will determine if the bot should/shouldn't await a message in a user's DM
+* User ID - This will determine if the bot should/shouldn't await a message in a user's DM.
+* Data - Used to display awaited data.
 
 ## Usage
 
 ```javascript
 bot.command({
     name: "test",
-    code: `$awaitMessages[$authorID;5s;Hello;Hi;Command Timed out] 
-    Say Hello
+    code: `$awaitMessages[$authorID;5s;Hello;Hi;Command Timed out;{"author":"$get[author]"}]
+$let[author;$userTag] 
+Say Hello
 `
 }) //When the user says 'Hello' it will execute the given awaited command name
 bot.awaitedCommand({
     name: "Hi",
-    code: `Hello $username
+    code: `Hello $awaitData[author]
 `
 }) //This will respond when the user says 'Hello'
 ```
