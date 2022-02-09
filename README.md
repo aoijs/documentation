@@ -30,9 +30,20 @@ _Open Source for the Community ❤️_
 * [Links](https://www.npmjs.com/package/aoi.js#links)
  
 
-## Examples
 
-- ### Setup
+## Installation
+
+```js
+npm i aoi.js
+```
+
+**Note:**
+
+```python
+nodejs version 16.6.0 and above is required.
+```
+
+## Setting up
 
 ```js
 const Aoijs = require("aoi.js")
@@ -53,6 +64,8 @@ bot.readyCommand({
     code: `$log[Ready on $userTag[$clientID]]` //Enter the code / message.
 })
 ```
+
+## Additional Settings
 
 ### Variables
 
