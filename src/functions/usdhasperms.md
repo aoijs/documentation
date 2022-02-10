@@ -10,9 +10,9 @@ This function checks if the given user has the given permission. Returns boolean
 bot.command({
 name: "check", 
 code: `
-$hasPerms[$authorID;admin]`
+$hasPerms[$guildID;$authorID;admin]`
 /*
-This will check if the author has the permission 'Administrator'
+This will check if the author in a particular guild has the permission 'Administrator'
 */
 })
 ```
