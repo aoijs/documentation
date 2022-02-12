@@ -9,7 +9,7 @@ coverY: 0
 **Welcome To The Home Page Of aoi.js Documentation!**
 
 ## About
-<img src = "../.gitbook/assets/aoi.png">
+<img src = "./assets/aoi.png">
 
 
 Aoi.js is a package with customization and ready-to-use functions to make Discord Bots with ease.
