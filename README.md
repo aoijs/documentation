@@ -87,9 +87,9 @@ bot.variables({
 It's simple and easy process, it essentially allows you to trigger events, such as user joining a Guild. This will trigger an event, causing commands with supported type for each callbacks to be executed such as.
 
 ```js
-bot.joinCommand({
-        channel: "Channel ID", //Enter a Channel ID
-        code: `<@$authorID> just joined, welcome!` //This can be changed
+bot.joinCommand({ //command
+channel: "channel id", //channel where it will log
+code: `your code` //Message sent to <channel>
 })
 bot.onJoined()
 ```
