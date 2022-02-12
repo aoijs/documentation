@@ -91,7 +91,7 @@ bot.joinCommand({ //command
 channel: "channel id", //channel where it will log
 code: `your code` //Message sent to <channel>
 })
-bot.onJoined()
+bot.onJoin()
 ```
 
 ### Slash Commands
