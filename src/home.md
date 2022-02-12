@@ -1,5 +1,5 @@
 ---
-description: Home Page of Aoi.js Documentation.
+coverY: 0
 ---
 
 # 👋 Introduction
@@ -9,7 +9,7 @@ description: Home Page of Aoi.js Documentation.
 **Welcome To The Home Page Of aoi.js Documentation!**
 
 ## About
-<img src = "../.gitbook/assets/aoi_banner.jpg">
+<img src = "../.gitbook/assets/aoi.png">
 
 
 Aoi.js is a package with customization and ready-to-use functions to make Discord Bots with ease.
