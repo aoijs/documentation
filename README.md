@@ -100,11 +100,17 @@ bot.onJoined()
 
 ```js
 bot.command({
-    name: "slash",
-    code: `$createSlashCommand[$guildID;version;Returns Aoi.js Version]`
+name: "create",
+code: `$createApplicationCommand[$guildID;aoijs;a cool slash command for aoi.js;true]`
+/*
+    Code Breakdown:
+This will make a slashcommand named "aoijs" (meaning you'd do /aoijs),
+the description will say "a cool slash command for aoijs"
+*/
 })
+
 bot.interactionCommand({
-    name: "version", 
+    name: "aoijs", 
     code: `$interactionReply[$packageVersion]`
 })
 bot.onInteractionCreate()
