@@ -37,11 +37,10 @@ _Open Source for the Community ❤️_
 npm i aoi.js
 ```
 
-- **Note:**
+#### Note:
 
-```python
-nodejs version 16.6.0 and above is required.
-```
+- Node.js version 16.6.0 and above is required.
+
 
 ## Setting up
 
