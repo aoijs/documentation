@@ -109,11 +109,18 @@ the description will say "a cool slash command for aoijs"
 */
 })
 
+// Initializing the slash command
+
 bot.interactionCommand({
-    name: "aoijs", 
-    code: `$interactionReply[$packageVersion]`
+name: "aoijs", 
+prototype : 'slash',
+code: `$interactionReply[AOIjs is an awesome package!]`
+/*
+The code will be execute once /aoijs has been ran
+*/
 })
 bot.onInteractionCreate()
+
 ```
 
 
@@ -125,10 +132,10 @@ Check out the [docs](https://akaruidevelopment.github.io/music/) for more inform
 
 ## Links
 
-Aoi.JS was made by [Aoi.JS Team](https://aoi.js.org)
+Aoi.JS was made by [Aoi.JS Team](https://akarui.leref.ga)
 
-* [Website](https://aoi.js.org)
-* [Discord Server](https://aoi.js.org/invite)
+* [Website](https://aoi.leref.ga)
+* [Discord Server](https://aoi.leref.ga/invite)
 * [Documentation](https://aoi.leref.ga)
 * [GitHub](https://github.com/AkaruiDevelopment/aoi.js)
 
