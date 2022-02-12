@@ -113,17 +113,9 @@ bot.onInteractionCreate()
 
 ## Music
 
-With our powerful Package, we incorporated Music with several functions. We allowed customization and control over what you want.
+With our new addition of music properties to Aoi.js, you can use music features in v5 too.
+Check out the [docs](https://akaruidevelopment.github.io/music/) for more information!
 
-- #### Music Setup Example
-
-```js
-bot.command({
-name: "play", //Trigger name (command name)
-code: `$playSong[song;leave vc time;defean (yes or no);leave when vc empty (yes/no);error]`
-//Code
-})
-```
 
 ## Links
 
