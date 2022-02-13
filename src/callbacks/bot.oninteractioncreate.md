@@ -32,7 +32,7 @@ name: "aoijs",
 prototype : 'button',
 code: `$interactionReply[AOIjs is an awesome package!]`
 /*
-The code will be execute once /aoijs has been ran
+The code will be execute once button with id aoijs has been clicked
 */
 })
 bot.onInteractionCreate()
