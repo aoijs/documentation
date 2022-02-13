@@ -112,6 +112,42 @@ bot.onInteractionCreate()
 
 ```
 
+### Custom Functions for Intermediate Developers
+- With the latest feature of aoi.js v5.0.0 and above, which enables Developers to create their own custom function built-in and easy.
+
+```js
+/*THIS IS JUST AN EXAMPLE IN YOUR MAIN FILE*/
+
+const aoijs = require("aoi.js")
+
+const bot = new aoijs.Bot({
+token: "DISCRD BOT TOKEN",
+prefix: "DISCRD BOT PREFIX",
+intents: ["GUILDS", "GUILD_MESSAGES"]
+})
+
+//Events
+bot.onMessage()
+
+/*CREATING THE ACTUAL FUNCTION*/
+/*EXAMPLE OF MAKING $authorOnlyButton*/
+
+bot.functionManager.createCustomFunction({
+name : '$authorOnlyButton', //FUNCTION NAME 
+params : ['index','label','style','customId','disabled','emoji'],//THE TYPE OF PARAMS
+type : 'aoi.js', //TYPE METHOD
+code : ` 
+$addButton[{index};{label};{style};{customId}_$authorId;{disabled};{emoji}]
+` //THE ACTUAL CODE IT WILL BE RETURN
+})
+
+/*ONLY EXPERIENCED WITH UNDERSTANDING OF AOIJS SHOULD USE*/
+
+/*BY USING CUSTOM FUNCTION WE ARE'T OBLIGED OF WHAT HAPPENS TO YOUR CLIENT*/
+
+/*WITH THIS FUNCTION MANAGER IT JUST CREATED $authorOnlyButton function*/
+```
+
 
 ## Music
 
