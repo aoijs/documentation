@@ -118,16 +118,9 @@ bot.onInteractionCreate()
 With our new addition of music properties to Aoi.js, you can use music features in v5 too.
 Check out the [docs](https://akaruidevelopment.github.io/music/) for more information!
 
-
 ## Links
-
-Aoi.JS was made by [Aoi.JS Team](https://akarui.leref.ga)
-
-* [Website](https://aoi.leref.ga)
-* [Discord Server](https://aoi.leref.ga/invite)
-* [Documentation](https://aoi.leref.ga)
-* [GitHub](https://github.com/AkaruiDevelopment/aoi.js)
-
-### Contribution
-
-* [**Contribution GuideLines**](https://github.com/aoijs/aoi.js/blob/master/.github/CONTRIBUTING.md)
+- [Website](https://aoi.js.org)
+- [NPM](https://www.npmjs.com/package/aoi.js)
+- [Github](https://github.com/AkaruiDevelopment/aoi.js)
+- [Discord Server](https://discord.gg/HMUfMXDQsV)
+- [Documentation](https://akarui.leref.ga/v/aoi.js/)
