@@ -18,52 +18,42 @@ _It's swift and flexible using functions._
 
 _Open Source for the Community ❤️_
 
-## Table Of Contents
-
-* [About](https://www.npmjs.com/package/aoi.js#about)
-  * [Setup](https://www.npmjs.com/package/aoi.js#setup)
-  * [Variables](https://www.npmjs.com/package/aoi.js#variables)
-  * [Events / Callbacks](https://www.npmjs.com/package/aoi.js#callbacks)
-* [Additional Support](https://www.npmjs.com/package/aoi.js#methods)
-  * [Slash Commands](https://www.npmjs.com/package/aoi.js#slash-commands)
-  * [Music](https://www.npmjs.com/package/aoi.js#music)
-* [Links](https://www.npmjs.com/package/aoi.js#links)
- 
 
 
 ## Installation
 
-```js
-npm i aoi.js
+**Node.JS 16.6.0 or newer is required.**  
+
+```sh-session
+npm install aoi.js
 ```
-
-#### Note:
-
-- Node.js version 16.6.0 and above is required.
-
 
 ## Setting up
 
 ```js
-const Aoijs = require("aoi.js")
+const aoijs = require("aoi.js")
 
-const bot = new Aoijs.Bot({
-token: "TOKEN", //Discord Bot Token
-prefix: "!" //Customizable
+const bot = new aoijs.Bot({
+token: "DISCRD BOT TOKEN",
+prefix: "DISCRD BOT PREFIX",
+intents: ["GUILDS", "GUILD_MESSAGES"]
 })
-bot.onMessage() //Allows to run Commands
 
+//Events
+bot.onMessage()
+
+//Command Example (ping)
 bot.command({
-name: "ping", //Trigger name (command name)
-code: `$ping Pong!` //Code
+name: "ping",
+code: `Pong! $pingms`
 })
 
+//Ready Event
 bot.readyCommand({
-    channel: "", //You can use this or not.
-    code: `$log[Ready on $userTag[$clientID]]` //Enter the code / message.
+    channel: "",
+    code: `$log[Ready on $userTag[$clientID]]`
 })
 ```
-
 ## Additional Settings
 
 ### Variables
