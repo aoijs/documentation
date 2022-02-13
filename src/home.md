@@ -20,33 +20,37 @@ Aoi.js is a package with customization and ready-to-use functions to make Discor
 
 ## Installation
 
-```js
-npm i aoi.js
-```
+**Node.JS 16.6.0 or newer is required.**  
 
-**Note:**
-
-```python
-nodejs version 16.6.0 and above is required.
+```sh-session
+npm install aoi.js
 ```
 
 ## Setting up
 
-```javascript
- const aoijs = require('aoi.js');
+```js
+const aoijs = require("aoi.js")
 
- const bot = new aoijs.Bot({
-   token: "Your Bot Token",
-   prefix: "Bot Prefix",
-   intents: "all"
- });
+const bot = new aoijs.Bot({
+token: "DISCRD BOT TOKEN",
+prefix: "DISCRD BOT PREFIX",
+intents: ["GUILDS", "GUILD_MESSAGES"]
+})
 
-bot.onMessage() //enables bot to see messages (required for executing Commands)
+//Events
+bot.onMessage()
 
+//Command Example (ping)
 bot.command({
-  name: "ping", //command name
-  code: `My Ping Is \`$ping ms\` ` //code to be executed when this command is called 
- });
+name: "ping",
+code: `Pong! $pingms`
+})
+
+//Ready Event
+bot.readyCommand({
+    channel: "",
+    code: `$log[Ready on $userTag[$clientID]]`
+})
 ```
 
 ### GitHub
