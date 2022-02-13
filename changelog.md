@@ -3,6 +3,67 @@ description: aoi.js - changelog from previous versions and latest.
 ---
 
 # Changelog
+
+## aoi.js - 5.0.4
+## Added/Fixed
+
+>```diff
+># Misc Changes
+>+Added awaits to add required functions
+>+Renamed package to src
+>+Formatted class and handler folder
+>+Added missing guild Data in messageDelete Event
+>+Changed default content from '' to ' ' , now you can use {newEmbed:} directly in functions like $editIn etc..
+>+Updated message data send operation (errorMessage)
+>+Updated Error Handling messages
+>+Updated component incorrect field data
+>+Updated entire src format
+>+Fixed presence operator
+>+Fixed EmbedData of icon user
+>+Fixed typos
+>+Fixed activities error
+>+Fixed allowedMentions in Intepreter
+>+Changed forEach -> for
+>
+># Bot Class Changes
+>+rateLimitCommand()
+>+onRateLimit()
+>+webhookUpdateCommand()
+>+onWebhookUpdate()
+>
+># Function Changes
+>+Added $awaitData[option]
+>+Added $lavalinkexecute[shuffle]
+>+Added line to convert number strings to number in condition, now  >= and <= should work
+>-$ServerEmojis[guildId?]
+>+$serverEmoji[separator?;guildId?]
+>-$authorBanner 
+>+$authorBanner | $authorBanner[size?;dynamic?;format?]
+>+added support for aliases in $commandInfo
+>+Fixed typo in $forEachGuildChannel
+>+Fixed $math (finally)
+>-$getUserBanner 
+>+$getUserBanner | $getUserBanner[userId;size?;dynamic?;format?]
+>-$createServerInvite[channelId;options...]
+>+$createServerInvite[guildId;options...]
+>+$createChannelInvite[channelId;otpions...]
+>-$modifyCHannelPErms[roleId/userId;channelId;guildId;perms;perm;perm;...]
+>+$modifyCHannelPErms[roleId/userId;channelId;perms;perm;perm;...]
+>+endAwaitCmd for all forEach function
+>+Fixed $randomText returning only value of one randomText even if fields are different
+>-$randomString[range]
+>+$randomString[range;diffExec?]
+>+Fixed $awaitCmdReactions
+>+Fixed $argsCheck not stoping the execution 
+>+Fixed $getLeaderboardInfo
+>+Fixed get vars returning [Object object] for object type data
+>+Fixed $moveUser
+>+Fixed $awaitMessages
+>+Fixed $awaitCmdReactions
+>+Fixed $awaitComponents
+>+Fixed $banCount
+>+Fixed lavalink volume / data
+
 ## aoi.js - 5.0.3
 ### Added/Fixed
 
