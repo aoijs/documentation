@@ -4,8 +4,73 @@ description: aoi.js - changelog from previous versions and latest.
 
 # Changelog
 
-## aoi.js - 5.0.4
+## aoi.js - 5.0.8
+### Added/Fixed
+
+- Added await to interactions
+- Added missing async in $interactionDefer
+- Fixed createObject overwriting the d.data
+- Fixed map and $onlybotperms still give an error if the bot has admin but not particular perms in cache
+- Fixed $emojiCount
+- Fixed $globalUserLeaderboard
+- Fixed timestamp for custom number
+- Fixed $awaitMessage timeout error and custom timeout in $timeoutMember
+
+## aoi.js - 5.0.7
+### Added/Fixed
+
+- Added $memberAvatar[userId?;size?;dynamic?;format?]
+- Added $timeoutMember
+- Added $expandNumber
+- Added pre defined data transfer from cmd to awaitedCmd in $loop
+- Added allowedmentions field in $interactionReply[content;embed?;components?;files?;allowedMentions?;ephemeral?]
+- Updated $author src code
+- Dynamized the type part of $emojiCount
+- Bumped djs version
+- Repositioned the error message in $newTicket
+- Fixed var name in $closeTicket
+- Fixed nonPrefixed executing all Cmds which dont have aliases when user types undefined
+- Fixed createVoiceAdapter is not a function in $guild
+- Fixed various bugs.
+- Removed ms completely
+
+## aoi.js - 5.0.6
+### Added/Fixed
+
+- Added $oldMsgData support messageDelete event
+- Added $slashOption => $slashOption[option name]
+- Added $oldMsgData => $oldMsgData || $oldMsgData[options]
+- Added support for functions in name property of interactionCommand
+- Added support for v4 if in customFunctions
+- Added missing defines in $rawLeaderboard
+- Added createdAt createdTimestamp and json data
+- Added permissions property in Role()
+- Updated $botLeave , $boostingSince src code from v4 to v5
+- Updated all ResetVar functions src code from v4 to v5
+- Fixed data transfer from main cmd to awaited Cmd in $if when {execute} is used
+- Fixed typo in $sendTTS
+- Fixed memberExist return true for empty args
+- Fixed $setUsername
+- Fixed $allMembersCount
+- Fixed missing functions outdated
+- Removed extra require('fs') in parserjs
+- $suppressErrors only execute once when multiple functions give error -
+- Interaction stop the code execution when one function gives error
+- $message[args] return values [for Selectmenu] and options value [for slashCommands]
+- $msg field optional in $newTIcket
+- Lavalink returns correct songInfo title
+- Lavalink shuffle fixed.
+- Improvements to src.
+
+## aoi.js - 5.0.5
 ## Added/Fixed
+>```diff
+>+Added awaits strict checking of banners
+>+Fixed commands.js only executing alwaysExecute
+>+Changed dependencies (upcoming for Music
+
+## aoi.js - 5.0.4
+### Added/Fixed
 
 >```diff
 ># Misc Changes
