@@ -3,6 +3,38 @@ description: aoi.js - changelog from previous versions and latest.
 ---
 
 # Changelog
+## aoi.js - 5.0.1
+### Added/Fixed
+
+- Fixed lavalink incorrect constructor
+- Fixed $numberSeparator
+- Fixed `ComponentParser` emoji part (now it supports name, id, animated too)
+- Fixed $allMembersCount
+- Fixed $addTimestamp
+- Fixed $Image bracket
+- Fixed all `randomId` type functions
+- Fixed reactionRemoveEmoji using inviteCreate event
+- Fixed $getVar functions not returning default value
+- Fixed $onlyBotPerms and $onlyPerms
+- Fixed `setCode` returning ' ' instead of '' for undefind values
+- Fixed $findTextSplitIndex
+- Fixed $readfile, $renamefile and $writefile
+- Fixed errorMessage needs forced content
+- Fixed $wait
+- Fixed nonPrefixed
+- Fixed respondToBots
+- Fixed $argcheck error msg
+- Fixed wrong `scope` in $getBotInvite
+- Fixed alwaysExecute
+- Fixed webhookId
+- Fixed guild Data
+- Fixed $channelCount
+- Fixed $banCount
+- Added args to $djsEval
+- autoWarning is re-enabled
+- Added force to fetch Functions
+- Added more `optional` fields in $httpRequest
+
 
 ## aoi.js - 5.0.0
 ### Environment Changes 
