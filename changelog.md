@@ -3,6 +3,80 @@ description: aoi.js - changelog from previous versions and latest.
 ---
 
 # Changelog
+## aoi.js - 5.0.3
+### Added/Fixed
+
+- Added $rawLeaderboard,
+- New Usage => $rawLeaderboard[variable;order?;type?;customResponse?;list;page?] //returns leaderboard without checking if the id is valid type, good for when you don't have server member privileged intent
+- Added guildId in $getCustomStatus,
+- New Usage => $getCustomStatus[userID?;guildId?;type?]
+- Added buffer support to $attachment,
+- New Usage => $attachment[attachment;name;url/buffer]
+- Added v4 $if support for cmds and can be switched by Adding $if : 'v4' in Command
+- Added $deleteIn in interpreter
+- Added $setRolePosition
+- Added $readyTimestamp
+- Added $isChannelManageable
+- Added $isRoleEditable
+- Added $isSelfdefeaned
+- Added $isSelfMuted
+- Added $isServerMuted
+- Added $isServerDeafened
+- Added $isStreaming
+- Added $isVideoIn
+- Added custom type support in $createApplicationCommand
+- Added global support in $deleteApplicationCommand
+- Added updatesChannel,systemChannel,ruleChannels in $guild
+- Added $rolePosition
+- Added Type Protection on Vars
+- Added guildCommand option in $fetch
+- Added $reverse
+- Added helpers in interpreter
+- Added dapi support for parsers
+- Added customDb support for Leaderboard functions
+- Added $isTicket
+- Added auto fetch to $getApplicationCommandId/options
+- Added direct channelID support for all callbacks
+- Added $disableMentionType
+- Fixed $newTicket and Added guildId support,
+- New Usage => $newTicket[name;msg;categoryId/guildId?;returnId?;errorMsg?]
+- Fixed $getUserBadges
+- Fixed blacklist system for dm
+-Fixed OnMessageDelete() callback
+- Fixed $role
+- Fixed $platform
+- Fixed $userRoles
+- Fixed $getCooldownTime returning NaN
+- Fixed $jsonRequest crashing for customError
+- Fixed $math
+- Fixed removedRoles property for $oldMember
+- Fixed $deleteWebhook
+- Fixed $setStatus
+- Fixed $userRoleColor
+- Fixed requiring Perms in $modifyChannelPerms
+- Fixed $hasPermsInChannel
+- Fixed $if returning false message
+- Fixed $SuppressErrors
+- Fixed $argsCheck
+- Fixed $closeTicket for customDb
+- Fixed $usersWIthRole
+- Fixed $componentCollector
+- Fixed $awaitMessages
+- Fixed $reactionCollector triggering for the bot
+- Fixed $old/newApplicationCmd
+- Fixed $old/newChannel
+- Fixed $old/newEmoji
+- Fixed $old/newGuild
+- Fixed $old/newMember
+- Fixed $old/newRole
+- Fixed $old/newState
+- Fixed $deleteIn / $editIn
+- Changed disabledMentions to allowedMentions in interpreter
+- Changed database.js for more generalised database menthods
+- Changed $messageSlice second field from required to optional
+- Removed $lerefImages
+- Removed forced [] in $interactionDelete
+
 ## aoi.js - 5.0.2
 ### Added/Fixed
 
