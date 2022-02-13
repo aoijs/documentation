@@ -3,6 +3,41 @@ description: aoi.js - changelog from previous versions and latest.
 ---
 
 # Changelog
+## aoi.js - 5.0.2
+### Added/Fixed
+
+- Fixed has functions
+- Made onlyif and other conditional function optional content
+- Added $date
+- Changed $day to return day instead of number
+- Changed $month to return month in string instead of number from 0 to 11
+- Changed $channelType to return lowercase type(like in v4)
+- Fixed $if to allow message without {execute}
+- Added catch error to $kick
+- Fixed $mentionType
+- Fixed CustomDB to CustomDb
+- Fixed $ban
+- Changed $wait to have n16 promised timeout
+- Changed $updateCommands to async
+- Added `catch error` to interaction functions
+- Fixed ClearInterval to clearInterval
+- Fixed $randomstring infinitely recursive loop
+- Added await to this.getGUild in this.findId
+- Added {interaction} option
+- Fixed {edit} not working in normal mode
+- Fixed $highestRole and $hoistedRole
+- Fixed Blacklist System to work in Dms
+- Added $deleteApplicationCommand
+- Added presence and countBots in $membersCount
+- Fixed $charCount
+- Fixed $awaitMessages ms is not defined error
+- Fixed $updateCommands not working fot windows file system
+- Changed data in deletemessage callback to get full data
+- Fixed $oldMessage
+- Fixed $math
+- Added `nonPrefixed`
+- Added `( , )` , `&&` and `||` to escapes
+
 ## aoi.js - 5.0.1
 ### Added/Fixed
 
