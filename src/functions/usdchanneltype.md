@@ -6,18 +6,21 @@ description: Returns channel type
 
 This function will show you the type of the specified channel.
 
-Raw Usage: `$channelType[channelID (optional)]`
+#### Raw Usage: 
+```php
+$channelType[channelID (optional)]
+```
 
-#### Types:
+## Types:
 
 * `text` =&gt; normal text channel
 * `voice` =&gt; voice channel
 * `category` =&gt; category
 * `news` =&gt; announcement channel
 
-#### Example Commands:
+## Usage:
 
-Get the channel type of the current channel:
+- Get the channel type of the current channel:
 
 ```javascript
 bot.command({
@@ -26,7 +29,7 @@ bot.command({
 });
 ```
 
-Get the channel type of the mentioned channel:
+- Get the channel type of the mentioned channel:
 
 ```javascript
 bot.command({
