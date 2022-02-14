@@ -6,7 +6,7 @@ description: Clears the given emoji of the given message
 
 This function will remove the given emoji for the given message ID of the given user in the given channel.
 
-#### Fields
+## Fields
 
 This function has 4 fields
 
@@ -15,16 +15,19 @@ This function has 4 fields
 3. User ID \(Required\)
 4. Emoji \(Required\)
 
-Raw Usage: `$clearReaction[channelID;messageID;userID;Emoji]`
+#### Raw Usage: 
+```php
+$clearReaction[channelID;messageID;userID;Emoji]
+```
 
-#### Options
+## Options
 
 * Channel  ID - The channel the message is from
 * Message ID - The message we're clearing the reactions from
 * User ID - The user's reaction we're clearing
 * Emoji - The emoji we're clearing
 
-#### Usage
+## Usage
 
 ```javascript
 bot.command({
