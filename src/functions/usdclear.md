@@ -17,7 +17,10 @@ This function has 1 required field and three optional fields:
 3. Channel ID \(Optional\)
 4. Return amount \(Optional\)
 
-Raw Usage: `$clear[amount;userFilter (optional);channelID (optional);return amount (optional)]`
+#### Raw Usage: 
+```php
+$clear[amount;userFilter (optional);channelID (optional);return amount (optional)]
+```
 
 ## Options
 
@@ -28,7 +31,7 @@ Raw Usage: `$clear[amount;userFilter (optional);channelID (optional);return amou
 
 ## Usage
 
-Without Optional Fields
+- Without Optional Fields
 
 ```javascript
 bot.command({
@@ -38,7 +41,7 @@ bot.command({
 });
 ```
 
-With Optional Fields
+- With Optional Fields
 
 ```javascript
 bot.command({
