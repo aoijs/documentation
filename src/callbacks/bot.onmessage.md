@@ -35,6 +35,20 @@ bot.onMessage({
   guildOnly: false //Allows commands to be ran in DMs
 })
 ```
+You can also prevent the client from responding to other bots by doing this
+
+```javascript
+const Aoijs = require("aoi.js") //allows the use of Aoi.js
+
+const bot = new Aoijs.Bot({ //makes your new bot client
+token: "token", 
+prefix: "prefix"
+})
+
+bot.onMessage({
+  respondToBots: false //Prevents the client from responding to other bots
+})
+```
 
 {% hint style="danger" %}
 bot.onMessage\(\) is necessary to make your bot work
