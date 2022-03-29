@@ -2,7 +2,9 @@
 description: This page will help begin your New Bot!
 ---
 
-## Installation
+# Begin
+
+### Installation
 
 {% hint style="warning" %}
 **node.js 16.6.0 or newer is required.**
@@ -47,7 +49,7 @@ bot.readyCommand({
 {% endtab %}
 {% endtabs %}
 
-## package.json
+### package.json
 
 The file where your project can "get" aoi.js
 
@@ -66,11 +68,11 @@ The file where your project can "get" aoi.js
     "author": "",
     "license": "ISC",
     "dependencies": {
-      "aoi.js": "^5.0.0"
+      "aoi.js": "^5.1.2"
     }
   }
 ```
 
 {% hint style="info" %}
-`5.0.0` can be changed to any version number as you want.
+`5.1.2` can be changed to any version number as you want.
 {% endhint %}
