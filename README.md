@@ -2,7 +2,7 @@
 
 ## aoi.js
 
-**Welcome To The Home Page Of aoi.js Documentation**
+**Welcome to the page of aoi.js Documentation**
 
 ## Introduction
 
