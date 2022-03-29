@@ -2,7 +2,7 @@
 
 ## VoiceOptions
 
-> **Options Available For **[**Voice Class**](../../class/voice.md)
+> **Options Available For** [**Voice Class**](../../class/voice.md)
 
 ## Options
 
@@ -14,11 +14,11 @@
 | cache?       | **{enabled: boolean,limit: number}** | Caching Options For Tracks                         |
 | ## Ytdl      |                                      |                                                    |
 
-> **All options that can be used in **[**ytdl-core**](https://npmjs.com/ytdl-core)
+> **All options that can be used in** [**ytdl-core**](https://npmjs.com/ytdl-core)
 
 ### Scdl
 
-> **All options that can be used in **[**Soundcloud-downloader**](https://npmjs.com/soundcloud-downloader)
+> **All options that can be used in** [**Soundcloud-downloader**](https://npmjs.com/soundcloud-downloader)
 
 ### Note
 
