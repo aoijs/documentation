@@ -1,18 +1,18 @@
 # Music
 
-aoi.js has an extension named "@akarui/aoi.music" for music.
+aoi.js has an extension named ***"@akarui/aoi.music"*** for music.
 
 ## installation
 
-```kt
-npm i @akarui/aoi.music
-```
+> ```
+> npm i @akarui/aoi.music
+> ```
 
-> for Dev Version
+***for Dev Version***
 
-```
-npm i https://github.com/akaruidevelopment/music#main
-```
+> ```
+> npm i https://github.com/akaruidevelopment/music#main
+> ```
 
 ### setting up in aoi.js
 
