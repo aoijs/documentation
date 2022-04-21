@@ -65,6 +65,7 @@ module.exports = {
     $if[$hasPlayer==false]
         $joinVc
     $endif
+
     $onlyif[($voiceId[$clientId]!=)&&($voiceId[$clientId]==$voiceId);you are not in the same voice channel]
     $onlyif[$voiceId!=;join a voice channel before using play cmd]
     `,
