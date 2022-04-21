@@ -48,11 +48,11 @@ loader.load(voice.cmd, "./Commands/voice/"); //voice cmds
 
 ## using aoi.music
 
-as we got a setup in index.js ,
+as we got a setup in index.js ,now let's create some cmds
 
 ### play
 
-now let's create a play cmd to play music
+
 
 ```js
 //Commands/commands/play.js
