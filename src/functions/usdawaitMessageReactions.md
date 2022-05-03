@@ -7,7 +7,7 @@ Description: Making the bot reply to user's reacted emoji.
 
 This function will make the bot reply when a user reacts with the given emoji to the command.
 
-Raw Usage: $awaitMessageReactions[channelID;messageID;filter;time;reactions;commands;errorMessage?;data?]
+Raw Usage: `$awaitMessageReactions[channelID;messageID;filter;time;reactions;commands;errorMessage?;data?]`
 ## Fields
 | Field | Description | Type | Required |
 | :--- | :--- | :--- | :--- |
