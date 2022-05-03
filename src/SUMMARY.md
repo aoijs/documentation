@@ -26,6 +26,7 @@
     * [Slash Commands](guide/advanced-guides/slash-commands.md)
   * [Extras](guide/extras/README.md)
     * [Custom Events](guide/extras/custom-events.md)
+    * [Voice](guide/extras/music.md)
     * [dbd.express](guide/extras/dashboard.md)
     * [Sharding](guide/extras/sharding.md)
 * [💻 Functions](functions/README.md)
