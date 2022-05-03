@@ -18,7 +18,7 @@ $addButton[index;label;style;customID;disable?;emoji?]
 | index | The button to show up on the given embed | number | yes |
 | label | Text on the button | string | no |
 | style | Button's style | str & num | yes |
-| customID | A custom ID for the button (changes for link __style*__ | string | yes |
+| customID | A custom ID for the button (changes for link __style*__) | string | yes |
 | disable | Disabling the button | string | no |
 | emoji | The emoji that will show up next to the label. | string | no |
 
