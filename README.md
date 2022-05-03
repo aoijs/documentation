@@ -1,4 +1,9 @@
 # Introduction
+
+## Aoi.js
+
+**Welcome to the page of aoi.js Documentation!**
+
 <img src = "https://aoi.js.org/assets/images/aoijs-new.png">
 
 
