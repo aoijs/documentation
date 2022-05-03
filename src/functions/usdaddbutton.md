@@ -30,6 +30,11 @@ $addButton[index;label;style;customID;disable?;emoji?]
 * 5 & link ─ Redirect button
 > *__Note__: Using link style will make customID property as a link.*
 
+###### Footnote
+Interaction commands needs this callback on main file (or handler):
+```js
+bot.onInteractionCreate();
+```
 ## Examples
 For Normal Button:
 ```javascript
