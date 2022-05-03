@@ -1,5 +1,5 @@
 ---
-description: Archives a text channel's thread.
+Description: Archives a text channel's thread.
 ---
 <hr>
 
