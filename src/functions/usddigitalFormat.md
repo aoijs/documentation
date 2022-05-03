@@ -1,5 +1,5 @@
 ---
-description: Displays the time in digital form.
+Description: Displays the time in digital form.
 ---
 <hr>
 
