@@ -4,6 +4,353 @@ description: aoi.js - changelog from previous versions and latest.
 
 # Changelog
 
+## aoi.js - 5.1.2
+### Added/Fixed
+
+- Fixed json parser
+- $clear internal workout 
+
+## aoi.js - 5.1.1
+### Added/Fixed
+
+- $digitalFormat[time]
+- json parser allows newlines
+- Added optional chaining in $getUserBadges
+- Added $voicePing
+- Added $hasPlayer as more stable way to check bot in vc
+- Added joinAsSpeaker option in $joinVc by default yes
+- AoiError#makeMessageError prevents empty messages from being sent
+- $deleteChannels internal working changed
+- Added Error message when invalid path is provided in LoadCommands
+- Removed duplicated $isTicket file
+- Updated setAuthor to latest method
+- Added $interactionPing
+- Added moderatemembers perm
+- $haspermsINChannel supports roleid now
+- Added $addApplicationCommandPermissions
+- Added $setApplicationCommandPermissions
+- Added $removeApplicationCommandPermissions
+- Added $loopStatus
+- Added $playerStatus
+- Added member type to error messages 
+- Added start field and char field in $cropText (new usage $cropText[text;limit?;start?;char?])
+- Added $packageDependencies
+- Added usage prop in functionManger 
+- $channelPermissionFor now accepts both role and member
+- Updated music and Time#digital has optional hour part
+- $isCustomEmoji now it also accepts full string
+- Removed useless packages
+
+## aoi.js - 5.1.0
+### Added/Fixed/Changed/Deleted
+
+- Added -'returnId' field in $createRole[guildId, returnId, name, color, hoist, position, mentionable, ...permissions] (default is no)
+- Added - ? For null cases (package related)
+- Added - Database support added more
+- Added - Interaction for name data to allow slashOption and interactionData
+- Added - Enabled v4 slash parser for 1 option
+
+- Fixed - $getAttachments
+- Fixed - Inline in fields (Embed Parser)
+- Fixed - $memberJoinedDate 'guild' error return 
+- Fixed - $isTicket incorrect object value
+- Fixed - $writeFile
+- Fixed - $deleteRoles
+- Fixed - 'undefined variable name' in $rawLeaderboard
+- Fixed - 'code is not defined' in $setRoleColor
+
+- Changed - userId optional in $getAuditLogs[limit, userId, action, guildId, format]
+- Changed - All awaited Functions transfer main command data to awaitedCommand
+- Changed - role.hoisted -> role.hoist in $isHoisted
+- Changed - body:body -> data:body in $httpRequest
+- Changed - Functions errors will now prompt 'AoiError: functionError message'
+- Changed - Lazy load voice class to make music package optional
+- Changed - Updated oldrole data in $roleDelete
+
+- Removed - node-fetch and added response to $isValidImageLink (Missing data is fixed)
+
+- Added - 
+```text
+Music Functions (addFilter, autoPlay, clearQueue, getCurrentDuration, joinVc, leaveVc, musicEventData, loopMode, pauseTrack, playPrevious, playTrack, queue, queueLength, removeFilters, resetFilters, resetPlayer, resumeTrack, setFilter, skip, skipTo, songInfo, songRawInfo stop, volume)
+```
+
+- New Events
+```text 
+<Voice>.onAudioError()
+<Voice>.onTrackStart()
+<Voice>.onTrackEnd()
+<Voice>.onTrackPause()
+<Voice>.onTrackResume()
+<Voice>.onQueueStart()
+<Voice>.onQueueEnd()
+```
+
+## aoi.js - 5.0.8
+### Added/Fixed
+
+- Added await to interactions
+- Added missing async in $interactionDefer
+- Fixed createObject overwriting the d.data
+- Fixed map and $onlybotperms still give an error if the bot has admin but not particular perms in cache
+- Fixed $emojiCount
+- Fixed $globalUserLeaderboard
+- Fixed timestamp for custom number
+- Fixed $awaitMessage timeout error and custom timeout in $timeoutMember
+
+## aoi.js - 5.0.7
+### Added/Fixed
+
+- Added $memberAvatar[userId?;size?;dynamic?;format?]
+- Added $timeoutMember
+- Added $expandNumber
+- Added pre defined data transfer from cmd to awaitedCmd in $loop
+- Added allowedmentions field in $interactionReply[content;embed?;components?;files?;allowedMentions?;ephemeral?]
+- Updated $author src code
+- Dynamized the type part of $emojiCount
+- Bumped djs version
+- Repositioned the error message in $newTicket
+- Fixed var name in $closeTicket
+- Fixed nonPrefixed executing all Cmds which dont have aliases when user types undefined
+- Fixed createVoiceAdapter is not a function in $guild
+- Fixed various bugs.
+- Removed ms completely
+
+## aoi.js - 5.0.6
+### Added/Fixed
+
+- Added $oldMsgData support messageDelete event
+- Added $slashOption => $slashOption[option name]
+- Added $oldMsgData => $oldMsgData || $oldMsgData[options]
+- Added support for functions in name property of interactionCommand
+- Added support for v4 if in customFunctions
+- Added missing defines in $rawLeaderboard
+- Added createdAt createdTimestamp and json data
+- Added permissions property in Role()
+- Updated $botLeave , $boostingSince src code from v4 to v5
+- Updated all ResetVar functions src code from v4 to v5
+- Fixed data transfer from main cmd to awaited Cmd in $if when {execute} is used
+- Fixed typo in $sendTTS
+- Fixed memberExist return true for empty args
+- Fixed $setUsername
+- Fixed $allMembersCount
+- Fixed missing functions outdated
+- Removed extra require('fs') in parserjs
+- $suppressErrors only execute once when multiple functions give error -
+- Interaction stop the code execution when one function gives error
+- $message[args] return values [for Selectmenu] and options value [for slashCommands]
+- $msg field optional in $newTIcket
+- Lavalink returns correct songInfo title
+- Lavalink shuffle fixed.
+- Improvements to src.
+
+## aoi.js - 5.0.5
+## Added/Fixed
+>```diff
+>+Added awaits strict checking of banners
+>+Fixed commands.js only executing alwaysExecute
+>+Changed dependencies (upcoming for Music
+
+## aoi.js - 5.0.4
+### Added/Fixed
+
+>```diff
+># Misc Changes
+>+Added awaits to add required functions
+>+Renamed package to src
+>+Formatted class and handler folder
+>+Added missing guild Data in messageDelete Event
+>+Changed default content from '' to ' ' , now you can use {newEmbed:} directly in functions like $editIn etc..
+>+Updated message data send operation (errorMessage)
+>+Updated Error Handling messages
+>+Updated component incorrect field data
+>+Updated entire src format
+>+Fixed presence operator
+>+Fixed EmbedData of icon user
+>+Fixed typos
+>+Fixed activities error
+>+Fixed allowedMentions in Intepreter
+>+Changed forEach -> for
+>
+># Bot Class Changes
+>+rateLimitCommand()
+>+onRateLimit()
+>+webhookUpdateCommand()
+>+onWebhookUpdate()
+>
+># Function Changes
+>+Added $awaitData[option]
+>+Added $lavalinkexecute[shuffle]
+>+Added line to convert number strings to number in condition, now  >= and <= should work
+>-$ServerEmojis[guildId?]
+>+$serverEmoji[separator?;guildId?]
+>-$authorBanner 
+>+$authorBanner | $authorBanner[size?;dynamic?;format?]
+>+added support for aliases in $commandInfo
+>+Fixed typo in $forEachGuildChannel
+>+Fixed $math (finally)
+>-$getUserBanner 
+>+$getUserBanner | $getUserBanner[userId;size?;dynamic?;format?]
+>-$createServerInvite[channelId;options...]
+>+$createServerInvite[guildId;options...]
+>+$createChannelInvite[channelId;otpions...]
+>-$modifyCHannelPErms[roleId/userId;channelId;guildId;perms;perm;perm;...]
+>+$modifyCHannelPErms[roleId/userId;channelId;perms;perm;perm;...]
+>+endAwaitCmd for all forEach function
+>+Fixed $randomText returning only value of one randomText even if fields are different
+>-$randomString[range]
+>+$randomString[range;diffExec?]
+>+Fixed $awaitCmdReactions
+>+Fixed $argsCheck not stoping the execution 
+>+Fixed $getLeaderboardInfo
+>+Fixed get vars returning [Object object] for object type data
+>+Fixed $moveUser
+>+Fixed $awaitMessages
+>+Fixed $awaitCmdReactions
+>+Fixed $awaitComponents
+>+Fixed $banCount
+>+Fixed lavalink volume / data
+
+## aoi.js - 5.0.3
+### Added/Fixed
+
+- Added $rawLeaderboard,
+- New Usage => $rawLeaderboard[variable;order?;type?;customResponse?;list;page?] //returns leaderboard without checking if the id is valid type, good for when you don't have server member privileged intent
+- Added guildId in $getCustomStatus,
+- New Usage => $getCustomStatus[userID?;guildId?;type?]
+- Added buffer support to $attachment,
+- New Usage => $attachment[attachment;name;url/buffer]
+- Added v4 $if support for cmds and can be switched by Adding $if : 'v4' in Command
+- Added $deleteIn in interpreter
+- Added $setRolePosition
+- Added $readyTimestamp
+- Added $isChannelManageable
+- Added $isRoleEditable
+- Added $isSelfdefeaned
+- Added $isSelfMuted
+- Added $isServerMuted
+- Added $isServerDeafened
+- Added $isStreaming
+- Added $isVideoIn
+- Added custom type support in $createApplicationCommand
+- Added global support in $deleteApplicationCommand
+- Added updatesChannel,systemChannel,ruleChannels in $guild
+- Added $rolePosition
+- Added Type Protection on Vars
+- Added guildCommand option in $fetch
+- Added $reverse
+- Added helpers in interpreter
+- Added dapi support for parsers
+- Added customDb support for Leaderboard functions
+- Added $isTicket
+- Added auto fetch to $getApplicationCommandId/options
+- Added direct channelID support for all callbacks
+- Added $disableMentionType
+- Fixed $newTicket and Added guildId support,
+- New Usage => $newTicket[name;msg;categoryId/guildId?;returnId?;errorMsg?]
+- Fixed $getUserBadges
+- Fixed blacklist system for dm
+-Fixed OnMessageDelete() callback
+- Fixed $role
+- Fixed $platform
+- Fixed $userRoles
+- Fixed $getCooldownTime returning NaN
+- Fixed $jsonRequest crashing for customError
+- Fixed $math
+- Fixed removedRoles property for $oldMember
+- Fixed $deleteWebhook
+- Fixed $setStatus
+- Fixed $userRoleColor
+- Fixed requiring Perms in $modifyChannelPerms
+- Fixed $hasPermsInChannel
+- Fixed $if returning false message
+- Fixed $SuppressErrors
+- Fixed $argsCheck
+- Fixed $closeTicket for customDb
+- Fixed $usersWIthRole
+- Fixed $componentCollector
+- Fixed $awaitMessages
+- Fixed $reactionCollector triggering for the bot
+- Fixed $old/newApplicationCmd
+- Fixed $old/newChannel
+- Fixed $old/newEmoji
+- Fixed $old/newGuild
+- Fixed $old/newMember
+- Fixed $old/newRole
+- Fixed $old/newState
+- Fixed $deleteIn / $editIn
+- Changed disabledMentions to allowedMentions in interpreter
+- Changed database.js for more generalised database menthods
+- Changed $messageSlice second field from required to optional
+- Removed $lerefImages
+- Removed forced [] in $interactionDelete
+
+## aoi.js - 5.0.2
+### Added/Fixed
+
+- Fixed has functions
+- Made onlyif and other conditional function optional content
+- Added $date
+- Changed $day to return day instead of number
+- Changed $month to return month in string instead of number from 0 to 11
+- Changed $channelType to return lowercase type(like in v4)
+- Fixed $if to allow message without {execute}
+- Added catch error to $kick
+- Fixed $mentionType
+- Fixed CustomDB to CustomDb
+- Fixed $ban
+- Changed $wait to have n16 promised timeout
+- Changed $updateCommands to async
+- Added `catch error` to interaction functions
+- Fixed ClearInterval to clearInterval
+- Fixed $randomstring infinitely recursive loop
+- Added await to this.getGUild in this.findId
+- Added {interaction} option
+- Fixed {edit} not working in normal mode
+- Fixed $highestRole and $hoistedRole
+- Fixed Blacklist System to work in Dms
+- Added $deleteApplicationCommand
+- Added presence and countBots in $membersCount
+- Fixed $charCount
+- Fixed $awaitMessages ms is not defined error
+- Fixed $updateCommands not working fot windows file system
+- Changed data in deletemessage callback to get full data
+- Fixed $oldMessage
+- Fixed $math
+- Added `nonPrefixed`
+- Added `( , )` , `&&` and `||` to escapes
+
+## aoi.js - 5.0.1
+### Added/Fixed
+
+- Fixed lavalink incorrect constructor
+- Fixed $numberSeparator
+- Fixed `ComponentParser` emoji part (now it supports name, id, animated too)
+- Fixed $allMembersCount
+- Fixed $addTimestamp
+- Fixed $Image bracket
+- Fixed all `randomId` type functions
+- Fixed reactionRemoveEmoji using inviteCreate event
+- Fixed $getVar functions not returning default value
+- Fixed $onlyBotPerms and $onlyPerms
+- Fixed `setCode` returning ' ' instead of '' for undefind values
+- Fixed $findTextSplitIndex
+- Fixed $readfile, $renamefile and $writefile
+- Fixed errorMessage needs forced content
+- Fixed $wait
+- Fixed nonPrefixed
+- Fixed respondToBots
+- Fixed $argcheck error msg
+- Fixed wrong `scope` in $getBotInvite
+- Fixed alwaysExecute
+- Fixed webhookId
+- Fixed guild Data
+- Fixed $channelCount
+- Fixed $banCount
+- Added args to $djsEval
+- autoWarning is re-enabled
+- Added force to fetch Functions
+- Added more `optional` fields in $httpRequest
+
 ## aoi.js - 5.0.0
 
 * ETA SOON.
