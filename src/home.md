@@ -36,8 +36,8 @@ npm install aoi.js
 const aoijs = require("aoi.js")
 
 const bot = new aoijs.Bot({
-token: "DISCRD BOT TOKEN",
-prefix: "DISCRD BOT PREFIX",
+token: "DISCORD BOT TOKEN",
+prefix: "DISCORD BOT PREFIX",
 intents: ["GUILDS", "GUILD_MESSAGES"]
 })
 
