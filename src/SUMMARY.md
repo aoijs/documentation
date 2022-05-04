@@ -338,6 +338,7 @@
   * [$onlyPerms](functions/usdonlyperms.md)
   * [$ordinal](functions/usdordinal.md)
   * [$ownerID](functions/usdownerid.md)
+  * [$packageDependencies](functions/usdpackagedependencies.md)
   * [$packageVersion](functions/usdpackageversion.md)
   * [$parseDate](functions/usdparsedate.md)
   * [$parseTime](functions/usdparsetime.md)
