@@ -2,7 +2,7 @@
 
 aoi.js has an extension named ***"@akarui/aoi.music"*** for music.
 
-## installation
+## Installation
 
 > ```
 > npm i @akarui/aoi.music
@@ -11,10 +11,10 @@ aoi.js has an extension named ***"@akarui/aoi.music"*** for music.
 ***for Dev Version***
 
 > ```
-> npm i https://github.com/akaruidevelopment/music#main
+> npm i @akarui/aoi.music@dev
 > ```
 
-### setting up in aoi.js
+### Setting up in aoi.js
 
 After installing aoi.music, to connect it with aoi.js , we are going to use aoi.js' Voice class.
 
@@ -33,11 +33,19 @@ const voice = new Voice(
   bot,
   {
     cache: {
-      cacheType: "Memory",
+      cacheType: "Memory",//Disk
       enabled: true,
+      //directory : "music", only for Disk type
     },
+    soundcloud: {
+      clientId : "SOUNDCLOUD CLIENT ID",
+      limitLikeTrack : 200 
+    },//optional
+  playerOptions: {
+    trackInfoInterval: 5000,
+  },//optional
   },
-  true,
+  true, //to enable pruneMusic 
 );
 
 voice.onTrackStart();
@@ -46,13 +54,13 @@ loader.load(bot.cmd, "./Commands/commands/"); //bot cmds
 loader.load(voice.cmd, "./Commands/voice/"); //voice cmds
 ```
 
-## using aoi.music
+## Using Voice class
 
-as we got a setup in index.js ,now let's create some cmds
+As we added Voice class in index.js, and a loader to voice folder,
+setup for Voice class is complete. Let’s create some voice related commands.
+
 
 ### play
-
-
 
 ```js
 //Commands/commands/play.js
