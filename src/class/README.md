@@ -1,2 +1,2 @@
-# 💡 Classes
+# Classes
 

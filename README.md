@@ -20,7 +20,6 @@ _It's swift and flexible using functions._
 _Open Source for the Community ❤️_
 
 
-
 ## Installation
 
 **Node.JS 16.6.0 or newer is required.**  
@@ -31,7 +30,7 @@ npm install aoi.js
 
 ## Setting up
 
-```js
+```javascript
 const aoijs = require("aoi.js")
 
 const bot = new aoijs.Bot({
