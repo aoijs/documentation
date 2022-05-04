@@ -352,8 +352,471 @@ Music Functions (addFilter, autoPlay, clearQueue, getCurrentDuration, joinVc, le
 - Added more `optional` fields in $httpRequest
 
 ## aoi.js - 5.0.0
+### Environment Changes 
+>```diff
+>- Nodejs version 12.x
+>+ Nodejs version >=16.6.1 
+### Package Changes 
+#### Class Changes 
+## Bot 
+**@options**
 
-* ETA SOON.
+* ***ADDITION***
+>```diff
+>+cache
+>+database
+>+events
+>+intents 
+>+respondOnEdit
+>+suppressAllErrors
+* ***CHANGES***
+>```diff
+>- errorMessage : "message"
+>+ errorMessage : ["content","embed","components","files"]
+>```
+* ***DELETION***
+>```diff
+>-fetchInvites
+>- boosterToken
+>- databasePath 
+>- db 
+>- disableFunctionStarting 
+> **[List Of All Properties And Their Description](../options/botOptions.md)**
+**@events**
+
+* ***ADDITION*** 
+>```diff
+>+bot.onStickerCreate
+>+bot.onStickerUpdate
+>+bot.onStickerDelete 
+>+bot.onThreadCreate
+>+bot.onThreadUpdate
+>+bot.onThreadDelete
+>+bot.onThreadListSync
+>+bot.onThreadMemberUpdate
+>+bot.onThreadMembersUpdate 
+>+bot.onMemberAvailable
+>+bot.onMembersChunk 
+>+bot.onReactionRemoveAll
+>+bot.onReactionRemoveEmoji 
+>+bot.onStageInstanceCreate
+>+bot.onStageInstanceCUpdate
+>+bot.onStageInstanceDelete 
+>+bot.onGuildUnavailable 
+* ***CHANGES***
+>```diff
+>-bot.onJoined 
+>+bot.onJoin 
+* ***DELETION*** 
+>```diff
+>-bot.onFunctionError 
+**@commands**
+
+* ***ADDITION*** 
+>```diff
+>+bot.stickerCreateCommand
+>+bot.stickerUpdateCommand 
+>+bot.stickerDeleteCommand 
+>+bot.stageInstanceCreateCommand
+>+bot.stageInstanceUpdateCommand
+>+bot.stageInstanceDeleteCommand 
+>+bot.threadCreateCommand
+>+bot.threadUpdateCommand
+>+bot.threadDeleteCommand
+>+bot.threadListSyncCommand
+>+bot.threadMemberUpdateCommand
+>+bot.threadMembersUpdateCommand
+>+bot.guildUnavailableCommand
+>+bot.memberAvailableCommand
+>+bot.membersChunkCommand
+>+bot.reactionRemoveAllCommand
+>+bot.reactionRemoveEmojiCommand
+* ***DELETION***
+>```diff
+>-bot.loadCommands
+>-bot.musicStartCommand
+>-bot.musicEndCommand 
+>-bot.createLavalinkConnection
+## Voice 
+**@options**
+
+* ***ADDITION***
+>```diff
+>+client
+>```
+
+**methods**
+>```diff
+>+ Voice.joinVc(voicechannel,textchannel)
+>```
+## LoadCommands
+ **@method**
+>```diff
+>+ LoadCommands.load(cmd manager,path,debug)
+>+ LoadCommands.update(debug)
+>+ LoadCommands.setColor(theme)
+>```
+## Lavalink
+  **@methods**
+>```diff
+>Lavalink.createLavalinkConnection(url,pass,debug,secureProtocol)
+>```
+----------
+## FunctionChanges
+* ***ADDITION***
+>```diff
+>+$awaitComponentsUntil[channelId; messageId; userFilter; time; customIds; awaitCommands; errorMsg?; data? ]
+>+$awaitMessageReactions[channelId;messageId;filter;time;reactions;commands;errorMsg?;data?]
+>+$addButton[index;label;style;customId;disabled?;emoji?]
+>+$addFields[index;name:value:incline?;...]
+>+$addSelectMenu[index;customId;placeHolder;minValue;maxValue;disabled;options;options;...] //options => label:description:value:default?:emoji?
+>+$addThreadMember[channelId;threadId;userId;reason?]
+>+$authorAccentColor[def?]
+>+$authorBanner[size?;dynamic?;format?]
+>+$bottyping
+>+$broadCastEval[function]
+>+$blacklist[type;id;id;id;..] //for user type first id is guildId
+>+$blacklistError[type;errorObject]
+>+$blacklistOnlyCommands[cmd name;cmd name;....]
+>+$createStageInstance[ channelId;topic;privacy?]
+>+$createSticker[guildid;url;name;returnSticker?;tags?; description?;reason?]
+>+$createThread[ channelId;name;archive?;type?;startMessage?;returnId?]
+>+$createCache[type;name]
+>+$deleteChannel[channelId]
+>+$deleteEmoji[emoji]
+>+$deleteSTicker[guildId;stickerId]
+>+$deleteThread[channelId;threadId]
+>+$disableMentionType[type]
+>+$eventData[property]
+>+$eventEmit[eventname;data;data;...]
+>+$fetchActiveThreads[ channelId;option;...]
+>+$fetchArchivedThreads[ channelId;option;...]
+>+$fetchClientValues[property]
+>+$findInCache[ type;name;prop;value;findType?;returnValue?]
+>+$fetch[ method ;query ]
+>+$forEachRole[ guildId,time,awaitData,...cmds ]
+>+$getUserAccentColor[user;def?]
+>+$getUserBanner[userId;size?;dynamic?;format?]
+>+$getCacheData[type;name;option?]
+>+$interactionDefer
+>+$interactionDeferUpdate
+>+$interactionFollowUp[content;embeds?; components?;files?;ephemeral?]
+>+$interactionUpdate[content;embeds?; components?;files?]
+>+$invite[option]
+>+$isButtonInteraction
+>+$isCommandInteraction
+>+$isComponentInteraction
+>+$isContextMenuInteraction
+>+$isSelectMenuInteraction
+>+$isCustomEmoji[emoji]
+>+$isInteger[number]
+>+$isUnicodeEmoji[emoji]
+>+$joinThread[channelId;threadId]
+>+$killShard[shardId]
+>+$leaveThread[channelId;threadId]
+>+$newApplicationCmd[option]
+>+$nonEscape[message]
+>+$oldApplicationCmd[option]
+>+$reactionData[option]
+>+$removeThreadMember[channelId;threadId;userId;reason?]
+>+$respawnAllShards
+>+$spawnShard[shardId]
+>+$shardGuilds[shardId;sep?]
+>+$shardPing[shardId]
+>+$setCacheData[type;name;value]
+>+$tempCooldown[ time;id;errorObject? ]
+>+$guildChannels[guildId?,option?,sep?]
+>```
+
+* ***CHANGES***
+>```diff
+>-$awaitCmdReactions[filter,time,reactions,commands,errorMsg?]
+>+$awaitCmdReactions[filter,time,reactions,commands,errorMsg?,data?]
+>
+>-$awaitButtons[messageID,userFilter,customIDs,cmds,errorMsg?,uses?]
+>+$awaitComponents[messageID,userFilter,customIDs,cmds,errorMsg?,uses?,data?]
+>
+>-$awaitMessages[channelId,userFilter,time,replies,cmds,errorMsg?,dm?]
+>+$awaitMessages[channelId,userFilter,time,replies,cmds,errorMsg?,data?,dm?]
+>
+>-$addTimestamp[timestamp?]
+>+$addTimestamp[index;timestamp?]
+>
+>-$apiMessage[channelId,content,embeds?,components?,reply?,returnId?]
+>+$apiMessage[channelId,content,embeds?,components?,files?,stickers?,allowedMentions?,reply?,returnId?]
+>
+>-$author[name;iconUrl?;url?]
+>+$author[index;name;iconUrl?;url?]
+>
+>-$activity[id?]
+>+$activity[id?;guildId?]
+>
+>-$authorAvatar
+>+$authorAvatar[size?;dynamic?;format?]
+>
+>-$complexCooldown[type;time;error?]
+>+$advanceCooldown[time;id;error?]
+>
+>-$ban[userID, reason?, days?]
+>+$ban[userId, guildId?, days?, reason?]
+>
+>-$botTyping[timeout]
+>+$botTyping
+>
+>-$changeNickname[ userId,nick ]
+>+$changeNickname[ userId,nick,reason ]
+>
+>-$channelSendMessage[channelId;message;returnId?]
+>+$channelSendMessage[channelId;errorObject;returnId?]
+>
+>-$color[color]
+>+$color[index;color]
+>
+>-$createSlashCommand[ guildId,name,description,...opts? ]
+>+$createApplicationCommand[ guildId,name,description,defaultPermission?,type?,...opts?]
+>
+>-$createChannel[name, type?, returnID?, parentID?]
+>+$createChannel[guildID, name, type?, returnId?, parentId?]
+>
+>-$createRole[name, color?, mentionable?, hoisted?, position?, ...perms?]
+>+$createRole[ guildId,name,color?,hoist?,position?,mentionable?,... permissions?]
+>
+>-$getServerInvite[guildid?]
+>+$createServerInvite[ channelId?, ...options?]
+>
+>-$createWebhook[ channel,name,avatar?,returnW?, seperator?]
+>+$createWebhook[ channel,name,avatar?, seperator? ]
+>
+>-$cpu
+>+$cpu[type?]
+>
+>-$eval[code;returnCode?]
+>+$eval[code;returnCode?;sendMessage?;returnData?;returnId?]
+>
+>-$footer[text;iconUrl?]
+>+$footer[index;text;iconUrl?]
+>
+>-$forEachChannel[...cmds ]
+>+$forEachChannel[ time,awaitData,...cmds ]
+>
+>-$forEachGuild[...cmds ]
+>+$forEachGuild[ time,awaitData,...cmds ]
+>
+>-$forEachGuildChannel[...cmds ]
+>+$forEachGuildChannel[time,awaitData,...cmds ]
+>
+>-$forEachMember[...cmds ]
+>+$forEachMember[ time,awaitData,...cmds ]
+>
+>-$forEachUser[...cmds ]
+>+$forEachUser[ time,awaitData,...cmds ]
+>
+>-$getEmbed[channelId;messageId;option]
+>+$getEmbed[channelId;messageId;index;option]
+>
+>-$getSlashCommandId[ name , type? ]
+>+$getApplicationCommandId[ name , type? ]
+>
+>-$getSlashCommandOptions[name, guildID?]
+>+$getApplicationCommandOptions[name, guildID?]
+>
+>-$getChannelVar[var;Id?]
+>+$getChannelVar[var;Id?;table?]
+>
+>-$getGlobalUserVar[var;Id?]
+>+$getGlobalUSerVar[var;Id?;table?]
+>
+>-$getMessageVar[var;Id?]
+>+$getMessageVar[var;Id?;table?]
+>
+>-$getServerVar[var;Id?]
+>+$getServerVar[var;Id?;table?]
+>
+>-$getUserVar[var;Id?;guildId?]
+>+$getUserVar[var;Id?;guildId?;table?]
+>
+>-$highestServerRole
+>+$highestGuildRole
+>
+>-$interactionReply[content;embed?;components?;flag?;type?]
+>+$interactionReply[content;embed?;components?;files?;ephemeral?]
+>
+>-$interactionEdit[content?;embeds?, components?]
+>+$interactionEdit[content?;embeds?, components?,files?, allowedMentions?]
+>
+>-$if[condition]
+>-code
+>-$endif
+>+$if[condition;true message;false message] //use {execute:} to execute an awaitedCommand
+>
+>-$kick[userId;reason?]
+>+$kick[userId;guildId?;reason?]
+>
+>-$lowestServerRole[guildiD?]
+>+$lowestGuildRole[guildId?]
+>
+>-$loop[times;cmds...]
+>+$loop[times;awaitData;cmds...]
+>
+>-$botping
+>+$messagePing
+>
+>-$modifySlashCommand[guildID, commandID, name, description, ...opts]
+>+$modifyApplicationCommand[guildID, commandID, ...data]
+>
+>-$modifyRole[roleID,name,color,hoisted,mentionable]
+>+$modifyRole[guildId, roleId, ...roleDatas]
+>
+>-$modifyWebhook[webhookID, webhookToken, name, avatar]
+>+$modifyWebhook[webhookId, name, avatar, channelId = d.channel?.id, reason]
+>
+>-$nickname[userId?]
+>+$nickname[userId?;guildId?]
+>
+>-$pruneMembers[days?, guildId?, roleIds?, reason?, count?]
+>+$pruneMembers[days = 7, guildId?, roleIds?, dry? , reason?, count?]
+>
+>-$reactionCollector[messageID,userFilter,time,reactionOrReactions,commandOrCommands,removeReactions?]
+>+$reactionCollector[channelId, messageId, userFilters, time, reactions, awaits, removeReaction?, awaitData?, endAwait?]
+>
+>-$reply[messageId;message;mentionTheUser?]
+>+$reply[messageId?, mentionUser?]
+>
+>-$ram
+>+$ram[type?]
+>
+>-$resetGlobalUserVar[varname]
+>+$resetGlobalUserVar[varname, table?]
+>
+>-$resetServerVar[varname]
+>+$resetServerVar[varname, table?]
+>
+>-$resetUserVar[varname]
+>+$resetUserVar[varname, table?]
+>
+>-$random[lowerLimit;upperLimit;decimal?]
+>+$random[lowerLimit;upperLimit;decimal?;diffExec?]
+>
+>-$replaceText[text;replacer;replacedTo]
+>+$replaceText[text;replacer;replacedTo;how much?]
+>
+>-$resolveColor[r, g, b, toHex?, type?]
+>+$resolveColor[type, returnAs?, ...datas]
+>
+>-$roleExists[roleId]
+>+$roleExists[roleId, guildId?]
+>
+>-$roleId[roleResolver]
+>+$roleId[roleResolver, guildId?]
+>
+>-$colorRole[roleID, color]
+>+$setRoleColor[roleID, color]
+>
+>-$setChannelVar[varname, value,Id?]
+>+$setChannelVar[varname, value,Id?;table?]
+>
+>-$setGlobalUserVar[varname, value,Id?]
+>+$setGlobalUserVar[varname, value,Id?;table?]
+>
+>-$setMessageVar[varname, value,Id?]
+>+$setMessageVar[varname, value,Id?;table?]
+>
+>-$setServerVar[varname, value,Id?]
+>+$setServerVar[varname, value,Id?;table?]
+>
+>-$setTimeout[ duration, timeoutData, pulse?]
+>+$setTimeout[name, duration, timeoutData, pulse?]
+>
+>-$setUserVar[varname, value,Id?]
+>+$setUserVar[varname, value,Id?;table?]
+>
+>-$setVar[varname, value]
+>+$setVar[varname, value;table?]
+>
+>-$takeRole[ userId,roleId ]
+>+$takeRole[ guildId,userId,roleId ]
+>
+>-$takeRoles[userId,roleId ]
+>+$takeRoles[ guildId,userId,roleId;;... ]
+>
+>-$thumbnail[url]
+>+$thumbnail[index;url]
+>
+>-$title[text;url]
+>+$title[index;text;url]
+>
+>-$unban[userID,reason?]
+>+$unban[userId, guildId?]
+>
+>-$uptime
+>+$uptime[ option? ]
+>
+>-$userAvatar[userId?, size?, dynamic?]
+>+$userAvatar[userId?, size?, dynamic?;format?]
+>
+>-$userPerms[userId,sep?]
+>+$userPerms[userId?, sep?, guildId?]
+>
+>-$userRoleColor[ userId]
+>+$userRoleColor[ userId?,guildId? ]
+>
+>-$userRoles[userId, option?;sep?]
+>+$userRoles[userId?, guildId?, option?,sep?]
+>
+>-$userRolesCount[userId?]
+>+$userRolesCount[userId?, guildId?]
+>
+>-$usersBanned[option?, sep?]
+>+$usersBanned[guildId?;force?, option?, sep?]
+>```
+
+* ***DELETION***
+>```diff
+>-$authorMessage
+>-$awaitReactions
+>-$awaitReactionsUntil
+>-$blacklistID
+>-$blacklistRoleID
+>-$blacklistServerID
+>-$botLastMessageChannelID
+>-$botLastMessageID
+>-$createCollection
+>-$deleteCollectionKey
+>-$disableChannelMention
+>-$disableEveryoneMention
+>-$disableRoleMention
+>-$emoijiID
+>-$emojiName
+>-$emojiToString
+>-$filtermessageWords
+>-$findCollectionKey
+>-$getCollectionKey
+>-$inviteChannelID
+>-$inviteMaxUses
+>-$inviteCode
+>-$inviteGuildId
+>-$inviteURL
+>-$inviteUserID
+>-$inviteUses
+>-$ms
+>-$packageName
+>-$randomMentions
+>-$serverRegion
+
+* ***Misc***
+>updated Parsers
+>
+>new interpreter
+>
+>executionTime can be used in embed
+>
+>new managers
+>
+>new classes
+
+* ***NOTE*** 
+> music will be added in later update along with the functions that are missing and are not in deletion section
+> 
 
 ## aoi.js - 4.6.0
 
