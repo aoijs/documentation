@@ -2,7 +2,7 @@
 coverY: 0
 ---
 
-# 👋 Introduction
+# Introduction
 
 ### aoi.js
 
@@ -32,7 +32,7 @@ npm install aoi.js
 
 ### Setting up
 
-```js
+```javascript
 const aoijs = require("aoi.js")
 
 const bot = new aoijs.Bot({
