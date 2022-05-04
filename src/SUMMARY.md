@@ -28,7 +28,9 @@
     * [Custom Events](guide/extras/custom-events.md)
     * [dbd.express](guide/extras/dashboard.md)
     * [Sharding](guide/extras/sharding.md)
-* [Functions](functions/README.md)
+ 
+* Functions
+ 
   * [$abbreviate](functions/usdabbreviate.md)
   * [$activity](functions/usdactivity.md)
   * [$addbutton](functions/usdaddbutton.md)
