@@ -1,2 +1,2 @@
-# ✏ Options
+# Client Options
 

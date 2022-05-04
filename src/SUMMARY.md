@@ -500,7 +500,7 @@
   * [$webhook](functions/usdwebhook.md)
   * [$webhookExists](functions/usdwebhookexists.md)
   * [$year](functions/usdyear.md)
-* [⚒ Callbacks](callbacks/README.md)
+* [Callbacks](callbacks/README.md)
   * [bot.loopCommand](callbacks/bot.loopcommand.md)
   * [bot.musicEndCommand](callbacks/bot.musicendcommand.md)
   * [bot.musicStartCommand](callbacks/bot.musicstartcommand.md)
