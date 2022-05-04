@@ -9,7 +9,7 @@ This function will show author's accent color as hex code (which is on user's ba
 
 ### Usage 
 ```js
-$authorAccentColor
+$authorAccentColor[custom text]
 ```
 
 ## Example
@@ -19,5 +19,6 @@ bot.command({
   code: `
   Your accent color is: $authorAccentColor
   `
+//This will return author's accent color.
 });
 ```
