@@ -19,7 +19,7 @@ $addFilter[filters]
 | filters | The filters will be added to track | string | yes |
 
 ###### Footnotes
-* *To know other types as well, please check [FFmpeg filters](https://ffmpeg.org/ffmpeg-filters.html).*
+* *To know other filters as well, please check [FFmpeg filters](https://ffmpeg.org/ffmpeg-filters.html).*
 
 ## Examples
 We already made a "nightcore" filter for you, so there is the example:
