@@ -116,6 +116,7 @@
 * [$authorBanner](functions/usdauthorBanner.md)
 * [$authorID](functions/usdauthorid.md)
 * [$authorMessage](functions/usdauthormessage.md)
+* [$autoPlay](functions/usdautoPlay.md)
 * [$awaitCmdReaction](functions/usdawaitcmdreaction.md)
 * [$awaitComponentsUntil](functions/usdawaitComponentsUntil.md)
 * [$awaitMessages](functions/usdawaitmessages.md)
