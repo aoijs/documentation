@@ -25,7 +25,7 @@ $playTrack[type;track]
 | :--- | :--- | :--- |
 | local | It will make you play local files. | path |
 | soundcloud | It allows you play tracks on Soundcloud platform. | text & URL |
-| spotify | This type allows Spotify playlists or tracks playe. | URL |
+| spotify | This type allows Spotify playlists or tracks player. | URL |
 | youtube | Play songs & musics or videos via Youtube | text & URL |
 | url | This type allowed for specific links, works well for all attachment on Discord | URL |
 
