@@ -37,7 +37,7 @@ And here it goes for a custom filter from we checked on FFmpeg:
 bot.command({
   name: "filter-custom",
   code: `
-  $let[filter;$addFilter[{"aecho": "1.0:0.8:5:0.5"}]]
+  $let[filter;$addFilter[{"aecho": "1.0:0.8:50:0.5"}]]
   `
 //This will make the track like 8D!
 });
