@@ -50,7 +50,7 @@ bot.command({
   code: `
   $playTrack[soundcloud;Never Gonna Give You Up]
   `
-//It will play Rick Astley's "Nevere Gonna Give You Up" album.
+//It will play Rick Astley's "Never Gonna Give You Up" album.
 });
 ```
 Spotify tracks:
