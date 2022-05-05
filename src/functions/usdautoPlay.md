@@ -15,11 +15,12 @@ $autoPlay[type]
 ### Types
 | Type | Description |
 | :--- | :--- |
+| relative | Adds tracks that played on last platform |
 | soundcloud | Adds soundcloud tracks similar to current track |
 | youtube | Adds youtube tracks similar to current track |
 
 ###### Footnote
-* *You **cannot** use `$autoPlay[soundcloud]` on Youtube track, same goes for `$autoPlay[youtube]` on Soundcloud track.*
+* *You **cannot** use `$autoPlay[soundcloud]` on Youtube track, same goes for `$autoPlay[youtube]` on Soundcloud track. We recommend you to use `$autoPlay[relative]` if you are thinking to use **Soundcloud** and **Youtube** together on your bot.*
 
 ## Example
 ```js
