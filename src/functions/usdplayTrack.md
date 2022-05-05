@@ -27,7 +27,7 @@ $playTrack[type;track]
 | soundcloud | It allows you play tracks on Soundcloud platform. | text & URL |
 | spotify | This type allows Spotify playlists or tracks player. | URL |
 | youtube | Play songs & musics or videos via Youtube | text & URL |
-| url | This type allowed for specific links, works well for all attachment on Discord | URL |
+| url | This type allowed for specific links, works well for all attachment on Discord that contains audio| URL |
 
 ###### Footnotes
 * *If you have low resources about your client (server), we recommend to you use `youtube` type than `spotify` type.*
