@@ -1,3 +1,7 @@
+---
+description: Returns the current server's vanity url if they have one
+---
+
 # $vanityURL
 
 This function returns the current servers vanity URL, if they have one
