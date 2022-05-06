@@ -1,5 +1,5 @@
 ## $addApplicationCommandPermissions
-Used to provide specific permissions to particular application command in the specified guild.
+Used to add specific permissions to the existing permissions to particular application command in the specified guild.
 
 ## Types
 - Guild ID (Optional)
