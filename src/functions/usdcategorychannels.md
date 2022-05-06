@@ -1,3 +1,7 @@
+---
+description: Returns all the channels in the given category 
+---
+
 # $categoryChannels
 
 This functions returns all the channels in the given category
