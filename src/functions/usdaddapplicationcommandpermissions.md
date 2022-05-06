@@ -1,4 +1,8 @@
-## $addApplicationCommandPermissions
+---
+description: Used to add perms to the application command 
+---
+
+# $addApplicationCommandPermissions
 Used to add specific permissions to the existing permissions to particular application command in the specified guild.
 
 ## Types
