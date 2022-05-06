@@ -76,7 +76,7 @@ bot.command({
 Audio URLs:
 ```js
 bot.command({
-  name: "play-youtube",
+  name: "play-url",
   code: `
   $playTrack[url;https://cdn.discordapp.com/attachments/877857304911953930/969282303887028264/9F004493-A7F6-4B3B-8FC1-CC9812DC6621.mov]
   `
