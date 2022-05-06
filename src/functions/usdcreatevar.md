@@ -1,3 +1,7 @@
+---
+description: Creates a variable that can be used later
+---
+
 # $createVar
 
 This function creates variable\(s\) that can be used later
