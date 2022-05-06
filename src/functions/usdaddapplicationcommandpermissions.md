@@ -7,7 +7,7 @@ Used to add specific permissions to the existing permissions to particular appli
 - Permissions (Required)
 
 ### Raw Usage
-`$addApplicationCommandPermissions[guildId?;id;...perms]`
+`$addApplicationCommandPermissions[guildId?;id;$authorID/$roleID[example]:USER/ROLE:yes/no]`
 
 ## Options
 * Guild ID - The guild in which the application command is to be modified.
@@ -16,9 +16,20 @@ Used to add specific permissions to the existing permissions to particular appli
 
 ## Usage
 
+- With authorID
+
 ```js
 bot.command({
     name: "update",
-    code: `$addApplicationCommandPermissions[$guildID;$getApplicationCommandID[aoijs];admin]`
+    code: `$addApplicationCommandPermissions[$guildID;$getApplicationCommandID[aoijs;$guildID];$authorID:USER:yes]`
+});
+```
+
+- With roleID
+
+```js
+bot.command({
+    name: "update",
+    code: `$addApplicationCommandPermissions[$guildID;$getApplicationCommandID[aoijs;$guildID];$roleID[example]:ROLE:yes]`
 });
 ```
