@@ -1,3 +1,7 @@
+---
+description: Deletes a message from given message ID
+---
+
 # $deleteMessage
 
 This function deletes a message from the given message ID
