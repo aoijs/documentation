@@ -90,8 +90,10 @@
 
 ## Functions
 
-* [$activity](functions/usdactivity.md)
+
 * [$abbreviate](functions/usdabbreviate.md)
+* [$activity](functions/usdactivity.md)
+* [$addApplicationCommandPermissions.md](functions/usdaddapplicationcommandpermissions.md)
 * [$addCmdReactions](functions/usdaddcmdreactions.md)
 * [$addEmoji](functions/usdaddemoji.md)
 * [$addField](functions/usdaddfield.md)
