@@ -1,3 +1,7 @@
+---
+description: Returns the given webhook's specified property 
+---
+
 # $webhook
 
 This function returns the given webhook's specified property
