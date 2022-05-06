@@ -1,3 +1,7 @@
+---
+description: Used to have multiple splits in one message
+---
+
 # $advancedTextSplit
 
 {% hint style="warning" %}
