@@ -1,3 +1,7 @@
+---
+description: Returns all the users who are typing in the specified channel 
+---
+
 # $usersTyping
 
 This function returns all the users who are typing in the specified channel
