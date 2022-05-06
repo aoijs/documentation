@@ -1,3 +1,7 @@
+---
+description: Returns list of perms the specified user or role has in the channel
+---
+
 # $channelPermissionsFor
 
 This function returns a list of permissions the specified user or role has for the current or specified channel ID
