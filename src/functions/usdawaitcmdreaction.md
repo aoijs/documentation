@@ -1,3 +1,7 @@
+---
+description: Makes the bot reply when the user reacts with the given emoji to the command
+---
+
 # $awaitCmdReaction
 
 This function will make the bot reply when a user reacts with the given emoji to the command \(ex: !test\)
