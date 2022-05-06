@@ -1,3 +1,7 @@
+---
+description: Allows you to create a collection to use later
+---
+
 # $createCollection
 
 This function allows you to create a collection to use later.
