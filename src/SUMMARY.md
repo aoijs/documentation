@@ -400,6 +400,7 @@
   * [$rolePosition](functions/usdroleposition.md)
   * [$round](functions/usdround.md)
   * [$roundTenth](functions/usdroundtenth.md)
+  * [setApplicationCommandPermissions.md](functions/usdsetapplicationcommandpermissions.md)
   * [$second](functions/usdsecond.md)
   * [$seekTo](functions/usdseekto.md)
   * [$sendCrosspostingMessage](functions/usdsendcrosspostingmessage.md)
