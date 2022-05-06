@@ -290,6 +290,7 @@
 * [$if](functions/usdif.md)
 * [$image](functions/usdimage.md)
 * [$indexOf](functions/usdindexof.md)
+* [$interactionPing](functions/usdinteractionping.md)
 * [$inviteChannelID](functions/usdinvitechannelid.md)
 * [$inviteCode](functions/usdinvitecode.md)
 * [$inviteGuildID](functions/usdinviteguildid.md)
