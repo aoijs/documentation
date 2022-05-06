@@ -1,42 +1,32 @@
 # $channelPermissionsFor
 
-This function returns a list of permissions the specified user or the specified role has for the current or specified channel ID
+This function returns a list of permissions the specified user has for the current or specified channel ID
 
 #### Fields
 
-This function has 1 required field
+This function has 2 required field
 
-1. Channel ID \(Optional\)
-2. User ID or Role ID \(Required\)
+1. User ID \(Required\)
+2. Channel ID \(Optional\)
+3. Seperator \(Required\)
 
-Raw Usage: `$channelPermissionsFor[channelID (optional);role ID/userID]`
+
+Raw Usage: `$channelPermissionsFor[uorrID;channelID (optional);sep]`
 
 #### Options
 
+* User ID - The user the permissions are based off of
 * Channel ID - The channel the permissions are based off of
-* User ID/ Role ID - The user or role the permissions are based off of
+* Seperator - To seperate the permissions with the provided seperator
+
 
 #### Usage
 
-- Usage without optional field
-
 ```javascript
 bot.command({
 name: "channelPermissions",
 code: `$username's channel perms:
-$channelPermissionsFor[$authorID/$roleID[example]]
+$channelPermissionsFor[$authorID;$channelID;|]
 `
 })
 ```
-
-- Usage with optional field
-
-```javascript
-bot.command({
-name: "channelPermissions",
-code: `$username's channel perms:
-$channelPermissionsFor[$findChannel[general];$authorID/$roleID[example]]
-`
-})
-```
-
