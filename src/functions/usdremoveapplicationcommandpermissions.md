@@ -7,7 +7,7 @@ Used to remove specific permissions to the existing permissions to particular ap
 - Permissions (Required)
 
 ### Raw Usage
-`$removeApplicationCommandPermissions[guildId?;id;...perms]`
+`$removeApplicationCommandPermissions[guildId?;id;$authorID/$roleID[example]:USER/ROLE:yes/no]`
 
 ## Options
 * Guild ID - The guild in which the application command is to be modified.
@@ -16,9 +16,20 @@ Used to remove specific permissions to the existing permissions to particular ap
 
 ## Usage
 
+- With authorID
+
 ```js
 bot.command({
     name: "update",
-    code: `$removeApplicationCommandPermissions[$guildID;$getApplicationCommandID[aoijs];admin]`
+    code: `$removeApplicationCommandPermissions[$guildID;$getApplicationCommandID[aoijs;$guildID];$authorID:USER:yes]`
+});
+```
+
+- With roleID
+
+```js
+bot.command({
+    name: "update",
+    code: `$removeApplicationCommandPermissions[$guildID;$getApplicationCommandID[aoijs;$guildID];$roleID[example]:ROLE:yes]`
 });
 ```
