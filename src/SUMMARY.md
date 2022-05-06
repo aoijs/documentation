@@ -33,6 +33,7 @@
  
   * [$abbreviate](functions/usdabbreviate.md)
   * [$activity](functions/usdactivity.md)
+  * [$addApplicationCommandPermissions.md](functions/usdaddapplicationcommandpermissions.md)
   * [$addbutton](functions/usdaddbutton.md)
   * [$addCmdReactions](functions/usdaddcmdreactions.md)
   * [$addEmoji](functions/usdaddemoji.md)
