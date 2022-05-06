@@ -1,3 +1,7 @@
+---
+description: Adds button component to the bot message
+---
+
 # $addbutton
 > **This function Adds A Button Component To Bot Message**
 ## Fields
