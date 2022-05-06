@@ -281,6 +281,7 @@
   * [$map](functions/usdmap.md)
   * [$math](functions/usdmath.md)
   * [$maximumMembers](functions/usdmaximummembers.md)
+  * [$memberAvatar](functions/usdmemberavatar.md)
   * [$memberExists](functions/usdmemberexists.md)
   * [$memberJoinedDate](functions/usdmemberjoineddate.md)
   * [$memberJoinPosition](functions/usdmemberjoinposition.md)
