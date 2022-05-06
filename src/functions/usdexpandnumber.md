@@ -1,3 +1,7 @@
+---
+description: Expands abbreviated numbers
+---
+
 # $expandNumber
 Used to expand abbreviated numbers
 
