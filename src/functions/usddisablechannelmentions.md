@@ -1,3 +1,7 @@
+---
+description: Disables any channel mentions and replace them with their name
+---
+
 # $disableChannelMentions
 
 This function will disable any channel mentions and replace them with their name.
