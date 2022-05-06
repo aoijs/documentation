@@ -1,3 +1,7 @@
+---
+description: Executes a command in the console 
+---
+
 # $exec
 
 This function executes a command in the console
