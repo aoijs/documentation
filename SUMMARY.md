@@ -554,6 +554,7 @@
 * [$variablesCount](functions/usdvariablescount.md)
 * [$vcSize](functions/usdvcsize.md)
 * [$voiceID](functions/usdvoiceid.md)
+* [$voicePing](functions/usdvoiceping.md)
 * [$volume](functions/usdvolume.md)
 * [$wait](functions/usdwait.md)
 * [$webhook](functions/usdwebhook.md)
