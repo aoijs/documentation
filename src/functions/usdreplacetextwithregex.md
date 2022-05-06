@@ -1,3 +1,7 @@
+---
+description: Replaces text with regex flags
+---
+
 # $replaceTextWithRegex
 
 This function replaces text with [regex flags](https://www.w3schools.com/jsref/jsref_obj_regexp.asp)
