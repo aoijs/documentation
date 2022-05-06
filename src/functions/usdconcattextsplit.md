@@ -1,3 +1,7 @@
+---
+description: Contatenates the text with the given separator
+---
+
 # $concatTextSplit
 
 This function concatenates the text with the given separator
