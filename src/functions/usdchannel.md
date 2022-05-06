@@ -1,3 +1,7 @@
+---
+description: Returns specified channel's given property 
+---
+
 # $channel
 
 This function returns the specified channel's given property
