@@ -1,3 +1,7 @@
+---
+description: Sets cooldown for current channel
+---
+
 # $channelCooldown
 
 This function sets a cooldown for the current channel
