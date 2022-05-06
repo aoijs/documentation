@@ -1,3 +1,7 @@
+---
+description: Crops the given text
+---
+
 # $cropText
 
 This function crops the given text
