@@ -1,3 +1,7 @@
+---
+description: Returns the current day
+---
+
 # $day
 
 This function returns the current day.
