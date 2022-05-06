@@ -1,3 +1,7 @@
+---
+description: Makes the bot reply when a user reacts with the given emoji in the certain amount of reactions 
+---
+
 # $awaitReactionsUntil
 
 This function will make the bot reply when a user reacts with the given emoji in the certain amount of reactions
