@@ -1,3 +1,7 @@
+---
+description: Returns the IDs of the bot's owners
+---
+
 # $botOwnerID
 
 This function returns the ID\(s\) of the bot's owners
