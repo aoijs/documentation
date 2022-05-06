@@ -7,7 +7,7 @@ Used to set specific permissions to particular application command in the specif
 - Permissions (Required)
 
 ### Raw Usage
-`$setApplicationCommandPermissions[guildId?;id;...perms]`
+`$setApplicationCommandPermissions[guildId?;id;$authorID/$roleID[example]:USER/ROLE:yes/no]`
 
 ## Options
 * Guild ID - The guild in which the application command is to be modified.
@@ -16,9 +16,20 @@ Used to set specific permissions to particular application command in the specif
 
 ## Usage
 
+- With authorID
+
 ```js
 bot.command({
     name: "update",
-    code: `$setApplicationCommandPermissions[$guildID;$getApplicationCommandID[aoijs];admin]`
+    code: `$setApplicationCommandPermissions[$guildID;$getApplicationCommandID[aoijs;$guildID];$authorID:USER:yes]`
+});
+```
+
+- With roleID
+
+```js
+bot.command({
+    name: "update",
+    code: `$setApplicationCommandPermissions[$guildID;$getApplicationCommandID[aoijs;$guildID];$roleID[example]:ROLE:yes]`
 });
 ```
