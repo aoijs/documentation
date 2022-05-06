@@ -1,3 +1,7 @@
+---
+description: Deletes specified variable from database 
+---
+
 # $deleteUserVar
 
 This function deletes the specified variable from the database
