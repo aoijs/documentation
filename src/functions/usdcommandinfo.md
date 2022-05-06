@@ -1,3 +1,7 @@
+---
+description: Allows the bot to return any property a command has
+---
+
 # $commandInfo
 
 This function allows the bot to return any property a command has
