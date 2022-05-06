@@ -1,3 +1,7 @@
+---
+description: Creates a cooldown for one of the 5 times of existing cooldowns
+---
+
 # $complexCooldown
 
 This function will create a cooldown for one of the 5 times of existing cooldowns.
