@@ -1,3 +1,7 @@
+---
+description: Filters out all emojis from the provided message and returns them
+---
+
 # $emojisFromMessage
 
 This function filters out all emojis from the provided message and returns
