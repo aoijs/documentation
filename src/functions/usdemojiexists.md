@@ -1,3 +1,7 @@
+---
+description: Returns boolean depending if given emoji exists or not
+---
+
 # $emojiExists
 
 This function will return `true` or `false` depending if given emoji ID is an existent emoji \(Registered in one of the bot's servers\) or not.
