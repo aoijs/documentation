@@ -1,3 +1,7 @@
+---
+description: Abbreviates large numbers
+---
+
 # $abbreviate
 
 This function abbreviates large numbers
