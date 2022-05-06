@@ -1,3 +1,7 @@
+---
+description: Fetches and loops over every invite executing awaited commands
+---
+
 # $fetchInvites
 
 This function fetches and loops over every invite executing awaited commands
