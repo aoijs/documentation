@@ -1,3 +1,7 @@
+---
+description: Returns voice ping in ws or udp
+---
+
 # $voicePing
 Returns the voice ping in the form ws or udp connection.
 
