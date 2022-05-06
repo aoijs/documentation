@@ -1,3 +1,7 @@
+---
+description: Returns the ID of the channel where the last message of the bot was sent
+---
+
 # $botLastMessageChannelID
 
 This function will return the ID of the channel where the last message of the bot was sent.
