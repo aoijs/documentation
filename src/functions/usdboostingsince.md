@@ -1,3 +1,7 @@
+---
+description: Returns the amount of time the user has been boosting for
+---
+
 # $boostingSince
 
 This function will return the amount of time the user has been boosting for. if the user isn't boosting it will return nothing.
