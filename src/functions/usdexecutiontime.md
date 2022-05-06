@@ -1,3 +1,7 @@
+---
+description: Returns how long it took to execute all the functions in the current code in ms
+---
+
 # $executionTime
 
 This function returns how long it took to execute ALL the functions in the current code in ms
