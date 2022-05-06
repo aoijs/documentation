@@ -1,3 +1,7 @@
+---
+description: Returns channel permission overwrites
+---
+
 # $channelOverwrites
 
 This function returns the channel permission overwrites
