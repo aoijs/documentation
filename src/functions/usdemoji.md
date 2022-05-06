@@ -1,3 +1,7 @@
+---
+description: Returns specified property from the given emojiID
+---
+
 # $emoji
 
 This function returns the specified property from the given emojiID
