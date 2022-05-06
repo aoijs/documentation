@@ -337,6 +337,7 @@
 * [$math](functions/usdmath.md)
 * [$map](functions/usdmap.md)
 * [$maximumMembers](functions/usdmaximummembers.md)
+* [$memberAvatar](functions/usdmemberavatar.md)
 * [$memberExists](functions/usdmemberexists.md)
 * [$memberJoinedDate](functions/usdmemberjoineddate.md)
 * [$memberJoinPosition](functions/usdmemberjoinposition.md)
