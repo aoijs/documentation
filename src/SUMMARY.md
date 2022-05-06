@@ -164,6 +164,7 @@
   * [$eval](functions/usdeval.md)
   * [$exec](functions/usdexec.md)
   * [$executionTime](functions/usdexecutiontime.md)
+  * [$expandNumber](functions/usdexpandnumber.md)
   * [$fetchInvites](functions/usdfetchinvites.md)
   * [$fileSize](functions/usdfilesize.md)
   * [$filterMessage](functions/usdfiltermessage.md)
