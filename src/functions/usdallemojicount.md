@@ -1,3 +1,7 @@
+---
+description: Returns the total number of emojis the servers the bot is in have
+---
+
 # $allEmojiCount
 
 This function returns the total amount of emojis the servers the bot is in have. This is the sum of all custom emojis of all servers the bot is member of.
