@@ -12,11 +12,7 @@ bot.command({
 
 name: "dependency",
 
-code: `
-
-$packageDependencies
-
-`
+code: `$packageDependencies`
 
 //Returns: 10000
 
