@@ -1,4 +1,8 @@
-## $setApplicationCommandPermissions
+---
+description : Used to set specific permissions to particular application command in the specified guild.
+---
+
+# $setApplicationCommandPermissions
 Used to set specific permissions to particular application command in the specified guild.
 
 ## Types
