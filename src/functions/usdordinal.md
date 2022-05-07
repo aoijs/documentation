@@ -1,3 +1,7 @@
+---
+description : Adds st,nd,rd,th to the end of a number.
+---
+
 # $ordinal
 
 This function adds `st`,`nd`,`rd`,`th` to the end of a number
