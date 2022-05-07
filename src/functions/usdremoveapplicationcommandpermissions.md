@@ -1,4 +1,8 @@
-## $removeApplicationCommandPermissions
+---
+description : Used to remove specific permissions to particular application command in the specified guild.
+---
+
+# $removeApplicationCommandPermissions
 Used to remove specific permissions to the existing permissions to particular application command in the specified guild.
 
 ## Types
