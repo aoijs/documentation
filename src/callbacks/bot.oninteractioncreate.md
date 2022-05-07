@@ -49,5 +49,5 @@ bot.interactionCommand({
 
 
 ## Advanced Interaction Command
-- If you want to make a more advanced interaction command *i.e. retrieve user inputs or something else*, then take a look at this [guide](https://github.com/DevMike123/documentation/blob/v5.1.2/src/guide/advanced-guides/slash-commands.md).
+- If you want to make a more advanced interaction command *i.e. retrieve user inputs or something else*, then take a look at this [guide](../functions/usdinteractionreply.md).
 
