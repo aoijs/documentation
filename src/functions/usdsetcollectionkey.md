@@ -1,3 +1,7 @@
+---
+description : Allows you to create a new collection key (Property) for a previous created collection.
+---
+
 # $setCollectionKey
 
 This functions allows you to create a new collection key \(Property\) for a previous created collection.
