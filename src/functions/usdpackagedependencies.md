@@ -1,8 +1,12 @@
+---
+description : Displays the number of dependencies aoi.js package has
+---
+
 # $packageDependencies
 
-Displays the number of dependencies of aoi.js package!
+Displays the number of dependencies aoi.js package has!
 
-- Raw Usage: ```$packageDependencies```
+- Raw Usage: `$packageDependencies`
 
 ## Usage
 
