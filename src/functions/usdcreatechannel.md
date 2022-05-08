@@ -25,8 +25,8 @@ Raw Usage: `$createChannel[guildId;name;type;return ID (yes/no);category ID (opt
 * Guild ID - The ID of the guild
 * Name - The name of the channel
 * Type - The type of the channel you want to make
-* Return ID - Whether or not the function will return newly created channel or category ID
-* Category ID - The category of which the channel will be placed under
+* Return ID - Whether or not the function will return newly created channel or category ID (yes/no)
+* Category ID - The category of which the channel will be placed under (yes/no)
 
 ### Types
 
@@ -60,7 +60,7 @@ code: `Channel ID: $createChannel[$guildID;aoijs;voice;yes]` //Makes a voice cha
 ```javascript
 bot.command({
 name: "create",
-code: `Channel ID: $createChannel[$guildID;aoijs;category;yes]` //Makes a category named "aoijs" and returns it's id.
+code: `Category ID: $createChannel[$guildID;aoijs;category;yes]` //Makes a category named "aoijs" and returns it's id.
 })
 ```
 
