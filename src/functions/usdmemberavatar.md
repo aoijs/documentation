@@ -1,4 +1,4 @@
-## $memberAvatar
+# $memberAvatar
 Returns the profile picture of the specified user.
 
 ## Raw Usage
