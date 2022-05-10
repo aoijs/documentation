@@ -417,7 +417,6 @@
   * [$setBotName](functions/usdsetbotname.md)
   * [$setChannelTopic](functions/usdsetchanneltopic.md)
   * [$setChannelVar](functions/usdsetchannelvar.md)
-  * [$setCollectionKey](functions/usdsetcollectionkey.md)
   * [$setGlobalUserVar](functions/usdsetglobaluservar.md)
   * [$setGuildIcon](functions/usdsetguildicon.md)
   * [$setGuildName](functions/usdsetguildname.md)
