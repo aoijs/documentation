@@ -1,21 +1,39 @@
 ---
-description: Displays true or false depending if the channel is a ticket or not.
+description: Returns boolean value depending on if the channel is a ticket or not.
 ---
 
 # $isTicket
 
 This function will return true or false depending if the channel is a tiket or not.
 
-Raw usage: `$isTicket` or `$isTicket[Channel ID]`
+## Options
+- Channel ID (Optional)
 
-Example:
+### Raw usage: 
+`$isTicket[Channel ID?]`
+
+## Usage
+
+- Without optional fields
 
 ```javascript
 bot.command({
-    name: "istiket",
+    name: "isticket",
     code: `
-Is this channel a tiket?
+Is this channel a ticket?
 > $isTicket
+    `
+})
+```
+
+- With optional fields
+
+```javascript
+bot.command({
+    name: "isticket",
+    code: `
+Is the mentioned channel a ticket?
+> $isTicket[$mentionedChannels[1]]
     `
 })
 ```
