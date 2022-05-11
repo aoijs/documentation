@@ -1,25 +1,68 @@
-# $addbutton
-> **This function Adds A Button Component To Bot Message**
-## Fields
-|field|type|description|optional|default value|
-|-----|----|-----------|--------|-------------|
-|**index**|**number**|Position Of Button In ActionRow|false|-|
-|**label**|**string**|Label Of The Button|false|-|
-|**style**|**number** \| **ButtonStyle** |Style Of The Button|false|-|
-|**customId**|**string**|CustomId Of The Button. For Style 5 (link) , This Field Takes The Url.|false|-|
-|**disabled?**|**yes \| no**|Whether To Disable The Button|true|no|
-|**emoji?**|**emoji** \| **emojiId** |Adds Emoji To Button|true|-|
-## Usage
-> ```
-> $addbutton[index;label;style;customId;disabled?;emoji?]
->```
-## Example
->```javascript
->bot.command({
->   name: "hi",
->   code: `This Is A Message.
->$addButton[1;Click Me;primary;click;no;<:yesman:775187533368786954>]
->`
->})
->```
+---
+Description: Add button component to message.
+---
+<hr>
 
+# $addButton
+
+This function will add a button to bot's message.
+
+### Usage 
+```js
+$addButton[index;label;style;customID;disable?;emoji?]
+```
+
+### Fields
+| Field | Description | Type | Required |
+| :--- | :--- | :--- | :--- |
+| index | The button to show up on the given embed | number | yes |
+| label | Text on the button | string | no |
+| style | Button's style | str & num | yes |
+| customID | A custom ID for the button (changes for link __style*__) | string | yes |
+| disable | Disabling the button | string | no |
+| emoji | The emoji that will show up next to the label. | string | no |
+
+#### Styles
+* 1 & primary ─ Blue button
+* 2 & secondary ─ Gray button
+* 3 & success ─ Green button
+* 4 & danger ─ Red button
+* 5 & link ─ Redirect button
+> *__Note__: Using link style will make customID property as a link.*
+
+###### Footnote
+Interaction commands needs this callback on main file (or handler):
+```js
+bot.onInteractionCreate();
+```
+## Examples
+For Normal Button:
+```javascript
+bot.command({
+  name: "hello",
+  code: `
+  Hello world!
+  
+  $addButton[1;Say, hello!;primary;helloButton;no;👋]
+  `
+});
+
+bot.interactionCommand({
+  name: "helloButton",
+  code: `
+  $interactionReply[Bye bye!]
+  `
+});
+```
+
+For Redirected Button (link style):
+```javascript
+bot.command({
+  name: "hello",
+  code: `
+  Tap below to join Akarui Development!
+  
+  $addButton[1;Let's go!;link;https://discord.gg/eTBF9N5sy2;no]
+  `
+});
+```
