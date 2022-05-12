@@ -8,7 +8,9 @@ Description: Making the bot reply to user's interacted message.
 This function will make the bot response to user's select menu option or button interaction.
 
 Raw Usage: `$awaitComponentsUntil[channelID;messageID;filter;time;customIDs;commands;errorMessage?;data?]`
+
 ## Fields
+
 | Field | Description | Type | Required |
 | :--- | :--- | :--- | :--- |
 | channelID | ID of the message's channel | number | yes |
@@ -19,6 +21,7 @@ Raw Usage: `$awaitComponentsUntil[channelID;messageID;filter;time;customIDs;comm
 | commands | Awaited commands to be triggered | string | yes |
 | errorMessage | When x time runs out, the part of bot sending message. | string | no |
 | data | Await command's data | string | no |
+
 ## Example
 ```javascript
 bot.command({
