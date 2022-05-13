@@ -12,12 +12,14 @@ $abbreviate[number;decimal?]
 ```
 
 ### Fields
+
 | Field | Description | Type | Required |
 | :--- | :--- | :--- | :--- |
 | number | The number is going to abbreviated | number | yes |
 | decimal | Separates the number in a decimal way | number | no |
 
 ###### Abbreviation Types
+
 * `k` — thousands
 * `m` — millions
 * `b` — billions

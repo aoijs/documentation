@@ -12,6 +12,7 @@ $activity[userID?;guildID?]
 ```
 
 ### Fields
+
 | Field | Description | Type | Required |
 | :--- | :--- | :--- | :--- |
 | userID | The ID of the user to see activity | number | no |
