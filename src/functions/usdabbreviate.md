@@ -7,6 +7,7 @@ description: Abbreviate numbers.
 `$abbreviate` allowing you to abbreviate large numbers.
 
 ### Usage
+
 ```
 $abbreviate[number;decimal?]
 ```
@@ -36,7 +37,7 @@ bot.command({
 	$abbreviate[6900]
 	`
 //Returns: 7K
-})
+});
 ```
 
 With decimal:
@@ -48,5 +49,5 @@ bot.command({
 	$abbreviate[6900;1]
 	`
 //Returns: 6.9K
-})
+});
 ```

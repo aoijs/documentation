@@ -7,6 +7,7 @@ description: Add reaction to author's message.
 `$addCmdReactions` adds single or multiple reactions to author's message.
 
 ### Usage
+
 ```
 $addCmdReactions[emoji;emoji;...]
 ```
@@ -36,7 +37,7 @@ bot.command({
 	$addCmdReactions[<:mns_neoXD:961249981107413022>;<:mns_lolie:966349758203559977>]
 	`
 //Adds emojis to author's message.
-})
+});
 ```
 
 With default emoji
@@ -48,5 +49,5 @@ bot.command({
 	$addCmdReactions[😋;🤠]
 	`
 //This also adds emojis to author's message as well.
-})
+});
 ```
