@@ -1,45 +1,62 @@
 ---
-description: Creates an object that can be used later
+description: Creates an object that can be used in code.
 ---
 
 # $createObject
 
-This function creates an object. Simplified terms, its a in-code variable that is only accessible in the current code
+This function creates an object. Simplified terms, its a in-code variable that is only accessible in the current code.
 
-#### Fields
+### Usage
 
-This function has 1 optional field
+```php
+$createObject[{json}?]
+```
 
-1. JSON \(Optional\)
+### Field
 
-Raw Usage: `$createObject[{json (required)}]`
+| Field | Description | Required |
+| :--- | :--- | :--- |
+| json | The key & property in the object | no |
 
-#### Options
 
-* JSON - The key & property in the object
+#### Examples
 
-#### Usage
-
-Without optional field
+Without Optional:
 
 ```javascript
 bot.command({
-name: "createObject",
-code: `
-$getObjectProperty[message]
-$addObjectProperty[message;Hello World]
-$createObject[{}]`
+	name: "createObject",
+	code: `
+	$getObjectProperty[message]
+	
+	$addObjectProperty[message;Hello, World!]
+	
+	$createObject[{}]
+	`
+//Returns "Hello, World!"
+
+/*For to see how does it get stored.
+{
+  data: { 
+  	object: { 
+  		message: 'Hello, World!' 
+  	} 
+  }
+} */
 })
 ```
 
-With optional field
+With Optional:
 
 ```javascript
 bot.command({
-name: "createObject",
-code: `
-$getObjectProperty[message]
-$createObject[{"message":"Hello Word"}]`
-})
+	name: "createObject",
+	code: `
+	$getObjectProperty[message]
+	
+	$createObject[{"message":"Hello Word"}]
+	
+	`
+//Returns "Hello, World!". We didn't use $addObjectProperty in here.
+});
 ```
-

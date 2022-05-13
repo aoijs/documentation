@@ -1,25 +1,35 @@
 ---
-description: Gets a property value from given key
+description: Gets an key's value from object.
 ---
 
 # $getObjectProperty
 
-This function gets the property value from specified key
+This function gets the property value from specified key.
 
-```javascript
+### Usage
+
+```php
 $getObjectProperty[key]
 ```
 
+### Field
+
+| Field | Description | 
+| :--- | :--- | 
+| key | The key's name that wants to receive value of key | 
+
+#### Example
+
 ```javascript
 bot.command({
-name: "getObjectProperty",
-code: `$getObjectProperty[ruben]
-$addObjectProperty[ruben;developer]
-$createObject[{}]`
-/*
-$createObject - Makes the object
-$addObjectProperty - Adds a 'key' with the given <value> in the object
-*/
-})
+	name: "getObjectProperty",
+	code: `
+	$getObjectProperty[mods]
+	
+	$addObjectProperty[mods;on]
+	
+	$createObject[{}]
+	`
+// Returns: on
+});
 ```
-
