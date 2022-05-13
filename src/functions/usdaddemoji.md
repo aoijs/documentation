@@ -9,7 +9,7 @@ description: Adds an emoji to the guild.
 ### Usage
 
 ```php
-$addEmoji[guildID;URL;name;reason?;roleID?;roleID?;...]
+$addEmoji[guildID;URL;name;return emoji?;reason?;roleID?;roleID?;...]
 ```
 
 #### Fields
@@ -19,6 +19,7 @@ $addEmoji[guildID;URL;name;reason?;roleID?;roleID?;...]
 | guildID | The guild's ID where the emoji will be added | number | yes |
 | URL | The image URL that will be added as emoji | string | yes |
 | name | The emoji's name | string | yes |
+| return emoji | When added, shows emoji | boolean | no |
 | reason | The reason of adding the emoji | string | no |
 | roleID\(s\) | The roles, that will accessible to use the emoji | string | no |
 
@@ -33,8 +34,11 @@ $addEmoji[guildID;URL;name;reason?;roleID?;roleID?;...]
 bot.command({
   name: "add-emoji",
   code: `
-  $addEmoji[$guildID;https://cdn.discordapp.com/emojis/786763619438166036.png;shy_bear;Because, why not?;849217373214474253]
+  $addEmoji[$guildID;https://media.discordapp.net/attachments/861208192121569280/970996440971223090/Baslksz51_20220429193009.png;partner;yes;Because, why not?;849217373214474253]
   `
-//Adds an emoji that named "shy_bear". You can see details in audit logs.
+//Adds an emoji that named "partner". You can see details in audit logs.
 });
 ```
+## Output 
+
+![Add Emoji](/src/images/add_emoji.png "Add Emoji Example")
