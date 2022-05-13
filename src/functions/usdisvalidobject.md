@@ -27,9 +27,9 @@ $isValidObject[object]
 
 ```javascript
 bot.command({
-	name: "is-valid-object",
-	code:`
-	$isValidObject[ { "test": "hi" } ]
-	`
-})
+  name: "is-valid-object",
+  code:`
+  $isValidObject[ { "brain": "exercising" } ]
+  `
+});
 ```

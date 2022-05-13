@@ -25,20 +25,20 @@ Without Optional:
 
 ```javascript
 bot.command({
-	name: "getObject",
-	code: `
-	$getObject
-	
-	$addObjectProperty[lights;off]
-	
-	$addObjectProperty[key;on]
-	
-	$createObject[{}]
-	`
+  name: "getObject",
+  code: `
+  $getObject
+  
+  $addObjectProperty[lights;off]
+  
+  $addObjectProperty[key;on]
+  
+  $createObject[{}]
+  `
 /* Returns:
 {
-	"key": "on",
-	"lights":"off"
+  "key": "on",
+  "lights": "off"
 }
 */
 });

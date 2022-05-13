@@ -32,10 +32,10 @@ Without decimal:
 
 ```javascript
 bot.command({
-	name: "abbreviate",
-	code: `
-	$abbreviate[6900]
-	`
+  name: "abbreviate",
+  code: `
+  $abbreviate[6900]
+  `
 //Returns: 7K
 });
 ```
@@ -44,10 +44,10 @@ With decimal:
 
 ```javascript
 bot.command({
-	name: "abbreviate",
-	code: `
-	$abbreviate[6900;1]
-	`
+  name: "abbreviate",
+  code: `
+  $abbreviate[6900;1]
+  `
 //Returns: 6.9K
 });
 ```

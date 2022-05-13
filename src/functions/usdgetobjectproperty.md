@@ -22,14 +22,14 @@ $getObjectProperty[key]
 
 ```javascript
 bot.command({
-	name: "getObjectProperty",
-	code: `
-	$getObjectProperty[mods]
-	
-	$addObjectProperty[mods;on]
-	
-	$createObject[{}]
-	`
+  name: "getObjectProperty",
+  code: `
+  $getObjectProperty[mods]
+  
+  $addObjectProperty[mods;on]
+  
+  $createObject[{}]
+  `
 // Returns: on
 });
 ```

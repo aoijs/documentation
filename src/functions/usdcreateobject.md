@@ -25,24 +25,18 @@ Without Optional:
 
 ```javascript
 bot.command({
-	name: "createObject",
-	code: `
-	$getObjectProperty[message]
-	
-	$addObjectProperty[message;Hello, World!]
-	
-	$createObject[{}]
-	`
+  name: "createObject",
+  code: `
+  $getObjectProperty[message]
+  
+  $addObjectProperty[message;Hello, World!]
+  
+  $createObject[{}]
+  `
 //Returns "Hello, World!"
 
 /*For to see how does it get stored.
-{
-  data: { 
-  	object: { 
-  		message: 'Hello, World!' 
-  	} 
-  }
-} */
+{ data: { object: { message: 'Hello, World!' } } } */
 })
 ```
 
@@ -50,13 +44,12 @@ With Optional:
 
 ```javascript
 bot.command({
-	name: "createObject",
-	code: `
-	$getObjectProperty[message]
-	
-	$createObject[{"message":"Hello Word"}]
-	
-	`
+  name: "createObject",
+  code: `
+  $getObjectProperty[message]
+  
+  $createObject[{"message":"Hello Word"}]
+  `
 //Returns "Hello, World!". We didn't use $addObjectProperty in here.
 });
 ```

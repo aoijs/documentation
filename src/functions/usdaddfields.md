@@ -1,46 +1,39 @@
 ---
-description: addFields allows you to adds more fields to your embed.
+description: Adds fields to embed message.
 ---
 
 # $addFields
 
-This function is in charge of adding new fields to the embed, these containing a limit of 1000 characters each and allowing to use 10 fields in one function.
+`$addFields` allows you to add a field to in embed message.
+
+### Usage
 
 ```php
-$addFields[index;text;value;inline]
+$addFields[index:name:text:inline?;...]
 ```
 
-## Fields
+### Fields
 
 | Field | Description | Type | Required |
 | :--- | :--- | :--- | :--- |
-| index | The embed to add this author to. | integer | yes |
-| text | The field text. | string | yes |
-| value | The field value. | string | yes |
-| inline | The field inline. | boolean | no |
+| index | The embed's index | number | yes |
+| name | The field's title | string | yes |
+| text | The field's description | string | yes |
+| inline | For the field be in line or not | boolean | no |
 
-#### Usage
+###### Footnotes
 
-Without inline
+> * Field Limit: 25 Fields
+> * Field Name Limit: 256 Characters
+> * Field Text Limit: 1024 Characters
 
-```javascript
-bot.command({
-    name: "fields",
-    code: `$addFields[1;This is name part:and this is content;...]`
-});
-```
-
-With inline
+## Example
 
 ```javascript
 bot.command({
-    name: "fields",
-    code: `
-    $addFields[1;Inline #:1:yes;1:Inline #:2:yes;...]
-    `
+  name: "add-fields",
+  code: `
+  $addFields[1:Your Username:Neo.;1:Your Age:20 years old.:yes]
+  `
 });
 ```
-
-
-
-

@@ -22,6 +22,7 @@ $addField[index;name;text;inline?]
 | inline | For the field be in line or not | boolean | no |
 
 ###### Footnotes
+
 > * Field Limit: 25 Fields
 > * Field Name Limit: 256 Characters
 > * Field Text Limit: 1024 Characters
@@ -46,7 +47,9 @@ bot.command({
   name: "add-field",
   code: `
   $addField[3;My Gender;Male.;yes]
+  
   $addField[2;My Age;I'm 20 years old.;yes]
+  
   $addField[1;My name;My name is Neo.;yes]
   `
 });

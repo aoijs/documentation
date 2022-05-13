@@ -24,11 +24,11 @@ $addMessageReactions[channelID;messageID;emoji;emoji?;...]
 
 ```javascript
 bot.command({
-	name: "add-message-reactions",
-	code: `
-	$addMessageReactions[$channelID;$messageID;🌸]
-	
-	Here's a pretty flower!
-	`
+  name: "add-message-reactions",
+  code: `
+  $addMessageReactions[$channelID;$messageID;🌸]
+  
+  Here's a pretty flower!
+  `
 });
 ```

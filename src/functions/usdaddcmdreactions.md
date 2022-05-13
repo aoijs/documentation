@@ -44,10 +44,10 @@ With default emoji
 
 ```javascript
 bot.command({
-	name: "add-cmd-reaction",
-	code: `
-	$addCmdReactions[😋;🤠]
-	`
+  name: "add-cmd-reaction",
+  code: `
+  $addCmdReactions[😋;🤠]
+  `
 //This also adds emojis to author's message as well.
 });
 ```
