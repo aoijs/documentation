@@ -2,8 +2,6 @@
 description: Abbreviate numbers.
 ---
 
-<hr>
-
 # $abbreviate
 
 `$abbreviate` allowing you to abbreviate large numbers.
