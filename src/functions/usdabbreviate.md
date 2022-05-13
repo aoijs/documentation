@@ -46,8 +46,12 @@ With decimal:
 bot.command({
   name: "abbreviate",
   code: `
-  $abbreviate[6900;1]
+  $abbreviate[6983;1]
   `
 //Returns: 6.9K
 });
 ```
+
+## Output 
+
+![Abbreviate](/src/images/abbreviate.png "Select Menu")
