@@ -33,7 +33,11 @@ $addFields[index:name:text:inline?;...]
 bot.command({
   name: "add-fields",
   code: `
-  $addFields[1:Your Username:Neo.;1:Your Age:20 years old.:yes]
+  $addFields[1:My name:My name is Neo.:yes;1:My Age:I'm 20 years old.;1:My Gender:Male.:yes]
   `
 });
 ```
+
+## Output 
+
+![Add Fields](/src/images/add_fields.png)

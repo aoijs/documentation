@@ -46,11 +46,15 @@ With in line:
 bot.command({
   name: "add-field",
   code: `
-  $addField[3;My Gender;Male.;yes]
+  $addField[1;My Gender;Male.;yes]
   
-  $addField[2;My Age;I'm 20 years old.;yes]
+  $addField[1;My Age;I'm 20 years old.;yes]
   
   $addField[1;My name;My name is Neo.;yes]
   `
 });
 ```
+
+## Output 
+
+![Add Field](/src/images/add_field.png)
