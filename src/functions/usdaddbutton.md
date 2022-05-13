@@ -20,7 +20,7 @@ $addButton[index;label;style;customID;disable?;emoji?]
 | label | Text on the button | string | no |
 | style | Button's style | str & num | yes |
 | customID | A custom ID for the button (changes for link __style*__) | string | yes |
-| disable | Disabling the button | string | no |
+| disable | Disabling the button | boolean | no |
 | emoji | The emoji that will show up next to the label. | string | no |
 
 #### Styles
