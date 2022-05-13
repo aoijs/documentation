@@ -47,18 +47,18 @@ For Normal Button:
 
 ```javascript
 bot.command({
-  name: "hello",
+  name: "add-button",
   code: `
-  Hello world!
+  Hello, World!
   
-  $addButton[1;Say, hello!;primary;helloButton;no;👋]
+  $addButton[1;Welcome!;primary;helloButton;no;👋]
   `
 });
 
 bot.interactionCommand({
   name: "helloButton",
   code: `
-  $interactionReply[Bye bye!]
+  $interactionReply[Bye, bye!]
   `
 });
 ```
@@ -75,3 +75,7 @@ bot.command({
   `
 });
 ```
+
+## Output 
+
+![Add Button](/src/images/abbreviate.png "Add Button Example")

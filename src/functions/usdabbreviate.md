@@ -54,4 +54,4 @@ bot.command({
 
 ## Output 
 
-![Abbreviate](/src/images/abbreviate.png "Select Menu")
+![Abbreviate](/src/images/abbreviate.png "Abbreviate Example")
