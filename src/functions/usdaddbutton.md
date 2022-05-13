@@ -51,7 +51,7 @@ bot.command({
   code: `
   Hello, World!
   
-  $addButton[1;Welcome!;primary;helloButton;no;👋]
+  $addButton[1;Welcome;primary;helloButton;no;👋]
   `
 });
 
@@ -78,4 +78,4 @@ bot.command({
 
 ## Output 
 
-![Add Button](/src/images/abbreviate.png "Add Button Example")
+![Add Button](/src/images/add_button.png "Add Button Example")
