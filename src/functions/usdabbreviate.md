@@ -17,7 +17,7 @@ $abbreviate[number;decimal?]
 | Field | Description |
 | :--- | :--- |
 | number | The number is going to abbreviated |
-| decimal | ... |
+| decimal | Separates the number in a decimal way |
 
 ###### Abbreviation Types
 * `k` — thousands
