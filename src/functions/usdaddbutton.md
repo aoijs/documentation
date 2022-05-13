@@ -1,5 +1,5 @@
 ---
-Description: Add button component to message.
+description: Add button component to message.
 ---
 
 # $addButton
