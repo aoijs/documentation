@@ -8,7 +8,7 @@ description: Abbreviate numbers.
 
 ### Usage
 
-```
+```php
 $abbreviate[number;decimal?]
 ```
 

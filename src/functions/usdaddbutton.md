@@ -8,7 +8,7 @@ This function will add a button to bot's message.
 
 ### Usage 
 
-```
+```php
 $addButton[index;label;style;customID;disable?;emoji?]
 ```
 

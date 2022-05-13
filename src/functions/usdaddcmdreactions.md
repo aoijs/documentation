@@ -8,15 +8,15 @@ description: Add reaction to author's message.
 
 ### Usage
 
-```
+```php
 $addCmdReactions[emoji;emoji;...]
 ```
 
 ### Field
 
-| Field | Description |
-| :--- | :--- |
-| emoji | A default Discord emoji or a custom emoji with ID |
+| Field | Description | Type |
+| :--- | :--- | :--- |
+| emoji | A default Discord emoji or a custom emoji with ID | string |
 
 ###### Custom Emoji Information
 

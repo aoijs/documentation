@@ -8,7 +8,7 @@ This function shows the current activity of the indicated user \(Only if it dete
 
 ### Usage
 
-```
+```php
 $activity[userID?;guildID?]
 ```
 

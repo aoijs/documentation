@@ -8,7 +8,7 @@ description: Adds an emoji to the guild.
 
 ### Usage
 
-```
+```php
 $addEmoji[guildID;URL;name;reason?;roleID?;roleID?;...]
 ```
 

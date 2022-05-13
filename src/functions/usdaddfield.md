@@ -8,7 +8,7 @@ description: Adds field to embed message.
 
 ### Usage
 
-```
+```php
 $addField[index;name;text;inline?]
 ```
 
