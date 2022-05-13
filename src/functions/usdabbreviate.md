@@ -14,10 +14,10 @@ $abbreviate[number;decimal?]
 ```
 
 ### Fields
-| Field | Description |
-| :--- | :--- |
-| number | The number is going to abbreviated |
-| decimal | Separates the number in a decimal way |
+| Field | Description | Type | Required |
+| :--- | :--- | :--- | :--- |
+| number | The number is going to abbreviated | number | yes |
+| decimal | Separates the number in a decimal way | number | no |
 
 ###### Abbreviation Types
 * `k` — thousands
@@ -26,7 +26,9 @@ $abbreviate[number;decimal?]
 * `t` — trillions
 
 ## Examples
+
 Without decimal:
+
 ```javascript
 bot.command({
 	name: "abbreviate",
@@ -38,6 +40,7 @@ bot.command({
 ```
 
 With decimal:
+
 ```javascript
 bot.command({
 	name: "abbreviate",

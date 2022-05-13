@@ -4,50 +4,48 @@ description: Return's the given user's activities.
 
 # $activity
 
-This function shows the current activity of the indicated user \(Only if it detects any activity.\), If the indicated user does not have an activity such as a 'custom status' it will show 'none'.
+This function shows the current activity of the indicated user \(Only if it detects any activity\), if the indicated user does not have an activity such as a 'custom status' it will show 'none'.
 
-#### Fields
+### Usage
+```
+$activity[userID?;guildID?]
+```
 
-This function has 1 field
+### Fields
+| Field | Description | Type | Required |
+| :--- | :--- | :--- | :--- |
+| userID | The ID of the user to see activity | number | no |
+| guildID | To see, user's activity for specific guild | number | no |
 
-1. userID \(optional\)
-
-Raw Usage: `$activity[userID (optional)]`
-
-#### Options
-
-* userID - The user the activity is based on
-
-#### Activities
+###### Activity Types
 
 * Custom Status
-* Spotify _\(Listening to\)_
-* &lt;Game Name&gt; _\(Playing\)_
+* Spotify _\(Listening to Spotify\)_
+* Game Name _\(Playing ...\)_
 * Streaming
 
 #### Usage
 
-Without a user ID
+Without optional fields:
 
 ```javascript
 bot.command({
-    name: "activiy",
-    code: `$activity`
+  name: "activity",
+  code: `
+  $activity
+  `
+//Returns "none" cause I'm offline.
 });
 ```
 
-With a user ID
+With optional fields:
 
 ```javascript
 bot.command({
-    name: "activity",
-    code: `$activity[535566311942651924]`
+  name: "activity",
+  code: `
+  $activity[285118390031351809;697039582922801182]
+  `
+//Let's say I'm streaming a video on this guild's voice chat. It will show "Streaming" activity since I'm streaming a video.
 });
 ```
-
-
-
-
-
-
-
