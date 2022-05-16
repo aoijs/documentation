@@ -51,7 +51,3 @@ bot.command({
 //Let's say I'm streaming a video on this guild's voice chat. It will show "Streaming" activity since I'm streaming a video.
 });
 ```
-
-## Output 
-
-![Activity](/src/images/activity.png "Activity Example")
