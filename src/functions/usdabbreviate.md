@@ -51,7 +51,3 @@ bot.command({
 //Returns: 6.9K
 });
 ```
-
-## Output 
-
-![Abbreviate](/src/images/abbreviate.png "Abbreviate Example")
