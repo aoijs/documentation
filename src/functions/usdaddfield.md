@@ -54,7 +54,3 @@ bot.command({
   `
 });
 ```
-
-## Output 
-
-![Add Field](/src/images/add_field.png)

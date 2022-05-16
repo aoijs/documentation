@@ -51,7 +51,3 @@ bot.command({
 //This also adds emojis to author's message as well.
 });
 ```
-
-## Output 
-
-![Add Command Reactions](/src/images/add_cmd_reactions.png "AddCmdReactions Example")

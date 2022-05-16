@@ -75,7 +75,3 @@ bot.command({
   `
 });
 ```
-
-## Output 
-
-![Add Button](/src/images/add_button.png "Add Button Example")

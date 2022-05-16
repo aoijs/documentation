@@ -39,6 +39,3 @@ bot.command({
 //Adds an emoji that named "partner". You can see details in audit logs.
 });
 ```
-## Output 
-
-![Add Emoji](/src/images/add_emoji.png "Add Emoji Example")
