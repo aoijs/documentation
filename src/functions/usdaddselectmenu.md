@@ -9,7 +9,7 @@ This function that adds a selection menu to client's message.
 ### Usage:
 
 ```php
-$addSelectMenu[index;customID;placeholder;minimum value;maximum value;disable;label:description:value:default?:emoji?]
+$addSelectMenu[index;customID;placeholder;minimum value;maximum value;disable;label:description:value:default?:emoji?;...]
 ```
 
 ## Fields
@@ -72,5 +72,3 @@ bot.interactionCommand({
   `
 });
 ```
-
-![Select Menu](/src/images/select_menu.svg "Select Menu")

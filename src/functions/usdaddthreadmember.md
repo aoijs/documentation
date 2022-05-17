@@ -1,18 +1,19 @@
 ---
-Description: Add a member to thread.
+description: Add a member to thread.
 ---
-<hr>
 
 # $addThreadMember
 
 This function will add a member to a channel's thread.
 
 ### Usage 
-```js
+
+```php
 $addThreadMember[channelID;threadID;memberID;reason?]
 ```
 
 ### Fields
+
 | Field | Description | Type | Required |
 | :--- | :--- | :--- | :--- |
 | channelID | ID of the channel | number | yes |
@@ -21,7 +22,8 @@ $addThreadMember[channelID;threadID;memberID;reason?]
 | reason? | A reason for adding member to a thread | string | no |
 
 ## Example
-```js
+
+```javascript
 bot.command({
   name: "add-thread-member",
   code: `
