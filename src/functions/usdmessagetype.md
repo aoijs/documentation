@@ -22,13 +22,12 @@ The type of the current message, e.g. DEFAULT. Here are the available message ty
 * GUILD\_DISCOVERY\_DISQUALIFIED
 * GUILD\_DISCOVERY\_REQUALIFIED
 
-#### Usage:
+### Usage:
 
-```text
+```js
 bot.command({
 name: "$alwaysExecute",
-code: `
-The server has reached boost level 3! 🎉
-$onlyIf[$messageType==USER_PREMIUM_GUILD_SUBSCRIPTION_TIER_3;]
+code: `The server has reached boost level 3! 🎉
+$onlyIf[$messageType==USER_PREMIUM_GUILD_SUBSCRIPTION_TIER_3;]` });
 ```
 
