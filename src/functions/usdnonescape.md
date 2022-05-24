@@ -1,3 +1,7 @@
+---
+description : Used to unescape the message provided.
+---
+
 # $nonEscape
 This function is used to unescape the message provided in it.
 
