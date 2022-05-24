@@ -432,6 +432,7 @@
   * [$setGuildName](functions/usdsetguildname.md)
   * [$setMessageVar](functions/usdsetmessagevar.md)
   * [$setRoles](functions/usdsetroles.md)
+  * [$setRolePosition](functions/usdsetroleposition.md)
   * [$setServerVar](functions/usdsetservervar.md)
   * [$setStatus](functions/usdsetstatus.md)
   * [$setTimeout](functions/usdsettimeout.md)
