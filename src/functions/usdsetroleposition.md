@@ -1,3 +1,7 @@
+---
+description : Used to set a position to the specified role.
+---
+
 # $setRolePosition
 This function is used to set a position to the specified role.
 
