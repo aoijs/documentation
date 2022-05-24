@@ -49,6 +49,7 @@ bot.command({
 
 bot.interactionCommand({
   name: "helloButton",
+  prototype: "button",
   code: `
   $interactionReply[Bye bye!]
   `
