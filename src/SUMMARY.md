@@ -317,6 +317,7 @@
   * [$nodeVersion](functions/usdnodeversion.md)
   * [$noEscapingMessage](functions/usdnoescapingmessage.md)
   * [$noMentionMessage](functions/usdnomentionmessage.md)
+  * [$nonEscape](functions/usdnonescape.md)
   * [$numberSeparator](functions/usdnumberseparator.md)
   * [$oldChannel](functions/usdoldchannel.md)
   * [$oldPresence](functions/usdoldpresence.md)
