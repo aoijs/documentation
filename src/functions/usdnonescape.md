@@ -14,7 +14,7 @@ This function is used to unescape the message provided in it.
 With this character usages you can let the bot return the given characters 
 without accepting this as a separator or as the end of a function.  
 
-- You can find the list of characters in [this file](../guide/begin/character-escaping.md).
+- You can find the list of escaping characters in [this file](../guide/begin/character-escaping.md).
 
 
 ### Usage
