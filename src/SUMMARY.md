@@ -250,6 +250,7 @@
   * [$isMuted](functions/usdismuted.md)
   * [$isNumber](functions/usdisnumber.md)
   * [$isPrune](functions/usdisprune.md)
+  * [$isRoleEditable](functions/usdisroleeditable.md)
   * [$isTicket](functions/usdisticket.md)
   * [$isUserDMEnabled](functions/usdisuserdmenabled.md)
   * [$isValidHex](functions/usdisvalidhex.md)
