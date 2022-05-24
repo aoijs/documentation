@@ -1,3 +1,7 @@
+---
+description : Checks if the role can be edited. Returns boolean.
+---
+
 # $isRoleEditable
 
 This function checks if the role can be edited. Returns boolean.
