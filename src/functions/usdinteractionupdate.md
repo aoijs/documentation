@@ -35,7 +35,7 @@ $interactionUpdate[content;embeds?;components?;files?;allowed mentions?]
 * *If you want to make only embed message(s), you can just pass "content" property.*
 * Message *cannot* be ephemeral, if it wasn't an ephemeral message before!
 
-## Examples
+## Example
 
 Let us explain how does it work 🤠
 
