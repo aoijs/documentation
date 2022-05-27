@@ -46,7 +46,8 @@ $say[$authorID;$message]
 `
 })
 ```
-{% hint style="info" %} You can also use the custom function created in eval command to check its usage. {% endhint %}
+
+{% hint style="info" %} You can create a function without parameters by omitting the params field as it is optional. {% endhint %}
 
 {% hint style="danger" %} Only Experienced Developers with proper understanding of aoi.js should use this! {% endhint %}
 
