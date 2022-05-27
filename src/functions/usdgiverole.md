@@ -23,7 +23,7 @@ $giveRole[guildID;userID;roleID]
 
 ```javascript
 bot.command({
-  name: "giveRole",
+  name: "give-role",
   code: `
   $giveRole[$guildID;$authorID;797332449314734141]
   `
