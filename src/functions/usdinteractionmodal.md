@@ -41,8 +41,8 @@ $interactionModal[title;customID;components]
 
 * `title` — The title of field.
 * `type` — The type of title field
-> `1` → Single line answer.
-> `2` → Multi-lines answer
+> * `1` → Single line answer.
+> * `2` → Multi-lines answer
 * `customid` — Custom ID of the `$textInputValue`.
 * `required` — The answer required or not.
 * `placeholder` — The text that will show as default label on modal answer.
