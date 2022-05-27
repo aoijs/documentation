@@ -85,6 +85,7 @@
   * [$channelCount](functions/usdchannelcount.md)
   * [$channelExists](functions/usdchannelexists.md)
   * [$channelID](functions/usdchannelid.md)
+  * [$createApplicationCommand](functions/usdcreateapplicationcommand.md)
   * [$messageExists](functions/usdchannelmessageexists.md)
   * [$channelName](functions/usdchannelname.md)
   * [$channelNSFW](functions/usdchannelnsfw.md)
