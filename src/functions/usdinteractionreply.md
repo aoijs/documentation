@@ -1,20 +1,23 @@
 ---
-Description: Send an interaction message.
+description: Send an interaction message.
 ---
-<hr>
 
 # $interactionReply
 
 `$interactionReply` allows you to send an interaction message reply for:
+
 * Application commands
 * Button replies
 * Select menu replies
 
 ### Usage 
-```js
+
+```php
 $interactionReply[content;embeds?;components?;files?;allowed mentions?;ephemeral?]
 ```
+
 ### Fields
+
 | Field | Description | Required |
 | :--- | :--- | :--- |
 | content | A content message for reply | no |
@@ -25,6 +28,7 @@ $interactionReply[content;embeds?;components?;files?;allowed mentions?;ephemeral
 | ephemeral | Makes the reply ephemeral, which is only you can see | no |
 
 ### Property Types
+
 > * `CONTENT` — *just text would be enough :)*
 > * `EMBEDS` — *embed-errors*
 > * `COMPONENTS` — *buttons, selection menus*
@@ -33,59 +37,87 @@ $interactionReply[content;embeds?;components?;files?;allowed mentions?;ephemeral
 > * `EPHEMERAL` — *`yes` or `no` (either you can leave it blank 🤫)*
 
 ###### Footnotes
+
 * *If you want to make only embed message(s), you can just pass "content" property.*
 * Don't forget to add this callback on your main file!
-```js
+
+```javascript
 bot.onInteractionCreate();
 ```
 
 ## Examples
+
 Let's start with `content` message only.
-```js
+
+```javascript
 //After we used "hello" slash command, client will respond with "Hello, world!"
 bot.interactionCommand({
   name: "hello",
   prototype: 'slash',
   code: `
-  $interactionReply[Hello, world!]
+  $interactionReply[
+    Hello, world!
+  ]
   `
 });
 ```
+
 Now let's add `embeds` on it, and remove `content`!
-```js
+
+```javascript
 //Do not forget to add "SEMI-COLON" to pass next property.
 bot.interactionCommand({
   name: "hello",
   prototype: 'slash',
   code: `
   $interactionReply[
-  ;{newEmbed:{description:Hello, world!}}
+    ;{newEmbed:
+      {description:Hello, world!}
+    }
   ]
   `
 });
 ```
+
 Adding components with files and allowed mentions doesn't sound bad, right?
-```js
+
+```javascript
 bot.interactionCommand({
   name: "hello",
   prototype: 'slash',
   code: `
-  $interactionReply[<@$interactionData[author.id]>
-  ;{newEmbed:{description:Hello, world!}}
-  ;{actionRow:{button:Hi!:1:hiButtonID}}
-  ;{files:Hi $username!:Hello.txt}
-  ;users]
+  $interactionReply[
+    <@$interactionData[author.id]>
+    ;{newEmbed:
+      {description:Hello, world!}
+    }
+    ;{actionRow:
+      {button:Hi!:1:hiButtonID}
+    }
+    ;{files:Hi $username!:Hello.txt}
+    ;users
+  ]
   `
 });
 ```
-And lastly, ephemeral: 
-```js
+
+And lastly, ephemeral:
+
+```javascript
 bot.interactionCommand({
   name: "hello",
   prototype: 'slash',
   code: `
-  $interactionReply[I'm your new waifu, no one can see us.;;;;;yes]
+  $interactionReply[
+    I'm your new waifu, no one can see us.
+    ;
+    ;
+    ;
+    ;
+    ;yes
+  ]
   `
 });
 ```
+
 And, that's it! Now you know how to use `$interactionReply`'s properties!
