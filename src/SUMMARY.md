@@ -234,6 +234,7 @@
   * [$image](functions/usdimage.md)
   * [$indexOf](functions/usdindexof.md)
   * [$interactionReply](functions/usdinteractionreply.md)
+  * [$interactionUpdate](functions/usdinteractionupdate.md)
   * [$isBanned](functions/usdisbanned.md)
   * [$isBoosting](functions/usdisboosting.md)
   * [$isBot](functions/usdisbot.md)
