@@ -19,7 +19,6 @@ $interactionDelete
 ## Example
 
 ```javascript
-//Afte
 bot.interactionCommand({
   name: "hello",
   prototype: 'slash',
