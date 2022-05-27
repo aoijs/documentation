@@ -9,6 +9,7 @@ description: Send an interaction message.
 * Application commands
 * Button replies
 * Select menu replies
+* Modal replies
 
 ### Usage 
 
