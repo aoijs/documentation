@@ -59,6 +59,7 @@ bot.readyCommand({
 });
 
 //Slash Command Example (ping)
+//$createApplicationCommand[$guildID;ping;Pong!;true;slash]
 bot.interactionCommand({
   name: "ping",
   prototype: 'slash',
