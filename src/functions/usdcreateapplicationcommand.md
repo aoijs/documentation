@@ -49,7 +49,7 @@ name:description:require:type
 
   Secondly
 ```javascript
-// {subcommand:name:
+// {subCommand:name:
 {type:name:description:require}
 // :{choice:name:value}
 ```
