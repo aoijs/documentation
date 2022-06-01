@@ -37,11 +37,11 @@
 >```
 ### Available Data of the Select Menus
 
-`$interactionData[message.id]` => the message id to which the button has attached.
+`$interactionData[message.id]` => the message id to which the select menu has attached.
 
-`$interactionData[author.id]` => The person who clicked the button.
+`$interactionData[author.id]` => The person who used the select menu.
 
-`$interactionData[channel.id]` => The channel in which the button is located.
+`$interactionData[channel.id]` => The channel in which the select menu is located.
 
 `$interactionData[values[0]]` => First option that was selected.
 
