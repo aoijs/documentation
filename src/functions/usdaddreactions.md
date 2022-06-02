@@ -15,7 +15,7 @@ $addReactions[emoji;...]
 ### Fields
 
 | Field | Description | Type |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- | 
 | emoji | The emoji going to be reacted on bot's response | string | 
 
 
