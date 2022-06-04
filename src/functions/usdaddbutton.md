@@ -1,61 +1,71 @@
 ---
-Description: Add button component to message.
+description: Add button component to message.
 ---
-<hr>
 
 # $addButton
 
 This function will add a button to bot's message.
 
 ### Usage 
-```js
+
+```php
 $addButton[index;label;style;customID;disable?;emoji?]
 ```
 
 ### Fields
+
 | Field | Description | Type | Required |
 | :--- | :--- | :--- | :--- |
 | index | The button to show up on the given embed | number | yes |
 | label | Text on the button | string | no |
 | style | Button's style | str & num | yes |
 | customID | A custom ID for the button (changes for link __style*__) | string | yes |
-| disable | Disabling the button | string | no |
+| disable | Disabling the button | boolean | no |
 | emoji | The emoji that will show up next to the label. | string | no |
 
 #### Styles
+
 * 1 & primary ─ Blue button
 * 2 & secondary ─ Gray button
 * 3 & success ─ Green button
 * 4 & danger ─ Red button
 * 5 & link ─ Redirect button
+
 > *__Note__: Using link style will make customID property as a link.*
 
 ###### Footnote
+
 Interaction commands needs this callback on main file (or handler):
-```js
+
+```javascript
 bot.onInteractionCreate();
 ```
+
 ## Examples
+
 For Normal Button:
+
 ```javascript
 bot.command({
-  name: "hello",
+  name: "add-button",
   code: `
-  Hello world!
+  Hello, World!
   
-  $addButton[1;Say, hello!;primary;helloButton;no;👋]
+  $addButton[1;Welcome;primary;helloButton;no;👋]
   `
 });
 
 bot.interactionCommand({
   name: "helloButton",
+  prototype: 'button',
   code: `
-  $interactionReply[Bye bye!]
+  $interactionReply[Bye, bye!]
   `
 });
 ```
 
 For Redirected Button (link style):
+
 ```javascript
 bot.command({
   name: "hello",

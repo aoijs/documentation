@@ -34,9 +34,9 @@ npm install aoi.js
 const aoijs = require("aoi.js")
 
 const bot = new aoijs.Bot({
-token: "DISCRD BOT TOKEN",
-prefix: "DISCRD BOT PREFIX",
-intents: ["GUILDS", "GUILD_MESSAGES"]
+  token: "Discord_Bot_Token",
+  prefix: "Discord_Bot_Prefix",
+  intents: ["GUILDS", "GUILD_MESSAGES"]
 })
 
 //Events
@@ -44,15 +44,29 @@ bot.onMessage()
 
 //Command Example (ping)
 bot.command({
-name: "ping",
-code: `Pong! $pingms`
-})
+  name: "ping",
+  code: `
+  Pong! $pingms 🏓
+  `
+});
 
 //Ready Event
 bot.readyCommand({
-    channel: "",
-    code: `$log[Ready on $userTag[$clientID]]`
-})
+  channel: "",
+  code: `
+  $log[Ready on $userTag[$clientID]]
+  `
+});
+
+//Slash Command Example (ping)
+//$createApplicationCommand[$guildID;ping;Pong!;true;slash]
+bot.interactionCommand({
+  name: "ping",
+  prototype: 'slash',
+  code: `
+  $interactionReply[Pong! $pingms 🏓]
+  `
+});
 ```
 
 ## Links
