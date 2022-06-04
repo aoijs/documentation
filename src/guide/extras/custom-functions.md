@@ -22,7 +22,8 @@ code : `The code to be returned` //THE ACTUAL CODE IT WILL BE RETURN
 
 {% hint style="info" %} To get the values of the parameters provided in the function, use {} around the parameter name i.e. {param}  {% endhint %}
 
-### Example
+### Example with aoi.js function
+
 - Creating the custom function
 
 ```js
@@ -43,8 +44,41 @@ bot.command({
 name:"say",
 code:`
 $say[$authorID;$message]
-`
-})
+`})
+```
+
+
+### Example with discord.js function
+
+- Creating the custom function
+
+```js
+bot.functionManager.createCustomFunction({
+      name: "$sendDMtoUser",//FUNCTION NAME
+      type: "djs",//TYPE OF THE FUNCTION
+      params: ['userid','message'], // TYPE OF THE PARAMETERS
+      code: async d => {//FETCHING DATA AS D
+        
+        const data = d.util.openFunc(d);
+        const [userid,message] = data.inside.splits;//GETTING THE PARAMETERS
+        
+        const user = await d.util.getUser(d, userid);// THIS IS THE CODE INSIDE
+        user.send(message);//YOU CAN CHANGE THIS AS PER YOUR REQUIREMENTS
+        
+        return {
+          code: d.util.setCode(data);
+        }}
+    });
+```
+
+- Using the custom function
+
+```js
+bot.command({
+name:"say",
+code:`
+$sendDMtoUser[$authorID;$message]
+`})
 ```
 
 {% hint style="info" %} You can create a function without parameters by omitting the params field as it is optional. {% endhint %}
