@@ -1,29 +1,23 @@
-# Music
+# @akarui/aoi.music
 
-aoi.js has an extension named ***"@akarui/aoi.music"*** for music.
+aoi.js has an extension named ***@akarui/aoi.music*** for music.
 
 ## Installation
 
-> ```
-> npm i @akarui/aoi.music
-> ```
-
-***for Dev Version***
-
-> ```
-> npm i @akarui/aoi.music@dev
-> ```
+```php
+npm i @akarui/aoi.music
+```
 
 ### Setting up in aoi.js
 
-After installing aoi.music, to connect it with aoi.js , we are going to use aoi.js' Voice class.
+After installing @akarui/aoi.music, to connect it with aoi.js, we are going to use aoi.js Voice Class.
 
-```js
+```javascript
 const { Voice, LoadCommands, Bot } = require("aoi.js");
 
 const bot = new Bot({
   token: "DISCORD BOT TOKEN",
-  prefix: ".",
+  prefix: "DISCORD BOT PREFIX",
   intents: ["guilds", "guildMessages", "guildVoiceStates"],
 });
 
@@ -60,9 +54,9 @@ As we added Voice class in index.js, and a loader to voice folder,
 setup for Voice class is complete. Let’s create some voice related commands.
 
 
-### play
+### Play
 
-```js
+```javascript
 //Commands/commands/play.js
 module.exports = {
   name: "play youtube",
@@ -80,9 +74,9 @@ module.exports = {
 };
 ```
 
-### queue
+### Queue
 
-```js
+```javascript
 //Commands/commands/queue.js
 module.exports = {
   name: "queue",
@@ -99,7 +93,7 @@ module.exports = {
 
 ### onTrackStart event
 
-```js
+```javascript
 //Commands/voice/trackStart.js
 module.exports = {
   name: "send when track starts", //optional
