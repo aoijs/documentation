@@ -4,26 +4,30 @@ description: Adds an attachment to the message.
 
 # $attachment
 
-This function allows you to add 'attachments' to a message, like images or videos.
+This function allows you to add 'attachments' to a message, like images or videos. If name given, you must specify the extension of the attachment (jpg, png, mp4, etc.)
 
-#### Fields
+### Usage
 
-This function has 1 field
+```php
+$attachment[url;name.extension]
+```
 
-1. URL \(Required\)
+### Fields
 
-Raw Usage: `$attachment[url]`
-
-#### Options
-
-* URL - The url of the image/gif/video of which you want the bot to send
+| Field | Description | Type | Required |
+| :--- | :--- | :--- | :--- |
+| url | The attachment will be sending | url | yes |
+| name.extension | The attachment's name along with extension | string | yes |
 
 #### Usage
 
 ```javascript
 bot.command({
-    name: "dog",
-    code: `$attachment[https://cdn.discordapp.com/attachments/773357374328012840/780585674541105152/20201116_133035.jpg] Take a pic of Kuba's dog!`
+  name: "attachment",
+  code: `
+  $attachment[$authorAvatar;neodevil.png]
+  `
+  //This will return the attachment's name as "neodevil.png"
 });
 ```
 
