@@ -1,43 +1,52 @@
 ---
-description: Returns the total number of emojis the servers the bot is in have
+description: Shows the total of emojis on all servers.
 ---
 
-# $allEmojiCount
+# $allEmojisCount
 
-This function returns the total amount of emojis the servers the bot is in have. This is the sum of all custom emojis of all servers the bot is member of.
+With `$allEmojisCount`, you can see total of emojis on all servers as all, or with types
 
-Raw usage: `$allEmojiCount[type (optional)]`
+### Usage
 
-#### Types:
+```php
+$allEmojisCount[type?]
+```
 
-* `all` or empty field =&gt; returns total amount of custom emojis the bot has access to \(animated and normal\)
-* `animated` =&gt; returns amount of non-animated custom emojis emojis
-* `normal` =&gt; returns amount of non-animated custom emojis emojis
+### Fields
 
-#### Total emoji count:
+| Field | Description | Type | Required |
+| :--- | :--- | :--- | :--- |
+| type | Includes all type when didn't add | string | no |
+
+###### Emoji Types
+
+* `[ ]` — Returns all emojis count when left empty.
+* `animated` — Return all animated emojis count.
+* `normal` — Return all normal type emojis count.
+* `roles` — Return all emojis that specific roles only count.
+
+## Examples
+
+Without type:
 
 ```javascript
 bot.command({
-name: "emojiCount",
-code: `$allEmojiCount emojis`
-})
+  name: "all-emojis-count",
+  code: `
+  $allEmojisCount amounts of emojis
+  `
+//Returns: X amounts of emojis
+});
 ```
 
-#### Animated Emojis:
+With type:
 
 ```javascript
 bot.command({
-name: "emojiCount",
-code: `$allEmojiCount[animated] emojis`
-})
+  name: "abbreviate",
+  code: `
+  $allEmojisCount[animated] animated emojis
+  `
+//Returns: X animated emojis
+});
 ```
-
-#### normal Emojis:
-
-```javascript
-bot.command({
-name: "emojiCount",
-code: `$allEmojiCount[animated] emojis`
-})
-```
-
