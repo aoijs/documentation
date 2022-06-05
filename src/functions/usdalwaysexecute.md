@@ -1,39 +1,36 @@
 ---
-description: >-
-  A command property that you can paste in the command's name field to trigger
+description: A command property that you can paste in the command's name field to trigger
   the command with every message.
 ---
 
 # $alwaysExecute
 
-This function will allow the command to be triggered by **every** message a user sends.
+ `$alwaysExecute` is a function will allow the command to be triggered by **every** message an user sends.
 
-{% hint style="danger" %}
-Use this function wisely
-{% endhint %}
+## Usage
 
-#### Usage
-
-```javascript
-bot.command({
-name: "$alwaysExecute", //we put in name because thats where it goes
-code: `your code here` //your code that will be triggered
-})
+```php
+$alwaysExecute
 ```
 
-So, lets have a message counter
+## Example
+
+There's your message counter for example command! 
 
 ```javascript
+//Message variable
 bot.variables({
-messages: 0 //Making the variable
-})
+  messages: 0
+});
+
+//The command will execute whenever an user send a message
 bot.command({
-name: "$alwaysExecute", 
-code: `$setVar[messages;$sum[$getVar[messages];1]]` //Adds 1 to the value for every message sent
-})
+  name: "$alwaysExecute", 
+  code: `
+  $setVar[messages;$sum[$getVar[messages];1]]
+  `
+//Adds 1 to messages variable's value for every message sent
+});
 ```
 
-{% hint style="danger" %}
-Having alot of $alwaysExecute can lead to high ping and delayed responses
-{% endhint %}
-
+That's it!
