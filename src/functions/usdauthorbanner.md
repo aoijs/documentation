@@ -1,5 +1,5 @@
 ---
-Description: Show author's banner.
+description: Show author's banner.
 ---
 
 # $authorBanner
@@ -8,9 +8,10 @@ This function will show author's banner, if there's not a banner; it will return
 
 ### Usage 
 
-```js
+```php
 $authorBanner[size?;dynamic?;format?]
 ```
+
 ### Fields
 
 | Field | Description | Type | Required |

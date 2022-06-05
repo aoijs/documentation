@@ -20,7 +20,7 @@ $addMessageReactions[channelID;messageID;emoji;emoji?;...]
 | messageID | The message of which the reaction(s) will get react | string | yes |
 | emoji | The emojis of which will be reactee to the given messageID
 
-#### Example
+## Example
 
 ```javascript
 bot.command({

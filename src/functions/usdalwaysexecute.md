@@ -1,13 +1,12 @@
 ---
-description: A command property that you can paste in the command's name field to trigger
-  the command with every message.
+description: A command property that you can paste in the command's name field to trigger the command with every message.
 ---
 
 # $alwaysExecute
 
  `$alwaysExecute` is a function will allow the command to be triggered by **every** message an user sends.
 
-## Usage
+### Usage
 
 ```php
 $alwaysExecute

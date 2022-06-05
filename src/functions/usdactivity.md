@@ -26,7 +26,7 @@ $activity[userID?;guildID?]
 * Game Name _\(Playing ...\)_
 * Streaming
 
-#### Usage
+## Example
 
 Without optional fields:
 

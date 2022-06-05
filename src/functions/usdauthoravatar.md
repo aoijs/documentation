@@ -20,9 +20,8 @@ $authorAvatar[size?;dynamic?;format?]
 | dynamic | Stopping animation (related to animated pictures) | string | no |
 | format | Format of the banner (jpg, png etc.) | string | no |
 
-#### Example
+## Example
 
-Without optional
 ```javascript
 bot.command({
   name: "authorAvatar",

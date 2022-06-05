@@ -24,7 +24,7 @@ $author[index;text;icon url?;redirecting url?]
 ###### Footnote
 *The icon url must end with `.png`, `.jpg` or `.gif`!*
 
-#### Examples
+## Examples
 
 Without hyperlink and icon:
 

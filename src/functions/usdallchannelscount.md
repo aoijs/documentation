@@ -17,7 +17,7 @@ $allChannelsCount[type?]
 | :--- | :--- | :--- | :--- |
 | type | The channel types of specific one to get | string | no |
 
-##### Types
+#### Types
 * `Category` — Shows Amount of Categories
 * `News` — Shows Amount of Announcement Type Channels
 * `PublicThread` — Shows Amount of Public Threads
@@ -25,6 +25,8 @@ $allChannelsCount[type?]
 * `Stage` — Shows Amount of Stage Channels
 * `Text` — Shows Amount of Text Channels
 * `Voice` — Shows Amount of Voice Channels
+
+## Example
 
 ```javascript
 bot.command({

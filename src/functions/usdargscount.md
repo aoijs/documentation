@@ -12,7 +12,7 @@ This function will show the number of the arguments that the user typed.
 $argsCount //returns number of arguments
 ```
 
-#### Example
+## Example
 
 ```javascript
 bot.command({

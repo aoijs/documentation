@@ -13,6 +13,7 @@ $archiveThread[threadID;channelID;archiving;reason?]
 ```
 
 ### Fields
+
 | Field | Description | Type | Required |
 | :--- | :--- | :--- | :--- |
 | threadID | The ID of the thread  | number | yes |
@@ -20,7 +21,7 @@ $archiveThread[threadID;channelID;archiving;reason?]
 | archiving | Archiving or making active. | string | yes |
 | reason | Reason for archiving/activating. | string | no |
 
-#### Examples
+## Examples
 
 Archiving a thread:
 

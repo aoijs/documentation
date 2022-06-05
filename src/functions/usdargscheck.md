@@ -16,17 +16,17 @@ $argsCheck[required args;error message]
 
 | Field | Description | Type | Required |
 | :--- | :--- | :--- | :--- |
-| require args | The number is the limitation of the arguments | condition | yes |
+| required args | The number is the limitation of the arguments | condition | yes |
 | error message | The error message, which will be sent if requirements didn't meet | string | yes |
 
-###### Operators
+#### Operators
 
 * `>` — Greater than
 * `<` — Less than
 * `>=` — Greater than or equal to
 * `<=` — Less than or equal to
 
-#### Examples
+## Examples
 
 Greater than:
 ```javascript

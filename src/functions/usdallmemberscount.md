@@ -12,7 +12,7 @@ This function is responsible for showing the number of users that your bot has r
 $allMembersCount
 ```
 
-#### Example
+## Example
 
 ```javascript
 bot.command({
