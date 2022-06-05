@@ -25,6 +25,7 @@ $argsCheck[required args;error message]
 * `<` — Less than
 * `>=` — Greater than or equal to
 * `<=` — Less than or equal to
+
 #### Examples
 
 Greater than:
