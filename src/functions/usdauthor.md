@@ -4,45 +4,49 @@ description: Sets the author in an embed message and authorIcon if it's specifie
 
 # $author
 
-This function allows you to add an 'author' to the embed message and an icon to the author if a URL is specified.
+This function allows you to add an 'author' to the embed message and an icon to the author if a URL is specified. 
 
-#### Fields
+### Usage
 
-Responding to your question, `$author` has 4 properties.
+```php
+$author[index;text;icon url?;redirecting url?]
+```
 
-1. index.
-2. text.
-3. icon URL.
-4. Hyper link \(Optional\)
+### Fields
 
-Raw Usage: `$author[index;text;icon url;url (optional)]`
+| Field | Description | Type | Required |
+| :--- | :--- | :--- | :--- |
+| index | The author embed's index | number | yes |
+| text | The text will show up on the author property | string | yes |
+| icon url? | The icon will show up next to author property | url | no |
+| redirecting url? | The URL of the redirect link | url | no |
 
-#### Options
+###### Footnote
+*The icon url must end with `.png`, `.jpg` or `.gif`!*
 
-* Index - Multiple embeds support
-* Text - The author text
-* icon URL - The url of the image next to the text
-* HyperLink URL - The URL of the redirect link
+#### Examples
 
-{% hint style="warning" %}
-The image URL needs to end with `.gif`, `.png` or `.jpg`
-{% endhint %}
-
-#### Usage
+Without hyperlink and icon:
 
 ```javascript
 bot.command({
-    name: "embed",
-    code: `$author[1;This is an example!;$authorAvatar]`
+  name: "author",
+  code: `
+  $author[1;$username]
+  `
+//Returns the user's username
 });
 ```
 
-#### With hyperlink
+With hyperlink and icon:
 
 ```javascript
 bot.command({
-    name: "embed",
-    code: `$author[1;Aoi.js;$serverIcon;https://aoi.js.org]`
+  name: "author",
+  code: `
+  $author[1;$username;$authorAvatar;https://aoi.js.org]
+  `
+//Returns user's username along with their icon and if clicked, will redirect to aoi.js' website
 });
 ```
 

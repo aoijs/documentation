@@ -27,7 +27,7 @@ bot.command({
   code: `
   $attachment[$authorAvatar;neodevil.png]
   `
-  //This will return the attachment's name as "neodevil.png"
+//This will return the attachment's name as "neodevil.png"
 });
 ```
 
