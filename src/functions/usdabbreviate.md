@@ -1,46 +1,53 @@
 ---
-description: Abbreviates large numbers
+description: Abbreviate numbers.
 ---
 
 # $abbreviate
 
-This function abbreviates large numbers
+`$abbreviate` allowing you to abbreviate large numbers.
 
-#### Usage
+### Usage
 
-This function has 1 field
+```php
+$abbreviate[number;decimal?]
+```
 
-1. Number \(Required\)
+### Fields
 
-Raw Usage: `$abbreviate[number]`
+| Field | Description | Type | Required |
+| :--- | :--- | :--- | :--- |
+| number | The number is going to abbreviated | number | yes |
+| decimal | Separates the number in a decimal way | number | no |
 
-#### Options
+###### Abbreviation Types
 
-* Number - The number the function would abbreviate
+* `k` — thousands
+* `m` — millions
+* `b` — billions
+* `t` — trillions
 
-#### Abbreviations
+## Examples
 
-* k - thousands
-* m - millions
-* b - billions
-* t - trillions
+Without decimal:
 
 ```javascript
 bot.command({
-name: "abbr",
-code: `
-$abbreviate[5000]
-`
-//Returns: 5k
-})
-
-//or specified number
-
-bot.command({
-name: "abbr",
-code: `
-$abbreviate[$message]
-`
-})
+  name: "abbreviate",
+  code: `
+  $abbreviate[6900]
+  `
+//Returns: 7K
+});
 ```
 
+With decimal:
+
+```javascript
+bot.command({
+  name: "abbreviate",
+  code: `
+  $abbreviate[6983;1]
+  `
+//Returns: 6.9K
+});
+```
