@@ -1,33 +1,53 @@
 ---
-description: Adds reactions to the command executed
+description: Add reaction to author's message.
 ---
 
 # $addCmdReactions
-> This function will be in charge of adding the 'emojis' previously chosen in the message of the person who has activated the command.
 
-## Fields
-|field|type|description|optional|default value|
-|-----|----|-----------|--------|-------------|
-|**emoji**|**emoji**|emoji that you want it to add|false|-|
+`$addCmdReactions` adds single or multiple reactions to author's message.
 
-## Usage
-> ```
-> $addCmdReactions[emoji1;emoji2;emoji3;...]
-> ```
+### Usage
+
+```php
+$addCmdReactions[emoji;emoji;...]
+```
+
+### Field
+
+| Field | Description | Type |
+| :--- | :--- | :--- |
+| emoji | A default Discord emoji or a custom emoji with ID | string |
+
+###### Custom Emoji Information
+
+> *Custom Emoji Usage* — `<:emoji:1234567890>` & `<a:emoji:1234567890>` (<\{type\}:\{name\}:\{id\}>) 
+
+* `type` — type of the emoji 
+* `name` — name of the emoji
+* `id` — id of the emoji
 
 ## Examples
 
-> ```javascript
-> bot.command({
->     name: "react",
->     code: `$addCmdReactions[✔]`
-> });
-> 
-> //Multiple Reactions
-> 
-> bot.command({
->     name: "react",
->     code: `$addCmdReactions[🎉;✔]`
-> });
-> ```
+With custom emoji:
 
+```javascript
+bot.command({
+  name: "add-cmd-reactions",
+  code: `
+  $addCmdReactions[<:mns_neoXD:961249981107413022>;<:mns_lolie:966349758203559977>]
+  `
+//Adds emojis to author's message.
+});
+```
+
+With default emoji
+
+```javascript
+bot.command({
+  name: "add-cmd-reactions",
+  code: `
+  $addCmdReactions[😋;🤠]
+  `
+//This also adds emojis to author's message as well.
+});
+```
