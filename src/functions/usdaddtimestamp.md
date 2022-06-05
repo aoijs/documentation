@@ -1,52 +1,46 @@
 ---
-description: Adds a timestamp to an embed message. (After the footer)
+description: Adds a timestamp to an embed message.
 ---
 
 # $addTimestamp
 
-This function will add a time stamp in footer. Timestamp is when the message was sent or the ms!\\
-
-## Fields
-
-This function has 2 fields
-
-1. index (required)
-2. ms (optional)
-
-Raw Usage: `$addTimestamp[index (required);ms (optional)]`
+This function will add a time stamp in footer.
 
 ## Usage
 
-```javascript
-bot.command({
-name: "timestamp"
-code: `
-$title[1;hello]
-$description[1;nice text]
-$addTimestamp[1]
-`
-}) //Check below for the bots response
+```php
+$addTimestamp[index;ms?]
 ```
 
-![](<../../.gitbook/assets/image (39) (2) (2) (2) (3) (1).png>)
+## Fields
 
-You can also add some text at the footer!
+| Field | Description | Type | Required |
+| :--- | :--- | :--- | :--- |
+| index | Adds a timestamp to given index | number | yes |
+| ms | For returning the current date stamp as milliseconds | string | no |
+
+## Examples
+
+Without ms field:
 
 ```javascript
 bot.command({
-name: "timestamp"
-code: `
-$title[1;hello]
-$description[1;nice text]
-$footer[1;Message Sent At]
-$addTimestamp[1]
-`
-}) //Check below for the bots response
+  name: "timestamp"
+  code: `
+  $title[1;Hello World!]
+  $addTimestamp[1]
+  `
+});
 ```
 
-![](<../../.gitbook/assets/image (64).png>)
+With ms field:
 
-Hey! Did you know, if a message with `$addTimestamp` was sent at a previous date, it will return:
-
-![The date of when it was sent!](<../../.gitbook/assets/image (57).png>)
-
+```javascript
+bot.command({
+  name: "timestamp"
+  code: `
+  $title[1;Here is our current date stamp!]
+  $addTimestamp[1;ms]
+  `
+});
+```

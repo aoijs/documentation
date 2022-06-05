@@ -1,17 +1,19 @@
 ---
-Description: Adds a select menu component to message.
+description: Adds a select menu component to message.
 ---
-<hr>
 
 # $addSelectMenu
 
 This function that adds a selection menu to client's message.
 
-### Usage: 
-```js
-$addSelectMenu[index;customID;placeholder;minimum value;maximum value;disable;label:description:value:default?:emoji?]
+### Usage:
+
+```php
+$addSelectMenu[index;customID;placeholder;minimum value;maximum value;disable;label:description:value:default?:emoji?;...]
 ```
+
 ## Fields
+
 | Field | Description | Type | Required |
 | :--- | :--- | :--- | :--- |
 | index | The menu to show up on the given embed | number | yes |
@@ -21,6 +23,7 @@ $addSelectMenu[index;customID;placeholder;minimum value;maximum value;disable;la
 | disable | Disabling the selection menu | boolean | yes |
 
 ### Options
+
 | Option | Description | Required |
 | :--- | :--- | :--- |
 | label | The title of select menu option | yes | 
@@ -30,12 +33,15 @@ $addSelectMenu[index;customID;placeholder;minimum value;maximum value;disable;la
 | emoji? | Adding emoji to select menu option | no | 
 
 ###### Footnote
+
 Interaction commands needs this callback on main file (or handler):
-```js
+
+```javascript
 bot.onInteractionCreate();
 ```
 
 ## Example
+
 ```javascript
 bot.command({
   name: "help",

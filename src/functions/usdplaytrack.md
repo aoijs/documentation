@@ -23,7 +23,7 @@ $playTrack[type;track]
 ### Type Options
 | Field | Description | Usage |
 | :--- | :--- | :--- |
-| local | It will make you play local files. | path |
+| localfile | It will make you play local files. | path |
 | soundcloud | It allows you play tracks on Soundcloud platform. | text & URL |
 | spotify | This type allows Spotify playlists or tracks player. | URL |
 | youtube | Play songs & musics or videos via Youtube | text & URL |
@@ -38,7 +38,7 @@ Local file:
 bot.command({
   name: "play-local",
   code: `
-  $playTrack[local;./local-musics/ne0a1ch4n.mp3]
+  $playTrack[localfile;./local-musics/ne0a1ch4n.mp3]
   `
 //It will play ne0a1ch4n.mp3 file on your bot's handler.
 });

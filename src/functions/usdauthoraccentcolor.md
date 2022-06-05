@@ -13,7 +13,7 @@ $authorAccentColor[custom text]
 ```
 
 ## Example
-```js
+```javascript
 bot.command({
   name: "author-accent-color",
   code: `
