@@ -1,22 +1,29 @@
 ---
 Description: Archives a text channel's thread.
 ---
-<hr>
 
 # $archiveThread
 
 This function used for archiving an active thread.
 
-> Raw Usage: `$archiveThread[threadID;channelID;archiving;reason?]`
-## Fields
+### Usage
+
+```php
+$archiveThread[threadID;channelID;archiving;reason?]
+```
+
+### Fields
 | Field | Description | Type | Required |
 | :--- | :--- | :--- | :--- |
 | threadID | The ID of the thread  | number | yes |
 | channelID | The ID of the channel | number | yes |
 | archiving | Archiving or making active. | string | yes |
 | reason | Reason for archiving/activating. | string | no |
-## Examples
+
+#### Examples
+
 Archiving a thread:
+
 ```javascript
 bot.command({
     name: "archive",
@@ -26,6 +33,7 @@ bot.command({
 });
 ```
 Activating a thread:
+
 ```javascript
 bot.command({
     name: "active",

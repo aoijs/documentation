@@ -19,7 +19,7 @@ $attachment[url;name.extension]
 | url | The attachment will be sending | url | yes |
 | name.extension | The attachment's name along with extension | string | yes |
 
-#### Usage
+#### Example
 
 ```javascript
 bot.command({
