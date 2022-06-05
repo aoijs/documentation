@@ -1,13 +1,16 @@
 ---
-Description: Making the bot reply to user's interacted message.
+description: Making the bot reply to user's interacted message.
 ---
-<hr>
 
 # $awaitComponentsUntil
 
 This function will make the bot response to user's select menu option or button interaction.
 
-Raw Usage: `$awaitComponentsUntil[channelID;messageID;filter;time;customIDs;commands;errorMessage?;data?]`
+### Usage 
+
+```php
+$awaitComponentsUntil[channelID;messageID;filter;time;customIDs;commands;errorMessage?;data?]
+```
 
 ## Fields
 
@@ -23,6 +26,7 @@ Raw Usage: `$awaitComponentsUntil[channelID;messageID;filter;time;customIDs;comm
 | data | Await command's data | string | no |
 
 ## Example
+
 ```javascript
 bot.command({
   name: "test",

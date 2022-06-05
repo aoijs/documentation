@@ -16,7 +16,7 @@ $allMembersCount
 
 ```javascript
 bot.command({
-  name: "all-users-count",
+  name: "allMembersCount",
   code: `
   This bot has $allMembersCount users!
   `
