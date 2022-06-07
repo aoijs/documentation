@@ -10,23 +10,26 @@ This function evals the given Aoi.js code so you can use functions manually insi
 You should restrict the use of this function to yourself
 {% endhint %}
 
-#### Fields
+## Fields
 
 This function has 1 required field
 
 1. Code \(Required\)
 2. Return Code \(Optional\)
 
-Raw Usage: `$eval[code;return code (yes/no)(optional)]`
+### Usage 
+```php
+$eval[code;return code (yes/no)(optional)]
+```
 
-#### Options
+## Options
 
 * Code - The Aoi.js code we're evaling
 * Return Code - Returns the output of the code
 
-#### Usage
+## Example
 
-#### Without the optional fiels
+- Without optional fiels
 
 ```javascript
 bot.command({
@@ -37,7 +40,7 @@ $eval[$message]
 })
 ```
 
-#### With the optional field:
+- With optional fields
 
 ```javascript
 bot.command({
