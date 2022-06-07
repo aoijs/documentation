@@ -6,18 +6,27 @@ description: Removes useless spaces from given text.
 
 This function removes all useless spaces \(multiple spaces in a row\) from the given text, so all the spaces be replaced with one space.
 
-Raw usage: `$textTrim[text]`
+## Fields
+This function has 1 required field
 
-#### Example Command:
+Text (Optional)
 
-If you use the example below, the bot would return `Hello, how are you?`
+### Usage 
+```php
+$textTrim[text]
+```
 
-```text
+## Option
+- Text - The text whose useless spaces are to be removed.
+
+## Example
+
+```javascript
 bot.command({
 name: "trim",
 code: `
 $textTrim[     Hello,         how are      you?]
 `
-})
+}) // Output: Hello, how are you?
 ```
 
