@@ -1,11 +1,23 @@
+---
+description : Takes a mathematical expression and returns the result
+---
+
 # $math
 
-This function takes in a math expression and returns the answer
+This function takes in a math expression and returns the answer.
 
-```text
+## Field
+This function has 1 required field
+- Value (Required)
+
+### Usage
+```php
 $math[value]
 ```
+## Option
+- Value - The mathematical expression whose value is to returned.
 
+## Example
 ```javascript
 bot.command({
 name: "math",
