@@ -6,17 +6,20 @@ description: Displays the character count for the specified text
 
 This function will count the amount of characters in the provided text.
 
-#### Fields
+## Fields
 
 1. Text \(Required\)
 
-Raw Usage: `$charCount[text]`
+### Usage: 
+```php
+$charCount[text]
+```
 
-#### Options
+## Options
 
 * Text - The text we're counting the characters for
 
-#### Usage
+## Example
 
 ```javascript
 bot.command({
