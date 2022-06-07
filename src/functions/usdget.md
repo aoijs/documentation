@@ -24,15 +24,14 @@ $get[key]
 ## Example
 
 ```javascript
-
 bot.command({
-name: "example',
+name: "exmaple",
 code: `
 $get[ruben]
 $let[ruben;gay]
 `
-})
-
-// $get[ruben] will return 'gay'
+}) 
+// Output: gay
 ```
+
 
