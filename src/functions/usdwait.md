@@ -6,11 +6,21 @@ description: Stops the code execution for given time
 
 This function delays the bots response.
 
-```text
+## Field
+This function has 1 required field
+- Time (Optional)
+
+### Usage
+```php
 $wait[time]
 ```
 
-This can work for the whole code or certain parts of the code. As we know, it code will be read from bottom to top. To delay the whole code we do:
+## Options
+- Time - The time by which the bot's response gets delayed.
+
+## Example
+
+- This can work for the whole code or certain parts of the code. As we know, it code will be read from bottom to top. To delay the whole code we do:
 
 ```javascript
 bot.command({
@@ -21,7 +31,7 @@ $wait[5s]` // since $wait is at bottom, it will delay whole code
 })
 ```
 
-To delay certain parts of the code we do:
+- To delay certain parts of the code we do:
 
 ```javascript
 bot.command({
@@ -39,7 +49,8 @@ sending
 */
 ```
 
-In $wait we have &lt;time&gt; You can go up to 20-24 days. Here are the suffixes:
+{% hint style="info" %} 
+ You can go up to 20-24 days in the time field of the command. Here are the suffixes:
 
 * s - Seconds
 * m - Minutes
@@ -48,4 +59,7 @@ In $wait we have &lt;time&gt; You can go up to 20-24 days. Here are the suffixes
 * w - Weeks
 
 Example: `$wait[5m]` \(Delays &lt;message&gt; for 5 minutes\)
+
+{% endhint %}
+
 
