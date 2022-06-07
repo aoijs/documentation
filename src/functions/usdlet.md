@@ -27,7 +27,7 @@ $let[key;value]
 
 ```javascript
 bot.command({
-name: "exmaple",
+name: "example",
 code: `
 $get[ruben]
 $let[ruben;gay]
