@@ -52,3 +52,4 @@ bot.command({
 ```
 
 We used `$let` function on there, cause `$addFilter` function returns as a message. `$let` function can be tricky kind of those situtations :)
+

@@ -49,4 +49,3 @@ bot.command({
 //Returns user's username along with their icon and if clicked, will redirect to aoi.js' website
 });
 ```
-

@@ -33,4 +33,3 @@ bot.command({
 //Returns my avatar
 });
 ```
-

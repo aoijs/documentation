@@ -23,4 +23,3 @@ bot.command({
 //returns the amount of the arguments after the command name
 });
 ```
-

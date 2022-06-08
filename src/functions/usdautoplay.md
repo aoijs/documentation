@@ -23,6 +23,7 @@ $autoPlay[type]
 | youtube | Adds youtube tracks similar to current track |
 
 ###### Footnote
+
 * *You **cannot** use `$autoPlay[soundcloud]` on Youtube track, same goes for `$autoPlay[youtube]` on Soundcloud track. We recommend you to use `$autoPlay[relative]` if you are thinking to use **Soundcloud** and **Youtube** together on your bot.*
 
 ## Example
@@ -36,4 +37,5 @@ bot.command({
 //Since we are listening to "[Arknights OST] Shop Theme BGM", it will add songs that related to "[Arknights OST] Shop Theme BGM".
 });
 ```
+
 Now, keep your bot on Stage Channel and hang out with new users and members!

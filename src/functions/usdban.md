@@ -56,3 +56,4 @@ bot.command({
 // Didn't delete any messages of the user, but banned
 });
 ```
+

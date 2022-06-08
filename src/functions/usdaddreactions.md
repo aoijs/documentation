@@ -32,3 +32,4 @@ bot.command({
 //Added these flowers on bot's "Hi, take a flower." message.
 });
 ```
+

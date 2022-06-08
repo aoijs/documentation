@@ -42,3 +42,4 @@ Now the second seperator is "|" and the index is "1" which will be returned.
 ```
 
 And with this function we have claimed `hi/bye|ok`'s **`bye`** argument :)
+

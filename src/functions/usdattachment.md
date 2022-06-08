@@ -30,4 +30,3 @@ bot.command({
 //This will return the attachment's name as "neoaichan.png"
 });
 ```
-

@@ -47,3 +47,4 @@ bot.awaitedCommand({
 // This will respond when the user says 'Hello'
 });
 ```
+

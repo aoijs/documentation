@@ -23,3 +23,4 @@ bot.command({
 //This will return author's accent color.
 });
 ```
+

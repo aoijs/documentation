@@ -1,24 +1,27 @@
 ---
-Description: Adds blacklist error message
+description: Adds blacklist error message
 ---
-<hr>
 
 # $blacklistError
 
 This function will show a blacklist error for given type.
 
 ### Usage 
-```js
+
+```php
 $blacklistError[type;error message]
 ```
+
 ### Fields
+
 | Field | Description | Type | Required |
 | :--- | :--- | :--- | :--- |
 | type | Type of the blacklist error | number | yes |
 | error message | Error message that will be sending | number | yes |
 
 ## Example
-```js
+
+```javascript
 bot.command({
   name: "blacklist-error",
   code: `
