@@ -32,7 +32,7 @@ $advanceCooldown[time;id;error?]
 
 ```javascript
 bot.command({
-  name: "advanceCooldown",
+  name: "advance-cooldown",
   code: `
   Hello, World!
   

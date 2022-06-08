@@ -44,7 +44,7 @@ bot.onInteractionCreate();
 
 ```javascript
 bot.command({
-  name: "help",
+  name: "add-select-menu",
   code:`
   Select an option.
   

@@ -16,7 +16,7 @@ $authorAccentColor[custom text]
 
 ```javascript
 bot.command({
-  name: "authorAccentColor",
+  name: "author-accent-color",
   code: `
   Your accent color is: $authorAccentColor
   `

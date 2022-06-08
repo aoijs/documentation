@@ -23,7 +23,7 @@ $addReactions[emoji;...]
 
 ```javascript
 bot.command({
-  name: "react",
+  name: "add-reactions",
   code: `
   $addReactions[🌸;🌺]
   

@@ -1,14 +1,19 @@
 ---
-Description: Making the bot reply to user's reacted emoji.
+description: Making the bot reply to user's reacted emoji.
 ---
-<hr>
 
 # $awaitMessageReactions
 
 This function will make the bot reply when a user reacts with the given emoji to the command.
 
-Raw Usage: `$awaitMessageReactions[channelID;messageID;filter;time;reactions;commands;errorMessage?;data?]`
-## Fields
+### Usage
+
+```php
+$awaitMessageReactions[channelID;messageID;filter;time;reactions;commands;errorMessage?;data?]
+```
+
+### Fields
+
 | Field | Description | Type | Required |
 | :--- | :--- | :--- | :--- |
 | channelID | ID of the message's channel | number | yes |
@@ -19,10 +24,12 @@ Raw Usage: `$awaitMessageReactions[channelID;messageID;filter;time;reactions;com
 | commands | Awaited commands to be triggered | string | yes |
 | errorMessage | When x time runs out, the part of bot sending message. | string | no |
 | data | Await command's data | string | no |
+
 ## Example
+
 ```javascript
 bot.command({
-  name: "test",
+  name: "await-message-reactions",
   code: `
   $awaitMessageReactions[$channelID;$messageID;$authorID;10s;🙌🏻;raiseHands]
   `
@@ -31,7 +38,7 @@ bot.command({
 bot.awaitedCommand({
   name: "raiseHands",
   code: `
-  $sendMessage[Hello!]
+  Hello!
   `
 });
 ```

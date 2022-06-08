@@ -29,7 +29,7 @@ $autoPlay[type]
 
 ```javascript
 bot.command({
-  name: "autoplay",
+  name: "auto-play",
   code: `
   $autoPlay[youtube]
   `

@@ -43,7 +43,7 @@ bot.onInteractionCreate();
 
 ## Examples
 
-For Normal Button:
+* For Normal Button:
 
 ```javascript
 bot.command({
@@ -64,11 +64,11 @@ bot.interactionCommand({
 });
 ```
 
-For Redirected Button (link style):
+* For Redirected Button (link style):
 
 ```javascript
 bot.command({
-  name: "hello",
+  name: "add-button",
   code: `
   Tap below to join Akarui Development!
   

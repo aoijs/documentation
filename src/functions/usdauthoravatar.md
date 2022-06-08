@@ -24,7 +24,7 @@ $authorAvatar[size?;dynamic?;format?]
 
 ```javascript
 bot.command({
-  name: "authorAvatar",
+  name: "author-avatar",
   code: `
   This is my avatar!
 

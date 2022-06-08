@@ -28,10 +28,11 @@ $argsCheck[required args;error message]
 
 ## Examples
 
-Greater than:
+* Greater than:
+
 ```javascript
 bot.command({
-  name: "argsCheck",
+  name: "args-check",
   code: `
   You have more than two arguments, nice!
 
@@ -40,10 +41,11 @@ bot.command({
 });
 ```
 
-Equal to:
+* Equal to:
+
 ```javascript
 bot.command({
-  name: "argsCheck",
+  name: "args-check",
   code: `
   You have two arguments, nice!
 
@@ -52,10 +54,11 @@ bot.command({
 });
 ```
 
-Less than:
+* Less than:
+
 ```javascript
 bot.command({
-  name: "argsCheck",
+  name: "args-check",
   code: `
   You have less than two arguments, nice!
 

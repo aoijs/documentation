@@ -23,21 +23,21 @@ $archiveThread[threadID;channelID;archiving;reason?]
 
 ## Examples
 
-Archiving a thread:
+* Archiving a thread:
 
 ```javascript
 bot.command({
-    name: "archive",
+    name: "archive-thread",
     code: `
     $archiveThread[938078671095365693;722031482163560499;yes;Thanks for talk!]
     `
 });
 ```
-Activating a thread:
+* Activating a thread:
 
 ```javascript
 bot.command({
-    name: "active",
+    name: "active-thread",
     code: `
     $archiveThread[938078671095365693;722031482163560499;no;Let's talk again!]
     `

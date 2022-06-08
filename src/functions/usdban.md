@@ -4,37 +4,46 @@ description: Bans an user from the guild using their ID.
 
 # $ban
 
-This function allows you to ban someone from the server using their user ID.
+`$ban` allows you to ban someone from the server using their user ID. 
 
 ### Usage
 
 ```php
-$ban[userID;guildID (optional);MessagesToDelete (Optional);reason (Optional)]
+$ban[user id;guild id?;messages to delete?;reason?]
 ```
 
 ### Fields
 
 | Field | Description | Type | Required |
 | :--- | :--- | :--- | :--- |
-| userID | The user the bot is banning | number | yes |
-| guildID | The server ID where you are banning | number | yes |
-| MessagesToDelete | How many of the messages over x days to delete of the banned user | number | no |
-| reason | The reason in the audit logs | number | no |
+| user id | The user the bot is banning | number | yes |
+| guild id | The server ID where the user will get ban | number | no |
+| messages to delete | How many of the messages over x days to delete of the banned user | number | no |
+| reason | The reason in the audit logs | string | no |
+
+###### Footnote
+
+*Do not forget to use `$onlyBotPerms` and `$onlyPerms` to detect user has permission for this action, either bot!
+
 
 ## Examples
 
+* With Deleting X days of messages & reason:
+
 ```javascript
 bot.command({
   name: "ban",
   code: `
-  $username[$message] has been banned from the guild.
+  $username[$mentioned] has been banned from the guild.
   
-  $ban[$message;$guildID;7;$noMentionMessage]
-  
-  $argsCheck[1;Just enter the User ID of who you want to ban.]
+  $ban[$mentioned;$guildID;7;$noMentionMessage]
   `
+// Deleted 7 days of messages the user
+// 💡 That's also called as "soft-ban"
 });
 ```
+
+* Without deleting user's messages on the guild:
 
 ```javascript
 bot.command({
@@ -42,11 +51,8 @@ bot.command({
   code: `
   $username[$message] has been banned from the guild.
   
-  $ban[$message;$guildID;7;$noMentionMessage]
-  
-  $argsCheck[1;Just enter the User ID of who you want to ban.]
-  
-  $onlyPerms[ban;Only cool people with ban perms can use this!]
-    `
+  $ban[$message;$guildID;0;$noMentionMessage]
+  `
+// Didn't delete any messages of the user, but banned
 });
 ```

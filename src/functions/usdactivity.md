@@ -28,7 +28,7 @@ $activity[userID?;guildID?]
 
 ## Example
 
-Without optional fields:
+* Without optional fields:
 
 ```javascript
 bot.command({
@@ -40,7 +40,7 @@ bot.command({
 });
 ```
 
-With optional fields:
+* With optional fields:
 
 ```javascript
 bot.command({
