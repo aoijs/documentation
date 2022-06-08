@@ -6,7 +6,15 @@ description: Returns the ID of the user who ran the command.
 
 This function returns the author's ID \(The one who ran the command\)
 
-#### Usage
+## Field
+This function has no fields
+
+### Usage
+```php
+$authorID
+```
+
+## Example
 
 ```javascript
 bot.command({
