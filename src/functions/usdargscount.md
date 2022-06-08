@@ -16,11 +16,10 @@ $argsCount //returns number of arguments
 
 ```javascript
 bot.command({
-  name: "argsCount",
+  name: "args-count",
   code: `
   Your message has $argsCount arguments!
   `
 //returns the amount of the arguments after the command name
 });
 ```
-

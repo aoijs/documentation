@@ -26,7 +26,7 @@ $author[index;text;icon url?;redirecting url?]
 
 ## Examples
 
-Without hyperlink and icon:
+* Without hyperlink and icon:
 
 ```javascript
 bot.command({
@@ -38,7 +38,7 @@ bot.command({
 });
 ```
 
-With hyperlink and icon:
+* With hyperlink and icon:
 
 ```javascript
 bot.command({
@@ -49,4 +49,3 @@ bot.command({
 //Returns user's username along with their icon and if clicked, will redirect to aoi.js' website
 });
 ```
-

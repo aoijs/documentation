@@ -29,7 +29,7 @@ $addField[index;name;text;inline?]
 
 ## Examples
 
-Without in line:
+* Without in line:
 
 ```javascript
 bot.command({
@@ -40,7 +40,7 @@ bot.command({
 });
 ```
 
-With in line:
+* With in line:
 
 ```javascript
 bot.command({
@@ -54,3 +54,4 @@ bot.command({
   `
 });
 ```
+

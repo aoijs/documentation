@@ -39,3 +39,4 @@ bot.command({
 //Adds an emoji that named "partner". You can see details in audit logs.
 });
 ```
+

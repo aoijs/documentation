@@ -1,24 +1,27 @@
 ---
-Description: Blacklisting.
+description: Blacklisting.
 ---
-<hr>
 
 # $blacklist
 
 This function will blacklist given user, role channel etc types with IDs.
 
 ### Usage 
-```js
+
+```php
 $blacklist[type;ID;ID;...]
 ```
+
 ### Fields
+
 | Field | Description | Type | Required |
 | :--- | :--- | :--- | :--- |
 | type | Type of the blacklist | string | yes |
 | ID | ID of the channel, guild, role or user | number | yes |
 
 ## Example
-```js
+
+```javascript
 bot.command({
   name: "blacklist",
   code: `

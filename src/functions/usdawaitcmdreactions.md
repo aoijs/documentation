@@ -30,7 +30,7 @@ $awaitCmdReactions[filter;time;reactions;awaited commands;error message?;awaited
 
 ```javascript
 bot.command({
-  name: "awaitCmdReactions",
+  name: "await-cmd-reactions",
   code: `
   React with 1️⃣ to command and I'll reply in 10 seconds
 
@@ -47,3 +47,4 @@ bot.awaitedCommand({
 });
 //This will be sending when the user reacted
 ```
+

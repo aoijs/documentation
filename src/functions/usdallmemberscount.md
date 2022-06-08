@@ -16,10 +16,9 @@ $allMembersCount
 
 ```javascript
 bot.command({
-  name: "allMembersCount",
+  name: "all-members-count",
   code: `
   This bot has $allMembersCount users!
   `
 });
 ```
-

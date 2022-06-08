@@ -21,7 +21,7 @@ $addTimestamp[index;ms?]
 
 ## Examples
 
-Without ms field:
+* Without ms field:
 
 ```javascript
 bot.command({
@@ -33,7 +33,7 @@ bot.command({
 });
 ```
 
-With ms field:
+* With _milliseconds_ field:
 
 ```javascript
 bot.command({
@@ -44,3 +44,4 @@ bot.command({
   `
 });
 ```
+

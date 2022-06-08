@@ -29,7 +29,7 @@ $awaitComponentsUntil[channelID;messageID;filter;time;customIDs;commands;errorMe
 
 ```javascript
 bot.command({
-  name: "test",
+  name: "await-components-until",
   code: `
   $awaitComponentsUntil[$channelID;$get[buttonMessageID];everyone;20s;buttonCustomID;buttonCommand]
   
@@ -44,3 +44,4 @@ bot.interactionCommand({
   `
 });
 ```
+

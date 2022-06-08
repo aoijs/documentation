@@ -28,7 +28,7 @@ $addCmdReactions[emoji;emoji;...]
 
 ## Examples
 
-With custom emoji:
+* With custom emoji:
 
 ```javascript
 bot.command({
@@ -40,7 +40,7 @@ bot.command({
 });
 ```
 
-With default emoji
+* With default emoji
 
 ```javascript
 bot.command({
@@ -51,3 +51,4 @@ bot.command({
 //This also adds emojis to author's message as well.
 });
 ```
+

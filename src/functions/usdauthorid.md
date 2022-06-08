@@ -16,10 +16,9 @@ $authorID
 
 ```javascript
 bot.command({
-  name: "authorId",
+  name: "author-id",
   code: `
   Your ID is \`$authorID\`
   `
 });
 ```
-
