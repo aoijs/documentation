@@ -4,7 +4,7 @@ description: Abbreviate numbers.
 
 # $abbreviate
 
-`$abbreviate` allowing you to abbreviate large numbers.
+This function allows you to abbreviate large numbers.
 
 ### Usage
 
