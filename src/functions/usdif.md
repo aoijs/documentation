@@ -25,7 +25,7 @@ $if[condition(s);true field;false field?]
 #### Comparison Operators
 
 * `==` — Equal to 
-* `!=` — Not equal
+* `!=` — Not equal to
 * `>` — Greater than
 * `<` — Less than
 * `>=` — Greater than or equal to
