@@ -12,24 +12,19 @@ Create an application command which is can be:
 ### Usage
 
 ```php
-$createApplicationCommand[location;application name;application description?;default permission;type;options?]
+$createApplicationCommand[guildID/global;application name;application description?;default permission;type;options?]
 ```
 
 ### Fields
 
 | Field | Description | Required |
 | :--- | :--- | :--- |
-| location | Creates the application command, for guild or global| yes |
+| guildID/global | Creates the application command, for guild or global| yes |
 | application name | The name of application command | yes |
 | application description | Description of application command, **only required on slash type** | no |
 | default permission | The permission whom has authorize to use | yes |
 | type | The type of application command | yes |
 | options | The options of the **slash** type | no |
-
-#### Location Types
-
-* `guildID` — Specific server id
-* `global` — Global application commands as it's name
 
 #### Application Permissions
 
