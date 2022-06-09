@@ -135,6 +135,7 @@
   * [$dbPing](functions/usddbping.md)
   * [$deafenUser](functions/usddeafenuser.md)
   * [$defaultMessageNotifications](functions/usddefaultmessagenotifications.md)
+  * [$deleteApplicationCommand](functions/usddeleteapplicationcommand.md)
   * [$deleteChannels](functions/usddeletechannels.md)
   * [$deleteChannelVar](functions/usddeletechannelvar.md)
   * [$deletecommand](functions/usddeletecommand.md)

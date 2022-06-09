@@ -12,26 +12,31 @@ Create an application command which is can be:
 ### Usage
 
 ```php
-$createApplicationCommand[guildID/global;application name;application description?;default permission;type;options?]
+$createApplicationCommand[location;application name;application description?;default permission;type;options?]
 ```
 
 ### Fields
 
 | Field | Description | Required |
 | :--- | :--- | :--- |
-| guildID/global | Creates the application command, for guild or global| yes |
+| location | Creates the application command, for guild or global| yes |
 | application name | The name of application command | yes |
 | application description | Description of application command, **only required on slash type** | no |
 | default permission | The permission whom has authorize to use | yes |
 | type | The type of application command | yes |
 | options | The options of the **slash** type | no |
 
-### Application Permissions
+#### Location Types
+
+* `guildID` — Specific server id
+* `global` — Global application commands as it's name
+
+#### Application Permissions
 
 > * `true` — Anyone has permission to execute it.
 > * `false` — No one will able to execute the application command (can be changed with application permission functions)
 
-### Application Types
+#### Application Types
 
 > * `message` — Creates the application command can be executed on the message.
 > * `slash` — Creates an application command for slash message.
@@ -73,7 +78,7 @@ name:description:require:type
 
 ## Examples
 
-Message Application
+* Message Application
 
 ```javascript
 bot.command({
@@ -88,7 +93,7 @@ bot.command({
 // $interactionData[targetId] gets the target's id. Which is a message ID.
 ```
 
-User Application
+* User Application
 
 ```javascript
 bot.command({
@@ -103,7 +108,7 @@ bot.command({
 // $interactionData[targetId] gets the target's id. Which is an user ID.
 ```
 
-###### Special Slash Command from contributor ❤
+* Special Slash Command from contributor ❤
 
 ```javascript
 bot.command({
