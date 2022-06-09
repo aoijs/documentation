@@ -1,6 +1,6 @@
 # Custom Functions
 
-Custom functions are used to create a custom function that can only be used by the specific client.
+Custom functions are used to create special functions with custom code that can only be used by the specific client.
 
 ### Usage
 ```js
