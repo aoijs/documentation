@@ -1,89 +1,127 @@
+---
+description: Execute a code block with condition.
+---
+
 # $if
 
-This function will allow you too easily make an if statement
+An if else statement in aoi.js is a conditional statement that runs a different set of statements depending on whether an expression is `true` or `false`.
 
-## Main Function
+💡 It can also be used with `awaited` command.
 
-### $if
+### Usage 
 
-This is the main function
-
-```text
-$if[value1(!=/==/>=/<=/>/<)value2]
+```php
+$if[condition(s);true field;false field?]
 ```
 
-## Sub Functions
+### Fields
 
-### $else
+| Field | Description | Type | Required |
+| :--- | :--- | :--- | :--- |
+| condition(s) | to compare if the values are equally same or not, it returns boolean | condition | yes |
+| true field | If the condition is returning `true`, the one is going to execute | string | yes |
+| false field | If the condition is returning `false`, the one is going to execute | string | no |
 
-Can be used to return a message  if the condition is false
+#### Comparison Operators
 
-### $endif
+* `==` — Equal to 
+* `!=` — Not equal
+* `>` — Greater than
+* `<` — Less than
+* `>=` — Greater than or equal to
+* `<=` — Less than or equal to
 
-Ends the if statement
+#### Logical Operators
 
-### $elseIf
+* `&&` — Logical and 
+* `||` — Logical or
 
-Makes a chain with the if statement
+###### Footnote
 
-```text
-$elseIf[value1(!=/==/>=/<=/>/<)value2]
+_All functions can be used on `$if` function!_
+
+##### Better understanding of operators
+
+We'll be using variables to show you how the operators works 🙃
+
+* Comparison examples
+
+```javascript
+// GREATER and LESS THAN operators
+$checkCondition[3>2] // true
+$checkCondition[3<2] // false
+
+$checkCondition[10>=10] // true
+$checkCondition[8<=8] // true
+
+// equal operator
+$checkCondition[2==2] // true
+
+// not equal operator
+$checkCondition[3!=2] // true
+$checkCondition[hello!=Hello] // true
 ```
 
-### $endelseIf
+* Logical examples
 
-Ends the else If chain
+```javascript
+// logical AND
+$checkCondition[(1==1)&&(0==0)] // true
+$checkCondition[(1!=1)&&(0==0)] // false
 
-## Using the Function
+// logical OR
+$checkCondition[1==1||1==0] // true
+```
+
+## Examples
+
+* `undefined` type condition
 
 ```javascript
 bot.command({
-name: "if",
-code: `
-$if[1==1]
-1 is equal to 1!
-$else
-1 is not equal to 1
-$endif`
-//This is your very simple if. All functions can be used 
-})
-
+  name: "if",
+  code: `
+  $if[$get[num]==;
+    Worked!;
+    \`undefined\` is not equal to 1.
+  ]
+  
+  $let[num;1]
+  `
+// Empty means "undefined" (1 == undefined) is not returning true message.
+});
 ```
 
-Using $elseIf
+* `$if` function but with awaited command
 
 ```javascript
+bot.variables({
+  light: "on"
+});
+
 bot.command({
-name: "if",
-code: `
-$if[1==1]
-1 is equal to 1!
-$elseIf[2==2]
-2 is equal to 2
-$endelseIf
-$endif
-`
-})
+  name: "if-awaited",
+  code: `
+  $if[$getVar[light]==on;{execute:lightsOff};{execute:lightsOn}]
+  `
+// Our variable doesn't equal to "off" so it returns false message.
+});
+
+bot.awaitedCommand({
+  name: "lightsOff",
+  code: `
+  $setVar[light;off]
+  
+  Turning off the lights.
+  `
+});
+
+bot.awaitedCommand({
+  name: "lightsOn",
+  code: `
+  $setVar[light;on]
+  
+  Turning on the lights.
+  `
+});
 ```
-
-Multiple $elseIf's
-
-```javascript
-bot.command({
-name: "if",
-code: `
-$if[1==1]
-1 is equal to 1!
-$elseIf[2==2]
-2 is equal to 2
-$endelseIf
-$elseIf[3==3]
-3 is equal to 3
-$endelseIf
-$endif
-`
-})
-```
-
-## 
-
