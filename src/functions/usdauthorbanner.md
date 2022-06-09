@@ -1,17 +1,19 @@
 ---
-Description: Show author's banner.
+description: Show author's banner.
 ---
-<hr>
 
 # $authorBanner
 
 This function will show author's banner, if there's not a banner; it will return **`null`**.
 
 ### Usage 
-```js
+
+```php
 $authorBanner[size?;dynamic?;format?]
 ```
+
 ### Fields
+
 | Field | Description | Type | Required |
 | :--- | :--- | :--- | :--- |
 | size | Size of the banner | number | no |
@@ -19,7 +21,8 @@ $authorBanner[size?;dynamic?;format?]
 | format | Format of the banner (jpg, png etc.) | string | no |
 
 ## Example
-```js
+
+```javascript
 bot.command({
   name: "author-banner",
   code: `
@@ -29,3 +32,4 @@ bot.command({
   `
 });
 ```
+

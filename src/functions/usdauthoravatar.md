@@ -1,17 +1,35 @@
 ---
-description: Returns the author's avatar in url format
+description: Returns the author's avatar in url format.
 ---
 
 # $authorAvatar
 
-This function returns the URL of the avatar of the person who ran the command.
+This function returns picture of who executed the function/command.
 
-#### Usage
+### Usage
+
+```php
+$authorAvatar[size?;dynamic?;format?]
+```
+
+### Fields
+
+| Field | Description | Type | Required |
+| :--- | :--- | :--- | :--- |
+| size | Size of the banner | number | no |
+| dynamic | Stopping animation (related to animated pictures) | string | no |
+| format | Format of the banner (jpg, png etc.) | string | no |
+
+## Example
 
 ```javascript
 bot.command({
-    name: "my avatar",
-    code: `$image[1;$authorAvatar]`
+  name: "author-avatar",
+  code: `
+  This is my avatar!
+
+  $authorAvatar
+  `
+//Returns my avatar
 });
 ```
-

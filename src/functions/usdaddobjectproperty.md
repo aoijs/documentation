@@ -19,7 +19,7 @@ $addObjectProperty[key;value]
 | key | The name of the property | no |
 | value | The value that's assigned to the key
 
-#### Example
+## Example
 
 ```javascript
 bot.command({
@@ -33,4 +33,3 @@ bot.command({
   `
 });
 ```
-

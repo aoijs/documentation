@@ -12,7 +12,7 @@ This function that adds a selection menu to client's message.
 $addSelectMenu[index;customID;placeholder;minimum value;maximum value;disable;label:description:value:default?:emoji?;...]
 ```
 
-## Fields
+### Fields
 
 | Field | Description | Type | Required |
 | :--- | :--- | :--- | :--- |
@@ -22,7 +22,7 @@ $addSelectMenu[index;customID;placeholder;minimum value;maximum value;disable;la
 | maximum value | Maximum options to choose from | number | yes |
 | disable | Disabling the selection menu | boolean | yes |
 
-### Options
+#### Options
 
 | Option | Description | Required |
 | :--- | :--- | :--- |
@@ -44,7 +44,7 @@ bot.onInteractionCreate();
 
 ```javascript
 bot.command({
-  name: "help",
+  name: "add-select-menu",
   code:`
   Select an option.
   
@@ -72,3 +72,4 @@ bot.interactionCommand({
   `
 });
 ```
+

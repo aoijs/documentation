@@ -1,23 +1,26 @@
 ---
-Description: Blacklisting the command
+description: Blacklisting the command
 ---
-<hr>
 
 # $blacklistOnlyCommands
 
 This function will blacklist the given commands.
 
 ### Usage 
-```js
+
+```php
 $blacklistOnlyCommands[command name;command name;....]
 ```
+
 ### Fields
+
 | Field | Description | Type | Required |
 | :--- | :--- | :--- | :--- |
 | command name | command name that will be in blacklist. | string | yes |
 
 ## Example
-```js
+
+```javascript
 bot.command({
   name: "blacklist-command",
   code: `

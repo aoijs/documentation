@@ -6,13 +6,13 @@ description: Adds a timestamp to an embed message.
 
 This function will add a time stamp in footer.
 
-## Usage
+### Usage
 
 ```php
 $addTimestamp[index;ms?]
 ```
 
-## Fields
+### Fields
 
 | Field | Description | Type | Required |
 | :--- | :--- | :--- | :--- |
@@ -21,7 +21,7 @@ $addTimestamp[index;ms?]
 
 ## Examples
 
-Without ms field:
+* Without ms field:
 
 ```javascript
 bot.command({
@@ -33,7 +33,7 @@ bot.command({
 });
 ```
 
-With ms field:
+* With _milliseconds_ field:
 
 ```javascript
 bot.command({
@@ -44,3 +44,4 @@ bot.command({
   `
 });
 ```
+

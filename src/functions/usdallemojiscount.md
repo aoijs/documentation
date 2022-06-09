@@ -18,7 +18,7 @@ $allEmojisCount[type?]
 | :--- | :--- | :--- | :--- |
 | type | Includes all type when didn't add | string | no |
 
-###### Emoji Types
+#### Emoji Types
 
 * `[ ]` — Returns all emojis count when left empty.
 * `animated` — Return all animated emojis count.
@@ -27,7 +27,7 @@ $allEmojisCount[type?]
 
 ## Examples
 
-Without type:
+* Without type:
 
 ```javascript
 bot.command({
@@ -39,14 +39,15 @@ bot.command({
 });
 ```
 
-With type:
+* With type:
 
 ```javascript
 bot.command({
-  name: "abbreviate",
+  name: "all-emojis-count",
   code: `
   $allEmojisCount[animated] animated emojis
   `
 //Returns: X animated emojis
 });
 ```
+

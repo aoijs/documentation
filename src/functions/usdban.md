@@ -4,58 +4,56 @@ description: Bans an user from the guild using their ID.
 
 # $ban
 
-This function allows you to ban someone from the server using their user ID.
+`$ban` allows you to ban someone from the server using their user ID. 
 
-#### Fields
+### Usage
 
-This function has 4 properties, 1 required and 2 optional.
+```php
+$ban[user id;guild id?;messages to delete?;reason?]
+```
 
-1. User ID.
-2. Guild ID (optional).
-3. MessagesToDelete\(In days, optional\)
-4. Reason \(Optional\)
+### Fields
 
-Raw Usage: `$ban[userID;guildID (optional);MessagesToDelete (Optional);reason (Optional)]`
+| Field | Description | Type | Required |
+| :--- | :--- | :--- | :--- |
+| user id | The user the bot is banning | number | yes |
+| guild id | The server ID where the user will get ban | number | no |
+| messages to delete | How many of the messages over x days to delete of the banned user | number | no |
+| reason | The reason in the audit logs | string | no |
 
-#### Options
+###### Footnote
 
-* UserID - The user the bot is banning
-* GuildID - The server ID where you are banning
-* MessagesToDelete - How many of the messages over x days to delete of the banned user
-* Reason - The reason in the audit logs
+*Do not forget to use `$onlyBotPerms` and `$onlyPerms` to detect user has permission for this action, either bot!
 
-#### Usage
+
+## Examples
+
+* With Deleting X days of messages & reason:
 
 ```javascript
 bot.command({
-    name: "ban",
-    code: `
-    $username[$message] has been banned from the guild.
-    $ban[$message;$guildID;7;$noMentionMessage]
-    $argsCheck[1;Just enter the User ID of who you want to ban.]
-    `
+  name: "ban",
+  code: `
+  $username[$mentioned] has been banned from the guild.
+  
+  $ban[$mentioned;$guildID;7;$noMentionMessage]
+  `
+// Deleted 7 days of messages the user
+// 💡 That's also called as "soft-ban"
 });
 ```
 
-{% hint style="danger" %}
-We recommend adding an `$onlyPerms[ban;Error when no permissions.]` at the bottom of the command!
-
-This way only people who have permission to ban will be able to ban other members.
-{% endhint %}
-
-Example of the code with `$onlyPerms[]` to avoid bans without permissions:
+* Without deleting user's messages on the guild:
 
 ```javascript
 bot.command({
-    name: "ban",
-    code: `
-    $username[$message] has been banned from the guild.
-    $ban[$message;$guildID;7;$noMentionMessage]
-    $argsCheck[1;Just enter the User ID of who you want to ban.]
-    $onlyPerms[ban;Only cool people with ban perms can use this!]
-    `
+  name: "ban",
+  code: `
+  $username[$message] has been banned from the guild.
+  
+  $ban[$message;$guildID;0;$noMentionMessage]
+  `
+// Didn't delete any messages of the user, but banned
 });
 ```
-
-
 

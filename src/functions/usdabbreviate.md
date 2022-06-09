@@ -28,7 +28,7 @@ $abbreviate[number;decimal?]
 
 ## Examples
 
-Without decimal:
+* Without decimal:
 
 ```javascript
 bot.command({
@@ -40,7 +40,7 @@ bot.command({
 });
 ```
 
-With decimal:
+* With decimal:
 
 ```javascript
 bot.command({
@@ -51,3 +51,4 @@ bot.command({
 //Returns: 6.9K
 });
 ```
+

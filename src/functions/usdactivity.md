@@ -26,9 +26,9 @@ $activity[userID?;guildID?]
 * Game Name _\(Playing ...\)_
 * Streaming
 
-#### Usage
+## Example
 
-Without optional fields:
+* Without optional fields:
 
 ```javascript
 bot.command({
@@ -40,7 +40,7 @@ bot.command({
 });
 ```
 
-With optional fields:
+* With optional fields:
 
 ```javascript
 bot.command({
@@ -51,3 +51,4 @@ bot.command({
 //Let's say I'm streaming a video on this guild's voice chat. It will show "Streaming" activity since I'm streaming a video.
 });
 ```
+

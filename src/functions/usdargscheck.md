@@ -4,51 +4,65 @@ description: Creates a condition depending in the amount of args required.
 
 # $argsCheck
 
-This function will check if the condition is met between the desired number of arguments and the number of arguments that are actually in the user's message.
+This function will check the arguments of user typed and the required one, if requirements didn't meet; It will return the error message.
 
-#### Fields
+### Usage
 
-This function has 2 fields
+```php
+$argsCheck[required args;error message]
+```
 
-1. Number \(Required\)
-2. Error \(Required\)
+### Fields
 
-Raw Usage: `$argsCheck[number;error message]`
+| Field | Description | Type | Required |
+| :--- | :--- | :--- | :--- |
+| required args | The number is the limitation of the arguments | condition | yes |
+| error message | The error message, which will be sent if requirements didn't meet | string | yes |
 
-#### Options
+#### Operators
 
-* Number - The number is the limitation of the arguments
-* Error - The error message appears when the limitation is met
+* `>` — Greater than
+* `<` — Less than
+* `>=` — Greater than or equal to
+* `<=` — Less than or equal to
 
-#### Usage
+## Examples
+
+* Greater than:
 
 ```javascript
 bot.command({
-    name: "args",
-    code: `
-    You have more than two arguments, nice!
-    $argsCheck[>2;You have less than two arguments!]
-    `
-});
+  name: "args-check",
+  code: `
+  You have more than two arguments, nice!
 
-//or
-
-bot.command({
-    name: "args",
-    code: `
-    You have two arguments, nice!
-    $argsCheck[2;You don't have exactly 2 arguments]
-    `
-});
-
-//or
-
-bot.command({
-    name: "args",
-    code: `
-    You have less than two arguments, nice!
-    $argsCheck[<2;You have more than two arguments!]
-    `
+  $argsCheck[>2;You have less than two arguments!]
+  `
 });
 ```
 
+* Equal to:
+
+```javascript
+bot.command({
+  name: "args-check",
+  code: `
+  You have two arguments, nice!
+
+  $argsCheck[2;You do not have two arguments!]
+  `
+});
+```
+
+* Less than:
+
+```javascript
+bot.command({
+  name: "args-check",
+  code: `
+  You have less than two arguments, nice!
+
+  $argsCheck[<2;You have more than two arguments!]
+  `
+});
+```

@@ -12,7 +12,7 @@ description: Adds an emoji to the guild.
 $addEmoji[guildID;URL;name;return emoji?;reason?;roleID?;roleID?;...]
 ```
 
-#### Fields
+### Fields
 
 | Field | Description | Type | Required |
 | :--- | :--- | :--- | :--- |
@@ -28,7 +28,7 @@ $addEmoji[guildID;URL;name;return emoji?;reason?;roleID?;roleID?;...]
 > * Emoji's size **should not** be higher than 256kB.
 > * URL has to end with `.gif`, `.png` or `.jpg`.
 
-#### Examples
+## Example
 
 ```javascript
 bot.command({
@@ -39,3 +39,4 @@ bot.command({
 //Adds an emoji that named "partner". You can see details in audit logs.
 });
 ```
+

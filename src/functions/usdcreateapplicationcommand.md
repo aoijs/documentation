@@ -26,12 +26,12 @@ $createApplicationCommand[guildID/global;application name;application descriptio
 | type | The type of application command | yes |
 | options | The options of the **slash** type | no |
 
-### Application Permissions
+#### Application Permissions
 
 > * `true` — Anyone has permission to execute it.
 > * `false` — No one will able to execute the application command (can be changed with application permission functions)
 
-### Application Types
+#### Application Types
 
 > * `message` — Creates the application command can be executed on the message.
 > * `slash` — Creates an application command for slash message.
@@ -49,7 +49,7 @@ name:description:require:type
 
   Secondly
 ```javascript
-// {subCommand:name:
+// {subCommand:name:description:
 {type:name:description:require}
 // :{choice:name:value}
 ```
@@ -73,7 +73,7 @@ name:description:require:type
 
 ## Examples
 
-Message Application
+* Message Application
 
 ```javascript
 bot.command({
@@ -88,7 +88,7 @@ bot.command({
 // $interactionData[targetId] gets the target's id. Which is a message ID.
 ```
 
-User Application
+* User Application
 
 ```javascript
 bot.command({
@@ -103,7 +103,7 @@ bot.command({
 // $interactionData[targetId] gets the target's id. Which is an user ID.
 ```
 
-###### Special Slash Command from contributor ❤
+* Special Slash Command from contributor ❤
 
 ```javascript
 bot.command({

@@ -1,18 +1,19 @@
 ---
-Description: Show author's accent color.
+description: Show author's accent color.
 ---
-<hr>
 
 # $authorAccentColor
 
 This function will show author's accent color as hex code (which is on user's banner)
 
 ### Usage 
-```js
+
+```php
 $authorAccentColor[custom text]
 ```
 
 ## Example
+
 ```javascript
 bot.command({
   name: "author-accent-color",
@@ -22,3 +23,4 @@ bot.command({
 //This will return author's accent color.
 });
 ```
+
