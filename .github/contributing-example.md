@@ -6,7 +6,7 @@ description: Short description of the function.
 
 Explanation of the function and how does it work.
 
-**This function *is not* an official function[^1].**
+> **This function *is not* an official function[^1].**
 
 ### Usage
  
