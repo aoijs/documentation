@@ -12,7 +12,7 @@ Get an application command which is can be:
 ### Usage
 
 ```php
-$getApplicationCommand[application name;location]
+$getApplicationCommandID[application name;guildID/global]
 ```
 
 ### Fields
