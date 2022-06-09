@@ -188,6 +188,7 @@
   * [$forEachUser](functions/usdforeachuser.md)
   * [$formatDate](functions/usdformatdate.md)
   * [$get](functions/usdget.md)
+  * [$getApplicationCommandID](functions/usdgetapplicationcommandid.md)
   * [$getAttachments](functions/usdgetattachments.md)
   * [$getAuditLogs](functions/usdgetauditlogs.md)
   * [$getBanReason](functions/usdgetbanreason.md)

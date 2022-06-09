@@ -54,12 +54,12 @@ $checkCondition[3<2] // false
 $checkCondition[10>=10] // true
 $checkCondition[8<=8] // true
 
-// equal operator
+// EQUAL operator
 $checkCondition[2==2] // true
 
-// not equal operator
+// NOT EQUAL operator
 $checkCondition[3!=2] // true
-$checkCondition[hello!=Hello] // true
+$checkCondition[Neo!=neo] // true
 ```
 
 * Logical examples
