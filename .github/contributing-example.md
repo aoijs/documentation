@@ -6,6 +6,8 @@ description: Short description of the function.
 
 Explanation of the function and how does it work.
 
+**This function *is not* an official function[^1].**
+
 ### Usage
  
 > *Declaring with '?' at the ends help to show it as 'optional'*
@@ -29,12 +31,6 @@ $function[param 1;param 2?]
 * `a` — A type
 * `b` — B type
 
-###### Footnote 
-
-> *Optional*
-
-> *This function **is not** an official function.*
-
 ## Example(s)
 
 ```javascript
@@ -47,3 +43,4 @@ bot.command({
 });
 ```
 
+[^1]: You can also use footnotes to explain it on your way :)
