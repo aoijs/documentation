@@ -12,20 +12,15 @@ Delete an application command which is can be:
 ### Usage
 
 ```php
-$deleteApplicationCommand[location;application id]
+$deleteApplicationCommand[guildID/global;application id]
 ```
 
 ### Fields
 
 | Field | Description | Type | Required |
 | :--- | :--- | :--- | :--- |
-| location | The field, which we're going to delete on `guild` or `global` | str & num | yes |
+| guildID/global | The field, which we're going to delete on `guild` or `global` | str & num | yes |
 | application id | The application command that we're going to delete | number | yes |
-
-#### Location Types
-
-* `guildID` — Specific server id
-* `global` — Global application commands as it's name
 
 ## Examples
 
