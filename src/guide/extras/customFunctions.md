@@ -77,7 +77,7 @@ client.functionManager.createCustomFunction({
 
 ```js
 bot.command({
-name:"say",
+name:"dm",
 code:`
 $sendDMtoUser[$authorID;$message]
 `})
