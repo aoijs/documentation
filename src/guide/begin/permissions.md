@@ -34,3 +34,4 @@ description: All available permissions can be found here.
 * `changenickname` =&gt; changeNickname permission
 * `externalemojis` =&gt; externalEmojis permission
 * `sendtts` =&gt; sendTTS permission
+* `moderatemembers` =&gt; moderateMembers permission
