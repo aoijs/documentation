@@ -12,7 +12,7 @@ This function basically allows you to have multiple splits in 1 message
 $advancedTextSplit[text;separator;index;separator2;index2;...]
 ```
 
-## Fields
+### Fields
 
 | Field | Description | Type | Required |
 | :--- | :--- | :--- | :--- |
@@ -39,10 +39,7 @@ Now the second seperator is "|" and the index is "1" which will be returned.
 
 (bye) ok
 */
-
-
-/* Conclusion
-And with this function we have claimed `hi/bye|ok`'s **`bye`** argument :)
-*/
-
 ```
+
+And with this function we have claimed `hi/bye|ok`'s **`bye`** argument :)
+
