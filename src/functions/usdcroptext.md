@@ -4,21 +4,21 @@ This function crops the given text
 
 #### Fields
 
-This function has 2 required fields
+This function has 3 required fields
 
 1. Text \(Required\)
 2. Limit \(Required\)
-3. Char To Split \(Optional\)
-4. Append \(Optional\)
+3. Start \(Required\)
+4. Char To Split \(Optional\)
 
-Raw Usage: `$cropText[text;limit;charToSplit (optional);append (optional)]`
+Raw Usage: `$cropText[text;limit;start;charToSplit?]`
 
 #### Options
 
 * Text - The text we're cropping
 * Limit - The max length of the cropped text
+* Start - The position of the character after which the cropping will start
 * Char To Split-  The specified pivot to crop the text
-* Append - The text to append if text is longer than the limit
 
 #### Usage
 
@@ -27,7 +27,7 @@ Without optional fields
 ```javascript
 bot.command({
 name: 'crop',
-code: `$cropText[hello i am iron man;100]`
+code: `$cropText[hello;5;2]`
 })
 ```
 
@@ -36,7 +36,7 @@ With optional fields
 ```javascript
 bot.command({
 name: 'crop',
-code: `$cropText[hello i am iron man;100;z;yes]`
+code: `$cropText[hello;5;2;z]`
 })
 ```
 
