@@ -6,37 +6,36 @@ description: Changes the current nickname of the user
 
 This function will make the bot change the nickname of the user indicated within the server.
 
-#### Fields
+### Usage 
+```php
+$changeNickname[userID;nickname;reason]
+```
 
-Since this function has 2 parameters \(The two required\) you'll need to add content inside the function in the next order:
+### Fields
 
-1. User ID \(Required\)
-2. nickname \(Required\)
+| Field | Description | Type | Required |
+| :--- | :--- | :--- | :--- |
+| user ID | The id of the user whose nickname is to be changed | number | yes |
+| nickname | The nickname we're assigning the user | string | yes |
+|reason|The reason why the nickname has been assigned|string|yes|
 
-Raw Usage: `$changeNickname[userID;nickname]`
+## Examples
 
-#### Options
-
-* User ID - The user we're changing the nickname from
-* nickname - The nickname we're assigning the &lt;user&gt;
-
-#### Usage
-
-Set a nickname
+- Set a nickname
 
 ```javascript
 bot.command({
     name: "nick",
-    code: `$changeNickname[$authorID;Chïwi is ♡]`
+    code: `$changeNickname[$authorID;Chïwi is ♡;I like this nickname.]`
 });
 ```
 
-Remove a nickname
+- Remove a nickname
 
 ```javascript
 bot.command({
     name: "reset-nick",
-    code: `$changeNickname[$authorID;`
+    code: `$changeNickname[$authorID;;I want to reset it.]`
 });
 ```
 
