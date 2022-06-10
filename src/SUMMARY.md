@@ -256,6 +256,7 @@
   * [$isMuted](functions/usdismuted.md)
   * [$isNumber](functions/usdisnumber.md)
   * [$isPrune](functions/usdisprune.md)
+  * [$isServerMuted](functions/usdisservermuted.md)
   * [$isTicket](functions/usdisticket.md)
   * [$isUserDMEnabled](functions/usdisuserdmenabled.md)
   * [$isValidHex](functions/usdisvalidhex.md)
