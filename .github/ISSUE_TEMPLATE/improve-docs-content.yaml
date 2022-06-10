@@ -1,7 +1,7 @@
 name: Improve the content
 description: Make a suggestion to improve the content in an existing function, events or callbacks.
 labels:
-  - priority content update
+  - documentation
 body:
   - type: markdown
     attributes:
