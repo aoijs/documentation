@@ -1,0 +1,44 @@
+name: Improve the content
+description: Make a suggestion to improve the content in an existing function, events or callbacks.
+labels:
+  - content
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Welcome to the improving documentary contents. 
+        * Before you file an issue read the [Contributing guide](https://github.com/aoijs/documentation/blob/v5.1.2/.github/docs/contributing.md).
+        * Check to make sure someone hasn't already opened a similar [issue](https://github.com/aoijs/documentation/issues).
+        
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: This project has a Code of Conduct that all participants are expected to understand and follow.
+      options:
+        - label: I have read and agree to the aoijs docs project's [Code of Conduct](https://github.com/aoijs/documentation/blob/v5.1.2/.github/docs/CODE_OF_CONDUCT.md)
+          required: true
+
+  - type: textarea
+    attributes:
+      label: What function on akarui.leref.ga is affected?
+      description: Please link to the function you'd like to see updated.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: What parts of the function would you like to see updated?
+      description: |
+        - Give as much detail as you can to help us understand the change you want to see on the function, callback or events.
+        - Why should the document has to be changed? 
+        - What is the expected?
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Additional information
+      description: Add any other contents, screenshots or videos as you like to give us an additional information.
+    validations:
+      required: false
