@@ -3,7 +3,7 @@
 Custom functions are used to create special functions with custom code that can only be used by the specific client.
 
 ### Usage
-```js
+```javascript
 bot.functionManager.createCustomFunction({
 name : '$name', //FUNCTION NAME 
 params : ['params',...],//THE TYPE OF PARAMS. Use {param} to get the values of the parameters.
@@ -28,7 +28,7 @@ code : `The code to be returned` //THE ACTUAL CODE IT WILL BE RETURN
 
 - Creating the custom function
 
-```js
+```javascript
 bot.functionManager.createCustomFunction({
 name : '$say', //FUNCTION NAME 
 params : ['authorid','message'],//THE TYPE OF PARAMS
@@ -41,7 +41,7 @@ code : `
 
 - Using the custom function
 
-```js
+```javascript
 bot.command({
 name:"say",
 code:`
@@ -54,7 +54,7 @@ $say[$authorID;$message]
 
 - Creating the custom function
 
-```js
+```javascript
 client.functionManager.createCustomFunction({
       name: "$sendDMtoUser",//FUNCTION NAME
       type: "djs",//TYPE OF THE FUNCTION
@@ -74,7 +74,7 @@ client.functionManager.createCustomFunction({
 
 - Using the custom function
 
-```js
+```javascript
 bot.command({
 name:"dm",
 code:`
