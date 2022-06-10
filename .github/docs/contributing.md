@@ -2,7 +2,7 @@
 
 When contributing to this repository, please first discuss the change you wish to make via issue, Discord or any other method with the owners of this repository before making a change. 
 
-Please note we have a code of conduct, please follow it in all your interactions with the project.
+Please note we have a code of conduct, please follow it in all your interactions with the project and use [function contribution example](https://github.com/aoijs/documentation/blob/v5.1.2/.github/contributing-example.md).
 
 ## Pull Request Process 🧩
 
