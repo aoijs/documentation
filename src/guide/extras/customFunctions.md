@@ -58,7 +58,6 @@ $say[$authorID;$message]
 client.functionManager.createCustomFunction({
       name: "$sendDMtoUser",//FUNCTION NAME
       type: "djs",//TYPE OF THE FUNCTION
-      params: ['userid','message'], // TYPE OF THE PARAMETERS
       code: async d => {//FETCHING DATA AS D
         
         const data = d.util.openFunc(d);
