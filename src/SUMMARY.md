@@ -140,6 +140,7 @@
   * [$deleteEmojis](functions/usddeleteemojis.md)
   * [$deleteGlobalUserVar](functions/usddeleteglobaluservar.md)
   * [$deleteIn](functions/usddeletein.md)
+  * [$deleteInvite](functions/usddeleteinvite.md)
   * [$deleteMessage](functions/usddeletemessage.md)
   * [$deleteMessageVar](functions/usddeletemessagevar.md)
   * [$deleteRoles](functions/usddeleteroles.md)
