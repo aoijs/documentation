@@ -1,51 +1,67 @@
 ---
-description: Stops the code execution for given time
+description: Stops the code execution for given time.
 ---
 
 # $wait
 
-This function delays the bots response.
+This function delays the bots response. This can work for the whole code or certain parts of the code. As we know, it code will be read from bottom to top.
 
-```text
+### Usage
+
+```php
 $wait[time]
 ```
 
-This can work for the whole code or certain parts of the code. As we know, it code will be read from bottom to top. To delay the whole code we do:
+### Fields
+
+| Field | Description | Type | Required |
+| :--- | :--- | :--- | :--- |
+| time | delaying time | string | yes |
+
+#### Suffixes
+
+* `s` - Seconds
+* `m` - Minutes
+* `h` - Hours
+* `d` - Days
+* `w` - Weeks
+
+##### Footnote
+
+_`$wait` is not saved in the database, be aware of that![^1]_
+
+## Examples
+
+* Delaying the whole code:
 
 ```javascript
 bot.command({
-name: "wait",
-code: `$description[This will respond in 5 seconds]
-$title[hi]
-$wait[5s]` // since $wait is at bottom, it will delay whole code
-})
+  name: "wait",
+  code: `
+  $description[1;Sorry for late reply, eheh :D]
+  
+  $title[1;Hello!]
+  
+  $wait[5s]
+  ` 
+// since $wait is at bottom, it will delay whole code
+});
 ```
 
-To delay certain parts of the code we do:
+* To delay certain parts of the code:
 
 ```javascript
 bot.command({
-name: "wait",
-code: `
-$sendMessage[Bye;no]
-$wait[5s]
-$sendMessage[Hi;no]
-`
-})
-/*
-'Hi' will respond instantly, but 'Bye' will
-be delayed for 5 seconds before
-sending
-*/
+  name: "wait",
+  code: `
+  $sendMessage[Bye 👋]
+  
+  $wait[5s]
+  
+  $sendMessage[Hi 🙌]
+  `
+});
+//'Hi' will respond instantly, but 'Bye' will be delayed for 5 seconds before sending
 ```
 
-In $wait we have &lt;time&gt; You can go up to 20-24 days. Here are the suffixes:
-
-* s - Seconds
-* m - Minutes
-* h - Hours
-* d - Days
-* w - Weeks
-
-Example: `$wait[5m]` \(Delays &lt;message&gt; for 5 minutes\)
-
+[^1]: You can go up to 20-24 days, but bot should be still running.
