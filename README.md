@@ -19,7 +19,6 @@ _It's swift and flexible using functions._
 
 _Open Source for the Community ❤️_
 
-
 ## Installation
 
 **Node.JS 16.6.0 or newer is required.**  
@@ -68,6 +67,11 @@ bot.interactionCommand({
   `
 });
 ```
+### Would you want to contribute? 
+
+We would like to build our documentary along with you to make it betters to everyone!
+
+Before contributing please read our [contribution](https://github.com/aoijs/documentation/blob/v5.1.2/.github/docs/contributing.md).
 
 ## Links
 - [Website](https://aoi.js.org)
