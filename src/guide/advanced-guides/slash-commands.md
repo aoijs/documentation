@@ -151,13 +151,13 @@ the ID from using '$getApplicationCommandID'
 This function deletes the specified slash command
 
 ```
-$deleteSlashCommand[guildID/global;id]
+$deleteApplicationCommand[guildID/global;id]
 ```
 
 ```javascript
 bot.command({
 name: "delete",
-code: `$deleteSlashCommand[$guildID;$getApplicationCommandId[aoijs]]`
+code: `$deleteApplicationCommand[$guildID;$getApplicationCommandId[aoijs]]`
 /*
     Code Breakdown:
 This will delete our created slashcommand that we made.
@@ -199,7 +199,7 @@ bot.onInteractionCreate()
 This function sends a message to the channel when the slash command in executed
 
 ```javascript
-$interactionReply[message;embeds?;components?;files?;ephemeral(yes/no)]  //? means optional
+$interactionReply[message;embeds?;components?;files?;allowedMentions(everyone/users/roles);ephemeral (yes/no)]  //? means optional
 ```
 
 ```javascript
@@ -256,7 +256,7 @@ bot.interactionCommand({
  prototype : 'slash',
  code: `
  $sendDM[{newEmbed:{title:You Recieved a DM!}{description:Someone sent you a dm!}{field:Author:<@$interactionData[author.id]> | $userTag[$interactionData[author.id]]}{field:Message:$interactionData[options.data[1].value]}};$interactionData[options.data[0].value]]
- $interactionReply[Successfully sent dm to **$userTag[$interactionData[options.data[0].value]]**. Message: **$interactionData[options.data[1].value]**;;;;yes]
+ $interactionReply[Successfully sent dm to **$userTag[$interactionData[options.data[0].value]]**. Message: **$interactionData[options.data[1].value]**;;;;users;yes]
  `
  })
   bot.onInteractionCreate()
