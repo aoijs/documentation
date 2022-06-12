@@ -171,6 +171,7 @@
   * [$exec](functions/usdexec.md)
   * [$executionTime](functions/usdexecutiontime.md)
   * [$fetchInvites](functions/usdfetchinvites.md)
+  * [$fileExists](functions/usdfileexists.md)
   * [$fileSize](functions/usdfilesize.md)
   * [$filterMessage](functions/usdfiltermessage.md)
   * [$findChannel](functions/usdfindchannel.md)
