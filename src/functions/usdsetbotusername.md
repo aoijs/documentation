@@ -2,19 +2,19 @@
 description: Changes the bot's name to the given text
 ---
 
-# $setBotName
+# $setBotUsername
 
 This function set's the bot's username
 
 ```javascript
-$setBotName[text]
+$setBotUsername[text]
 ```
 
 ```javascript
 bot.command({
 name: "setbotname",
 code: `Set the bots name! 
-$setBotName[Aoi.JS]`
+$setBotUsername[Aoi.JS]`
 })
 ```
 
