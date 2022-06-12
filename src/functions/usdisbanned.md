@@ -8,7 +8,7 @@ This function checks if the given user is banned or not. Returns boolean
 
 ### Usage
 ```php
-$isBanned[guild ID;user ID]
+$isBanned[guildID;userID]
 ```
 ### Fields
 | Field | Description | Type | Required |
