@@ -65,3 +65,4 @@ bot.command({
 ```
 
 [^1]: You can go up to 20-24 days, but bot should be still running.
+
