@@ -52,6 +52,7 @@
   * [$allEmojiCount](functions/usdallemojicount.md)
   * [$allMembersCount](functions/usdallmemberscount.md)
   * [$alwaysExecute](functions/usdalwaysexecute.md)
+  * [$appendFile](functions/usdappendfile.md)
   * [$archiveThread](functions/usdarchivethread.md)
   * [$argsCheck](functions/usdargscheck.md)
   * [$argsCount](functions/usdargscount.md)
