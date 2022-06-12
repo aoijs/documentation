@@ -8,19 +8,16 @@ description: >-
 
 This channel returns the current channel or the specified channel's ID
 
-#### Fields
+### Usage 
+```php
+$channelID[channel name?]
+```
 
-This function has 1 field
+| Field | Description | Type | Required |
+| :--- | :--- | :--- | :--- |
+| channel name | The name of the channel | string | no |
 
-1. channel Name \(Optional\)
-
-Raw Usage: `$channelID[channel Name]`
-
-#### Options
-
-* Channel Name - The channel name we're getting the channel id from
-
-#### Usage
+## Examples
 
 ```javascript
 bot.command({

@@ -6,37 +6,40 @@ description: Displays the channel count in the server.
 
 This function will display the total channel count on the server, including categories.
 
-#### Fields
+### Usage 
+```php
+$channelCount[guild ID?;type?]
+``` 
+### Fields
 
-This function has 1 field
+| Field | Description | Type | Required |
+| :--- | :--- | :--- | :--- |
+| guild ID | The id of the server whose number of channels are to be returned| number | no |
+| type | The type of the channel | string | no |
 
-1. Type \(Optional\)
+#### Types
+- text
+- voice
+- stage
+- category
 
-Raw Usage: `$channelCount[type (Optional)]` 
+## Examples
 
-#### Options
-
-* Type - the channel type you want to count \(text, voice, category\)
-
-#### Usage
-
-Standard Use
-
-```javascript
-bot.command({
-    name: "chanels",
-    code: `This guild has $channelCount channels!`
-});
-```
-
-More detailed use
+- Without optional fields
 
 ```javascript
 bot.command({
     name: "channels",
-    code: `There are $channelCount[category] categories
-    $channelCount[text] text channels
-    $channelCount[voice] voice channels.`
+    code: `This guild has $channelCount channels!`
 });
+```
+
+- With optional fields
+
+```javascript
+bot.command({
+    name: "channels",
+    code: `There are $channelCount[773352845738115102;stage] stage channels in Akarui Development server.`
+}); // Returns how many stage channels are there in Akarui Development server
 ```
 

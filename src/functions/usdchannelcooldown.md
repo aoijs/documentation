@@ -1,22 +1,25 @@
+---
+description : Sets a cooldown for the current channel.
+---
+
 # $channelCooldown
 
-This function sets a cooldown for the current channel
+This function sets a cooldown for the current channel.
 
-#### Fields
+### Usage 
+```php
+$channelCooldown[time;error?]
+```
 
-This function has 2 fields
+### Fields
 
-1. time \(Required\)
-2. error \(Required\)
+| Field | Description | Type | Required |
+| :--- | :--- | :--- | :--- |
+| time | How long the time will last | alphanumeric | yes |
+| error | The error message that will appear when the cooldown hasn't finished | string | no |
 
-Raw Usage: `$channelCooldown[time;error message]`
 
-#### Options
-
-* time - How long the cooldown will last
-* error - The error message that will appear when the cooldown hasn't finished
-
-#### Usage
+## Example
 
 ```javascript
 bot.command({

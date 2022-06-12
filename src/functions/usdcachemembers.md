@@ -6,23 +6,20 @@ description: Updates the cache for the current guild members
 
 This function is responsible for saving each new user that has not been registered before in your bot's database.
 
-#### Fields
+### Usage 
+```php
+$cacheMembers[guildID?;returnCount?]
+```
 
-This function has 2 optional fields
+### Field
+| Field | Description | Type | Required |
+| :--- | :--- | :--- | :--- |
+| guild ID |The guild we're caching the members for | number | no |
+|return count|The amount of members cached|yes/no|no|
 
-1. Guild ID \(Optional\)
-2. Return Count \(Optional\)
+## Examples
 
-Raw Usage: `$cacheMembers[guildID (optional);returnCount (optional)]`
-
-#### Options
-
-* Guild ID - The guild we're caching the members for
-* Return Count - The amount of members cached
-
-#### Usage
-
-Without optional fields
+- Without optional fields
 
 ```javascript
 bot.command({
@@ -34,7 +31,7 @@ bot.command({
 });
 ```
 
-With optional fields
+- With optional fields
 
 ```javascript
 bot.command({

@@ -2,19 +2,18 @@
 
 This function returns the specified channel's given property
 
-#### Usage
+### Usage 
+```php
+$channel[channelIID;property]
+```
 
-This function has 2 fields
+### Fields
 
-1. Channel ID \(Required\)
-2. Property \(Required\)
+| Field | Description | Type | Required |
+| :--- | :--- | :--- | :--- |
+| channel ID | The channel you want to get properties from | number | yes |
+| property | The property you want to get | string | yes |
 
-Raw Usage: `$channel[channelIID;property]`
-
-#### Options
-
-* Channel ID - The channel you want to get the properties from
-* Property - The property you want to get from the &lt;channel&gt;
 
 #### Available Properties
 
@@ -35,6 +34,8 @@ Raw Usage: `$channel[channelIID;property]`
 * parentname - Channel's category's name
 * isviewable - Wehther or not the author of the command can view the channel, Returns Boolean
 * isdeleteable - Whether or not the author of the command can delete the channel, Returns Boolean
+
+## Examples
 
 ```javascript
 bot.command({
