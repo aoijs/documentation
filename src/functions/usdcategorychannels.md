@@ -7,30 +7,47 @@ This functions returns all the channels in the given category
 This function has 2 required fields
 
 1. Category ID \(Required\)
-2. Property \(Required\)
+2. P \(Required\)
 3. Separator \(Optional\)
 
-Raw Usage: ``$categoryChannels[categoryID;proeprty;separator (optional)]```
+### Usage 
+```php
+$categoryChannels[categoryID;option?;separator?)]
+```
+
+### Fields
+
+| Field | Description | Type | Required |
+| :--- | :--- | :--- | :--- |
+| category ID | The category we're getting the channels from  | number | yes |
+| option | The option we're getting from each channel | string | no |
+|separator|The separator that separates each option|alphanumeric|no|
+
 
 #### Options
 
-* Category ID - The category we're getting the channels from
-* Property - The property we're getting from each channel
-* Separator - The separator that separates each property
-
-#### Properties
-
 * count - The amount of channels in the category
-* name - The name of the channel
+* names - The name of the channel
 * id - The id of the channel
 * mention - The channel mention
 
-#### Usage
+## Example
+
+- Without optional fields
 
 ```javascript
 bot.command({
 name: "categoryChannels",
-code: `$categoryChannels[773356383625150505;name;,]`
+code: `$categoryChannels[773356383625150505]`
+})
+```
+
+- With optional fields
+
+```javascript
+bot.command({
+name: "categoryChannels",
+code: `$categoryChannels[773356383625150505;names,]`
 })
 ```
 

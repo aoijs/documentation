@@ -9,15 +9,15 @@ description: Bans an user from the guild using their ID.
 ### Usage
 
 ```php
-$ban[user id;guild id?;messages to delete?;reason?]
+$ban[guildID;userID;messages to delete?;reason?]
 ```
 
 ### Fields
 
 | Field | Description | Type | Required |
 | :--- | :--- | :--- | :--- |
+| guild id | The server ID where the user will get ban | number | yes |
 | user id | The user the bot is banning | number | yes |
-| guild id | The server ID where the user will get ban | number | no |
 | messages to delete | How many of the messages over x days to delete of the banned user | number | no |
 | reason | The reason in the audit logs | string | no |
 
@@ -36,7 +36,7 @@ bot.command({
   code: `
   $username[$mentioned] has been banned from the guild.
   
-  $ban[$mentioned;$guildID;7;$noMentionMessage]
+  $ban[$guildID;$mentioned;7;$noMentionMessage]
   `
 // Deleted 7 days of messages the user
 // 💡 That's also called as "soft-ban"
@@ -51,7 +51,7 @@ bot.command({
   code: `
   $username[$message] has been banned from the guild.
   
-  $ban[$message;$guildID;0;$noMentionMessage]
+  $ban[$guildID;$message;0;$noMentionMessage]
   `
 // Didn't delete any messages of the user, but banned
 });

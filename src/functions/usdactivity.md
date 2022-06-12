@@ -9,15 +9,15 @@ This function shows the current activity of the indicated user \(Only if it dete
 ### Usage
 
 ```php
-$activity[userID?;guildID?]
+$activity[guildID;userID?]
 ```
 
 ### Fields
 
 | Field | Description | Type | Required |
 | :--- | :--- | :--- | :--- |
+| guildID | To see, user's activity for specific guild | number | yes |
 | userID | The ID of the user to see activity | number | no |
-| guildID | To see, user's activity for specific guild | number | no |
 
 ###### Activity Types
 
@@ -34,7 +34,7 @@ $activity[userID?;guildID?]
 bot.command({
   name: "activity",
   code: `
-  $activity
+  $activity[$guildID]
   `
 //Returns "none" cause I'm offline.
 });
@@ -46,7 +46,7 @@ bot.command({
 bot.command({
   name: "activity",
   code: `
-  $activity[285118390031351809;697039582922801182]
+  $activity[697039582922801182;285118390031351809]
   `
 //Let's say I'm streaming a video on this guild's voice chat. It will show "Streaming" activity since I'm streaming a video.
 });

@@ -6,23 +6,26 @@ description: Forces the bot to leave the specified server.
 
 This function makes the bot leave the current / specified server
 
-#### Fields
+### Usage 
+```php
+$botLeave[serverID?]
+```
 
-This function has 1 optional field
 
-1. Server ID \(Optional\)
+### Fields
 
-Raw Usage: `$botLeave[serverID (optional)]`
+| Field | Description | Type | Required |
+| :--- | :--- | :--- | :--- |
+| guild ID | The guild ID of the server from which the bot will leave | number | no |
 
-#### Options
-
-* Server ID - The server of which the bot is going to leave from
 
 {% hint style="danger" %}
 Using this function will make your bot leave the specified server, we recommend using $onlyForIDs\[Your ID;Only for my owner\]
 {% endhint %}
 
-#### Usage
+## Examples
+
+- Without optional fields
 
 ```javascript
 bot.command({
@@ -34,6 +37,21 @@ bot.command({
 });
 
 // I just used my ID but you can replace it with yours.
+```
+
+- With optional fields
+
+```javascript
+bot.command({
+    name: "exit",
+    code: `
+    $botLeave[773352845738115102] 
+    $onlyForIDs[278342221202194434;You're not Chiwi!]
+    `
+});
+
+// I just used my ID but you can replace it with yours.
+// In this example, when Chiwi executes the command the bot leaves from the Akarui Development server.
 ```
 
 
