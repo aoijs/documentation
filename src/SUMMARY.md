@@ -139,6 +139,7 @@
   * [$deleteChannelVar](functions/usddeletechannelvar.md)
   * [$deletecommand](functions/usddeletecommand.md)
   * [$deleteEmojis](functions/usddeleteemojis.md)
+  * [$deleteFile](functions/usddeletefile.md)
   * [$deleteGlobalUserVar](functions/usddeleteglobaluservar.md)
   * [$deleteIn](functions/usddeletein.md)
   * [$deleteInvite](functions/usddeleteinvite.md)
