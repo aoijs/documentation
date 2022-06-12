@@ -2,7 +2,7 @@
 description: 'Get the Server Invite Link, or Enter Server ID.'
 ---
 
-# $getServerInvite
+# $createServerInvite
 
 This function returns the current guild's invite
 
@@ -10,7 +10,7 @@ This function returns the current guild's invite
 bot.command({
 name: "invite", 
 code: `
-$getServerInvite`
+$createServerInvite`
 })
 ```
 
