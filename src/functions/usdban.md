@@ -9,7 +9,7 @@ description: Bans an user from the guild using their ID.
 ### Usage
 
 ```php
-$ban[guildID;userID;messages to delete?;reason?]
+$ban[guildID;userID;days?;reason]
 ```
 
 ### Fields
@@ -18,8 +18,8 @@ $ban[guildID;userID;messages to delete?;reason?]
 | :--- | :--- | :--- | :--- |
 | guild id | The server ID where the user will get ban | number | yes |
 | user id | The user the bot is banning | number | yes |
-| messages to delete | How many of the messages over x days to delete of the banned user | number | no |
-| reason | The reason in the audit logs | string | no |
+| days | How many of the messages over x days to delete of the banned user | number | no |
+| reason | The reason in the audit logs | string | yes |
 
 ###### Footnote
 
@@ -27,8 +27,6 @@ $ban[guildID;userID;messages to delete?;reason?]
 
 
 ## Examples
-
-* With Deleting X days of messages & reason:
 
 ```javascript
 bot.command({
