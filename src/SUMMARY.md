@@ -145,6 +145,7 @@
   * [$deleteMessageVar](functions/usddeletemessagevar.md)
   * [$deleteRoles](functions/usddeleteroles.md)
   * [$deleteServerVar](functions/usddeleteservervar.md)
+  * [$deleteStageInstance](functions/usddeletestageinstance.md)
   * [$deleteUserVar](functions/usddeleteuservar.md)
   * [$deleteWebhook](functions/usddeletewebhook.md)
   * [$description](functions/usddescription.md)
