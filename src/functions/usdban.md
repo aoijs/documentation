@@ -9,7 +9,7 @@ description: Bans an user from the guild using their ID.
 ### Usage
 
 ```php
-$ban[guild id;user id;messages to delete?;reason?]
+$ban[guildID;userID;messages to delete?;reason?]
 ```
 
 ### Fields
