@@ -159,6 +159,7 @@
   * [$editIn](functions/usdeditin.md)
   * [$editMessage](functions/usdeditmessage.md)
   * [$editTextSplitElement](functions/usdedittextsplitelement.md)
+  * [$editWebhookMessage](functions/usdeditwebhookmessage.md)
   * [$emoji](functions/usdemoji.md)
   * [$emojiCount](functions/usdemojicount.md)
   * [$emojiExists](functions/usdemojiexists.md)
