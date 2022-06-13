@@ -28,6 +28,10 @@ $findRoles[query;limit?;type?;res?]
 - {position} - Returns the position of the role
 - {mention} - Returns the mention of the role
 - {id} - Returns the id of the role
+- {name} - Returns the name of the role
+- {color} - Returns the color of the role
+- {hoisted} - Checks if the role is hoisted
+- {mentionable} - Checks if the role is mentionable
 
 ## Examples 
 
@@ -35,7 +39,7 @@ $findRoles[query;limit?;type?;res?]
 bot.command({
   name: "find",
   code: `
-  $findRoles[Developer]
+  $findRoles[Dev;10;startsWith;The position of {mention} is {position}.]
   ` 
 });
 ```
