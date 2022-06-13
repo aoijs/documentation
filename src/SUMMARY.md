@@ -179,6 +179,7 @@
   * [$findMembers](functions/usdfindmembers.md)
   * [$findNumbers](functions/usdfindnumbers.md)
   * [$findRole](functions/usdfindrole.md)
+  * [$findRoles](functions/usdfindroles.md)
   * [$findServerChannel](functions/usdfindserverchannel.md)
   * [$findSpecialChars](functions/usdfindspecialchars.md)
   * [$findTextSplitIndex](functions/usdfindtextsplitindex.md)
