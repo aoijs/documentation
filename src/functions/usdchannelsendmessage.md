@@ -6,25 +6,22 @@ description: Sends a message to given Channel ID
 
 This function allows you to send a message in the channel you selected previously.
 
-#### Fields
+### Usage 
+```php
+$channelSendMessage[channelID;message;returnMessageID?]
+```
 
-This function has 2 required fields
+### Fields
 
-1. Channel ID \(Required\)
-2. Message \(Required\)
-3. Return messageID  \(Optional\)
+| Field | Description | Type | Required |
+| :--- | :--- | :--- | :--- |
+| channel ID | The channel where the message is to be sent | number | yes |
+|message|The message that is to be sent|number|yes|
+|return ID|Whether the id of the message is to be returned or not|yes/no|no|
 
-Raw Usage: `$channelSendMessage[channelID;message;returnMessageID (yes/no) (optional)]`
+## Examples
 
-#### Options
-
-* Channel ID - The channel the message is being sent
-* Message - The message that's being sent
-* Message ID - The ID of the message thats being sent
-
-#### Usage
-
-Without the optional field
+- Without the optional field
 
 ```javascript
 bot.command({
@@ -33,7 +30,7 @@ bot.command({
 });
 ```
 
-With the optional field
+- With the optional field
 
 ```javascript
 bot.command({
