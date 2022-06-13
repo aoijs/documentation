@@ -9,14 +9,14 @@ This function can change the volume of the current playing song. The minimum num
 ### Usage
 
 ```php
-$volume[volume of audio]
+$volume[volume of audio?]
 ```
 
 ### Field
 
 | Field | Description | Type | Required |
 | :--- | :--- | :--- | :--- |
-| volume of audio | for increasing the playing audio's volume | number | yes |
+| volume of audio? | for increasing the playing audio's volume | number | no |
 
 
 ###### Footnote
