@@ -4,6 +4,44 @@ description: aoi.js - changelog from previous versions and latest.
 
 # Changelog
 
+## aoi.js - 5.2.0
+### Added/Fixed/Changed
+
+- Added support of AoiClient type constructor. 
+- Added proper nodejs error (16+)
+- Beautify console. 
+- Reverted json parser to 5.1.0 style. (fix of formatting with new lines)
+- Cleanup entire src of all functions / fixed various bugs.
+- Tons of formatting/cleanup.
+- v4 if allows support of events functions in conditions.
+- Removed Lavalink Support
+
+#### New Functions Added
+
+- $archiveThread
+- $stopTimeout
+- $interactionModal
+- $isAutoComplete
+- $autoCompleteRespond
+- $deleteInvite
+- $deleteStageInstances
+- $textInputValue
+- $editWebhookMessage
+- $appendFile
+- $deleteFile
+- $fileExists
+- $shuffleStatus
+- $unShuffleQueue
+- $argSlice
+- $findRoles
+
+#### Usage changes
+- $ban -> guildID is required in first field.
+- $unban -> guildID is required in first field.
+- $activity -> guildID is required in first field.
+- $isBanned -> guildID is required in first field.
+- $getBanReason -> guildID is required in first field.
+
 ## aoi.js - 5.1.2
 ### Added/Fixed
 

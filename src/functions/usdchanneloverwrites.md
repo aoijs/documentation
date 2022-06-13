@@ -2,21 +2,17 @@
 
 This function returns the channel permission overwrites
 
-#### Fields
+### Usage 
+```php
+$channelOverwrites[channelID?;properties?;separator?]
+```
 
-This function has 3 optional fields
-
-1. Channel ID \(Optional\)
-2. Properties \(Optional\)
-3. Separator \(Optional\)
-
-Raw usage: `$channelOverwrites[channelID (optional);properties (optional);separator (optional)]`
-
-#### Options
-
-* Channel ID - The channel we're getting the permissions from
-* Properties - The properties that'll be displayed 
-* Separator - To separate each permission
+### Fields
+| Field | Description | Type | Required |
+| :--- | :--- | :--- | :--- |
+| channel ID | The channel we're getting permission from | number | no |
+|properties|The properties that will be displayed|string|no|
+|separator|To separate each permission|alphanumeric|no|
 
 #### Properties 
 
@@ -25,9 +21,10 @@ Raw usage: `$channelOverwrites[channelID (optional);properties (optional);separa
 * {allowed} - The allowed perms
 * {denied} - The denied perms
 
-Example:
+## Examples
 
 ```javascript
+
 //Without the optional fields
 bot.command({
     name: "channel",
@@ -44,7 +41,7 @@ bot.command({
     code: `
 Current Channel Overwrites
 $channelOverwrites[$channelID;{mention}'s Overwrites:\nAllowed: {allowed}\n
-Denied:\n{denied}
+Denied:\n{denied};,]
     `
 });
 ```
