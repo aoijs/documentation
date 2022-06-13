@@ -8,17 +8,16 @@ description: >-
 
 With this function you can show some information about the channel you want, this specific function will return true or false depending on whether the channel is marked as NSFW.
 
-#### Usage
+### Usage 
+```php
+$channelNSFW[channelID?]
+```
 
-This function has 1 field
+| Field | Description | Type | Required |
+| :--- | :--- | :--- | :--- |
+| channel ID | The id of the channel | number | no |
 
-1. Channel ID \(Optional\)
-
-Raw Usage: `$channelNSFW[channelID (optional)`
-
-#### Options
-
-* Channel ID - The channel we're checking to see if its NSFW or not
+## Examples
 
 ```javascript
 bot.command({
