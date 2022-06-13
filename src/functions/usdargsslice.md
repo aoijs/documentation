@@ -26,7 +26,7 @@ $textSlice[text;from?;to]
 ```javascript
 bot.command({
 name: "slice",
-code: `$textSlice[goodbye;3]`
+code: `$argsSlice[goodbye;3]`
 })
 ```
 
@@ -35,7 +35,7 @@ code: `$textSlice[goodbye;3]`
 ```javascript
 bot.command({
 name: "slice",
-code: `$textSlice[goodbye;1;3]`
+code: `$argsSlice[goodbye;1;3]`
 })
 ```
 
