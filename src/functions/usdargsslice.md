@@ -8,7 +8,7 @@ This function slices the given text to return sliced argument.
 
 ### Usage 
 ```php
-$textSlice[text;from?;to]
+$argsSlice[text;from?;to]
 ```
 ### Fields
 
