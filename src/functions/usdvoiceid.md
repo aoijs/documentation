@@ -1,38 +1,33 @@
 ---
-description: Returns the current voice channel ID the user is in
+description: Returns the current voice channel ID the user is in.
 ---
 
 # $voiceID
 
 This function simply returns the voice channel ID that the user is in
 
-Heres the usage:
+### Usage
 
-```text
-$voiceID[userID (optional)]
+```php
+$voiceID[userID?]
 ```
 
-Now lets find the voice ID of the author
+### Field
+
+| Field | Description | Type | Required |
+| :--- | :--- | :--- | :--- |
+| userID? | the id of the user | number | no |
+
+
+## Example 
+
+* Let's find voice chat of Neodevil
 
 ```javascript
 bot.command({
-name: "voiceID",
-code: `
-$voiceID
-`
-})
+  name: "voiceID",
+  code: `
+  $voiceID[$findUser[Neodevil]]
+  `
+});
 ```
-
-And let's find the voice ID of Kubaturi
-
-```javascript
-bot.command({
-name: "voiceID",
-code: `
-$voiceID[$findUser[Kubaturi]]
-`
-})
-```
-
-As always you can use `$voiceID[$message]`
-
