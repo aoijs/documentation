@@ -22,10 +22,10 @@ $usersInChannel[voiceChannelID;option?;separator?]
 
 #### Option Types
 
-* `id` — Returns ID of the users with the given role
-* `user.username` — Returns name of the users with the given role
-* `nickname` — Returns nickname of the users with the given role
-* `mention` — Returns the users with mentioning from given role
+* `id` — Returns ID of the users with the given channel
+* `user.username` — Returns name of the users with the given channel
+* `nickname` — Returns nickname of the users with the given channel
+* `mention` — Returns the users with mentioning from given channel
 
 ## Example
 
@@ -33,7 +33,7 @@ $usersInChannel[voiceChannelID;option?;separator?]
 
 ```javascript
 bot.command({
-  name: "usersInChannel",
+  name: "users-in-channel",
   code: `
   $usersInChannel[$voiceID;nickname;, ]
   `

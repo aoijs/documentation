@@ -23,8 +23,8 @@ $usersBanned[guildID?;force?;options?;separator?]
 
 #### Option Types
 
-* `id` — Returns ID of the users with the given role
-* `username` — Returns name of the users with the given role
+* `id` — Returns ID of the users
+* `username` — Returns name of the users
 
 ## Example
 
