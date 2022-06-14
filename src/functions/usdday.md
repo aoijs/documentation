@@ -2,19 +2,17 @@
 
 This function returns the current day.
 
-#### Fields
+#### Usage 
+```php
+$day[returnDayOfTheWeek?]
+```  
+### Fields
 
-This function has 1 optional field
+| Field | Description | Type | Required |
+| :--- | :--- | :--- | :--- |
+| returnDayOfTheWeek | Whether to return the day of the week  | yes/no | no|
 
-1. Return Day of the Week \(Optional\)
-
-Raw usage: `$day[returnDayOfTheWeek (yes/no) (optional)]`  
-
-#### Options
-
-* Return Day of the Week - Whether or not it returns the specified day - Example: Monday
-
-#### Usage
+## Example
 
 ```javascript
 bot.command({
