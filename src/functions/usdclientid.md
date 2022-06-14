@@ -6,7 +6,12 @@ description: Returns the bots ID
 
 This function will the bot's ID.
 
-#### Usage
+### Usage
+```php
+$clientID
+```
+
+## Example
 
 ```javascript
 bot.command({
