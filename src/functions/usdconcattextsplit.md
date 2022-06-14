@@ -2,19 +2,19 @@
 
 This function concatenates the text with the given separator
 
-#### Fields
+### Usage
+```php
+$concatTextSplit[text;separator]
+```
 
-This function has 2 fields
+### Fields
 
-1. Text \(Required\)
-2. Separator \(Required\)
+| Field | Description | Type | Required |
+| :--- | :--- | :--- | :--- |
+| text | The text to be separated | string | yes |
+| separator | The separator used to separate the values |alphanumeric|yes|
 
-#### Options
-
-* Text - The text we're concatenating
-* Separator - The separator separating each value
-
-#### Usage
+## Example
 
 ```javascript
 bot.command({
