@@ -6,27 +6,23 @@ description: Creates a webhook to the given channel ID
 
 This function creates a webhook that can be used later
 
-#### Fields
+### Usage  
+```php
+$createWebhook[channelID;name;avatar_url;returnWebhookID/Token;separator?]
+```
 
-This function has 4 required fields
+### Fields
 
-1. Channel ID \(Required\)
-2. Name \(Required\)
-3. Avatar URL \(Required\)
-4. Return Webhook ID/Token \(Required\)
-5. Separator \(Optional\)
+| Field | Description | Type | Required |
+| :--- | :--- | :--- | :--- |
+| channel ID | The id of the channel  | number | yes |
+| name | The name of webhook |string|yes|
+|avatar_url|The url of the avatar of webhook|url|yes|
+|return ID|Whether the webhook is or token is to be returned|yes/no|yes|
+|separator|The separator to separate webhook id and token|alphanumeric|no|
 
-Raw Usage:  `$createWebhook[channel ID;name;avatar url;returnWebhook ID/Token (yes/no);separator (optional)]`
 
-#### Options
-
-* Channel ID - The channel where the webhook is assigned to
-* Name - The name of the webhook
-* Avatar URL - The avatar of the webhook
-* Return Webhook Info - Whether or not the function returns the info of the newly created webhook
-* Separator - The symbol/letter that separates the webhook id and token
-
-#### Usage
+## Example
 
 ```javascript
 bot.command({
