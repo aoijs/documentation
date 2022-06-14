@@ -6,21 +6,19 @@ description: Changes the color of the specified role's ID
 
 This function changes the color of a role
 
-#### Fields
+### Usage 
+```php
+$colorRole[roleID;hex/int_color]
+```
 
-This function has 2 fields
+### Fields
 
-1. Role ID \(Required\)
-2. Hex/Int \(Required\)
+| Field | Description | Type | Required |
+| :--- | :--- | :--- | :--- |
+| role ID | The id of the role whose colour is to be changed | number | yes |
+| color |The color we're changing to|hex/int color|yes|
 
-Raw Usage: `$colorRole[roleID;hex or int color]`
-
-#### Options
-
-* Role ID - The role we're changing the color of
-* Hex/Int - The color we're changing the role to
-
-#### Usage
+## Example
 
 ```javascript
 bot.command({
