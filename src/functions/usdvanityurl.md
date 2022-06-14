@@ -1,21 +1,30 @@
+---
+description: Returns vanity URL.
+---
+
 # $vanityURL
 
-This function returns the current servers vanity URL, if they have one
+This function returns the current servers vanity URL, if they have one.
+
+> What's Vanity URL?[^1]
+
+### Usage
+
+```php
+$vanityURL
+```
+
+## Example
 
 ```javascript
 bot.command({
-name: "vanityURL",
-code: `URL: $vanityURL`
-/*
-What is a vanity URL
-A custom url that redirects to your server
-
-This would be a vanity URL
-discord.gg/discord-developers
-
-This is not a vanity URL
-https://discord.com/invite/HMUfMXDQsV
-*/
-})
+  name: "vanityURL",
+  code: `
+  URL: $vanityURL
+  `
+});
 ```
 
+[^1]: A custom URL Redirects you to a server. This would be a vanity URL
+discord.gg/akarui. For example, this is not a vanity URL
+https://discord.com/invite/j352EV9ran
