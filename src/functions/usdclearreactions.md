@@ -6,23 +6,20 @@ description: Clears the given emojis from the given message
 
 This function will remove the given emoji or all the emojis from the given message
 
-#### Fields
+### Usage 
+```php
+$clearReactions[channelID;messageID;emoji/all?]
+```
 
-This function has 3 fields
+### Fields
 
-1. Channel ID \(Required\)
-2. Message ID \(Required\)
-3. Emoji/All \(Required\)
+| Field | Description | Type | Required |
+| :--- | :--- | :--- | :--- |
+| channel ID | The id of the channel where the message is present | number | yes |
+| message ID | The id of the message where reaction is present |number|yes|
+|emoji|The emoji to be deleted|emoji/all|no|
 
-Raw Usage: `$clearReactions[channelID;messageID;emoji/all]`
-
-#### Options
-
-* Channel  ID - The channel the message is from
-* Message ID - The message we're clearing the reactions from
-* Emoji/All - The emoji\(s\) we're clearing
-
-#### Usage
+## Example
 
 ```javascript
 bot.command({
