@@ -9,14 +9,14 @@ This function simply returns the voice channel ID that the user is in
 ### Usage
 
 ```php
-$voiceID[user id?]
+$voiceID[userID?]
 ```
 
 ### Field
 
 | Field | Description | Type | Required |
 | :--- | :--- | :--- | :--- |
-| user id? | the id of the user | number | no |
+| userID? | the id of the user | number | no |
 
 
 ## Example 
