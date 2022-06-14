@@ -19,7 +19,7 @@ $userRoles[userID?;guildID?;option?;separator?]
 | userID? | The ID of the user | number | no |
 | guildID? | The ID of the server | number | no |
 | option? | The option of the returning user's | string | no |
-| seperator? | Seperator of userIDs | string | no |
+| seperator? | Seperator of roleIDs | string | no |
 
 #### Option Types
 
