@@ -18,7 +18,7 @@ $vanityURL
 
 ```javascript
 bot.command({
-  name: "vanityURL",
+  name: "vanity-url",
   code: `
   URL: $vanityURL
   `

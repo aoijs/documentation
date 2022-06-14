@@ -6,6 +6,8 @@ description: Returns a list of users with given role.
 
 This function will return the users that have the specified role, *it will return cached members*.
 
+### Usage
+
 ```php
 $usersWithRole[roleID;guildID;option;separator?] 
 //Default separator is comma ","
@@ -15,9 +17,9 @@ $usersWithRole[roleID;guildID;option;separator?]
 
 | Field | Description | Type | Required |
 | :--- | :--- | :--- | :--- |
-| roleID? | The ID of the role | number | yes |
-| guildID? | The ID of the server will be checked | number | no |
-| option? | The option of the returning user's | string | no |
+| roleID | The ID of the role | number | yes |
+| guildID | The ID of the server will be checked | number | no |
+| option | The option of the returning user's | string | no |
 | seperator? | Seperator of userIDs | string | no |
 
 #### Role Types

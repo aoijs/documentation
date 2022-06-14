@@ -24,7 +24,7 @@ $userTag[userID?]
 
 ```javascript
 bot.command({
-  name: "userTag",
+  name: "user-tag",
   code: `
   $userTag 
   `
@@ -36,7 +36,7 @@ bot.command({
 
 ```javascript
 bot.command({
-  name: "userTag",
+  name: "user-tag",
   code: `
   $userTag[$findUser[Leref]] 
   `

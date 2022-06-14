@@ -22,7 +22,7 @@ $vanityUses[guildID?]
 
 ```javascript
 bot.command({
-  name: "vanityUses",
+  name: "vanity-uses",
   code: `Uses: $vanityUses`
 })
 ```

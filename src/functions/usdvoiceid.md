@@ -25,7 +25,7 @@ $voiceID[userID?]
 
 ```javascript
 bot.command({
-  name: "voiceID",
+  name: "voice-id",
   code: `
   $voiceID[$findUser[Neodevil]]
   `
