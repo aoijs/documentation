@@ -2,23 +2,20 @@
 
 This function creates variable\(s\) that can be used later
 
-#### Fields
+### Usage 
+```php
+$createVar[varName:varValue;varName:varValue?...]
+```
+### Fields
 
-This function has 1 required field
+| Field | Description | Type | Required |
+| :--- | :--- | :--- | :--- |
+| Var1 | The name of var with value | name:value | yes |
+| Var2 | The name of var with value |name:value|no|
 
-1. Variable \(Required\)
-2. Variable 2 \(Optional\)
+## Example
 
-Raw Usage: `$createVar[varName:varValue;varName:varValue (optional);...]`
-
-#### Options
-
-* Var Name - The name of the variable
-* Var Value - The default value of the variable
-
-#### Usage
-
-Without optional fields
+- Without optional fields
 
 ```javascript
 bot.command({
@@ -27,7 +24,7 @@ code: `$createVar[money:0]`
 })
 ```
 
-With optional fields
+- With optional fields
 
 ```javascript
 bot.command({
