@@ -2,19 +2,17 @@
 
 This function allows the bot to return any property a command has
 
-#### Fields
+### Usage 
+```php
+$commandInfo[command_name;property]
+```
 
-This function has 2 fields
+### Fields
 
-1. Command Name \(Required\)
-2. Property \(Required\)
-
-Raw Usage: `$commandInfo[command name;property]`
-
-#### Options
-
-* Command Name - The command we're pulling the information from
-* Property - The property we're pulling from the command
+| Field | Description | Type | Required |
+| :--- | :--- | :--- | :--- |
+| command name | The name of command | string | yes |
+| property | The property to be used|string|yes|
 
 #### Properties
 
@@ -22,9 +20,9 @@ Raw Usage: `$commandInfo[command name;property]`
 * Code - The code of the command
 * Aliases - The aliases of the command
 
-#### Usage
+## Examples
 
-Here's our example code we're basing off of
+- Here's our example code we're basing off of
 
 ```javascript
 bot.command({
@@ -38,7 +36,7 @@ $title[MasterBot]
 })
 ```
 
-With name
+- With name
 
 ```javascript
 bot.command({
@@ -47,7 +45,7 @@ code: `$commandInfo[help;name]` //Returns 'help'
 })
 ```
 
-With Code
+- With Code
 
 ```javascript
 bot.command({
