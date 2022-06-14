@@ -1,38 +1,46 @@
 ---
-description: Gets specified user ID's username and discriminator easier
+description: Gets specified user ID's username and discriminator. 
 ---
 
 # $userTag
 
-This function returns the users username AND tag 
+This function returns the users username[^1] and tag[^2]
 
-```text
-$userTag[userID (optional)]
+```php
+$userTag[userID?]
 ```
 
-Lets find the authors tag
+### Field
+
+| Field | Description | Type | Required |
+| :--- | :--- | :--- | :--- |
+| userID? | the id of the user we're going to get | number | no |
+
+## Example
+
+* Let's return author's tag:
 
 ```javascript
 bot.command({
-name: "userTag",
-code: `
-$userTag 
-`
-})
-// Would return username#discriminator
+  name: "userTag",
+  code: `
+  $userTag 
+  `
+// Would return Neodevil#0001
+});
 ```
 
-Now lets find Kubaturis tag
+* Now lets find Leref's tag:
 
 ```javascript
 bot.command({
-name: "userTag",
-code: `
-$userTag[$findUser[Kubaturi]] 
-`
-})
-// Would return Kubaturi#0001
+  name: "userTag",
+  code: `
+  $userTag[$findUser[Leref]] 
+  `
+// Would return Leref#0001
+});
 ```
 
-And of course, `$userTag[$message]` will work
-
+[^1]: Neodevil
+[^2]: #0001
