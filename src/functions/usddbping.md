@@ -5,10 +5,13 @@ description: Returns the Database Ping.
 # $dbPing
 
 This function returns the database ping in Milliseconds. 
+### Usage
+```php
+$dbPing
+```
+## Example
 
-Example response: 3 \(for 3 ms\)
-
-```text
+```javascript
 bot.command({
 name: "database", 
 code: `
