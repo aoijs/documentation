@@ -4,21 +4,19 @@ description: Closes a ticket
 
 # $closeTicket
 
-This function closes a ticket/channel made by [$newTicket](usdnewticket.md)
+This function closes a ticket/channel made by [$newTicket](usdnewticket.md).
 
-#### Fields
+### Usage 
+```php
+$closeTicket[error]
+```
+### Fields
 
-This function has 1 field
+| Field | Description | Type | Required |
+| :--- | :--- | :--- | :--- |
+| error | The error to be returned if channel is not a ticket | number | yes |
 
-1. Error Message \(Required
-
-Raw Usage: `$closeTicket[error message]`
-
-#### Options
-
-* Error Message - This will appear when the function has been ran in a non-ticket channel
-
-#### Usage
+## Example
 
 ```javascript
 bot.command({
