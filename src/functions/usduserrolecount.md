@@ -1,6 +1,7 @@
 ---
 description: Returns all amount of roles that user has.
 ---
+
 # $userRoleCount
 
 This function returns how many roles an user has in the server.

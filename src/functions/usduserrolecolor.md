@@ -1,28 +1,32 @@
+---
+description: Returns the hex code of the highest role of user.
+---
+
 # $userRoleColor
 
-This function returns the hex code of the specified user's highest role
+This function returns the hex code of the specified user's highest role.
 
-```text
+### Usage
+
+```php
 $userRoleColor[user ID (optional)]
 ```
 
-```javascript
-bot.command({
-name: "roleColor",
-code: `$username's role color:
-$userRoleColor
-`
-})
-```
+### Field
 
-Mentioned user's role color
+| Field | Description | Type | Required |
+| :--- | :--- | :--- | :--- |
+| userID? | The ID of the user | number | no |
+| guild? | The ID of the guild | number | no |
+
+## Example
 
 ```javascript
 bot.command({
-name: "roleColor",
-code: `$username[$mentioned[1]]'s role color:
-$userRoleColor[$mentioned[1]]
-`
-})
+  name: "roleColor",
+  code: `
+  $username's role color: $userRoleColor[$authorID;$guildID]
+  `
+});
 ```
 
