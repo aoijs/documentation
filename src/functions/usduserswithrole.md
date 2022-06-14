@@ -1,36 +1,40 @@
 ---
-description: Returns a list of users with given role (members are given from the cache.)
+description: Returns a list of users with given role.
 ---
 
 # $usersWithRole
 
-This function will return the users that have the specified role
+This function will return the users that have the specified role, *it will return cached members*.
 
-```text
-$usersWithRole[roleID;separator (optional)] //Default separator is ,
+```php
+$usersWithRole[roleID;guildID;option;separator?] 
+//Default separator is comma ","
 ```
 
-Lets fetch some users!
+### Field
+
+| Field | Description | Type | Required |
+| :--- | :--- | :--- | :--- |
+| roleID? | The ID of the role | number | yes |
+| guildID? | The ID of the server will be checked | number | no |
+| option? | The option of the returning user's | string | no |
+| seperator? | Seperator of userIDs | string | no |
+
+#### Role Types
+
+* `id` — Returns ID of the users with the given role
+* `user.username` — Returns name of the users with the given role
+* `nickname` — Returns nickname of the users with the given role
+* `mention` — Returns the users with mentioning from given role
+
+## Example
 
 ```javascript
 bot.command({
-name: "usersWithRole",
-code: `
-$usersWithRole[$roleID[Developer]]
-`
-})
- // Will return: Leref,Ruben
+  name: "users-with-role",
+  code: `
+  $usersWithRole[$roleID[Profossional];697039582922801182;nickname;, ]
+  `
+ // Returns Neo, neo's personal maid, he idiot
+});
 ```
-
-Now with a custom separator
-
-```javascript
-bot.command({
-name: "usersWithRole",
-code: `
-$usersWithRole[$roleID[Developer];|] 
-`
-})
-// Will return: Leref|Ruben
-```
-

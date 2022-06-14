@@ -4,7 +4,9 @@ description: Gets specified user ID's username and discriminator.
 
 # $userTag
 
-This function returns the users username[^1] and tag[^2]
+This function returns the users username[^1] and tag[^2].
+
+### Usage
 
 ```php
 $userTag[userID?]
