@@ -199,7 +199,7 @@ bot.onInteractionCreate()
 This function sends a message to the channel when the slash command in executed
 
 ```javascript
-$interactionReply[message;embeds?;components?;files?;allowedMentions(everyone/users/roles);ephemeral (yes/no)]  //? means optional
+$interactionReply[message;embeds?;components?;files?;allowedMentions (everyone/users/roles);ephemeral (yes/no)]  //? means optional
 ```
 
 ```javascript
