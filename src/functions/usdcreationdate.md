@@ -8,19 +8,17 @@ description: >-
 
 This function will get the creation date of the specified ID.
 
-#### Fields
+### Usage 
+```php
+$creationDate[id;format?]
+```
 
-This function has 2 fields
+### Fields
 
-1. ID \(Required\)
-2. Format \(Optional\)
-
-Raw Usage: `$creationDate[id;format]`
-
-#### Options:
-
-* ID - The ID of the guild, channel, role or user or message
-* Format - The format the function will return
+| Field | Description | Type | Required |
+| :--- | :--- | :--- | :--- |
+| id | The id of user,role,channel,guild whose creation date is to be returned | number | yes |
+| format | The format in which the date will be returned|alphanumeric|no|
 
 #### Format Options:
 
@@ -28,9 +26,9 @@ Raw Usage: `$creationDate[id;format]`
 * `ms` =&gt; Milliseconds of the date - Example: 1604452086625
 * `time` =&gt; How long ago - Example: 4 months 2 weeks 4 days 18 hours 32 minutes and 32 seconds
 
-#### Usage:
+## Examples
 
-Using date format of the creation of an user:
+- Using date format of the creation of an user:
 
 ```javascript
 bot.command({
@@ -45,7 +43,7 @@ This will return:
 */
 ```
 
-Using ms format of the creation of an user:
+- Using ms format of the creation of an user:
 
 ```javascript
 bot.command({
@@ -60,7 +58,7 @@ This will return:
 */
 ```
 
-Using time format of the creation of an user:
+- Using time format of the creation of an user:
 
 ```javascript
 bot.command({
