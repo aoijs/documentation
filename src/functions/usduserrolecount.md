@@ -12,12 +12,12 @@ This function returns how many roles an user has in the server.
 $userRoleCount[userID?;guildID?]
 ```
 
-### Field
+### Fields
 
 | Field | Description | Type | Required |
 | :--- | :--- | :--- | :--- |
 | userID? | The ID of the user | number | no |
-| guild? | The ID of the guild | number | no |
+| guildID? | The ID of the guild | number | no |
 
 ## Example
 

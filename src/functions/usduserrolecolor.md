@@ -9,21 +9,21 @@ This function returns the hex code of the specified user's highest role.
 ### Usage
 
 ```php
-$userRoleColor[user ID (optional)]
+$userRoleColor[userID?;guildID?]
 ```
 
-### Field
+### Fields
 
 | Field | Description | Type | Required |
 | :--- | :--- | :--- | :--- |
 | userID? | The ID of the user | number | no |
-| guild? | The ID of the guild | number | no |
+| guildID? | The ID of the guild | number | no |
 
 ## Example
 
 ```javascript
 bot.command({
-  name: "roleColor",
+  name: "role-color",
   code: `
   $username's role color: $userRoleColor[$authorID;$guildID]
   `
