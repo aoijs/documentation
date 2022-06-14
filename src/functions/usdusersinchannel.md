@@ -12,7 +12,7 @@ This function returns the users that are in the given voice channel.
 $usersInChannel[voiceChannelID;option?;separator?]
 ```
 
-### Field
+### Fields
 
 | Field | Description | Type | Required |
 | :--- | :--- | :--- | :--- |

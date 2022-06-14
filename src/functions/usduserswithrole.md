@@ -13,7 +13,7 @@ $usersWithRole[roleID;guildID?;option?;separator?]
 //Default separator is comma ","
 ```
 
-### Field
+### Fields
 
 | Field | Description | Type | Required |
 | :--- | :--- | :--- | :--- |
