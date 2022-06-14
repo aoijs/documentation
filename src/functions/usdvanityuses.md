@@ -9,14 +9,14 @@ This function returns how many users joined through the vanity link[^1]
 ### Usage
 
 ```php
-$vanityUses[guild id?]
+$vanityUses[guildID?]
 ```
 
 ### Field
 
 | Field | Description | Type | Required |
 | :--- | :--- | :--- | :--- |
-| guild id? | the id of the server | number | no |
+| guildID? | the id of the server | number | no |
 
 ## Example
 
