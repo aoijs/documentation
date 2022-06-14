@@ -4,9 +4,14 @@ description: Returns the current command's code
 
 # $commandCode
 
-This function returns the current commands code
+This function returns the current commands code.
 
-#### Usage
+### Usage
+```php
+$commandCode
+```
+
+## Example
 
 ```javascript
 bot.command({
