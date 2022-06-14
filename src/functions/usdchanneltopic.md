@@ -6,30 +6,29 @@ description: Returns the channel's topic
 
 With this function you will be able to collect channel data, specifically the topic of the channel.
 
-#### Fields
+### Usage 
+```php
+$channelTopic[channelID?]
+```
+### Fields
 
-This function has 1 field
+| Field | Description | Type | Required |
+| :--- | :--- | :--- | :--- |
+| channel ID | The id of the channel whose topic is to be returned | number | no |
 
-1. Channel ID \(Required\)
 
-Raw Usage: `$channelTopic[channelID]`
+## Example
 
-#### Options
-
-* Channel ID - The channel we're getting the topic from
-
-#### Usage
-
-Get the topic of the current channel
+- Get the topic of the current channel
 
 ```javascript
 bot.command({
   name: "topic",
-  code: `The topic of <#$channelID> is: $channelTopic[$channelID]`
+  code: `The topic of <#$channelID> is: $channelTopic`
 });
 ```
 
-Get the topic of the mentioned channel
+- Get the topic of the mentioned channel
 
 ```javascript
 bot.command({
