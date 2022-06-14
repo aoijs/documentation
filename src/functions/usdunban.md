@@ -7,7 +7,7 @@ description: Unbans a user from the server
 This function unbans the user from the guild
 
 ```text
-$unban[server ID;user ID;reason (optional)]
+$unban[guildID;user ID;reason (optional)]
 ```
 
 {% hint style="info" %}
