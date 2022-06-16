@@ -4,16 +4,21 @@ description: Returns amount of bot variables the bot has.
 
 # $variablesCount
 
-With this function you can check how many variables the bot has.
+With this function you can check how many variables that your bot has.
 
-#### Example Command:
+### Usage
 
-```text
-bot.command({
-name: "variablescount",
-code: `
-This bot has $variablesCount bot variables.
-`
-})
+```php
+$variablesCount
 ```
 
+## Example
+
+```javascript
+bot.command({
+  name: "variablescount",
+  code: `
+  I have $variablesCount variables.
+  `
+});
+```
