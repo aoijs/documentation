@@ -1,8 +1,15 @@
+---
+description: Makes the bot leave the voice channel where it is connected
+---
 # $leaveVC
 
 Makes the bot leave the voice channel where it is connected, if any.
 
-#### Usage
+### Usage
+```php
+$leaveVC
+```
+## Example
 
 ```javascript
 bot.command({
