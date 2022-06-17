@@ -1,8 +1,16 @@
+---
+description: Loops the current song in the queue.
+---
 # $loopSong
 
 Loops the current song in queue.
 
-Example:
+### Usage
+```php
+$loopSong
+```
+
+## Example
 
 ```javascript
 bot.command({
