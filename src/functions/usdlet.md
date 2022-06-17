@@ -3,7 +3,7 @@ description: Allows you to assign a key to a value.
 ---
 # $let
 
-This function allows you to assign a key to a value. This is identical to [$addObjectProperty](/usdaddobjectproperty.md) but it's easier and doesn't require [$createObject](/usdcreateobject.md).
+This function allows you to assign a key to a value. This is identical to [$addObjectProperty](./usdaddobjectproperty.md) but it's easier and doesn't require [$createObject](./usdcreateobject.md).
 
 ### Usage 
 ```php
