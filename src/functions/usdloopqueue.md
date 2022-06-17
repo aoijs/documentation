@@ -4,7 +4,14 @@ description: Loop the current songs in the queue. Returns whether or not it's lo
 
 # $loopQueue
 
-This function loops/unloops the whole queue, and returns whether it's looped. Returns boolean
+This function loops/unloops the whole queue, and returns whether it's looped. Returns boolean.
+
+### Usage
+```php
+$loopQueue
+```
+
+## Example
 
 ```javascript
 bot.command({
