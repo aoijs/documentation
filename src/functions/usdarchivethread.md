@@ -9,7 +9,7 @@ This function used for archiving an active thread.
 ### Usage
 
 ```php
-$archiveThread[threadID;channelID?;archive?;reason]
+$archiveThread[threadID;channelID;archive?;reason?]
 ```
 
 ### Fields
@@ -17,9 +17,9 @@ $archiveThread[threadID;channelID?;archive?;reason]
 | Field | Description | Type | Required |
 | :--- | :--- | :--- | :--- |
 | threadID | The ID of the thread  | number | yes |
-| channelID | The ID of the channel | number | no |
+| channelID | The ID of the channel | number | yes |
 | archiving | Archiving or making active. | string | no |
-| reason | Reason for archiving/activating. | string | yes |
+| reason | Reason for archiving/activating. | string | no |
 
 ## Examples
 
