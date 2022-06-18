@@ -22,6 +22,18 @@ $jsonRequest[api;property?;error?;headerName:headerValue?...]
 | error | The error to be displayed if the property wasn't found | alphanumeric | no |
 |header|The header that is to be retrieved from the api|headerName:headerValue|no|
 
+#### Types of Header
+
+- normal: 
+```text
+A:hi;B:Bye
+```
+- json: 
+```javascript
+{ "A" : "hi", "B" : "bye" }
+```
+
+
 ## Example
 
 ```javascript
