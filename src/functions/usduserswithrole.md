@@ -35,7 +35,7 @@ $usersWithRole[roleID;guildID?;option?;separator?]
 bot.command({
   name: "users-with-role",
   code: `
-  $usersWithRole[$roleID[Profossional];697039582922801182;nickname;, ]
+  $usersWithRole[$roleID[Profossional];697039582922801182;displayName;, ]
   `
  // Returns Neo, neo's personal maid, he idiot
 });
