@@ -1,28 +1,33 @@
+---
+description: Makes the bot join a specified voice channel.
+---
+
 # $joinVC
 
 Makes the bot join an specified voice channel.
 
-#### Fields
+### Usage
+```php
+$joinVC[channelID;selfMute?;selfDeaf?;speaker?;debug?]
+```
 
-This function has 1 required field.
+### Fields
 
-1. Channel ID \(Required\)
-2. Join As Speaker \(Optional\)
+| Field | Description | Type | Required |
+| :--- | :--- | :--- | :--- |
+| channel ID | The id of the voice channel where the bot will join | number | yes |
+| selfMute | Whether to make the bot join as muted | yes/no | no |
+| selfDeaf | Whether to make the bot join as deafen | yes/no | no |
+| speaker | Whether to make the bot join as speaker | yes/no | no |
+| debug | Whether to make the bot join in debug mode |yes/no| no |
 
-Raw usage: `$joinVC[Channel ID;Join As Speaker?]`
-
-#### Options
-
-* Channel ID - Channel where the bot should connect to.
-* Join As Speaker - If you want the bot to join as speaker. \(default value: yes\)
-
-#### Usage
+## Example
 
 ```javascript
 bot.command({
     name: "",
     code: `Joined!
-    $joinVC[816751491451977768;yes]` 
+    $joinVC[816751491451977768]` 
 })
 
 /**
