@@ -36,7 +36,7 @@ code: `$hoistedRole`
 ```javascript
 bot.command({
 name: 'hoistedRole',
-code: `$hoistedRole[$mnetioned[1];$guildID;mention]`
+code: `$hoistedRole[$mentioned[1];$guildID;mention]`
 })
 ```
 
