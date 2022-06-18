@@ -25,6 +25,12 @@ $channelType[channelID?]
 * `category` =&gt; category
 * `news` =&gt; announcement channel
 * `stage` =&gt; stage channel
+* `dm` =&gt; dm channel
+* `groupdm` =&gt; group dm channel
+* `store` =&gt; store channel
+* `newsthread` =&gt; thread in announcement channel
+* `publicthread` =&gt; public thread channel
+* `privatethread` =&gt; private thread channel
 
 ## Examples
 
