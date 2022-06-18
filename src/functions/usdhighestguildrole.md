@@ -1,13 +1,13 @@
 ---
 description: Returns the server's highest role.
 ---
-# $highestServerRole
+# $highestGuildRole
 
 This function returns the server's highest role.
 
 ### Usage
 ```php
-$highestServerRole[guildID?;option?]
+$highestGuildRole[guildID?;option?]
 ```
 
 ### Fields
@@ -28,7 +28,7 @@ $highestServerRole[guildID?;option?]
 bot.command({
 name: "role", 
 code: `$serverName's Highest Role:
-$highestServerRole`
+$highestGuildRole`
 })
 ```
 
