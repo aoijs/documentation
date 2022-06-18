@@ -2,21 +2,27 @@
 
 This function returns the highest hoisted role's ID the given user has
 
-#### Fields
+### Usage 
+```php
+$hoistedRole[userID?;guildID?;option?]
+```
 
-This function has 1 optional field
+### Fields
 
-1. User ID \(Optional\)
-
-Raw Usage: `$hoistedRole[userID (optional)]`
+| Field | Description | Type | Required |
+| :--- | :--- | :--- | :--- |
+|user ID|The id of the user whose role is to be returned|number|no|
+| guild ID | The id of the guild | number | no |
+| option | The option on basis of which the role will be returned | string | no |
 
 #### Options
+- `id` - Returns id of the role.
+- `name` - Returns name of the role.
+- `mention` - Returns the mention of the role.
 
-* User ID - The user we're getting the role from
+## Example
 
-#### Usage
-
-Without optional fields
+- Without optional fields
 
 ```javascript
 bot.command({
@@ -25,12 +31,12 @@ code: `$hoistedRole`
 })
 ```
 
-With optional fields
+- With optional fields
 
 ```javascript
 bot.command({
 name: 'hoistedRole',
-code: `$hoistedRole[$mnetioned[1]]`
+code: `$hoistedRole[$mnetioned[1];$guildID;mention]`
 })
 ```
 
