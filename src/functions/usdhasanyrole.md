@@ -7,7 +7,7 @@ description: checks if the user has at least one of the required roles
 This function checks if the user has at least one of the specified roles. Returns boolean.
 
 ### Usage
-```
+```php
 $hasAnyRole[guildID;userID;roleID...]
 ```
 
