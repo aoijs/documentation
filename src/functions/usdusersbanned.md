@@ -33,7 +33,7 @@ bot.command({
   name: "users-banened",
   code: `
   List of banned users:
-  $usersBanned[$guildID;yes;name;, ]
+  $usersBanned[$guildID;yes;username;, ]
   `
 // Returns all banned users sorted by their username separated by a comma.
 });
