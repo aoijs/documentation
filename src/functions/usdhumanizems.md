@@ -1,58 +1,31 @@
-# $humanizeMS
+---
+description: Converts time into readable duration.
+---
 
-This function converts MS time into a readable duration
+# $humanizeMs
 
-#### Fields
+This function converts MS time into a readable duration.
 
-This function has 1 required field
+### Usage
+```php
+$humanizeMs[time]
+```
 
-1. MS \(Required\)
-2. Limit \(Optional\)
-3. Separator \(Optional\)
+### Fields
 
-Raw Usage: `$humanizeMS[ms;limit (optional);separator (optional)]`
+| Field | Description | Type | Required |
+| :--- | :--- | :--- | :--- |
+| time | The time in ms which is to be converted to readable duration. |number|yes|
 
-#### Options
-
-* MS - The duration in ms we're converting
-* Limit - Limit of display for the duration
-* Separator - The separator for each duration
-
-#### Usage
-
-Without the optional fields
+## Example
 
 ```javascript
 bot.command({
 name: "convert",
 code: `
-$humanizeMS[1207398129310]
+$humanizeMs[1207398129310]
 `
 //Returns: 38 years and 9 months
-})
-```
-
-With `Limit` optional field
-
-```javascript
-bot.command({
-name: "convert",
-code: `
-$humanizeMS[1207398129310;4]
-`
-//Returns: 38 years 9 months 24 days and 12 hours
-})
-```
-
-With `Separator` optional field
-
-```javascript
-bot.command({
-name: "convert",
-code: `
-$humanizeMS[1207398129310;4;,]
-`
-//Returns: 38 years, 9 months, 24 days, and 12 hours
 })
 ```
 
