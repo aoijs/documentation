@@ -17,10 +17,15 @@ $clear[amt;userFilter?;return_amount?;channelID?]
 | Field | Description | Type | Required |
 | :--- | :--- | :--- | :--- |
 | amt | The amount of messages to be deleted | number | yes |
-| userFilter | The user the bot is deleting messages from |User ID/everyone|yes|
+| userFilter | The user the bot is deleting messages from |string|yes|
 |returnAmount|Returns the amount of deleted messages|yes/no|no|
 |channel ID|The channel the bot is deleting messages from|number|no|
 
+#### Types of user filters
+- `unPins`
+- `bot`
+- `everyone`
+- `userId`
 
 ## Example
 
