@@ -1,31 +1,44 @@
 ---
-description: Returns a list of users that are banned from this guild.
+description: Returns a list of users that are banned from current guild.
 ---
 
 # $usersBanned
 
-This function returns the list of banned users from the current server with optional seperator sorted by userID/mention or usernames.
+This function returns the list of banned users from the current server with optional seperator sorted by userID/mention or usernames. Default return are usernames of the banned users[^1].
 
-Default return are usernames of the banned users. The default separator is `,`
+### Usage
 
-Raw usage:`$usersBanned[id/mention/username (optional);separator (optional)]`
-
-#### Example:
-
-```text
-bot.command({
-name: "ban-list",
-code: `
-List of banned users:
-$usersBanned[username;, ]
-`
-})
-// Returns all banned users sorted by their username separated by a comma.
+```php
+$usersBanned[guildID?;force?;options?;separator?]
 ```
 
-{% hint style="info" %}
-Keep the 2,000 character limit in mind. 
+### Fields
 
-If your server has many bans, use functions like [$cropText](usdcroptext.md) to stop after 2,000 chars or [$createFile](usdcreatefile.md) to send the full list in a text file.
-{% endhint %}
+| Field | Description | Type | Required |
+| :--- | :--- | :--- | :--- |
+| guildID? | The ID of the server | number | no |
+| force? | Forcing to fetch banned users | boolean | no |
+| option? | The option of the returning user's | string | no |
+| seperator? | Seperator of userIDs | string | no |
+
+#### Option Types
+
+* `id` — Returns ID of the users
+* `username` — Returns name of the users
+
+## Example
+
+```javascript
+bot.command({
+  name: "users-banened",
+  code: `
+  List of banned users:
+  $usersBanned[$guildID;yes;username;, ]
+  `
+// Returns all banned users sorted by their username separated by a comma.
+});
+```
+
+[^1]: If your server has many bans, use functions like [$cropText](usdcroptext.md) to stop after 2,000 chars or [$createFile](usdcreatefile.md) to send the full list in a text file.
+
 
