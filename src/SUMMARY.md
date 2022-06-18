@@ -230,7 +230,6 @@
   * [$hasEmbeds](functions/usdhasembeds.md)
   * [$hasPerms](functions/usdhasperms.md)
   * [$hasPermsInChannel](functions/usdhaspermsinchannel.md)
-  * [$hasRole](functions/usdhasrole.md)
   * [$hasRoles](functions/usdhasroles.md)
   * [$highestGuildRole](functions/usdhighestguildrole.md)
   * [$highestRole](functions/usdhighestrole.md)
