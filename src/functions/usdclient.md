@@ -1,5 +1,5 @@
 ---
-description: A compact funcion with 17 different functionalities.
+description: A compact funcion with 18 different functionalities.
 ---
 
 # $client
@@ -36,6 +36,7 @@ $client[option]
 * `token` =&gt; returns the bot's token. More information: see [$clientToken](usdclienttoken.md)
 * `ownerid` =&gt; returns the ID of the bot's owner or the ID of the owner of the application's team the bot belongs to
 * `teamid` =&gt; returns the ID of the team the bot's application belongs to or the ownerID if bot has no team
+* `json` =&gt; returns all basic and advanced details about your bot in json format. [Here's an example.](../gitbook/client-option-json.png)
 
 ## Example
 
