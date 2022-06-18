@@ -2,36 +2,30 @@
 
 This function allows the bot to request a method from/to the given url
 
-#### Fields
+### Usage 
+```php
+$httpRequest[url;method?;body?;property?;error?;headerName:headerValue?...]
+```
 
-This function has 1 required fields
+### Fields
 
-1. URL \(Required\)
-2. Method \(Optional\)
-3. Body \(Optional\)
-4. Property \(Optional\)
-5. Error \(Optional\)
-6. Header\(s\) \(Optional\)
-
-Raw Usage: `$httpRequest[url;method (optional);body (optional);property (optional);error (optional);headerName:headerValue;headerName:headerValue (optional);...]`
-
-#### Options
-
-* URL - The url we're requesting from/to
-* Method - The method we're using
-* Body - The content
-* Property - Only if Method is **GET.** 
-* Error - The error message if the request failed
-* Header\(s\) - The request headers/values
+| Field | Description | Type | Required |
+| :--- | :--- | :--- | :--- |
+| url | The url you're requesting from/to | url | yes |
+| method | The method we're using | alphanumeric | no |
+| body | The content | alphanumeric | no |
+| property | The property to be retrieved if method is GET. | alphanumeric | no |
+| error | The error message if the request failed. | alphanumeric | no |
+| header\(s\) | The request headers/values. | alphanumeric | no |
 
 #### Methods
 
 * GET - Request data from a resource
 * POST - Send data to a server to create or update a resource
 
-#### Usage
+## Examples
 
-Without optional fields
+- Without optional fields
 
 ```javascript
 bot.command({
@@ -40,7 +34,7 @@ code: `$httpRequest[https://some-random-api.ml/facts/dog]`
 })
 ```
 
-With optional fields
+- With optional fields
 
 ```javascript
 bot.command({
