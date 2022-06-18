@@ -26,10 +26,10 @@ $hasAnyRole[guildID;userID;roleID...]
 bot.command({
     name: "hasrole",
     code: `
-    $hasAnyRole[773353338854572073;773353339496169513]
+    $hasAnyRole[$guildID;$userID[Ayaka];$roleID[Developer];$roleID[Support]]
     `
-}) // The role IDs are Support and Moderator in Akarui Development server.
+})
 ```
 #### Footnotes
-The command will return `true` if the author of the command has either `Support` or `Moderator` in Official DBD.JS Team Discord Server.
+The command will return `true` if the author of the command has either `Developer` or `Support` in Official DBD.JS Team Discord Server.
 
