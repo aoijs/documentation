@@ -9,15 +9,14 @@ This function will show true or false if the specified text contains **at least*
 
 ### Usage 
 ```php
-$checkContains[text;word1;word2?...]
+$checkContains[text;word...]
 ```
 ### Fields
 
 | Field | Description | Type | Required |
 | :--- | :--- | :--- | :--- |
 | text | The text to be checked | string | yes |
-| word1 | The word whose presence is to be checked in the text | string | yes |
-| word2 | The word whose presence is to be checked in the text | string | no |
+| word\(s\) | The word whose presence is to be checked in the text | string | yes |
 
 ## Example
 
