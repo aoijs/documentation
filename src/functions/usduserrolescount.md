@@ -1,15 +1,15 @@
 ---
-description: Returns the hex code of the highest role of user.
+description: Returns all amount of roles that user has.
 ---
 
-# $userRoleColor
+# $userRolesCount
 
-This function returns the hex code of the specified user's highest role.
+This function returns how many roles an user has in the server.
 
 ### Usage
 
 ```php
-$userRoleColor[userID?;guildID?]
+$userRolesCount[userID?;guildID?]
 ```
 
 ### Fields
@@ -23,10 +23,9 @@ $userRoleColor[userID?;guildID?]
 
 ```javascript
 bot.command({
-  name: "role-color",
+  name: "user-roles-count",
   code: `
-  $username's role color: $userRoleColor[$authorID;$guildID]
+  $username has $userRolesCount roles!
   `
 });
 ```
-

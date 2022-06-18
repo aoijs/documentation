@@ -16,7 +16,7 @@ $variablesCount
 
 ```javascript
 bot.command({
-  name: "variablescount",
+  name: "variables-count",
   code: `
   I have $variablesCount variables.
   `
