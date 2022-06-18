@@ -9,7 +9,7 @@ This function returns a property from a JSON formatted api.
 ### Usage
 
 ```php
-$jsonRequest[api;property?;error?]
+$jsonRequest[api;property?;error?;headerName:headerValue?...]
 ```
 
 
@@ -20,6 +20,7 @@ $jsonRequest[api;property?;error?]
 | api | The api from which the specified property is to be retrieved | link | yes |
 | property | The property that is to be retrieved from the api | alphanumeric | no |
 | error | The error to be displayed if the property wasn't found | alphanumeric | no |
+|header|The header that is to be retrieved from the api|headerName:headerValue|no|
 
 ## Example
 
