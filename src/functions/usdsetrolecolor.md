@@ -2,13 +2,13 @@
 description: Changes the color of the specified role's ID
 ---
 
-# $colorRole
+# $setRoleColor
 
 This function changes the color of a role
 
 ### Usage 
 ```php
-$colorRole[roleID;hex/int_color]
+$setRoleColor[roleID;hex/int_color]
 ```
 
 ### Fields
@@ -24,7 +24,7 @@ $colorRole[roleID;hex/int_color]
 bot.command({
 name: "crole",
 code: `Changed the role's color to #FF0000
-$colorRole[$mentionedRoles;FF0000]`
+$setRoleColor[$mentionedRoles;FF0000]`
 })
 ```
 
