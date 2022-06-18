@@ -1,17 +1,20 @@
+---
+description: Creates variables that can be used later.
+---
 # $createVar
 
-This function creates variable\(s\) that can be used later
+This function creates variable\(s\) that can be used later.
 
 ### Usage 
 ```php
-$createVar[varName:varValue;varName:varValue?...]
+$createVar[table;varName:varValue...]
 ```
 ### Fields
 
 | Field | Description | Type | Required |
 | :--- | :--- | :--- | :--- |
-| Var1 | The name of var with value | name:value | yes |
-| Var2 | The name of var with value |name:value|no|
+|table|The name of the table where the variable is to be allocated|alphanumeric|yes|
+| var\(s\) | The name of var with value | name:value | yes |
 
 ## Example
 
@@ -20,7 +23,7 @@ $createVar[varName:varValue;varName:varValue?...]
 ```javascript
 bot.command({
 name: 'createVar',
-code: `$createVar[money:0]`
+code: `$createVar[main;money:0]`
 })
 ```
 
@@ -29,7 +32,7 @@ code: `$createVar[money:0]`
 ```javascript
 bot.command({
 name: 'createVar',
-code: `$createVar[money:0;trusted:false]`
+code: `$createVar[main;money:0;trusted:false]`
 })
 ```
 
