@@ -26,6 +26,8 @@ $checkCondition[condition]
 4. &lt;= - Less than or equal to
 5. &lt; - Less than
 6. &gt; - Greater than
+7. || - Or 
+8. && - And
 
 ## Example
 
