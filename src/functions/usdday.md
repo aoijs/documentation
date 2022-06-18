@@ -4,13 +4,8 @@ This function returns the current day.
 
 #### Usage 
 ```php
-$day[returnDayOfTheWeek?]
+$day
 ```  
-### Fields
-
-| Field | Description | Type | Required |
-| :--- | :--- | :--- | :--- |
-| returnDayOfTheWeek | Whether to return the day of the week  | yes/no | no|
 
 ## Example
 
