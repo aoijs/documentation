@@ -22,7 +22,7 @@ $kick[userID;guildID?;reason]
 ```javascript
 bot.command({
 name: "kick", 
-code: `$kick[$mentioned[1];Spam]`
+code: `$kick[$mentioned[1];$guildID;Spam]`
 //Kicks the mentioned user
 })
 ```
