@@ -6,7 +6,12 @@ description: Returns the current loop status.
 
 This function will tell you the current loop status, if it's in song, the entire queue or none.
 
-Example:
+### Usage
+```php
+$loopStatus
+```
+
+## Example
 
 ```javascript
 bot.command({

@@ -12,18 +12,22 @@ This token should be kept as private because everyone with your bot's token can 
 You should restrict the use of this function to yourself!
 {% endhint %}
 
-#### Usage:
+### Usage
+```php
+$clientToken
+```
 
-{% code title="" %}
+## Example
+
 ```javascript
 bot.command({
 name: "token",
 code: `
-bot's token: $clientToken
+Bot's token: $clientToken
 $onlyForIDs[742828990066327562;Only my developer can use this command]
 `})
 ```
-{% endcode %}
+
 
 
 

@@ -6,7 +6,17 @@ description: Returns channel type
 
 This function will show you the type of the specified channel.
 
-Raw Usage: `$channelType[channelID (optional)]`
+### Usage 
+```php
+$channelType[channelID?]
+```
+
+### Fields
+
+| Field | Description | Type | Required |
+| :--- | :--- | :--- | :--- |
+| channel ID | The id of the channel | number | no |
+
 
 #### Types:
 
@@ -14,10 +24,17 @@ Raw Usage: `$channelType[channelID (optional)]`
 * `voice` =&gt; voice channel
 * `category` =&gt; category
 * `news` =&gt; announcement channel
+* `stage` =&gt; stage channel
+* `dm` =&gt; dm channel
+* `groupdm` =&gt; group dm channel
+* `store` =&gt; store channel
+* `newsthread` =&gt; thread in announcement channel
+* `publicthread` =&gt; public thread channel
+* `privatethread` =&gt; private thread channel
 
-#### Example Commands:
+## Examples
 
-Get the channel type of the current channel:
+- Get the channel type of the current channel:
 
 ```javascript
 bot.command({
@@ -26,7 +43,7 @@ bot.command({
 });
 ```
 
-Get the channel type of the mentioned channel:
+- Get the channel type of the mentioned channel:
 
 ```javascript
 bot.command({

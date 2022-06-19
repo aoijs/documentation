@@ -6,19 +6,17 @@ description: 'Add color, to your sidebar embed description.'
 
 This function adds color to the embed
 
-#### Fields
+### Usage 
+```php
+$color[index;color]
+```
 
-This function has 2 fields
+### Fields
 
-1. Index \(Required\)
-2. Color \(Required\)
-
-Raw Usage: `$color[index;color]`
-
-#### Options
-
-* Index - index for multiple embeds (1 by default)
-* Color - The color your setting to the embed
+| Field | Description | Type | Required |
+| :--- | :--- | :--- | :--- |
+| index | The index of the embed | number | yes |
+| color | The color to be added to embed|color|yes|
 
 #### Color Types
 
@@ -26,9 +24,9 @@ Raw Usage: `$color[index;color]`
 * Names - Use the name of the color - Example: RED
 * RANDOM - Chooses a random color
 
-#### Usage
+## Example
 
-With Hex
+- With Hex
 
 ```javascript
 bot.command({
@@ -41,7 +39,7 @@ $color[1;#FF00FF]
 })
 ```
 
-With Names
+- With Names
 
 ```javascript
 bot.command({
@@ -54,7 +52,7 @@ $color[1;RED]
 })
 ```
 
-With RANDOM
+- With RANDOM
 
 ```javascript
 bot.command({

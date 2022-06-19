@@ -1,38 +1,38 @@
+---
+description: Creates variables that can be used later.
+---
 # $createVar
 
-This function creates variable\(s\) that can be used later
+This function creates variable\(s\) that can be used later.
 
-#### Fields
+### Usage 
+```php
+$createVar[table;varName:varValue...]
+```
+### Fields
 
-This function has 1 required field
+| Field | Description | Type | Required |
+| :--- | :--- | :--- | :--- |
+|table|The name of the table where the variable is to be allocated|alphanumeric|yes|
+| var\(s\) | The name of var with value | name:value | yes |
 
-1. Variable \(Required\)
-2. Variable 2 \(Optional\)
+## Example
 
-Raw Usage: `$createVar[varName:varValue;varName:varValue (optional);...]`
-
-#### Options
-
-* Var Name - The name of the variable
-* Var Value - The default value of the variable
-
-#### Usage
-
-Without optional fields
+- Without optional fields
 
 ```javascript
 bot.command({
 name: 'createVar',
-code: `$createVar[money:0]`
+code: `$createVar[main;money:0]`
 })
 ```
 
-With optional fields
+- With optional fields
 
 ```javascript
 bot.command({
 name: 'createVar',
-code: `$createVar[money:0;trusted:false]`
+code: `$createVar[main;money:0;trusted:false]`
 })
 ```
 

@@ -6,21 +6,19 @@ description: Checks if the given condition is true or false
 
 This function will check if given condition is true or false.
 
-#### Fields
+### Usage 
+```php
+$checkCondition[condition]
+```
 
-This function 2 fields
+### Fields
 
-1. Value 1 \(Required\)
-2. Value 2 \(Required\)
+| Field | Description | Type | Required |
+| :--- | :--- | :--- | :--- |
+| condition | Whether the provided condition is met | alphanumeric | yes |
 
-Raw Usage: `$checkCondition[value(!=/==/>=/<=/</>)value2]`
 
-#### Options
-
-* Value 1 - The value we're comparing to value 2
-* Value 2 - The value we're comparing to value 1
-
-#### Conditions
+#### Conditional Operators
 
 1. == - Equal
 2. != - Unequal
@@ -28,8 +26,10 @@ Raw Usage: `$checkCondition[value(!=/==/>=/<=/</>)value2]`
 4. &lt;= - Less than or equal to
 5. &lt; - Less than
 6. &gt; - Greater than
+7. || - Or 
+8. && - And
 
-#### Usage
+## Example
 
 ```javascript
 bot.command({

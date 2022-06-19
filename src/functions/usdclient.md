@@ -1,40 +1,64 @@
 ---
-description: A compact funcion with 17 different functionalities.
+description: A compact funcion with different functionalities.
 ---
 
 # $client
 
 With this command you can get information about the bot user itself.
 
-Raw usage: `$client[option]`
+### Usage 
+```php
+$client[option]
+```
 
-#### Usable Options:
+### Fields
 
-* `name` =&gt; returns bot's username
-* `id` =&gt; returns bot's user ID
-* `tag` =&gt; returns bot's usertag 
-* `mention` =&gt; returns bot's mention 
-* `discrim` =&gt; returns bot's discriminator
-* `avatar` =&gt; returns bot's profile avatar
-* `presence` =&gt; return's the bot's activity status \(e.g. online\)
-* `activity` =&gt; returns the bot's rich presence status
-* `lastmid` =&gt; returns ID of last message sent by the bot
-* `lastmcid` =&gt; returns ID of channel the bot's last message was sent
-* `ispublic` =&gt; returns true/false if bot is public or not \(from the [Developer Portal](https://discord.com/developers/applications/)\)
-* `mfaenabled` =&gt; return true if the bot's owner has 2FA enabled on their account
-* `readyat` =&gt; returns the time the bot came online
-* `readytimestamp` =&gt; returns the timestamp the bot came online
-* `token` =&gt; returns the bot's token. More information: see [$clientToken](usdclienttoken.md)
-* `ownerid` =&gt; returns the ID of the bot's owner or the ID of the owner of the application's team the bot belongs to
-* `teamid` =&gt; returns the ID of the team the bot's application belongs to or the ownerID if bot has no team
+| Field | Description | Type | Required |
+| :--- | :--- | :--- | :--- |
+| option | The option to be used | string | yes |
 
-#### Example Usage:
+#### Options
 
-```text
+- `prefix` - Returns the prefix of the bot.
+- `variables.name` - Returns the name of all variables present.
+- `variables.json` - Returns details about all variables present.
+- `variables.object.<name>` - Returns details about `<name>` variable.
+
+#### Client Related Options
+- `user.id` - Returns the id of the client.
+- `user.bot` - Returns boolean whether or not it's a bot.
+- `user.system` - Returns boolean whether or not it's a system.
+- `user.username` - Returns the client's username.
+- `user.discriminator` - Returns the discriminator of the client.
+- `user.flags` - Returns the flags of the bot. Example- VERIFIED_BOT for verified bots etc.
+- `user.avatar` - Returns the avatar of the client.
+- `user.verified` - Returns boolean whether or not it's verified.
+- `user.mfaEnabled` - Returns boolean whether or not MFA is enabled.
+- `user.avatarUrl` - Returns the bot's avatar url.
+
+#### Application Related Options
+- `application.name` - Returns the name of the application.
+- `application.id` - Returns the id of the application.
+- `application.description` - Returns the description of the application set in dev portal.
+- `application.tags`- Returns the tags of the application set in dev portal.
+- `application.customInstallUrl` - Returns the custom install url of the application.
+- `application.flags` - Returns the flags of the application.
+- `application.botRequireCodeGrant` - Returns boolean whether or not the bot requires code grant while inviting it.
+- `application.botPublic` - Returns boolean whether or not the bot is public.
+- `application.owner` - Returns the id of the owner of the application.
+- `application.iconURL` - Returns the icon URL of the application.
+- `application.createTimestamp` - Returns the timestamp when the application was created.
+
+
+
+
+## Example
+
+```javascript
 bot.command({
 name: "client",
 code: `
-My username is: $client[name]
+My username is: $client[user.username]
 `
 })
 ```

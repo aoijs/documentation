@@ -1,10 +1,23 @@
+---
+description: Returns lowest role a user has in the server.
+---
 # $lowestRole
 
-This function returns the lowest role a user has. This does NOT return @everyone
+This function returns the lowest role a user has. This does NOT return @everyone.
 
-```text
-$lowestRole[userID (optional)]
+### Usage
+```php
+$lowestRole[userID?;guildID?]
 ```
+
+### Fields
+
+| Field | Description | Type | Required |
+| :--- | :--- | :--- | :--- |
+| user ID | The id of the user whose lowest role is to be found | number | no |
+| guild ID | The id of the guild| number | no |
+
+## Example
 
 ```javascript
 bot.command({

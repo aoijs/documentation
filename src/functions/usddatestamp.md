@@ -4,9 +4,14 @@ description: Returns the current date stamp since 1970
 
 # $dateStamp
 
-This function will return the current date stamp
+This function will return the current date stamp.
 
-#### Usage
+### Usage
+```php
+$dateStamp
+```
+
+### Example
 
 ```javascript
 bot.command({

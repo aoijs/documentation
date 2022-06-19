@@ -4,13 +4,23 @@ description: Clones the current channel
 
 # $cloneChannel
 
-This function allows the bot to clone the name, topic and channel position of the current or given channel
+This function allows the bot to clone the name, topic and channel position of the current or given channel.
 
-Raw Usage: `$cloneChannel[channel ID (optional);return new channelID (optional)]`
+### Usage 
+```php
+$cloneChannel[channelID?;return_new_channelID?]
+```
 
-#### Usage:
+### Fields
 
-Without optional field:
+| Field | Description | Type | Required |
+| :--- | :--- | :--- | :--- |
+| channel ID | The id of the channel that is to be cloned | number | no |
+| return ID | Whether to return the id of the channel created|yes/no|no|
+
+## Example
+
+- Without optional field:
 
 ```javascript
 bot.command({
@@ -20,7 +30,7 @@ $cloneChannel`
 })
 ```
 
-With optional field
+- With optional field
 
 ```javascript
 bot.command({

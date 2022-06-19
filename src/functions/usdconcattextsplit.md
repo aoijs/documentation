@@ -2,23 +2,25 @@
 
 This function concatenates the text with the given separator
 
-#### Fields
+### Usage
+```php
+$concatTextSplit[...text]
+```
 
-This function has 2 fields
+### Fields
 
-1. Text \(Required\)
-2. Separator \(Required\)
+| Field | Description | Type | Required |
+| :--- | :--- | :--- | :--- |
+| text | The text to be separated | string | yes |
 
-#### Options
-
-* Text - The text we're concatenating
-* Separator - The separator separating each value
-
-#### Usage
+## Example
 
 ```javascript
 bot.command({
 name: "concat"
-code: `$concatTextSplit[hi,bye;,]`
+code: `$concatTextSplit[hi;bye]
+$textSplit[ok,no;,]`
+}) //[ "ok", "no" , "hi", "bye" ]
+
 ```
 

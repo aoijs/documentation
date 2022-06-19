@@ -4,11 +4,37 @@ description: Retrieve a JSON format (api)
 
 # $jsonRequest
 
-This function returns a property from a JSON formatted api
+This function returns a property from a JSON formatted api.
 
-```text
-$jsonRequest[api;property;error]
+### Usage
+
+```php
+$jsonRequest[api;property?;error?;headerName:headerValue?...]
 ```
+
+
+### Fields
+
+| Field | Description | Type | Required |
+| :--- | :--- | :--- | :--- |
+| api | The api from which the specified property is to be retrieved | link | yes |
+| property | The property that is to be retrieved from the api | alphanumeric | no |
+| error | The error to be displayed if the property wasn't found | alphanumeric | no |
+|header|The header that is to be retrieved from the api|headerName:headerValue|no|
+
+#### Types of Header
+
+- normal: 
+```text
+A:hi;B:Bye
+```
+- json: 
+```javascript
+{ "A" : "hi", "B" : "bye" }
+```
+
+
+## Example
 
 ```javascript
 bot.command({

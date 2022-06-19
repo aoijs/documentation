@@ -1,23 +1,20 @@
 ---
-description: 'Returns Highest Role Position ID, of the Author ID.'
+description: Returns the server's highest role.
 ---
+# $highestGuildRole
 
-# $highestRole
-
-This function returns the user's highest positioned role ID.
+This function returns the server's highest role.
 
 ### Usage
 ```php
-$highestRole[userID?;guildID?;option?]
+$highestGuildRole[guildID?;option?]
 ```
-
 
 ### Fields
 
 | Field | Description | Type | Required |
 | :--- | :--- | :--- | :--- |
-|user ID|The id of the user whose role is to be returned|number|no|
-| guild ID | The id of the guild | number | no |
+| guildID | The id of the guild | number | no |
 | option | The option on basis of which the role will be returned | string | no |
 
 #### Options
@@ -26,10 +23,12 @@ $highestRole[userID?;guildID?;option?]
 - `mention` - Returns the mention of the role.
 
 ## Example
+
 ```javascript
 bot.command({
 name: "role", 
-code: `$highestRole[$authorID;$guildID;mention]`
+code: `$serverName's Highest Role:
+$highestGuildRole`
 })
 ```
 

@@ -4,24 +4,32 @@ description: Set a cooldown for a command
 
 # $cooldown
 
-This function sets a cooldown to the current command
+This function sets a cooldown to the current command.
 
-#### Fields
+### Usage 
+```php
+$cooldown[time;error]
+```
 
-This function has 2 fields
+### Fields
 
-1. Time \(Required\)
-2. Error \(Required\)
+| Field | Description | Type | Required |
+| :--- | :--- | :--- | :--- |
+| time | The time of cooldown | alphanumeric | yes |
+| error | The error to be displayed when cooldown is active |string|yes|
 
-Raw Usage: `$cooldown[time;error]`
+#### Error Options
+- %time% - Returns time in human readable duration.
+- %hour% - Returns time in hour.
+- %min% - Returns time in minutes.
+- %sec% - Returns time in seconds.
+- %ms% - Returns time in milliseconds.
+- %day% - Returns time in days.
+- %week% - Returns time in weeks.
+- %month% - Returns time in months.
+- %year% - Returns time in years.
 
-#### Options
-
-* Time - The time of the cooldown
-* Error - The message when the cooldown is in affect
-* %time% - You can add this into the error message to show the remaining time left
-
-#### Usage
+## Example
 
 ```javascript
 bot.command({

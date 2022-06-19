@@ -2,29 +2,31 @@
 
 This function allows the bot to return any property a command has
 
-#### Fields
+### Usage 
+```php
+$commandInfo[command_name;property]
+```
 
-This function has 2 fields
+### Fields
 
-1. Command Name \(Required\)
-2. Property \(Required\)
-
-Raw Usage: `$commandInfo[command name;property]`
-
-#### Options
-
-* Command Name - The command we're pulling the information from
-* Property - The property we're pulling from the command
+| Field | Description | Type | Required |
+| :--- | :--- | :--- | :--- |
+| command name | The name of command | string | yes |
+| property | The property to be used|string|yes|
 
 #### Properties
 
-* Name - The name of the command
-* Code - The code of the command
-* Aliases - The aliases of the command
+* name - The name of the command
+* code - The code of the command
+* aliases - The aliases of the command
+* executeAt - Returns both if command can be used in `both` dm and guild, `guild` if in guild and `dm` if in dm.
+* whitelist - Returns boolean whether or not the command is whitelisted for blacklisted users.
+* nonPrefixed - Returns boolean whether or not if the author message starts with command name.
+* [custom property] - Value added in command. Example- usage,info etc.
 
-#### Usage
+## Examples
 
-Here's our example code we're basing off of
+- Here's our example code we're basing off of
 
 ```javascript
 bot.command({
@@ -38,7 +40,7 @@ $title[MasterBot]
 })
 ```
 
-With name
+- With name
 
 ```javascript
 bot.command({
@@ -47,7 +49,7 @@ code: `$commandInfo[help;name]` //Returns 'help'
 })
 ```
 
-With Code
+- With Code
 
 ```javascript
 bot.command({
@@ -61,7 +63,7 @@ $title[MasterBot]'
 })
 ```
 
-With aliases
+- With aliases
 
 ```javascript
 bot.command({
