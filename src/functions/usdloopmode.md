@@ -19,6 +19,7 @@ $loopMode[mode]
 #### Modes
 - `song` - To loop/unloop current song in the queue.
 - `queue` - To loop/unloop all songs in the queue.
+- `none` - To disable loop in the song/queue.
 
 ## Example
 
@@ -42,6 +43,18 @@ bot.command({
     code: `
     Looping all songs in the queue.
     $loopMode[queue]
+    `
+})
+```
+
+- With none mode
+
+```javascript
+bot.command({
+    name: "loop-dusable",
+    code: `
+    Disabling all loops in the queue.
+    $loopMode[none]
     `
 })
 ```
