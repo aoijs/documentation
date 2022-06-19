@@ -51,7 +51,7 @@ bot.command({
 
 ```javascript
 bot.command({
-    name: "loop-dusable",
+    name: "loop-disable",
     code: `
     Disabling all loops in the queue.
     $loopMode[none]
