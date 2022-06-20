@@ -299,6 +299,7 @@
   * [$messageAttachment](functions/usdmessageattachment.md)
   * [$messageExists](functions/usdmessageexists.md)
   * [$messageFlags](functions/usdmessageflags.md)
+  * [$messageID](functions/usdmessageid.md)
   * [$messagePing](functions/usdmessageping.md)
   * [$messagePublish](functions/usdmessagepublish.md)
   * [$messageSlice](functions/usdmessageslice.md)
