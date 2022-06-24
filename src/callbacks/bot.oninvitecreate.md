@@ -34,10 +34,9 @@ Channel ID: $inviteChannelID
 
 Heres all the functions you can use in this callback:
 
-* [$inviteURL ](../functions/usdinviteurl.md)
-* [$inviteCode ](../functions/usdinvitecode.md)
-* [$inviteGuildID ](../functions/usdinviteguildid.md)
-* [$inviteChannelID ](../functions/usdinvitechannelid.md)
-* [$inviteUserID ](../functions/usdinviteuserid.md)
-* [$inviteMaxUses](../functions/usdinvitemaxuses.md)
-
+* [$inviteURL](broken-reference)
+* [$inviteCode](broken-reference)
+* [$inviteGuildID](broken-reference)
+* [$inviteChannelID](broken-reference)
+* [$inviteUserID](broken-reference)
+* [$inviteMaxUses](broken-reference)

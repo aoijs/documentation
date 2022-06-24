@@ -6,25 +6,25 @@ This function fetches and loops over every invite executing awaited commands
 
 This function has 1 required field
 
-1. Awaited Command \(Required\)
-2. Awaited Command 2 \(Optional\)
+1. Awaited Command (Required)
+2. Awaited Command 2 (Optional)
 3. Etc
 
 Raw Usage: `$fetchInvites[awaitedCommand1;awaitedCommand2;...]`
 
 #### Options
 
-* Awaited Command\(s\) - The awaited command\(s\) we're executing
+* Awaited Command(s) - The awaited command(s) we're executing
 
 #### Usable Functions
 
-* [$inviteUses ](usdinviteuses.md)
-* [$inviteURL ](usdinviteurl.md)
-* [$inviteCode ](usdinvitecode.md)
-* [$inviteGuildID ](usdinviteguildid.md)
-* [$inviteChannelID ](usdinvitechannelid.md)
-* [$inviteUserID ](usdinviteuserid.md)
-* [$inviteMaxUses](usdinvitemaxuses.md)
+* [$inviteUses](broken-reference)
+* [$inviteURL](broken-reference)
+* [$inviteCode](broken-reference)
+* [$inviteGuildID](broken-reference)
+* [$inviteChannelID](broken-reference)
+* [$inviteUserID](broken-reference)
+* [$inviteMaxUses](broken-reference)
 
 #### Usage
 
@@ -39,4 +39,3 @@ bot.awaitedCommand({
     code: `Invite Usages: $inviteUses`
 })
 ```
-

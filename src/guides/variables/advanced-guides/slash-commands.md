@@ -4,7 +4,7 @@
 
 Slash Commands are the new, exciting way to build and interact with apps on Discord. With Slash Commands, all you have to do is type `/` and you're ready to use your favorite bot. Users can learn everything your bot does and easily find new features as you add them. Validation, error states, and helpful UI walks them through your commands, meaning they can get it right the first time, especially on mobile. You now have one more ally in the fight against your phone's autocorrect. Slash Commands set your users up for success instead of confusion and frustration. They separate how users think and how your code works, meaning no matter how complex your codebase and commands may get, people who love your bot will find it approachable and easy to use.
 
-![Here is an example of what they'd look like](<../../../.gitbook/assets/image (50).png>)
+![Here is an example of what they'd look like](<../../../../.gitbook/assets/image (50).png>)
 
 ## Getting Started
 
@@ -14,7 +14,7 @@ When getting started with slash commands, it's important to know what you should
 
 Your bot invitation link must have this checked.
 
-![](<../../../.gitbook/assets/image (4).png>)
+![](<../../../../.gitbook/assets/image (4).png>)
 
 {% hint style="warning" %}
 **Re-invite** your bot or else it will not work
@@ -32,7 +32,7 @@ Slash command names can not contain special symbols and must be shorter than 32 
 
 Slash Command Information break down
 
-![BLUE: NAME/TRIGGER | RED/ORANGE: DESCRIPTION](<../../../.gitbook/assets/image (73).png>)
+![BLUE: NAME/TRIGGER | RED/ORANGE: DESCRIPTION](<../../../../.gitbook/assets/image (73).png>)
 
 ## The Functions
 
@@ -79,10 +79,9 @@ code: `$createApplicationCommand[$guildID;aoijs;a cool slash command for aoijs;t
     Code Breakdown:
     Same thing as above but adds a required field. Example in imagine below
 */
-
 ```
 
-![Example](<../../../.gitbook/assets/image (34) (2).png>)
+![Example](<../../../../.gitbook/assets/image (34) (2).png>)
 
 ### $getApplicationCommandID
 
@@ -102,9 +101,10 @@ code: `$getApplicationCommandID[aoijs;$guildId]`
     Code Breakdown:
 This will get the ID of the slashcommand we created
 */
-
 ```
- **NOTE**
+
+**NOTE**
+
 > if $getApplicationCommandID doesnt return ID and SLash Command Exists, Then eval `$fetch[command]` for global commands and `$fetch[guildCommand;guildid]` for guild commands to fetch all commands and then try again
 
 ### $getApplicationCommandOptions
@@ -238,8 +238,11 @@ bot.interactionCommand({
  })
  bot.onInteractionCreate()
 ```
+
 ## Creating Advanced Slash Commands
+
 ### Making the slash
+
 ```javascript
 bot.command({
 name: "slash",
@@ -248,9 +251,10 @@ $createApplicationCommand[$guildID;send-dm;make the bot send a dm to a user;true
 `
 })
 ```
-### Callback
-```javascript
 
+### Callback
+
+```javascript
 bot.interactionCommand({
  name: "send-dm", 
  prototype : 'slash',
@@ -260,10 +264,10 @@ bot.interactionCommand({
  `
  })
   bot.onInteractionCreate()
+```
 
- ```
- `$interactionData[options.data[0].value]`=> Option 1
- 
- `$interactionData[options.data[1].value]`=> Option 2
- 
- And so on...
+`$interactionData[options.data[0].value]`=> Option 1
+
+`$interactionData[options.data[1].value]`=> Option 2
+
+And so on...

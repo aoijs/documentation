@@ -1,12 +1,13 @@
 ---
-coverY: 0
+cover: .gitbook/assets/cdd2be42-4bfb-40ea-aa19-b046eff15378.jpeg
+coverY: -4.149292149292149
 ---
 
-# Introduction
+# Welcome
 
 ### aoi.js
 
-**Welcome  to the page of aoi.js Documentation**
+**Welcome to the page of aoi.js Documentation**
 
 ### Introduction
 

@@ -10,7 +10,7 @@ This function returns your bots invite
 
 This function has multiple optional fields
 
-1. Permission\(s\) \(Optional\)
+1. Permission(s) (Optional)
 
 Raw Usage: `$getBotInvite[permission1 (optional);permission2 (optional);etc]`
 
@@ -18,7 +18,7 @@ Raw Usage: `$getBotInvite[permission1 (optional);permission2 (optional);etc]`
 
 * Permissions - The permissions that are given to the bot when joining a server
 
-Find all available permissions [here](../guide/begin/permissions.md)
+Find all available permissions [here](../other/permissions.md)
 
 #### Usage
 
@@ -39,4 +39,3 @@ name: "invite",
 code: `Invite: $getBotInvite[manageserver;manageroles]`
 })
 ```
-

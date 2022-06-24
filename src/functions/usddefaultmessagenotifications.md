@@ -35,4 +35,4 @@ $defaultMessageNotifications[773352845738115102]
 })
 ```
 
-![Example from the Official Aoi.JS Server =\&gt; $defaultMessageNotifications would return "Mentions" on this guild](<../../.gitbook/assets/image (29) (1) (1) (1) (2) (3) (2).png>)
+![Example from the Official Aoi.JS Server =\&gt; $defaultMessageNotifications would return "Mentions" on this guild](<../../.gitbook/assets/image (29) (1) (1) (1) (2) (3) (2) (3).png>)

@@ -1,37 +1,37 @@
 # Table of contents
 
-* [Introduction](home.md)
-* [Setup](guide/begin/README.md)
-* [Aliases](guide/begin/aliases.md)
-* [Character Escaping](guide/begin/character-escaping.md)
-* [Client Status](guide/begin/client-status.md)
-* [Command Handler Extras](guide/begin/command-handler-extras.md)
-* [Command Handler](guide/begin/command-handler.md)
-* [Embed Errors](guide/begin/embed-errors.md)
-* [Gateway Intents](guide/begin/gateway-intents.md)
-* [Hyperlink](guide/begin/hyperlink.md)
-* [Permissions](guide/begin/permissions.md)
-* [Using Events](guide/begin/using-callbacks.md)
-* [Using Variables](guide/begin/variables/README.md)
-    * [Channel Variables](guide/begin/variables/channel-variables.md)
-    * [Global Variables](guide/begin/variables/global-variables.md)
-    * [Message Variables](guide/begin/variables/message-variables.md)
-    * [Server Variables](guide/begin/variables/server-variables.md)
-    * [Local User Variables](guide/begin/variables/user-variables.md)
-* [Advanced Guides](guide/advanced-guides/README.md)
-  * [Invite System](guide/advanced-guides/invite-system.md)
-  * [Lavalink System](guide/advanced-guides/lavalink.md)
-  * [Music](guide/advanced-guides/music.md)
-  * [Slash Commands](guide/advanced-guides/slash-commands.md)
-* [Extras](guide/extras/README.md)
-  * [Custom Events](guide/extras/custom-events.md)
- * [Custom Functions](guide/extras/customFunctions.md)
-  * [Voice](guide/extras/music.md)
-  * [dbd.express](guide/extras/dashboard.md)
-  * [Sharding](guide/extras/sharding.md)
- 
-## Functions
- 
+* [Welcome](home.md)
+
+## Guides
+
+* [Setup](guides/begin.md)
+* [Client Status](guides/client-status.md)
+* [Command Handler](guides/command-handler/README.md)
+  * [Aliases](guides/command-handler/aliases.md)
+  * [Command Handler Extras](guides/command-handler/command-handler-extras.md)
+* [Using Variables](guides/variables/README.md)
+  * [Channel Variables](guides/variables/channel-variables.md)
+  * [Global Variables](guides/variables/global-variables.md)
+  * [Message Variables](guides/variables/message-variables.md)
+  * [Server Variables](guides/variables/server-variables.md)
+  * [Local User Variables](guides/variables/user-variables.md)
+  * [Advanced Guides](guides/variables/advanced-guides/README.md)
+    * [Invite System](guides/variables/advanced-guides/invite-system.md)
+    * [Lavalink System](guides/variables/advanced-guides/lavalink.md)
+    * [Music](guides/variables/advanced-guides/music.md)
+    * [Slash Commands](guides/variables/advanced-guides/slash-commands.md)
+* [Using Events](guides/using-callbacks.md)
+
+## Advanced Guides
+
+* [Custom Functions](advanced-guides/customfunctions.md)
+* [Custom Events](advanced-guides/custom-events.md)
+* [@akarui/aoi.music](advanced-guides/music.md)
+* [dbd.express](advanced-guides/dashboard.md)
+
+***
+
+* [Functions](functions/README.md)
   * [$abbreviate](functions/usdabbreviate.md)
   * [$activity](functions/usdactivity.md)
   * [$addButton](functions/usdaddbutton.md)
@@ -47,7 +47,7 @@
   * [$addThreadMember](functions/usdaddthreadmember.md)
   * [$addTimestamp](functions/usdaddtimestamp.md)
   * [$advancedTextSplit](functions/usdadvancedtextsplit.md)
-  * [$advanceCooldown](functions/usdadvancedcooldown.md)
+  * [$advanceCooldown](functions/usdadvancecooldown.md)
   * [$allChannelsCount](functions/usdallchannelscount.md)
   * [$allEmojiCount](functions/usdallemojicount.md)
   * [$allMembersCount](functions/usdallmemberscount.md)
@@ -122,7 +122,7 @@
   * [$createRole](functions/usdcreaterole.md)
   * [$createStageInstance](functions/usdcreatestageinstance.md)
   * [$createSticker](functions/usdcreatesticker.md)
-  * [$createThread](functions/usdcreateThread.md)
+  * [$createThread](functions/usdcreatethread.md)
   * [$createVar](functions/usdcreatevar.md)
   * [$createWebhook](functions/usdcreatewebhook.md)
   * [$creationDate](functions/usdcreationdate.md)
@@ -557,3 +557,12 @@
   * [messageOptions](options/messageOptions.md)
   * [respondOnEditOptions](options/respondOnEditOptions.md)
   * [voiceOptions](options/voiceOptions.md)
+
+## Other
+
+* [Hyperlink](other/hyperlink.md)
+* [Sharding](other/sharding.md)
+* [Character Escaping](other/character-escaping.md)
+* [Embed Errors](other/embed-errors.md)
+* [Permissions](other/permissions.md)
+* [Gateway Intents](other/gateway-intents.md)

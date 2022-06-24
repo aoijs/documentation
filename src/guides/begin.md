@@ -1,8 +1,8 @@
 ---
-description: This page will help begin your New Bot!
+description: This page will help begin your new aoi.js Bot!
 ---
 
-# Begin
+# Setup
 
 ### Installation
 
@@ -22,7 +22,7 @@ Once this has installed you can begin the following file `index.js` to setup aoi
 
 {% tabs %}
 {% tab title="index.js" %}
-```js
+```javascript
 const aoijs = require("aoi.js")
 
 const bot = new aoijs.Bot({
@@ -63,16 +63,16 @@ The file where your project can "get" aoi.js
       "start": "node index.js"
     },
     "engines": {
-      "node": "16.6"
+      "node": "16.x"
     },
     "author": "",
     "license": "ISC",
     "dependencies": {
-      "aoi.js": "^5.1.2"
+      "aoi.js": "^5.2.0"
     }
   }
 ```
 
 {% hint style="info" %}
-`5.1.2` can be changed to any version number as you want.
+`5.2.0` can be changed to any version number as you want.
 {% endhint %}

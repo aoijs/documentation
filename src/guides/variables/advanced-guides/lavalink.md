@@ -1,16 +1,21 @@
 ---
 description: Play Music and Songs using Lavalink Service
 ---
-# Lavalink
+
+# Lavalink System
+
 Play Music from your favorite Media Platforms such as Youtube, Soundcloud, and others to Discord with Aoi.js code
 
-Function and usage information can be viewed in [$lavalinkExecute](../../functions/usdlavalinkexecute.md)
+Function and usage information can be viewed in [$lavalinkExecute](../../../functions/usdlavalinkexecute.md)
 
 ## Getting Started
+
 First you need to link your bot to the Lavalink host. We address these connections as `node`'s.
 
 You can connect to multiple nodes of Lavalink, it is recommended to add 2 incase one of them was disconnected.
-- [Node Options](https://xzfirzal.github.io/lavacoffee/interfaces/Utils.NodeOptions.html)
+
+* [Node Options](https://xzfirzal.github.io/lavacoffee/interfaces/Utils.NodeOptions.html)
+
 ```javascript
 // Initialize your bot here
 const Aoijs = require("aoi.js");
@@ -25,8 +30,11 @@ Lavalink.addNode({
  secure: false
  })
 ```
+
 ## Examples
-##### Play
+
+**Play**
+
 ```javascript
 bot.command({
  name: "play",
@@ -40,7 +48,9 @@ bot.command({
  `
 });
 ```
-##### Now Playing
+
+**Now Playing**
+
 ```javascript
 bot.command({
   name: "nowplaying",
@@ -58,7 +68,9 @@ Track duration is $lavalinkExecute[songinfo;duration]]
   `
 });
 ```
-##### Getting Queue
+
+**Getting Queue**
+
 ```javascript
 bot.command({
     name: "queue",
@@ -71,7 +83,9 @@ $lavalinkExecute[queue]]
     `
 });
 ```
-##### Setting Filters
+
+**Setting Filters**
+
 ```javascript
 // Filters guide here https://github.com/freyacodes/Lavalink/blob/master/IMPLEMENTATION.md#using-filters
 bot.command({
@@ -82,11 +96,15 @@ bot.command({
  $lavalinkExecute[addFilters;tremolo={"frequency": 2.0, "depth": 0.5};volume=1]`
 });
 ```
+
 ## Events
+
 There are 2 events for Lavalink, `trackStart` and `trackEnd`.
 
 You can assign your commands to the Lavalink class from above
-##### Example
+
+**Example**
+
 ```javascript
 const Lavalink = new Aoijs.Lavalink(bot)
 // ^ From example above

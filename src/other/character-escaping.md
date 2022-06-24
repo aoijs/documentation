@@ -32,14 +32,14 @@ description: >-
 
 Backspace => `\b`\
 Form Feed => `\f`\
-New Line => \
-Carriage Return => \
-Horizontal Tabulator => \
+New Line =>\
+Carriage Return =>\
+Horizontal Tabulator =>\
 Vertical Tabulator => `\v`\
 Single quote => `\'`\
 Double quote => `\"`\
 Backslash => `\`
 
 {% hint style="info" %}
-These character escapes are useful for using special characters inside functions, e.g. in the text field of [$sendMessage](../../functions/usdsendmessage.md).
+These character escapes are useful for using special characters inside functions, e.g. in the text field of [$sendMessage](../functions/usdsendmessage.md).
 {% endhint %}
