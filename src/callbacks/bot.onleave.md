@@ -17,7 +17,7 @@ bot.leaveCommand({ //command
 ```
 
 {% hint style="danger" %}
-Make sure the &lt;channel&gt; is in the server. So recommended to use server variables \(if your bot isn't for 1 server\)
+Make sure the \<channel> is in the server. So recommended to use server variables (if your bot isn't for 1 server)
 {% endhint %}
 
 ```javascript
@@ -33,10 +33,9 @@ bot.leaveCommand({
 ```
 
 {% hint style="warning" %}
-`GUILD_MEMBERS` intent needed! Information in the [Gateway Intents](../guide/begin/gateway-intents.md) guide.
+`GUILD_MEMBERS` intent needed! Information in the [Gateway Intents](../other/gateway-intents.md) guide.
 {% endhint %}
 
 {% hint style="info" %}
 You can use all guild and member based functions like [$serverName](../functions/usdservername.md) or [$guildID](../functions/usdguildid.md) or [$username](../functions/usdusername.md) or [$authorID](../functions/usdauthorid.md) in these commands.
 {% endhint %}
-

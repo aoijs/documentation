@@ -33,9 +33,9 @@ $username has unreacted with $emojiToString
 
 #### Functions:
 
-* [$emojiToString](../functions/usdemojitostring.md) => the exactly emoji itself, either default emoji e.g. `🎉` or `<:emojiname:emojiID>` style.
-* [$emojiName ](../functions/usdemojiname.md)=> the name of the emoji the user reacted with
-* [$emojiID](../functions/usdemojiid.md) => the ID of the emoji the user react with (for custom Emojis)
+* [$emojiToString](broken-reference) => the exactly emoji itself, either default emoji e.g. `🎉` or `<:emojiname:emojiID>` style.
+* [$emojiName ](broken-reference)=> the name of the emoji the user reacted with
+* [$emojiID](broken-reference) => the ID of the emoji the user react with (for custom Emojis)
 * [$messageID](../functions/usdusermessageid.md) => to get the messageID the user reacted
 * $authorMessage => to get the authorID of the messagte the user reacted to
 * [$channelID ](../functions/usdchannelid.md)=> to get the channelID of the message

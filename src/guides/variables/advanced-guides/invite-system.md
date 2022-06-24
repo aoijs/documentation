@@ -19,7 +19,7 @@ fetchInvites: true
 
 Make sure you enable `SERVER MEMBERS` intents
 
-![](<../../../.gitbook/assets/image (44).png>)
+![](<../../../../.gitbook/assets/image (44).png>)
 
 ## Functions
 
