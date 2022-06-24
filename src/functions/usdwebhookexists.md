@@ -7,9 +7,9 @@ description: Checks if a webhook exists.
 This function checks if the given credentials lead to an existing webhook.
 
 > How to find webhook's id & token?
-> * url[^1]
-> * id[^2]
-> * token[^3]
+> * url — `https://discord.com/api/webhooks/9bNapddEOy832Oba8SWAS_9k2lpf5l9mHzEhj4a6ylREvSugbgkkiEfwg91Xmi8zb_`
+> * id — `793312378162642975`
+> * token — `9bNapddEOy832Oba8SWAS_9k2lpf5l9mHzEhj4a6ylREvSugbgkkiEfwg91Xmi8zb_`
 
 ### Usage
 
@@ -43,7 +43,3 @@ bot.command({
 //This returns false
 });
 ```
-
-[^1]: https://discord.com/api/webhooks/9bNapddEOy832Oba8SWAS_9k2lpf5l9mHzEhj4a6ylREvSugbgkkiEfwg91Xmi8zb_
-[^2]: 793312378162642975
-[^3]: 9bNapddEOy832Oba8SWAS_9k2lpf5l9mHzEhj4a6ylREvSugbgkkiEfwg91Xmi8zb_

@@ -4,7 +4,7 @@ description: Gets specified user ID's username and discriminator.
 
 # $userTag
 
-This function returns the users username[^1] and tag[^2].
+This function returns the users username and tag.
 
 ### Usage
 
@@ -43,6 +43,3 @@ bot.command({
 // Would return Leref#0001
 });
 ```
-
-[^1]: Neodevil
-[^2]: #0001
