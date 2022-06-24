@@ -1,7 +1,6 @@
 ---
 cover: .gitbook/assets/cdd2be42-4bfb-40ea-aa19-b046eff15378.jpeg
 coverY: -4.149292149292149
-layout: landing
 ---
 
 # Welcome
