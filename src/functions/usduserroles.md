@@ -4,7 +4,10 @@ description: Returns all of the user's roles.
 
 # $userRoles
 
-This function returns the roles that the user has in the server.[^1]
+This function returns the roles that the user has in the server.
+
+> Don't forget members also have @everyone role. Be aware of that and use it on your testing channel to **do not** ping everyone.
+
 
 ### Usage
 
@@ -38,5 +41,3 @@ bot.command({
 //Will return, 'professional, staff, logger'
 })
 ```
-
-[^1]: Don't forget members also have @everyone role. Be aware of that and use it on your testing channel to **do not** ping everyone.

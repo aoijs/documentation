@@ -4,7 +4,9 @@ description: Returns a list of users that are banned from current guild.
 
 # $usersBanned
 
-This function returns the list of banned users from the current server with optional seperator sorted by userID/mention or usernames. Default return are usernames of the banned users[^1].
+This function returns the list of banned users from the current server with optional seperator sorted by userID/mention or usernames. Default return are usernames of the banned users.
+
+> If your server has many bans, use functions like [$cropText](usdcroptext.md) to stop after 2,000 chars or [$createFile](usdcreatefile.md) to send the full list in a text file.
 
 ### Usage
 
@@ -38,7 +40,3 @@ bot.command({
 // Returns all banned users sorted by their username separated by a comma.
 });
 ```
-
-[^1]: If your server has many bans, use functions like [$cropText](usdcroptext.md) to stop after 2,000 chars or [$createFile](usdcreatefile.md) to send the full list in a text file.
-
-

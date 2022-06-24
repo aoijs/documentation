@@ -21,7 +21,7 @@ $volume[volume of audio?]
 
 ###### Footnote
 
-> _volume function itself returns the volume_[^1]
+> _volume function itself returns the volume!_
 
 ## Example
 
@@ -34,5 +34,3 @@ bot.command({
 });
  // Sets the volume to 50%
 ```
-
-[^1]: $volume

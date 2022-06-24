@@ -6,6 +6,8 @@ description: Stops the code execution for given time.
 
 This function delays the bots response. This can work for the whole code or certain parts of the code. As we know, it code will be read from bottom to top.
 
+> You can go up to 20-24 days, but bot should be still running.
+
 ### Usage
 
 ```php
@@ -63,5 +65,3 @@ bot.command({
 });
 //'Hi' will respond instantly, but 'Bye' will be delayed for 5 seconds before sending
 ```
-
-[^1]: You can go up to 20-24 days, but bot should be still running.
