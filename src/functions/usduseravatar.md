@@ -26,9 +26,9 @@ $userAvatar[userID;size?;dynamic?;format?]
 
 ```javascript
 bot.command({
-	name: "user-avatar",
-	code: `
-	$userAvatar[285118390031351809;1024;no;jpg]
-	`
+  name: "user-avatar",
+  code: `
+  $userAvatar[285118390031351809;1024;no;jpg]
+  `
 });
 ```

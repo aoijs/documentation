@@ -23,10 +23,12 @@ Usage
 
 ```javascript
 bot.command({
-	name: "user-exists",
-	code: `
-	Does 285118390031351809 exist? $userExists[285118390031351809]
-	`
+  name: "user-exists",
+  code: `
+  Does 285118390031351809 exist?
+
+  $userExists[285118390031351809]
+  `
 // Returns true
 });
 ```
