@@ -6,6 +6,8 @@ description: Checks if the given user ID exists.
 
 This function checks if the given user ID exists in discord.
 
+### Usage
+
 ```php
 $userExists[userID]
 ```
@@ -14,7 +16,10 @@ $userExists[userID]
 
 | Field | Description | Type | Required |
 | :--- | :--- | :--- | :--- |
-| user ID | The user's ID | number | yes |
+| userID | The user's ID | number | yes |
+Usage
+
+## Example
 
 ```javascript
 bot.command({
