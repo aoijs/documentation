@@ -18,6 +18,8 @@ $useChannel[channelID]
 | :--- | :--- | :--- | :--- |
 | channelID | The ID of the channel | number | yes |
 
+## Example
+
 ```javascript
 bot.command({
   name: "use-channel",

@@ -5,34 +5,43 @@ description: Decodes or Encodes an URL.
 # $uri
 
 This function decodes or encodes an URL.
+> *For full list of encode characters, tap to [here](https://www.w3schools.com/tags/ref_urlencode.ASP).*
 
-Raw usage: `$uri[encode/decode;text]`
+### Usage 
 
-## Example usage to encode:
+```php
+$uri[encode/decode;text]
+```
 
-The following example returns `Hello%20ElTuna%230001!%20(this%20is%20a%20test)`
+### Fields
+
+| Field | Description | Type | Required |
+| :--- | :--- | :--- | :--- |
+| encode/decode | The type we will convert to | string | yes |
+| text | The text will be converting to | string | yes |
+
+## Examples
+
+* Encoding:
 
 ```javascript
 bot.command({
-name: "encode",
-code: `
-$uri[encode;Hello ElTuna#0001! (this is a test)]
-`})
+  name: "encode",
+  code: `
+  $uri[encode;Hello Neodevil#0001 !]
+  `
+// Returns Hello%20Neodevil%230001%20!
+})
 ```
 
-## Example usage to decode:
-
-The following example returns `Hello ElTuna#0001! (this is a test)`
+* Decoding
 
 ```javascript
 bot.command({
-name: "decode",
-code: `
-$uri[decode;Hello%20ElTuna%230001!%20(this%20is%20a%20test)]
-`})
+  name: "decode",
+  code: `
+  $uri[decode;Hello%20Neodevil%230001%20!]
+  `
+// Returns Hello Neodevil#0001 !
+});
 ```
-
-{% hint style="info" %}
-You find a full list of encode characters [here](https://www.w3schools.com/tags/ref_urlencode.ASP).
-{% endhint %}
-
