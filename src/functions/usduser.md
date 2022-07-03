@@ -29,8 +29,10 @@ $user[userID;option?]
 * `banner` — Returns hash of banner
 * `bannerURL` — Returns user's banner URL
 * `createdAt` — Returns account's created time
-* `createdTimestamp` - Returns account's created timestamp
+* `createdTimestamp` — Returns account's created timestamp
+* `discriminator` — Returns user's discriminator 
 * `flags` — Returns user's flags
+* `id` — Returns user's ID
 * `partial` — Returns the user data is available or not as boolean
 * `dmChannel` — Returns dm channel ID between bot and the user.
 
