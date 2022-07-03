@@ -71,7 +71,7 @@ bot.interactionCommand({
 
 We would like to build our documentary along with you to make it betters to everyone!
 
-Before contributing please read our [contribution guidelines.](https://github.com/aoijs/documentation/blob/v5.1.2/.github/docs/contributing.md).
+Before contributing please read our [contribution guidelines.](https://github.com/aoijs/documentation/blob/v5/.github/docs/contributing.md).
 
 ## Links
 - [Website](https://aoi.js.org)
