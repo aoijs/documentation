@@ -23,6 +23,7 @@ $user[userID;option?]
 
 #### Options
 
+> * `username` — Default option, returns username
 * `accentColor` — Returns custom accent color
 * `avatarURL` — Returns user's avatar URL
 * `banner` — Returns hash of banner
