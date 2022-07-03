@@ -2,14 +2,14 @@
 description: Unpins a message.
 ---
 
-# $unpinMessageinMessage
+# $unPinMessage
 
 This function allows the bot to unpin the given message ID, if it's **pinned**.
 
 ### Usage
 
 ```php
-$unpinMessage[messageID?;channelID?]
+$unPinMessage[messageID?;channelID?]
 ```
 
 ### Fields
@@ -23,9 +23,9 @@ $unpinMessage[messageID?;channelID?]
 
 ```javascript
 bot.command({
-  name: "unpin-message",
+  name: "un-pin-message",
   code: `
-  $unpinMessage[790811472829743105;794203850839949372]
+  $unPinMessage[790811472829743105;794203850839949372]
   `
 // Unpins the given messageID in the given channelID. Giving channel ID, increases findability.
 });
