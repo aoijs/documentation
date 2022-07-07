@@ -1,51 +1,49 @@
+---
+description: Get specific user's information.
+---
+
 # $user
 
-This function returns the given user's specified property
+This function returns the given user's specified property.
 
-#### Usage
+### Usage
 
-This function has 2 fields
+```php
+$user[userID;option?]
+```
 
-1. User ID \(Required\)
-2. Property \(Required\)
+> If left blank, returns user's username.
 
-Raw Usage: `$user[userID;property]`
+### Fields
+
+| Field | Description | Type | Required |
+| :--- | :--- | :--- | :--- |
+| userID | The ID of the user | number | yes |
+| option | The property of we want to get | string | no |
 
 #### Options
 
-* User ID - The user the properties are based off of
-* Property - The property we're getting from &lt;user&gt;
+> * `username` — Default option, returns username
+* `accentColor` — Returns custom accent color
+* `avatarURL` — Returns user's avatar URL
+* `banner` — Returns hash of banner
+* `bannerURL` — Returns user's banner URL
+* `createdAt` — Returns account's created time
+* `createdTimestamp` — Returns account's created timestamp
+* `discriminator` — Returns user's discriminator 
+* `flags` — Returns user's flags
+* `id` — Returns user's ID
+* `partial` — Returns the user data is available or not as boolean
+* `dmChannel` — Returns dm channel ID between bot and the user.
 
-#### Available Properties
-
-* name - User's name
-* id - User's ID
-* tag - User's Tag
-* discrim - User's discriminator
-* mention - User's mention
-* avatar - User's avatar URL
-* isbot - Whether or not the user is a bot, Return's Boolean
-* istyping - Whether or not the user is typing, Return's Boolean
-* created - User's date and time of creation
-* timestamp - How long ago the user was created
-* lastmessageid - User's last message ID
-* lastmessagechannelid - User's last channel ID
+## Example
 
 ```javascript
 bot.command({
-name: "user",
-code: `
-$user[535566311942651924;name]
-`
-})
-
-//Or specified user
-
-bot.command({
-name: "user",
-code: `
-$user[$mentioned[1];name]
-`
-})
+  name: "user",
+  code: `
+  $user[285118390031351809;flags]
+  `
+// Returns HOUSE_BRILLIANCE
+});
 ```
-

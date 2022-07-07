@@ -1,19 +1,31 @@
 ---
-description: Returns an user ID with given user name
+description: Returns an user ID with given username.
 ---
 
 # $userID
 
-This function returns the user ID of the given username
+This function returns the user ID of the given username.
 
-```javascript
+### Usage
+
+```php
 $userID[username]
 ```
 
+### Field
+
+| Field | Description | Type | Required |
+| :--- | :--- | :--- | :--- |
+| username | The user's username | string | yes |
+
+## Example
+
 ```javascript
 bot.command({
-name: "user",
-code: `$userID[Kubaturi]` //Returns 535566311942651924
-})
+  name: "userid",
+  code: `
+  $userID[Neodevil]
+  ` 
+//Returns 285118390031351809
+});
 ```
-

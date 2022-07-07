@@ -1,22 +1,31 @@
 ---
-description: >-
-  Returns specified user ID's username, if no argument given, returns author's
-  username
+description: Returns username of the user.
 ---
 
 # $username
 
-This function returns the authors/give user id's username
+This function returns the authors or given ID's Discord username.
 
-```text
-$username[user ID (optional)]
+### Usage
+
+```php
+$username[userID?]
 ```
+
+### Fields
+
+| Field | Description | Type | Required |
+| :--- | :--- | :--- | :--- |
+| userID? | The ID of the specific user | number | no |
+
+## Example
 
 ```javascript
 bot.command({
-name: "username",
-code: `608358453580136499 username is $username[608358453580136499]!`
-//Returns Leref
-})
+  name: "username",
+  code: `
+  The \`285118390031351809\` is $username[285118390031351809].
+  `
+//Returns Neodevil
+});
 ```
-

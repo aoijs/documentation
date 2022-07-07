@@ -1,20 +1,33 @@
 ---
-description: Sends message to specified channel
+description: Sends message to specified channel.
 ---
 
 # $useChannel
 
-This function sends a message to the given channel
+This function sends a message to the given channel ID.
 
-```javascript
-$useChannel[channel ID]
+### Usage 
+
+```php
+$useChannel[channelID]
 ```
+
+### Field
+
+| Field | Description | Type | Required |
+| :--- | :--- | :--- | :--- |
+| channelID | The ID of the channel | number | yes |
+
+## Example
 
 ```javascript
 bot.command({
-name: "useChannel",
-code: `Hi!
-$useChannel[773363417338609674]` //Sends 'Hi!' in the given channel
-})
+  name: "use-channel",
+  code: `
+  Hi!
+  
+  $useChannel[773363417338609674]
+  ` 
+//Sends 'Hi!' in the given channel
+});
 ```
-
