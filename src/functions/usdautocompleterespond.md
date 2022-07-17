@@ -20,14 +20,7 @@ $autoCompleteRespond[options]
 | :--- | :--- | :--- | :--- |
 | options | The field where we input the options that will show up | string | yes |
 
-#### You can create it
-
-In two ways:[^2]
-
-* `JSON`
-* `Default`
-
-  [^2]: When you're creating a slash (with JSON type) command, you have to add `"autocomplete": true` on the **creating application command**!
+Let's create our slash command first.
 
 **Example:**
 ```javascript
@@ -44,6 +37,15 @@ $createApplicationCommand[global;autocomplete;This is an autocomplete command.;t
 
 <hr>
 
+#### You can create it
+
+In two ways:[^2]
+
+* `JSON`
+* `Default`
+
+  [^2]: When you're creating a slash (with JSON type) command, you have to add `"autocomplete": true` on the **creating application command**!
+  
 ### Responding with JSON
 
 ```javascript
