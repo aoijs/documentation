@@ -16,8 +16,8 @@ $addObjectProperty[key;value]
 
 | Field | Description | Required |
 | :--- | :--- | :--- |
-| key | The name of the property | no |
-| value | The value that's assigned to the key
+| key | The name of the property | yes |
+| value | The value that's assigned to the key | yes |
 
 ## Example
 
