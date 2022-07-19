@@ -6,8 +6,21 @@ description: Creates a reaction collector for given message ID
 
 This function creates a reaction collector for the given message ID
 
+### Fields
+
+| Field | Description | Type | Required |
+| :--- | :--- | :--- | :--- |
+| channelId | Specific channel for the reaction collector | number | yes |
+| messageId | The ID of the message to see and recolt all reaction | number | yes |
+| userFilters | Say if everyone or just someone id can interact with the reaction collector | $authorID/@everyone | yes |
+| time | The time during which the reaction collector listens to itself | text | yes |
+| reaction | Emoji need to listen | emoji | yes |
+| command | Action to do after reaction is used | text | yes |
+| removeReaction | Delete reaction after you finish hearing | yes/no | no |
+
+
 ```text
-$reactionCollector[messageID;userFilter($authorID/@everyone);time;reaction1,reaction2,...;command1,command2,...;removeReactions (yes/no)]
+$reactionCollector[channelId;messageId;userFilters;time;reactions;awaits;removeReaction?; awaitData?;endAwait?]
 ```
 
 ```javascript
@@ -21,7 +34,7 @@ Leref is cool]`})
 bot.command({
   name: "help",
   code: `
-$reactionCollector[$splitText[1];$authorID;1h;😋;awaitReaction1;yes]
+$reactionCollector[$channelID;$splitText[1];$authorID;1h;😋;awaitReaction1;yes]
 $textSplit[$sendMessage[Reaction with 😋 to get a cool message;yes]; ]`})```
 ```
 
