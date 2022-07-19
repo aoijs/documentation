@@ -4,7 +4,7 @@ description: Returns boolean of slash choice.
 
 # $isAutoComplete
 
-`$isAutoComplete` is used to check it is auto-complete or not.
+`$isAutoComplete` is used to checking the if interaction command's *interaction autocomplete* feature enabled or disabled.
 
 ### Usage
 
