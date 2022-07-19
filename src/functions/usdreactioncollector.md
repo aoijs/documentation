@@ -20,7 +20,7 @@ This function creates a reaction collector for the given message ID
 
 
 ```text
-$reactionCollector[channelId;messageId;userFilters($authorID/@everyone);time;reaction1,reaction2,...;command1,command2,...;removeReaction?]
+$reactionCollector[channelId;messageId;userFilters;time;reactions;awaits;removeReaction?; awaitData?;endAwait?]
 ```
 
 ```javascript
