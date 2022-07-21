@@ -1,25 +1,32 @@
 ---
-description: Returns when the User Joined the Guild.
+description: Returns when the user joined the guild.
 ---
 
 # $memberJoinedDate
 
-This function returns when the user joined the current guild
+This function returns when the user joined the current guild as ms.
 
-```text
-$memberJoinedDate[userID;time/date/ms]
+### Usage
+
+```php
+$memberJoinedDate[guildID;userID]
 ```
+
+### Fields
+
+| Field | Description | Type | Required |
+| :--- | :--- | :--- | :--- |
+| guildID | The ID of the guild | integer | yes |
+| userID | The ID of the user | integer | no |
+
+## Example
 
 ```javascript
 bot.command({
-name: "joinndate",
-code: `$memberJoinedDate[$authorID;time]`
-/*
-time - 2 years 1 month 3 weeks 3 days 6 hours 42 minutes and 6 seconds
-date - Thu Jan 17 2019 21:09:19 GMT+0000 (Greenwich Mean Time)
-*/
-})
+  name: "joinndate",
+  code: `
+  $memberJoinedDate[$guildID;$authorID]
+  `
+  // Returns author's joined date as ms.
+});
 ```
-
-
-
