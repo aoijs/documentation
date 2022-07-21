@@ -23,7 +23,7 @@ $ban[guildID;userID;days?;reason]
 
 ###### Footnote
 
-*Do not forget to use `$onlyBotPerms` and `$onlyPerms` to detect user has permission for this action, either bot!
+> *Do not forget to use `$onlyBotPerms` and `$onlyPerms` to detect user has permission for this action, either bot!*
 
 
 ## Examples

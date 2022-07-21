@@ -18,7 +18,7 @@ $addMessageReactions[channelID;messageID;emoji;emoji?;...]
 | :--- | :--- | :--- | :--- |
 | channelID | The channel of which message is situated in | number | yes |
 | messageID | The message of which the reaction(s) will get react | string | yes |
-| emoji | The emojis of which will be reactee to the given messageID
+| emoji | The emojis of which will be reactee to the given messageID | emoji | yes |
 
 ## Example
 
