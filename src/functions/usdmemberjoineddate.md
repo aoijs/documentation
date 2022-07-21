@@ -9,24 +9,27 @@ This function returns when the user joined the current guild as ms.
 ### Usage
 
 ```php
-$memberJoinedDate[guildID;userID]
+$memberJoinedDate[userID?;guildID?]
 ```
 
 ### Fields
 
 | Field | Description | Type | Required |
 | :--- | :--- | :--- | :--- |
-| guildID | The ID of the guild | integer | yes |
-| userID | The ID of the user | integer | no |
+| userID? | The ID of the guild | integer | no |
+| guildID? | The ID of the user | integer | no |
 
 ## Example
 
 ```javascript
 bot.command({
-  name: "joinndate",
+  name: "member-joined-date",
   code: `
-  $memberJoinedDate[$guildID;$authorID]
+  $memberJoinedDate[$authorID;$guildID]
   `
-  // Returns author's joined date as ms.
+/*
+  Returns author's joined date as ms. 
+  Also without parameters it would still return author's joined date for the guild.
+*/
 });
 ```
