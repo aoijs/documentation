@@ -57,6 +57,7 @@
   * [$argsCheck](functions/usdargscheck.md)
   * [$argsCount](functions/usdargscount.md)
   * [$argsSlice](functions/usdargsslice.md)
+  * [$arrayAt](functions/usdarrayat.md)
   * [$attachment](functions/usdattachment.md)
   * [$author](functions/usdauthor.md)
   * [$authorAccentColor](functions/usdauthoraccentcolor.md)
