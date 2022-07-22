@@ -31,7 +31,8 @@ $getCustomStatus[userID?;guildID?;type?]
 bot.command({
   name: "get-custom-status",
   code: `
-  $getCustomStatus[$authorID;$guildID;state]`
+  $getCustomStatus[$authorID;$guildID;state]
+  `
   // Returns "none", if it's empty, or did not fetch.
 });
 ```
