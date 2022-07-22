@@ -434,7 +434,7 @@
   * [$serverSplash](functions/usdserversplash.md)
   * [$serverVerificationLevel](functions/usdserververificationlevel.md)
   * [$setBotAvatar](functions/usdsetbotavatar.md)
-  * [$setBotName](functions/usdsetbotname.md)
+  * [$setBotUsername](functions/usdsetbotusername.md)
   * [$setChannelTopic](functions/usdsetchanneltopic.md)
   * [$setChannelVar](functions/usdsetchannelvar.md)
   * [$setGlobalUserVar](functions/usdsetglobaluservar.md)
