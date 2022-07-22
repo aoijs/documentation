@@ -1,33 +1,44 @@
 ---
-description: Modifies a channel's permissions to the given perms
+description: Modifies a channel's permissions to the given permissions.
 ---
 
 # $modifyChannelPerms
 
-This function edit's the specified channels perms
+This function edit's the specified channel's permission for given role ID or user ID.[^1]
 
-```text
-$modifyChannelPerms[channelID;perm1;perm2;perm3;roleID/userID/$guildID]
+  [^1]: For changing **@everyone** role's permission, you can use `$guildID` on roleID parameter.
+
+### Usage 
+
+```php
+$modifyChannelPerms[roleID/userID;channelID; perms...]
 ```
+
+### Properties
+
+| FIELD | TYPE | DESCRIPTION |
+| ----- | ----- | ----- | 
+| roleID/userID | integer | The ID of the role/user | 
+| channelID | integer | The ID of the channel |
+| perms... | string | The perms will be changed for the channel |
+
+#### Permission Operators
+
+We have three permission operators for Discord channels:
+
+* `+` — Allowed
+* `\` — Default (role based)
+* `-` — Disallowed
+
+## Example
 
 ```javascript
-/*
-TIP:
-+ = Allow perms
-- = Deny Perms
-/ = Defaults the perm
-*/
 bot.command({
-name: "modifyChannelPerms",
-code: `Modified the channel permissions!
-$modifyChannelPerms[773365032691040277;+sendmessages;-readmessages;/managemessages;$guildID]`
-})
-/*
-This:
-Allows send messages
-Denies read messages
-Defaults manage messages
-for the whole guild
-*/
+  name: "modify-channel-perms",
+  code: `
+  Oops! You just took off your permission to chat in this channel!
+  
+  $modifyChannelPerms[$authorID;$channelID;-sendmessages]
+  `
+});
 ```
-
