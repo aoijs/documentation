@@ -17,7 +17,7 @@ The callbacks are optional except the [bot.onMessage()](../callbacks/bot.onmessa
 #### Server based callbacks:
 
 * [bot.onLeave() ](../callbacks/bot.onleave.md)=> for logging members they leave servers
-* [bot.onJoined() ](../guide/begin/broken-reference/)=> for logging members they join servers
+* [bot.onJoin() ](../guide/begin/broken-reference/)=> for logging members they join servers
 * [bot.onBanAdd() ](../callbacks/bot.onbanadd.md)=> for logging members they get banned in servers
 * [bot.onBanRemove()](../callbacks/bot.onbanremove.md) => for logging members they get unbanned inservers
 * [bot.onInviteCreate() ](../callbacks/bot.oninvitecreate.md)=> for logging invites they get created (e.g. for [Invite-Tracking](variables/advanced-guides/invite-system.md))
