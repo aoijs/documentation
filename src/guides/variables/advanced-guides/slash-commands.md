@@ -151,13 +151,13 @@ the ID from using '$getApplicationCommandID'
 This function deletes the specified slash command
 
 ```
-$deleteSlashCommand[guildID/global;id]
+$deleteApplicationCommand[guildID/global;id]
 ```
 
 ```javascript
 bot.command({
 name: "delete",
-code: `$deleteSlashCommand[$guildID;$getApplicationCommandId[aoijs]]`
+code: `$deleteApplicationCommand[$guildID;$getApplicationCommandId[aoijs]]`
 /*
     Code Breakdown:
 This will delete our created slashcommand that we made.

@@ -11,13 +11,14 @@ This function returns the amount of channels the bot has access to globally. You
 ```php
 $allChannelsCount[type?]
 ```
-### Fields
+### Property 
 
-| Field | Description | Type | Required |
-| :--- | :--- | :--- | :--- |
-| type | The channel types of specific one to get | string | no |
+| FIELD | TYPE | DESCRIPTION |
+| :--- | :--- | :--- |
+| type? | string | The channel types of specific one to get | 
 
-#### Types
+#### Channel Types
+
 * `Category` — Shows Amount of Categories
 * `News` — Shows Amount of Announcement Type Channels
 * `PublicThread` — Shows Amount of Public Threads
@@ -43,4 +44,3 @@ bot.command({
   `
 });
 ```
-
