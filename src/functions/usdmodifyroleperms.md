@@ -1,52 +1,67 @@
+---
+description: Change role's permissions.
+---
+
 # $modifyRolePerms
 
-This function allows the bot to modify the given roles permissions
+This function allows the bot to modify the given role is permissions
 
-Fields
+### Usage
 
-This function has 2 required fields
-
-1. Role ID \(Required\)
-2. Permission 1 \(Required\)
-3. Permission 2 \(Optional\)
-4. Etc
-
-Raw Usage: `$modifyRolePerms[roleID;permission1;permission2 (optional);etc]`
-
-Options
-
-* Role ID - The role we're modifying the permissions
-* Permission\(s\) - The permissions that are being modified. 
-* +perm = Allow the permission
-* -perm = Deny the permission
-* +/-all - Allows or denies all the permissions
-
-Usage
-
-Allowing a permission
-
-```javascript
-bot.command({
-name: "modifyRolePerms",
-code: `$modifyRolePerms[$mentionedRoles[1];+admin]`
-})
+```php
+$modifyRolePerms[guildID;roleID;perms...]
 ```
 
-Denying a permission
+### Properties
+
+| FIELD | TYPE | DESCRIPTION |
+| ----- | ----- | ----- | 
+| guildID | integer | The ID of the server | 
+| roleID | integer | The ID of the role |
+| perms... | string | The permissions going to be changed on the role. |
+
+
+#### Permission Operators
+
+We have two permission operators for Discord Roles[^1]:
+
+* `+` — Allow
+* `-` — Disallow
+
+  [^1]: You can also use `+all` or `-all` on permission parameter to enable or disable **all the permissions**.
+
+## Examples 
+
+* Allowing a permission:
 
 ```javascript
 bot.command({
-name: "modifyRolePerms",
-code: `$modifyRolePerms[$mentionedRoles[1];-admin]`
-})
+  name: "modifyRolePerms",
+  code: `
+  $modifyRolePerms[36732971190973292;+admin]
+  `
+});
 ```
 
-Allowing all permissions
+* Denying a permission:
 
 ```javascript
 bot.command({
-name: "modifyRolePerms",
-code: `$modifyRolePerms[$mentionedRoles[1];+all]`
-})
+  name: "modifyRolePerms",
+  code: `
+  $modifyRolePerms[36732971190973292;-admin]
+  `
+});
+```
+
+* Allowing all permissions:
+
+```javascript
+bot.command({
+  name: "modifyRolePerms",
+  code: `
+  $modifyRolePerms[36732971190973292;+all]
+  `
+});
 ```
 
