@@ -60,6 +60,7 @@
   * [$arrayAt](functions/usdarrayat.md)
   * [$arrayConcat](functions/usdarrayconcat.md)
   * [$arrayEvery](functions/usdarrayevery.md)
+  * [$arrayFilter](functions/usdarrayfilter.md)
   * [$attachment](functions/usdattachment.md)
   * [$author](functions/usdauthor.md)
   * [$authorAccentColor](functions/usdauthoraccentcolor.md)
