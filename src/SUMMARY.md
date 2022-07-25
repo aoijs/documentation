@@ -59,6 +59,7 @@
   * [$argsSlice](functions/usdargsslice.md)
   * [$arrayAt](functions/usdarrayat.md)
   * [$arrayConcat](functions/usdarrayconcat.md)
+  * [$arrayEvery](functions/usdarrayevery.md)
   * [$attachment](functions/usdattachment.md)
   * [$author](functions/usdauthor.md)
   * [$authorAccentColor](functions/usdauthoraccentcolor.md)
