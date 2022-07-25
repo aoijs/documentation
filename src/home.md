@@ -64,4 +64,4 @@ bot.readyCommand({
 * [NPM](https://www.npmjs.com/package/aoi.js)
 * [Github](https://github.com/AkaruiDevelopment/aoi.js)
 * [Discord Server](https://discord.gg/HMUfMXDQsV)
-* [Documentation](https://akarui.leref.ga/v/aoi.js/)
+* [Documentation](https://aoi.js.org/docs/)

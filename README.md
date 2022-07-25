@@ -78,4 +78,4 @@ Before contributing please read our [Contribution Guidelines](https://github.com
 - [NPM](https://www.npmjs.com/package/aoi.js)
 - [Github](https://github.com/AkaruiDevelopment/aoi.js)
 - [Discord Server](https://discord.gg/HMUfMXDQsV)
-- [Documentation](https://akarui.leref.ga/v/5/)
+- [Documentation](https://aoi.js.org/docs/)
