@@ -391,7 +391,6 @@
   * [$resetGlobalUserVar](functions/usdresetgloaluservar.md)
   * [$resetServerVar](functions/usdresetservervar.md)
   * [$resetUserVar](functions/usdresetuservar.md)
-  * [$resetVar](functions/usdresetvar.md)
   * [$resolveColor](functions/usdresolvecolor.md)
   * [$resolveEmojiID](functions/usdresolveemojiid.md)
   * [$resumeSong](functions/usdresumesong.md)
