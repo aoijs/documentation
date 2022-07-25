@@ -1,15 +1,34 @@
+---
+description: Replies to given message ID.
+---
+
 # $reply
 
-This function allows you to use Discord's reply feature through your bot
+This function allows your bot reply to given message ID with mentioned, or not.
 
-```text
-$reply[messageID;message;mention (yes/no)]
+### Usage
+
+```php
+$reply[messageID?;mentionUser?]
 ```
+
+### Properties
+
+| FIELD | TYPE | DESCRIPTION |
+| ----- | ----- | ----- | 
+| messageID? | integer | The ID of the message | 
+| mentionUser? | string | The parameter for mentioning user or not |
+
+## Example
 
 ```javascript
 bot.command({
-name: "repy",
-code: `$reply[797817882339442698;I replied to this message :);yes]`
-})
+  name: "reply",
+  code: `
+  $reply[$messageID;yes]
+  
+  Hello 👋🏻
+  `
+  // Replies the message.
+});
 ```
-
