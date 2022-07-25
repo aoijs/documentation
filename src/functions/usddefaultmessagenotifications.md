@@ -2,7 +2,7 @@
 description: Return the guild default message notification level.
 ---
 
-# $defaultMessageNotifications
+# $defaultMessageNotification
 
 This function returns the level of a server'S default message notifications.
 
