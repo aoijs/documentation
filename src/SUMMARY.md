@@ -151,7 +151,7 @@
   * [$deleteVar](functions/usddeletevar.md)
   * [$description](functions/usddescription.md)
   * [$digitalFormat](functions/usddigitalformat.md)
-  * [$disableMentions](functions/usddisablementions.md)
+  * [$disableMentionType](functions/usddisablementiontype.md)
   * [$discriminator](functions/usddiscriminator.md)
   * [$divide](functions/usddivide.md)
   * [$djsEval](functions/usddjseval.md)
