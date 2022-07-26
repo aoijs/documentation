@@ -25,7 +25,8 @@ $arrayConcat[separator;arrayName...]
 bot.command({
   name: "array-concat", 
   code: `
-  $createArray[newArray;$arrayConcat[,;array1;array2]]
+  Concatted result:
+  $arrayConcat[,;array1;array2]]
   
   $createArray[array2;6;7;8;9;10]
   $createArray[array1;1;2;3;4;5]
