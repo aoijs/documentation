@@ -31,7 +31,7 @@ bot.command({
   code: `
   $arrayAt[fruits;3]
   
-  $createArray[fruits;apple;banana; strawberry;watermelon]
+  $createArray[fruits;apple;banana;strawberry;watermelon]
   `
   // Returns "strawberry"
 });
@@ -47,7 +47,7 @@ bot.command({
   code: `
   $arrayAt[fruits;-3]
   
-  $createArray[fruits;apple;banana; strawberry;watermelon]
+  $createArray[fruits;apple;banana;strawberry;watermelon]
   `
   // Returns "apple"
 });
@@ -63,7 +63,7 @@ bot.command({
   code: `
   $arrayAt[fruits;7]
   
-  $createArray[fruits;apple;banana; strawberry;watermelon]
+  $createArray[fruits;apple;banana;strawberry;watermelon]
   `
   // No output
 });
