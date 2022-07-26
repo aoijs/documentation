@@ -4,7 +4,7 @@ description: Filters the array elements.
 
 # $arrayFilter
 
-`$arrayFilter` function filters down to just the elements from the given array that pass the test.
+`$arrayFilter` function filters down to just the elements from the given array that pass the condition.
 
 ### Usage 
 
@@ -23,6 +23,9 @@ $arrayFilter[name;query;queryType?;separator?]
 
 #### Comparison Operators
 
+* `includes` — Including 
+* `startsWith` — Starts with
+* `endsWith` — Ends with
 * `==` — Equal to 
 * `!=` — Not equal to
 * `>` — Greater than
