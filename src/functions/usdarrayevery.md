@@ -4,7 +4,7 @@ description: Checks all elements if it passes the query.
 
 # $arrayEvery
 
-`$arrayEvery` function tests whether all elements in the array pass the test. It returns boolean value.
+`$arrayEvery` function tests whether all elements in the array pass the condition. It returns boolean value.
 
 ### Usage 
 
