@@ -25,6 +25,9 @@ $arrayFind[name;query;queryType?]
 
 #### Comparison Operators
 
+* `includes` — Including 
+* `startsWith` — Starts with
+* `endsWith` — Ends with
 * `==` — Equal to 
 * `!=` — Not equal to
 * `>` — Greater than
