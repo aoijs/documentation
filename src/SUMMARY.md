@@ -254,7 +254,7 @@
   * [$isBanned](functions/usdisbanned.md)
   * [$isBoosting](functions/usdisboosting.md)
   * [$isBot](functions/usdisbot.md)
-  * [$isDefeaned](functions/usdisdefeaned.md)
+  * [$isDeafen](functions/usdisdeafen.md)
   * [$isEmoji](functions/usdisemoji.md)
   * [$isEveryoneMentioned](functions/usdiseveryonementioned.md)
   * [$isHoisted](functions/usdishoisted.md)

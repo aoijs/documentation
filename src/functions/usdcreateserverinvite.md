@@ -19,7 +19,7 @@ $createServerInvite[guildid?;options?]
 | guildid? | integer | The ID of the server | 
 | options? | object | JSON parser based customization |
 
-#### Options
+#### Options (JSON)
 
 * `temporary` — whether this invite only grants temporary membership
 * `maxAge` — duration (in millisecond) after which the invite expires
@@ -51,11 +51,7 @@ bot.command({
 bot.command({
   name: "create-server-invite", 
   code: `
-  $createServerInvite[$guildID;{
-    "maxAge": 0,
-    "maxUses": 0,
-    "temporary": false
-  }]
+  $createServerInvite[$guildID;0:0:false]
   `
   /* 
     Creates a server invite for current server.
