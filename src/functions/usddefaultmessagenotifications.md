@@ -26,7 +26,7 @@ $defaultMessageNotification[guildID?]
 bot.command({
   name: "default-message-notification",
   code: `
-  Notifications type of the server $serverName[773352845738115102]: $defaultMessageNotifications[773352845738115102]
+  Notifications type of the server $serverName[773352845738115102]: $defaultMessageNotification[773352845738115102]
   `
 });
 ```
