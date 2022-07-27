@@ -9,20 +9,20 @@ This function has 2 fields
 1. Channel ID \(Required\)
 2. Message ID \(Required\)
 
-Raw Usage: `$deleteMessage[channelID;messageID]`
+Raw Usage: `$deleteMessage[messageID;channelID]`
 
 #### Options
 
-* Channel ID - The channel we're the message is
 * Message ID - The message we're deleting
+* Channel ID - The channel we're the message is
 
 #### Usage
 
 ```javascript
 bot.command({
-name: "deleteMessage",
+name: "delete-me",
 code: `Deleted the message!
-$deleteMessage[$channelID;800862561414414396]
+$deleteMessage[$message;$channelID]
 `
 })
 ```
