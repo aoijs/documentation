@@ -30,22 +30,26 @@ $createServerInvite[guildid?;options?]
 
 ## Creating Server Invite Examples
 
-* Without Optionals
+* With JSON Parser
 
 ```javascript
 bot.command({
   name: "create-server-invite", 
   code: `
-  $createServerInvite
+  $createServerInvite[$guildID;{
+    "maxAge": 0,
+    "maxUses": 0,
+    "temporary": false
+  }]
   `
   /* 
     Creates a server invite for current server.
-    And returns it.
+    You can set the invite duration as ms, for that we can use $parseTime[10m] for example.
   */
 });
 ```
 
-* With Optional Properties 
+* With Normal Parser
 
 ```javascript
 bot.command({
@@ -56,7 +60,6 @@ bot.command({
   /* 
     Creates a server invite for current server.
     
-    You can set the invite duration as ms, for that we can use $parseTime[10m] for example.
-  */
+   */
 });
 ```
