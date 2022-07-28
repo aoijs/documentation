@@ -170,6 +170,8 @@
   * [$emojisFromMessage](functions/usdemojisfrommessage.md)
   * [$error](functions/usderror.md)
   * [$eval](functions/usdeval.md)
+  * [$eventData](functions/usdeventdata.md)
+  * [$eventEmit](functions/usdeventemit.md)
   * [$exec](functions/usdexec.md)
   * [$executionTime](functions/usdexecutiontime.md)
   * [$fetchInvites](functions/usdfetchinvites.md)
