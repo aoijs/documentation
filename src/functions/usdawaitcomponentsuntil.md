@@ -4,7 +4,7 @@ description: Making the bot reply to user's interacted message.
 
 # $awaitComponentsUntil
 
-This function will make the bot response to user's select menu option or button interaction.
+This function will make the bot respond to user's select menu option or button interaction.
 
 ### Usage 
 
