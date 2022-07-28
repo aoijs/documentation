@@ -1,49 +1,64 @@
 ---
-description: Returns of info of the current playing song.
+description: Returns given track's info.
 ---
 
 # $songInfo
 
-This function returns the &lt;property&gt; of the currently playing song.
+This function returns the property of the given position's track.
 
-Raw usage: `$songInfo[property;position]`
+### Usage
 
-#### Exapmple for current playing song:
+```php
+$songInfo[response?;position?]
+```
+
+### Properties
+
+| FIELD | TYPE | DESCRIPTION |
+| ----- | ----- | ----- | 
+| response? | string | The property of track's info | 
+| position? | integer | Position of the track |
+
+#### Response Properties
+
+* `title` — Returns track's title
+* `description` — Returns description of the track
+* `url` — Returns URL of the track
+* `thumbnail` — Returns thumbnail of the current track[^1]
+* `duration` — Returns duration of the track
+* `identifier` — Returns the track's platform
+* `author` — Returns publisher's name
+* `authorURL` — Returns publisher's url
+* `likes` — Returns likes of the track
+* `views` — Returns views of the track[^2]
+* `createdTimestamp` — Returns the track's published time
+
+  [^1]: Some tracks might now have an album cover.
+  
+  [^2]: You might not able to see views on some platforms.
+  
+## Song Info Examples
+
+* Without optional properties
 
 ```javascript
 bot.command({
-name: "songInfo",
-code: `
-Currrently Playing: $songInfo[title]
-`
-})
+  name: "song-info",
+  code: `
+  $songInfo
+  `
+  // Returns current playing track's title.
+});
 ```
 
-#### Example for next playing song:
+* With optional properties
 
 ```javascript
 bot.command({
-name: "next-song",
-code: `
-Next Playing: $songInfo[title;1]
-`
-})
+  name: "song-info",
+  code: `
+  $songInfo[author;1]
+  `
+  // Returns the publisher's name of the next song.
+});
 ```
-
-### Properties:
-
-* title - Song Title
-* description - Description of the song's YouTube video.
-* duration - Duration of the song
-* duration\_left - Duration left for the song to end.
-* current\_duration - The current duration of the song.
-* url - URL to the youtube video of the current song.
-* userID - ID of the sser that added the song.
-* thumbnail - The thumbnail of the song.
-* publisher - Channel that uploaded the song.
-* publisher\_url - Link of the channel that uploaded the song.
-
-{% hint style="info" %}
-The cuurent song's position is `0`- so next one's is `1` and so on...
-{% endhint %}
-
