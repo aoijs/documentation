@@ -14,13 +14,13 @@ This function has 3 fields
 2. Deafen \(Required\)
 3. Reason \(Optional\)
 
-Raw usage: `$deafenUser[User ID;Deafen (yes/no);Reason (Optional)]`
+Raw usage: `$deafenUser[User ID;Deafen? (yes/no);Reason (Optional)]`
 
 #### Options
 
-* User ID - The user being defeaned
-* Deafen - Whether or not the defean the &lt;user&gt;
-* Reason - The reason will appear in the audit logs
+* User ID - The user being deafened
+* Deafen - Whether to or not to deafen the &lt;user&gt;
+* Reason - The reason that will appear in the audit logs
 
 #### Usage
 
@@ -31,7 +31,7 @@ bot.command({
     name: "deaf",
     code: `
     Now $username[$mentioned[1]] can't hear
-    $deafenUser[$mentiond[1];yes]
+    $deafenUser[$mentioned[1];yes]
     `
 })
 ```
@@ -43,7 +43,7 @@ bot.command({
     name: "undeaf",
     code: `
     Now $username[$mentioned[1]] can hear
-    $deafenUser[$mentiond[1];no]
+    $deafenUser[$mentioned[1];no]
     `
 })
 ```
