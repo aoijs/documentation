@@ -43,6 +43,6 @@ bot.command({
   $random[1;10;yes;yes]
   $random[1;10;yes;yes]
   `
-  // Returns two decimal numbers that different, between 1 and 10
+  // Returns two decimal numbers are different, between 1 and 10
 });
 ```
