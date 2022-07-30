@@ -30,7 +30,7 @@ $deleteMessage[MessageID;ChannelID]
 bot.command({
 name: "delete-me",
 code: `Deleted the message!
-$deleteMessage[$message;$channelID]
+$deleteMessage[$messageID;$channelID]
 `
 })
 ```
