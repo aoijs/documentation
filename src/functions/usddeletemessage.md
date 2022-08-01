@@ -1,29 +1,36 @@
-# $deleteMessage
+---
+description: Delete a message with the given Message ID.
 
-This function deletes a message from the given message ID
+---
 
-#### Fields
+# $deleteMessage 
 
-This function has 2 fields
+This function deletes a message with the given message ID from the specified channel ID.
 
-1. Channel ID \(Required\)
-2. Message ID \(Required\)
+### Usage
+ 
 
-Raw Usage: `$deleteMessage[channelID;messageID]`
+```php
+$deleteMessage[MessageID;ChannelID]
+```
 
-#### Options
+### Parameters 
 
-* Channel ID - The channel we're the message is
-* Message ID - The message we're deleting
 
-#### Usage
+| FIELD | TYPE | DESCRIPTION |
+| -------- | -------- | -------- |
+| MessageID | string | The ID of the message we are deleting | 
+| ChannelID | integer | The channel we're the message is | 
+
+
+
+## Example(s)
 
 ```javascript
 bot.command({
-name: "deleteMessage",
+name: "delete-me",
 code: `Deleted the message!
-$deleteMessage[$channelID;800862561414414396]
+$deleteMessage[$messageID;$channelID]
 `
 })
 ```
-
