@@ -88,6 +88,6 @@ Lets Combine Them!
 
 ### Update commands
 
-\*Using LoadCommands class also enables a special function: **`$updateCommands`**.
+Using LoadCommands class also enables a special function: **`$updateCommands`**.
 
 This function updates all the new changes to the commands without restarting the Client.
