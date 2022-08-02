@@ -10,11 +10,6 @@
   * [Aliases](guides/command-handler/aliases.md)
   * [Command Handler Extras](guides/command-handler/command-handler-extras.md)
 * [Variables](guides/variables.md)
-  * [Advanced Guides](advanced-guides/README.md)
-    * [Invite System](advanced-guides/invite-system.md)
-    * [Music](advanced-guides/music.md)
-    * [Slash Commands](advanced-guides/slash-commands.md)
-* [Using Events](guides/using-events.md)
 
 ## Advanced Guides
 
@@ -23,9 +18,8 @@
 * [@akarui/aoi.music](advanced-guides/music.md)
 * [dbd.express](advanced-guides/dashboard.md)
 
-***
+## Functions
 
-* [Functions](functions/README.md)
   * [$abbreviate](functions/usdabbreviate.md)
   * [$activity](functions/usdactivity.md)
   * [$addButton](functions/usdaddbutton.md)
