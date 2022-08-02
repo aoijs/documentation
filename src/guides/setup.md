@@ -11,10 +11,10 @@ Once this has installed you can begin the following file `index.js` to setup aoi
 ```javascript
 const aoijs = require("aoi.js")
 
-const bot = new aoijs.Bot({
-token: "DISCRD BOT TOKEN",
-prefix: "DISCRD BOT PREFIX",
-intents: ["GUILDS", "GUILD_MESSAGES"]
+const bot = new aoijs.AoiClient({
+  token: "DISCORD BOT TOKEN",
+  prefix: "DISCORD BOT PREFIX",
+  intents: ["GUILDS", "GUILD_MESSAGES"]
 })
 
 //Events
