@@ -393,7 +393,7 @@
   * [$sendDM](functions/usdsenddm.md)
   * [$sendMessage](functions/usdsendmessage.md)
   * [$sendTTS](functions/usdsendtts.md)
-  * [$sendWebhook](functions/usdsendwebhook.md)
+  * [$sendWebhookMessage](functions/usdsendwebhookmessage.md)
   * [$serverAvailable](functions/usdserveravailable.md)
   * [$serverBanner](functions/usdserverbanner.md)
   * [$serverBoostCount](functions/usdserverboostcount.md)
