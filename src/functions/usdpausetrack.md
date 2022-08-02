@@ -12,7 +12,7 @@ You can pause playing track with this function.
 $pauseTrack
 ```
 
-## Example
+### Example
 
 ```javascript
 bot.command({

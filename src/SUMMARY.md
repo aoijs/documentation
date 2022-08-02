@@ -376,7 +376,7 @@
   * [$resetUserVar](functions/usdresetuservar.md)
   * [$resolveColor](functions/usdresolvecolor.md)
   * [$resolveEmojiID](functions/usdresolveemojiid.md)
-  * [$resumeSong](functions/usdresumesong.md)
+  * [$resumeTrack](functions/usdresumetrack.md)
   * [$role](functions/usdrole.md)
   * [$roleCount](functions/usdrolecount.md)
   * [$roleExists](functions/usdroleexists.md)
