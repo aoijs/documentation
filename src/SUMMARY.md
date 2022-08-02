@@ -5,11 +5,10 @@
 ## Guides
 
 * [Setup](guides/setup.md)
-* [Client Status](guides/client-status.md)
-* [Command Handler](guides/command-handler/README.md)
-  * [Aliases](guides/command-handler/aliases.md)
-  * [Command Handler Extras](guides/command-handler/command-handler-extras.md)
 * [Variables](guides/variables.md)
+* [Client Status](guides/client-status.md)
+* [Command Aliases](guides/command-handler/aliases.md)
+* [Command Handler](guides/command-handler/README.md)
 
 ## Advanced Guides
 
