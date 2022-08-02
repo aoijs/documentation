@@ -8,7 +8,7 @@ Property that can be used:
 
 * `channel`
 
-Function that can be used [$handleError](../../callbacks/..functions/usdhandleerror.md)
+Function that can be used [$handleError](../../events/..functions/usdhandleerror.md)
 
 Callback to use is `bot.onFunctionError()`
 

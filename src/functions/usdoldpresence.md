@@ -6,9 +6,9 @@ description: >-
 
 # $oldPresence
 
-This function is only useable in [bot.onPresenceUpdate.](../callbacks/bot.onpresenceupdate.md) Examples can be found in the callback page.
+This function is only useable in [bot.onPresenceUpdate.](../events/bot.onpresenceupdate.md) Examples can be found in the callback page.
 
-{% page-ref page="../callbacks/bot.onpresenceupdate.md" %}
+{% page-ref page="../events/bot.onpresenceupdate.md" %}
 
 
 

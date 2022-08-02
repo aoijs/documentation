@@ -32,12 +32,11 @@ npm install aoi.js
 ```javascript
 const aoijs = require("aoi.js")
 
-const bot = new aoijs.Bot({
-  token: "Discord_Bot_Token",
-  prefix: "Discord_Bot_Prefix",
+const bot = new aoijs.AoiClient({
+  token: "DISCORD BOT TOKEN",
+  prefix: "DISCORD BOT PREFIX",
   intents: ["GUILDS", "GUILD_MESSAGES"]
 })
-
 //Events
 bot.onMessage()
 

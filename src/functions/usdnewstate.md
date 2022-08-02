@@ -6,9 +6,9 @@ description: >-
 
 # $newState
 
-This function is only useable in the [bot.onVoiceStateUpdate\(\)](../callbacks/bot.onvoicestateupdate.md) callback. Examples can be found in the callback page.
+This function is only useable in the [bot.onVoiceStateUpdate\(\)](../events/bot.onvoicestateupdate.md) callback. Examples can be found in the callback page.
 
-{% page-ref page="../callbacks/bot.onvoicestateupdate.md" %}
+{% page-ref page="../events/bot.onvoicestateupdate.md" %}
 
 
 

@@ -19,7 +19,7 @@ prefix: "prefix"
 bot.onMessage() //allows commands to be made
 ```
 
-This will allow all the commands and callbacks \(bot.command, bot.updateCommand, etc\) to run
+This will allow all the commands and events \(bot.command, bot.updateCommand, etc\) to run
 
 Hey, did you know you could allow commands to work in dms? Just do this
 
