@@ -31,7 +31,7 @@ $function[param1;param2?]
 * `a` — A type
 * `b` — B type
 
-## Example(s)
+### Example(s)
 
 ```javascript
 bot.command({
