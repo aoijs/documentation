@@ -21,7 +21,7 @@ body:
 
   - type: textarea
     attributes:
-      label: What function on akarui.leref.ga is affected?
+      label: What function on aoi.js.org/docs/ is affected?
       description: Please link to the function you'd like to see updated.
     validations:
       required: true
