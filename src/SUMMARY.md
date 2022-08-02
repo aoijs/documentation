@@ -4,7 +4,7 @@
 
 ## Guides
 
-* [Setup](guides/begin.md)
+* [Setup](guides/setup.md)
 * [Client Status](guides/client-status.md)
 * [Command Handler](guides/command-handler/README.md)
   * [Aliases](guides/command-handler/aliases.md)
