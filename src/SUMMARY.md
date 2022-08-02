@@ -12,7 +12,6 @@
 * [Variables](guides/variables.md)
   * [Advanced Guides](guides/variables/advanced-guides/README.md)
     * [Invite System](guides/variables/advanced-guides/invite-system.md)
-    * [Lavalink System](guides/variables/advanced-guides/lavalink.md)
     * [Music](guides/variables/advanced-guides/music.md)
     * [Slash Commands](guides/variables/advanced-guides/slash-commands.md)
 * [Using Events](guides/using-events.md)
