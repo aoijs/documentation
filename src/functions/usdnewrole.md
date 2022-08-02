@@ -4,11 +4,11 @@ description: 'Function that holds data of a role that was created, updated, or d
 
 # $newRole
 
-This function is only useable in [bot.onRoleCreate](../callbacks/bot.onrolecreate.md) and [bot.onRoleUpdate](../callbacks/bot.onroleupdate.md) callbacks, or else it won't give any data. Examples can be found in the callback page.
+This function is only useable in [bot.onRoleCreate](../events/bot.onrolecreate.md) and [bot.onRoleUpdate](../events/bot.onroleupdate.md) events, or else it won't give any data. Examples can be found in the callback page.
 
-{% page-ref page="../callbacks/bot.onrolecreate.md" %}
+{% page-ref page="../events/bot.onrolecreate.md" %}
 
-{% page-ref page="../callbacks/bot.onroleupdate.md" %}
+{% page-ref page="../events/bot.onroleupdate.md" %}
 
 
 

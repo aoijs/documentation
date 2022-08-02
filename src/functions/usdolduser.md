@@ -8,7 +8,7 @@ description: >-
 
 This function is only useable in bot.userUpdateCommand\(\) commands. Examples can be found in the callback page:
 
-{% page-ref page="../callbacks/bot.onuserupdate.md" %}
+{% page-ref page="../events/bot.onuserupdate.md" %}
 
 
 
