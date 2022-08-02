@@ -13,14 +13,14 @@ description: Here you can see how to setup variables.
 
 It's always this default value unless you change it.
 
-* [$setVar](../../functions/setvar.md)
-* [$setUserVar](../../functions/setuservar.md)
-* [$setServerVar](../../functions/setservervar.md)
-* [$setGlobalUserVar](../../functions/setglobaluservar.md)
-* [$setMessageVar](../../functions/setmessagevar.md)
-* [$setChannelVar](../../functions/setchannelvar.md)
+* [$setVar](../functions/setvar.md)
+* [$setUserVar](../functions/setuservar.md)
+* [$setServerVar](../functions/setservervar.md)
+* [$setGlobalUserVar](../functions/setglobaluservar.md)
+* [$setMessageVar](../functions/setmessagevar.md)
+* [$setChannelVar](../functions/setchannelvar.md)
 
-### Usage
+## Usage
 
 ```javascript
 bot.variables({
@@ -77,7 +77,7 @@ $getChannelVar[variable;channelID (optional)]
 
 > The variable value will be saved to a message
 
-## Setting the message variable
+### Setting the message variable
 
 ```php
 $setMessageVar[variable;value;messageID]
