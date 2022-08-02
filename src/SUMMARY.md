@@ -339,6 +339,7 @@
   * [$parseDate](functions/usdparsedate.md)
   * [$parseTime](functions/usdparsetime.md)
   * [$partial](functions/usdpartial.md)
+  * [$pauseTrack](functions/usdpausetrack.md)
   * [$ping](functions/usdping.md)
   * [$pinMessage](functions/usdpinmessage.md)
   * [$platform](functions/usdplatform.md)
