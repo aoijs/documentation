@@ -4,16 +4,9 @@ description: Special characters won't be replaced.
 
 # $nonEscape
 
-This function makes it so special characters won't be escaped.
+This function makes it so special characters won't be escaped.[^1]
 
-:::note
-You can escape from special characters by adding \ infront of special character.
-
-**Example**: 
-
-`\)`
-
-:::
+  [^1]: You can escape from special characters by adding \ infront of special character.
 
 ### Usage
 
