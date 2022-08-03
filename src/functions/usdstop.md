@@ -1,10 +1,10 @@
 ---
-description: Stops the bot from playing songs.
+description: Stops the bot from playing tracks.
 ---
 
 # $stop
 
-This function makes the queue list empty and skip all the songs. 
+This function makes the queue list empty and skip all the tracks. 
 
 ### Usage
 

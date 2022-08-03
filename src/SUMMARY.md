@@ -432,7 +432,7 @@
   * [$setVar](functions/usdsetvar.md)
   * [$shardID](functions/usdshardid.md)
   * [$shuffleQueue](functions/usdshufflequeue.md)
-  * [$skipSong](functions/usdskipsong.md)
+  * [$skip](functions/usdskip.md)
   * [$skipTo](functions/usdskipto.md)
   * [$slashOption](functions/usdslashoption.md)
   * [$slowmode](functions/usdslowmode.md)
