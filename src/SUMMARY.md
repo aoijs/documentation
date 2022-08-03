@@ -440,7 +440,7 @@
   * [$songInfo](functions/usdsonginfo.md)
   * [$splitText](functions/usdsplittext.md)
   * [$status](functions/usdstatus.md)
-  * [$stopSong](functions/usdstopsong.md)
+  * [$stop](functions/usdstop.md)
   * [$stringEndsWith](functions/usdstringendswith.md)
   * [$stringStartsWith](functions/usdstringstartswith.md)
   * [$sub](functions/usdsub.md)

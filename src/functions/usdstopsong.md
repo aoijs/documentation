@@ -1,15 +1,27 @@
 ---
-description: Stop the bot from playing songs
+description: Stops the bot from playing songs.
 ---
 
-# $stopSong
+# $stop
 
-This function makes the bot stops all songs from queue and leaves VC
+This function makes the queue list empty and skip all the songs. 
+
+### Usage
+
+```php
+$stop
+```
+
+### Example
 
 ```javascript
 bot.command({
-name:"stop",
-code:`$stopSong`
-})
+  name: "stop",
+  code: `
+  Stopped playing track.
+  
+  $stop
+  `
+  // Stops playing tracks.
+});
 ```
-
