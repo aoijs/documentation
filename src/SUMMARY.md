@@ -316,7 +316,7 @@
   * [$newTicket](functions/usdnewticket.md)
   * [$nickname](functions/usdnickname.md)
   * [$nodeVersion](functions/usdnodeversion.md)
-  * [$noEscapingMessage](functions/usdnoescapingmessage.md)
+  * [$nonEscape](functions/usdnonescape.md)
   * [$noMentionMessage](functions/usdnomentionmessage.md)
   * [$numberSeparator](functions/usdnumberseparator.md)
   * [$oldChannel](functions/usdoldchannel.md)
