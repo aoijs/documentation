@@ -436,7 +436,7 @@
   * [$skipTo](functions/usdskipto.md)
   * [$slashOption](functions/usdslashoption.md)
   * [$slowmode](functions/usdslowmode.md)
-  * [$songFilter](functions/usdsongfilter.md)
+  * [$setFilter](functions/usdsetfilter.md)
   * [$songInfo](functions/usdsonginfo.md)
   * [$splitText](functions/usdsplittext.md)
   * [$status](functions/usdstatus.md)
