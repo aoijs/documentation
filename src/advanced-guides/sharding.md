@@ -59,17 +59,12 @@ const sharder: ClientShard = new ClientShard(
 //index.js
 const { ClientShard } = require("aoi.js");
 
-const sharder = new ClientShard("bot.js");
-
-sharder.onShardCreate();
-
-sharder.shardCreateCommand({
-    name: "create Shard Log",
-    code:
-    `
-        $log[Created Shard ID: $shard[id]]
-    `
+const sharder = new ClientShard("./bot.js",{
+    totalShards : "auto",
+    token: "BOT TOKEN HERE",
 });
+
+sharder.startProcess();
 ```
 
 ```js
