@@ -60,16 +60,12 @@ in `index.js`
 ```js
 const { ClientShard } = require("aoi.js");
 
-const sharder = new ClientShard("bot.js");
-
-sharder.onShardCreate();
-
-sharder.shardCreateCommand({
-    name: "create Shard Log",
-    code: `
-        $log[Created Shard ID: $shard[id]]
-    `,
+const sharder = new ClientShard("./bot.js",{
+  token : "DISCORD BOT TOKEN"
 });
+
+
+sharder.startProcess();
 ```
 
 in `bot.js`
@@ -96,5 +92,4 @@ bot.command({
 ```
 
 ### NOTE
-
-the **_`new index.js`_** is for ClientShard and **_`bot.js is old index.js`_**
+the ***`new index.js`*** is for ClientShard and ***`bot.js is old index.js`***
