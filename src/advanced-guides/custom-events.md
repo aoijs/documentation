@@ -1,8 +1,8 @@
 # Custom Events
 
-aoi.js has `CustomEvent` class to add custom events to aoi.js that will execute a cmd for that event , whenever the event is emitted.
+aoi.js has `CustomEvent` class to add custom events to aoi.js that will execute a command for that event , whenever the event is emitted.
 
-this adds 2 new functions:
+This adds 2 new functions:
 
  [**`$eventData`**](../functions/usdeventdata.md) and [**`$eventEmit`**](../functions/usdeventemit.md)
 
@@ -37,9 +37,8 @@ const event : CustomEvent = new CustomEvent(
 
 ## Basic Setup
 
-
-```javascript
-const  { CustomEvent,Bot } = require("aoi.js");
+```js
+const  { CustomEvent , Bot } = require("aoi.js");
 
 const bot = new Bot({
     token : "DISCORD BOT TOKEN",
@@ -50,22 +49,20 @@ const bot = new Bot({
 bot.onMessage();
 
 const event = new CustomEvent(bot);
+
 event.listen("pain");
+
 event.command({
     name: "this is pain",
     listen: "pain",
-    code:
-    `
-        $log[
-            Pain Event Was Executed By $eventData[[0]]
-        ]
+    code:`
+        $log[ Pain Event Was Executed By $eventData[[0]] ]
     `
 });
 
 bot.command({
     name: "emit-pain",
-    code:
-    `
+    code:`
         $eventEmit[pain;$username]
     `
 })
