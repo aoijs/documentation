@@ -21,6 +21,6 @@ Properties that can be used with $handleError are
 - `command` - Command  Name
 - `error` - Returns Error
 
-For more usage example check [bot.functionErrorCommand](../callbacks/bot.functionErrorCommand.md)
+For more usage example check [bot.functionErrorCommand](../events/bot.functionErrorCommand.md)
 
-Callback for this command: [bot.onFunctionError](../callbacks/bot.onFunctionError.md)
+Callback for this command: [bot.onFunctionError](../events/bot.onFunctionError.md)
