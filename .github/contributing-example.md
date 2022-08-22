@@ -2,13 +2,13 @@
 description: Short description of the function.
 ---
 
-# $function 
+## $function 
 
 Explanation of the function and how does it work.
 
 > **This function *is not* an official function[^1].**
 
-### Usage
+## Usage
  
 > *Declaring with '?' at the ends help to show it as 'optional'*
 
@@ -16,7 +16,7 @@ Explanation of the function and how does it work.
 $function[param1;param2?]
 ```
 
-### Parameters 
+## Parameters 
 
 > *If there is even one parameter, it should be used.*
 
@@ -25,13 +25,15 @@ $function[param1;param2?]
 | param1 | string | It shows `param1` | 
 | param2 | integer | It shows `param2` | 
 
-#### Parameter Types
+### Parameter Types
 > *Required if the parameter has other options*
 
 * `a` — A type
 * `b` — B type
 
-### Example(s)
+## Example(s)
+
+This returns: ...
 
 ```javascript
 bot.command({
@@ -39,7 +41,6 @@ bot.command({
   code: `
   $function[index;aoijs]
   `
-// Returns: ...
 });
 ```
 
