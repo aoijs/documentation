@@ -7,7 +7,7 @@ body:
     attributes:
       value: |
         Welcome to the improving documentary contents. 
-        * Before you file an issue read the [Contributing guide](https://github.com/aoijs/documentation/blob/v5.1.2/.github/docs/contributing.md).
+        * Before you file an issue read the [Contributing guide](https://github.com/aoijs/documentation/blob/v5/.github/docs/contributing.md).
         * Check to make sure someone hasn't already opened a similar [issue](https://github.com/aoijs/documentation/issues).
         
   - type: checkboxes
@@ -21,7 +21,7 @@ body:
 
   - type: textarea
     attributes:
-      label: What function on akarui.leref.ga is affected?
+      label: What function on aoi.js.org is affected?
       description: Please link to the function you'd like to see updated.
     validations:
       required: true
