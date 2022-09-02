@@ -12,9 +12,9 @@ Example:
 
 ```javascript
 bot.command({
-    name: "istiket",
+    name: "isticket",
     code: `
-Is this channel a tiket?
+Is this channel a ticket?
 > $isTicket
     `
 })
