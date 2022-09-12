@@ -6,32 +6,41 @@ description: Loops for every cached guild member executing awaited commands
 
 This function creates a loop for every user thats' in the current guild
 
+#### Usage
+
+```
+$forEachMember[time;{awaitedData};awaitedCommand;awaitedCommand2;...]
+```
+
 #### Fields
 
-This function has 1 required field
+This function has 2 required field
 
-1. Awaited Command \(Required\)
-2. Awaited Command 2 \(Optional\)
-3. Etc
+| Field | Description | Required |
+| :--- | :--- | :--- |
+| Time | The amount of time to execute the awaited command | Yes |
+| Awaited Data | The data you want to change | Yes |
+| Awaited Command | The awaited command\(s\) we're executing | Yes |
 
-Raw Usage: `$forEachMember[awaitedCommand1;awaitedCommand2;...]`
 
 #### Options
 
+* Time - The amount of time to execute the awaited command
+* Awaited Data - The data you want to change
 * Awaited Command\(s\) - The awaited command\(s\) we're executing
 
-#### Usage
+#### Examples
 
 ```javascript
 bot.command({
 name: "forEachMember",
-code: "$forEachMember[loop4]"
+code: `$forEachMember[1s;{"nickname":"$authorID"};loop1]`
 })
 
 bot.awaitedCommand({
-name: "loop4",
-code: `$setUserVar[hello;bye]` //Every user in the current guild value for 'hello' will be 'bye'
-
+name: "loop1",
+code: `$nickname[$awaitData[nickname]]`
 })
-```
 
+//This will return member nickname
+```
