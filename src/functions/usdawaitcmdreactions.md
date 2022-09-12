@@ -13,6 +13,17 @@ $awaitCmdReactions[filter;time;reactions;awaited commands;error message?;awaited
 //reaction1,reaction2?,...;awaitedCmd1,awaitedCmd2?,...
 ```
 
+### Fields
+
+| Field | Description | Type | Required |
+| :--- | :--- | :--- | :--- |
+| filter | Is it only for given user ID or everyone | string | yes |
+| time | Until x time bot will reply to message | string | yes |
+| reactions | The reactions for respond | string | yes |
+| commands | Awaited commands to be triggered | string | yes |
+| errorMessage | When x time runs out, the part of bot sending message. | string | no |
+| data | Await command's data | string | no |
+
 #### Filter Types
 
 * `everyone` — makes it avaliable to react for everyone
@@ -26,7 +37,7 @@ $awaitCmdReactions[filter;time;reactions;awaited commands;error message?;awaited
 * `d` - Days
 * `w` - Weeks
 
-#### Example
+### Example
 
 ```javascript
 bot.command({
