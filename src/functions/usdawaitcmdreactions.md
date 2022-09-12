@@ -37,7 +37,7 @@ $awaitCmdReactions[filter;time;reactions;awaited commands;error message?;awaited
 * `d` - Days
 * `w` - Weeks
 
-### Example
+## Example
 
 ```javascript
 bot.command({
