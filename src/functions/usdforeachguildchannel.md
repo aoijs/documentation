@@ -21,13 +21,6 @@ This function has 2 required field
 | Awaited Data | The data you want to change | Yes |
 | Awaited Command | The awaited command\(s\) we're executing | Yes |
 
-
-#### Options
-
-* Time - The amount of time to execute the awaited command
-* Awaited Data - The data you want to change
-* Awaited Command\(s\) - The awaited command\(s\) we're executing
-
 ## Examples
 
 ```javascript
