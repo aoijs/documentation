@@ -9,7 +9,7 @@ description: Pins a message
 This function allows the bot to pin its own message or the given message
 
 ```javascript
-$pinMessage[channelID (optional);messageID (optional)
+$pinMessage[messageID (optional);channelID (optional)]
 ```
 
 Using the function 
@@ -25,7 +25,7 @@ $pinMessage`
 
 bot.command({
 name: "pin",
-code: `$pinMessage[790811472829743105;794203850839949372] I pinned a mesage!`
+code: `$pinMessage[1018720477218361364;101556083474485251] I pinned a mesage!`
 }) //Pins the given messageID
 ```
 
