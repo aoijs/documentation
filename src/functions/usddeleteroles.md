@@ -8,13 +8,14 @@ This function deletes the specified role\(s\)
 
 Fields
 
-This function has 1 required field
+This function has 2 required field
 
-1. Role ID \(Required\)
-2. Role ID 2 \(Optional\)
-3. Etc
+1. Guild ID \(Required\)
+2. Role ID  \(Required\)
+3. Role ID 2 \(optional\)
+4. Etc
 
-Raw Usage: `$deleteRoles[roleID;roleID;etc]`
+Raw Usage: `$deleteRoles[guildID;roleID;roleID;etc]`
 
 Options
 
@@ -28,7 +29,7 @@ Deleting the mentioned role
 bot.command({
 name: "deleteRoles",
 code: `Deleted a role.
-$deleteRoles[$mentionedRoles[1]]`
+$deleteRoles[$guildID;$mentionedRoles[1]]`
 })
 ```
 
@@ -38,7 +39,7 @@ Deleting multiple mentioned roles
 bot.command({
 name: "deleteRoles",
 code: `Deleted a role.
-$deleteRoles[$mentionedRoles[1];$mentionedRoles[2];$mentionedRoles[3]]`
+$deleteRoles[$guildID;$mentionedRoles[1];$mentionedRoles[2];$mentionedRoles[3]]`
 })
 ```
 
