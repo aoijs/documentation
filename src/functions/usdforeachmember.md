@@ -34,13 +34,13 @@ This function has 2 required field
 ```javascript
 bot.command({
 name: "forEachMember",
-code: `$forEachMember[1s;{"nickname":"$authorID"};loop1]`
+code: `$forEachMember[1s;{"message":"1"};loop1]`
 })
 
 bot.awaitedCommand({
 name: "loop1",
-code: `$nickname[$awaitData[nickname]]`
+code: `$setGlobalUserVar[money;$awaitData[1]]`
 })
 
-//This will return member nickname
+//This will set every guild member message var to 1
 ```
