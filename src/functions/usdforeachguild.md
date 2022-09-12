@@ -5,32 +5,39 @@ description: Loops for every guild the bot is in executing an awaitedCommand
 # $forEachGuild
 
 This function creates a loop over every server the bot is in
+#### Usage
+
+```
+$forEachGuild[time;{awaitedData};awaitedCommand;awaitedCommand2;...]
+```
 
 #### Fields
 
-This function has 1 required field
+This function has 2 required field
 
-1. Awaited Command \(Required\)
-2. Awaited Command 2 \(Optional\)
-3. Etc
+| Field | Description | Required |
+| :--- | :--- | :--- |
+| Time | The amount of time to execute the awaited command | Yes |
+| Awaited Data | The data you want to change | Yes |
+| Awaited Command | The awaited command\(s\) we're executing | Yes |
 
-Raw Usage: `$forEachGuild[awaitedCommand1;awaitedCommand2;...]`
 
 #### Options
 
+* Time - The amount of time to execute the awaited command
+* Awaited Data - The data you want to change
 * Awaited Command\(s\) - The awaited command\(s\) we're executing
 
-#### Usage
+#### Examples
 
 ```javascript
 bot.command({
 name: "forEachGuild",
-code: "$forEachGuild[loop2]"
+code: `$forEachGuild[1s;{"message":"bye"};loop1]`
 })
-
 bot.awaitedCommand({
-name: "loop2",
-code: `$setServerVar[hello;bye]` //Every servers value for 'hello' will be 'bye'
+name: "loop1",
+code: `$setServerVar[hello;$awaitData[message]]`
 })
+//Every servers value for 'hello' will be 'bye'
 ```
-
