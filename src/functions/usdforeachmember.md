@@ -29,7 +29,7 @@ This function has 2 required field
 * Awaited Data - The data you want to change
 * Awaited Command\(s\) - The awaited command\(s\) we're executing
 
-#### Examples
+## Examples
 
 ```javascript
 bot.command({
