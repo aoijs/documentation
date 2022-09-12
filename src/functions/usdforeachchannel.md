@@ -6,31 +6,39 @@ description: Loop over every channel this bot can see executing awaited commands
 
 This function creates a loop over ALL channels the bot has access to
 
+#### Usage
+
+```
+$forEachChannel[time;{awaitedData};awaitedCommand;awaitedCommand2;...]
+```
+
 #### Fields
 
-This function has 1 required field
+This function has 2 required field
 
-1. Awaited Command \(Required\)
-2. Awaited Command 2 \(Optional\)
-3. Etc
+| Field | Description | Required |
+| :--- | :--- | :--- |
+| Time | The amount of time to execute the awaited command | Yes |
+| Awaited Data | The data you want to change | Yes |
+| Awaited Command | The awaited command\(s\) we're executing | Yes |
 
-Raw Usage: `$forEachChannel[awaitedCommand1;awaitedCommand2;...]`
 
 #### Options
 
+* Time - The amount of time to execute the awaited command
+* Awaited Data - The data you want to change
 * Awaited Command\(s\) - The awaited command\(s\) we're executing
 
-#### Usage
+#### Examples
 
 ```javascript
 bot.command({
 name: "forEachChannel",
-code: "$forEachChannel[loop1]"
+code: `$forEachChannel[1s;{"message":"bye"};loop1]`
 })
-
 bot.awaitedCommand({
 name: "loop1",
-code: `$setChannelVar[hello;bye]` //Every channels value for 'hello' will be 'bye'
+code: `$setChannelVar[hello;$awaitData[message]]`
 })
+//Every channels value for 'hello' will be 'bye'
 ```
-
