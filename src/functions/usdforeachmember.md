@@ -39,7 +39,7 @@ code: `$forEachMember[1s;{"message":"1"};loop1]`
 
 bot.awaitedCommand({
 name: "loop1",
-code: `$setGlobalUserVar[message;$awaitData[1]]`
+code: `$setGlobalUserVar[message;$awaitData[message]]`
 })
 
 //This will set every guild member message var to 1
