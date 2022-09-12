@@ -13,9 +13,8 @@ This function has 2 required field
 1. Guild ID \(Required\)
 2. Role ID  \(Required\)
 3. Role ID 2 \(optional\)
-4. Etc
 
-Raw Usage: `$deleteRoles[guildID;roleID;roleID;etc]`
+Raw Usage: `$deleteRoles[guildID;roleID;roleID;...]`
 
 Options
 
