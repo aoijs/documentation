@@ -34,14 +34,14 @@ This function has 2 required field
 ```javascript
 bot.command({
 name: "forEachUser",
-code: `$forEachUser[1s;{"nickname":"$authorID"};loop1]`
+code: `$forEachUser[1s;{"level":"1"};loop1]`
 })
 
 bot.awaitedCommand({
 name: "loop1",
-code: `$nickname[$awaitData[nickname]]`
+code: `$setGlobalUserVar[level;$awaitDate[level]]`
 })
 
-//This will return user nickname
+//This will set user level to 1
 ```
 
