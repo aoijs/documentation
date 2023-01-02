@@ -16,6 +16,7 @@
 * [Custom Events](advanced-guides/custom-events.md)
 * [@akarui/aoi.music](advanced-guides/music.md)
 * [dbd.express](advanced-guides/dashboard.md)
+* [Sharding](advanced-guides/sharding.md "guide on sharding")
 
 ## Functions
 
@@ -546,7 +547,6 @@
 ## Other
 
 * [Hyperlink](other/hyperlink.md)
-* [Sharding](other/sharding.md)
 * [Character Escaping](other/character-escaping.md)
 * [Embed Errors](other/embed-errors.md)
 * [Permissions](other/permissions.md)
